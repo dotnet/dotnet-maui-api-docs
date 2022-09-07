@@ -1,0 +1,836 @@
+<Type Name="ViewExtensions" FullName="Microsoft.Maui.Platform.ViewExtensions">
+  <TypeSignature Language="C#" Value="public static class ViewExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ViewExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Platform.ViewExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module ViewExtensions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ViewExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type ViewExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Extension methods for <see cref="T:Microsoft.Maui.View" />s, providing animatable scaling, rotation, and layout functions.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Focus">
+      <MemberSignature Language="C#" Value="public static void Focus (this object platformView, Microsoft.Maui.FocusRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Focus(object platformView, class Microsoft.Maui.FocusRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.Focus(System.Object,Microsoft.Maui.FocusRequest)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Focus (platformView As Object, request As FocusRequest)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void Focus(System::Object ^ platformView, Microsoft::Maui::FocusRequest ^ request);" />
+      <MemberSignature Language="F#" Value="static member Focus : obj * Microsoft.Maui.FocusRequest -&gt; unit" Usage="Microsoft.Maui.Platform.ViewExtensions.Focus (platformView, request)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="System.Object" RefType="this" />
+        <Parameter Name="request" Type="Microsoft.Maui.FocusRequest" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <param name="request">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidateMeasure">
+      <MemberSignature Language="C#" Value="public static void InvalidateMeasure (this object platformView, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void InvalidateMeasure(object platformView, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.InvalidateMeasure(System.Object,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub InvalidateMeasure (platformView As Object, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void InvalidateMeasure(System::Object ^ platformView, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="static member InvalidateMeasure : obj * Microsoft.Maui.IView -&gt; unit" Usage="Microsoft.Maui.Platform.ViewExtensions.InvalidateMeasure (platformView, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="System.Object" RefType="this" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToHandler">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.IViewHandler ToHandler (this Microsoft.Maui.IView view, Microsoft.Maui.IMauiContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Maui.IViewHandler ToHandler(class Microsoft.Maui.IView view, class Microsoft.Maui.IMauiContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.ToHandler(Microsoft.Maui.IView,Microsoft.Maui.IMauiContext)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToHandler (view As IView, context As IMauiContext) As IViewHandler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::Maui::IViewHandler ^ ToHandler(Microsoft::Maui::IView ^ view, Microsoft::Maui::IMauiContext ^ context);" />
+      <MemberSignature Language="F#" Value="static member ToHandler : Microsoft.Maui.IView * Microsoft.Maui.IMauiContext -&gt; Microsoft.Maui.IViewHandler" Usage="Microsoft.Maui.Platform.ViewExtensions.ToHandler (view, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.IViewHandler</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.IView" RefType="this" />
+        <Parameter Name="context" Type="Microsoft.Maui.IMauiContext" />
+      </Parameters>
+      <Docs>
+        <param name="view">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <!-- No matching elements were found for the following include tag -->
+        <include file="../../docs/Microsoft.Maui/ViewExtensions.xml" path="//Member[@MemberName='ToHandler']/Docs/*" />
+      </Docs>
+    </Member>
+    <Member MemberName="Unfocus">
+      <MemberSignature Language="C#" Value="public static void Unfocus (this object platformView, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Unfocus(object platformView, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.Unfocus(System.Object,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Unfocus (platformView As Object, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void Unfocus(System::Object ^ platformView, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="static member Unfocus : obj * Microsoft.Maui.IView -&gt; unit" Usage="Microsoft.Maui.Platform.ViewExtensions.Unfocus (platformView, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="System.Object" RefType="this" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateAnchorX">
+      <MemberSignature Language="C#" Value="public static void UpdateAnchorX (this object platformView, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateAnchorX(object platformView, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.UpdateAnchorX(System.Object,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub UpdateAnchorX (platformView As Object, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void UpdateAnchorX(System::Object ^ platformView, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="static member UpdateAnchorX : obj * Microsoft.Maui.IView -&gt; unit" Usage="Microsoft.Maui.Platform.ViewExtensions.UpdateAnchorX (platformView, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="System.Object" RefType="this" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateAnchorY">
+      <MemberSignature Language="C#" Value="public static void UpdateAnchorY (this object platformView, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateAnchorY(object platformView, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.UpdateAnchorY(System.Object,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub UpdateAnchorY (platformView As Object, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void UpdateAnchorY(System::Object ^ platformView, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="static member UpdateAnchorY : obj * Microsoft.Maui.IView -&gt; unit" Usage="Microsoft.Maui.Platform.ViewExtensions.UpdateAnchorY (platformView, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="System.Object" RefType="this" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateAutomationId">
+      <MemberSignature Language="C#" Value="public static void UpdateAutomationId (this object platformView, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateAutomationId(object platformView, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.UpdateAutomationId(System.Object,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub UpdateAutomationId (platformView As Object, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void UpdateAutomationId(System::Object ^ platformView, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="static member UpdateAutomationId : obj * Microsoft.Maui.IView -&gt; unit" Usage="Microsoft.Maui.Platform.ViewExtensions.UpdateAutomationId (platformView, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="System.Object" RefType="this" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateBackground">
+      <MemberSignature Language="C#" Value="public static void UpdateBackground (this object platformView, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateBackground(object platformView, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.UpdateBackground(System.Object,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub UpdateBackground (platformView As Object, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void UpdateBackground(System::Object ^ platformView, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="static member UpdateBackground : obj * Microsoft.Maui.IView -&gt; unit" Usage="Microsoft.Maui.Platform.ViewExtensions.UpdateBackground (platformView, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="System.Object" RefType="this" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateBackgroundImageSourceAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task UpdateBackgroundImageSourceAsync (this object platformView, Microsoft.Maui.IImageSource? imageSource, Microsoft.Maui.IImageSourceServiceProvider? provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task UpdateBackgroundImageSourceAsync(object platformView, class Microsoft.Maui.IImageSource imageSource, class Microsoft.Maui.IImageSourceServiceProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.UpdateBackgroundImageSourceAsync(System.Object,Microsoft.Maui.IImageSource,Microsoft.Maui.IImageSourceServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function UpdateBackgroundImageSourceAsync (platformView As Object, imageSource As IImageSource, provider As IImageSourceServiceProvider) As Task" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Threading::Tasks::Task ^ UpdateBackgroundImageSourceAsync(System::Object ^ platformView, Microsoft::Maui::IImageSource ^ imageSource, Microsoft::Maui::IImageSourceServiceProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="static member UpdateBackgroundImageSourceAsync : obj * Microsoft.Maui.IImageSource * Microsoft.Maui.IImageSourceServiceProvider -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Maui.Platform.ViewExtensions.UpdateBackgroundImageSourceAsync (platformView, imageSource, provider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="System.Object" RefType="this" />
+        <Parameter Name="imageSource" Type="Microsoft.Maui.IImageSource" />
+        <Parameter Name="provider" Type="Microsoft.Maui.IImageSourceServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <param name="imageSource">To be added.</param>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateBorder">
+      <MemberSignature Language="C#" Value="public static void UpdateBorder (this object platformView, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateBorder(object platformView, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.UpdateBorder(System.Object,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub UpdateBorder (platformView As Object, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void UpdateBorder(System::Object ^ platformView, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="static member UpdateBorder : obj * Microsoft.Maui.IView -&gt; unit" Usage="Microsoft.Maui.Platform.ViewExtensions.UpdateBorder (platformView, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="System.Object" RefType="this" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateClip">
+      <MemberSignature Language="C#" Value="public static void UpdateClip (this object platformView, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateClip(object platformView, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.UpdateClip(System.Object,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub UpdateClip (platformView As Object, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void UpdateClip(System::Object ^ platformView, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="static member UpdateClip : obj * Microsoft.Maui.IView -&gt; unit" Usage="Microsoft.Maui.Platform.ViewExtensions.UpdateClip (platformView, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="System.Object" RefType="this" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateClipsToBounds">
+      <MemberSignature Language="C#" Value="public static void UpdateClipsToBounds (this object platformView, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateClipsToBounds(object platformView, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.UpdateClipsToBounds(System.Object,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub UpdateClipsToBounds (platformView As Object, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void UpdateClipsToBounds(System::Object ^ platformView, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="static member UpdateClipsToBounds : obj * Microsoft.Maui.IView -&gt; unit" Usage="Microsoft.Maui.Platform.ViewExtensions.UpdateClipsToBounds (platformView, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="System.Object" RefType="this" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateFlowDirection">
+      <MemberSignature Language="C#" Value="public static void UpdateFlowDirection (this object platformView, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateFlowDirection(object platformView, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.UpdateFlowDirection(System.Object,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub UpdateFlowDirection (platformView As Object, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void UpdateFlowDirection(System::Object ^ platformView, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="static member UpdateFlowDirection : obj * Microsoft.Maui.IView -&gt; unit" Usage="Microsoft.Maui.Platform.ViewExtensions.UpdateFlowDirection (platformView, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="System.Object" RefType="this" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateHeight">
+      <MemberSignature Language="C#" Value="public static void UpdateHeight (this object platformView, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateHeight(object platformView, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.UpdateHeight(System.Object,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub UpdateHeight (platformView As Object, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void UpdateHeight(System::Object ^ platformView, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="static member UpdateHeight : obj * Microsoft.Maui.IView -&gt; unit" Usage="Microsoft.Maui.Platform.ViewExtensions.UpdateHeight (platformView, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="System.Object" RefType="this" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateInputTransparent">
+      <MemberSignature Language="C#" Value="public static void UpdateInputTransparent (this object nativeView, Microsoft.Maui.IViewHandler handler, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateInputTransparent(object nativeView, class Microsoft.Maui.IViewHandler handler, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.UpdateInputTransparent(System.Object,Microsoft.Maui.IViewHandler,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub UpdateInputTransparent (nativeView As Object, handler As IViewHandler, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void UpdateInputTransparent(System::Object ^ nativeView, Microsoft::Maui::IViewHandler ^ handler, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="static member UpdateInputTransparent : obj * Microsoft.Maui.IViewHandler * Microsoft.Maui.IView -&gt; unit" Usage="Microsoft.Maui.Platform.ViewExtensions.UpdateInputTransparent (nativeView, handler, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nativeView" Type="System.Object" RefType="this" />
+        <Parameter Name="handler" Type="Microsoft.Maui.IViewHandler" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="nativeView">To be added.</param>
+        <param name="handler">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateIsEnabled">
+      <MemberSignature Language="C#" Value="public static void UpdateIsEnabled (this object platformView, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateIsEnabled(object platformView, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.UpdateIsEnabled(System.Object,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub UpdateIsEnabled (platformView As Object, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void UpdateIsEnabled(System::Object ^ platformView, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="static member UpdateIsEnabled : obj * Microsoft.Maui.IView -&gt; unit" Usage="Microsoft.Maui.Platform.ViewExtensions.UpdateIsEnabled (platformView, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="System.Object" RefType="this" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateMaximumHeight">
+      <MemberSignature Language="C#" Value="public static void UpdateMaximumHeight (this object platformView, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateMaximumHeight(object platformView, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.UpdateMaximumHeight(System.Object,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub UpdateMaximumHeight (platformView As Object, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void UpdateMaximumHeight(System::Object ^ platformView, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="static member UpdateMaximumHeight : obj * Microsoft.Maui.IView -&gt; unit" Usage="Microsoft.Maui.Platform.ViewExtensions.UpdateMaximumHeight (platformView, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="System.Object" RefType="this" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateMaximumWidth">
+      <MemberSignature Language="C#" Value="public static void UpdateMaximumWidth (this object platformView, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateMaximumWidth(object platformView, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.UpdateMaximumWidth(System.Object,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub UpdateMaximumWidth (platformView As Object, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void UpdateMaximumWidth(System::Object ^ platformView, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="static member UpdateMaximumWidth : obj * Microsoft.Maui.IView -&gt; unit" Usage="Microsoft.Maui.Platform.ViewExtensions.UpdateMaximumWidth (platformView, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="System.Object" RefType="this" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateMinimumHeight">
+      <MemberSignature Language="C#" Value="public static void UpdateMinimumHeight (this object platformView, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateMinimumHeight(object platformView, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.UpdateMinimumHeight(System.Object,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub UpdateMinimumHeight (platformView As Object, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void UpdateMinimumHeight(System::Object ^ platformView, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="static member UpdateMinimumHeight : obj * Microsoft.Maui.IView -&gt; unit" Usage="Microsoft.Maui.Platform.ViewExtensions.UpdateMinimumHeight (platformView, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="System.Object" RefType="this" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateMinimumWidth">
+      <MemberSignature Language="C#" Value="public static void UpdateMinimumWidth (this object platformView, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateMinimumWidth(object platformView, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.UpdateMinimumWidth(System.Object,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub UpdateMinimumWidth (platformView As Object, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void UpdateMinimumWidth(System::Object ^ platformView, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="static member UpdateMinimumWidth : obj * Microsoft.Maui.IView -&gt; unit" Usage="Microsoft.Maui.Platform.ViewExtensions.UpdateMinimumWidth (platformView, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="System.Object" RefType="this" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateOpacity">
+      <MemberSignature Language="C#" Value="public static void UpdateOpacity (this object platformView, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateOpacity(object platformView, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.UpdateOpacity(System.Object,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub UpdateOpacity (platformView As Object, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void UpdateOpacity(System::Object ^ platformView, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="static member UpdateOpacity : obj * Microsoft.Maui.IView -&gt; unit" Usage="Microsoft.Maui.Platform.ViewExtensions.UpdateOpacity (platformView, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="System.Object" RefType="this" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateRotation">
+      <MemberSignature Language="C#" Value="public static void UpdateRotation (this object platformView, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateRotation(object platformView, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.UpdateRotation(System.Object,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub UpdateRotation (platformView As Object, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void UpdateRotation(System::Object ^ platformView, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="static member UpdateRotation : obj * Microsoft.Maui.IView -&gt; unit" Usage="Microsoft.Maui.Platform.ViewExtensions.UpdateRotation (platformView, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="System.Object" RefType="this" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateRotationX">
+      <MemberSignature Language="C#" Value="public static void UpdateRotationX (this object platformView, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateRotationX(object platformView, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.UpdateRotationX(System.Object,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub UpdateRotationX (platformView As Object, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void UpdateRotationX(System::Object ^ platformView, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="static member UpdateRotationX : obj * Microsoft.Maui.IView -&gt; unit" Usage="Microsoft.Maui.Platform.ViewExtensions.UpdateRotationX (platformView, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="System.Object" RefType="this" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateRotationY">
+      <MemberSignature Language="C#" Value="public static void UpdateRotationY (this object platformView, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateRotationY(object platformView, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.UpdateRotationY(System.Object,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub UpdateRotationY (platformView As Object, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void UpdateRotationY(System::Object ^ platformView, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="static member UpdateRotationY : obj * Microsoft.Maui.IView -&gt; unit" Usage="Microsoft.Maui.Platform.ViewExtensions.UpdateRotationY (platformView, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="System.Object" RefType="this" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateScale">
+      <MemberSignature Language="C#" Value="public static void UpdateScale (this object platformView, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateScale(object platformView, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.UpdateScale(System.Object,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub UpdateScale (platformView As Object, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void UpdateScale(System::Object ^ platformView, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="static member UpdateScale : obj * Microsoft.Maui.IView -&gt; unit" Usage="Microsoft.Maui.Platform.ViewExtensions.UpdateScale (platformView, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="System.Object" RefType="this" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateSemantics">
+      <MemberSignature Language="C#" Value="public static void UpdateSemantics (this object platformView, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateSemantics(object platformView, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.UpdateSemantics(System.Object,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub UpdateSemantics (platformView As Object, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void UpdateSemantics(System::Object ^ platformView, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="static member UpdateSemantics : obj * Microsoft.Maui.IView -&gt; unit" Usage="Microsoft.Maui.Platform.ViewExtensions.UpdateSemantics (platformView, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="System.Object" RefType="this" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateShadow">
+      <MemberSignature Language="C#" Value="public static void UpdateShadow (this object platformView, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateShadow(object platformView, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.UpdateShadow(System.Object,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub UpdateShadow (platformView As Object, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void UpdateShadow(System::Object ^ platformView, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="static member UpdateShadow : obj * Microsoft.Maui.IView -&gt; unit" Usage="Microsoft.Maui.Platform.ViewExtensions.UpdateShadow (platformView, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="System.Object" RefType="this" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateTranslationX">
+      <MemberSignature Language="C#" Value="public static void UpdateTranslationX (this object platformView, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateTranslationX(object platformView, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.UpdateTranslationX(System.Object,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub UpdateTranslationX (platformView As Object, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void UpdateTranslationX(System::Object ^ platformView, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="static member UpdateTranslationX : obj * Microsoft.Maui.IView -&gt; unit" Usage="Microsoft.Maui.Platform.ViewExtensions.UpdateTranslationX (platformView, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="System.Object" RefType="this" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateTranslationY">
+      <MemberSignature Language="C#" Value="public static void UpdateTranslationY (this object platformView, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateTranslationY(object platformView, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.UpdateTranslationY(System.Object,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub UpdateTranslationY (platformView As Object, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void UpdateTranslationY(System::Object ^ platformView, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="static member UpdateTranslationY : obj * Microsoft.Maui.IView -&gt; unit" Usage="Microsoft.Maui.Platform.ViewExtensions.UpdateTranslationY (platformView, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="System.Object" RefType="this" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateVisibility">
+      <MemberSignature Language="C#" Value="public static void UpdateVisibility (this object platformView, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateVisibility(object platformView, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.UpdateVisibility(System.Object,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub UpdateVisibility (platformView As Object, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void UpdateVisibility(System::Object ^ platformView, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="static member UpdateVisibility : obj * Microsoft.Maui.IView -&gt; unit" Usage="Microsoft.Maui.Platform.ViewExtensions.UpdateVisibility (platformView, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="System.Object" RefType="this" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateWidth">
+      <MemberSignature Language="C#" Value="public static void UpdateWidth (this object platformView, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateWidth(object platformView, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ViewExtensions.UpdateWidth(System.Object,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub UpdateWidth (platformView As Object, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void UpdateWidth(System::Object ^ platformView, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="static member UpdateWidth : obj * Microsoft.Maui.IView -&gt; unit" Usage="Microsoft.Maui.Platform.ViewExtensions.UpdateWidth (platformView, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="System.Object" RefType="this" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
