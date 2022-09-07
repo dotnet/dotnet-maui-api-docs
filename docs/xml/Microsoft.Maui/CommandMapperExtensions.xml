@@ -1,0 +1,154 @@
+<Type Name="CommandMapperExtensions" FullName="Microsoft.Maui.CommandMapperExtensions">
+  <TypeSignature Language="C#" Value="public static class CommandMapperExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit CommandMapperExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.CommandMapperExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module CommandMapperExtensions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CommandMapperExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type CommandMapperExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AppendToMapping&lt;TVirtualView,TViewHandler&gt;">
+      <MemberSignature Language="C#" Value="public static void AppendToMapping&lt;TVirtualView,TViewHandler&gt; (this Microsoft.Maui.CommandMapper&lt;TVirtualView,TViewHandler&gt; commandMapper, string key, Action&lt;TViewHandler,TVirtualView,object?&gt; method) where TVirtualView : Microsoft.Maui.IElement where TViewHandler : Microsoft.Maui.IElementHandler;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AppendToMapping&lt;(class Microsoft.Maui.IElement) TVirtualView, (class Microsoft.Maui.IElementHandler) TViewHandler&gt;(class Microsoft.Maui.CommandMapper`2&lt;!!TVirtualView, !!TViewHandler&gt; commandMapper, string key, class System.Action`3&lt;!!TViewHandler, !!TVirtualView, object&gt; method) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.CommandMapperExtensions.AppendToMapping``2(Microsoft.Maui.CommandMapper{``0,``1},System.String,System.Action{``1,``0,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub AppendToMapping(Of TVirtualView As IElement, TViewHandler As IElement) (commandMapper As CommandMapper(Of TVirtualView, TViewHandler), key As String, method As Action(Of TViewHandler, TVirtualView, Object))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TVirtualView, typename TViewHandler&gt;&#xA; where TVirtualView : Microsoft::Maui::IElement where TViewHandler : Microsoft::Maui::IElementHandler[System::Runtime::CompilerServices::Extension]&#xA; static void AppendToMapping(Microsoft::Maui::CommandMapper&lt;TVirtualView, TViewHandler&gt; ^ commandMapper, System::String ^ key, Action&lt;TViewHandler, TVirtualView, System::Object ^&gt; ^ method);" />
+      <MemberSignature Language="F#" Value="static member AppendToMapping : Microsoft.Maui.CommandMapper&lt;'VirtualView, 'ViewHandler (requires 'VirtualView :&gt; Microsoft.Maui.IElement and 'ViewHandler :&gt; Microsoft.Maui.IElementHandler)&gt; * string * Action&lt;'ViewHandler, 'VirtualView, obj (requires 'ViewHandler :&gt; Microsoft.Maui.IElementHandler and 'VirtualView :&gt; Microsoft.Maui.IElement)&gt; -&gt; unit (requires 'VirtualView :&gt; Microsoft.Maui.IElement and 'ViewHandler :&gt; Microsoft.Maui.IElementHandler)" Usage="Microsoft.Maui.CommandMapperExtensions.AppendToMapping (commandMapper, key, method)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TVirtualView">
+          <Constraints>
+            <InterfaceName>Microsoft.Maui.IElement</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TViewHandler">
+          <Constraints>
+            <InterfaceName>Microsoft.Maui.IElementHandler</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="commandMapper" Type="Microsoft.Maui.CommandMapper&lt;TVirtualView,TViewHandler&gt;" RefType="this" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="method" Type="System.Action&lt;TViewHandler,TVirtualView,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TVirtualView">The cross-platform type.</typeparam>
+        <typeparam name="TViewHandler">The handler type.</typeparam>
+        <param name="commandMapper">The command mapper in which to change the mapping.</param>
+        <param name="key">The name of the command.</param>
+        <param name="method">The method to call after the existing mapping is finished.</param>
+        <summary>
+            Specify a method to be run after an existing command mapping.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifyMapping&lt;TVirtualView,TViewHandler&gt;">
+      <MemberSignature Language="C#" Value="public static void ModifyMapping&lt;TVirtualView,TViewHandler&gt; (this Microsoft.Maui.CommandMapper&lt;TVirtualView,TViewHandler&gt; commandMapper, string key, Action&lt;TViewHandler,TVirtualView,object?,Action&lt;Microsoft.Maui.IElementHandler,Microsoft.Maui.IElement,object?&gt;?&gt; method) where TVirtualView : Microsoft.Maui.IElement where TViewHandler : Microsoft.Maui.IElementHandler;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ModifyMapping&lt;(class Microsoft.Maui.IElement) TVirtualView, (class Microsoft.Maui.IElementHandler) TViewHandler&gt;(class Microsoft.Maui.CommandMapper`2&lt;!!TVirtualView, !!TViewHandler&gt; commandMapper, string key, class System.Action`4&lt;!!TViewHandler, !!TVirtualView, object, class System.Action`3&lt;class Microsoft.Maui.IElementHandler, class Microsoft.Maui.IElement, object&gt;&gt; method) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.CommandMapperExtensions.ModifyMapping``2(Microsoft.Maui.CommandMapper{``0,``1},System.String,System.Action{``1,``0,System.Object,System.Action{Microsoft.Maui.IElementHandler,Microsoft.Maui.IElement,System.Object}})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub ModifyMapping(Of TVirtualView As IElement, TViewHandler As IElement) (commandMapper As CommandMapper(Of TVirtualView, TViewHandler), key As String, method As Action(Of TViewHandler, TVirtualView, Object, Action(Of IElementHandler, IElement, Object)))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TVirtualView, typename TViewHandler&gt;&#xA; where TVirtualView : Microsoft::Maui::IElement where TViewHandler : Microsoft::Maui::IElementHandler[System::Runtime::CompilerServices::Extension]&#xA; static void ModifyMapping(Microsoft::Maui::CommandMapper&lt;TVirtualView, TViewHandler&gt; ^ commandMapper, System::String ^ key, Action&lt;TViewHandler, TVirtualView, System::Object ^, Action&lt;Microsoft::Maui::IElementHandler ^, Microsoft::Maui::IElement ^, System::Object ^&gt; ^&gt; ^ method);" />
+      <MemberSignature Language="F#" Value="static member ModifyMapping : Microsoft.Maui.CommandMapper&lt;'VirtualView, 'ViewHandler (requires 'VirtualView :&gt; Microsoft.Maui.IElement and 'ViewHandler :&gt; Microsoft.Maui.IElementHandler)&gt; * string * Action&lt;'ViewHandler, 'VirtualView, obj, Action&lt;Microsoft.Maui.IElementHandler, Microsoft.Maui.IElement, obj&gt; (requires 'ViewHandler :&gt; Microsoft.Maui.IElementHandler and 'VirtualView :&gt; Microsoft.Maui.IElement)&gt; -&gt; unit (requires 'VirtualView :&gt; Microsoft.Maui.IElement and 'ViewHandler :&gt; Microsoft.Maui.IElementHandler)" Usage="Microsoft.Maui.CommandMapperExtensions.ModifyMapping (commandMapper, key, method)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TVirtualView">
+          <Constraints>
+            <InterfaceName>Microsoft.Maui.IElement</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TViewHandler">
+          <Constraints>
+            <InterfaceName>Microsoft.Maui.IElementHandler</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="commandMapper" Type="Microsoft.Maui.CommandMapper&lt;TVirtualView,TViewHandler&gt;" RefType="this" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="method" Type="System.Action&lt;TViewHandler,TVirtualView,System.Object,System.Action&lt;Microsoft.Maui.IElementHandler,Microsoft.Maui.IElement,System.Object&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TVirtualView">The cross-platform type.</typeparam>
+        <typeparam name="TViewHandler">The handler type.</typeparam>
+        <param name="commandMapper">The command mapper in which to change the mapping.</param>
+        <param name="key">The name of the command.</param>
+        <param name="method">The modified method to call when the command is updated.</param>
+        <summary>
+            Modify a command mapping in place.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrependToMapping&lt;TVirtualView,TViewHandler&gt;">
+      <MemberSignature Language="C#" Value="public static void PrependToMapping&lt;TVirtualView,TViewHandler&gt; (this Microsoft.Maui.CommandMapper&lt;TVirtualView,TViewHandler&gt; commandMapper, string key, Action&lt;TViewHandler,TVirtualView,object?&gt; method) where TVirtualView : Microsoft.Maui.IElement where TViewHandler : Microsoft.Maui.IElementHandler;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void PrependToMapping&lt;(class Microsoft.Maui.IElement) TVirtualView, (class Microsoft.Maui.IElementHandler) TViewHandler&gt;(class Microsoft.Maui.CommandMapper`2&lt;!!TVirtualView, !!TViewHandler&gt; commandMapper, string key, class System.Action`3&lt;!!TViewHandler, !!TVirtualView, object&gt; method) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.CommandMapperExtensions.PrependToMapping``2(Microsoft.Maui.CommandMapper{``0,``1},System.String,System.Action{``1,``0,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub PrependToMapping(Of TVirtualView As IElement, TViewHandler As IElement) (commandMapper As CommandMapper(Of TVirtualView, TViewHandler), key As String, method As Action(Of TViewHandler, TVirtualView, Object))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TVirtualView, typename TViewHandler&gt;&#xA; where TVirtualView : Microsoft::Maui::IElement where TViewHandler : Microsoft::Maui::IElementHandler[System::Runtime::CompilerServices::Extension]&#xA; static void PrependToMapping(Microsoft::Maui::CommandMapper&lt;TVirtualView, TViewHandler&gt; ^ commandMapper, System::String ^ key, Action&lt;TViewHandler, TVirtualView, System::Object ^&gt; ^ method);" />
+      <MemberSignature Language="F#" Value="static member PrependToMapping : Microsoft.Maui.CommandMapper&lt;'VirtualView, 'ViewHandler (requires 'VirtualView :&gt; Microsoft.Maui.IElement and 'ViewHandler :&gt; Microsoft.Maui.IElementHandler)&gt; * string * Action&lt;'ViewHandler, 'VirtualView, obj (requires 'ViewHandler :&gt; Microsoft.Maui.IElementHandler and 'VirtualView :&gt; Microsoft.Maui.IElement)&gt; -&gt; unit (requires 'VirtualView :&gt; Microsoft.Maui.IElement and 'ViewHandler :&gt; Microsoft.Maui.IElementHandler)" Usage="Microsoft.Maui.CommandMapperExtensions.PrependToMapping (commandMapper, key, method)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TVirtualView">
+          <Constraints>
+            <InterfaceName>Microsoft.Maui.IElement</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TViewHandler">
+          <Constraints>
+            <InterfaceName>Microsoft.Maui.IElementHandler</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="commandMapper" Type="Microsoft.Maui.CommandMapper&lt;TVirtualView,TViewHandler&gt;" RefType="this" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="method" Type="System.Action&lt;TViewHandler,TVirtualView,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TVirtualView">The cross-platform type.</typeparam>
+        <typeparam name="TViewHandler">The handler type.</typeparam>
+        <param name="commandMapper">The command mapper in which to change the mapping.</param>
+        <param name="key">The name of the command.</param>
+        <param name="method">The method to call before the existing mapping begins.</param>
+        <summary>
+            Specify a method to be run before an existing command mapping.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

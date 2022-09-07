@@ -1,0 +1,197 @@
+<Type Name="MainThread" FullName="Microsoft.Maui.ApplicationModel.MainThread">
+  <TypeSignature Language="C#" Value="public static class MainThread" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MainThread extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.ApplicationModel.MainThread" />
+  <TypeSignature Language="VB.NET" Value="Public Class MainThread" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MainThread abstract sealed" />
+  <TypeSignature Language="F#" Value="type MainThread = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Main Thread helpers.</summary>
+    <remarks>Main Thread helpers.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BeginInvokeOnMainThread">
+      <MemberSignature Language="C#" Value="public static void BeginInvokeOnMainThread (Action action);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void BeginInvokeOnMainThread(class System.Action action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ApplicationModel.MainThread.BeginInvokeOnMainThread(System.Action)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub BeginInvokeOnMainThread (action As Action)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void BeginInvokeOnMainThread(Action ^ action);" />
+      <MemberSignature Language="F#" Value="static member BeginInvokeOnMainThread : Action -&gt; unit" Usage="Microsoft.Maui.ApplicationModel.MainThread.BeginInvokeOnMainThread action" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="action" Type="System.Action" />
+      </Parameters>
+      <Docs>
+        <param name="action">Action to execute.</param>
+        <summary>Invokes an action on the main thread of the application.</summary>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="GetMainThreadSynchronizationContextAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Threading.SynchronizationContext&gt; GetMainThreadSynchronizationContextAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Threading.SynchronizationContext&gt; GetMainThreadSynchronizationContextAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ApplicationModel.MainThread.GetMainThreadSynchronizationContextAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetMainThreadSynchronizationContextAsync () As Task(Of SynchronizationContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;System::Threading::SynchronizationContext ^&gt; ^ GetMainThreadSynchronizationContextAsync();" />
+      <MemberSignature Language="F#" Value="static member GetMainThreadSynchronizationContextAsync : unit -&gt; System.Threading.Tasks.Task&lt;System.Threading.SynchronizationContext&gt;" Usage="Microsoft.Maui.ApplicationModel.MainThread.GetMainThreadSynchronizationContextAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Threading.SynchronizationContext&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the main thread synchonization context</summary>
+        <returns>The syncrhonization context for the main thread</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeOnMainThreadAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task InvokeOnMainThreadAsync (Action action);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task InvokeOnMainThreadAsync(class System.Action action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ApplicationModel.MainThread.InvokeOnMainThreadAsync(System.Action)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function InvokeOnMainThreadAsync (action As Action) As Task" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task ^ InvokeOnMainThreadAsync(Action ^ action);" />
+      <MemberSignature Language="F#" Value="static member InvokeOnMainThreadAsync : Action -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Maui.ApplicationModel.MainThread.InvokeOnMainThreadAsync action" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="action" Type="System.Action" />
+      </Parameters>
+      <Docs>
+        <param name="action">Action to invoke</param>
+        <summary>Invoke the main thread aysnc</summary>
+        <returns>A task that can be awaited</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeOnMainThreadAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task InvokeOnMainThreadAsync (Func&lt;System.Threading.Tasks.Task&gt; funcTask);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task InvokeOnMainThreadAsync(class System.Func`1&lt;class System.Threading.Tasks.Task&gt; funcTask) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ApplicationModel.MainThread.InvokeOnMainThreadAsync(System.Func{System.Threading.Tasks.Task})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function InvokeOnMainThreadAsync (funcTask As Func(Of Task)) As Task" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task ^ InvokeOnMainThreadAsync(Func&lt;System::Threading::Tasks::Task ^&gt; ^ funcTask);" />
+      <MemberSignature Language="F#" Value="static member InvokeOnMainThreadAsync : Func&lt;System.Threading.Tasks.Task&gt; -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Maui.ApplicationModel.MainThread.InvokeOnMainThreadAsync funcTask" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="funcTask" Type="System.Func&lt;System.Threading.Tasks.Task&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="funcTask">A function task to execute</param>
+        <summary>Invoke the main thread aysnc</summary>
+        <returns>A task that can be awaited</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeOnMainThreadAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;T&gt; InvokeOnMainThreadAsync&lt;T&gt; (Func&lt;System.Threading.Tasks.Task&lt;T&gt;&gt; funcTask);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;!!T&gt; InvokeOnMainThreadAsync&lt;T&gt;(class System.Func`1&lt;class System.Threading.Tasks.Task`1&lt;!!T&gt;&gt; funcTask) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ApplicationModel.MainThread.InvokeOnMainThreadAsync``1(System.Func{System.Threading.Tasks.Task{``0}})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function InvokeOnMainThreadAsync(Of T) (funcTask As Func(Of Task(Of T))) As Task(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Threading::Tasks::Task&lt;T&gt; ^ InvokeOnMainThreadAsync(Func&lt;System::Threading::Tasks::Task&lt;T&gt; ^&gt; ^ funcTask);" />
+      <MemberSignature Language="F#" Value="static member InvokeOnMainThreadAsync : Func&lt;System.Threading.Tasks.Task&lt;'T&gt;&gt; -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="Microsoft.Maui.ApplicationModel.MainThread.InvokeOnMainThreadAsync funcTask" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="funcTask" Type="System.Func&lt;System.Threading.Tasks.Task&lt;T&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="funcTask">A function task to execute</param>
+        <summary>Invoke the main thread aysnc</summary>
+        <returns>A task that can be awaited</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeOnMainThreadAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;T&gt; InvokeOnMainThreadAsync&lt;T&gt; (Func&lt;T&gt; func);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;!!T&gt; InvokeOnMainThreadAsync&lt;T&gt;(class System.Func`1&lt;!!T&gt; func) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ApplicationModel.MainThread.InvokeOnMainThreadAsync``1(System.Func{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function InvokeOnMainThreadAsync(Of T) (func As Func(Of T)) As Task(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Threading::Tasks::Task&lt;T&gt; ^ InvokeOnMainThreadAsync(Func&lt;T&gt; ^ func);" />
+      <MemberSignature Language="F#" Value="static member InvokeOnMainThreadAsync : Func&lt;'T&gt; -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="Microsoft.Maui.ApplicationModel.MainThread.InvokeOnMainThreadAsync func" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="func" Type="System.Func&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="func">A function to execute</param>
+        <summary>Invoke the main thread aysnc</summary>
+        <returns>A task that can be awaited</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsMainThread">
+      <MemberSignature Language="C#" Value="public static bool IsMainThread { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsMainThread" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.ApplicationModel.MainThread.IsMainThread" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsMainThread As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsMainThread { bool get(); };" />
+      <MemberSignature Language="F#" Value="static member IsMainThread : bool" Usage="Microsoft.Maui.ApplicationModel.MainThread.IsMainThread" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets if it is the current main UI thread.</summary>
+        <value>If main thread.</value>
+        <remarks />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

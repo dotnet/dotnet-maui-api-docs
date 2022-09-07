@@ -1,0 +1,457 @@
+<Type Name="TableView" FullName="Microsoft.Maui.Controls.TableView">
+  <TypeSignature Language="C#" Value="public class TableView : Microsoft.Maui.Controls.View, Microsoft.Maui.Controls.IElementConfiguration&lt;Microsoft.Maui.Controls.TableView&gt;, Microsoft.Maui.Controls.ITableViewController, Microsoft.Maui.IVisualTreeElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TableView extends Microsoft.Maui.Controls.View implements class Microsoft.Maui.Controls.IElementConfiguration`1&lt;class Microsoft.Maui.Controls.TableView&gt;, class Microsoft.Maui.Controls.ITableViewController, class Microsoft.Maui.IVisualTreeElement" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.TableView" />
+  <TypeSignature Language="VB.NET" Value="Public Class TableView&#xA;Inherits View&#xA;Implements IElementConfiguration(Of TableView), ITableViewController, IVisualTreeElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TableView : Microsoft::Maui::Controls::View, Microsoft::Maui::Controls::IElementConfiguration&lt;Microsoft::Maui::Controls::TableView ^&gt;, Microsoft::Maui::Controls::ITableViewController, Microsoft::Maui::IVisualTreeElement" />
+  <TypeSignature Language="F#" Value="type TableView = class&#xA;    inherit View&#xA;    interface ITableViewController&#xA;    interface IElementConfiguration&lt;TableView&gt;&#xA;    interface IVisualTreeElement" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Maui.Controls.View</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.Controls.IElementConfiguration&lt;Microsoft.Maui.Controls.TableView&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.Controls.ITableViewController</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IVisualTreeElement</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.Maui.Controls.ContentProperty("Root")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Maui.Controls.ContentProperty("Root")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>A <see cref="T:Microsoft.Maui.Controls.View" /> that holds rows of <see cref="T:Microsoft.Maui.Controls.Cell" /> elements.</summary>
+    <remarks>
+      <para>A <see cref="T:Microsoft.Maui.Controls.TableView" /> has a <see cref="T:Microsoft.Maui.Controls.TableRoot" /> as its <see cref="P:Microsoft.Maui.Controls.TableView.Root" /> property. The <see cref="T:Microsoft.Maui.Controls.TableRoot" /> is a type of <see cref="T:Microsoft.Maui.Controls.TableSection" />. </para>
+      <para>The following example shows a basic table with two sections.</para>
+      <example>
+        <code lang="csharp lang-csharp"><![CDATA[
+public class App : Application
+{
+    public App()
+    {
+        MainPage = new ContentPage {
+            Content = new TableView {
+                Intent = TableIntent.Form,
+                Root = new TableRoot ("Table Title") {
+                    new TableSection ("Section 1 Title") {
+                        new TextCell {
+                            Text = "TextCell Text",
+                            Detail = "TextCell Detail"
+                        },
+                        new EntryCell {
+                            Label = "EntryCell:",
+                            Placeholder = "default keyboard",
+                            Keyboard = Keyboard.Default
+                        }
+                    },
+                    new TableSection ("Section 2 Title") {
+                        new EntryCell {
+                            Label = "Another EntryCell:",
+                            Placeholder = "phone keyboard",
+                            Keyboard = Keyboard.Telephone
+                        },
+                        new SwitchCell {
+                            Text = "SwitchCell:"
+                        }
+                    }
+                }
+            }
+        }; 
+    }
+    // OnStart, OnSleep, OnResume overrides omitted...
+}          
+          ]]></code>
+      </example>
+      <para>
+        <img href="~/xml/Microsoft.Maui.Controls/_images/TableView.TripleScreenShot.png" />
+      </para>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TableView ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.TableView.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TableView();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new <see cref="T:Microsoft.Maui.Controls.TableView" /> instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TableView (Microsoft.Maui.Controls.TableRoot root);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Maui.Controls.TableRoot root) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.TableView.#ctor(Microsoft.Maui.Controls.TableRoot)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (root As TableRoot)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TableView(Microsoft::Maui::Controls::TableRoot ^ root);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.Controls.TableView : Microsoft.Maui.Controls.TableRoot -&gt; Microsoft.Maui.Controls.TableView" Usage="new Microsoft.Maui.Controls.TableView root" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="root" Type="Microsoft.Maui.Controls.TableRoot" />
+      </Parameters>
+      <Docs>
+        <param name="root">The root of the table view.</param>
+        <summary>Initializes a new <see cref="T:Microsoft.Maui.Controls.TableView" /> instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasUnevenRows">
+      <MemberSignature Language="C#" Value="public bool HasUnevenRows { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasUnevenRows" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.TableView.HasUnevenRows" />
+      <MemberSignature Language="VB.NET" Value="Public Property HasUnevenRows As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasUnevenRows { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HasUnevenRows : bool with get, set" Usage="Microsoft.Maui.Controls.TableView.HasUnevenRows" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the rows that are contained in this <see cref="T:Microsoft.Maui.Controls.TableView" /> can have uneven rows.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>When the <see cref="P:Microsoft.Maui.Controls.TableView.HasUnevenRows" /> property is <see langword="true" />, application developers can set the <see cref="P:Microsoft.Maui.Controls.Cell.Height" /> properties to control the height of <see cref="T:Microsoft.Maui.Controls.Cell" /> items in the table. When the <see cref="P:Microsoft.Maui.Controls.TableView.HasUnevenRows" /> property is <see langword="true" />, the <see cref="P:Microsoft.Maui.Controls.TableView.RowHeight" /> property is ignored. When the <see cref="P:Microsoft.Maui.Controls.TableView.HasUnevenRows" /> property is <see langword="false" />, app developers can set the <see cref="P:Microsoft.Maui.Controls.TableView.RowHeight" /> property to set the height of all Cells, and their individual <see cref="P:Microsoft.Maui.Controls.Cell.Height" /> properties are ignored.</para>
+          <para>Note: developers must specify row heights on the iOS platform, even when <see cref="P:Microsoft.Maui.Controls.TableView.HasUnevenRows" /> is <see langword="true" />.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasUnevenRowsProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty HasUnevenRowsProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty HasUnevenRowsProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TableView.HasUnevenRowsProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HasUnevenRowsProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ HasUnevenRowsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HasUnevenRowsProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.TableView.HasUnevenRowsProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Backing store for the HasUnevenRows property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Intent">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.TableIntent Intent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.Controls.TableIntent Intent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.TableView.Intent" />
+      <MemberSignature Language="VB.NET" Value="Public Property Intent As TableIntent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::TableIntent Intent { Microsoft::Maui::Controls::TableIntent get(); void set(Microsoft::Maui::Controls::TableIntent value); };" />
+      <MemberSignature Language="F#" Value="member this.Intent : Microsoft.Maui.Controls.TableIntent with get, set" Usage="Microsoft.Maui.Controls.TableView.Intent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.TableIntent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the intent of the table.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Controls.ITableViewController.Model">
+      <MemberSignature Language="C#" Value="Microsoft.Maui.Controls.ITableModel Microsoft.Maui.Controls.ITableViewController.Model { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.ITableModel Microsoft.Maui.Controls.ITableViewController.Model" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.TableView.Microsoft#Maui#Controls#ITableViewController#Model" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Model As ITableModel Implements ITableViewController.Model" />
+      <MemberSignature Language="C++ CLI" Value="property Microsoft::Maui::Controls::ITableModel ^ Microsoft::Maui::Controls::ITableViewController::Model { Microsoft::Maui::Controls::ITableModel ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.Controls.ITableViewController.Model : Microsoft.Maui.Controls.ITableModel" Usage="Microsoft.Maui.Controls.ITableViewController.Model" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.Controls.ITableViewController.Model</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.ITableModel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IVisualTreeElement.GetVisualChildren">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IVisualTreeElement&gt; IVisualTreeElement.GetVisualChildren ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Maui.IVisualTreeElement&gt; Microsoft.Maui.IVisualTreeElement.GetVisualChildren() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.TableView.Microsoft#Maui#IVisualTreeElement#GetVisualChildren" />
+      <MemberSignature Language="VB.NET" Value="Function GetVisualChildren () As IReadOnlyList(Of IVisualTreeElement) Implements IVisualTreeElement.GetVisualChildren" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IReadOnlyList&lt;Microsoft::Maui::IVisualTreeElement ^&gt; ^ Microsoft.Maui.IVisualTreeElement.GetVisualChildren() = Microsoft::Maui::IVisualTreeElement::GetVisualChildren;" />
+      <MemberSignature Language="F#" Value="override this.Microsoft.Maui.IVisualTreeElement.GetVisualChildren : unit -&gt; System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IVisualTreeElement&gt;" Usage="tableView.Microsoft.Maui.IVisualTreeElement.GetVisualChildren " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.IVisualTreeElement.GetVisualChildren</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IVisualTreeElement&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Model">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.Internals.TableModel Model { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.Internals.TableModel Model" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.TableView.Model" />
+      <MemberSignature Language="VB.NET" Value="Public Property Model As TableModel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::Internals::TableModel ^ Model { Microsoft::Maui::Controls::Internals::TableModel ^ get(); void set(Microsoft::Maui::Controls::Internals::TableModel ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Model : Microsoft.Maui.Controls.Internals.TableModel with get, set" Usage="Microsoft.Maui.Controls.TableView.Model" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.Internals.TableModel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModelChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler ModelChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ModelChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.TableView.ModelChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ModelChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ ModelChanged;" />
+      <MemberSignature Language="F#" Value="member this.ModelChanged : EventHandler " Usage="member this.ModelChanged : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Microsoft.Maui.Controls.ITableViewController.ModelChanged</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="On&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;T,Microsoft.Maui.Controls.TableView&gt; On&lt;T&gt; () where T : Microsoft.Maui.Controls.IConfigPlatform;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Maui.Controls.IPlatformElementConfiguration`2&lt;!!T, class Microsoft.Maui.Controls.TableView&gt; On&lt;(class Microsoft.Maui.Controls.IConfigPlatform) T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.TableView.On``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function On(Of T As IConfigPlatform) () As IPlatformElementConfiguration(Of T, TableView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : Microsoft::Maui::Controls::IConfigPlatform virtual Microsoft::Maui::Controls::IPlatformElementConfiguration&lt;T, Microsoft::Maui::Controls::TableView ^&gt; ^ On();" />
+      <MemberSignature Language="F#" Value="abstract member On : unit -&gt; Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;'T, Microsoft.Maui.Controls.TableView (requires 'T :&gt; Microsoft.Maui.Controls.IConfigPlatform)&gt; (requires 'T :&gt; Microsoft.Maui.Controls.IConfigPlatform)&#xA;override this.On : unit -&gt; Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;'T, Microsoft.Maui.Controls.TableView (requires 'T :&gt; Microsoft.Maui.Controls.IConfigPlatform)&gt; (requires 'T :&gt; Microsoft.Maui.Controls.IConfigPlatform)" Usage="tableView.On " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.IElementConfiguration`1.On``1</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;T,Microsoft.Maui.Controls.TableView&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>Microsoft.Maui.Controls.IConfigPlatform</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <!-- No matching elements were found for the following include tag -->
+        <include file="../../docs/Microsoft.Maui.Controls/TableView.xml" path="//Member[@MemberName='On']/Docs/*" />
+      </Docs>
+    </Member>
+    <Member MemberName="OnBindingContextChanged">
+      <MemberSignature Language="C#" Value="protected override void OnBindingContextChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnBindingContextChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.TableView.OnBindingContextChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnBindingContextChanged ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnBindingContextChanged();" />
+      <MemberSignature Language="F#" Value="override this.OnBindingContextChanged : unit -&gt; unit" Usage="tableView.OnBindingContextChanged " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMeasure">
+      <MemberSignature Language="C#" Value="protected override Microsoft.Maui.SizeRequest OnMeasure (double widthConstraint, double heightConstraint);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype Microsoft.Maui.SizeRequest OnMeasure(float64 widthConstraint, float64 heightConstraint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.TableView.OnMeasure(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnMeasure (widthConstraint As Double, heightConstraint As Double) As SizeRequest" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Microsoft::Maui::SizeRequest OnMeasure(double widthConstraint, double heightConstraint);" />
+      <MemberSignature Language="F#" Value="override this.OnMeasure : double * double -&gt; Microsoft.Maui.SizeRequest" Usage="tableView.OnMeasure (widthConstraint, heightConstraint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.SizeRequest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="widthConstraint" Type="System.Double" />
+        <Parameter Name="heightConstraint" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="widthConstraint">To be added.</param>
+        <param name="heightConstraint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnModelChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnModelChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnModelChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.TableView.OnModelChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnModelChanged ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnModelChanged();" />
+      <MemberSignature Language="F#" Value="abstract member OnModelChanged : unit -&gt; unit&#xA;override this.OnModelChanged : unit -&gt; unit" Usage="tableView.OnModelChanged " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Root">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.TableRoot Root { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.TableRoot Root" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.TableView.Root" />
+      <MemberSignature Language="VB.NET" Value="Public Property Root As TableRoot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::TableRoot ^ Root { Microsoft::Maui::Controls::TableRoot ^ get(); void set(Microsoft::Maui::Controls::TableRoot ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Root : Microsoft.Maui.Controls.TableRoot with get, set" Usage="Microsoft.Maui.Controls.TableView.Root" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.TableRoot</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the root of the table.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowHeight">
+      <MemberSignature Language="C#" Value="public int RowHeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RowHeight" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.TableView.RowHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property RowHeight As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowHeight { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.RowHeight : int with get, set" Usage="Microsoft.Maui.Controls.TableView.RowHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An integer that describes the height of the items in the list. This is ignored if HasUnevenRows is true.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowHeightProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty RowHeightProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty RowHeightProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TableView.RowHeightProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RowHeightProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ RowHeightProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable RowHeightProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.TableView.RowHeightProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Backing store for the row height property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,90 @@
+<Type Name="PlatformConfigurationRegistry&lt;TElement&gt;" FullName="Microsoft.Maui.Controls.PlatformConfigurationRegistry&lt;TElement&gt;">
+  <TypeSignature Language="C#" Value="public class PlatformConfigurationRegistry&lt;TElement&gt; : Microsoft.Maui.Controls.IElementConfiguration&lt;TElement&gt; where TElement : Element" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PlatformConfigurationRegistry`1&lt;(class Microsoft.Maui.Controls.Element) TElement&gt; extends System.Object implements class Microsoft.Maui.Controls.IElementConfiguration`1&lt;!TElement&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.PlatformConfigurationRegistry`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class PlatformConfigurationRegistry(Of TElement)&#xA;Implements IElementConfiguration(Of TElement)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TElement&gt;&#xA; where TElement : Elementpublic ref class PlatformConfigurationRegistry : Microsoft::Maui::Controls::IElementConfiguration&lt;TElement&gt;" />
+  <TypeSignature Language="F#" Value="type PlatformConfigurationRegistry&lt;'Element (requires 'Element :&gt; Element)&gt; = class&#xA;    interface IElementConfiguration&lt;'Element (requires 'Element :&gt; Element)&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TElement">
+      <Constraints>
+        <BaseTypeName>Microsoft.Maui.Controls.Element</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.Controls.IElementConfiguration&lt;TElement&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TElement">The Element type</typeparam>
+    <summary>
+            Helper that handles storing and lookup of platform specifics implementations
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PlatformConfigurationRegistry (TElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!TElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.PlatformConfigurationRegistry`1.#ctor(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (element As TElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PlatformConfigurationRegistry(TElement element);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.Controls.PlatformConfigurationRegistry&lt;'Element (requires 'Element :&gt; Microsoft.Maui.Controls.Element)&gt; : 'Element -&gt; Microsoft.Maui.Controls.PlatformConfigurationRegistry&lt;'Element (requires 'Element :&gt; Microsoft.Maui.Controls.Element)&gt;" Usage="new Microsoft.Maui.Controls.PlatformConfigurationRegistry&lt;'Element (requires 'Element :&gt; Microsoft.Maui.Controls.Element)&gt; element" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="element" Type="TElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="On&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;T,TElement&gt; On&lt;T&gt; () where T : Microsoft.Maui.Controls.IConfigPlatform;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Maui.Controls.IPlatformElementConfiguration`2&lt;!!T, !TElement&gt; On&lt;(class Microsoft.Maui.Controls.IConfigPlatform) T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.PlatformConfigurationRegistry`1.On``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function On(Of T As IConfigPlatform) () As IPlatformElementConfiguration(Of T, TElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : Microsoft::Maui::Controls::IConfigPlatform virtual Microsoft::Maui::Controls::IPlatformElementConfiguration&lt;T, TElement&gt; ^ On();" />
+      <MemberSignature Language="F#" Value="abstract member On : unit -&gt; Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;'T, 'Element (requires 'T :&gt; Microsoft.Maui.Controls.IConfigPlatform and 'Element :&gt; Microsoft.Maui.Controls.Element)&gt; (requires 'T :&gt; Microsoft.Maui.Controls.IConfigPlatform)&#xA;override this.On : unit -&gt; Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;'T, 'Element (requires 'T :&gt; Microsoft.Maui.Controls.IConfigPlatform and 'Element :&gt; Microsoft.Maui.Controls.Element)&gt; (requires 'T :&gt; Microsoft.Maui.Controls.IConfigPlatform)" Usage="platformConfigurationRegistry.On " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.IElementConfiguration`1.On``1</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;T,TElement&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>Microsoft.Maui.Controls.IConfigPlatform</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

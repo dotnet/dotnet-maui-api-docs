@@ -1,0 +1,468 @@
+<Type Name="TableModel" FullName="Microsoft.Maui.Controls.Internals.TableModel">
+  <TypeSignature Language="C#" Value="public abstract class TableModel : Microsoft.Maui.Controls.ITableModel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TableModel extends System.Object implements class Microsoft.Maui.Controls.ITableModel" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Internals.TableModel" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class TableModel&#xA;Implements ITableModel" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TableModel abstract : Microsoft::Maui::Controls::ITableModel" />
+  <TypeSignature Language="F#" Value="type TableModel = class&#xA;    interface ITableModel" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.Controls.ITableModel</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected TableModel ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Internals.TableModel.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TableModel();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCell">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.Maui.Controls.Cell GetCell (int section, int row);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Maui.Controls.Cell GetCell(int32 section, int32 row) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Internals.TableModel.GetCell(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCell (section As Integer, row As Integer) As Cell" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Maui::Controls::Cell ^ GetCell(int section, int row);" />
+      <MemberSignature Language="F#" Value="abstract member GetCell : int * int -&gt; Microsoft.Maui.Controls.Cell&#xA;override this.GetCell : int * int -&gt; Microsoft.Maui.Controls.Cell" Usage="tableModel.GetCell (section, row)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.ITableModel.GetCell(System.Int32,System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.Cell</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="section" Type="System.Int32" />
+        <Parameter Name="row" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="section">For internal use by the Microsoft.Maui.Controls platform.</param>
+        <param name="row">For internal use by the Microsoft.Maui.Controls platform.</param>
+        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <returns>For internal use by the Microsoft.Maui.Controls platform.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHeaderCell">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.Maui.Controls.Cell GetHeaderCell (int section);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Maui.Controls.Cell GetHeaderCell(int32 section) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Internals.TableModel.GetHeaderCell(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetHeaderCell (section As Integer) As Cell" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Maui::Controls::Cell ^ GetHeaderCell(int section);" />
+      <MemberSignature Language="F#" Value="abstract member GetHeaderCell : int -&gt; Microsoft.Maui.Controls.Cell&#xA;override this.GetHeaderCell : int -&gt; Microsoft.Maui.Controls.Cell" Usage="tableModel.GetHeaderCell section" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.ITableModel.GetHeaderCell(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.Cell</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="section" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="section">For internal use by the Microsoft.Maui.Controls platform.</param>
+        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <returns>For internal use by the Microsoft.Maui.Controls platform.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItem">
+      <MemberSignature Language="C#" Value="public abstract object GetItem (int section, int row);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetItem(int32 section, int32 row) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Internals.TableModel.GetItem(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetItem (section As Integer, row As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ GetItem(int section, int row);" />
+      <MemberSignature Language="F#" Value="abstract member GetItem : int * int -&gt; obj" Usage="tableModel.GetItem (section, row)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.ITableModel.GetItem(System.Int32,System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="section" Type="System.Int32" />
+        <Parameter Name="row" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="section">For internal use by the Microsoft.Maui.Controls platform.</param>
+        <param name="row">For internal use by the Microsoft.Maui.Controls platform.</param>
+        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <returns>For internal use by the Microsoft.Maui.Controls platform.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRowCount">
+      <MemberSignature Language="C#" Value="public abstract int GetRowCount (int section);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetRowCount(int32 section) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Internals.TableModel.GetRowCount(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetRowCount (section As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetRowCount(int section);" />
+      <MemberSignature Language="F#" Value="abstract member GetRowCount : int -&gt; int" Usage="tableModel.GetRowCount section" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.ITableModel.GetRowCount(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="section" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="section">For internal use by the Microsoft.Maui.Controls platform.</param>
+        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <returns>For internal use by the Microsoft.Maui.Controls platform.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSectionCount">
+      <MemberSignature Language="C#" Value="public abstract int GetSectionCount ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetSectionCount() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Internals.TableModel.GetSectionCount" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetSectionCount () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetSectionCount();" />
+      <MemberSignature Language="F#" Value="abstract member GetSectionCount : unit -&gt; int" Usage="tableModel.GetSectionCount " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.ITableModel.GetSectionCount</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <returns>For internal use by the Microsoft.Maui.Controls platform.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSectionIndexTitles">
+      <MemberSignature Language="C#" Value="public virtual string[] GetSectionIndexTitles ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string[] GetSectionIndexTitles() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Internals.TableModel.GetSectionIndexTitles" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSectionIndexTitles () As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::String ^&gt; ^ GetSectionIndexTitles();" />
+      <MemberSignature Language="F#" Value="abstract member GetSectionIndexTitles : unit -&gt; string[]&#xA;override this.GetSectionIndexTitles : unit -&gt; string[]" Usage="tableModel.GetSectionIndexTitles " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.ITableModel.GetSectionIndexTitles</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <returns>For internal use by the Microsoft.Maui.Controls platform.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSectionTextColor">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.Maui.Graphics.Color GetSectionTextColor (int section);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Maui.Graphics.Color GetSectionTextColor(int32 section) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Internals.TableModel.GetSectionTextColor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSectionTextColor (section As Integer) As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Maui::Graphics::Color ^ GetSectionTextColor(int section);" />
+      <MemberSignature Language="F#" Value="abstract member GetSectionTextColor : int -&gt; Microsoft.Maui.Graphics.Color&#xA;override this.GetSectionTextColor : int -&gt; Microsoft.Maui.Graphics.Color" Usage="tableModel.GetSectionTextColor section" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.ITableModel.GetSectionTextColor(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="section" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="section">For internal use by the Microsoft.Maui.Controls platform.</param>
+        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <returns>For internal use by the Microsoft.Maui.Controls platform.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSectionTitle">
+      <MemberSignature Language="C#" Value="public virtual string GetSectionTitle (int section);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetSectionTitle(int32 section) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Internals.TableModel.GetSectionTitle(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSectionTitle (section As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetSectionTitle(int section);" />
+      <MemberSignature Language="F#" Value="abstract member GetSectionTitle : int -&gt; string&#xA;override this.GetSectionTitle : int -&gt; string" Usage="tableModel.GetSectionTitle section" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.ITableModel.GetSectionTitle(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="section" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="section">For internal use by the Microsoft.Maui.Controls platform.</param>
+        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <returns>For internal use by the Microsoft.Maui.Controls platform.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemLongPressed">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Controls.Internals.EventArg&lt;object&gt;&gt; ItemLongPressed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.Internals.EventArg`1&lt;object&gt;&gt; ItemLongPressed" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.Internals.TableModel.ItemLongPressed" />
+      <MemberSignature Language="VB.NET" Value="Public Event ItemLongPressed As EventHandler(Of EventArg(Of Object)) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Controls::Internals::EventArg&lt;System::Object ^&gt; ^&gt; ^ ItemLongPressed;" />
+      <MemberSignature Language="F#" Value="member this.ItemLongPressed : EventHandler&lt;Microsoft.Maui.Controls.Internals.EventArg&lt;obj&gt;&gt; " Usage="member this.ItemLongPressed : System.EventHandler&lt;Microsoft.Maui.Controls.Internals.EventArg&lt;System.obj&gt;&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.Internals.EventArg&lt;System.Object&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemSelected">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Controls.Internals.EventArg&lt;object&gt;&gt; ItemSelected;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.Internals.EventArg`1&lt;object&gt;&gt; ItemSelected" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.Internals.TableModel.ItemSelected" />
+      <MemberSignature Language="VB.NET" Value="Public Event ItemSelected As EventHandler(Of EventArg(Of Object)) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Controls::Internals::EventArg&lt;System::Object ^&gt; ^&gt; ^ ItemSelected;" />
+      <MemberSignature Language="F#" Value="member this.ItemSelected : EventHandler&lt;Microsoft.Maui.Controls.Internals.EventArg&lt;obj&gt;&gt; " Usage="member this.ItemSelected : System.EventHandler&lt;Microsoft.Maui.Controls.Internals.EventArg&lt;System.obj&gt;&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.Internals.EventArg&lt;System.Object&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRowLongPressed">
+      <MemberSignature Language="C#" Value="protected virtual void OnRowLongPressed (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnRowLongPressed(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Internals.TableModel.OnRowLongPressed(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRowLongPressed (item As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRowLongPressed(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member OnRowLongPressed : obj -&gt; unit&#xA;override this.OnRowLongPressed : obj -&gt; unit" Usage="tableModel.OnRowLongPressed item" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRowSelected">
+      <MemberSignature Language="C#" Value="protected virtual void OnRowSelected (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnRowSelected(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Internals.TableModel.OnRowSelected(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRowSelected (item As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRowSelected(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member OnRowSelected : obj -&gt; unit&#xA;override this.OnRowSelected : obj -&gt; unit" Usage="tableModel.OnRowSelected item" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowLongPressed">
+      <MemberSignature Language="C#" Value="public void RowLongPressed (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RowLongPressed(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Internals.TableModel.RowLongPressed(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RowLongPressed (item As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RowLongPressed(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="member this.RowLongPressed : obj -&gt; unit" Usage="tableModel.RowLongPressed item" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">For internal use by the Microsoft.Maui.Controls platform.</param>
+        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowLongPressed">
+      <MemberSignature Language="C#" Value="public void RowLongPressed (int section, int row);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RowLongPressed(int32 section, int32 row) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Internals.TableModel.RowLongPressed(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RowLongPressed (section As Integer, row As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RowLongPressed(int section, int row);" />
+      <MemberSignature Language="F#" Value="abstract member RowLongPressed : int * int -&gt; unit&#xA;override this.RowLongPressed : int * int -&gt; unit" Usage="tableModel.RowLongPressed (section, row)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.ITableModel.RowLongPressed(System.Int32,System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="section" Type="System.Int32" />
+        <Parameter Name="row" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="section">For internal use by the Microsoft.Maui.Controls platform.</param>
+        <param name="row">For internal use by the Microsoft.Maui.Controls platform.</param>
+        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowSelected">
+      <MemberSignature Language="C#" Value="public void RowSelected (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RowSelected(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Internals.TableModel.RowSelected(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RowSelected (item As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RowSelected(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member RowSelected : obj -&gt; unit&#xA;override this.RowSelected : obj -&gt; unit" Usage="tableModel.RowSelected item" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.ITableModel.RowSelected(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">For internal use by the Microsoft.Maui.Controls platform.</param>
+        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowSelected">
+      <MemberSignature Language="C#" Value="public void RowSelected (int section, int row);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RowSelected(int32 section, int32 row) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Internals.TableModel.RowSelected(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RowSelected (section As Integer, row As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RowSelected(int section, int row);" />
+      <MemberSignature Language="F#" Value="abstract member RowSelected : int * int -&gt; unit&#xA;override this.RowSelected : int * int -&gt; unit" Usage="tableModel.RowSelected (section, row)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.ITableModel.RowSelected(System.Int32,System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="section" Type="System.Int32" />
+        <Parameter Name="row" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="section">For internal use by the Microsoft.Maui.Controls platform.</param>
+        <param name="row">For internal use by the Microsoft.Maui.Controls platform.</param>
+        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

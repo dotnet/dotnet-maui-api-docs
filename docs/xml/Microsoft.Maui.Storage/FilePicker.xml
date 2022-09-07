@@ -1,0 +1,103 @@
+<Type Name="FilePicker" FullName="Microsoft.Maui.Storage.FilePicker">
+  <TypeSignature Language="C#" Value="public static class FilePicker" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit FilePicker extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Storage.FilePicker" />
+  <TypeSignature Language="VB.NET" Value="Public Class FilePicker" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FilePicker abstract sealed" />
+  <TypeSignature Language="F#" Value="type FilePicker = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Lets the user pick a file from the device's storage.</summary>
+    <remarks />
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Storage.IFilePicker Default { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Maui.Storage.IFilePicker Default" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Storage.FilePicker.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As IFilePicker" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::Maui::Storage::IFilePicker ^ Default { Microsoft::Maui::Storage::IFilePicker ^ get(); };" />
+      <MemberSignature Language="F#" Value="static member Default : Microsoft.Maui.Storage.IFilePicker" Usage="Microsoft.Maui.Storage.FilePicker.Default" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Storage.IFilePicker</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PickAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Maui.Storage.FileResult?&gt; PickAsync (Microsoft.Maui.Storage.PickOptions? options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Maui.Storage.FileResult&gt; PickAsync(class Microsoft.Maui.Storage.PickOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.FilePicker.PickAsync(Microsoft.Maui.Storage.PickOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PickAsync (Optional options As PickOptions = Nothing) As Task(Of FileResult)" />
+      <MemberSignature Language="F#" Value="static member PickAsync : Microsoft.Maui.Storage.PickOptions -&gt; System.Threading.Tasks.Task&lt;Microsoft.Maui.Storage.FileResult&gt;" Usage="Microsoft.Maui.Storage.FilePicker.PickAsync options" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Maui.Storage.FileResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="Microsoft.Maui.Storage.PickOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options">File picker options to use; may be null</param>
+        <summary>Starts file picker for selecting files.</summary>
+        <returns>File picking result object, or null when picking was cancelled by the user.</returns>
+        <remarks>
+          File types can be specified in order to limit files that can be selected, using a
+          PickOptions object. Note that this method may re-throw platform specific exceptions that
+          occured during file picking. When calling PickAsync() again while showing a file
+          picker, the Task object that was returned from the first call is cancelled. Be sure to
+          also handle the TaskCanceledException in this case.
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PickMultipleAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.Storage.FileResult&gt;&gt; PickMultipleAsync (Microsoft.Maui.Storage.PickOptions? options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Maui.Storage.FileResult&gt;&gt; PickMultipleAsync(class Microsoft.Maui.Storage.PickOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.FilePicker.PickMultipleAsync(Microsoft.Maui.Storage.PickOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PickMultipleAsync (Optional options As PickOptions = Nothing) As Task(Of IEnumerable(Of FileResult))" />
+      <MemberSignature Language="F#" Value="static member PickMultipleAsync : Microsoft.Maui.Storage.PickOptions -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.Maui.Storage.FileResult&gt;&gt;" Usage="Microsoft.Maui.Storage.FilePicker.PickMultipleAsync options" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.Storage.FileResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="Microsoft.Maui.Storage.PickOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options">File picker options to use; may be null</param>
+        <summary>Starts file picker for selecting a single file.</summary>
+        <returns>File picking result object, or null when picking was cancelled by the user.</returns>
+        <remarks>
+          File types can be specified in order to limit files that can be selected, using a
+          PickOptions object. Note that this method may re-throw platform specific exceptions that
+          occured during file picking. When calling PickMultipleAsync() again while showing a file
+          picker, the Task object that was returned from the first call is cancelled. Be sure to
+          also handle the TaskCanceledException in this case.
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

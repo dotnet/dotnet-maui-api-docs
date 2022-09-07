@@ -1,0 +1,61 @@
+<Type Name="BindablePropertyKey" FullName="Microsoft.Maui.Controls.BindablePropertyKey">
+  <TypeSignature Language="C#" Value="public sealed class BindablePropertyKey" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BindablePropertyKey extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.BindablePropertyKey" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BindablePropertyKey" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BindablePropertyKey sealed" />
+  <TypeSignature Language="F#" Value="type BindablePropertyKey = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The secret key to a BindableProperty, used to implement a BindableProperty with restricted write access.</summary>
+    <remarks>
+      <para>The following example shows the creation of a BindablePropertyKey. Write access is <see langword="internal" /> while read access is <see langword="public" />.</para>
+      <example>
+        <code lang="csharp lang-csharp"><![CDATA[
+class Bindable : BindableObject
+{
+  internal static readonly BindablePropertyKey FooPropertyKey = 
+    BindableProperty.CreateReadOnly<Bindable, string> (w => w.Foo, default(string));
+    
+  public static readonly BindableProperty FooProperty = FooPropertyKey.BindableProperty;
+    
+  public string Foo {
+    get { return (string)GetValue (FooProperty); }
+    internal set { SetValue (FooPropertyKey, value); } 
+  }
+}
+      ]]></code>
+      </example>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BindableProperty">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.BindableProperty BindableProperty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.BindableProperty BindableProperty" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.BindablePropertyKey.BindableProperty" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BindableProperty As BindableProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::BindableProperty ^ BindableProperty { Microsoft::Maui::Controls::BindableProperty ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BindableProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.BindablePropertyKey.BindableProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the BindableProperty.</summary>
+        <value>A BindableProperty used for read access.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
