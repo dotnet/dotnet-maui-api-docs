@@ -1,0 +1,985 @@
+<Type Name="Preferences" FullName="Microsoft.Maui.Storage.Preferences">
+  <TypeSignature Language="C#" Value="public static class Preferences" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Preferences extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Storage.Preferences" />
+  <TypeSignature Language="VB.NET" Value="Public Class Preferences" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Preferences abstract sealed" />
+  <TypeSignature Language="F#" Value="type Preferences = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A class to interact with the preferences/settings of the native platform.</summary>
+    <remarks>
+      <para>Each platform uses the platform provided native APIs for storing application/user preferences:</para>
+      <list type="bullet">
+        <item>
+          <term>iOS: NSUserDefaults</term>
+        </item>
+        <item>
+          <term>Android: SharedPreferences</term>
+        </item>
+        <item>
+          <term>UWP: ApplicationDataContainer</term>
+        </item>
+      </list>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public static void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Clear();" />
+      <MemberSignature Language="F#" Value="static member Clear : unit -&gt; unit" Usage="Microsoft.Maui.Storage.Preferences.Clear " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears all keys and values.</summary>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public static void Clear (string? sharedName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Clear(string sharedName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Clear(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Clear (sharedName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Clear(System::String ^ sharedName);" />
+      <MemberSignature Language="F#" Value="static member Clear : string -&gt; unit" Usage="Microsoft.Maui.Storage.Preferences.Clear sharedName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sharedName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sharedName">Shared container name.</param>
+        <summary>Clears all keys and values.</summary>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsKey">
+      <MemberSignature Language="C#" Value="public static bool ContainsKey (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ContainsKey(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.ContainsKey(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContainsKey (key As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ContainsKey(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="static member ContainsKey : string -&gt; bool" Usage="Microsoft.Maui.Storage.Preferences.ContainsKey key" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <summary>Checks the existence of a given key.</summary>
+        <returns>Returns true if the key exists.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsKey">
+      <MemberSignature Language="C#" Value="public static bool ContainsKey (string key, string? sharedName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ContainsKey(string key, string sharedName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.ContainsKey(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContainsKey (key As String, sharedName As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ContainsKey(System::String ^ key, System::String ^ sharedName);" />
+      <MemberSignature Language="F#" Value="static member ContainsKey : string * string -&gt; bool" Usage="Microsoft.Maui.Storage.Preferences.ContainsKey (key, sharedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="sharedName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <param name="sharedName">Shared container name.</param>
+        <summary>Checks the existence of a given key.</summary>
+        <returns>Returns true if the key exists.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Storage.IPreferences Default { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Maui.Storage.IPreferences Default" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Storage.Preferences.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As IPreferences" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::Maui::Storage::IPreferences ^ Default { Microsoft::Maui::Storage::IPreferences ^ get(); };" />
+      <MemberSignature Language="F#" Value="static member Default : Microsoft.Maui.Storage.IPreferences" Usage="Microsoft.Maui.Storage.Preferences.Default" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Storage.IPreferences</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public static bool Get (string key, bool defaultValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Get(string key, bool defaultValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Get(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Get (key As String, defaultValue As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Get(System::String ^ key, bool defaultValue);" />
+      <MemberSignature Language="F#" Value="static member Get : string * bool -&gt; bool" Usage="Microsoft.Maui.Storage.Preferences.Get (key, defaultValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="defaultValue" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <param name="defaultValue">Default value to return if the key does not exist.</param>
+        <summary>Gets the value for a given key, or the default specified if the key does not exist.</summary>
+        <returns>Value for the given key, or the default if it does not exist.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public static DateTime Get (string key, DateTime defaultValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime Get(string key, valuetype System.DateTime defaultValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Get(System.String,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Get (key As String, defaultValue As DateTime) As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime Get(System::String ^ key, DateTime defaultValue);" />
+      <MemberSignature Language="F#" Value="static member Get : string * DateTime -&gt; DateTime" Usage="Microsoft.Maui.Storage.Preferences.Get (key, defaultValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="defaultValue" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <param name="defaultValue">Default value to return if the key does not exist.</param>
+        <summary>Gets the value for a given key, or the default specified if the key does not exist.</summary>
+        <returns>Value for the given key, or the default if it does not exist.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public static double Get (string key, double defaultValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Get(string key, float64 defaultValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Get(System.String,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Get (key As String, defaultValue As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Get(System::String ^ key, double defaultValue);" />
+      <MemberSignature Language="F#" Value="static member Get : string * double -&gt; double" Usage="Microsoft.Maui.Storage.Preferences.Get (key, defaultValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="defaultValue" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <param name="defaultValue">Default value to return if the key does not exist.</param>
+        <summary>Gets the value for a given key, or the default specified if the key does not exist.</summary>
+        <returns>Value for the given key, or the default if it does not exist.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public static int Get (string key, int defaultValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Get(string key, int32 defaultValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Get(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Get (key As String, defaultValue As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Get(System::String ^ key, int defaultValue);" />
+      <MemberSignature Language="F#" Value="static member Get : string * int -&gt; int" Usage="Microsoft.Maui.Storage.Preferences.Get (key, defaultValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="defaultValue" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <param name="defaultValue">Default value to return if the key does not exist.</param>
+        <summary>Gets the value for a given key, or the default specified if the key does not exist.</summary>
+        <returns>Value for the given key, or the default if it does not exist.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public static long Get (string key, long defaultValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 Get(string key, int64 defaultValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Get(System.String,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Get (key As String, defaultValue As Long) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Get(System::String ^ key, long defaultValue);" />
+      <MemberSignature Language="F#" Value="static member Get : string * int64 -&gt; int64" Usage="Microsoft.Maui.Storage.Preferences.Get (key, defaultValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="defaultValue" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <param name="defaultValue">Default value to return if the key does not exist.</param>
+        <summary>Gets the value for a given key, or the default specified if the key does not exist.</summary>
+        <returns>Value for the given key, or the default if it does not exist.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public static float Get (string key, float defaultValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 Get(string key, float32 defaultValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Get(System.String,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Get (key As String, defaultValue As Single) As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Get(System::String ^ key, float defaultValue);" />
+      <MemberSignature Language="F#" Value="static member Get : string * single -&gt; single" Usage="Microsoft.Maui.Storage.Preferences.Get (key, defaultValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="defaultValue" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <param name="defaultValue">Default value to return if the key does not exist.</param>
+        <summary>Gets the value for a given key, or the default specified if the key does not exist.</summary>
+        <returns>Value for the given key, or the default if it does not exist.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public static string? Get (string key, string? defaultValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Get(string key, string defaultValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Get(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Get (key As String, defaultValue As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Get(System::String ^ key, System::String ^ defaultValue);" />
+      <MemberSignature Language="F#" Value="static member Get : string * string -&gt; string" Usage="Microsoft.Maui.Storage.Preferences.Get (key, defaultValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.NotNullIfNotNull("defaultValue")]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.NotNullIfNotNull("defaultValue")&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="defaultValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <param name="defaultValue">Default value to return if the key does not exist.</param>
+        <summary>Gets the value for a given key, or the default specified if the key does not exist.</summary>
+        <returns>Value for the given key, or the default if it does not exist.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public static bool Get (string key, bool defaultValue, string? sharedName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Get(string key, bool defaultValue, string sharedName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Get(System.String,System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Get (key As String, defaultValue As Boolean, sharedName As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Get(System::String ^ key, bool defaultValue, System::String ^ sharedName);" />
+      <MemberSignature Language="F#" Value="static member Get : string * bool * string -&gt; bool" Usage="Microsoft.Maui.Storage.Preferences.Get (key, defaultValue, sharedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="defaultValue" Type="System.Boolean" />
+        <Parameter Name="sharedName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <param name="defaultValue">Default value to return if the key does not exist.</param>
+        <param name="sharedName">Shared container key.</param>
+        <summary>Gets the value for a given key, or the default specified if the key does not exist.</summary>
+        <returns>Value for the given key, or the default if it does not exist.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public static DateTime Get (string key, DateTime defaultValue, string? sharedName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime Get(string key, valuetype System.DateTime defaultValue, string sharedName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Get(System.String,System.DateTime,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Get (key As String, defaultValue As DateTime, sharedName As String) As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime Get(System::String ^ key, DateTime defaultValue, System::String ^ sharedName);" />
+      <MemberSignature Language="F#" Value="static member Get : string * DateTime * string -&gt; DateTime" Usage="Microsoft.Maui.Storage.Preferences.Get (key, defaultValue, sharedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="defaultValue" Type="System.DateTime" />
+        <Parameter Name="sharedName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <param name="defaultValue">Default value to return if the key does not exist.</param>
+        <param name="sharedName">Shared container key.</param>
+        <summary>Gets the value for a given key, or the default specified if the key does not exist.</summary>
+        <returns>Value for the given key, or the default if it does not exist.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public static double Get (string key, double defaultValue, string? sharedName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Get(string key, float64 defaultValue, string sharedName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Get(System.String,System.Double,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Get (key As String, defaultValue As Double, sharedName As String) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Get(System::String ^ key, double defaultValue, System::String ^ sharedName);" />
+      <MemberSignature Language="F#" Value="static member Get : string * double * string -&gt; double" Usage="Microsoft.Maui.Storage.Preferences.Get (key, defaultValue, sharedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="defaultValue" Type="System.Double" />
+        <Parameter Name="sharedName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <param name="defaultValue">Default value to return if the key does not exist.</param>
+        <param name="sharedName">Shared container key.</param>
+        <summary>Gets the value for a given key, or the default specified if the key does not exist.</summary>
+        <returns>Value for the given key, or the default if it does not exist.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public static int Get (string key, int defaultValue, string? sharedName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Get(string key, int32 defaultValue, string sharedName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Get(System.String,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Get (key As String, defaultValue As Integer, sharedName As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Get(System::String ^ key, int defaultValue, System::String ^ sharedName);" />
+      <MemberSignature Language="F#" Value="static member Get : string * int * string -&gt; int" Usage="Microsoft.Maui.Storage.Preferences.Get (key, defaultValue, sharedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="defaultValue" Type="System.Int32" />
+        <Parameter Name="sharedName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <param name="defaultValue">Default value to return if the key does not exist.</param>
+        <param name="sharedName">Shared container key.</param>
+        <summary>Gets the value for a given key, or the default specified if the key does not exist.</summary>
+        <returns>Value for the given key, or the default if it does not exist.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public static long Get (string key, long defaultValue, string? sharedName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 Get(string key, int64 defaultValue, string sharedName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Get(System.String,System.Int64,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Get (key As String, defaultValue As Long, sharedName As String) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Get(System::String ^ key, long defaultValue, System::String ^ sharedName);" />
+      <MemberSignature Language="F#" Value="static member Get : string * int64 * string -&gt; int64" Usage="Microsoft.Maui.Storage.Preferences.Get (key, defaultValue, sharedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="defaultValue" Type="System.Int64" />
+        <Parameter Name="sharedName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <param name="defaultValue">Default value to return if the key does not exist.</param>
+        <param name="sharedName">Shared container key.</param>
+        <summary>Gets the value for a given key, or the default specified if the key does not exist.</summary>
+        <returns>Value for the given key, or the default if it does not exist.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public static float Get (string key, float defaultValue, string? sharedName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 Get(string key, float32 defaultValue, string sharedName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Get(System.String,System.Single,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Get (key As String, defaultValue As Single, sharedName As String) As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Get(System::String ^ key, float defaultValue, System::String ^ sharedName);" />
+      <MemberSignature Language="F#" Value="static member Get : string * single * string -&gt; single" Usage="Microsoft.Maui.Storage.Preferences.Get (key, defaultValue, sharedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="defaultValue" Type="System.Single" />
+        <Parameter Name="sharedName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <param name="defaultValue">Default value to return if the key does not exist.</param>
+        <param name="sharedName">Shared container key.</param>
+        <summary>Gets the value for a given key, or the default specified if the key does not exist.</summary>
+        <returns>Value for the given key, or the default if it does not exist.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public static string? Get (string key, string? defaultValue, string? sharedName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Get(string key, string defaultValue, string sharedName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Get(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Get (key As String, defaultValue As String, sharedName As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Get(System::String ^ key, System::String ^ defaultValue, System::String ^ sharedName);" />
+      <MemberSignature Language="F#" Value="static member Get : string * string * string -&gt; string" Usage="Microsoft.Maui.Storage.Preferences.Get (key, defaultValue, sharedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.NotNullIfNotNull("defaultValue")]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.NotNullIfNotNull("defaultValue")&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="defaultValue" Type="System.String" />
+        <Parameter Name="sharedName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <param name="defaultValue">Default value to return if the key does not exist.</param>
+        <param name="sharedName">Shared container key.</param>
+        <summary>Gets the value for a given key, or the default specified if the key does not exist.</summary>
+        <returns>Value for the given key, or the default if it does not exist.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public static void Remove (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Remove(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Remove (key As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Remove(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="static member Remove : string -&gt; unit" Usage="Microsoft.Maui.Storage.Preferences.Remove key" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <summary>Removes a key and its associated value if it exists.</summary>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public static void Remove (string key, string? sharedName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Remove(string key, string sharedName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Remove(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Remove (key As String, sharedName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Remove(System::String ^ key, System::String ^ sharedName);" />
+      <MemberSignature Language="F#" Value="static member Remove : string * string -&gt; unit" Usage="Microsoft.Maui.Storage.Preferences.Remove (key, sharedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="sharedName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <param name="sharedName">Shared container name.</param>
+        <summary>Removes a key and its associated value if it exists.</summary>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Set">
+      <MemberSignature Language="C#" Value="public static void Set (string key, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Set(string key, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Set(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Set (key As String, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Set(System::String ^ key, bool value);" />
+      <MemberSignature Language="F#" Value="static member Set : string * bool -&gt; unit" Usage="Microsoft.Maui.Storage.Preferences.Set (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <param name="value">Preference value.</param>
+        <summary>Sets a value for a given key.</summary>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Set">
+      <MemberSignature Language="C#" Value="public static void Set (string key, DateTime value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Set(string key, valuetype System.DateTime value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Set(System.String,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Set (key As String, value As DateTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Set(System::String ^ key, DateTime value);" />
+      <MemberSignature Language="F#" Value="static member Set : string * DateTime -&gt; unit" Usage="Microsoft.Maui.Storage.Preferences.Set (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <param name="value">Preference value.</param>
+        <summary>Sets a value for a given key.</summary>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Set">
+      <MemberSignature Language="C#" Value="public static void Set (string key, double value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Set(string key, float64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Set(System.String,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Set (key As String, value As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Set(System::String ^ key, double value);" />
+      <MemberSignature Language="F#" Value="static member Set : string * double -&gt; unit" Usage="Microsoft.Maui.Storage.Preferences.Set (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <param name="value">Preference value.</param>
+        <summary>Sets a value for a given key.</summary>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Set">
+      <MemberSignature Language="C#" Value="public static void Set (string key, int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Set(string key, int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Set(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Set (key As String, value As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Set(System::String ^ key, int value);" />
+      <MemberSignature Language="F#" Value="static member Set : string * int -&gt; unit" Usage="Microsoft.Maui.Storage.Preferences.Set (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <param name="value">Preference value.</param>
+        <summary>Sets a value for a given key.</summary>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Set">
+      <MemberSignature Language="C#" Value="public static void Set (string key, long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Set(string key, int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Set(System.String,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Set (key As String, value As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Set(System::String ^ key, long value);" />
+      <MemberSignature Language="F#" Value="static member Set : string * int64 -&gt; unit" Usage="Microsoft.Maui.Storage.Preferences.Set (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <param name="value">Preference value.</param>
+        <summary>Sets a value for a given key.</summary>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Set">
+      <MemberSignature Language="C#" Value="public static void Set (string key, float value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Set(string key, float32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Set(System.String,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Set (key As String, value As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Set(System::String ^ key, float value);" />
+      <MemberSignature Language="F#" Value="static member Set : string * single -&gt; unit" Usage="Microsoft.Maui.Storage.Preferences.Set (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <param name="value">Preference value.</param>
+        <summary>Sets a value for a given key.</summary>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Set">
+      <MemberSignature Language="C#" Value="public static void Set (string key, string? value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Set(string key, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Set(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Set (key As String, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Set(System::String ^ key, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member Set : string * string -&gt; unit" Usage="Microsoft.Maui.Storage.Preferences.Set (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <param name="value">Preference value.</param>
+        <summary>Sets a value for a given key.</summary>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Set">
+      <MemberSignature Language="C#" Value="public static void Set (string key, bool value, string? sharedName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Set(string key, bool value, string sharedName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Set(System.String,System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Set (key As String, value As Boolean, sharedName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Set(System::String ^ key, bool value, System::String ^ sharedName);" />
+      <MemberSignature Language="F#" Value="static member Set : string * bool * string -&gt; unit" Usage="Microsoft.Maui.Storage.Preferences.Set (key, value, sharedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.Boolean" />
+        <Parameter Name="sharedName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <param name="value">Preference value.</param>
+        <param name="sharedName">Shared container name.</param>
+        <summary>Sets a value for a given key.</summary>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Set">
+      <MemberSignature Language="C#" Value="public static void Set (string key, DateTime value, string? sharedName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Set(string key, valuetype System.DateTime value, string sharedName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Set(System.String,System.DateTime,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Set (key As String, value As DateTime, sharedName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Set(System::String ^ key, DateTime value, System::String ^ sharedName);" />
+      <MemberSignature Language="F#" Value="static member Set : string * DateTime * string -&gt; unit" Usage="Microsoft.Maui.Storage.Preferences.Set (key, value, sharedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.DateTime" />
+        <Parameter Name="sharedName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <param name="value">Preference value.</param>
+        <param name="sharedName">Shared container name.</param>
+        <summary>Sets a value for a given key.</summary>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Set">
+      <MemberSignature Language="C#" Value="public static void Set (string key, double value, string? sharedName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Set(string key, float64 value, string sharedName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Set(System.String,System.Double,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Set (key As String, value As Double, sharedName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Set(System::String ^ key, double value, System::String ^ sharedName);" />
+      <MemberSignature Language="F#" Value="static member Set : string * double * string -&gt; unit" Usage="Microsoft.Maui.Storage.Preferences.Set (key, value, sharedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.Double" />
+        <Parameter Name="sharedName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <param name="value">Preference value.</param>
+        <param name="sharedName">Shared container name.</param>
+        <summary>Sets a value for a given key.</summary>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Set">
+      <MemberSignature Language="C#" Value="public static void Set (string key, int value, string? sharedName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Set(string key, int32 value, string sharedName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Set(System.String,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Set (key As String, value As Integer, sharedName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Set(System::String ^ key, int value, System::String ^ sharedName);" />
+      <MemberSignature Language="F#" Value="static member Set : string * int * string -&gt; unit" Usage="Microsoft.Maui.Storage.Preferences.Set (key, value, sharedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.Int32" />
+        <Parameter Name="sharedName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <param name="value">Preference value.</param>
+        <param name="sharedName">Shared container name.</param>
+        <summary>Sets a value for a given key.</summary>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Set">
+      <MemberSignature Language="C#" Value="public static void Set (string key, long value, string? sharedName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Set(string key, int64 value, string sharedName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Set(System.String,System.Int64,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Set (key As String, value As Long, sharedName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Set(System::String ^ key, long value, System::String ^ sharedName);" />
+      <MemberSignature Language="F#" Value="static member Set : string * int64 * string -&gt; unit" Usage="Microsoft.Maui.Storage.Preferences.Set (key, value, sharedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.Int64" />
+        <Parameter Name="sharedName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <param name="value">Preference value.</param>
+        <param name="sharedName">Shared container name.</param>
+        <summary>Sets a value for a given key.</summary>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Set">
+      <MemberSignature Language="C#" Value="public static void Set (string key, float value, string? sharedName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Set(string key, float32 value, string sharedName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Set(System.String,System.Single,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Set (key As String, value As Single, sharedName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Set(System::String ^ key, float value, System::String ^ sharedName);" />
+      <MemberSignature Language="F#" Value="static member Set : string * single * string -&gt; unit" Usage="Microsoft.Maui.Storage.Preferences.Set (key, value, sharedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.Single" />
+        <Parameter Name="sharedName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <param name="value">Preference value.</param>
+        <param name="sharedName">Shared container name.</param>
+        <summary>Sets a value for a given key.</summary>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Set">
+      <MemberSignature Language="C#" Value="public static void Set (string key, string? value, string? sharedName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Set(string key, string value, string sharedName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.Preferences.Set(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Set (key As String, value As String, sharedName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Set(System::String ^ key, System::String ^ value, System::String ^ sharedName);" />
+      <MemberSignature Language="F#" Value="static member Set : string * string * string -&gt; unit" Usage="Microsoft.Maui.Storage.Preferences.Set (key, value, sharedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="sharedName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">Preference key.</param>
+        <param name="value">Preference value.</param>
+        <param name="sharedName">Shared container name.</param>
+        <summary>Sets a value for a given key.</summary>
+        <remarks />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

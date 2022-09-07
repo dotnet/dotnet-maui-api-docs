@@ -1,0 +1,131 @@
+<Type Name="Clipboard" FullName="Microsoft.Maui.ApplicationModel.DataTransfer.Clipboard">
+  <TypeSignature Language="C#" Value="public static class Clipboard" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Clipboard extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.ApplicationModel.DataTransfer.Clipboard" />
+  <TypeSignature Language="VB.NET" Value="Public Class Clipboard" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Clipboard abstract sealed" />
+  <TypeSignature Language="F#" Value="type Clipboard = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a way to work with text on the device clipboard.</summary>
+    <remarks />
+  </Docs>
+  <Members>
+    <Member MemberName="ClipboardContentChanged">
+      <MemberSignature Language="C#" Value="public static event EventHandler&lt;EventArgs&gt; ClipboardContentChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.EventArgs&gt; ClipboardContentChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.ApplicationModel.DataTransfer.Clipboard.ClipboardContentChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Custom Event ClipboardContentChanged As EventHandler(Of EventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler&lt;EventArgs ^&gt; ^ ClipboardContentChanged;" />
+      <MemberSignature Language="F#" Value="member this.ClipboardContentChanged : EventHandler&lt;EventArgs&gt; " Usage="member this.ClipboardContentChanged : System.EventHandler&lt;System.EventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.EventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Fires when the clipboard content changes.</summary>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.ApplicationModel.DataTransfer.IClipboard Default { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Maui.ApplicationModel.DataTransfer.IClipboard Default" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.ApplicationModel.DataTransfer.Clipboard.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As IClipboard" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::Maui::ApplicationModel::DataTransfer::IClipboard ^ Default { Microsoft::Maui::ApplicationModel::DataTransfer::IClipboard ^ get(); };" />
+      <MemberSignature Language="F#" Value="static member Default : Microsoft.Maui.ApplicationModel.DataTransfer.IClipboard" Usage="Microsoft.Maui.ApplicationModel.DataTransfer.Clipboard.Default" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.ApplicationModel.DataTransfer.IClipboard</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTextAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;string?&gt; GetTextAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;string&gt; GetTextAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ApplicationModel.DataTransfer.Clipboard.GetTextAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTextAsync () As Task(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;System::String ^&gt; ^ GetTextAsync();" />
+      <MemberSignature Language="F#" Value="static member GetTextAsync : unit -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="Microsoft.Maui.ApplicationModel.DataTransfer.Clipboard.GetTextAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns any text that is on the clipboard.</summary>
+        <returns>Returns text that is on the clipboard, or null if there is none.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="HasText">
+      <MemberSignature Language="C#" Value="public static bool HasText { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool HasText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.ApplicationModel.DataTransfer.Clipboard.HasText" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HasText As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool HasText { bool get(); };" />
+      <MemberSignature Language="F#" Value="static member HasText : bool" Usage="Microsoft.Maui.ApplicationModel.DataTransfer.Clipboard.HasText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether there is any text on the clipboard.</summary>
+        <value />
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="SetTextAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task SetTextAsync (string? text);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task SetTextAsync(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ApplicationModel.DataTransfer.Clipboard.SetTextAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SetTextAsync (text As String) As Task" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task ^ SetTextAsync(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="static member SetTextAsync : string -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Maui.ApplicationModel.DataTransfer.Clipboard.SetTextAsync text" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">The text to put on the clipboard.</param>
+        <summary>Sets the contents of the clipboard to be the specified text.</summary>
+        <returns>Returns text that is on the clipboard, or null if there is none.</returns>
+        <remarks>This method returns immediately and does not guarentee that the text is on the clipboard by the time this method returns</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

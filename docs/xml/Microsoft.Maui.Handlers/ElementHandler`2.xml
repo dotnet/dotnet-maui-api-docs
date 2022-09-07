@@ -1,0 +1,223 @@
+<Type Name="ElementHandler&lt;TVirtualView,TPlatformView&gt;" FullName="Microsoft.Maui.Handlers.ElementHandler&lt;TVirtualView,TPlatformView&gt;">
+  <TypeSignature Language="C#" Value="public abstract class ElementHandler&lt;TVirtualView,TPlatformView&gt; : Microsoft.Maui.Handlers.ElementHandler where TVirtualView : class, IElement where TPlatformView : class" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ElementHandler`2&lt;class (class Microsoft.Maui.IElement) TVirtualView, class TPlatformView&gt; extends Microsoft.Maui.Handlers.ElementHandler implements class Microsoft.Maui.IElementHandler" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Handlers.ElementHandler`2" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ElementHandler(Of TVirtualView, TPlatformView)&#xA;Inherits ElementHandler" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TVirtualView, typename TPlatformView&gt;&#xA; where TVirtualView : class, IElement where TPlatformView : classpublic ref class ElementHandler abstract : Microsoft::Maui::Handlers::ElementHandler" />
+  <TypeSignature Language="F#" Value="type ElementHandler&lt;'VirtualView, 'PlatformView (requires 'VirtualView : null and 'VirtualView :&gt; IElement and 'PlatformView : null)&gt; = class&#xA;    inherit ElementHandler&#xA;    interface IElementHandler" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TVirtualView">
+      <Constraints>
+        <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+        <InterfaceName>Microsoft.Maui.IElement</InterfaceName>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="TPlatformView">
+      <Constraints>
+        <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.Maui.Handlers.ElementHandler</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IElementHandler</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TVirtualView">To be added.</typeparam>
+    <typeparam name="TPlatformView">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ElementHandler (Microsoft.Maui.IPropertyMapper mapper, Microsoft.Maui.CommandMapper? commandMapper = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Microsoft.Maui.IPropertyMapper mapper, class Microsoft.Maui.CommandMapper commandMapper) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Handlers.ElementHandler`2.#ctor(Microsoft.Maui.IPropertyMapper,Microsoft.Maui.CommandMapper)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (mapper As IPropertyMapper, Optional commandMapper As CommandMapper = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.Handlers.ElementHandler&lt;'VirtualView, 'PlatformView (requires 'VirtualView : null and 'VirtualView :&gt; Microsoft.Maui.IElement and 'PlatformView : null)&gt; : Microsoft.Maui.IPropertyMapper * Microsoft.Maui.CommandMapper -&gt; Microsoft.Maui.Handlers.ElementHandler&lt;'VirtualView, 'PlatformView (requires 'VirtualView : null and 'VirtualView :&gt; Microsoft.Maui.IElement and 'PlatformView : null)&gt;" Usage="new Microsoft.Maui.Handlers.ElementHandler&lt;'VirtualView, 'PlatformView (requires 'VirtualView : null and 'VirtualView :&gt; Microsoft.Maui.IElement and 'PlatformView : null)&gt; (mapper, commandMapper)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="mapper" Type="Microsoft.Maui.IPropertyMapper" />
+        <Parameter Name="commandMapper" Type="Microsoft.Maui.CommandMapper" />
+      </Parameters>
+      <Docs>
+        <param name="mapper">To be added.</param>
+        <param name="commandMapper">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectHandler">
+      <MemberSignature Language="C#" Value="protected virtual void ConnectHandler (TPlatformView platformView);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ConnectHandler(!TPlatformView platformView) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Handlers.ElementHandler`2.ConnectHandler(`1)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ConnectHandler (platformView As TPlatformView)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ConnectHandler(TPlatformView platformView);" />
+      <MemberSignature Language="F#" Value="abstract member ConnectHandler : 'PlatformView -&gt; unit&#xA;override this.ConnectHandler : 'PlatformView -&gt; unit" Usage="elementHandler.ConnectHandler platformView" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="TPlatformView" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePlatformElement">
+      <MemberSignature Language="C#" Value="protected abstract TPlatformView CreatePlatformElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance !TPlatformView CreatePlatformElement() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Handlers.ElementHandler`2.CreatePlatformElement" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreatePlatformElement () As TPlatformView" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract TPlatformView CreatePlatformElement();" />
+      <MemberSignature Language="F#" Value="abstract member CreatePlatformElement : unit -&gt; 'PlatformView" Usage="elementHandler.CreatePlatformElement " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TPlatformView</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisconnectHandler">
+      <MemberSignature Language="C#" Value="protected virtual void DisconnectHandler (TPlatformView platformView);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DisconnectHandler(!TPlatformView platformView) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Handlers.ElementHandler`2.DisconnectHandler(`1)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub DisconnectHandler (platformView As TPlatformView)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void DisconnectHandler(TPlatformView platformView);" />
+      <MemberSignature Language="F#" Value="abstract member DisconnectHandler : 'PlatformView -&gt; unit&#xA;override this.DisconnectHandler : 'PlatformView -&gt; unit" Usage="elementHandler.DisconnectHandler platformView" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="TPlatformView" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IElementHandler.PlatformView">
+      <MemberSignature Language="C#" Value="object? Microsoft.Maui.IElementHandler.PlatformView { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Microsoft.Maui.IElementHandler.PlatformView" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Handlers.ElementHandler`2.Microsoft#Maui#IElementHandler#PlatformView" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property PlatformView As Object Implements IElementHandler.PlatformView" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ Microsoft::Maui::IElementHandler::PlatformView { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.IElementHandler.PlatformView : obj" Usage="Microsoft.Maui.IElementHandler.PlatformView" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IElementHandler.PlatformView</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IElementHandler.VirtualView">
+      <MemberSignature Language="C#" Value="Microsoft.Maui.IElement? Microsoft.Maui.IElementHandler.VirtualView { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.IElement Microsoft.Maui.IElementHandler.VirtualView" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Handlers.ElementHandler`2.Microsoft#Maui#IElementHandler#VirtualView" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property VirtualView As IElement Implements IElementHandler.VirtualView" />
+      <MemberSignature Language="C++ CLI" Value="property Microsoft::Maui::IElement ^ Microsoft::Maui::IElementHandler::VirtualView { Microsoft::Maui::IElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.IElementHandler.VirtualView : Microsoft.Maui.IElement" Usage="Microsoft.Maui.IElementHandler.VirtualView" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IElementHandler.VirtualView</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.IElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformView">
+      <MemberSignature Language="C#" Value="public TPlatformView PlatformView { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TPlatformView PlatformView" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Handlers.ElementHandler`2.PlatformView" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PlatformView As TPlatformView" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TPlatformView PlatformView { TPlatformView get(); };" />
+      <MemberSignature Language="F#" Value="member this.PlatformView : 'PlatformView" Usage="Microsoft.Maui.Handlers.ElementHandler&lt;'VirtualView, 'PlatformView (requires 'VirtualView : null and 'VirtualView :&gt; Microsoft.Maui.IElement and 'PlatformView : null)&gt;.PlatformView" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TPlatformView</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VirtualView">
+      <MemberSignature Language="C#" Value="public TVirtualView VirtualView { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TVirtualView VirtualView" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Handlers.ElementHandler`2.VirtualView" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VirtualView As TVirtualView" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TVirtualView VirtualView { TVirtualView get(); };" />
+      <MemberSignature Language="F#" Value="member this.VirtualView : 'VirtualView" Usage="Microsoft.Maui.Handlers.ElementHandler&lt;'VirtualView, 'PlatformView (requires 'VirtualView : null and 'VirtualView :&gt; Microsoft.Maui.IElement and 'PlatformView : null)&gt;.VirtualView" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TVirtualView</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

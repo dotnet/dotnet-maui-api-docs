@@ -1,0 +1,139 @@
+<Type Name="Geolocation" FullName="Microsoft.Maui.Devices.Sensors.Geolocation">
+  <TypeSignature Language="C#" Value="public static class Geolocation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Geolocation extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Devices.Sensors.Geolocation" />
+  <TypeSignature Language="VB.NET" Value="Public Class Geolocation" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Geolocation abstract sealed" />
+  <TypeSignature Language="F#" Value="type Geolocation = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a way to get the current location of the device.</summary>
+    <remarks />
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Devices.Sensors.IGeolocation Default { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Maui.Devices.Sensors.IGeolocation Default" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Devices.Sensors.Geolocation.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As IGeolocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::Maui::Devices::Sensors::IGeolocation ^ Default { Microsoft::Maui::Devices::Sensors::IGeolocation ^ get(); };" />
+      <MemberSignature Language="F#" Value="static member Default : Microsoft.Maui.Devices.Sensors.IGeolocation" Usage="Microsoft.Maui.Devices.Sensors.Geolocation.Default" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Devices.Sensors.IGeolocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLastKnownLocationAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Maui.Devices.Sensors.Location?&gt; GetLastKnownLocationAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Maui.Devices.Sensors.Location&gt; GetLastKnownLocationAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Devices.Sensors.Geolocation.GetLastKnownLocationAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetLastKnownLocationAsync () As Task(Of Location)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;Microsoft::Maui::Devices::Sensors::Location ^&gt; ^ GetLastKnownLocationAsync();" />
+      <MemberSignature Language="F#" Value="static member GetLastKnownLocationAsync : unit -&gt; System.Threading.Tasks.Task&lt;Microsoft.Maui.Devices.Sensors.Location&gt;" Usage="Microsoft.Maui.Devices.Sensors.Geolocation.GetLastKnownLocationAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Maui.Devices.Sensors.Location&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the last known location of the device.</summary>
+        <returns>Returns the location.</returns>
+        <remarks>This location may be a recently cached location.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLocationAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Maui.Devices.Sensors.Location?&gt; GetLocationAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Maui.Devices.Sensors.Location&gt; GetLocationAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Devices.Sensors.Geolocation.GetLocationAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetLocationAsync () As Task(Of Location)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;Microsoft::Maui::Devices::Sensors::Location ^&gt; ^ GetLocationAsync();" />
+      <MemberSignature Language="F#" Value="static member GetLocationAsync : unit -&gt; System.Threading.Tasks.Task&lt;Microsoft.Maui.Devices.Sensors.Location&gt;" Usage="Microsoft.Maui.Devices.Sensors.Geolocation.GetLocationAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Maui.Devices.Sensors.Location&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the current location of the device.</summary>
+        <returns>Returns the location.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="GetLocationAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Maui.Devices.Sensors.Location?&gt; GetLocationAsync (Microsoft.Maui.Devices.Sensors.GeolocationRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Maui.Devices.Sensors.Location&gt; GetLocationAsync(class Microsoft.Maui.Devices.Sensors.GeolocationRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Devices.Sensors.Geolocation.GetLocationAsync(Microsoft.Maui.Devices.Sensors.GeolocationRequest)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetLocationAsync (request As GeolocationRequest) As Task(Of Location)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;Microsoft::Maui::Devices::Sensors::Location ^&gt; ^ GetLocationAsync(Microsoft::Maui::Devices::Sensors::GeolocationRequest ^ request);" />
+      <MemberSignature Language="F#" Value="static member GetLocationAsync : Microsoft.Maui.Devices.Sensors.GeolocationRequest -&gt; System.Threading.Tasks.Task&lt;Microsoft.Maui.Devices.Sensors.Location&gt;" Usage="Microsoft.Maui.Devices.Sensors.Geolocation.GetLocationAsync request" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Maui.Devices.Sensors.Location&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.Maui.Devices.Sensors.GeolocationRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">The criteria to use when determining the location of the device.</param>
+        <summary>Returns the current location of the device using the specified criteria.</summary>
+        <returns>Returns the location.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="GetLocationAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Maui.Devices.Sensors.Location?&gt; GetLocationAsync (Microsoft.Maui.Devices.Sensors.GeolocationRequest request, System.Threading.CancellationToken cancelToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Maui.Devices.Sensors.Location&gt; GetLocationAsync(class Microsoft.Maui.Devices.Sensors.GeolocationRequest request, valuetype System.Threading.CancellationToken cancelToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Devices.Sensors.Geolocation.GetLocationAsync(Microsoft.Maui.Devices.Sensors.GeolocationRequest,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetLocationAsync (request As GeolocationRequest, cancelToken As CancellationToken) As Task(Of Location)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;Microsoft::Maui::Devices::Sensors::Location ^&gt; ^ GetLocationAsync(Microsoft::Maui::Devices::Sensors::GeolocationRequest ^ request, System::Threading::CancellationToken cancelToken);" />
+      <MemberSignature Language="F#" Value="static member GetLocationAsync : Microsoft.Maui.Devices.Sensors.GeolocationRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Maui.Devices.Sensors.Location&gt;" Usage="Microsoft.Maui.Devices.Sensors.Geolocation.GetLocationAsync (request, cancelToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Maui.Devices.Sensors.Location&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.Maui.Devices.Sensors.GeolocationRequest" />
+        <Parameter Name="cancelToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="request">The criteria to use when determining the location of the device.</param>
+        <param name="cancelToken">A token for cancelling the operation.</param>
+        <summary>Returns the current location of the device using the specified criteria.</summary>
+        <returns>Returns the location.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

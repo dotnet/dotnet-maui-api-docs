@@ -1,0 +1,218 @@
+<Type Name="EmailMessage" FullName="Microsoft.Maui.ApplicationModel.Communication.EmailMessage">
+  <TypeSignature Language="C#" Value="public class EmailMessage" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EmailMessage extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.ApplicationModel.Communication.EmailMessage" />
+  <TypeSignature Language="VB.NET" Value="Public Class EmailMessage" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EmailMessage" />
+  <TypeSignature Language="F#" Value="type EmailMessage = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a single email message.</summary>
+    <remarks />
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EmailMessage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ApplicationModel.Communication.EmailMessage.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EmailMessage();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of EmailMessage.</summary>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EmailMessage (string subject, string body, params string[] to);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string subject, string body, string[] to) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ApplicationModel.Communication.EmailMessage.#ctor(System.String,System.String,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (subject As String, body As String, ParamArray to As String())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EmailMessage(System::String ^ subject, System::String ^ body, ... cli::array &lt;System::String ^&gt; ^ to);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.ApplicationModel.Communication.EmailMessage : string * string * string[] -&gt; Microsoft.Maui.ApplicationModel.Communication.EmailMessage" Usage="new Microsoft.Maui.ApplicationModel.Communication.EmailMessage (subject, body, to)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="subject" Type="System.String" />
+        <Parameter Name="body" Type="System.String" />
+        <Parameter Name="to" Type="System.String[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="subject">The email subject.</param>
+        <param name="body">The email body.</param>
+        <param name="to">The email's recipients.</param>
+        <summary>Creates a new instance of EmailMessage with the specified subject, body and recipients.</summary>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Attachments">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Maui.ApplicationModel.Communication.EmailAttachment&gt;? Attachments { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.Maui.ApplicationModel.Communication.EmailAttachment&gt; Attachments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.ApplicationModel.Communication.EmailMessage.Attachments" />
+      <MemberSignature Language="VB.NET" Value="Public Property Attachments As List(Of EmailAttachment)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;Microsoft::Maui::ApplicationModel::Communication::EmailAttachment ^&gt; ^ Attachments { System::Collections::Generic::List&lt;Microsoft::Maui::ApplicationModel::Communication::EmailAttachment ^&gt; ^ get(); void set(System::Collections::Generic::List&lt;Microsoft::Maui::ApplicationModel::Communication::EmailAttachment ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Attachments : System.Collections.Generic.List&lt;Microsoft.Maui.ApplicationModel.Communication.EmailAttachment&gt; with get, set" Usage="Microsoft.Maui.ApplicationModel.Communication.EmailMessage.Attachments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Maui.ApplicationModel.Communication.EmailAttachment&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a list of file attachments.</summary>
+        <value />
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Bcc">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;string&gt;? Bcc { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;string&gt; Bcc" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.ApplicationModel.Communication.EmailMessage.Bcc" />
+      <MemberSignature Language="VB.NET" Value="Public Property Bcc As List(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;System::String ^&gt; ^ Bcc { System::Collections::Generic::List&lt;System::String ^&gt; ^ get(); void set(System::Collections::Generic::List&lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Bcc : System.Collections.Generic.List&lt;string&gt; with get, set" Usage="Microsoft.Maui.ApplicationModel.Communication.EmailMessage.Bcc" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the email's BCC recipients.</summary>
+        <value />
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Body">
+      <MemberSignature Language="C#" Value="public string? Body { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Body" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.ApplicationModel.Communication.EmailMessage.Body" />
+      <MemberSignature Language="VB.NET" Value="Public Property Body As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Body { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Body : string with get, set" Usage="Microsoft.Maui.ApplicationModel.Communication.EmailMessage.Body" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the email's body.</summary>
+        <value />
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="BodyFormat">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.ApplicationModel.Communication.EmailBodyFormat BodyFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.ApplicationModel.Communication.EmailBodyFormat BodyFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.ApplicationModel.Communication.EmailMessage.BodyFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property BodyFormat As EmailBodyFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::ApplicationModel::Communication::EmailBodyFormat BodyFormat { Microsoft::Maui::ApplicationModel::Communication::EmailBodyFormat get(); void set(Microsoft::Maui::ApplicationModel::Communication::EmailBodyFormat value); };" />
+      <MemberSignature Language="F#" Value="member this.BodyFormat : Microsoft.Maui.ApplicationModel.Communication.EmailBodyFormat with get, set" Usage="Microsoft.Maui.ApplicationModel.Communication.EmailMessage.BodyFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.ApplicationModel.Communication.EmailBodyFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the message is in plain text or HTML (not supported on UWP).</summary>
+        <value />
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Cc">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;string&gt;? Cc { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;string&gt; Cc" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.ApplicationModel.Communication.EmailMessage.Cc" />
+      <MemberSignature Language="VB.NET" Value="Public Property Cc As List(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;System::String ^&gt; ^ Cc { System::Collections::Generic::List&lt;System::String ^&gt; ^ get(); void set(System::Collections::Generic::List&lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Cc : System.Collections.Generic.List&lt;string&gt; with get, set" Usage="Microsoft.Maui.ApplicationModel.Communication.EmailMessage.Cc" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the email's CC recipients.</summary>
+        <value />
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="Subject">
+      <MemberSignature Language="C#" Value="public string? Subject { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Subject" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.ApplicationModel.Communication.EmailMessage.Subject" />
+      <MemberSignature Language="VB.NET" Value="Public Property Subject As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Subject { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Subject : string with get, set" Usage="Microsoft.Maui.ApplicationModel.Communication.EmailMessage.Subject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the email's subject.</summary>
+        <value />
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="To">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;string&gt;? To { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;string&gt; To" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.ApplicationModel.Communication.EmailMessage.To" />
+      <MemberSignature Language="VB.NET" Value="Public Property To As List(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;System::String ^&gt; ^ To { System::Collections::Generic::List&lt;System::String ^&gt; ^ get(); void set(System::Collections::Generic::List&lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.To : System.Collections.Generic.List&lt;string&gt; with get, set" Usage="Microsoft.Maui.ApplicationModel.Communication.EmailMessage.To" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the email's recipients.</summary>
+        <value />
+        <remarks />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

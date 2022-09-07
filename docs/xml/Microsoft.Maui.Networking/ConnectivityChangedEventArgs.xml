@@ -1,0 +1,109 @@
+<Type Name="ConnectivityChangedEventArgs" FullName="Microsoft.Maui.Networking.ConnectivityChangedEventArgs">
+  <TypeSignature Language="C#" Value="public class ConnectivityChangedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConnectivityChangedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Networking.ConnectivityChangedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class ConnectivityChangedEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConnectivityChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ConnectivityChangedEventArgs = class&#xA;    inherit EventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The current connectivity information from the change event.</summary>
+    <remarks />
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConnectivityChangedEventArgs (Microsoft.Maui.Networking.NetworkAccess access, System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.Networking.ConnectionProfile&gt; connectionProfiles);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Maui.Networking.NetworkAccess access, class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Maui.Networking.ConnectionProfile&gt; connectionProfiles) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Networking.ConnectivityChangedEventArgs.#ctor(Microsoft.Maui.Networking.NetworkAccess,System.Collections.Generic.IEnumerable{Microsoft.Maui.Networking.ConnectionProfile})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (access As NetworkAccess, connectionProfiles As IEnumerable(Of ConnectionProfile))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConnectivityChangedEventArgs(Microsoft::Maui::Networking::NetworkAccess access, System::Collections::Generic::IEnumerable&lt;Microsoft::Maui::Networking::ConnectionProfile&gt; ^ connectionProfiles);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.Networking.ConnectivityChangedEventArgs : Microsoft.Maui.Networking.NetworkAccess * seq&lt;Microsoft.Maui.Networking.ConnectionProfile&gt; -&gt; Microsoft.Maui.Networking.ConnectivityChangedEventArgs" Usage="new Microsoft.Maui.Networking.ConnectivityChangedEventArgs (access, connectionProfiles)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="access" Type="Microsoft.Maui.Networking.NetworkAccess" />
+        <Parameter Name="connectionProfiles" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.Networking.ConnectionProfile&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="access">The current access of the network</param>
+        <param name="connectionProfiles">The connection profiles of the events changing</param>
+        <summary>Public constructor</summary>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionProfiles">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.Networking.ConnectionProfile&gt; ConnectionProfiles { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Maui.Networking.ConnectionProfile&gt; ConnectionProfiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Networking.ConnectivityChangedEventArgs.ConnectionProfiles" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectionProfiles As IEnumerable(Of ConnectionProfile)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;Microsoft::Maui::Networking::ConnectionProfile&gt; ^ ConnectionProfiles { System::Collections::Generic::IEnumerable&lt;Microsoft::Maui::Networking::ConnectionProfile&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionProfiles : seq&lt;Microsoft.Maui.Networking.ConnectionProfile&gt;" Usage="Microsoft.Maui.Networking.ConnectivityChangedEventArgs.ConnectionProfiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.Networking.ConnectionProfile&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the active connectivity types for the device.</summary>
+        <value>List of all connection profiles.</value>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="NetworkAccess">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Networking.NetworkAccess NetworkAccess { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.Networking.NetworkAccess NetworkAccess" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Networking.ConnectivityChangedEventArgs.NetworkAccess" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NetworkAccess As NetworkAccess" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Networking::NetworkAccess NetworkAccess { Microsoft::Maui::Networking::NetworkAccess get(); };" />
+      <MemberSignature Language="F#" Value="member this.NetworkAccess : Microsoft.Maui.Networking.NetworkAccess" Usage="Microsoft.Maui.Networking.ConnectivityChangedEventArgs.NetworkAccess" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Networking.NetworkAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current state of network access. Does not guarantee full access to the internet.</summary>
+        <value>The current network access state.</value>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Networking.ConnectivityChangedEventArgs.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="connectivityChangedEventArgs.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>The string representation of the event.</summary>
+        <returns />
+        <remarks />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

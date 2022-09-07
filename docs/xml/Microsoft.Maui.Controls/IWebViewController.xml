@@ -1,0 +1,219 @@
+<Type Name="IWebViewController" FullName="Microsoft.Maui.Controls.IWebViewController">
+  <TypeSignature Language="C#" Value="public interface IWebViewController : Microsoft.Maui.Controls.IViewController" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWebViewController implements class Microsoft.Maui.Controls.IElementController, class Microsoft.Maui.Controls.IViewController, class Microsoft.Maui.Controls.IVisualElementController" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.IWebViewController" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IWebViewController&#xA;Implements IViewController" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IWebViewController : Microsoft::Maui::Controls::IViewController" />
+  <TypeSignature Language="F#" Value="type IWebViewController = interface&#xA;    interface IViewController&#xA;    interface IVisualElementController&#xA;    interface IElementController" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.Controls.IElementController</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.Controls.IViewController</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.Controls.IVisualElementController</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CanGoBack">
+      <MemberSignature Language="C#" Value="public bool CanGoBack { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanGoBack" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.IWebViewController.CanGoBack" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanGoBack As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanGoBack { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CanGoBack : bool with get, set" Usage="Microsoft.Maui.Controls.IWebViewController.CanGoBack" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanGoForward">
+      <MemberSignature Language="C#" Value="public bool CanGoForward { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanGoForward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.IWebViewController.CanGoForward" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanGoForward As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanGoForward { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CanGoForward : bool with get, set" Usage="Microsoft.Maui.Controls.IWebViewController.CanGoForward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EvalRequested">
+      <MemberSignature Language="C#" Value="event EventHandler&lt;Microsoft.Maui.Controls.Internals.EvalRequested&gt; EvalRequested;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.Internals.EvalRequested&gt; EvalRequested" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.IWebViewController.EvalRequested" />
+      <MemberSignature Language="VB.NET" Value="Event EvalRequested As EventHandler(Of EvalRequested) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Controls::Internals::EvalRequested ^&gt; ^ EvalRequested;" />
+      <MemberSignature Language="F#" Value="member this.EvalRequested : EventHandler&lt;Microsoft.Maui.Controls.Internals.EvalRequested&gt; " Usage="member this.EvalRequested : System.EventHandler&lt;Microsoft.Maui.Controls.Internals.EvalRequested&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.Internals.EvalRequested&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EvaluateJavaScriptRequested">
+      <MemberSignature Language="C#" Value="event Microsoft.Maui.Controls.Internals.EvaluateJavaScriptDelegate EvaluateJavaScriptRequested;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Maui.Controls.Internals.EvaluateJavaScriptDelegate EvaluateJavaScriptRequested" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.IWebViewController.EvaluateJavaScriptRequested" />
+      <MemberSignature Language="VB.NET" Value="Event EvaluateJavaScriptRequested As EvaluateJavaScriptDelegate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Maui::Controls::Internals::EvaluateJavaScriptDelegate ^ EvaluateJavaScriptRequested;" />
+      <MemberSignature Language="F#" Value="member this.EvaluateJavaScriptRequested : Microsoft.Maui.Controls.Internals.EvaluateJavaScriptDelegate " Usage="member this.EvaluateJavaScriptRequested : Microsoft.Maui.Controls.Internals.EvaluateJavaScriptDelegate " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.Internals.EvaluateJavaScriptDelegate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GoBackRequested">
+      <MemberSignature Language="C#" Value="event EventHandler GoBackRequested;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler GoBackRequested" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.IWebViewController.GoBackRequested" />
+      <MemberSignature Language="VB.NET" Value="Event GoBackRequested As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ GoBackRequested;" />
+      <MemberSignature Language="F#" Value="member this.GoBackRequested : EventHandler " Usage="member this.GoBackRequested : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GoForwardRequested">
+      <MemberSignature Language="C#" Value="event EventHandler GoForwardRequested;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler GoForwardRequested" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.IWebViewController.GoForwardRequested" />
+      <MemberSignature Language="VB.NET" Value="Event GoForwardRequested As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ GoForwardRequested;" />
+      <MemberSignature Language="F#" Value="member this.GoForwardRequested : EventHandler " Usage="member this.GoForwardRequested : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReloadRequested">
+      <MemberSignature Language="C#" Value="event EventHandler ReloadRequested;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ReloadRequested" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.IWebViewController.ReloadRequested" />
+      <MemberSignature Language="VB.NET" Value="Event ReloadRequested As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ReloadRequested;" />
+      <MemberSignature Language="F#" Value="member this.ReloadRequested : EventHandler " Usage="member this.ReloadRequested : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendNavigated">
+      <MemberSignature Language="C#" Value="public void SendNavigated (Microsoft.Maui.Controls.WebNavigatedEventArgs args);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendNavigated(class Microsoft.Maui.Controls.WebNavigatedEventArgs args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.IWebViewController.SendNavigated(Microsoft.Maui.Controls.WebNavigatedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SendNavigated (args As WebNavigatedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendNavigated(Microsoft::Maui::Controls::WebNavigatedEventArgs ^ args);" />
+      <MemberSignature Language="F#" Value="abstract member SendNavigated : Microsoft.Maui.Controls.WebNavigatedEventArgs -&gt; unit" Usage="iWebViewController.SendNavigated args" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="Microsoft.Maui.Controls.WebNavigatedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendNavigating">
+      <MemberSignature Language="C#" Value="public void SendNavigating (Microsoft.Maui.Controls.WebNavigatingEventArgs args);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendNavigating(class Microsoft.Maui.Controls.WebNavigatingEventArgs args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.IWebViewController.SendNavigating(Microsoft.Maui.Controls.WebNavigatingEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SendNavigating (args As WebNavigatingEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendNavigating(Microsoft::Maui::Controls::WebNavigatingEventArgs ^ args);" />
+      <MemberSignature Language="F#" Value="abstract member SendNavigating : Microsoft.Maui.Controls.WebNavigatingEventArgs -&gt; unit" Usage="iWebViewController.SendNavigating args" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="Microsoft.Maui.Controls.WebNavigatingEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

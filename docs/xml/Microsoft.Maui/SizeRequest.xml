@@ -1,0 +1,198 @@
+<Type Name="SizeRequest" FullName="Microsoft.Maui.SizeRequest">
+  <TypeSignature Language="C#" Value="public struct SizeRequest" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit SizeRequest extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.SizeRequest" />
+  <TypeSignature Language="VB.NET" Value="Public Structure SizeRequest" />
+  <TypeSignature Language="C++ CLI" Value="public value class SizeRequest" />
+  <TypeSignature Language="F#" Value="type SizeRequest = struct" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerDisplay("Request={Request.Width}x{Request.Height}, Minimum={Minimum.Width}x{Minimum.Height}")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("Request={Request.Width}x{Request.Height}, Minimum={Minimum.Width}x{Minimum.Height}")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Struct that defines minimum and maximum <see cref="T:Microsoft.Maui.Graphics.Size" />s.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SizeRequest (Microsoft.Maui.Graphics.Size request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Maui.Graphics.Size request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.SizeRequest.#ctor(Microsoft.Maui.Graphics.Size)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (request As Size)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SizeRequest(Microsoft::Maui::Graphics::Size request);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.SizeRequest : Microsoft.Maui.Graphics.Size -&gt; Microsoft.Maui.SizeRequest" Usage="new Microsoft.Maui.SizeRequest request" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.Maui.Graphics.Size" />
+      </Parameters>
+      <Docs>
+        <param name="request">The size of the request.</param>
+        <summary>Creates a new <see cref="T:Microsoft.Maui.SizeRequest" /> with the specified <paramref name="request" /> size.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SizeRequest (Microsoft.Maui.Graphics.Size request, Microsoft.Maui.Graphics.Size minimum);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Maui.Graphics.Size request, valuetype Microsoft.Maui.Graphics.Size minimum) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.SizeRequest.#ctor(Microsoft.Maui.Graphics.Size,Microsoft.Maui.Graphics.Size)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (request As Size, minimum As Size)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SizeRequest(Microsoft::Maui::Graphics::Size request, Microsoft::Maui::Graphics::Size minimum);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.SizeRequest : Microsoft.Maui.Graphics.Size * Microsoft.Maui.Graphics.Size -&gt; Microsoft.Maui.SizeRequest" Usage="new Microsoft.Maui.SizeRequest (request, minimum)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.Maui.Graphics.Size" />
+        <Parameter Name="minimum" Type="Microsoft.Maui.Graphics.Size" />
+      </Parameters>
+      <Docs>
+        <param name="request">The size of the request.</param>
+        <param name="minimum">The minimum size for the request.</param>
+        <summary>Creates a new <see cref="T:Microsoft.Maui.SizeRequest" /> object that requests at least the size <paramref name="minimum" />, but preferably the size <paramref name="request" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Minimum">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.Size Minimum { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.Graphics.Size Minimum" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.SizeRequest.Minimum" />
+      <MemberSignature Language="VB.NET" Value="Public Property Minimum As Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Graphics::Size Minimum { Microsoft::Maui::Graphics::Size get(); void set(Microsoft::Maui::Graphics::Size value); };" />
+      <MemberSignature Language="F#" Value="member this.Minimum : Microsoft.Maui.Graphics.Size with get, set" Usage="Microsoft.Maui.SizeRequest.Minimum" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The minimum acceptable size.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Microsoft.Maui.SizeRequest (Microsoft.Maui.Graphics.Size size);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Microsoft.Maui.SizeRequest op_Implicit(valuetype Microsoft.Maui.Graphics.Size size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.SizeRequest.op_Implicit(Microsoft.Maui.Graphics.Size)~Microsoft.Maui.SizeRequest" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (size As Size) As SizeRequest" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator Microsoft::Maui::SizeRequest(Microsoft::Maui::Graphics::Size size);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : Microsoft.Maui.Graphics.Size -&gt; Microsoft.Maui.SizeRequest" Usage="Microsoft.Maui.SizeRequest.op_Implicit size" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.SizeRequest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="size" Type="Microsoft.Maui.Graphics.Size" />
+      </Parameters>
+      <Docs>
+        <param name="size">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Microsoft.Maui.Graphics.Size (Microsoft.Maui.SizeRequest size);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Microsoft.Maui.Graphics.Size op_Implicit(valuetype Microsoft.Maui.SizeRequest size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.SizeRequest.op_Implicit(Microsoft.Maui.SizeRequest)~Microsoft.Maui.Graphics.Size" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (size As SizeRequest) As Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator Microsoft::Maui::Graphics::Size(Microsoft::Maui::SizeRequest size);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : Microsoft.Maui.SizeRequest -&gt; Microsoft.Maui.Graphics.Size" Usage="Microsoft.Maui.SizeRequest.op_Implicit size" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="size" Type="Microsoft.Maui.SizeRequest" />
+      </Parameters>
+      <Docs>
+        <param name="size">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Request">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.Size Request { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.Graphics.Size Request" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.SizeRequest.Request" />
+      <MemberSignature Language="VB.NET" Value="Public Property Request As Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Graphics::Size Request { Microsoft::Maui::Graphics::Size get(); void set(Microsoft::Maui::Graphics::Size value); };" />
+      <MemberSignature Language="F#" Value="member this.Request : Microsoft.Maui.Graphics.Size with get, set" Usage="Microsoft.Maui.SizeRequest.Request" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The requested size.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.SizeRequest.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="sizeRequest.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string representation of the size request.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
