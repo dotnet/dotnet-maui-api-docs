@@ -1,0 +1,121 @@
+<Type Name="Permissions" FullName="Microsoft.Maui.ApplicationModel.Permissions">
+  <TypeSignature Language="C#" Value="public static class Permissions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Permissions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.ApplicationModel.Permissions" />
+  <TypeSignature Language="VB.NET" Value="Public Class Permissions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Permissions abstract sealed" />
+  <TypeSignature Language="F#" Value="type Permissions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Access to checking and requesting application permissions.</summary>
+    <remarks />
+  </Docs>
+  <Members>
+    <Member MemberName="CheckStatusAsync&lt;TPermission&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Maui.ApplicationModel.PermissionStatus&gt; CheckStatusAsync&lt;TPermission&gt; () where TPermission : Microsoft.Maui.ApplicationModel.Permissions.BasePermission, new();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;valuetype Microsoft.Maui.ApplicationModel.PermissionStatus&gt; CheckStatusAsync&lt;.ctor (class Microsoft.Maui.ApplicationModel.Permissions/BasePermission) TPermission&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ApplicationModel.Permissions.CheckStatusAsync``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CheckStatusAsync(Of TPermission As {Permissions.BasePermissionNew}) () As Task(Of PermissionStatus)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TPermission&gt;&#xA; where TPermission : Microsoft::Maui::ApplicationModel::Permissions::BasePermissiongcnew() static System::Threading::Tasks::Task&lt;Microsoft::Maui::ApplicationModel::PermissionStatus&gt; ^ CheckStatusAsync();" />
+      <MemberSignature Language="F#" Value="static member CheckStatusAsync : unit -&gt; System.Threading.Tasks.Task&lt;Microsoft.Maui.ApplicationModel.PermissionStatus&gt; (requires 'Permission :&gt; Microsoft.Maui.ApplicationModel.Permissions.BasePermission and 'Permission : (new : unit -&gt; 'Permission))" Usage="Microsoft.Maui.ApplicationModel.Permissions.CheckStatusAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Maui.ApplicationModel.PermissionStatus&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TPermission">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <BaseTypeName>Microsoft.Maui.ApplicationModel.Permissions+BasePermission</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="TPermission">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <!-- No matching elements were found for the following include tag -->
+        <include file="../../docs/Microsoft.Maui.Essentials/Permissions.xml" path="//Member[@MemberName='CheckStatusAsync']/Docs/*" />
+      </Docs>
+    </Member>
+    <Member MemberName="RequestAsync&lt;TPermission&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Maui.ApplicationModel.PermissionStatus&gt; RequestAsync&lt;TPermission&gt; () where TPermission : Microsoft.Maui.ApplicationModel.Permissions.BasePermission, new();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;valuetype Microsoft.Maui.ApplicationModel.PermissionStatus&gt; RequestAsync&lt;.ctor (class Microsoft.Maui.ApplicationModel.Permissions/BasePermission) TPermission&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ApplicationModel.Permissions.RequestAsync``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RequestAsync(Of TPermission As {Permissions.BasePermissionNew}) () As Task(Of PermissionStatus)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TPermission&gt;&#xA; where TPermission : Microsoft::Maui::ApplicationModel::Permissions::BasePermissiongcnew() static System::Threading::Tasks::Task&lt;Microsoft::Maui::ApplicationModel::PermissionStatus&gt; ^ RequestAsync();" />
+      <MemberSignature Language="F#" Value="static member RequestAsync : unit -&gt; System.Threading.Tasks.Task&lt;Microsoft.Maui.ApplicationModel.PermissionStatus&gt; (requires 'Permission :&gt; Microsoft.Maui.ApplicationModel.Permissions.BasePermission and 'Permission : (new : unit -&gt; 'Permission))" Usage="Microsoft.Maui.ApplicationModel.Permissions.RequestAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Maui.ApplicationModel.PermissionStatus&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TPermission">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <BaseTypeName>Microsoft.Maui.ApplicationModel.Permissions+BasePermission</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="TPermission">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <!-- No matching elements were found for the following include tag -->
+        <include file="../../docs/Microsoft.Maui.Essentials/Permissions.xml" path="//Member[@MemberName='RequestAsync']/Docs/*" />
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldShowRationale&lt;TPermission&gt;">
+      <MemberSignature Language="C#" Value="public static bool ShouldShowRationale&lt;TPermission&gt; () where TPermission : Microsoft.Maui.ApplicationModel.Permissions.BasePermission, new();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ShouldShowRationale&lt;.ctor (class Microsoft.Maui.ApplicationModel.Permissions/BasePermission) TPermission&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ApplicationModel.Permissions.ShouldShowRationale``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ShouldShowRationale(Of TPermission As {Permissions.BasePermissionNew}) () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TPermission&gt;&#xA; where TPermission : Microsoft::Maui::ApplicationModel::Permissions::BasePermissiongcnew() static bool ShouldShowRationale();" />
+      <MemberSignature Language="F#" Value="static member ShouldShowRationale : unit -&gt; bool (requires 'Permission :&gt; Microsoft.Maui.ApplicationModel.Permissions.BasePermission and 'Permission : (new : unit -&gt; 'Permission))" Usage="Microsoft.Maui.ApplicationModel.Permissions.ShouldShowRationale " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TPermission">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <BaseTypeName>Microsoft.Maui.ApplicationModel.Permissions+BasePermission</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="TPermission">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <!-- No matching elements were found for the following include tag -->
+        <include file="../../docs/Microsoft.Maui.Essentials/Permissions.xml" path="//Member[@MemberName='ShouldShowRationale']/Docs/*" />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

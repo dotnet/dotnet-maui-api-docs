@@ -1,0 +1,646 @@
+<Type Name="Point" FullName="Microsoft.Maui.Graphics.Point">
+  <TypeSignature Language="C#" Value="public struct Point" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Point extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Graphics.Point" />
+  <TypeSignature Language="VB.NET" Value="Public Structure Point" />
+  <TypeSignature Language="C++ CLI" Value="public value class Point" />
+  <TypeSignature Language="F#" Value="type Point = struct" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.ComponentModel.TypeConverter(typeof(Microsoft.Maui.Graphics.Converters.PointTypeConverter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.TypeConverter(typeof(Microsoft.Maui.Graphics.Converters.PointTypeConverter))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerDisplay("X={X}, Y={Y}")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("X={X}, Y={Y}")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Point (Microsoft.Maui.Graphics.Size sz);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Maui.Graphics.Size sz) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Point.#ctor(Microsoft.Maui.Graphics.Size)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sz As Size)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Point(Microsoft::Maui::Graphics::Size sz);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.Graphics.Point : Microsoft.Maui.Graphics.Size -&gt; Microsoft.Maui.Graphics.Point" Usage="new Microsoft.Maui.Graphics.Point sz" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="sz" Type="Microsoft.Maui.Graphics.Size" />
+      </Parameters>
+      <Docs>
+        <param name="sz">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Point (Microsoft.Maui.Graphics.SizeF sz);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Maui.Graphics.SizeF sz) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Point.#ctor(Microsoft.Maui.Graphics.SizeF)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sz As SizeF)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Point(Microsoft::Maui::Graphics::SizeF sz);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.Graphics.Point : Microsoft.Maui.Graphics.SizeF -&gt; Microsoft.Maui.Graphics.Point" Usage="new Microsoft.Maui.Graphics.Point sz" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="sz" Type="Microsoft.Maui.Graphics.SizeF" />
+      </Parameters>
+      <Docs>
+        <param name="sz">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Point (System.Numerics.Vector2 v);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Numerics.Vector2 v) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Point.#ctor(System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (v As Vector2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Point(System::Numerics::Vector2 v);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.Graphics.Point : System.Numerics.Vector2 -&gt; Microsoft.Maui.Graphics.Point" Usage="new Microsoft.Maui.Graphics.Point v" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="v" Type="System.Numerics.Vector2" />
+      </Parameters>
+      <Docs>
+        <param name="v">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Point (double x, double y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 x, float64 y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Point.#ctor(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (x As Double, y As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Point(double x, double y);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.Graphics.Point : double * double -&gt; Microsoft.Maui.Graphics.Point" Usage="new Microsoft.Maui.Graphics.Point (x, y)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="x" Type="System.Double" />
+        <Parameter Name="y" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deconstruct">
+      <MemberSignature Language="C#" Value="public void Deconstruct (out double x, out double y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Deconstruct([out] float64&amp; x, [out] float64&amp; y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Point.Deconstruct(System.Double@,System.Double@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Deconstruct (ByRef x As Double, ByRef y As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Deconstruct([Runtime::InteropServices::Out] double % x, [Runtime::InteropServices::Out] double % y);" />
+      <MemberSignature Language="F#" Value="member this.Deconstruct : double * double -&gt; unit" Usage="point.Deconstruct (x, y)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Double" RefType="out" />
+        <Parameter Name="y" Type="System.Double" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Distance">
+      <MemberSignature Language="C#" Value="public double Distance (Microsoft.Maui.Graphics.Point other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 Distance(valuetype Microsoft.Maui.Graphics.Point other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Point.Distance(Microsoft.Maui.Graphics.Point)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Distance (other As Point) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; double Distance(Microsoft::Maui::Graphics::Point other);" />
+      <MemberSignature Language="F#" Value="member this.Distance : Microsoft.Maui.Graphics.Point -&gt; double" Usage="point.Distance other" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="Microsoft.Maui.Graphics.Point" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Point.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="point.Equals o" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (object o, double epsilon);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(object o, float64 epsilon) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Point.Equals(System.Object,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (o As Object, epsilon As Double) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Object ^ o, double epsilon);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj * double -&gt; bool" Usage="point.Equals (o, epsilon)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+        <Parameter Name="epsilon" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="o">To be added.</param>
+        <param name="epsilon">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Point.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="point.GetHashCode " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEmpty">
+      <MemberSignature Language="C#" Value="public bool IsEmpty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Graphics.Point.IsEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="Microsoft.Maui.Graphics.Point.IsEmpty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Offset">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.Point Offset (double dx, double dy);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Microsoft.Maui.Graphics.Point Offset(float64 dx, float64 dy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Point.Offset(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Offset (dx As Double, dy As Double) As Point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Maui::Graphics::Point Offset(double dx, double dy);" />
+      <MemberSignature Language="F#" Value="member this.Offset : double * double -&gt; Microsoft.Maui.Graphics.Point" Usage="point.Offset (dx, dy)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dx" Type="System.Double" />
+        <Parameter Name="dy" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="dx">To be added.</param>
+        <param name="dy">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Addition">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Graphics.Point operator + (Microsoft.Maui.Graphics.Point pt, Microsoft.Maui.Graphics.SizeF sz);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Microsoft.Maui.Graphics.Point op_Addition(valuetype Microsoft.Maui.Graphics.Point pt, valuetype Microsoft.Maui.Graphics.SizeF sz) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Point.op_Addition(Microsoft.Maui.Graphics.Point,Microsoft.Maui.Graphics.SizeF)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator + (pt As Point, sz As SizeF) As Point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Maui::Graphics::Point operator +(Microsoft::Maui::Graphics::Point pt, Microsoft::Maui::Graphics::SizeF sz);" />
+      <MemberSignature Language="F#" Value="static member ( + ) : Microsoft.Maui.Graphics.Point * Microsoft.Maui.Graphics.SizeF -&gt; Microsoft.Maui.Graphics.Point" Usage="pt + sz" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pt" Type="Microsoft.Maui.Graphics.Point" />
+        <Parameter Name="sz" Type="Microsoft.Maui.Graphics.SizeF" />
+      </Parameters>
+      <Docs>
+        <param name="pt">To be added.</param>
+        <param name="sz">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool operator == (Microsoft.Maui.Graphics.Point ptA, Microsoft.Maui.Graphics.Point ptB);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype Microsoft.Maui.Graphics.Point ptA, valuetype Microsoft.Maui.Graphics.Point ptB) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Point.op_Equality(Microsoft.Maui.Graphics.Point,Microsoft.Maui.Graphics.Point)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (ptA As Point, ptB As Point) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(Microsoft::Maui::Graphics::Point ptA, Microsoft::Maui::Graphics::Point ptB);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : Microsoft.Maui.Graphics.Point * Microsoft.Maui.Graphics.Point -&gt; bool" Usage="ptA = ptB" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ptA" Type="Microsoft.Maui.Graphics.Point" />
+        <Parameter Name="ptB" Type="Microsoft.Maui.Graphics.Point" />
+      </Parameters>
+      <Docs>
+        <param name="ptA">To be added.</param>
+        <param name="ptB">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Explicit">
+      <MemberSignature Language="C#" Value="public static explicit operator Microsoft.Maui.Graphics.Size (Microsoft.Maui.Graphics.Point pt);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Microsoft.Maui.Graphics.Size op_Explicit(valuetype Microsoft.Maui.Graphics.Point pt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Point.op_Explicit(Microsoft.Maui.Graphics.Point)~Microsoft.Maui.Graphics.Size" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (pt As Point) As Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator Microsoft::Maui::Graphics::Size(Microsoft::Maui::Graphics::Point pt);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : Microsoft.Maui.Graphics.Point -&gt; Microsoft.Maui.Graphics.Size" Usage="Microsoft.Maui.Graphics.Point.op_Explicit pt" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pt" Type="Microsoft.Maui.Graphics.Point" />
+      </Parameters>
+      <Docs>
+        <param name="pt">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Microsoft.Maui.Graphics.PointF (Microsoft.Maui.Graphics.Point p);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Microsoft.Maui.Graphics.PointF op_Implicit(valuetype Microsoft.Maui.Graphics.Point p) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Point.op_Implicit(Microsoft.Maui.Graphics.Point)~Microsoft.Maui.Graphics.PointF" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (p As Point) As PointF" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator Microsoft::Maui::Graphics::PointF(Microsoft::Maui::Graphics::Point p);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : Microsoft.Maui.Graphics.Point -&gt; Microsoft.Maui.Graphics.PointF" Usage="Microsoft.Maui.Graphics.Point.op_Implicit p" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.PointF</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="p" Type="Microsoft.Maui.Graphics.Point" />
+      </Parameters>
+      <Docs>
+        <param name="p">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Microsoft.Maui.Graphics.Point (System.Numerics.Vector2 v);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Microsoft.Maui.Graphics.Point op_Implicit(valuetype System.Numerics.Vector2 v) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Point.op_Implicit(System.Numerics.Vector2)~Microsoft.Maui.Graphics.Point" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (v As Vector2) As Point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator Microsoft::Maui::Graphics::Point(System::Numerics::Vector2 v);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Numerics.Vector2 -&gt; Microsoft.Maui.Graphics.Point" Usage="Microsoft.Maui.Graphics.Point.op_Implicit v" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="v" Type="System.Numerics.Vector2" />
+      </Parameters>
+      <Docs>
+        <param name="v">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool operator != (Microsoft.Maui.Graphics.Point ptA, Microsoft.Maui.Graphics.Point ptB);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype Microsoft.Maui.Graphics.Point ptA, valuetype Microsoft.Maui.Graphics.Point ptB) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Point.op_Inequality(Microsoft.Maui.Graphics.Point,Microsoft.Maui.Graphics.Point)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (ptA As Point, ptB As Point) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(Microsoft::Maui::Graphics::Point ptA, Microsoft::Maui::Graphics::Point ptB);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : Microsoft.Maui.Graphics.Point * Microsoft.Maui.Graphics.Point -&gt; bool" Usage="Microsoft.Maui.Graphics.Point.op_Inequality (ptA, ptB)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ptA" Type="Microsoft.Maui.Graphics.Point" />
+        <Parameter Name="ptB" Type="Microsoft.Maui.Graphics.Point" />
+      </Parameters>
+      <Docs>
+        <param name="ptA">To be added.</param>
+        <param name="ptB">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Subtraction">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Graphics.Size operator - (Microsoft.Maui.Graphics.Point ptA, Microsoft.Maui.Graphics.Point ptB);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Microsoft.Maui.Graphics.Size op_Subtraction(valuetype Microsoft.Maui.Graphics.Point ptA, valuetype Microsoft.Maui.Graphics.Point ptB) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Point.op_Subtraction(Microsoft.Maui.Graphics.Point,Microsoft.Maui.Graphics.Point)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator - (ptA As Point, ptB As Point) As Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Maui::Graphics::Size operator -(Microsoft::Maui::Graphics::Point ptA, Microsoft::Maui::Graphics::Point ptB);" />
+      <MemberSignature Language="F#" Value="static member ( - ) : Microsoft.Maui.Graphics.Point * Microsoft.Maui.Graphics.Point -&gt; Microsoft.Maui.Graphics.Size" Usage="ptA - ptB" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ptA" Type="Microsoft.Maui.Graphics.Point" />
+        <Parameter Name="ptB" Type="Microsoft.Maui.Graphics.Point" />
+      </Parameters>
+      <Docs>
+        <param name="ptA">To be added.</param>
+        <param name="ptB">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Subtraction">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Graphics.Point operator - (Microsoft.Maui.Graphics.Point pt, Microsoft.Maui.Graphics.SizeF sz);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Microsoft.Maui.Graphics.Point op_Subtraction(valuetype Microsoft.Maui.Graphics.Point pt, valuetype Microsoft.Maui.Graphics.SizeF sz) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Point.op_Subtraction(Microsoft.Maui.Graphics.Point,Microsoft.Maui.Graphics.SizeF)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator - (pt As Point, sz As SizeF) As Point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Maui::Graphics::Point operator -(Microsoft::Maui::Graphics::Point pt, Microsoft::Maui::Graphics::SizeF sz);" />
+      <MemberSignature Language="F#" Value="static member ( - ) : Microsoft.Maui.Graphics.Point * Microsoft.Maui.Graphics.SizeF -&gt; Microsoft.Maui.Graphics.Point" Usage="pt - sz" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pt" Type="Microsoft.Maui.Graphics.Point" />
+        <Parameter Name="sz" Type="Microsoft.Maui.Graphics.SizeF" />
+      </Parameters>
+      <Docs>
+        <param name="pt">To be added.</param>
+        <param name="sz">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Round">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.Point Round ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Microsoft.Maui.Graphics.Point Round() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Point.Round" />
+      <MemberSignature Language="VB.NET" Value="Public Function Round () As Point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Maui::Graphics::Point Round();" />
+      <MemberSignature Language="F#" Value="member this.Round : unit -&gt; Microsoft.Maui.Graphics.Point" Usage="point.Round " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Point</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Point.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="point.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryParse">
+      <MemberSignature Language="C#" Value="public static bool TryParse (string value, out Microsoft.Maui.Graphics.Point point);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string value, [out] valuetype Microsoft.Maui.Graphics.Point&amp; point) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Point.TryParse(System.String,Microsoft.Maui.Graphics.Point@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (value As String, ByRef point As Point) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ value, [Runtime::InteropServices::Out] Microsoft::Maui::Graphics::Point % point);" />
+      <MemberSignature Language="F#" Value="static member TryParse : string * Point -&gt; bool" Usage="Microsoft.Maui.Graphics.Point.TryParse (value, point)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="point" Type="Microsoft.Maui.Graphics.Point" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="point">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="X">
+      <MemberSignature Language="C#" Value="public double X { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 X" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Graphics.Point.X" />
+      <MemberSignature Language="VB.NET" Value="Public Property X As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double X { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.X : double with get, set" Usage="Microsoft.Maui.Graphics.Point.X" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Y">
+      <MemberSignature Language="C#" Value="public double Y { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Y" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Graphics.Point.Y" />
+      <MemberSignature Language="VB.NET" Value="Public Property Y As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Y { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Y : double with get, set" Usage="Microsoft.Maui.Graphics.Point.Y" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Zero">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Graphics.Point Zero;" />
+      <MemberSignature Language="ILAsm" Value=".field public static valuetype Microsoft.Maui.Graphics.Point Zero" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Graphics.Point.Zero" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Zero As Point " />
+      <MemberSignature Language="C++ CLI" Value="public: static Microsoft::Maui::Graphics::Point Zero;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Zero : Microsoft.Maui.Graphics.Point" Usage="Microsoft.Maui.Graphics.Point.Zero" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,261 @@
+<Type Name="IGridLayout" FullName="Microsoft.Maui.IGridLayout">
+  <TypeSignature Language="C#" Value="public interface IGridLayout : Microsoft.Maui.ILayout, System.Collections.Generic.ICollection&lt;Microsoft.Maui.IView&gt;, System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.IView&gt;, System.Collections.Generic.IList&lt;Microsoft.Maui.IView&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IGridLayout implements class Microsoft.Maui.IContainer, class Microsoft.Maui.IElement, class Microsoft.Maui.ILayout, class Microsoft.Maui.IPadding, class Microsoft.Maui.ISafeAreaView, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView, class System.Collections.Generic.ICollection`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IList`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.IGridLayout" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IGridLayout&#xA;Implements ICollection(Of IView), IEnumerable(Of IView), ILayout, IList(Of IView)" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IGridLayout : Microsoft::Maui::ILayout, System::Collections::Generic::ICollection&lt;Microsoft::Maui::IView ^&gt;, System::Collections::Generic::IEnumerable&lt;Microsoft::Maui::IView ^&gt;, System::Collections::Generic::IList&lt;Microsoft::Maui::IView ^&gt;" />
+  <TypeSignature Language="F#" Value="type IGridLayout = interface&#xA;    interface ILayout&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IContainer&#xA;    interface IList&lt;IView&gt;&#xA;    interface ICollection&lt;IView&gt;&#xA;    interface seq&lt;IView&gt;&#xA;    interface IEnumerable&#xA;    interface ISafeAreaView&#xA;    interface IPadding" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IContainer</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IElement</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.ILayout</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IPadding</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.ISafeAreaView</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.ITransform</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IView</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.ICollection&lt;Microsoft.Maui.IView&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.ICollection&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.IView&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IList&lt;Microsoft.Maui.IView&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Represents a layout that arranges views in rows and columns.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ColumnDefinitions">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IGridColumnDefinition&gt; ColumnDefinitions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Maui.IGridColumnDefinition&gt; ColumnDefinitions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.IGridLayout.ColumnDefinitions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnDefinitions As IReadOnlyList(Of IGridColumnDefinition)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IReadOnlyList&lt;Microsoft::Maui::IGridColumnDefinition ^&gt; ^ ColumnDefinitions { System::Collections::Generic::IReadOnlyList&lt;Microsoft::Maui::IGridColumnDefinition ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnDefinitions : System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IGridColumnDefinition&gt;" Usage="Microsoft.Maui.IGridLayout.ColumnDefinitions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IGridColumnDefinition&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            An IGridColumnDefinition collection for the GridLayout instance.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnSpacing">
+      <MemberSignature Language="C#" Value="public double ColumnSpacing { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ColumnSpacing" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.IGridLayout.ColumnSpacing" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnSpacing As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ColumnSpacing { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnSpacing : double" Usage="Microsoft.Maui.IGridLayout.ColumnSpacing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the amount of space left between columns in the GridLayout.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetColumn">
+      <MemberSignature Language="C#" Value="public int GetColumn (Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetColumn(class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IGridLayout.GetColumn(Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetColumn (view As IView) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetColumn(Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="abstract member GetColumn : Microsoft.Maui.IView -&gt; int" Usage="iGridLayout.GetColumn view" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="view">A view that belongs to the Grid layout.</param>
+        <summary>
+            Gets the column of the child element.
+            </summary>
+        <returns>The column that the child element is in.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetColumnSpan">
+      <MemberSignature Language="C#" Value="public int GetColumnSpan (Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetColumnSpan(class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IGridLayout.GetColumnSpan(Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetColumnSpan (view As IView) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetColumnSpan(Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="abstract member GetColumnSpan : Microsoft.Maui.IView -&gt; int" Usage="iGridLayout.GetColumnSpan view" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="view">A view that belongs to the Grid layout.</param>
+        <summary>
+            Gets the row span of the child element.
+            </summary>
+        <returns>The row that the child element is in.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRow">
+      <MemberSignature Language="C#" Value="public int GetRow (Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetRow(class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IGridLayout.GetRow(Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRow (view As IView) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetRow(Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="abstract member GetRow : Microsoft.Maui.IView -&gt; int" Usage="iGridLayout.GetRow view" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="view">A view that belongs to the Grid layout.</param>
+        <summary>
+            Gets the row of the child element.
+            </summary>
+        <returns>An integer that represents the row in which the item will appear.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRowSpan">
+      <MemberSignature Language="C#" Value="public int GetRowSpan (Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetRowSpan(class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IGridLayout.GetRowSpan(Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRowSpan (view As IView) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetRowSpan(Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="abstract member GetRowSpan : Microsoft.Maui.IView -&gt; int" Usage="iGridLayout.GetRowSpan view" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="view">A view that belongs to the Grid layout.</param>
+        <summary>
+            Gets the row span of the child element.
+            </summary>
+        <returns>The row that the child element is in.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowDefinitions">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IGridRowDefinition&gt; RowDefinitions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Maui.IGridRowDefinition&gt; RowDefinitions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.IGridLayout.RowDefinitions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowDefinitions As IReadOnlyList(Of IGridRowDefinition)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IReadOnlyList&lt;Microsoft::Maui::IGridRowDefinition ^&gt; ^ RowDefinitions { System::Collections::Generic::IReadOnlyList&lt;Microsoft::Maui::IGridRowDefinition ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RowDefinitions : System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IGridRowDefinition&gt;" Usage="Microsoft.Maui.IGridLayout.RowDefinitions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IGridRowDefinition&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            An IGridRowDefinition collection for the GridLayout instance.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowSpacing">
+      <MemberSignature Language="C#" Value="public double RowSpacing { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 RowSpacing" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.IGridLayout.RowSpacing" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowSpacing As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double RowSpacing { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.RowSpacing : double" Usage="Microsoft.Maui.IGridLayout.RowSpacing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the amount of space left between rows in the GridLayout.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
