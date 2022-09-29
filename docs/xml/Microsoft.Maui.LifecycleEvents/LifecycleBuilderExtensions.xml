@@ -1,0 +1,88 @@
+<Type Name="LifecycleBuilderExtensions" FullName="Microsoft.Maui.LifecycleEvents.LifecycleBuilderExtensions">
+  <TypeSignature Language="C#" Value="public static class LifecycleBuilderExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit LifecycleBuilderExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.LifecycleEvents.LifecycleBuilderExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module LifecycleBuilderExtensions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LifecycleBuilderExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type LifecycleBuilderExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddEvent">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.LifecycleEvents.ILifecycleBuilder AddEvent (this Microsoft.Maui.LifecycleEvents.ILifecycleBuilder builder, string eventName, Action action);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Maui.LifecycleEvents.ILifecycleBuilder AddEvent(class Microsoft.Maui.LifecycleEvents.ILifecycleBuilder builder, string eventName, class System.Action action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.LifecycleEvents.LifecycleBuilderExtensions.AddEvent(Microsoft.Maui.LifecycleEvents.ILifecycleBuilder,System.String,System.Action)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AddEvent (builder As ILifecycleBuilder, eventName As String, action As Action) As ILifecycleBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::Maui::LifecycleEvents::ILifecycleBuilder ^ AddEvent(Microsoft::Maui::LifecycleEvents::ILifecycleBuilder ^ builder, System::String ^ eventName, Action ^ action);" />
+      <MemberSignature Language="F#" Value="static member AddEvent : Microsoft.Maui.LifecycleEvents.ILifecycleBuilder * string * Action -&gt; Microsoft.Maui.LifecycleEvents.ILifecycleBuilder" Usage="Microsoft.Maui.LifecycleEvents.LifecycleBuilderExtensions.AddEvent (builder, eventName, action)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.LifecycleEvents.ILifecycleBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="Microsoft.Maui.LifecycleEvents.ILifecycleBuilder" RefType="this" />
+        <Parameter Name="eventName" Type="System.String" />
+        <Parameter Name="action" Type="System.Action" />
+      </Parameters>
+      <Docs>
+        <param name="builder">To be added.</param>
+        <param name="eventName">To be added.</param>
+        <param name="action">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddEvent&lt;TDelegate&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.LifecycleEvents.ILifecycleBuilder AddEvent&lt;TDelegate&gt; (this Microsoft.Maui.LifecycleEvents.ILifecycleBuilder builder, string eventName, TDelegate action) where TDelegate : Delegate;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Maui.LifecycleEvents.ILifecycleBuilder AddEvent&lt;(class System.Delegate) TDelegate&gt;(class Microsoft.Maui.LifecycleEvents.ILifecycleBuilder builder, string eventName, !!TDelegate action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.LifecycleEvents.LifecycleBuilderExtensions.AddEvent``1(Microsoft.Maui.LifecycleEvents.ILifecycleBuilder,System.String,``0)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AddEvent(Of TDelegate As Delegate) (builder As ILifecycleBuilder, eventName As String, action As TDelegate) As ILifecycleBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TDelegate&gt;&#xA; where TDelegate : Delegate[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::Maui::LifecycleEvents::ILifecycleBuilder ^ AddEvent(Microsoft::Maui::LifecycleEvents::ILifecycleBuilder ^ builder, System::String ^ eventName, TDelegate action);" />
+      <MemberSignature Language="F#" Value="static member AddEvent : Microsoft.Maui.LifecycleEvents.ILifecycleBuilder * string * 'Delegate -&gt; Microsoft.Maui.LifecycleEvents.ILifecycleBuilder (requires 'Delegate :&gt; Delegate)" Usage="Microsoft.Maui.LifecycleEvents.LifecycleBuilderExtensions.AddEvent (builder, eventName, action)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.LifecycleEvents.ILifecycleBuilder</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TDelegate">
+          <Constraints>
+            <BaseTypeName>System.Delegate</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="builder" Type="Microsoft.Maui.LifecycleEvents.ILifecycleBuilder" RefType="this" />
+        <Parameter Name="eventName" Type="System.String" />
+        <Parameter Name="action" Type="TDelegate" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TDelegate">To be added.</typeparam>
+        <param name="builder">To be added.</param>
+        <param name="eventName">To be added.</param>
+        <param name="action">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

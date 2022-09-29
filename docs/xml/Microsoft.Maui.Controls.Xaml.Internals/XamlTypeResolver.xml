@@ -1,0 +1,109 @@
+<Type Name="XamlTypeResolver" FullName="Microsoft.Maui.Controls.Xaml.Internals.XamlTypeResolver">
+  <TypeSignature Language="C#" Value="public class XamlTypeResolver : Microsoft.Maui.Controls.Xaml.IXamlTypeResolver" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlTypeResolver extends System.Object implements class Microsoft.Maui.Controls.Xaml.IXamlTypeResolver" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Xaml.Internals.XamlTypeResolver" />
+  <TypeSignature Language="VB.NET" Value="Public Class XamlTypeResolver&#xA;Implements IXamlTypeResolver" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XamlTypeResolver : Microsoft::Maui::Controls::Xaml::IXamlTypeResolver" />
+  <TypeSignature Language="F#" Value="type XamlTypeResolver = class&#xA;    interface IXamlTypeResolver" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.Controls.Xaml.IXamlTypeResolver</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlTypeResolver (System.Xml.IXmlNamespaceResolver namespaceResolver, System.Reflection.Assembly currentAssembly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.IXmlNamespaceResolver namespaceResolver, class System.Reflection.Assembly currentAssembly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Xaml.Internals.XamlTypeResolver.#ctor(System.Xml.IXmlNamespaceResolver,System.Reflection.Assembly)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (namespaceResolver As IXmlNamespaceResolver, currentAssembly As Assembly)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlTypeResolver(System::Xml::IXmlNamespaceResolver ^ namespaceResolver, System::Reflection::Assembly ^ currentAssembly);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.Controls.Xaml.Internals.XamlTypeResolver : System.Xml.IXmlNamespaceResolver * System.Reflection.Assembly -&gt; Microsoft.Maui.Controls.Xaml.Internals.XamlTypeResolver" Usage="new Microsoft.Maui.Controls.Xaml.Internals.XamlTypeResolver (namespaceResolver, currentAssembly)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="namespaceResolver" Type="System.Xml.IXmlNamespaceResolver" />
+        <Parameter Name="currentAssembly" Type="System.Reflection.Assembly" />
+      </Parameters>
+      <Docs>
+        <param name="namespaceResolver">To be added.</param>
+        <param name="currentAssembly">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Controls.Xaml.IXamlTypeResolver.Resolve">
+      <MemberSignature Language="C#" Value="Type IXamlTypeResolver.Resolve (string qualifiedTypeName, IServiceProvider serviceProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Type Microsoft.Maui.Controls.Xaml.IXamlTypeResolver.Resolve(string qualifiedTypeName, class System.IServiceProvider serviceProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Xaml.Internals.XamlTypeResolver.Microsoft#Maui#Controls#Xaml#IXamlTypeResolver#Resolve(System.String,System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function Resolve (qualifiedTypeName As String, serviceProvider As IServiceProvider) As Type Implements IXamlTypeResolver.Resolve" />
+      <MemberSignature Language="C++ CLI" Value=" virtual Type ^ Microsoft.Maui.Controls.Xaml.IXamlTypeResolver.Resolve(System::String ^ qualifiedTypeName, IServiceProvider ^ serviceProvider) = Microsoft::Maui::Controls::Xaml::IXamlTypeResolver::Resolve;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Controls.Xaml.IXamlTypeResolver.Resolve : string * IServiceProvider -&gt; Type&#xA;override this.Microsoft.Maui.Controls.Xaml.IXamlTypeResolver.Resolve : string * IServiceProvider -&gt; Type" Usage="xamlTypeResolver.Microsoft.Maui.Controls.Xaml.IXamlTypeResolver.Resolve (qualifiedTypeName, serviceProvider)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.Xaml.IXamlTypeResolver.Resolve(System.String,System.IServiceProvider)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="qualifiedTypeName" Type="System.String" />
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="qualifiedTypeName">To be added.</param>
+        <param name="serviceProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Controls.Xaml.IXamlTypeResolver.TryResolve">
+      <MemberSignature Language="C#" Value="bool IXamlTypeResolver.TryResolve (string qualifiedTypeName, out Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Maui.Controls.Xaml.IXamlTypeResolver.TryResolve(string qualifiedTypeName, [out] class System.Type&amp; type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Xaml.Internals.XamlTypeResolver.Microsoft#Maui#Controls#Xaml#IXamlTypeResolver#TryResolve(System.String,System.Type@)" />
+      <MemberSignature Language="VB.NET" Value="Function TryResolve (qualifiedTypeName As String, ByRef type As Type) As Boolean Implements IXamlTypeResolver.TryResolve" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool Microsoft.Maui.Controls.Xaml.IXamlTypeResolver.TryResolve(System::String ^ qualifiedTypeName, [Runtime::InteropServices::Out] Type ^ % type) = Microsoft::Maui::Controls::Xaml::IXamlTypeResolver::TryResolve;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Controls.Xaml.IXamlTypeResolver.TryResolve : string * Type -&gt; bool&#xA;override this.Microsoft.Maui.Controls.Xaml.IXamlTypeResolver.TryResolve : string * Type -&gt; bool" Usage="xamlTypeResolver.Microsoft.Maui.Controls.Xaml.IXamlTypeResolver.TryResolve (qualifiedTypeName, type)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.Xaml.IXamlTypeResolver.TryResolve(System.String,System.Type@)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="qualifiedTypeName" Type="System.String" />
+        <Parameter Name="type" Type="System.Type" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="qualifiedTypeName">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

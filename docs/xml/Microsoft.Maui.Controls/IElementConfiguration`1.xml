@@ -1,0 +1,62 @@
+<Type Name="IElementConfiguration&lt;TElement&gt;" FullName="Microsoft.Maui.Controls.IElementConfiguration&lt;TElement&gt;">
+  <TypeSignature Language="C#" Value="public interface IElementConfiguration&lt;out TElement&gt; where TElement : Element" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IElementConfiguration`1&lt;(class Microsoft.Maui.Controls.Element) + TElement&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.IElementConfiguration`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IElementConfiguration(Of Out TElement)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TElement&gt;&#xA; where TElement : Elementpublic interface class IElementConfiguration" />
+  <TypeSignature Language="F#" Value="type IElementConfiguration&lt;'Element (requires 'Element :&gt; Element)&gt; = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TElement">
+      <Constraints>
+        <ParameterAttribute>Covariant</ParameterAttribute>
+        <BaseTypeName>Microsoft.Maui.Controls.Element</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TElement">The element type.</typeparam>
+    <summary>
+            Helper that handles storing and lookup of platform specifics implementations
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="On&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;T,out TElement&gt; On&lt;T&gt; () where T : Microsoft.Maui.Controls.IConfigPlatform;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Maui.Controls.IPlatformElementConfiguration`2&lt;!!T, !TElement&gt; On&lt;(class Microsoft.Maui.Controls.IConfigPlatform) T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.IElementConfiguration`1.On``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function On(Of T As IConfigPlatform) () As IPlatformElementConfiguration(Of T, Out TElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : Microsoft::Maui::Controls::IConfigPlatform Microsoft::Maui::Controls::IPlatformElementConfiguration&lt;T, TElement&gt; ^ On();" />
+      <MemberSignature Language="F#" Value="abstract member On : unit -&gt; Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;'T, 'Element (requires 'T :&gt; Microsoft.Maui.Controls.IConfigPlatform and 'Element :&gt; Microsoft.Maui.Controls.Element)&gt; (requires 'T :&gt; Microsoft.Maui.Controls.IConfigPlatform)" Usage="iElementConfiguration.On " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;T,TElement&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>Microsoft.Maui.Controls.IConfigPlatform</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">A type of <see cref="T:Microsoft.Maui.Controls.IConfigPlatform" /> which specifies the platform to retrieve for.</typeparam>
+        <summary>
+            Returns the platform-specific instance of this <typeparamref name="TElement" />, on which a platform-specific method may be called.
+            </summary>
+        <returns>A platform-specific instance of <typeparamref name="TElement" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
