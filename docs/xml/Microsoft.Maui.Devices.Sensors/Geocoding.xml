@@ -1,0 +1,122 @@
+<Type Name="Geocoding" FullName="Microsoft.Maui.Devices.Sensors.Geocoding">
+  <TypeSignature Language="C#" Value="public static class Geocoding" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Geocoding extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Devices.Sensors.Geocoding" />
+  <TypeSignature Language="VB.NET" Value="Public Class Geocoding" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Geocoding abstract sealed" />
+  <TypeSignature Language="F#" Value="type Geocoding = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Easily convert between geographic coordinated and place names.</summary>
+    <remarks />
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Devices.Sensors.IGeocoding Default { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Maui.Devices.Sensors.IGeocoding Default" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Devices.Sensors.Geocoding.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As IGeocoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::Maui::Devices::Sensors::IGeocoding ^ Default { Microsoft::Maui::Devices::Sensors::IGeocoding ^ get(); };" />
+      <MemberSignature Language="F#" Value="static member Default : Microsoft.Maui.Devices.Sensors.IGeocoding" Usage="Microsoft.Maui.Devices.Sensors.Geocoding.Default" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Devices.Sensors.IGeocoding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLocationsAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.Devices.Sensors.Location&gt;&gt; GetLocationsAsync (string address);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Maui.Devices.Sensors.Location&gt;&gt; GetLocationsAsync(string address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Devices.Sensors.Geocoding.GetLocationsAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetLocationsAsync (address As String) As Task(Of IEnumerable(Of Location))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;System::Collections::Generic::IEnumerable&lt;Microsoft::Maui::Devices::Sensors::Location ^&gt; ^&gt; ^ GetLocationsAsync(System::String ^ address);" />
+      <MemberSignature Language="F#" Value="static member GetLocationsAsync : string -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.Maui.Devices.Sensors.Location&gt;&gt;" Usage="Microsoft.Maui.Devices.Sensors.Geocoding.GetLocationsAsync address" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.Devices.Sensors.Location&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="address">Address to retrieve the lcoation for.</param>
+        <summary>Retrieve location for a given address.</summary>
+        <returns>
+          <para>List of locations that best match the address or null if none found.</para>
+        </returns>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="GetPlacemarksAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.Devices.Sensors.Placemark&gt;&gt; GetPlacemarksAsync (Microsoft.Maui.Devices.Sensors.Location location);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Maui.Devices.Sensors.Placemark&gt;&gt; GetPlacemarksAsync(class Microsoft.Maui.Devices.Sensors.Location location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Devices.Sensors.Geocoding.GetPlacemarksAsync(Microsoft.Maui.Devices.Sensors.Location)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPlacemarksAsync (location As Location) As Task(Of IEnumerable(Of Placemark))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;System::Collections::Generic::IEnumerable&lt;Microsoft::Maui::Devices::Sensors::Placemark ^&gt; ^&gt; ^ GetPlacemarksAsync(Microsoft::Maui::Devices::Sensors::Location ^ location);" />
+      <MemberSignature Language="F#" Value="static member GetPlacemarksAsync : Microsoft.Maui.Devices.Sensors.Location -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.Maui.Devices.Sensors.Placemark&gt;&gt;" Usage="Microsoft.Maui.Devices.Sensors.Geocoding.GetPlacemarksAsync location" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.Devices.Sensors.Placemark&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="Microsoft.Maui.Devices.Sensors.Location" />
+      </Parameters>
+      <Docs>
+        <param name="location">Location to find placemarks for.</param>
+        <summary>Retrieve placemarks for a given location.</summary>
+        <returns>List of placemarks or null if no placemarks are found.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="GetPlacemarksAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.Devices.Sensors.Placemark&gt;&gt; GetPlacemarksAsync (double latitude, double longitude);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Maui.Devices.Sensors.Placemark&gt;&gt; GetPlacemarksAsync(float64 latitude, float64 longitude) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Devices.Sensors.Geocoding.GetPlacemarksAsync(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPlacemarksAsync (latitude As Double, longitude As Double) As Task(Of IEnumerable(Of Placemark))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;System::Collections::Generic::IEnumerable&lt;Microsoft::Maui::Devices::Sensors::Placemark ^&gt; ^&gt; ^ GetPlacemarksAsync(double latitude, double longitude);" />
+      <MemberSignature Language="F#" Value="static member GetPlacemarksAsync : double * double -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.Maui.Devices.Sensors.Placemark&gt;&gt;" Usage="Microsoft.Maui.Devices.Sensors.Geocoding.GetPlacemarksAsync (latitude, longitude)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.Devices.Sensors.Placemark&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="latitude" Type="System.Double" />
+        <Parameter Name="longitude" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="latitude">Latitude of the location.</param>
+        <param name="longitude">Longitude of the location.</param>
+        <summary>Retrieve location for a given address.</summary>
+        <returns>List of placemarks or null if no placemarks are found.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

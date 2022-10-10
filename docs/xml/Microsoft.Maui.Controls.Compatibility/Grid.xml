@@ -1,0 +1,931 @@
+<Type Name="Grid" FullName="Microsoft.Maui.Controls.Compatibility.Grid">
+  <TypeSignature Language="C#" Value="public class Grid : Microsoft.Maui.Controls.Compatibility.Layout&lt;Microsoft.Maui.Controls.View&gt;, Microsoft.Maui.Controls.IElementConfiguration&lt;Microsoft.Maui.Controls.Compatibility.Grid&gt;, Microsoft.Maui.Controls.IGridController, Microsoft.Maui.IGridLayout, System.Collections.Generic.ICollection&lt;Microsoft.Maui.IView&gt;, System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.IView&gt;, System.Collections.Generic.IList&lt;Microsoft.Maui.IView&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Grid extends Microsoft.Maui.Controls.Compatibility.Layout`1&lt;class Microsoft.Maui.Controls.View&gt; implements class Microsoft.Maui.Controls.IElementConfiguration`1&lt;class Microsoft.Maui.Controls.Compatibility.Grid&gt;, class Microsoft.Maui.Controls.IGridController, class Microsoft.Maui.IContainer, class Microsoft.Maui.IElement, class Microsoft.Maui.IGridLayout, class Microsoft.Maui.ILayout, class Microsoft.Maui.IPadding, class Microsoft.Maui.ISafeAreaView, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView, class System.Collections.Generic.ICollection`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IList`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Compatibility.Grid" />
+  <TypeSignature Language="VB.NET" Value="Public Class Grid&#xA;Inherits Layout(Of View)&#xA;Implements ICollection(Of IView), IElementConfiguration(Of Grid), IEnumerable(Of IView), IGridController, IGridLayout, IList(Of IView)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Grid : Microsoft::Maui::Controls::Compatibility::Layout&lt;Microsoft::Maui::Controls::View ^&gt;, Microsoft::Maui::Controls::IElementConfiguration&lt;Microsoft::Maui::Controls::Compatibility::Grid ^&gt;, Microsoft::Maui::Controls::IGridController, Microsoft::Maui::IGridLayout, System::Collections::Generic::ICollection&lt;Microsoft::Maui::IView ^&gt;, System::Collections::Generic::IEnumerable&lt;Microsoft::Maui::IView ^&gt;, System::Collections::Generic::IList&lt;Microsoft::Maui::IView ^&gt;" />
+  <TypeSignature Language="F#" Value="type Grid = class&#xA;    inherit Layout&lt;View&gt;&#xA;    interface IGridController&#xA;    interface IElementConfiguration&lt;Grid&gt;&#xA;    interface IGridLayout&#xA;    interface ILayout&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IContainer&#xA;    interface IList&lt;IView&gt;&#xA;    interface ICollection&lt;IView&gt;&#xA;    interface seq&lt;IView&gt;&#xA;    interface IEnumerable&#xA;    interface ISafeAreaView&#xA;    interface IPadding" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Maui.Controls.Compatibility.Layout&lt;Microsoft.Maui.Controls.View&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="T">Microsoft.Maui.Controls.View</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.Controls.IElementConfiguration&lt;Microsoft.Maui.Controls.Compatibility.Grid&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.Controls.IGridController</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IContainer</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IElement</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IGridLayout</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.ILayout</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IPadding</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.ISafeAreaView</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.ITransform</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IView</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.ICollection&lt;Microsoft.Maui.IView&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.ICollection&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.IView&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IList&lt;Microsoft.Maui.IView&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.Maui.Controls.ContentProperty("Children")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Maui.Controls.ContentProperty("Children")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Grid ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Compatibility.Grid.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Grid();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Children">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.Compatibility.Grid.IGridList&lt;Microsoft.Maui.Controls.View&gt; Children { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.Compatibility.Grid/IGridList`1&lt;class Microsoft.Maui.Controls.View&gt; Children" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Compatibility.Grid.Children" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Children As Grid.IGridList(Of View)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::Compatibility::Grid::IGridList&lt;Microsoft::Maui::Controls::View ^&gt; ^ Children { Microsoft::Maui::Controls::Compatibility::Grid::IGridList&lt;Microsoft::Maui::Controls::View ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Children : Microsoft.Maui.Controls.Compatibility.Grid.IGridList&lt;Microsoft.Maui.Controls.View&gt;" Usage="Microsoft.Maui.Controls.Compatibility.Grid.Children" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.Compatibility.Grid+IGridList&lt;Microsoft.Maui.Controls.View&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnDefinitions">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.ColumnDefinitionCollection ColumnDefinitions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.ColumnDefinitionCollection ColumnDefinitions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Compatibility.Grid.ColumnDefinitions" />
+      <MemberSignature Language="VB.NET" Value="Public Property ColumnDefinitions As ColumnDefinitionCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::ColumnDefinitionCollection ^ ColumnDefinitions { Microsoft::Maui::Controls::ColumnDefinitionCollection ^ get(); void set(Microsoft::Maui::Controls::ColumnDefinitionCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnDefinitions : Microsoft.Maui.Controls.ColumnDefinitionCollection with get, set" Usage="Microsoft.Maui.Controls.Compatibility.Grid.ColumnDefinitions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.TypeConverter(typeof(Microsoft.Maui.Controls.ColumnDefinitionCollectionTypeConverter))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.TypeConverter(typeof(Microsoft.Maui.Controls.ColumnDefinitionCollectionTypeConverter))&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.ColumnDefinitionCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnDefinitionsProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty ColumnDefinitionsProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty ColumnDefinitionsProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Compatibility.Grid.ColumnDefinitionsProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColumnDefinitionsProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ ColumnDefinitionsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ColumnDefinitionsProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Compatibility.Grid.ColumnDefinitionsProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty ColumnProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty ColumnProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Compatibility.Grid.ColumnProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColumnProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ ColumnProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ColumnProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Compatibility.Grid.ColumnProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnSpacing">
+      <MemberSignature Language="C#" Value="public double ColumnSpacing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ColumnSpacing" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Compatibility.Grid.ColumnSpacing" />
+      <MemberSignature Language="VB.NET" Value="Public Property ColumnSpacing As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ColumnSpacing { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnSpacing : double with get, set" Usage="Microsoft.Maui.Controls.Compatibility.Grid.ColumnSpacing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnSpacingProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty ColumnSpacingProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty ColumnSpacingProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Compatibility.Grid.ColumnSpacingProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColumnSpacingProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ ColumnSpacingProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ColumnSpacingProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Compatibility.Grid.ColumnSpacingProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnSpanProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty ColumnSpanProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty ColumnSpanProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Compatibility.Grid.ColumnSpanProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColumnSpanProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ ColumnSpanProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ColumnSpanProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Compatibility.Grid.ColumnSpanProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetColumn">
+      <MemberSignature Language="C#" Value="public static int GetColumn (Microsoft.Maui.Controls.BindableObject bindable);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetColumn(class Microsoft.Maui.Controls.BindableObject bindable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Compatibility.Grid.GetColumn(Microsoft.Maui.Controls.BindableObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetColumn (bindable As BindableObject) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetColumn(Microsoft::Maui::Controls::BindableObject ^ bindable);" />
+      <MemberSignature Language="F#" Value="static member GetColumn : Microsoft.Maui.Controls.BindableObject -&gt; int" Usage="Microsoft.Maui.Controls.Compatibility.Grid.GetColumn bindable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Microsoft.Maui.Controls.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetColumnSpan">
+      <MemberSignature Language="C#" Value="public static int GetColumnSpan (Microsoft.Maui.Controls.BindableObject bindable);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetColumnSpan(class Microsoft.Maui.Controls.BindableObject bindable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Compatibility.Grid.GetColumnSpan(Microsoft.Maui.Controls.BindableObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetColumnSpan (bindable As BindableObject) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetColumnSpan(Microsoft::Maui::Controls::BindableObject ^ bindable);" />
+      <MemberSignature Language="F#" Value="static member GetColumnSpan : Microsoft.Maui.Controls.BindableObject -&gt; int" Usage="Microsoft.Maui.Controls.Compatibility.Grid.GetColumnSpan bindable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Microsoft.Maui.Controls.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRow">
+      <MemberSignature Language="C#" Value="public static int GetRow (Microsoft.Maui.Controls.BindableObject bindable);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetRow(class Microsoft.Maui.Controls.BindableObject bindable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Compatibility.Grid.GetRow(Microsoft.Maui.Controls.BindableObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetRow (bindable As BindableObject) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetRow(Microsoft::Maui::Controls::BindableObject ^ bindable);" />
+      <MemberSignature Language="F#" Value="static member GetRow : Microsoft.Maui.Controls.BindableObject -&gt; int" Usage="Microsoft.Maui.Controls.Compatibility.Grid.GetRow bindable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Microsoft.Maui.Controls.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRowSpan">
+      <MemberSignature Language="C#" Value="public static int GetRowSpan (Microsoft.Maui.Controls.BindableObject bindable);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetRowSpan(class Microsoft.Maui.Controls.BindableObject bindable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Compatibility.Grid.GetRowSpan(Microsoft.Maui.Controls.BindableObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetRowSpan (bindable As BindableObject) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetRowSpan(Microsoft::Maui::Controls::BindableObject ^ bindable);" />
+      <MemberSignature Language="F#" Value="static member GetRowSpan : Microsoft.Maui.Controls.BindableObject -&gt; int" Usage="Microsoft.Maui.Controls.Compatibility.Grid.GetRowSpan bindable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Microsoft.Maui.Controls.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidateMeasureInernalNonVirtual">
+      <MemberSignature Language="C#" Value="public void InvalidateMeasureInernalNonVirtual (Microsoft.Maui.Controls.Internals.InvalidationTrigger trigger);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InvalidateMeasureInernalNonVirtual(valuetype Microsoft.Maui.Controls.Internals.InvalidationTrigger trigger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Compatibility.Grid.InvalidateMeasureInernalNonVirtual(Microsoft.Maui.Controls.Internals.InvalidationTrigger)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InvalidateMeasureInernalNonVirtual (trigger As InvalidationTrigger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void InvalidateMeasureInernalNonVirtual(Microsoft::Maui::Controls::Internals::InvalidationTrigger trigger);" />
+      <MemberSignature Language="F#" Value="abstract member InvalidateMeasureInernalNonVirtual : Microsoft.Maui.Controls.Internals.InvalidationTrigger -&gt; unit&#xA;override this.InvalidateMeasureInernalNonVirtual : Microsoft.Maui.Controls.Internals.InvalidationTrigger -&gt; unit" Usage="grid.InvalidateMeasureInernalNonVirtual trigger" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.IGridController.InvalidateMeasureInernalNonVirtual(Microsoft.Maui.Controls.Internals.InvalidationTrigger)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="trigger" Type="Microsoft.Maui.Controls.Internals.InvalidationTrigger" />
+      </Parameters>
+      <Docs>
+        <param name="trigger">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LayoutChildren">
+      <MemberSignature Language="C#" Value="protected override void LayoutChildren (double x, double y, double width, double height);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LayoutChildren(float64 x, float64 y, float64 width, float64 height) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Compatibility.Grid.LayoutChildren(System.Double,System.Double,System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LayoutChildren (x As Double, y As Double, width As Double, height As Double)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LayoutChildren(double x, double y, double width, double height);" />
+      <MemberSignature Language="F#" Value="override this.LayoutChildren : double * double * double * double -&gt; unit" Usage="grid.LayoutChildren (x, y, width, height)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Double" />
+        <Parameter Name="y" Type="System.Double" />
+        <Parameter Name="width" Type="System.Double" />
+        <Parameter Name="height" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IGridLayout.ColumnDefinitions">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IGridColumnDefinition&gt; Microsoft.Maui.IGridLayout.ColumnDefinitions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Maui.IGridColumnDefinition&gt; Microsoft.Maui.IGridLayout.ColumnDefinitions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Compatibility.Grid.Microsoft#Maui#IGridLayout#ColumnDefinitions" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property ColumnDefinitions As IReadOnlyList(Of IGridColumnDefinition) Implements IGridLayout.ColumnDefinitions" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::IReadOnlyList&lt;Microsoft::Maui::IGridColumnDefinition ^&gt; ^ Microsoft::Maui::IGridLayout::ColumnDefinitions { System::Collections::Generic::IReadOnlyList&lt;Microsoft::Maui::IGridColumnDefinition ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.IGridLayout.ColumnDefinitions : System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IGridColumnDefinition&gt;" Usage="Microsoft.Maui.IGridLayout.ColumnDefinitions" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IGridLayout.ColumnDefinitions</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IGridColumnDefinition&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IGridLayout.GetColumn">
+      <MemberSignature Language="C#" Value="int IGridLayout.GetColumn (Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 Microsoft.Maui.IGridLayout.GetColumn(class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Compatibility.Grid.Microsoft#Maui#IGridLayout#GetColumn(Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="Function GetColumn (view As IView) As Integer Implements IGridLayout.GetColumn" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int Microsoft.Maui.IGridLayout.GetColumn(Microsoft::Maui::IView ^ view) = Microsoft::Maui::IGridLayout::GetColumn;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.IGridLayout.GetColumn : Microsoft.Maui.IView -&gt; int&#xA;override this.Microsoft.Maui.IGridLayout.GetColumn : Microsoft.Maui.IView -&gt; int" Usage="grid.Microsoft.Maui.IGridLayout.GetColumn view" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.IGridLayout.GetColumn(Microsoft.Maui.IView)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IGridLayout.GetColumnSpan">
+      <MemberSignature Language="C#" Value="int IGridLayout.GetColumnSpan (Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 Microsoft.Maui.IGridLayout.GetColumnSpan(class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Compatibility.Grid.Microsoft#Maui#IGridLayout#GetColumnSpan(Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="Function GetColumnSpan (view As IView) As Integer Implements IGridLayout.GetColumnSpan" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int Microsoft.Maui.IGridLayout.GetColumnSpan(Microsoft::Maui::IView ^ view) = Microsoft::Maui::IGridLayout::GetColumnSpan;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.IGridLayout.GetColumnSpan : Microsoft.Maui.IView -&gt; int&#xA;override this.Microsoft.Maui.IGridLayout.GetColumnSpan : Microsoft.Maui.IView -&gt; int" Usage="grid.Microsoft.Maui.IGridLayout.GetColumnSpan view" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.IGridLayout.GetColumnSpan(Microsoft.Maui.IView)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IGridLayout.GetRow">
+      <MemberSignature Language="C#" Value="int IGridLayout.GetRow (Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 Microsoft.Maui.IGridLayout.GetRow(class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Compatibility.Grid.Microsoft#Maui#IGridLayout#GetRow(Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="Function GetRow (view As IView) As Integer Implements IGridLayout.GetRow" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int Microsoft.Maui.IGridLayout.GetRow(Microsoft::Maui::IView ^ view) = Microsoft::Maui::IGridLayout::GetRow;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.IGridLayout.GetRow : Microsoft.Maui.IView -&gt; int&#xA;override this.Microsoft.Maui.IGridLayout.GetRow : Microsoft.Maui.IView -&gt; int" Usage="grid.Microsoft.Maui.IGridLayout.GetRow view" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.IGridLayout.GetRow(Microsoft.Maui.IView)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IGridLayout.GetRowSpan">
+      <MemberSignature Language="C#" Value="int IGridLayout.GetRowSpan (Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 Microsoft.Maui.IGridLayout.GetRowSpan(class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Compatibility.Grid.Microsoft#Maui#IGridLayout#GetRowSpan(Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="Function GetRowSpan (view As IView) As Integer Implements IGridLayout.GetRowSpan" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int Microsoft.Maui.IGridLayout.GetRowSpan(Microsoft::Maui::IView ^ view) = Microsoft::Maui::IGridLayout::GetRowSpan;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.IGridLayout.GetRowSpan : Microsoft.Maui.IView -&gt; int&#xA;override this.Microsoft.Maui.IGridLayout.GetRowSpan : Microsoft.Maui.IView -&gt; int" Usage="grid.Microsoft.Maui.IGridLayout.GetRowSpan view" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.IGridLayout.GetRowSpan(Microsoft.Maui.IView)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IGridLayout.RowDefinitions">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IGridRowDefinition&gt; Microsoft.Maui.IGridLayout.RowDefinitions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Maui.IGridRowDefinition&gt; Microsoft.Maui.IGridLayout.RowDefinitions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Compatibility.Grid.Microsoft#Maui#IGridLayout#RowDefinitions" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property RowDefinitions As IReadOnlyList(Of IGridRowDefinition) Implements IGridLayout.RowDefinitions" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::IReadOnlyList&lt;Microsoft::Maui::IGridRowDefinition ^&gt; ^ Microsoft::Maui::IGridLayout::RowDefinitions { System::Collections::Generic::IReadOnlyList&lt;Microsoft::Maui::IGridRowDefinition ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.IGridLayout.RowDefinitions : System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IGridRowDefinition&gt;" Usage="Microsoft.Maui.IGridLayout.RowDefinitions" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IGridLayout.RowDefinitions</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IGridRowDefinition&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="On&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;T,Microsoft.Maui.Controls.Compatibility.Grid&gt; On&lt;T&gt; () where T : Microsoft.Maui.Controls.IConfigPlatform;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Maui.Controls.IPlatformElementConfiguration`2&lt;!!T, class Microsoft.Maui.Controls.Compatibility.Grid&gt; On&lt;(class Microsoft.Maui.Controls.IConfigPlatform) T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Compatibility.Grid.On``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function On(Of T As IConfigPlatform) () As IPlatformElementConfiguration(Of T, Grid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : Microsoft::Maui::Controls::IConfigPlatform virtual Microsoft::Maui::Controls::IPlatformElementConfiguration&lt;T, Microsoft::Maui::Controls::Compatibility::Grid ^&gt; ^ On();" />
+      <MemberSignature Language="F#" Value="abstract member On : unit -&gt; Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;'T, Microsoft.Maui.Controls.Compatibility.Grid (requires 'T :&gt; Microsoft.Maui.Controls.IConfigPlatform)&gt; (requires 'T :&gt; Microsoft.Maui.Controls.IConfigPlatform)&#xA;override this.On : unit -&gt; Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;'T, Microsoft.Maui.Controls.Compatibility.Grid (requires 'T :&gt; Microsoft.Maui.Controls.IConfigPlatform)&gt; (requires 'T :&gt; Microsoft.Maui.Controls.IConfigPlatform)" Usage="grid.On " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.IElementConfiguration`1.On``1</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;T,Microsoft.Maui.Controls.Compatibility.Grid&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>Microsoft.Maui.Controls.IConfigPlatform</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="OnAdded">
+      <MemberSignature Language="C#" Value="protected override void OnAdded (Microsoft.Maui.Controls.View view);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnAdded(class Microsoft.Maui.Controls.View view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Compatibility.Grid.OnAdded(Microsoft.Maui.Controls.View)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnAdded (view As View)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnAdded(Microsoft::Maui::Controls::View ^ view);" />
+      <MemberSignature Language="F#" Value="override this.OnAdded : Microsoft.Maui.Controls.View -&gt; unit" Usage="grid.OnAdded view" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.Controls.View" />
+      </Parameters>
+      <Docs>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBindingContextChanged">
+      <MemberSignature Language="C#" Value="protected override void OnBindingContextChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnBindingContextChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Compatibility.Grid.OnBindingContextChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnBindingContextChanged ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnBindingContextChanged();" />
+      <MemberSignature Language="F#" Value="override this.OnBindingContextChanged : unit -&gt; unit" Usage="grid.OnBindingContextChanged " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMeasure">
+      <MemberSignature Language="C#" Value="protected override Microsoft.Maui.SizeRequest OnMeasure (double widthConstraint, double heightConstraint);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype Microsoft.Maui.SizeRequest OnMeasure(float64 widthConstraint, float64 heightConstraint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Compatibility.Grid.OnMeasure(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnMeasure (widthConstraint As Double, heightConstraint As Double) As SizeRequest" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Microsoft::Maui::SizeRequest OnMeasure(double widthConstraint, double heightConstraint);" />
+      <MemberSignature Language="F#" Value="override this.OnMeasure : double * double -&gt; Microsoft.Maui.SizeRequest" Usage="grid.OnMeasure (widthConstraint, heightConstraint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.SizeRequest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="widthConstraint" Type="System.Double" />
+        <Parameter Name="heightConstraint" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="widthConstraint">To be added.</param>
+        <param name="heightConstraint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRemoved">
+      <MemberSignature Language="C#" Value="protected override void OnRemoved (Microsoft.Maui.Controls.View view);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRemoved(class Microsoft.Maui.Controls.View view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Compatibility.Grid.OnRemoved(Microsoft.Maui.Controls.View)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRemoved (view As View)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRemoved(Microsoft::Maui::Controls::View ^ view);" />
+      <MemberSignature Language="F#" Value="override this.OnRemoved : Microsoft.Maui.Controls.View -&gt; unit" Usage="grid.OnRemoved view" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.Controls.View" />
+      </Parameters>
+      <Docs>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowDefinitions">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.RowDefinitionCollection RowDefinitions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.RowDefinitionCollection RowDefinitions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Compatibility.Grid.RowDefinitions" />
+      <MemberSignature Language="VB.NET" Value="Public Property RowDefinitions As RowDefinitionCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::RowDefinitionCollection ^ RowDefinitions { Microsoft::Maui::Controls::RowDefinitionCollection ^ get(); void set(Microsoft::Maui::Controls::RowDefinitionCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RowDefinitions : Microsoft.Maui.Controls.RowDefinitionCollection with get, set" Usage="Microsoft.Maui.Controls.Compatibility.Grid.RowDefinitions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.TypeConverter(typeof(Microsoft.Maui.Controls.RowDefinitionCollectionTypeConverter))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.TypeConverter(typeof(Microsoft.Maui.Controls.RowDefinitionCollectionTypeConverter))&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.RowDefinitionCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowDefinitionsProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty RowDefinitionsProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty RowDefinitionsProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Compatibility.Grid.RowDefinitionsProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RowDefinitionsProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ RowDefinitionsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable RowDefinitionsProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Compatibility.Grid.RowDefinitionsProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty RowProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty RowProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Compatibility.Grid.RowProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RowProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ RowProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable RowProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Compatibility.Grid.RowProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowSpacing">
+      <MemberSignature Language="C#" Value="public double RowSpacing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 RowSpacing" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Compatibility.Grid.RowSpacing" />
+      <MemberSignature Language="VB.NET" Value="Public Property RowSpacing As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double RowSpacing { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.RowSpacing : double with get, set" Usage="Microsoft.Maui.Controls.Compatibility.Grid.RowSpacing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowSpacingProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty RowSpacingProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty RowSpacingProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Compatibility.Grid.RowSpacingProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RowSpacingProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ RowSpacingProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable RowSpacingProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Compatibility.Grid.RowSpacingProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowSpanProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty RowSpanProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty RowSpanProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Compatibility.Grid.RowSpanProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RowSpanProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ RowSpanProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable RowSpanProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Compatibility.Grid.RowSpanProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetColumn">
+      <MemberSignature Language="C#" Value="public static void SetColumn (Microsoft.Maui.Controls.BindableObject bindable, int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetColumn(class Microsoft.Maui.Controls.BindableObject bindable, int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Compatibility.Grid.SetColumn(Microsoft.Maui.Controls.BindableObject,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetColumn (bindable As BindableObject, value As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetColumn(Microsoft::Maui::Controls::BindableObject ^ bindable, int value);" />
+      <MemberSignature Language="F#" Value="static member SetColumn : Microsoft.Maui.Controls.BindableObject * int -&gt; unit" Usage="Microsoft.Maui.Controls.Compatibility.Grid.SetColumn (bindable, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Microsoft.Maui.Controls.BindableObject" />
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetColumnSpan">
+      <MemberSignature Language="C#" Value="public static void SetColumnSpan (Microsoft.Maui.Controls.BindableObject bindable, int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetColumnSpan(class Microsoft.Maui.Controls.BindableObject bindable, int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Compatibility.Grid.SetColumnSpan(Microsoft.Maui.Controls.BindableObject,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetColumnSpan (bindable As BindableObject, value As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetColumnSpan(Microsoft::Maui::Controls::BindableObject ^ bindable, int value);" />
+      <MemberSignature Language="F#" Value="static member SetColumnSpan : Microsoft.Maui.Controls.BindableObject * int -&gt; unit" Usage="Microsoft.Maui.Controls.Compatibility.Grid.SetColumnSpan (bindable, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Microsoft.Maui.Controls.BindableObject" />
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRow">
+      <MemberSignature Language="C#" Value="public static void SetRow (Microsoft.Maui.Controls.BindableObject bindable, int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetRow(class Microsoft.Maui.Controls.BindableObject bindable, int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Compatibility.Grid.SetRow(Microsoft.Maui.Controls.BindableObject,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetRow (bindable As BindableObject, value As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetRow(Microsoft::Maui::Controls::BindableObject ^ bindable, int value);" />
+      <MemberSignature Language="F#" Value="static member SetRow : Microsoft.Maui.Controls.BindableObject * int -&gt; unit" Usage="Microsoft.Maui.Controls.Compatibility.Grid.SetRow (bindable, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Microsoft.Maui.Controls.BindableObject" />
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRowSpan">
+      <MemberSignature Language="C#" Value="public static void SetRowSpan (Microsoft.Maui.Controls.BindableObject bindable, int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetRowSpan(class Microsoft.Maui.Controls.BindableObject bindable, int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Compatibility.Grid.SetRowSpan(Microsoft.Maui.Controls.BindableObject,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetRowSpan (bindable As BindableObject, value As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetRowSpan(Microsoft::Maui::Controls::BindableObject ^ bindable, int value);" />
+      <MemberSignature Language="F#" Value="static member SetRowSpan : Microsoft.Maui.Controls.BindableObject * int -&gt; unit" Usage="Microsoft.Maui.Controls.Compatibility.Grid.SetRowSpan (bindable, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Microsoft.Maui.Controls.BindableObject" />
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

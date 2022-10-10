@@ -1,0 +1,408 @@
+<Type Name="IWindow" FullName="Microsoft.Maui.IWindow">
+  <TypeSignature Language="C#" Value="public interface IWindow : Microsoft.Maui.ITitledElement" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWindow implements class Microsoft.Maui.IElement, class Microsoft.Maui.ITitledElement" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.IWindow" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IWindow&#xA;Implements ITitledElement" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IWindow : Microsoft::Maui::ITitledElement" />
+  <TypeSignature Language="F#" Value="type IWindow = interface&#xA;    interface ITitledElement&#xA;    interface IElement" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IElement</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.ITitledElement</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Provides the ability to create, configure, show, and manage Windows.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Activated">
+      <MemberSignature Language="C#" Value="public void Activated ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Activated() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IWindow.Activated" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Activated ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Activated();" />
+      <MemberSignature Language="F#" Value="abstract member Activated : unit -&gt; unit" Usage="iWindow.Activated " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Occurs when the Window is activated.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddOverlay">
+      <MemberSignature Language="C#" Value="public bool AddOverlay (Microsoft.Maui.IWindowOverlay overlay);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool AddOverlay(class Microsoft.Maui.IWindowOverlay overlay) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IWindow.AddOverlay(Microsoft.Maui.IWindowOverlay)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddOverlay (overlay As IWindowOverlay) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool AddOverlay(Microsoft::Maui::IWindowOverlay ^ overlay);" />
+      <MemberSignature Language="F#" Value="abstract member AddOverlay : Microsoft.Maui.IWindowOverlay -&gt; bool" Usage="iWindow.AddOverlay overlay" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="overlay" Type="Microsoft.Maui.IWindowOverlay" />
+      </Parameters>
+      <Docs>
+        <param name="overlay">
+          <see cref="T:Microsoft.Maui.IWindowOverlay" />.</param>
+        <summary>
+            Adds a Window Overlay to the current Window.
+            </summary>
+        <returns>Boolean if the window overlay was added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackButtonClicked">
+      <MemberSignature Language="C#" Value="public bool BackButtonClicked ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool BackButtonClicked() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IWindow.BackButtonClicked" />
+      <MemberSignature Language="VB.NET" Value="Public Function BackButtonClicked () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool BackButtonClicked();" />
+      <MemberSignature Language="F#" Value="abstract member BackButtonClicked : unit -&gt; bool" Usage="iWindow.BackButtonClicked " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Occurs when the back button is pressed.
+            </summary>
+        <returns>Whether or not the back navigation was handled.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Backgrounding">
+      <MemberSignature Language="C#" Value="public void Backgrounding (Microsoft.Maui.IPersistedState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Backgrounding(class Microsoft.Maui.IPersistedState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IWindow.Backgrounding(Microsoft.Maui.IPersistedState)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Backgrounding (state As IPersistedState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Backgrounding(Microsoft::Maui::IPersistedState ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member Backgrounding : Microsoft.Maui.IPersistedState -&gt; unit" Usage="iWindow.Backgrounding state" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="Microsoft.Maui.IPersistedState" />
+      </Parameters>
+      <Docs>
+        <param name="state">To be added.</param>
+        <summary>
+            Occurs when the Window is entering a background state.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Content">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.IView Content { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.IView Content" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.IWindow.Content" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Content As IView" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::IView ^ Content { Microsoft::Maui::IView ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Content : Microsoft.Maui.IView" Usage="Microsoft.Maui.IWindow.Content" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.IView</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the current Page displayed in the Window.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Created">
+      <MemberSignature Language="C#" Value="public void Created ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Created() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IWindow.Created" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Created ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Created();" />
+      <MemberSignature Language="F#" Value="abstract member Created : unit -&gt; unit" Usage="iWindow.Created " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Occurs when the Window is created.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deactivated">
+      <MemberSignature Language="C#" Value="public void Deactivated ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Deactivated() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IWindow.Deactivated" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Deactivated ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Deactivated();" />
+      <MemberSignature Language="F#" Value="abstract member Deactivated : unit -&gt; unit" Usage="iWindow.Deactivated " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Occurs when the Window is deactivated.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Destroying">
+      <MemberSignature Language="C#" Value="public void Destroying ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Destroying() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IWindow.Destroying" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Destroying ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Destroying();" />
+      <MemberSignature Language="F#" Value="abstract member Destroying : unit -&gt; unit" Usage="iWindow.Destroying " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Occurs when the Window is destroyed.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayDensityChanged">
+      <MemberSignature Language="C#" Value="public void DisplayDensityChanged (float displayDensity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DisplayDensityChanged(float32 displayDensity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IWindow.DisplayDensityChanged(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DisplayDensityChanged (displayDensity As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DisplayDensityChanged(float displayDensity);" />
+      <MemberSignature Language="F#" Value="abstract member DisplayDensityChanged : single -&gt; unit" Usage="iWindow.DisplayDensityChanged displayDensity" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="displayDensity" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="displayDensity">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlowDirection">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.FlowDirection FlowDirection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.FlowDirection FlowDirection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.IWindow.FlowDirection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FlowDirection As FlowDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::FlowDirection FlowDirection { Microsoft::Maui::FlowDirection get(); };" />
+      <MemberSignature Language="F#" Value="member this.FlowDirection : Microsoft.Maui.FlowDirection" Usage="Microsoft.Maui.IWindow.FlowDirection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.FlowDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Overlays">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyCollection&lt;Microsoft.Maui.IWindowOverlay&gt; Overlays { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyCollection`1&lt;class Microsoft.Maui.IWindowOverlay&gt; Overlays" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.IWindow.Overlays" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Overlays As IReadOnlyCollection(Of IWindowOverlay)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IReadOnlyCollection&lt;Microsoft::Maui::IWindowOverlay ^&gt; ^ Overlays { System::Collections::Generic::IReadOnlyCollection&lt;Microsoft::Maui::IWindowOverlay ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Overlays : System.Collections.Generic.IReadOnlyCollection&lt;Microsoft.Maui.IWindowOverlay&gt;" Usage="Microsoft.Maui.IWindow.Overlays" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyCollection&lt;Microsoft.Maui.IWindowOverlay&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the read only collection of Window Overlays on top of the Window.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveOverlay">
+      <MemberSignature Language="C#" Value="public bool RemoveOverlay (Microsoft.Maui.IWindowOverlay overlay);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool RemoveOverlay(class Microsoft.Maui.IWindowOverlay overlay) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IWindow.RemoveOverlay(Microsoft.Maui.IWindowOverlay)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveOverlay (overlay As IWindowOverlay) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveOverlay(Microsoft::Maui::IWindowOverlay ^ overlay);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveOverlay : Microsoft.Maui.IWindowOverlay -&gt; bool" Usage="iWindow.RemoveOverlay overlay" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="overlay" Type="Microsoft.Maui.IWindowOverlay" />
+      </Parameters>
+      <Docs>
+        <param name="overlay">
+          <see cref="T:Microsoft.Maui.IWindowOverlay" />.</param>
+        <summary>
+            Removes a Window Overlay to the current Window.
+            </summary>
+        <returns>Boolean if the window overlay was removed.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestDisplayDensity">
+      <MemberSignature Language="C#" Value="public float RequestDisplayDensity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float32 RequestDisplayDensity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IWindow.RequestDisplayDensity" />
+      <MemberSignature Language="VB.NET" Value="Public Function RequestDisplayDensity () As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; float RequestDisplayDensity();" />
+      <MemberSignature Language="F#" Value="abstract member RequestDisplayDensity : unit -&gt; single" Usage="iWindow.RequestDisplayDensity " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resumed">
+      <MemberSignature Language="C#" Value="public void Resumed ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Resumed() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IWindow.Resumed" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Resumed ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Resumed();" />
+      <MemberSignature Language="F#" Value="abstract member Resumed : unit -&gt; unit" Usage="iWindow.Resumed " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Occurs when the Window is resumed from a sleeping state.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stopped">
+      <MemberSignature Language="C#" Value="public void Stopped ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Stopped() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IWindow.Stopped" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Stopped ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stopped();" />
+      <MemberSignature Language="F#" Value="abstract member Stopped : unit -&gt; unit" Usage="iWindow.Stopped " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Occurs when the Window is stopped.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualDiagnosticsOverlay">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.IVisualDiagnosticsOverlay VisualDiagnosticsOverlay { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.IVisualDiagnosticsOverlay VisualDiagnosticsOverlay" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.IWindow.VisualDiagnosticsOverlay" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VisualDiagnosticsOverlay As IVisualDiagnosticsOverlay" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::IVisualDiagnosticsOverlay ^ VisualDiagnosticsOverlay { Microsoft::Maui::IVisualDiagnosticsOverlay ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VisualDiagnosticsOverlay : Microsoft.Maui.IVisualDiagnosticsOverlay" Usage="Microsoft.Maui.IWindow.VisualDiagnosticsOverlay" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.IVisualDiagnosticsOverlay</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the current visual diagnostics overlay for the Window.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

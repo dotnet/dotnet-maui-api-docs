@@ -1,0 +1,208 @@
+<Type Name="VisualTreeElementExtensions" FullName="Microsoft.Maui.VisualTreeElementExtensions">
+  <TypeSignature Language="C#" Value="public static class VisualTreeElementExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit VisualTreeElementExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.VisualTreeElementExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module VisualTreeElementExtensions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VisualTreeElementExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type VisualTreeElementExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetVisualElementWindow">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.IWindow? GetVisualElementWindow (this Microsoft.Maui.IVisualTreeElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Maui.IWindow GetVisualElementWindow(class Microsoft.Maui.IVisualTreeElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.VisualTreeElementExtensions.GetVisualElementWindow(Microsoft.Maui.IVisualTreeElement)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetVisualElementWindow (element As IVisualTreeElement) As IWindow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::Maui::IWindow ^ GetVisualElementWindow(Microsoft::Maui::IVisualTreeElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetVisualElementWindow : Microsoft.Maui.IVisualTreeElement -&gt; Microsoft.Maui.IWindow" Usage="Microsoft.Maui.VisualTreeElementExtensions.GetVisualElementWindow element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.IWindow</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.Maui.IVisualTreeElement" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="element">
+          <see cref="T:Microsoft.Maui.IVisualTreeElement" />.</param>
+        <summary>
+            Gets the Window containing the Visual Tree Element, if the element is contained within one.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.Maui.IWindow" /> if element is contained within a Window, else returns null.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVisualTreeDescendants">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IVisualTreeElement&gt; GetVisualTreeDescendants (this Microsoft.Maui.IVisualTreeElement visualElement);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Maui.IVisualTreeElement&gt; GetVisualTreeDescendants(class Microsoft.Maui.IVisualTreeElement visualElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.VisualTreeElementExtensions.GetVisualTreeDescendants(Microsoft.Maui.IVisualTreeElement)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetVisualTreeDescendants (visualElement As IVisualTreeElement) As IReadOnlyList(Of IVisualTreeElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IReadOnlyList&lt;Microsoft::Maui::IVisualTreeElement ^&gt; ^ GetVisualTreeDescendants(Microsoft::Maui::IVisualTreeElement ^ visualElement);" />
+      <MemberSignature Language="F#" Value="static member GetVisualTreeDescendants : Microsoft.Maui.IVisualTreeElement -&gt; System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IVisualTreeElement&gt;" Usage="Microsoft.Maui.VisualTreeElementExtensions.GetVisualTreeDescendants visualElement" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IVisualTreeElement&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="visualElement" Type="Microsoft.Maui.IVisualTreeElement" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="visualElement">
+          <see cref="T:Microsoft.Maui.IVisualTreeElement" /> to scan.</param>
+        <summary>
+            Gets the entire hierarchy of descendants as a list of children for a given Visual Tree Element.
+            </summary>
+        <returns>List of Children Elements.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVisualTreeElements">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IVisualTreeElement&gt; GetVisualTreeElements (this Microsoft.Maui.IVisualTreeElement visualElement, Microsoft.Maui.Graphics.Point point);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Maui.IVisualTreeElement&gt; GetVisualTreeElements(class Microsoft.Maui.IVisualTreeElement visualElement, valuetype Microsoft.Maui.Graphics.Point point) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.VisualTreeElementExtensions.GetVisualTreeElements(Microsoft.Maui.IVisualTreeElement,Microsoft.Maui.Graphics.Point)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetVisualTreeElements (visualElement As IVisualTreeElement, point As Point) As IReadOnlyList(Of IVisualTreeElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IReadOnlyList&lt;Microsoft::Maui::IVisualTreeElement ^&gt; ^ GetVisualTreeElements(Microsoft::Maui::IVisualTreeElement ^ visualElement, Microsoft::Maui::Graphics::Point point);" />
+      <MemberSignature Language="F#" Value="static member GetVisualTreeElements : Microsoft.Maui.IVisualTreeElement * Microsoft.Maui.Graphics.Point -&gt; System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IVisualTreeElement&gt;" Usage="Microsoft.Maui.VisualTreeElementExtensions.GetVisualTreeElements (visualElement, point)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IVisualTreeElement&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="visualElement" Type="Microsoft.Maui.IVisualTreeElement" RefType="this" />
+        <Parameter Name="point" Type="Microsoft.Maui.Graphics.Point" />
+      </Parameters>
+      <Docs>
+        <param name="visualElement">
+          <see cref="T:Microsoft.Maui.IVisualTreeElement" /> to scan.</param>
+        <param name="point">
+          <see cref="T:Microsoft.Maui.Graphics.Point" />.</param>
+        <summary>
+            Gets list of a Visual Tree Element's children based off of a given Point.
+            </summary>
+        <returns>List of Children Elements.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVisualTreeElements">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IVisualTreeElement&gt; GetVisualTreeElements (this Microsoft.Maui.IVisualTreeElement visualElement, Microsoft.Maui.Graphics.Rect rectangle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Maui.IVisualTreeElement&gt; GetVisualTreeElements(class Microsoft.Maui.IVisualTreeElement visualElement, valuetype Microsoft.Maui.Graphics.Rect rectangle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.VisualTreeElementExtensions.GetVisualTreeElements(Microsoft.Maui.IVisualTreeElement,Microsoft.Maui.Graphics.Rect)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetVisualTreeElements (visualElement As IVisualTreeElement, rectangle As Rect) As IReadOnlyList(Of IVisualTreeElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IReadOnlyList&lt;Microsoft::Maui::IVisualTreeElement ^&gt; ^ GetVisualTreeElements(Microsoft::Maui::IVisualTreeElement ^ visualElement, Microsoft::Maui::Graphics::Rect rectangle);" />
+      <MemberSignature Language="F#" Value="static member GetVisualTreeElements : Microsoft.Maui.IVisualTreeElement * Microsoft.Maui.Graphics.Rect -&gt; System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IVisualTreeElement&gt;" Usage="Microsoft.Maui.VisualTreeElementExtensions.GetVisualTreeElements (visualElement, rectangle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IVisualTreeElement&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="visualElement" Type="Microsoft.Maui.IVisualTreeElement" RefType="this" />
+        <Parameter Name="rectangle" Type="Microsoft.Maui.Graphics.Rect" />
+      </Parameters>
+      <Docs>
+        <param name="visualElement">
+          <see cref="T:Microsoft.Maui.IVisualTreeElement" /> to scan.</param>
+        <param name="rectangle">The rectangle.</param>
+        <summary>
+            Gets list of a Visual Tree Elements children based off of a rectangle.
+            </summary>
+        <returns>List of Children Elements.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVisualTreeElements">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IVisualTreeElement&gt; GetVisualTreeElements (this Microsoft.Maui.IVisualTreeElement visualElement, double x, double y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Maui.IVisualTreeElement&gt; GetVisualTreeElements(class Microsoft.Maui.IVisualTreeElement visualElement, float64 x, float64 y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.VisualTreeElementExtensions.GetVisualTreeElements(Microsoft.Maui.IVisualTreeElement,System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetVisualTreeElements (visualElement As IVisualTreeElement, x As Double, y As Double) As IReadOnlyList(Of IVisualTreeElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IReadOnlyList&lt;Microsoft::Maui::IVisualTreeElement ^&gt; ^ GetVisualTreeElements(Microsoft::Maui::IVisualTreeElement ^ visualElement, double x, double y);" />
+      <MemberSignature Language="F#" Value="static member GetVisualTreeElements : Microsoft.Maui.IVisualTreeElement * double * double -&gt; System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IVisualTreeElement&gt;" Usage="Microsoft.Maui.VisualTreeElementExtensions.GetVisualTreeElements (visualElement, x, y)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IVisualTreeElement&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="visualElement" Type="Microsoft.Maui.IVisualTreeElement" RefType="this" />
+        <Parameter Name="x" Type="System.Double" />
+        <Parameter Name="y" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="visualElement">
+          <see cref="T:Microsoft.Maui.IVisualTreeElement" /> to scan.</param>
+        <param name="x">The X point.</param>
+        <param name="y">The Y point.</param>
+        <summary>
+            Gets list of a Visual Tree Elements children based off of a given x, y point.
+            </summary>
+        <returns>List of Children Elements.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVisualTreeElements">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IVisualTreeElement&gt; GetVisualTreeElements (this Microsoft.Maui.IVisualTreeElement visualElement, double x1, double y1, double x2, double y2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Maui.IVisualTreeElement&gt; GetVisualTreeElements(class Microsoft.Maui.IVisualTreeElement visualElement, float64 x1, float64 y1, float64 x2, float64 y2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.VisualTreeElementExtensions.GetVisualTreeElements(Microsoft.Maui.IVisualTreeElement,System.Double,System.Double,System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetVisualTreeElements (visualElement As IVisualTreeElement, x1 As Double, y1 As Double, x2 As Double, y2 As Double) As IReadOnlyList(Of IVisualTreeElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IReadOnlyList&lt;Microsoft::Maui::IVisualTreeElement ^&gt; ^ GetVisualTreeElements(Microsoft::Maui::IVisualTreeElement ^ visualElement, double x1, double y1, double x2, double y2);" />
+      <MemberSignature Language="F#" Value="static member GetVisualTreeElements : Microsoft.Maui.IVisualTreeElement * double * double * double * double -&gt; System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IVisualTreeElement&gt;" Usage="Microsoft.Maui.VisualTreeElementExtensions.GetVisualTreeElements (visualElement, x1, y1, x2, y2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IVisualTreeElement&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="visualElement" Type="Microsoft.Maui.IVisualTreeElement" RefType="this" />
+        <Parameter Name="x1" Type="System.Double" />
+        <Parameter Name="y1" Type="System.Double" />
+        <Parameter Name="x2" Type="System.Double" />
+        <Parameter Name="y2" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="visualElement">
+          <see cref="T:Microsoft.Maui.IVisualTreeElement" /> to scan.</param>
+        <param name="x1">The X coordinate of the top left point.</param>
+        <param name="y1">The Y coordinate of the top left point.</param>
+        <param name="x2">The X coordinate of the bottom right point.</param>
+        <param name="y2">The Y coordinate of the bottom right point.</param>
+        <summary>
+            Gets list of a Visual Tree Elements children based off of a rectangle defined by its coordinates which are specified in platform units, not pixels.
+            </summary>
+        <returns>List of Children Elements.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

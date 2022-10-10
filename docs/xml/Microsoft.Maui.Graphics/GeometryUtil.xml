@@ -1,0 +1,478 @@
+<Type Name="GeometryUtil" FullName="Microsoft.Maui.Graphics.GeometryUtil">
+  <TypeSignature Language="C#" Value="public static class GeometryUtil" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit GeometryUtil extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Graphics.GeometryUtil" />
+  <TypeSignature Language="VB.NET" Value="Public Class GeometryUtil" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GeometryUtil abstract sealed" />
+  <TypeSignature Language="F#" Value="type GeometryUtil = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DegreesToRadians">
+      <MemberSignature Language="C#" Value="public static double DegreesToRadians (double angle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 DegreesToRadians(float64 angle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.GeometryUtil.DegreesToRadians(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DegreesToRadians (angle As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double DegreesToRadians(double angle);" />
+      <MemberSignature Language="F#" Value="static member DegreesToRadians : double -&gt; double" Usage="Microsoft.Maui.Graphics.GeometryUtil.DegreesToRadians angle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="angle" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="angle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DegreesToRadians">
+      <MemberSignature Language="C#" Value="public static float DegreesToRadians (float angle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 DegreesToRadians(float32 angle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.GeometryUtil.DegreesToRadians(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DegreesToRadians (angle As Single) As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float DegreesToRadians(float angle);" />
+      <MemberSignature Language="F#" Value="static member DegreesToRadians : single -&gt; single" Usage="Microsoft.Maui.Graphics.GeometryUtil.DegreesToRadians angle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="angle" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="angle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EllipseAngleToPoint">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Graphics.PointF EllipseAngleToPoint (float x, float y, float width, float height, float angleInDegrees);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Maui.Graphics.PointF EllipseAngleToPoint(float32 x, float32 y, float32 width, float32 height, float32 angleInDegrees) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.GeometryUtil.EllipseAngleToPoint(System.Single,System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EllipseAngleToPoint (x As Single, y As Single, width As Single, height As Single, angleInDegrees As Single) As PointF" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Maui::Graphics::PointF EllipseAngleToPoint(float x, float y, float width, float height, float angleInDegrees);" />
+      <MemberSignature Language="F#" Value="static member EllipseAngleToPoint : single * single * single * single * single -&gt; Microsoft.Maui.Graphics.PointF" Usage="Microsoft.Maui.Graphics.GeometryUtil.EllipseAngleToPoint (x, y, width, height, angleInDegrees)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.PointF</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="y" Type="System.Single" />
+        <Parameter Name="width" Type="System.Single" />
+        <Parameter Name="height" Type="System.Single" />
+        <Parameter Name="angleInDegrees" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="x">The x position of the bounding rectangle.</param>
+        <param name="y">The y position of the bounding rectangle.</param>
+        <param name="width">The width of the bounding rectangle.</param>
+        <param name="height">The height of the bounding rectangle.</param>
+        <param name="angleInDegrees">Angle in degrees.</param>
+        <summary>
+            Gets the point on an ellipse that corresponds to the given angle.
+            </summary>
+        <returns>The point.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Epsilon">
+      <MemberSignature Language="C#" Value="public const float Epsilon = 1E-10;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal float32 Epsilon = (1E-10)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Graphics.GeometryUtil.Epsilon" />
+      <MemberSignature Language="VB.NET" Value="Public Const Epsilon As Single  = 1E-10" />
+      <MemberSignature Language="C++ CLI" Value="public: float Epsilon = 1E-10;" />
+      <MemberSignature Language="F#" Value="val mutable Epsilon : single" Usage="Microsoft.Maui.Graphics.GeometryUtil.Epsilon" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <MemberValue>1E-10</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAngleAsDegrees">
+      <MemberSignature Language="C#" Value="public static float GetAngleAsDegrees (float x1, float y1, float x2, float y2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 GetAngleAsDegrees(float32 x1, float32 y1, float32 x2, float32 y2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.GeometryUtil.GetAngleAsDegrees(System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetAngleAsDegrees (x1 As Single, y1 As Single, x2 As Single, y2 As Single) As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float GetAngleAsDegrees(float x1, float y1, float x2, float y2);" />
+      <MemberSignature Language="F#" Value="static member GetAngleAsDegrees : single * single * single * single -&gt; single" Usage="Microsoft.Maui.Graphics.GeometryUtil.GetAngleAsDegrees (x1, y1, x2, y2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x1" Type="System.Single" />
+        <Parameter Name="y1" Type="System.Single" />
+        <Parameter Name="x2" Type="System.Single" />
+        <Parameter Name="y2" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="x1">To be added.</param>
+        <param name="y1">To be added.</param>
+        <param name="x2">To be added.</param>
+        <param name="y2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDistance">
+      <MemberSignature Language="C#" Value="public static float GetDistance (float x1, float y1, float x2, float y2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 GetDistance(float32 x1, float32 y1, float32 x2, float32 y2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.GeometryUtil.GetDistance(System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDistance (x1 As Single, y1 As Single, x2 As Single, y2 As Single) As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float GetDistance(float x1, float y1, float x2, float y2);" />
+      <MemberSignature Language="F#" Value="static member GetDistance : single * single * single * single -&gt; single" Usage="Microsoft.Maui.Graphics.GeometryUtil.GetDistance (x1, y1, x2, y2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x1" Type="System.Single" />
+        <Parameter Name="y1" Type="System.Single" />
+        <Parameter Name="x2" Type="System.Single" />
+        <Parameter Name="y2" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="x1">To be added.</param>
+        <param name="y1">To be added.</param>
+        <param name="x2">To be added.</param>
+        <param name="y2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFactor">
+      <MemberSignature Language="C#" Value="public static float GetFactor (float aMin, float aMax, float aValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 GetFactor(float32 aMin, float32 aMax, float32 aValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.GeometryUtil.GetFactor(System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFactor (aMin As Single, aMax As Single, aValue As Single) As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float GetFactor(float aMin, float aMax, float aValue);" />
+      <MemberSignature Language="F#" Value="static member GetFactor : single * single * single -&gt; single" Usage="Microsoft.Maui.Graphics.GeometryUtil.GetFactor (aMin, aMax, aValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="aMin" Type="System.Single" />
+        <Parameter Name="aMax" Type="System.Single" />
+        <Parameter Name="aValue" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="aMin">To be added.</param>
+        <param name="aMax">To be added.</param>
+        <param name="aValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLinearValue">
+      <MemberSignature Language="C#" Value="public static float GetLinearValue (float aMin, float aMax, float aFactor);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 GetLinearValue(float32 aMin, float32 aMax, float32 aFactor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.GeometryUtil.GetLinearValue(System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetLinearValue (aMin As Single, aMax As Single, aFactor As Single) As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float GetLinearValue(float aMin, float aMax, float aFactor);" />
+      <MemberSignature Language="F#" Value="static member GetLinearValue : single * single * single -&gt; single" Usage="Microsoft.Maui.Graphics.GeometryUtil.GetLinearValue (aMin, aMax, aFactor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="aMin" Type="System.Single" />
+        <Parameter Name="aMax" Type="System.Single" />
+        <Parameter Name="aFactor" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="aMin">To be added.</param>
+        <param name="aMax">To be added.</param>
+        <param name="aFactor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOppositePoint">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Graphics.PointF GetOppositePoint (Microsoft.Maui.Graphics.PointF pivot, Microsoft.Maui.Graphics.PointF oppositePoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Maui.Graphics.PointF GetOppositePoint(valuetype Microsoft.Maui.Graphics.PointF pivot, valuetype Microsoft.Maui.Graphics.PointF oppositePoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.GeometryUtil.GetOppositePoint(Microsoft.Maui.Graphics.PointF,Microsoft.Maui.Graphics.PointF)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetOppositePoint (pivot As PointF, oppositePoint As PointF) As PointF" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Maui::Graphics::PointF GetOppositePoint(Microsoft::Maui::Graphics::PointF pivot, Microsoft::Maui::Graphics::PointF oppositePoint);" />
+      <MemberSignature Language="F#" Value="static member GetOppositePoint : Microsoft.Maui.Graphics.PointF * Microsoft.Maui.Graphics.PointF -&gt; Microsoft.Maui.Graphics.PointF" Usage="Microsoft.Maui.Graphics.GeometryUtil.GetOppositePoint (pivot, oppositePoint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.PointF</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pivot" Type="Microsoft.Maui.Graphics.PointF" />
+        <Parameter Name="oppositePoint" Type="Microsoft.Maui.Graphics.PointF" />
+      </Parameters>
+      <Docs>
+        <param name="pivot">To be added.</param>
+        <param name="oppositePoint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSweep">
+      <MemberSignature Language="C#" Value="public static float GetSweep (float angle1, float angle2, bool clockwise);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 GetSweep(float32 angle1, float32 angle2, bool clockwise) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.GeometryUtil.GetSweep(System.Single,System.Single,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetSweep (angle1 As Single, angle2 As Single, clockwise As Boolean) As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float GetSweep(float angle1, float angle2, bool clockwise);" />
+      <MemberSignature Language="F#" Value="static member GetSweep : single * single * bool -&gt; single" Usage="Microsoft.Maui.Graphics.GeometryUtil.GetSweep (angle1, angle2, clockwise)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="angle1" Type="System.Single" />
+        <Parameter Name="angle2" Type="System.Single" />
+        <Parameter Name="clockwise" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="angle1">To be added.</param>
+        <param name="angle2">To be added.</param>
+        <param name="clockwise">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLineIntersectingLine">
+      <MemberSignature Language="C#" Value="public static bool IsLineIntersectingLine (float x0, float y0, float x1, float y1, float x2, float y2, float x3, float y3);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsLineIntersectingLine(float32 x0, float32 y0, float32 x1, float32 y1, float32 x2, float32 y2, float32 x3, float32 y3) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.GeometryUtil.IsLineIntersectingLine(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsLineIntersectingLine (x0 As Single, y0 As Single, x1 As Single, y1 As Single, x2 As Single, y2 As Single, x3 As Single, y3 As Single) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsLineIntersectingLine(float x0, float y0, float x1, float y1, float x2, float y2, float x3, float y3);" />
+      <MemberSignature Language="F#" Value="static member IsLineIntersectingLine : single * single * single * single * single * single * single * single -&gt; bool" Usage="Microsoft.Maui.Graphics.GeometryUtil.IsLineIntersectingLine (x0, y0, x1, y1, x2, y2, x3, y3)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x0" Type="System.Single" />
+        <Parameter Name="y0" Type="System.Single" />
+        <Parameter Name="x1" Type="System.Single" />
+        <Parameter Name="y1" Type="System.Single" />
+        <Parameter Name="x2" Type="System.Single" />
+        <Parameter Name="y2" Type="System.Single" />
+        <Parameter Name="x3" Type="System.Single" />
+        <Parameter Name="y3" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="x0">To be added.</param>
+        <param name="y0">To be added.</param>
+        <param name="x1">To be added.</param>
+        <param name="y1">To be added.</param>
+        <param name="x2">To be added.</param>
+        <param name="y2">To be added.</param>
+        <param name="x3">To be added.</param>
+        <param name="y3">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PolarToPoint">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Graphics.PointF PolarToPoint (float angleInRadians, float fx, float fy);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Maui.Graphics.PointF PolarToPoint(float32 angleInRadians, float32 fx, float32 fy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.GeometryUtil.PolarToPoint(System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PolarToPoint (angleInRadians As Single, fx As Single, fy As Single) As PointF" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Maui::Graphics::PointF PolarToPoint(float angleInRadians, float fx, float fy);" />
+      <MemberSignature Language="F#" Value="static member PolarToPoint : single * single * single -&gt; Microsoft.Maui.Graphics.PointF" Usage="Microsoft.Maui.Graphics.GeometryUtil.PolarToPoint (angleInRadians, fx, fy)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.PointF</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="angleInRadians" Type="System.Single" />
+        <Parameter Name="fx" Type="System.Single" />
+        <Parameter Name="fy" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="angleInRadians">To be added.</param>
+        <param name="fx">To be added.</param>
+        <param name="fy">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RadiansToDegrees">
+      <MemberSignature Language="C#" Value="public static double RadiansToDegrees (double angle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 RadiansToDegrees(float64 angle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.GeometryUtil.RadiansToDegrees(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RadiansToDegrees (angle As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double RadiansToDegrees(double angle);" />
+      <MemberSignature Language="F#" Value="static member RadiansToDegrees : double -&gt; double" Usage="Microsoft.Maui.Graphics.GeometryUtil.RadiansToDegrees angle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="angle" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="angle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RadiansToDegrees">
+      <MemberSignature Language="C#" Value="public static float RadiansToDegrees (float angle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 RadiansToDegrees(float32 angle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.GeometryUtil.RadiansToDegrees(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RadiansToDegrees (angle As Single) As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float RadiansToDegrees(float angle);" />
+      <MemberSignature Language="F#" Value="static member RadiansToDegrees : single -&gt; single" Usage="Microsoft.Maui.Graphics.GeometryUtil.RadiansToDegrees angle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="angle" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="angle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RotatePoint">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Graphics.PointF RotatePoint (Microsoft.Maui.Graphics.PointF point, float angle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Maui.Graphics.PointF RotatePoint(valuetype Microsoft.Maui.Graphics.PointF point, float32 angle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.GeometryUtil.RotatePoint(Microsoft.Maui.Graphics.PointF,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RotatePoint (point As PointF, angle As Single) As PointF" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Maui::Graphics::PointF RotatePoint(Microsoft::Maui::Graphics::PointF point, float angle);" />
+      <MemberSignature Language="F#" Value="static member RotatePoint : Microsoft.Maui.Graphics.PointF * single -&gt; Microsoft.Maui.Graphics.PointF" Usage="Microsoft.Maui.Graphics.GeometryUtil.RotatePoint (point, angle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.PointF</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="point" Type="Microsoft.Maui.Graphics.PointF" />
+        <Parameter Name="angle" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="point">To be added.</param>
+        <param name="angle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RotatePoint">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Graphics.PointF RotatePoint (Microsoft.Maui.Graphics.PointF center, Microsoft.Maui.Graphics.PointF point, float angle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Maui.Graphics.PointF RotatePoint(valuetype Microsoft.Maui.Graphics.PointF center, valuetype Microsoft.Maui.Graphics.PointF point, float32 angle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.GeometryUtil.RotatePoint(Microsoft.Maui.Graphics.PointF,Microsoft.Maui.Graphics.PointF,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RotatePoint (center As PointF, point As PointF, angle As Single) As PointF" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Maui::Graphics::PointF RotatePoint(Microsoft::Maui::Graphics::PointF center, Microsoft::Maui::Graphics::PointF point, float angle);" />
+      <MemberSignature Language="F#" Value="static member RotatePoint : Microsoft.Maui.Graphics.PointF * Microsoft.Maui.Graphics.PointF * single -&gt; Microsoft.Maui.Graphics.PointF" Usage="Microsoft.Maui.Graphics.GeometryUtil.RotatePoint (center, point, angle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.PointF</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="center" Type="Microsoft.Maui.Graphics.PointF" />
+        <Parameter Name="point" Type="Microsoft.Maui.Graphics.PointF" />
+        <Parameter Name="angle" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="center">To be added.</param>
+        <param name="point">To be added.</param>
+        <param name="angle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

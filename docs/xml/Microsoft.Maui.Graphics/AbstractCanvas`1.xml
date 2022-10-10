@@ -1,0 +1,1916 @@
+<Type Name="AbstractCanvas&lt;TState&gt;" FullName="Microsoft.Maui.Graphics.AbstractCanvas&lt;TState&gt;">
+  <TypeSignature Language="C#" Value="public abstract class AbstractCanvas&lt;TState&gt; : IDisposable, Microsoft.Maui.Graphics.ICanvas where TState : CanvasState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit AbstractCanvas`1&lt;(class Microsoft.Maui.Graphics.CanvasState) TState&gt; extends System.Object implements class Microsoft.Maui.Graphics.ICanvas, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Graphics.AbstractCanvas`1" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class AbstractCanvas(Of TState)&#xA;Implements ICanvas, IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TState&gt;&#xA; where TState : CanvasStatepublic ref class AbstractCanvas abstract : IDisposable, Microsoft::Maui::Graphics::ICanvas" />
+  <TypeSignature Language="F#" Value="type AbstractCanvas&lt;'State (requires 'State :&gt; CanvasState)&gt; = class&#xA;    interface ICanvas&#xA;    interface IDisposable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TState">
+      <Constraints>
+        <BaseTypeName>Microsoft.Maui.Graphics.CanvasState</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.Graphics.ICanvas</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TState">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected AbstractCanvas (Microsoft.Maui.Graphics.ICanvasStateService&lt;TState&gt; stateService, Microsoft.Maui.Graphics.IStringSizeService stringSizeService);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Microsoft.Maui.Graphics.ICanvasStateService`1&lt;!TState&gt; stateService, class Microsoft.Maui.Graphics.IStringSizeService stringSizeService) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.#ctor(Microsoft.Maui.Graphics.ICanvasStateService{`0},Microsoft.Maui.Graphics.IStringSizeService)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (stateService As ICanvasStateService(Of TState), stringSizeService As IStringSizeService)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; AbstractCanvas(Microsoft::Maui::Graphics::ICanvasStateService&lt;TState&gt; ^ stateService, Microsoft::Maui::Graphics::IStringSizeService ^ stringSizeService);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.Graphics.AbstractCanvas&lt;'State (requires 'State :&gt; Microsoft.Maui.Graphics.CanvasState)&gt; : Microsoft.Maui.Graphics.ICanvasStateService&lt;'State (requires 'State :&gt; Microsoft.Maui.Graphics.CanvasState)&gt; * Microsoft.Maui.Graphics.IStringSizeService -&gt; Microsoft.Maui.Graphics.AbstractCanvas&lt;'State (requires 'State :&gt; Microsoft.Maui.Graphics.CanvasState)&gt;" Usage="new Microsoft.Maui.Graphics.AbstractCanvas&lt;'State (requires 'State :&gt; Microsoft.Maui.Graphics.CanvasState)&gt; (stateService, stringSizeService)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="stateService" Type="Microsoft.Maui.Graphics.ICanvasStateService&lt;TState&gt;" />
+        <Parameter Name="stringSizeService" Type="Microsoft.Maui.Graphics.IStringSizeService" />
+      </Parameters>
+      <Docs>
+        <param name="stateService">To be added.</param>
+        <param name="stringSizeService">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Alpha">
+      <MemberSignature Language="C#" Value="public abstract float Alpha { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Alpha" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Graphics.AbstractCanvas`1.Alpha" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Property Alpha As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property float Alpha {  void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Alpha : single" Usage="Microsoft.Maui.Graphics.AbstractCanvas&lt;'State (requires 'State :&gt; Microsoft.Maui.Graphics.CanvasState)&gt;.Alpha" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.Graphics.ICanvas.Alpha</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Antialias">
+      <MemberSignature Language="C#" Value="public abstract bool Antialias { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Antialias" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Graphics.AbstractCanvas`1.Antialias" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Property Antialias As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool Antialias {  void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Antialias : bool" Usage="Microsoft.Maui.Graphics.AbstractCanvas&lt;'State (requires 'State :&gt; Microsoft.Maui.Graphics.CanvasState)&gt;.Antialias" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.Graphics.ICanvas.Antialias</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AssignedStrokeLimit">
+      <MemberSignature Language="C#" Value="protected float AssignedStrokeLimit { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 AssignedStrokeLimit" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Graphics.AbstractCanvas`1.AssignedStrokeLimit" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property AssignedStrokeLimit As Single" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property float AssignedStrokeLimit { float get(); };" />
+      <MemberSignature Language="F#" Value="member this.AssignedStrokeLimit : single" Usage="Microsoft.Maui.Graphics.AbstractCanvas&lt;'State (requires 'State :&gt; Microsoft.Maui.Graphics.CanvasState)&gt;.AssignedStrokeLimit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlendMode">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.Maui.Graphics.BlendMode BlendMode { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.Graphics.BlendMode BlendMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Graphics.AbstractCanvas`1.BlendMode" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Property BlendMode As BlendMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Microsoft::Maui::Graphics::BlendMode BlendMode {  void set(Microsoft::Maui::Graphics::BlendMode value); };" />
+      <MemberSignature Language="F#" Value="member this.BlendMode : Microsoft.Maui.Graphics.BlendMode" Usage="Microsoft.Maui.Graphics.AbstractCanvas&lt;'State (requires 'State :&gt; Microsoft.Maui.Graphics.CanvasState)&gt;.BlendMode" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.Graphics.ICanvas.BlendMode</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.BlendMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClipPath">
+      <MemberSignature Language="C#" Value="public abstract void ClipPath (Microsoft.Maui.Graphics.PathF path, Microsoft.Maui.Graphics.WindingMode windingMode = Microsoft.Maui.Graphics.WindingMode.NonZero);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClipPath(class Microsoft.Maui.Graphics.PathF path, valuetype Microsoft.Maui.Graphics.WindingMode windingMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.ClipPath(Microsoft.Maui.Graphics.PathF,Microsoft.Maui.Graphics.WindingMode)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ClipPath (path As PathF, Optional windingMode As WindingMode = Microsoft.Maui.Graphics.WindingMode.NonZero)" />
+      <MemberSignature Language="F#" Value="abstract member ClipPath : Microsoft.Maui.Graphics.PathF * Microsoft.Maui.Graphics.WindingMode -&gt; unit" Usage="abstractCanvas.ClipPath (path, windingMode)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.ICanvas.ClipPath(Microsoft.Maui.Graphics.PathF,Microsoft.Maui.Graphics.WindingMode)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="Microsoft.Maui.Graphics.PathF" />
+        <Parameter Name="windingMode" Type="Microsoft.Maui.Graphics.WindingMode" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <param name="windingMode">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClipRectangle">
+      <MemberSignature Language="C#" Value="public abstract void ClipRectangle (float x, float y, float width, float height);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClipRectangle(float32 x, float32 y, float32 width, float32 height) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.ClipRectangle(System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ClipRectangle (x As Single, y As Single, width As Single, height As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ClipRectangle(float x, float y, float width, float height);" />
+      <MemberSignature Language="F#" Value="abstract member ClipRectangle : single * single * single * single -&gt; unit" Usage="abstractCanvas.ClipRectangle (x, y, width, height)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.ICanvas.ClipRectangle(System.Single,System.Single,System.Single,System.Single)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="y" Type="System.Single" />
+        <Parameter Name="width" Type="System.Single" />
+        <Parameter Name="height" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConcatenateTransform">
+      <MemberSignature Language="C#" Value="public void ConcatenateTransform (System.Numerics.Matrix3x2 transform);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ConcatenateTransform(valuetype System.Numerics.Matrix3x2 transform) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.ConcatenateTransform(System.Numerics.Matrix3x2)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ConcatenateTransform (transform As Matrix3x2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ConcatenateTransform(System::Numerics::Matrix3x2 transform);" />
+      <MemberSignature Language="F#" Value="abstract member ConcatenateTransform : System.Numerics.Matrix3x2 -&gt; unit&#xA;override this.ConcatenateTransform : System.Numerics.Matrix3x2 -&gt; unit" Usage="abstractCanvas.ConcatenateTransform transform" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.ICanvas.ConcatenateTransform(System.Numerics.Matrix3x2)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="transform" Type="System.Numerics.Matrix3x2" />
+      </Parameters>
+      <Docs>
+        <param name="transform">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentState">
+      <MemberSignature Language="C#" Value="protected TState CurrentState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TState CurrentState" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Graphics.AbstractCanvas`1.CurrentState" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property CurrentState As TState" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property TState CurrentState { TState get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentState : 'State" Usage="Microsoft.Maui.Graphics.AbstractCanvas&lt;'State (requires 'State :&gt; Microsoft.Maui.Graphics.CanvasState)&gt;.CurrentState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayScale">
+      <MemberSignature Language="C#" Value="public virtual float DisplayScale { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 DisplayScale" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Graphics.AbstractCanvas`1.DisplayScale" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DisplayScale As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property float DisplayScale { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayScale : single with get, set" Usage="Microsoft.Maui.Graphics.AbstractCanvas&lt;'State (requires 'State :&gt; Microsoft.Maui.Graphics.CanvasState)&gt;.DisplayScale" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.Graphics.ICanvas.DisplayScale</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public virtual void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="abstractCanvas.Dispose " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawArc">
+      <MemberSignature Language="C#" Value="public void DrawArc (float x, float y, float width, float height, float startAngle, float endAngle, bool clockwise, bool closed);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DrawArc(float32 x, float32 y, float32 width, float32 height, float32 startAngle, float32 endAngle, bool clockwise, bool closed) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.DrawArc(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DrawArc (x As Single, y As Single, width As Single, height As Single, startAngle As Single, endAngle As Single, clockwise As Boolean, closed As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DrawArc(float x, float y, float width, float height, float startAngle, float endAngle, bool clockwise, bool closed);" />
+      <MemberSignature Language="F#" Value="abstract member DrawArc : single * single * single * single * single * single * bool * bool -&gt; unit&#xA;override this.DrawArc : single * single * single * single * single * single * bool * bool -&gt; unit" Usage="abstractCanvas.DrawArc (x, y, width, height, startAngle, endAngle, clockwise, closed)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.ICanvas.DrawArc(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Boolean,System.Boolean)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="y" Type="System.Single" />
+        <Parameter Name="width" Type="System.Single" />
+        <Parameter Name="height" Type="System.Single" />
+        <Parameter Name="startAngle" Type="System.Single" />
+        <Parameter Name="endAngle" Type="System.Single" />
+        <Parameter Name="clockwise" Type="System.Boolean" />
+        <Parameter Name="closed" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="startAngle">To be added.</param>
+        <param name="endAngle">To be added.</param>
+        <param name="clockwise">To be added.</param>
+        <param name="closed">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawEllipse">
+      <MemberSignature Language="C#" Value="public void DrawEllipse (float x, float y, float width, float height);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DrawEllipse(float32 x, float32 y, float32 width, float32 height) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.DrawEllipse(System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DrawEllipse (x As Single, y As Single, width As Single, height As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DrawEllipse(float x, float y, float width, float height);" />
+      <MemberSignature Language="F#" Value="abstract member DrawEllipse : single * single * single * single -&gt; unit&#xA;override this.DrawEllipse : single * single * single * single -&gt; unit" Usage="abstractCanvas.DrawEllipse (x, y, width, height)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.ICanvas.DrawEllipse(System.Single,System.Single,System.Single,System.Single)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="y" Type="System.Single" />
+        <Parameter Name="width" Type="System.Single" />
+        <Parameter Name="height" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawImage">
+      <MemberSignature Language="C#" Value="public abstract void DrawImage (Microsoft.Maui.Graphics.IImage image, float x, float y, float width, float height);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DrawImage(class Microsoft.Maui.Graphics.IImage image, float32 x, float32 y, float32 width, float32 height) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.DrawImage(Microsoft.Maui.Graphics.IImage,System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub DrawImage (image As IImage, x As Single, y As Single, width As Single, height As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void DrawImage(Microsoft::Maui::Graphics::IImage ^ image, float x, float y, float width, float height);" />
+      <MemberSignature Language="F#" Value="abstract member DrawImage : Microsoft.Maui.Graphics.IImage * single * single * single * single -&gt; unit" Usage="abstractCanvas.DrawImage (image, x, y, width, height)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.ICanvas.DrawImage(Microsoft.Maui.Graphics.IImage,System.Single,System.Single,System.Single,System.Single)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="image" Type="Microsoft.Maui.Graphics.IImage" />
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="y" Type="System.Single" />
+        <Parameter Name="width" Type="System.Single" />
+        <Parameter Name="height" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="image">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawLine">
+      <MemberSignature Language="C#" Value="public void DrawLine (float x1, float y1, float x2, float y2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DrawLine(float32 x1, float32 y1, float32 x2, float32 y2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.DrawLine(System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DrawLine (x1 As Single, y1 As Single, x2 As Single, y2 As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DrawLine(float x1, float y1, float x2, float y2);" />
+      <MemberSignature Language="F#" Value="abstract member DrawLine : single * single * single * single -&gt; unit&#xA;override this.DrawLine : single * single * single * single -&gt; unit" Usage="abstractCanvas.DrawLine (x1, y1, x2, y2)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.ICanvas.DrawLine(System.Single,System.Single,System.Single,System.Single)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x1" Type="System.Single" />
+        <Parameter Name="y1" Type="System.Single" />
+        <Parameter Name="x2" Type="System.Single" />
+        <Parameter Name="y2" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="x1">To be added.</param>
+        <param name="y1">To be added.</param>
+        <param name="x2">To be added.</param>
+        <param name="y2">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawPath">
+      <MemberSignature Language="C#" Value="public void DrawPath (Microsoft.Maui.Graphics.PathF path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DrawPath(class Microsoft.Maui.Graphics.PathF path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.DrawPath(Microsoft.Maui.Graphics.PathF)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DrawPath (path As PathF)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DrawPath(Microsoft::Maui::Graphics::PathF ^ path);" />
+      <MemberSignature Language="F#" Value="abstract member DrawPath : Microsoft.Maui.Graphics.PathF -&gt; unit&#xA;override this.DrawPath : Microsoft.Maui.Graphics.PathF -&gt; unit" Usage="abstractCanvas.DrawPath path" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.ICanvas.DrawPath(Microsoft.Maui.Graphics.PathF)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="Microsoft.Maui.Graphics.PathF" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawRectangle">
+      <MemberSignature Language="C#" Value="public void DrawRectangle (float x, float y, float width, float height);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DrawRectangle(float32 x, float32 y, float32 width, float32 height) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.DrawRectangle(System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DrawRectangle (x As Single, y As Single, width As Single, height As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DrawRectangle(float x, float y, float width, float height);" />
+      <MemberSignature Language="F#" Value="abstract member DrawRectangle : single * single * single * single -&gt; unit&#xA;override this.DrawRectangle : single * single * single * single -&gt; unit" Usage="abstractCanvas.DrawRectangle (x, y, width, height)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.ICanvas.DrawRectangle(System.Single,System.Single,System.Single,System.Single)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="y" Type="System.Single" />
+        <Parameter Name="width" Type="System.Single" />
+        <Parameter Name="height" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawRoundedRectangle">
+      <MemberSignature Language="C#" Value="public void DrawRoundedRectangle (float x, float y, float width, float height, float cornerRadius);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DrawRoundedRectangle(float32 x, float32 y, float32 width, float32 height, float32 cornerRadius) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.DrawRoundedRectangle(System.Single,System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DrawRoundedRectangle (x As Single, y As Single, width As Single, height As Single, cornerRadius As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DrawRoundedRectangle(float x, float y, float width, float height, float cornerRadius);" />
+      <MemberSignature Language="F#" Value="abstract member DrawRoundedRectangle : single * single * single * single * single -&gt; unit&#xA;override this.DrawRoundedRectangle : single * single * single * single * single -&gt; unit" Usage="abstractCanvas.DrawRoundedRectangle (x, y, width, height, cornerRadius)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.ICanvas.DrawRoundedRectangle(System.Single,System.Single,System.Single,System.Single,System.Single)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="y" Type="System.Single" />
+        <Parameter Name="width" Type="System.Single" />
+        <Parameter Name="height" Type="System.Single" />
+        <Parameter Name="cornerRadius" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="cornerRadius">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawString">
+      <MemberSignature Language="C#" Value="public abstract void DrawString (string value, float x, float y, Microsoft.Maui.Graphics.HorizontalAlignment horizontalAlignment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DrawString(string value, float32 x, float32 y, valuetype Microsoft.Maui.Graphics.HorizontalAlignment horizontalAlignment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.DrawString(System.String,System.Single,System.Single,Microsoft.Maui.Graphics.HorizontalAlignment)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub DrawString (value As String, x As Single, y As Single, horizontalAlignment As HorizontalAlignment)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void DrawString(System::String ^ value, float x, float y, Microsoft::Maui::Graphics::HorizontalAlignment horizontalAlignment);" />
+      <MemberSignature Language="F#" Value="abstract member DrawString : string * single * single * Microsoft.Maui.Graphics.HorizontalAlignment -&gt; unit" Usage="abstractCanvas.DrawString (value, x, y, horizontalAlignment)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.ICanvas.DrawString(System.String,System.Single,System.Single,Microsoft.Maui.Graphics.HorizontalAlignment)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="y" Type="System.Single" />
+        <Parameter Name="horizontalAlignment" Type="Microsoft.Maui.Graphics.HorizontalAlignment" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="horizontalAlignment">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawString">
+      <MemberSignature Language="C#" Value="public abstract void DrawString (string value, float x, float y, float width, float height, Microsoft.Maui.Graphics.HorizontalAlignment horizontalAlignment, Microsoft.Maui.Graphics.VerticalAlignment verticalAlignment, Microsoft.Maui.Graphics.TextFlow textFlow = Microsoft.Maui.Graphics.TextFlow.ClipBounds, float lineSpacingAdjustment = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DrawString(string value, float32 x, float32 y, float32 width, float32 height, valuetype Microsoft.Maui.Graphics.HorizontalAlignment horizontalAlignment, valuetype Microsoft.Maui.Graphics.VerticalAlignment verticalAlignment, valuetype Microsoft.Maui.Graphics.TextFlow textFlow, float32 lineSpacingAdjustment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.DrawString(System.String,System.Single,System.Single,System.Single,System.Single,Microsoft.Maui.Graphics.HorizontalAlignment,Microsoft.Maui.Graphics.VerticalAlignment,Microsoft.Maui.Graphics.TextFlow,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub DrawString (value As String, x As Single, y As Single, width As Single, height As Single, horizontalAlignment As HorizontalAlignment, verticalAlignment As VerticalAlignment, Optional textFlow As TextFlow = Microsoft.Maui.Graphics.TextFlow.ClipBounds, Optional lineSpacingAdjustment As Single = 0)" />
+      <MemberSignature Language="F#" Value="abstract member DrawString : string * single * single * single * single * Microsoft.Maui.Graphics.HorizontalAlignment * Microsoft.Maui.Graphics.VerticalAlignment * Microsoft.Maui.Graphics.TextFlow * single -&gt; unit" Usage="abstractCanvas.DrawString (value, x, y, width, height, horizontalAlignment, verticalAlignment, textFlow, lineSpacingAdjustment)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.ICanvas.DrawString(System.String,System.Single,System.Single,System.Single,System.Single,Microsoft.Maui.Graphics.HorizontalAlignment,Microsoft.Maui.Graphics.VerticalAlignment,Microsoft.Maui.Graphics.TextFlow,System.Single)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="y" Type="System.Single" />
+        <Parameter Name="width" Type="System.Single" />
+        <Parameter Name="height" Type="System.Single" />
+        <Parameter Name="horizontalAlignment" Type="Microsoft.Maui.Graphics.HorizontalAlignment" />
+        <Parameter Name="verticalAlignment" Type="Microsoft.Maui.Graphics.VerticalAlignment" />
+        <Parameter Name="textFlow" Type="Microsoft.Maui.Graphics.TextFlow" />
+        <Parameter Name="lineSpacingAdjustment" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="horizontalAlignment">To be added.</param>
+        <param name="verticalAlignment">To be added.</param>
+        <param name="textFlow">To be added.</param>
+        <param name="lineSpacingAdjustment">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawText">
+      <MemberSignature Language="C#" Value="public abstract void DrawText (Microsoft.Maui.Graphics.Text.IAttributedText value, float x, float y, float width, float height);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DrawText(class Microsoft.Maui.Graphics.Text.IAttributedText value, float32 x, float32 y, float32 width, float32 height) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.DrawText(Microsoft.Maui.Graphics.Text.IAttributedText,System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub DrawText (value As IAttributedText, x As Single, y As Single, width As Single, height As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void DrawText(Microsoft::Maui::Graphics::Text::IAttributedText ^ value, float x, float y, float width, float height);" />
+      <MemberSignature Language="F#" Value="abstract member DrawText : Microsoft.Maui.Graphics.Text.IAttributedText * single * single * single * single -&gt; unit" Usage="abstractCanvas.DrawText (value, x, y, width, height)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.ICanvas.DrawText(Microsoft.Maui.Graphics.Text.IAttributedText,System.Single,System.Single,System.Single,System.Single)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Microsoft.Maui.Graphics.Text.IAttributedText" />
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="y" Type="System.Single" />
+        <Parameter Name="width" Type="System.Single" />
+        <Parameter Name="height" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FillArc">
+      <MemberSignature Language="C#" Value="public abstract void FillArc (float x, float y, float width, float height, float startAngle, float endAngle, bool clockwise);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FillArc(float32 x, float32 y, float32 width, float32 height, float32 startAngle, float32 endAngle, bool clockwise) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.FillArc(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub FillArc (x As Single, y As Single, width As Single, height As Single, startAngle As Single, endAngle As Single, clockwise As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void FillArc(float x, float y, float width, float height, float startAngle, float endAngle, bool clockwise);" />
+      <MemberSignature Language="F#" Value="abstract member FillArc : single * single * single * single * single * single * bool -&gt; unit" Usage="abstractCanvas.FillArc (x, y, width, height, startAngle, endAngle, clockwise)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.ICanvas.FillArc(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Boolean)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="y" Type="System.Single" />
+        <Parameter Name="width" Type="System.Single" />
+        <Parameter Name="height" Type="System.Single" />
+        <Parameter Name="startAngle" Type="System.Single" />
+        <Parameter Name="endAngle" Type="System.Single" />
+        <Parameter Name="clockwise" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="startAngle">To be added.</param>
+        <param name="endAngle">To be added.</param>
+        <param name="clockwise">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FillColor">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.Maui.Graphics.Color FillColor { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Graphics.Color FillColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Graphics.AbstractCanvas`1.FillColor" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Property FillColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Microsoft::Maui::Graphics::Color ^ FillColor {  void set(Microsoft::Maui::Graphics::Color ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FillColor : Microsoft.Maui.Graphics.Color" Usage="Microsoft.Maui.Graphics.AbstractCanvas&lt;'State (requires 'State :&gt; Microsoft.Maui.Graphics.CanvasState)&gt;.FillColor" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.Graphics.ICanvas.FillColor</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FillEllipse">
+      <MemberSignature Language="C#" Value="public abstract void FillEllipse (float x, float y, float width, float height);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FillEllipse(float32 x, float32 y, float32 width, float32 height) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.FillEllipse(System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub FillEllipse (x As Single, y As Single, width As Single, height As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void FillEllipse(float x, float y, float width, float height);" />
+      <MemberSignature Language="F#" Value="abstract member FillEllipse : single * single * single * single -&gt; unit" Usage="abstractCanvas.FillEllipse (x, y, width, height)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.ICanvas.FillEllipse(System.Single,System.Single,System.Single,System.Single)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="y" Type="System.Single" />
+        <Parameter Name="width" Type="System.Single" />
+        <Parameter Name="height" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FillPath">
+      <MemberSignature Language="C#" Value="public abstract void FillPath (Microsoft.Maui.Graphics.PathF path, Microsoft.Maui.Graphics.WindingMode windingMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FillPath(class Microsoft.Maui.Graphics.PathF path, valuetype Microsoft.Maui.Graphics.WindingMode windingMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.FillPath(Microsoft.Maui.Graphics.PathF,Microsoft.Maui.Graphics.WindingMode)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub FillPath (path As PathF, windingMode As WindingMode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void FillPath(Microsoft::Maui::Graphics::PathF ^ path, Microsoft::Maui::Graphics::WindingMode windingMode);" />
+      <MemberSignature Language="F#" Value="abstract member FillPath : Microsoft.Maui.Graphics.PathF * Microsoft.Maui.Graphics.WindingMode -&gt; unit" Usage="abstractCanvas.FillPath (path, windingMode)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.ICanvas.FillPath(Microsoft.Maui.Graphics.PathF,Microsoft.Maui.Graphics.WindingMode)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="Microsoft.Maui.Graphics.PathF" />
+        <Parameter Name="windingMode" Type="Microsoft.Maui.Graphics.WindingMode" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <param name="windingMode">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FillRectangle">
+      <MemberSignature Language="C#" Value="public abstract void FillRectangle (float x, float y, float width, float height);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FillRectangle(float32 x, float32 y, float32 width, float32 height) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.FillRectangle(System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub FillRectangle (x As Single, y As Single, width As Single, height As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void FillRectangle(float x, float y, float width, float height);" />
+      <MemberSignature Language="F#" Value="abstract member FillRectangle : single * single * single * single -&gt; unit" Usage="abstractCanvas.FillRectangle (x, y, width, height)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.ICanvas.FillRectangle(System.Single,System.Single,System.Single,System.Single)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="y" Type="System.Single" />
+        <Parameter Name="width" Type="System.Single" />
+        <Parameter Name="height" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FillRoundedRectangle">
+      <MemberSignature Language="C#" Value="public abstract void FillRoundedRectangle (float x, float y, float width, float height, float cornerRadius);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FillRoundedRectangle(float32 x, float32 y, float32 width, float32 height, float32 cornerRadius) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.FillRoundedRectangle(System.Single,System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub FillRoundedRectangle (x As Single, y As Single, width As Single, height As Single, cornerRadius As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void FillRoundedRectangle(float x, float y, float width, float height, float cornerRadius);" />
+      <MemberSignature Language="F#" Value="abstract member FillRoundedRectangle : single * single * single * single * single -&gt; unit" Usage="abstractCanvas.FillRoundedRectangle (x, y, width, height, cornerRadius)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.ICanvas.FillRoundedRectangle(System.Single,System.Single,System.Single,System.Single,System.Single)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="y" Type="System.Single" />
+        <Parameter Name="width" Type="System.Single" />
+        <Parameter Name="height" Type="System.Single" />
+        <Parameter Name="cornerRadius" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="cornerRadius">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Font">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.Maui.Graphics.IFont Font { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Graphics.IFont Font" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Graphics.AbstractCanvas`1.Font" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Property Font As IFont" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Microsoft::Maui::Graphics::IFont ^ Font {  void set(Microsoft::Maui::Graphics::IFont ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Font : Microsoft.Maui.Graphics.IFont" Usage="Microsoft.Maui.Graphics.AbstractCanvas&lt;'State (requires 'State :&gt; Microsoft.Maui.Graphics.CanvasState)&gt;.Font" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.Graphics.ICanvas.Font</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.IFont</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontColor">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.Maui.Graphics.Color FontColor { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Graphics.Color FontColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Graphics.AbstractCanvas`1.FontColor" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Property FontColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Microsoft::Maui::Graphics::Color ^ FontColor {  void set(Microsoft::Maui::Graphics::Color ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FontColor : Microsoft.Maui.Graphics.Color" Usage="Microsoft.Maui.Graphics.AbstractCanvas&lt;'State (requires 'State :&gt; Microsoft.Maui.Graphics.CanvasState)&gt;.FontColor" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.Graphics.ICanvas.FontColor</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontSize">
+      <MemberSignature Language="C#" Value="public abstract float FontSize { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 FontSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Graphics.AbstractCanvas`1.FontSize" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Property FontSize As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property float FontSize {  void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.FontSize : single" Usage="Microsoft.Maui.Graphics.AbstractCanvas&lt;'State (requires 'State :&gt; Microsoft.Maui.Graphics.CanvasState)&gt;.FontSize" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.Graphics.ICanvas.FontSize</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStringSize">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.SizeF GetStringSize (string value, Microsoft.Maui.Graphics.IFont font, float fontSize);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.Maui.Graphics.SizeF GetStringSize(string value, class Microsoft.Maui.Graphics.IFont font, float32 fontSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.GetStringSize(System.String,Microsoft.Maui.Graphics.IFont,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStringSize (value As String, font As IFont, fontSize As Single) As SizeF" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Maui::Graphics::SizeF GetStringSize(System::String ^ value, Microsoft::Maui::Graphics::IFont ^ font, float fontSize);" />
+      <MemberSignature Language="F#" Value="abstract member GetStringSize : string * Microsoft.Maui.Graphics.IFont * single -&gt; Microsoft.Maui.Graphics.SizeF&#xA;override this.GetStringSize : string * Microsoft.Maui.Graphics.IFont * single -&gt; Microsoft.Maui.Graphics.SizeF" Usage="abstractCanvas.GetStringSize (value, font, fontSize)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.ICanvas.GetStringSize(System.String,Microsoft.Maui.Graphics.IFont,System.Single)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.SizeF</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="font" Type="Microsoft.Maui.Graphics.IFont" />
+        <Parameter Name="fontSize" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="font">To be added.</param>
+        <param name="fontSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStringSize">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.SizeF GetStringSize (string aString, Microsoft.Maui.Graphics.IFont font, float aFontSize, Microsoft.Maui.Graphics.HorizontalAlignment aHorizontalAlignment, Microsoft.Maui.Graphics.VerticalAlignment aVerticalAlignment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.Maui.Graphics.SizeF GetStringSize(string aString, class Microsoft.Maui.Graphics.IFont font, float32 aFontSize, valuetype Microsoft.Maui.Graphics.HorizontalAlignment aHorizontalAlignment, valuetype Microsoft.Maui.Graphics.VerticalAlignment aVerticalAlignment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.GetStringSize(System.String,Microsoft.Maui.Graphics.IFont,System.Single,Microsoft.Maui.Graphics.HorizontalAlignment,Microsoft.Maui.Graphics.VerticalAlignment)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStringSize (aString As String, font As IFont, aFontSize As Single, aHorizontalAlignment As HorizontalAlignment, aVerticalAlignment As VerticalAlignment) As SizeF" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Maui::Graphics::SizeF GetStringSize(System::String ^ aString, Microsoft::Maui::Graphics::IFont ^ font, float aFontSize, Microsoft::Maui::Graphics::HorizontalAlignment aHorizontalAlignment, Microsoft::Maui::Graphics::VerticalAlignment aVerticalAlignment);" />
+      <MemberSignature Language="F#" Value="abstract member GetStringSize : string * Microsoft.Maui.Graphics.IFont * single * Microsoft.Maui.Graphics.HorizontalAlignment * Microsoft.Maui.Graphics.VerticalAlignment -&gt; Microsoft.Maui.Graphics.SizeF&#xA;override this.GetStringSize : string * Microsoft.Maui.Graphics.IFont * single * Microsoft.Maui.Graphics.HorizontalAlignment * Microsoft.Maui.Graphics.VerticalAlignment -&gt; Microsoft.Maui.Graphics.SizeF" Usage="abstractCanvas.GetStringSize (aString, font, aFontSize, aHorizontalAlignment, aVerticalAlignment)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.ICanvas.GetStringSize(System.String,Microsoft.Maui.Graphics.IFont,System.Single,Microsoft.Maui.Graphics.HorizontalAlignment,Microsoft.Maui.Graphics.VerticalAlignment)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.SizeF</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="aString" Type="System.String" />
+        <Parameter Name="font" Type="Microsoft.Maui.Graphics.IFont" />
+        <Parameter Name="aFontSize" Type="System.Single" />
+        <Parameter Name="aHorizontalAlignment" Type="Microsoft.Maui.Graphics.HorizontalAlignment" />
+        <Parameter Name="aVerticalAlignment" Type="Microsoft.Maui.Graphics.VerticalAlignment" />
+      </Parameters>
+      <Docs>
+        <param name="aString">To be added.</param>
+        <param name="font">To be added.</param>
+        <param name="aFontSize">To be added.</param>
+        <param name="aHorizontalAlignment">To be added.</param>
+        <param name="aVerticalAlignment">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LimitStrokeScaling">
+      <MemberSignature Language="C#" Value="public bool LimitStrokeScaling { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LimitStrokeScaling" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Graphics.AbstractCanvas`1.LimitStrokeScaling" />
+      <MemberSignature Language="VB.NET" Value="Public Property LimitStrokeScaling As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LimitStrokeScaling {  void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LimitStrokeScaling : bool" Usage="Microsoft.Maui.Graphics.AbstractCanvas&lt;'State (requires 'State :&gt; Microsoft.Maui.Graphics.CanvasState)&gt;.LimitStrokeScaling" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LimitStrokeScalingEnabled">
+      <MemberSignature Language="C#" Value="protected bool LimitStrokeScalingEnabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LimitStrokeScalingEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Graphics.AbstractCanvas`1.LimitStrokeScalingEnabled" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property LimitStrokeScalingEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool LimitStrokeScalingEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.LimitStrokeScalingEnabled : bool" Usage="Microsoft.Maui.Graphics.AbstractCanvas&lt;'State (requires 'State :&gt; Microsoft.Maui.Graphics.CanvasState)&gt;.LimitStrokeScalingEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MiterLimit">
+      <MemberSignature Language="C#" Value="public abstract float MiterLimit { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 MiterLimit" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Graphics.AbstractCanvas`1.MiterLimit" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Property MiterLimit As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property float MiterLimit {  void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.MiterLimit : single" Usage="Microsoft.Maui.Graphics.AbstractCanvas&lt;'State (requires 'State :&gt; Microsoft.Maui.Graphics.CanvasState)&gt;.MiterLimit" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.Graphics.ICanvas.MiterLimit</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformConcatenateTransform">
+      <MemberSignature Language="C#" Value="protected abstract void PlatformConcatenateTransform (System.Numerics.Matrix3x2 transform);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PlatformConcatenateTransform(valuetype System.Numerics.Matrix3x2 transform) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.PlatformConcatenateTransform(System.Numerics.Matrix3x2)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub PlatformConcatenateTransform (transform As Matrix3x2)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void PlatformConcatenateTransform(System::Numerics::Matrix3x2 transform);" />
+      <MemberSignature Language="F#" Value="abstract member PlatformConcatenateTransform : System.Numerics.Matrix3x2 -&gt; unit" Usage="abstractCanvas.PlatformConcatenateTransform transform" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="transform" Type="System.Numerics.Matrix3x2" />
+      </Parameters>
+      <Docs>
+        <param name="transform">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformDrawArc">
+      <MemberSignature Language="C#" Value="protected abstract void PlatformDrawArc (float x, float y, float width, float height, float startAngle, float endAngle, bool clockwise, bool closed);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PlatformDrawArc(float32 x, float32 y, float32 width, float32 height, float32 startAngle, float32 endAngle, bool clockwise, bool closed) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.PlatformDrawArc(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub PlatformDrawArc (x As Single, y As Single, width As Single, height As Single, startAngle As Single, endAngle As Single, clockwise As Boolean, closed As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void PlatformDrawArc(float x, float y, float width, float height, float startAngle, float endAngle, bool clockwise, bool closed);" />
+      <MemberSignature Language="F#" Value="abstract member PlatformDrawArc : single * single * single * single * single * single * bool * bool -&gt; unit" Usage="abstractCanvas.PlatformDrawArc (x, y, width, height, startAngle, endAngle, clockwise, closed)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="y" Type="System.Single" />
+        <Parameter Name="width" Type="System.Single" />
+        <Parameter Name="height" Type="System.Single" />
+        <Parameter Name="startAngle" Type="System.Single" />
+        <Parameter Name="endAngle" Type="System.Single" />
+        <Parameter Name="clockwise" Type="System.Boolean" />
+        <Parameter Name="closed" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="startAngle">To be added.</param>
+        <param name="endAngle">To be added.</param>
+        <param name="clockwise">To be added.</param>
+        <param name="closed">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformDrawEllipse">
+      <MemberSignature Language="C#" Value="protected abstract void PlatformDrawEllipse (float x, float y, float width, float height);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PlatformDrawEllipse(float32 x, float32 y, float32 width, float32 height) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.PlatformDrawEllipse(System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub PlatformDrawEllipse (x As Single, y As Single, width As Single, height As Single)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void PlatformDrawEllipse(float x, float y, float width, float height);" />
+      <MemberSignature Language="F#" Value="abstract member PlatformDrawEllipse : single * single * single * single -&gt; unit" Usage="abstractCanvas.PlatformDrawEllipse (x, y, width, height)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="y" Type="System.Single" />
+        <Parameter Name="width" Type="System.Single" />
+        <Parameter Name="height" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformDrawLine">
+      <MemberSignature Language="C#" Value="protected abstract void PlatformDrawLine (float x1, float y1, float x2, float y2);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PlatformDrawLine(float32 x1, float32 y1, float32 x2, float32 y2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.PlatformDrawLine(System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub PlatformDrawLine (x1 As Single, y1 As Single, x2 As Single, y2 As Single)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void PlatformDrawLine(float x1, float y1, float x2, float y2);" />
+      <MemberSignature Language="F#" Value="abstract member PlatformDrawLine : single * single * single * single -&gt; unit" Usage="abstractCanvas.PlatformDrawLine (x1, y1, x2, y2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x1" Type="System.Single" />
+        <Parameter Name="y1" Type="System.Single" />
+        <Parameter Name="x2" Type="System.Single" />
+        <Parameter Name="y2" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="x1">To be added.</param>
+        <param name="y1">To be added.</param>
+        <param name="x2">To be added.</param>
+        <param name="y2">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformDrawPath">
+      <MemberSignature Language="C#" Value="protected abstract void PlatformDrawPath (Microsoft.Maui.Graphics.PathF path);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PlatformDrawPath(class Microsoft.Maui.Graphics.PathF path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.PlatformDrawPath(Microsoft.Maui.Graphics.PathF)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub PlatformDrawPath (path As PathF)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void PlatformDrawPath(Microsoft::Maui::Graphics::PathF ^ path);" />
+      <MemberSignature Language="F#" Value="abstract member PlatformDrawPath : Microsoft.Maui.Graphics.PathF -&gt; unit" Usage="abstractCanvas.PlatformDrawPath path" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="Microsoft.Maui.Graphics.PathF" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformDrawRectangle">
+      <MemberSignature Language="C#" Value="protected abstract void PlatformDrawRectangle (float x, float y, float width, float height);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PlatformDrawRectangle(float32 x, float32 y, float32 width, float32 height) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.PlatformDrawRectangle(System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub PlatformDrawRectangle (x As Single, y As Single, width As Single, height As Single)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void PlatformDrawRectangle(float x, float y, float width, float height);" />
+      <MemberSignature Language="F#" Value="abstract member PlatformDrawRectangle : single * single * single * single -&gt; unit" Usage="abstractCanvas.PlatformDrawRectangle (x, y, width, height)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="y" Type="System.Single" />
+        <Parameter Name="width" Type="System.Single" />
+        <Parameter Name="height" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformDrawRoundedRectangle">
+      <MemberSignature Language="C#" Value="protected abstract void PlatformDrawRoundedRectangle (float x, float y, float width, float height, float cornerRadius);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PlatformDrawRoundedRectangle(float32 x, float32 y, float32 width, float32 height, float32 cornerRadius) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.PlatformDrawRoundedRectangle(System.Single,System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub PlatformDrawRoundedRectangle (x As Single, y As Single, width As Single, height As Single, cornerRadius As Single)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void PlatformDrawRoundedRectangle(float x, float y, float width, float height, float cornerRadius);" />
+      <MemberSignature Language="F#" Value="abstract member PlatformDrawRoundedRectangle : single * single * single * single * single -&gt; unit" Usage="abstractCanvas.PlatformDrawRoundedRectangle (x, y, width, height, cornerRadius)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="y" Type="System.Single" />
+        <Parameter Name="width" Type="System.Single" />
+        <Parameter Name="height" Type="System.Single" />
+        <Parameter Name="cornerRadius" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="cornerRadius">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformRotate">
+      <MemberSignature Language="C#" Value="protected abstract void PlatformRotate (float degrees, float radians);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PlatformRotate(float32 degrees, float32 radians) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.PlatformRotate(System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub PlatformRotate (degrees As Single, radians As Single)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void PlatformRotate(float degrees, float radians);" />
+      <MemberSignature Language="F#" Value="abstract member PlatformRotate : single * single -&gt; unit" Usage="abstractCanvas.PlatformRotate (degrees, radians)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="degrees" Type="System.Single" />
+        <Parameter Name="radians" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="degrees">To be added.</param>
+        <param name="radians">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformRotate">
+      <MemberSignature Language="C#" Value="protected abstract void PlatformRotate (float degrees, float radians, float x, float y);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PlatformRotate(float32 degrees, float32 radians, float32 x, float32 y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.PlatformRotate(System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub PlatformRotate (degrees As Single, radians As Single, x As Single, y As Single)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void PlatformRotate(float degrees, float radians, float x, float y);" />
+      <MemberSignature Language="F#" Value="abstract member PlatformRotate : single * single * single * single -&gt; unit" Usage="abstractCanvas.PlatformRotate (degrees, radians, x, y)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="degrees" Type="System.Single" />
+        <Parameter Name="radians" Type="System.Single" />
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="y" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="degrees">To be added.</param>
+        <param name="radians">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformScale">
+      <MemberSignature Language="C#" Value="protected abstract void PlatformScale (float fx, float fy);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PlatformScale(float32 fx, float32 fy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.PlatformScale(System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub PlatformScale (fx As Single, fy As Single)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void PlatformScale(float fx, float fy);" />
+      <MemberSignature Language="F#" Value="abstract member PlatformScale : single * single -&gt; unit" Usage="abstractCanvas.PlatformScale (fx, fy)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fx" Type="System.Single" />
+        <Parameter Name="fy" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="fx">To be added.</param>
+        <param name="fy">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformSetStrokeDashPattern">
+      <MemberSignature Language="C#" Value="protected abstract void PlatformSetStrokeDashPattern (float[] strokePattern, float strokeDashOffset, float strokeSize);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PlatformSetStrokeDashPattern(float32[] strokePattern, float32 strokeDashOffset, float32 strokeSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.PlatformSetStrokeDashPattern(System.Single[],System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub PlatformSetStrokeDashPattern (strokePattern As Single(), strokeDashOffset As Single, strokeSize As Single)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void PlatformSetStrokeDashPattern(cli::array &lt;float&gt; ^ strokePattern, float strokeDashOffset, float strokeSize);" />
+      <MemberSignature Language="F#" Value="abstract member PlatformSetStrokeDashPattern : single[] * single * single -&gt; unit" Usage="abstractCanvas.PlatformSetStrokeDashPattern (strokePattern, strokeDashOffset, strokeSize)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strokePattern" Type="System.Single[]" />
+        <Parameter Name="strokeDashOffset" Type="System.Single" />
+        <Parameter Name="strokeSize" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="strokePattern">To be added.</param>
+        <param name="strokeDashOffset">To be added.</param>
+        <param name="strokeSize">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformStrokeSize">
+      <MemberSignature Language="C#" Value="protected abstract float PlatformStrokeSize { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 PlatformStrokeSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Graphics.AbstractCanvas`1.PlatformStrokeSize" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Property PlatformStrokeSize As Single" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract property float PlatformStrokeSize {  void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.PlatformStrokeSize : single" Usage="Microsoft.Maui.Graphics.AbstractCanvas&lt;'State (requires 'State :&gt; Microsoft.Maui.Graphics.CanvasState)&gt;.PlatformStrokeSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformTranslate">
+      <MemberSignature Language="C#" Value="protected abstract void PlatformTranslate (float tx, float ty);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PlatformTranslate(float32 tx, float32 ty) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.PlatformTranslate(System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub PlatformTranslate (tx As Single, ty As Single)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void PlatformTranslate(float tx, float ty);" />
+      <MemberSignature Language="F#" Value="abstract member PlatformTranslate : single * single -&gt; unit" Usage="abstractCanvas.PlatformTranslate (tx, ty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tx" Type="System.Single" />
+        <Parameter Name="ty" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="tx">To be added.</param>
+        <param name="ty">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetState">
+      <MemberSignature Language="C#" Value="public virtual void ResetState ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResetState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.ResetState" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ResetState ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ResetState();" />
+      <MemberSignature Language="F#" Value="abstract member ResetState : unit -&gt; unit&#xA;override this.ResetState : unit -&gt; unit" Usage="abstractCanvas.ResetState " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.ICanvas.ResetState</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RestoreState">
+      <MemberSignature Language="C#" Value="public virtual bool RestoreState ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool RestoreState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.RestoreState" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RestoreState () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool RestoreState();" />
+      <MemberSignature Language="F#" Value="abstract member RestoreState : unit -&gt; bool&#xA;override this.RestoreState : unit -&gt; bool" Usage="abstractCanvas.RestoreState " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.ICanvas.RestoreState</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RetinaScale">
+      <MemberSignature Language="C#" Value="public float RetinaScale { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 RetinaScale" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Graphics.AbstractCanvas`1.RetinaScale" />
+      <MemberSignature Language="VB.NET" Value="Public Property RetinaScale As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float RetinaScale { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.RetinaScale : single with get, set" Usage="Microsoft.Maui.Graphics.AbstractCanvas&lt;'State (requires 'State :&gt; Microsoft.Maui.Graphics.CanvasState)&gt;.RetinaScale" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.Graphics.ICanvas.RetinaScale</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotate">
+      <MemberSignature Language="C#" Value="public void Rotate (float degrees);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Rotate(float32 degrees) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.Rotate(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Rotate (degrees As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Rotate(float degrees);" />
+      <MemberSignature Language="F#" Value="abstract member Rotate : single -&gt; unit&#xA;override this.Rotate : single -&gt; unit" Usage="abstractCanvas.Rotate degrees" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.ICanvas.Rotate(System.Single)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="degrees" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="degrees">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotate">
+      <MemberSignature Language="C#" Value="public void Rotate (float degrees, float x, float y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Rotate(float32 degrees, float32 x, float32 y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.Rotate(System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Rotate (degrees As Single, x As Single, y As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Rotate(float degrees, float x, float y);" />
+      <MemberSignature Language="F#" Value="abstract member Rotate : single * single * single -&gt; unit&#xA;override this.Rotate : single * single * single -&gt; unit" Usage="abstractCanvas.Rotate (degrees, x, y)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.ICanvas.Rotate(System.Single,System.Single,System.Single)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="degrees" Type="System.Single" />
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="y" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="degrees">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveState">
+      <MemberSignature Language="C#" Value="public virtual void SaveState ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.SaveState" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SaveState ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SaveState();" />
+      <MemberSignature Language="F#" Value="abstract member SaveState : unit -&gt; unit&#xA;override this.SaveState : unit -&gt; unit" Usage="abstractCanvas.SaveState " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.ICanvas.SaveState</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Scale">
+      <MemberSignature Language="C#" Value="public void Scale (float fx, float fy);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Scale(float32 fx, float32 fy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.Scale(System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Scale (fx As Single, fy As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Scale(float fx, float fy);" />
+      <MemberSignature Language="F#" Value="abstract member Scale : single * single -&gt; unit&#xA;override this.Scale : single * single -&gt; unit" Usage="abstractCanvas.Scale (fx, fy)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.ICanvas.Scale(System.Single,System.Single)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fx" Type="System.Single" />
+        <Parameter Name="fy" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="fx">To be added.</param>
+        <param name="fy">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFillPaint">
+      <MemberSignature Language="C#" Value="public abstract void SetFillPaint (Microsoft.Maui.Graphics.Paint paint, Microsoft.Maui.Graphics.RectF rectangle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetFillPaint(class Microsoft.Maui.Graphics.Paint paint, valuetype Microsoft.Maui.Graphics.RectF rectangle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.SetFillPaint(Microsoft.Maui.Graphics.Paint,Microsoft.Maui.Graphics.RectF)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SetFillPaint (paint As Paint, rectangle As RectF)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SetFillPaint(Microsoft::Maui::Graphics::Paint ^ paint, Microsoft::Maui::Graphics::RectF rectangle);" />
+      <MemberSignature Language="F#" Value="abstract member SetFillPaint : Microsoft.Maui.Graphics.Paint * Microsoft.Maui.Graphics.RectF -&gt; unit" Usage="abstractCanvas.SetFillPaint (paint, rectangle)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.ICanvas.SetFillPaint(Microsoft.Maui.Graphics.Paint,Microsoft.Maui.Graphics.RectF)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="paint" Type="Microsoft.Maui.Graphics.Paint" />
+        <Parameter Name="rectangle" Type="Microsoft.Maui.Graphics.RectF" />
+      </Parameters>
+      <Docs>
+        <param name="paint">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetShadow">
+      <MemberSignature Language="C#" Value="public abstract void SetShadow (Microsoft.Maui.Graphics.SizeF offset, float blur, Microsoft.Maui.Graphics.Color color);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetShadow(valuetype Microsoft.Maui.Graphics.SizeF offset, float32 blur, class Microsoft.Maui.Graphics.Color color) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.SetShadow(Microsoft.Maui.Graphics.SizeF,System.Single,Microsoft.Maui.Graphics.Color)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SetShadow (offset As SizeF, blur As Single, color As Color)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SetShadow(Microsoft::Maui::Graphics::SizeF offset, float blur, Microsoft::Maui::Graphics::Color ^ color);" />
+      <MemberSignature Language="F#" Value="abstract member SetShadow : Microsoft.Maui.Graphics.SizeF * single * Microsoft.Maui.Graphics.Color -&gt; unit" Usage="abstractCanvas.SetShadow (offset, blur, color)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.ICanvas.SetShadow(Microsoft.Maui.Graphics.SizeF,System.Single,Microsoft.Maui.Graphics.Color)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="offset" Type="Microsoft.Maui.Graphics.SizeF" />
+        <Parameter Name="blur" Type="System.Single" />
+        <Parameter Name="color" Type="Microsoft.Maui.Graphics.Color" />
+      </Parameters>
+      <Docs>
+        <param name="offset">To be added.</param>
+        <param name="blur">To be added.</param>
+        <param name="color">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StateRestored">
+      <MemberSignature Language="C#" Value="protected virtual void StateRestored (TState state);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void StateRestored(!TState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.StateRestored(`0)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub StateRestored (state As TState)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void StateRestored(TState state);" />
+      <MemberSignature Language="F#" Value="abstract member StateRestored : 'State -&gt; unit&#xA;override this.StateRestored : 'State -&gt; unit" Usage="abstractCanvas.StateRestored state" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="TState" />
+      </Parameters>
+      <Docs>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrokeColor">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.Maui.Graphics.Color StrokeColor { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Graphics.Color StrokeColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Graphics.AbstractCanvas`1.StrokeColor" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Property StrokeColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Microsoft::Maui::Graphics::Color ^ StrokeColor {  void set(Microsoft::Maui::Graphics::Color ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StrokeColor : Microsoft.Maui.Graphics.Color" Usage="Microsoft.Maui.Graphics.AbstractCanvas&lt;'State (requires 'State :&gt; Microsoft.Maui.Graphics.CanvasState)&gt;.StrokeColor" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.Graphics.ICanvas.StrokeColor</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrokeDashOffset">
+      <MemberSignature Language="C#" Value="public float StrokeDashOffset { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 StrokeDashOffset" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Graphics.AbstractCanvas`1.StrokeDashOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Property StrokeDashOffset As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float StrokeDashOffset {  void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.StrokeDashOffset : single" Usage="Microsoft.Maui.Graphics.AbstractCanvas&lt;'State (requires 'State :&gt; Microsoft.Maui.Graphics.CanvasState)&gt;.StrokeDashOffset" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.Graphics.ICanvas.StrokeDashOffset</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrokeDashPattern">
+      <MemberSignature Language="C#" Value="public float[] StrokeDashPattern { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32[] StrokeDashPattern" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Graphics.AbstractCanvas`1.StrokeDashPattern" />
+      <MemberSignature Language="VB.NET" Value="Public Property StrokeDashPattern As Single()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;float&gt; ^ StrokeDashPattern {  void set(cli::array &lt;float&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StrokeDashPattern : single[]" Usage="Microsoft.Maui.Graphics.AbstractCanvas&lt;'State (requires 'State :&gt; Microsoft.Maui.Graphics.CanvasState)&gt;.StrokeDashPattern" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.Graphics.ICanvas.StrokeDashPattern</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrokeLimit">
+      <MemberSignature Language="C#" Value="public float StrokeLimit { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 StrokeLimit" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Graphics.AbstractCanvas`1.StrokeLimit" />
+      <MemberSignature Language="VB.NET" Value="Public Property StrokeLimit As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float StrokeLimit {  void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.StrokeLimit : single" Usage="Microsoft.Maui.Graphics.AbstractCanvas&lt;'State (requires 'State :&gt; Microsoft.Maui.Graphics.CanvasState)&gt;.StrokeLimit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrokeLineCap">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.Maui.Graphics.LineCap StrokeLineCap { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.Graphics.LineCap StrokeLineCap" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Graphics.AbstractCanvas`1.StrokeLineCap" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Property StrokeLineCap As LineCap" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Microsoft::Maui::Graphics::LineCap StrokeLineCap {  void set(Microsoft::Maui::Graphics::LineCap value); };" />
+      <MemberSignature Language="F#" Value="member this.StrokeLineCap : Microsoft.Maui.Graphics.LineCap" Usage="Microsoft.Maui.Graphics.AbstractCanvas&lt;'State (requires 'State :&gt; Microsoft.Maui.Graphics.CanvasState)&gt;.StrokeLineCap" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.Graphics.ICanvas.StrokeLineCap</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.LineCap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrokeLineJoin">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.Maui.Graphics.LineJoin StrokeLineJoin { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.Graphics.LineJoin StrokeLineJoin" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Graphics.AbstractCanvas`1.StrokeLineJoin" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Property StrokeLineJoin As LineJoin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Microsoft::Maui::Graphics::LineJoin StrokeLineJoin {  void set(Microsoft::Maui::Graphics::LineJoin value); };" />
+      <MemberSignature Language="F#" Value="member this.StrokeLineJoin : Microsoft.Maui.Graphics.LineJoin" Usage="Microsoft.Maui.Graphics.AbstractCanvas&lt;'State (requires 'State :&gt; Microsoft.Maui.Graphics.CanvasState)&gt;.StrokeLineJoin" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.Graphics.ICanvas.StrokeLineJoin</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.LineJoin</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrokeSize">
+      <MemberSignature Language="C#" Value="public float StrokeSize { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 StrokeSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Graphics.AbstractCanvas`1.StrokeSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property StrokeSize As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float StrokeSize {  void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.StrokeSize : single" Usage="Microsoft.Maui.Graphics.AbstractCanvas&lt;'State (requires 'State :&gt; Microsoft.Maui.Graphics.CanvasState)&gt;.StrokeSize" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.Graphics.ICanvas.StrokeSize</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubtractFromClip">
+      <MemberSignature Language="C#" Value="public abstract void SubtractFromClip (float x, float y, float width, float height);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SubtractFromClip(float32 x, float32 y, float32 width, float32 height) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.SubtractFromClip(System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SubtractFromClip (x As Single, y As Single, width As Single, height As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SubtractFromClip(float x, float y, float width, float height);" />
+      <MemberSignature Language="F#" Value="abstract member SubtractFromClip : single * single * single * single -&gt; unit" Usage="abstractCanvas.SubtractFromClip (x, y, width, height)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.ICanvas.SubtractFromClip(System.Single,System.Single,System.Single,System.Single)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="y" Type="System.Single" />
+        <Parameter Name="width" Type="System.Single" />
+        <Parameter Name="height" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Translate">
+      <MemberSignature Language="C#" Value="public void Translate (float tx, float ty);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Translate(float32 tx, float32 ty) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.AbstractCanvas`1.Translate(System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Translate (tx As Single, ty As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Translate(float tx, float ty);" />
+      <MemberSignature Language="F#" Value="abstract member Translate : single * single -&gt; unit&#xA;override this.Translate : single * single -&gt; unit" Usage="abstractCanvas.Translate (tx, ty)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.ICanvas.Translate(System.Single,System.Single)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tx" Type="System.Single" />
+        <Parameter Name="ty" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="tx">To be added.</param>
+        <param name="ty">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

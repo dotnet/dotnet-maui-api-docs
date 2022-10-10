@@ -1,0 +1,89 @@
+<Type Name="Contacts" FullName="Microsoft.Maui.ApplicationModel.Communication.Contacts">
+  <TypeSignature Language="C#" Value="public static class Contacts" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Contacts extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.ApplicationModel.Communication.Contacts" />
+  <TypeSignature Language="VB.NET" Value="Public Class Contacts" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Contacts abstract sealed" />
+  <TypeSignature Language="F#" Value="type Contacts = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>API class for working with contacts on the device.</summary>
+    <remarks />
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.ApplicationModel.Communication.IContacts Default { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Maui.ApplicationModel.Communication.IContacts Default" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.ApplicationModel.Communication.Contacts.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As IContacts" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::Maui::ApplicationModel::Communication::IContacts ^ Default { Microsoft::Maui::ApplicationModel::Communication::IContacts ^ get(); };" />
+      <MemberSignature Language="F#" Value="static member Default : Microsoft.Maui.ApplicationModel.Communication.IContacts" Usage="Microsoft.Maui.ApplicationModel.Communication.Contacts.Default" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.ApplicationModel.Communication.IContacts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAllAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.ApplicationModel.Communication.Contact&gt;&gt; GetAllAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Maui.ApplicationModel.Communication.Contact&gt;&gt; GetAllAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ApplicationModel.Communication.Contacts.GetAllAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetAllAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of Contact))" />
+      <MemberSignature Language="F#" Value="static member GetAllAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.Maui.ApplicationModel.Communication.Contact&gt;&gt;" Usage="Microsoft.Maui.ApplicationModel.Communication.Contacts.GetAllAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.ApplicationModel.Communication.Contact&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">A token for cancelling the operation</param>
+        <summary>Gets a collection of all the contacts on the device.</summary>
+        <returns>Returns a collection of contacts on the device.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="PickContactAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Maui.ApplicationModel.Communication.Contact?&gt; PickContactAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Maui.ApplicationModel.Communication.Contact&gt; PickContactAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ApplicationModel.Communication.Contacts.PickContactAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PickContactAsync () As Task(Of Contact)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;Microsoft::Maui::ApplicationModel::Communication::Contact ^&gt; ^ PickContactAsync();" />
+      <MemberSignature Language="F#" Value="static member PickContactAsync : unit -&gt; System.Threading.Tasks.Task&lt;Microsoft.Maui.ApplicationModel.Communication.Contact&gt;" Usage="Microsoft.Maui.ApplicationModel.Communication.Contacts.PickContactAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Maui.ApplicationModel.Communication.Contact&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Starts file picker for selecting a single contact.</summary>
+        <returns>Returns a single contact, or null if the user cancelled the operation.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

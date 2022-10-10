@@ -1,0 +1,148 @@
+<Type Name="IApplication" FullName="Microsoft.Maui.IApplication">
+  <TypeSignature Language="C#" Value="public interface IApplication : Microsoft.Maui.IElement" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IApplication implements class Microsoft.Maui.IElement" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.IApplication" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IApplication&#xA;Implements IElement" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IApplication : Microsoft::Maui::IElement" />
+  <TypeSignature Language="F#" Value="type IApplication = interface&#xA;    interface IElement" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IElement</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Class that represents a cross-platform .NET MAUI application.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CloseWindow">
+      <MemberSignature Language="C#" Value="public void CloseWindow (Microsoft.Maui.IWindow window);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CloseWindow(class Microsoft.Maui.IWindow window) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IApplication.CloseWindow(Microsoft.Maui.IWindow)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CloseWindow (window As IWindow)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CloseWindow(Microsoft::Maui::IWindow ^ window);" />
+      <MemberSignature Language="F#" Value="abstract member CloseWindow : Microsoft.Maui.IWindow -&gt; unit" Usage="iApplication.CloseWindow window" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="window" Type="Microsoft.Maui.IWindow" />
+      </Parameters>
+      <Docs>
+        <param name="window">The window to close.</param>
+        <summary>
+            Requests that the application closes the window.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateWindow">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.IWindow CreateWindow (Microsoft.Maui.IActivationState? activationState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Maui.IWindow CreateWindow(class Microsoft.Maui.IActivationState activationState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IApplication.CreateWindow(Microsoft.Maui.IActivationState)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateWindow (activationState As IActivationState) As IWindow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Maui::IWindow ^ CreateWindow(Microsoft::Maui::IActivationState ^ activationState);" />
+      <MemberSignature Language="F#" Value="abstract member CreateWindow : Microsoft.Maui.IActivationState -&gt; Microsoft.Maui.IWindow" Usage="iApplication.CreateWindow activationState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.IWindow</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activationState" Type="Microsoft.Maui.IActivationState" />
+      </Parameters>
+      <Docs>
+        <param name="activationState">Argument containing specific information on each platform.</param>
+        <summary>
+            Instantiate a new window.
+            </summary>
+        <returns>The created window.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenWindow">
+      <MemberSignature Language="C#" Value="public void OpenWindow (Microsoft.Maui.IWindow window);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OpenWindow(class Microsoft.Maui.IWindow window) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IApplication.OpenWindow(Microsoft.Maui.IWindow)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OpenWindow (window As IWindow)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OpenWindow(Microsoft::Maui::IWindow ^ window);" />
+      <MemberSignature Language="F#" Value="abstract member OpenWindow : Microsoft.Maui.IWindow -&gt; unit" Usage="iApplication.OpenWindow window" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="window" Type="Microsoft.Maui.IWindow" />
+      </Parameters>
+      <Docs>
+        <param name="window">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThemeChanged">
+      <MemberSignature Language="C#" Value="public void ThemeChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ThemeChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IApplication.ThemeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ThemeChanged ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ThemeChanged();" />
+      <MemberSignature Language="F#" Value="abstract member ThemeChanged : unit -&gt; unit" Usage="iApplication.ThemeChanged " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Notify a theme change.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Windows">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IWindow&gt; Windows { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Maui.IWindow&gt; Windows" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.IApplication.Windows" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Windows As IReadOnlyList(Of IWindow)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IReadOnlyList&lt;Microsoft::Maui::IWindow ^&gt; ^ Windows { System::Collections::Generic::IReadOnlyList&lt;Microsoft::Maui::IWindow ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Windows : System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IWindow&gt;" Usage="Microsoft.Maui.IApplication.Windows" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IWindow&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the instantiated windows in an application.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

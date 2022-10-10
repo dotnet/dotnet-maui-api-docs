@@ -1,0 +1,256 @@
+<Type Name="RectangleAdorner" FullName="Microsoft.Maui.RectangleAdorner">
+  <TypeSignature Language="C#" Value="public class RectangleAdorner : Microsoft.Maui.Graphics.IDrawable, Microsoft.Maui.IAdorner" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RectangleAdorner extends System.Object implements class Microsoft.Maui.Graphics.IDrawable, class Microsoft.Maui.IAdorner, class Microsoft.Maui.IWindowOverlayElement" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.RectangleAdorner" />
+  <TypeSignature Language="VB.NET" Value="Public Class RectangleAdorner&#xA;Implements IAdorner, IDrawable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RectangleAdorner : Microsoft::Maui::Graphics::IDrawable, Microsoft::Maui::IAdorner" />
+  <TypeSignature Language="F#" Value="type RectangleAdorner = class&#xA;    interface IAdorner&#xA;    interface IWindowOverlayElement&#xA;    interface IDrawable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.Graphics.IDrawable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IAdorner</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IWindowOverlayElement</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Rectangle Adorner.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RectangleAdorner (Microsoft.Maui.IView view, float density = 1, Microsoft.Maui.Graphics.Point? offset = default, Microsoft.Maui.Graphics.Color? fillColor = default, Microsoft.Maui.Graphics.Color? strokeColor = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Maui.IView view, float32 density, valuetype System.Nullable`1&lt;valuetype Microsoft.Maui.Graphics.Point&gt; offset, class Microsoft.Maui.Graphics.Color fillColor, class Microsoft.Maui.Graphics.Color strokeColor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.RectangleAdorner.#ctor(Microsoft.Maui.IView,System.Single,System.Nullable{Microsoft.Maui.Graphics.Point},Microsoft.Maui.Graphics.Color,Microsoft.Maui.Graphics.Color)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (view As IView, Optional density As Single = 1, Optional offset As Nullable(Of Point) = Nothing, Optional fillColor As Color = Nothing, Optional strokeColor As Color = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.RectangleAdorner : Microsoft.Maui.IView * single * Nullable&lt;Microsoft.Maui.Graphics.Point&gt; * Microsoft.Maui.Graphics.Color * Microsoft.Maui.Graphics.Color -&gt; Microsoft.Maui.RectangleAdorner" Usage="new Microsoft.Maui.RectangleAdorner (view, density, offset, fillColor, strokeColor)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+        <Parameter Name="density" Type="System.Single" />
+        <Parameter Name="offset" Type="System.Nullable&lt;Microsoft.Maui.Graphics.Point&gt;" />
+        <Parameter Name="fillColor" Type="Microsoft.Maui.Graphics.Color" />
+        <Parameter Name="strokeColor" Type="Microsoft.Maui.Graphics.Color" />
+      </Parameters>
+      <Docs>
+        <param name="view">An <see cref="T:Microsoft.Maui.IView" /> to create the adorner around.</param>
+        <param name="density">Override density setting. Default: 1</param>
+        <param name="offset">Offset point used for positioning drawable object. Default: null</param>
+        <param name="fillColor">Canvas Fill Color.</param>
+        <param name="strokeColor">Canvas Stroke Color.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.RectangleAdorner" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public virtual bool Contains (Microsoft.Maui.Graphics.Point point);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(valuetype Microsoft.Maui.Graphics.Point point) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.RectangleAdorner.Contains(Microsoft.Maui.Graphics.Point)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Contains (point As Point) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(Microsoft::Maui::Graphics::Point point);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : Microsoft.Maui.Graphics.Point -&gt; bool&#xA;override this.Contains : Microsoft.Maui.Graphics.Point -&gt; bool" Usage="rectangleAdorner.Contains point" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.IWindowOverlayElement.Contains(Microsoft.Maui.Graphics.Point)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="point" Type="Microsoft.Maui.Graphics.Point" />
+      </Parameters>
+      <Docs>
+        <param name="point">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="Density">
+      <MemberSignature Language="C#" Value="public float Density { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Density" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.RectangleAdorner.Density" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Density As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Density { float get(); };" />
+      <MemberSignature Language="F#" Value="member this.Density : single" Usage="Microsoft.Maui.RectangleAdorner.Density" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IAdorner.Density</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="Draw">
+      <MemberSignature Language="C#" Value="public virtual void Draw (Microsoft.Maui.Graphics.ICanvas canvas, Microsoft.Maui.Graphics.RectF dirtyRect);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Draw(class Microsoft.Maui.Graphics.ICanvas canvas, valuetype Microsoft.Maui.Graphics.RectF dirtyRect) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.RectangleAdorner.Draw(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Draw (canvas As ICanvas, dirtyRect As RectF)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Draw(Microsoft::Maui::Graphics::ICanvas ^ canvas, Microsoft::Maui::Graphics::RectF dirtyRect);" />
+      <MemberSignature Language="F#" Value="abstract member Draw : Microsoft.Maui.Graphics.ICanvas * Microsoft.Maui.Graphics.RectF -&gt; unit&#xA;override this.Draw : Microsoft.Maui.Graphics.ICanvas * Microsoft.Maui.Graphics.RectF -&gt; unit" Usage="rectangleAdorner.Draw (canvas, dirtyRect)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.IDrawable.Draw(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="canvas" Type="Microsoft.Maui.Graphics.ICanvas" />
+        <Parameter Name="dirtyRect" Type="Microsoft.Maui.Graphics.RectF" />
+      </Parameters>
+      <Docs>
+        <param name="canvas">To be added.</param>
+        <param name="dirtyRect">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawnRectangle">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.Rect DrawnRectangle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.Graphics.Rect DrawnRectangle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.RectangleAdorner.DrawnRectangle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DrawnRectangle As Rect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Graphics::Rect DrawnRectangle { Microsoft::Maui::Graphics::Rect get(); };" />
+      <MemberSignature Language="F#" Value="member this.DrawnRectangle : Microsoft.Maui.Graphics.Rect" Usage="Microsoft.Maui.RectangleAdorner.DrawnRectangle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Rect</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FillColor">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.Color FillColor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Graphics.Color FillColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.RectangleAdorner.FillColor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FillColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Graphics::Color ^ FillColor { Microsoft::Maui::Graphics::Color ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FillColor : Microsoft.Maui.Graphics.Color" Usage="Microsoft.Maui.RectangleAdorner.FillColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Offset">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.Point Offset { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.Graphics.Point Offset" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.RectangleAdorner.Offset" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Offset As Point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Graphics::Point Offset { Microsoft::Maui::Graphics::Point get(); };" />
+      <MemberSignature Language="F#" Value="member this.Offset : Microsoft.Maui.Graphics.Point" Usage="Microsoft.Maui.RectangleAdorner.Offset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrokeColor">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.Color StrokeColor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Graphics.Color StrokeColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.RectangleAdorner.StrokeColor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StrokeColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Graphics::Color ^ StrokeColor { Microsoft::Maui::Graphics::Color ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StrokeColor : Microsoft.Maui.Graphics.Color" Usage="Microsoft.Maui.RectangleAdorner.StrokeColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualView">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.IView VisualView { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.IView VisualView" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.RectangleAdorner.VisualView" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VisualView As IView" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::IView ^ VisualView { Microsoft::Maui::IView ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VisualView : Microsoft.Maui.IView" Usage="Microsoft.Maui.RectangleAdorner.VisualView" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IAdorner.VisualView</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.IView</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+  </Members>
+</Type>
