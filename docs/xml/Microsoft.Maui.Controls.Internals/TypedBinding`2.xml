@@ -1,0 +1,66 @@
+<Type Name="TypedBinding&lt;TSource,TProperty&gt;" FullName="Microsoft.Maui.Controls.Internals.TypedBinding&lt;TSource,TProperty&gt;">
+  <TypeSignature Language="C#" Value="public sealed class TypedBinding&lt;TSource,TProperty&gt; : Microsoft.Maui.Controls.Internals.TypedBindingBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TypedBinding`2&lt;TSource, TProperty&gt; extends Microsoft.Maui.Controls.Internals.TypedBindingBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Internals.TypedBinding`2" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypedBinding(Of TSource, TProperty)&#xA;Inherits TypedBindingBase" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TSource, typename TProperty&gt;&#xA;public ref class TypedBinding sealed : Microsoft::Maui::Controls::Internals::TypedBindingBase" />
+  <TypeSignature Language="F#" Value="type TypedBinding&lt;'Source, 'Property&gt; = class&#xA;    inherit TypedBindingBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TSource" />
+    <TypeParameter Name="TProperty" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.Maui.Controls.Internals.TypedBindingBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="TSource">To be added.</typeparam>
+    <typeparam name="TProperty">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TypedBinding (Func&lt;TSource,(TProperty value, bool success)&gt; getter, Action&lt;TSource,TProperty&gt; setter, Tuple&lt;Func&lt;TSource,object&gt;,string&gt;[] handlers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`2&lt;!TSource, valuetype System.ValueTuple`2&lt;!TProperty, bool&gt;&gt; getter, class System.Action`2&lt;!TSource, !TProperty&gt; setter, class System.Tuple`2&lt;class System.Func`2&lt;!TSource, object&gt;, string&gt;[] handlers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Internals.TypedBinding`2.#ctor(System.Func{`0,System.ValueTuple{`1,System.Boolean}},System.Action{`0,`1},System.Tuple{System.Func{`0,System.Object},System.String}[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (getter As Func(Of TSource, ValueTuple(Of TProperty, Boolean)), setter As Action(Of TSource, TProperty), handlers As Tuple(Of Func(Of TSource, Object), String)())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypedBinding(Func&lt;TSource, ValueTuple&lt;TProperty, bool&gt;&gt; ^ getter, Action&lt;TSource, TProperty&gt; ^ setter, cli::array &lt;Tuple&lt;Func&lt;TSource, System::Object ^&gt; ^, System::String ^&gt; ^&gt; ^ handlers);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.Controls.Internals.TypedBinding&lt;'Source, 'Property&gt; : Func&lt;'Source, ValueTuple&lt;'Property, bool&gt;&gt; * Action&lt;'Source, 'Property&gt; * Func&lt;'Source, obj&gt; * string[] -&gt; Microsoft.Maui.Controls.Internals.TypedBinding&lt;'Source, 'Property&gt;" Usage="new Microsoft.Maui.Controls.Internals.TypedBinding&lt;'Source, 'Property&gt; (getter, setter, handlers)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="getter" Type="System.Func&lt;TSource,System.ValueTuple&lt;TProperty,System.Boolean&gt;&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "value", "success" })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "value", "success" })&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="setter" Type="System.Action&lt;TSource,TProperty&gt;" />
+        <Parameter Name="handlers" Type="System.Tuple&lt;System.Func&lt;TSource,System.Object&gt;,System.String&gt;[]" />
+      </Parameters>
+      <Docs>
+        <param name="getter">To be added.</param>
+        <param name="setter">To be added.</param>
+        <param name="handlers">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

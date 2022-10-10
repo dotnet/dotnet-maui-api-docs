@@ -1,0 +1,126 @@
+<Type Name="IDispatcher" FullName="Microsoft.Maui.Dispatching.IDispatcher">
+  <TypeSignature Language="C#" Value="public interface IDispatcher" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDispatcher" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Dispatching.IDispatcher" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDispatcher" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDispatcher" />
+  <TypeSignature Language="F#" Value="type IDispatcher = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Provides the core event message dispatcher. Instances of this type are responsible for processing the window messages and dispatching the events to the client.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateTimer">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Dispatching.IDispatcherTimer CreateTimer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Maui.Dispatching.IDispatcherTimer CreateTimer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Dispatching.IDispatcher.CreateTimer" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateTimer () As IDispatcherTimer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Maui::Dispatching::IDispatcherTimer ^ CreateTimer();" />
+      <MemberSignature Language="F#" Value="abstract member CreateTimer : unit -&gt; Microsoft.Maui.Dispatching.IDispatcherTimer" Usage="iDispatcher.CreateTimer " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Dispatching.IDispatcherTimer</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a new instance of an <see cref="T:Microsoft.Maui.Dispatching.IDispatcherTimer" /> object associated with this dispatcher.
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispatch">
+      <MemberSignature Language="C#" Value="public bool Dispatch (Action action);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Dispatch(class System.Action action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Dispatching.IDispatcher.Dispatch(System.Action)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Dispatch (action As Action) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Dispatch(Action ^ action);" />
+      <MemberSignature Language="F#" Value="abstract member Dispatch : Action -&gt; bool" Usage="iDispatcher.Dispatch action" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="action" Type="System.Action" />
+      </Parameters>
+      <Docs>
+        <param name="action">The <see cref="T:System.Action" /> to be scheduled for processing on the UI thread.</param>
+        <summary>
+            Schedules the provided action on the UI thread from a worker thread.
+            </summary>
+        <returns>
+          <see langword="true" /> when the action has been dispatched successfully, otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DispatchDelayed">
+      <MemberSignature Language="C#" Value="public bool DispatchDelayed (TimeSpan delay, Action action);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool DispatchDelayed(valuetype System.TimeSpan delay, class System.Action action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Dispatching.IDispatcher.DispatchDelayed(System.TimeSpan,System.Action)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DispatchDelayed (delay As TimeSpan, action As Action) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool DispatchDelayed(TimeSpan delay, Action ^ action);" />
+      <MemberSignature Language="F#" Value="abstract member DispatchDelayed : TimeSpan * Action -&gt; bool" Usage="iDispatcher.DispatchDelayed (delay, action)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="delay" Type="System.TimeSpan" />
+        <Parameter Name="action" Type="System.Action" />
+      </Parameters>
+      <Docs>
+        <param name="delay">The delay taken into account before <paramref name="action" /> is dispatched.</param>
+        <param name="action">The <see cref="T:System.Action" /> to be scheduled for processing on the UI thread.</param>
+        <summary>
+            Schedules the provided action on the UI thread from a worker thread, taking into account the provided delay.
+            </summary>
+        <returns>
+          <see langword="true" /> when the action has been dispatched successfully, otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDispatchRequired">
+      <MemberSignature Language="C#" Value="public bool IsDispatchRequired { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDispatchRequired" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Dispatching.IDispatcher.IsDispatchRequired" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDispatchRequired As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDispatchRequired { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDispatchRequired : bool" Usage="Microsoft.Maui.Dispatching.IDispatcher.IsDispatchRequired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value that indicates whether dispatching is required for this action.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,396 @@
+<Type Name="Stepper" FullName="Microsoft.Maui.Controls.Stepper">
+  <TypeSignature Language="C#" Value="public class Stepper : Microsoft.Maui.Controls.View, Microsoft.Maui.Controls.IElementConfiguration&lt;Microsoft.Maui.Controls.Stepper&gt;, Microsoft.Maui.IStepper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Stepper extends Microsoft.Maui.Controls.View implements class Microsoft.Maui.Controls.IElementConfiguration`1&lt;class Microsoft.Maui.Controls.Stepper&gt;, class Microsoft.Maui.IElement, class Microsoft.Maui.IRange, class Microsoft.Maui.IStepper, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Stepper" />
+  <TypeSignature Language="VB.NET" Value="Public Class Stepper&#xA;Inherits View&#xA;Implements IElementConfiguration(Of Stepper), IStepper" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Stepper : Microsoft::Maui::Controls::View, Microsoft::Maui::Controls::IElementConfiguration&lt;Microsoft::Maui::Controls::Stepper ^&gt;, Microsoft::Maui::IStepper" />
+  <TypeSignature Language="F#" Value="type Stepper = class&#xA;    inherit View&#xA;    interface IStepper&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IRange&#xA;    interface IElementConfiguration&lt;Stepper&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Maui.Controls.View</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.Controls.IElementConfiguration&lt;Microsoft.Maui.Controls.Stepper&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IElement</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IRange</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IStepper</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.ITransform</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IView</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>A <see cref="T:Microsoft.Maui.Controls.View" /> control that inputs a discrete value, constrained to a range.</summary>
+    <remarks>
+      <para>The following example shows a basic use.</para>
+      <example>
+        <code lang="csharp lang-csharp"><![CDATA[using System;
+            using System;
+            using Microsoft.Maui.Controls;
+    
+            namespace FormsGallery
+            {
+                class StepperDemoPage : ContentPage
+                {
+                    Label label;
+    
+                    public StepperDemoPage()
+                    {
+                        Label header = new Label
+                        {
+                            Text = "Stepper",
+                            FontSize = Device.GetNamedSize (NamedSize.Large, typeof(Label)),
+                            HorizontalOptions = LayoutOptions.Center
+                        };
+    
+                        Stepper stepper = new Stepper
+                        {
+                            Value = 5,
+                            Minimum = 0,
+                            Maximum = 10,
+                            Increment = 0.1,
+                            HorizontalOptions = LayoutOptions.Center,
+                            VerticalOptions = LayoutOptions.CenterAndExpand
+                        };
+                        stepper.ValueChanged += OnStepperValueChanged;
+    
+                        label = new Label
+                        {
+                            Text = String.Format("Stepper value is {0:F1}", stepper.Value),
+                            FontSize = Device.GetNamedSize (NamedSize.Large, typeof(Label)),
+                            HorizontalOptions = LayoutOptions.Center,
+                            VerticalOptions = LayoutOptions.CenterAndExpand
+                        };
+    
+                        // Accomodate iPhone status bar.
+                        this.Padding = new Thickness(10, Device.OnPlatform(20, 0, 0), 10, 5);
+    
+                        // Build the page.
+                        this.Content = new StackLayout
+                        {
+                            Children =
+                            {
+                                header,
+                                stepper,
+                                label
+                            }
+                            };
+                    }
+    
+                    void OnStepperValueChanged(object sender, ValueChangedEventArgs e)
+                    {
+                        label.Text = String.Format("Stepper value is {0:F1}", e.NewValue);
+                    }
+                }
+            }]]></code>
+      </example>
+      <para>
+        <img href="~/xml/Microsoft.Maui.Controls/_images/Stepper.TripleScreenShot.png" />
+      </para>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Stepper ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Stepper.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Stepper();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the Stepper class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Stepper (double min, double max, double val, double increment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 min, float64 max, float64 val, float64 increment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Stepper.#ctor(System.Double,System.Double,System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (min As Double, max As Double, val As Double, increment As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Stepper(double min, double max, double val, double increment);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.Controls.Stepper : double * double * double * double -&gt; Microsoft.Maui.Controls.Stepper" Usage="new Microsoft.Maui.Controls.Stepper (min, max, val, increment)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="min" Type="System.Double" />
+        <Parameter Name="max" Type="System.Double" />
+        <Parameter Name="val" Type="System.Double" />
+        <Parameter Name="increment" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="min">The minimum selectable value.</param>
+        <param name="max">The maximum selectable value.</param>
+        <param name="val">The current selected value.</param>
+        <param name="increment">The increment by which Value is increased or decreased.</param>
+        <summary>Initializes a new instance of the Stepper class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Increment">
+      <MemberSignature Language="C#" Value="public double Increment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Increment" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Stepper.Increment" />
+      <MemberSignature Language="VB.NET" Value="Public Property Increment As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Increment { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Increment : double with get, set" Usage="Microsoft.Maui.Controls.Stepper.Increment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the increment by which Value is increased or decreased. This is a bindable property.</summary>
+        <value>A double.</value>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="IncrementProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty IncrementProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty IncrementProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Stepper.IncrementProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IncrementProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ IncrementProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IncrementProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Stepper.IncrementProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the Increment bindable property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Maximum">
+      <MemberSignature Language="C#" Value="public double Maximum { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Maximum" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Stepper.Maximum" />
+      <MemberSignature Language="VB.NET" Value="Public Property Maximum As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Maximum { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Maximum : double with get, set" Usage="Microsoft.Maui.Controls.Stepper.Maximum" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum selectable value. This is a bindable property.</summary>
+        <value>A double.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty MaximumProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty MaximumProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Stepper.MaximumProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaximumProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ MaximumProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MaximumProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Stepper.MaximumProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the Maximum bindable property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IStepper.Interval">
+      <MemberSignature Language="C#" Value="double Microsoft.Maui.IStepper.Interval { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Microsoft.Maui.IStepper.Interval" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Stepper.Microsoft#Maui#IStepper#Interval" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Interval As Double Implements IStepper.Interval" />
+      <MemberSignature Language="C++ CLI" Value="property double Microsoft::Maui::IStepper::Interval { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.IStepper.Interval : double" Usage="Microsoft.Maui.IStepper.Interval" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IStepper.Interval</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Minimum">
+      <MemberSignature Language="C#" Value="public double Minimum { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Minimum" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Stepper.Minimum" />
+      <MemberSignature Language="VB.NET" Value="Public Property Minimum As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Minimum { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Minimum : double with get, set" Usage="Microsoft.Maui.Controls.Stepper.Minimum" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the minimum selectabel value. This is a bindable property.</summary>
+        <value>A double.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinimumProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty MinimumProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty MinimumProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Stepper.MinimumProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinimumProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ MinimumProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MinimumProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Stepper.MinimumProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the Minimum bindable property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="On&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;T,Microsoft.Maui.Controls.Stepper&gt; On&lt;T&gt; () where T : Microsoft.Maui.Controls.IConfigPlatform;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Maui.Controls.IPlatformElementConfiguration`2&lt;!!T, class Microsoft.Maui.Controls.Stepper&gt; On&lt;(class Microsoft.Maui.Controls.IConfigPlatform) T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Stepper.On``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function On(Of T As IConfigPlatform) () As IPlatformElementConfiguration(Of T, Stepper)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : Microsoft::Maui::Controls::IConfigPlatform virtual Microsoft::Maui::Controls::IPlatformElementConfiguration&lt;T, Microsoft::Maui::Controls::Stepper ^&gt; ^ On();" />
+      <MemberSignature Language="F#" Value="abstract member On : unit -&gt; Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;'T, Microsoft.Maui.Controls.Stepper (requires 'T :&gt; Microsoft.Maui.Controls.IConfigPlatform)&gt; (requires 'T :&gt; Microsoft.Maui.Controls.IConfigPlatform)&#xA;override this.On : unit -&gt; Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;'T, Microsoft.Maui.Controls.Stepper (requires 'T :&gt; Microsoft.Maui.Controls.IConfigPlatform)&gt; (requires 'T :&gt; Microsoft.Maui.Controls.IConfigPlatform)" Usage="stepper.On " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.IElementConfiguration`1.On``1</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;T,Microsoft.Maui.Controls.Stepper&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>Microsoft.Maui.Controls.IConfigPlatform</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public double Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Stepper.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Value { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : double with get, set" Usage="Microsoft.Maui.Controls.Stepper.Value" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IRange.Value</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the current value. This is a bindable property.</summary>
+        <value>A double.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Controls.ValueChangedEventArgs&gt; ValueChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.ValueChangedEventArgs&gt; ValueChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.Stepper.ValueChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ValueChanged As EventHandler(Of ValueChangedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Controls::ValueChangedEventArgs ^&gt; ^ ValueChanged;" />
+      <MemberSignature Language="F#" Value="member this.ValueChanged : EventHandler&lt;Microsoft.Maui.Controls.ValueChangedEventArgs&gt; " Usage="member this.ValueChanged : System.EventHandler&lt;Microsoft.Maui.Controls.ValueChangedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.ValueChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty ValueProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty ValueProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Stepper.ValueProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ValueProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ ValueProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ValueProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Stepper.ValueProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the Value bindable property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

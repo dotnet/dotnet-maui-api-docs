@@ -1,0 +1,201 @@
+<Type Name="Browser" FullName="Microsoft.Maui.ApplicationModel.Browser">
+  <TypeSignature Language="C#" Value="public static class Browser" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Browser extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.ApplicationModel.Browser" />
+  <TypeSignature Language="VB.NET" Value="Public Class Browser" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Browser abstract sealed" />
+  <TypeSignature Language="F#" Value="type Browser = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a way to display a web page inside an app.</summary>
+    <remarks />
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.ApplicationModel.IBrowser Default { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Maui.ApplicationModel.IBrowser Default" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.ApplicationModel.Browser.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As IBrowser" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::Maui::ApplicationModel::IBrowser ^ Default { Microsoft::Maui::ApplicationModel::IBrowser ^ get(); };" />
+      <MemberSignature Language="F#" Value="static member Default : Microsoft.Maui.ApplicationModel.IBrowser" Usage="Microsoft.Maui.ApplicationModel.Browser.Default" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.ApplicationModel.IBrowser</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; OpenAsync (string uri);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; OpenAsync(string uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ApplicationModel.Browser.OpenAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenAsync (uri As String) As Task(Of Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;bool&gt; ^ OpenAsync(System::String ^ uri);" />
+      <MemberSignature Language="F#" Value="static member OpenAsync : string -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="Microsoft.Maui.ApplicationModel.Browser.OpenAsync uri" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="uri">Uri to launch.</param>
+        <summary>Open the browser to specified uri.</summary>
+        <returns>Completed task when browser is launched, but not necessarily closed.  Result indicates if launching was successful or not.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="OpenAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; OpenAsync (Uri uri);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; OpenAsync(class System.Uri uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ApplicationModel.Browser.OpenAsync(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenAsync (uri As Uri) As Task(Of Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;bool&gt; ^ OpenAsync(Uri ^ uri);" />
+      <MemberSignature Language="F#" Value="static member OpenAsync : Uri -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="Microsoft.Maui.ApplicationModel.Browser.OpenAsync uri" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="uri">Uri to launch.</param>
+        <summary>Open the browser to specified uri.</summary>
+        <returns>Completed task when browser is launched, but not necessarily closed.  Result indicates if launching was successful or not.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="OpenAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; OpenAsync (string uri, Microsoft.Maui.ApplicationModel.BrowserLaunchMode launchMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; OpenAsync(string uri, valuetype Microsoft.Maui.ApplicationModel.BrowserLaunchMode launchMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ApplicationModel.Browser.OpenAsync(System.String,Microsoft.Maui.ApplicationModel.BrowserLaunchMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenAsync (uri As String, launchMode As BrowserLaunchMode) As Task(Of Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;bool&gt; ^ OpenAsync(System::String ^ uri, Microsoft::Maui::ApplicationModel::BrowserLaunchMode launchMode);" />
+      <MemberSignature Language="F#" Value="static member OpenAsync : string * Microsoft.Maui.ApplicationModel.BrowserLaunchMode -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="Microsoft.Maui.ApplicationModel.Browser.OpenAsync (uri, launchMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.String" />
+        <Parameter Name="launchMode" Type="Microsoft.Maui.ApplicationModel.BrowserLaunchMode" />
+      </Parameters>
+      <Docs>
+        <param name="uri">Uri to launch.</param>
+        <param name="launchMode">How to launch the browser.</param>
+        <summary>Open the browser to specified uri.</summary>
+        <returns>Completed task when browser is launched, but not necessarily closed.  Result indicates if launching was successful or not.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="OpenAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; OpenAsync (string uri, Microsoft.Maui.ApplicationModel.BrowserLaunchOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; OpenAsync(string uri, class Microsoft.Maui.ApplicationModel.BrowserLaunchOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ApplicationModel.Browser.OpenAsync(System.String,Microsoft.Maui.ApplicationModel.BrowserLaunchOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenAsync (uri As String, options As BrowserLaunchOptions) As Task(Of Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;bool&gt; ^ OpenAsync(System::String ^ uri, Microsoft::Maui::ApplicationModel::BrowserLaunchOptions ^ options);" />
+      <MemberSignature Language="F#" Value="static member OpenAsync : string * Microsoft.Maui.ApplicationModel.BrowserLaunchOptions -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="Microsoft.Maui.ApplicationModel.Browser.OpenAsync (uri, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.String" />
+        <Parameter Name="options" Type="Microsoft.Maui.ApplicationModel.BrowserLaunchOptions" />
+      </Parameters>
+      <Docs>
+        <param name="uri">Uri to launch.</param>
+        <param name="options">Launch options for the browser.</param>
+        <summary>Open the browser to specified uri.</summary>
+        <returns>Completed task when browser is launched, but not necessarily closed.  Result indicates if launching was successful or not.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="OpenAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; OpenAsync (Uri uri, Microsoft.Maui.ApplicationModel.BrowserLaunchMode launchMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; OpenAsync(class System.Uri uri, valuetype Microsoft.Maui.ApplicationModel.BrowserLaunchMode launchMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ApplicationModel.Browser.OpenAsync(System.Uri,Microsoft.Maui.ApplicationModel.BrowserLaunchMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenAsync (uri As Uri, launchMode As BrowserLaunchMode) As Task(Of Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;bool&gt; ^ OpenAsync(Uri ^ uri, Microsoft::Maui::ApplicationModel::BrowserLaunchMode launchMode);" />
+      <MemberSignature Language="F#" Value="static member OpenAsync : Uri * Microsoft.Maui.ApplicationModel.BrowserLaunchMode -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="Microsoft.Maui.ApplicationModel.Browser.OpenAsync (uri, launchMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+        <Parameter Name="launchMode" Type="Microsoft.Maui.ApplicationModel.BrowserLaunchMode" />
+      </Parameters>
+      <Docs>
+        <param name="uri">Uri to launch.</param>
+        <param name="launchMode">How to launch the browser.</param>
+        <summary>Open the browser to specified uri.</summary>
+        <returns>Completed task when browser is launched, but not necessarily closed.  Result indicates if launching was successful or not.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="OpenAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; OpenAsync (Uri uri, Microsoft.Maui.ApplicationModel.BrowserLaunchOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; OpenAsync(class System.Uri uri, class Microsoft.Maui.ApplicationModel.BrowserLaunchOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ApplicationModel.Browser.OpenAsync(System.Uri,Microsoft.Maui.ApplicationModel.BrowserLaunchOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenAsync (uri As Uri, options As BrowserLaunchOptions) As Task(Of Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;bool&gt; ^ OpenAsync(Uri ^ uri, Microsoft::Maui::ApplicationModel::BrowserLaunchOptions ^ options);" />
+      <MemberSignature Language="F#" Value="static member OpenAsync : Uri * Microsoft.Maui.ApplicationModel.BrowserLaunchOptions -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="Microsoft.Maui.ApplicationModel.Browser.OpenAsync (uri, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+        <Parameter Name="options" Type="Microsoft.Maui.ApplicationModel.BrowserLaunchOptions" />
+      </Parameters>
+      <Docs>
+        <param name="uri">Uri to launch.</param>
+        <param name="options">Launch options for the browser.</param>
+        <summary>Open the browser to specified uri.</summary>
+        <returns>Completed task when browser is launched, but not necessarily closed.  Result indicates if launching was successful or not.</returns>
+        <remarks />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

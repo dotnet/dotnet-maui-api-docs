@@ -1,0 +1,135 @@
+<Type Name="PickOptions" FullName="Microsoft.Maui.Storage.PickOptions">
+  <TypeSignature Language="C#" Value="public class PickOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PickOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Storage.PickOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class PickOptions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PickOptions" />
+  <TypeSignature Language="F#" Value="type PickOptions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>File picking options.</summary>
+    <remarks>This file picking options object can be passed to a call to PickAsync().</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PickOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.PickOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PickOptions();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Storage.PickOptions Default { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Maui.Storage.PickOptions Default" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Storage.PickOptions.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As PickOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::Maui::Storage::PickOptions ^ Default { Microsoft::Maui::Storage::PickOptions ^ get(); };" />
+      <MemberSignature Language="F#" Value="static member Default : Microsoft.Maui.Storage.PickOptions" Usage="Microsoft.Maui.Storage.PickOptions.Default" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Storage.PickOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Default file picking options</summary>
+        <value>A PickOptions object with default values.</value>
+        <remarks>This object can be used when no special pick options are necessary.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileTypes">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Storage.FilePickerFileType? FileTypes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Storage.FilePickerFileType FileTypes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Storage.PickOptions.FileTypes" />
+      <MemberSignature Language="VB.NET" Value="Public Property FileTypes As FilePickerFileType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Storage::FilePickerFileType ^ FileTypes { Microsoft::Maui::Storage::FilePickerFileType ^ get(); void set(Microsoft::Maui::Storage::FilePickerFileType ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FileTypes : Microsoft.Maui.Storage.FilePickerFileType with get, set" Usage="Microsoft.Maui.Storage.PickOptions.FileTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Storage.FilePickerFileType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>List of file types that file file picker should return.</summary>
+        <value />
+        <remarks>
+          On Android and iOS the files not matching this list is only displayed grayed out.
+          When the array is null or empty, all file types can be selected while picking.
+          The contents of this array is platform specific; every platform has its own way to
+          specify the file types.
+          On Android you can specify one or more MIME types, e.g.
+          "image/png"; also wild card characters can be used, e.g. "image/*".
+          On iOS you can specify UTType constants, e.g. UTType.Image.
+          On UWP, specify a list of extensions, like this: ".jpg", ".png".
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Images">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Storage.PickOptions Images { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Maui.Storage.PickOptions Images" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Storage.PickOptions.Images" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Images As PickOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::Maui::Storage::PickOptions ^ Images { Microsoft::Maui::Storage::PickOptions ^ get(); };" />
+      <MemberSignature Language="F#" Value="static member Images : Microsoft.Maui.Storage.PickOptions" Usage="Microsoft.Maui.Storage.PickOptions.Images" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Storage.PickOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Predefined PickOptions object for picking image files only.</summary>
+        <value />
+        <remarks>
+          Due to specifying the file types to pick being very platform specific, this predefined
+          PickOptions object can be used for picking images.
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PickerTitle">
+      <MemberSignature Language="C#" Value="public string? PickerTitle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PickerTitle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Storage.PickOptions.PickerTitle" />
+      <MemberSignature Language="VB.NET" Value="Public Property PickerTitle As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PickerTitle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PickerTitle : string with get, set" Usage="Microsoft.Maui.Storage.PickOptions.PickerTitle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Title for the file picker.</summary>
+        <value />
+        <remarks>Note that the file picker title is only used on the Android platform.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
