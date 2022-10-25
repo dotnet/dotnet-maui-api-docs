@@ -20,128 +20,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Functions that modify values non-linearly, generally used for animations.</summary>
+    <summary>
+            Functions that modify values non-linearly, generally used for animations.
+            </summary>
     <remarks>
-      <para>Easing functions are applied to input values in the range [0,1]. The cubic easing functions are often considered to look most natural.</para>
-      <para>If developers wish to use their own easing functions, they should return a value of 0 for an input of 0 and a value of 1 for an input of 1 or the animation will have a jump.</para>
-      <para>The predefined <see cref="T:Microsoft.Maui.Easing" /> functions have the following forms:</para>
-      <list type="table">
-        <listheader>
-          <term>Member</term>
-          <description>Graph</description>
-        </listheader>
-        <item>
-          <term>
-            <see cref="F:Microsoft.Maui.Easing.BounceIn" />
-          </term>
-          <description>
-            <para>
-              <img href="~/xml/Microsoft.Maui/_images/Easing.BounceIn.png" />
-            </para>
-          </description>
-        </item>
-        <item>
-          <term>
-            <see cref="F:Microsoft.Maui.Easing.BounceOut" />
-          </term>
-          <description>
-            <para>
-              <img href="~/xml/Microsoft.Maui/_images/Easing.BounceOut.png" />
-            </para>
-          </description>
-        </item>
-        <item>
-          <term>
-            <see cref="F:Microsoft.Maui.Easing.CubicIn" />
-          </term>
-          <description>
-            <para>
-              <img href="~/xml/Microsoft.Maui/_images/Easing.CubicIn.png" />
-            </para>
-          </description>
-        </item>
-        <item>
-          <term>
-            <see cref="F:Microsoft.Maui.Easing.CubicInOut" />
-          </term>
-          <description>
-            <para>
-              <img href="~/xml/Microsoft.Maui/_images/Easing.CubicInOut.png" />
-            </para>
-          </description>
-        </item>
-        <item>
-          <term>
-            <see cref="F:Microsoft.Maui.Easing.CubicOut" />
-          </term>
-          <description>
-            <para>
-              <img href="~/xml/Microsoft.Maui/_images/Easing.CubicOut.png" />
-            </para>
-          </description>
-        </item>
-        <item>
-          <term>
-            <see cref="F:Microsoft.Maui.Easing.Linear" />
-          </term>
-          <description>
-            <para>
-              <img href="~/xml/Microsoft.Maui/_images/Easing.Linear.png" />
-            </para>
-          </description>
-        </item>
-        <item>
-          <term>
-            <see cref="F:Microsoft.Maui.Easing.SinIn" />
-          </term>
-          <description>
-            <para>
-              <img href="~/xml/Microsoft.Maui/_images/Easing.SinIn.gif" />
-            </para>
-          </description>
-        </item>
-        <item>
-          <term>
-            <see cref="F:Microsoft.Maui.Easing.SinInOut" />
-          </term>
-          <description>
-            <para>
-              <img href="~/xml/Microsoft.Maui/_images/Easing.SinInOut.gif" />
-            </para>
-          </description>
-        </item>
-        <item>
-          <term>
-            <see cref="F:Microsoft.Maui.Easing.SinOut" />
-          </term>
-          <description>
-            <para>
-              <img href="~/xml/Microsoft.Maui/_images/Easing.SinOut.gif" />
-            </para>
-          </description>
-        </item>
-        <item>
-          <term>
-            <see cref="F:Microsoft.Maui.Easing.SpringIn" />
-          </term>
-          <description>
-            <para>
-              <img href="~/xml/Microsoft.Maui/_images/Easing.SpringIn.png" />
-            </para>
-          </description>
-        </item>
-        <item>
-          <term>
-            <see cref="F:Microsoft.Maui.Easing.SpringOut" />
-          </term>
-          <description>
-            <para>
-              <img href="~/xml/Microsoft.Maui/_images/Easing.SpringOut.png" />
-            </para>
-          </description>
-        </item>
-      </list>
-    </remarks>
+            Easing functions are applied to input values in the range [0,1]. The cubic easing functions are often considered to look most natural.
+            If developers wish to use their own easing functions, they should return a value of 0 for an input of 0 and a value of 1 for an input of 1 or the animation will have a jump.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -161,8 +46,11 @@
       </Parameters>
       <Docs>
         <param name="easingFunc">A function that maps animation times.</param>
-        <summary>Creates a new <see cref="T:Microsoft.Maui.Easing" /> object with the <paramref name="easingFunc" /> function.</summary>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Maui.Easing" /> object with the <paramref name="easingFunc" /> function.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="easingFunc" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="BounceIn">
@@ -182,8 +70,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <para>Jumps towards, and then bounces as it settles at the final value.</para>
-        </summary>
+            Jumps towards, and then bounces as it settles at the final value.
+            </summary>
         <remarks>
           <img href="~/xml/Microsoft.Maui/_images/Easing.BounceIn.png" />
         </remarks>
@@ -205,7 +93,9 @@
         <ReturnType>Microsoft.Maui.Easing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Leaps to final values, bounces 3 times, and settles.</summary>
+        <summary>
+            Leaps to final values, bounces 3 times, and settles.
+            </summary>
         <remarks>
           <para>
             <img href="~/xml/Microsoft.Maui/_images/Easing.BounceOut.png" />
@@ -229,7 +119,9 @@
         <ReturnType>Microsoft.Maui.Easing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Starts slowly and accelerates.</summary>
+        <summary>
+            Starts slowly and accelerates.
+            </summary>
         <remarks>
           <para>
             <img href="~/xml/Microsoft.Maui/_images/Easing.CubicIn.png" />
@@ -253,7 +145,9 @@
         <ReturnType>Microsoft.Maui.Easing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Accelerates and decelerates. Often a natural-looking choice.</summary>
+        <summary>
+            Accelerates and decelerates. Often a natural-looking choice.
+            </summary>
         <remarks>
           <para>
             <img href="~/xml/Microsoft.Maui/_images/Easing.CubicInOut.png" />
@@ -277,7 +171,9 @@
         <ReturnType>Microsoft.Maui.Easing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Starts quickly and the decelerates.</summary>
+        <summary>
+            Starts quickly and the decelerates.
+            </summary>
         <remarks>
           <para>
             <img href="~/xml/Microsoft.Maui/_images/Easing.CubicOut.png" />
@@ -301,7 +197,10 @@
         <ReturnType>Microsoft.Maui.Easing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The default easing function that is used.
+            Defaults to <see cref="F:Microsoft.Maui.Easing.CubicInOut" />.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -326,7 +225,9 @@
       </Parameters>
       <Docs>
         <param name="v">A value in the range [0,1] to which the easing function should be applied.</param>
-        <summary>Applies the easing function to the specified value <paramref name="v" />.</summary>
+        <summary>
+            Applies the easing function to the specified value <paramref name="v" />.
+            </summary>
         <returns>The value of the easing function when applied to the value <paramref name="v" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -347,7 +248,9 @@
         <ReturnType>Microsoft.Maui.Easing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Linear transformation.</summary>
+        <summary>
+            Linear transformation.
+            </summary>
         <remarks>
           <para>
             <img href="~/xml/Microsoft.Maui/_images/Easing.Linear.png" />
@@ -374,10 +277,12 @@
         <Parameter Name="func" Type="System.Func&lt;System.Double,System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="func">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="func">An easing function.</param>
+        <summary>
+            Converts a function into an <see cref="T:Microsoft.Maui.Easing" />.
+            </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>An easing function should return a value of (or near) 0 at 0 and 1 (or near) for 1.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SinIn">
@@ -396,7 +301,9 @@
         <ReturnType>Microsoft.Maui.Easing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Smoothly accelerates.</summary>
+        <summary>
+            Smoothly accelerates.
+            </summary>
         <remarks>
           <para>
             <img href="~/xml/Microsoft.Maui/_images/Easing.SinIn.gif" />
@@ -420,7 +327,9 @@
         <ReturnType>Microsoft.Maui.Easing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Accelerates in and decelerates out.</summary>
+        <summary>
+            Accelerates in and decelerates out.
+            </summary>
         <remarks>
           <para>
             <img href="~/xml/Microsoft.Maui/_images/Easing.SinInOut.gif" />
@@ -443,7 +352,9 @@
         <ReturnType>Microsoft.Maui.Easing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Smoothly decelerates.</summary>
+        <summary>
+            Smoothly decelerates.
+            </summary>
         <remarks>
           <para>
             <img href="~/xml/Microsoft.Maui/_images/Easing.SinOut.gif" />
@@ -467,7 +378,9 @@
         <ReturnType>Microsoft.Maui.Easing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Moves away and then leaps toward the final value.</summary>
+        <summary>
+            Moves away and then leaps toward the final value.
+            </summary>
         <remarks>
           <para>
             <img href="~/xml/Microsoft.Maui/_images/Easing.SpringIn.png" />
@@ -491,7 +404,9 @@
         <ReturnType>Microsoft.Maui.Easing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Overshoots and then returns.</summary>
+        <summary>
+            Overshoots and then returns.
+            </summary>
         <remarks>
           <para>
             <img href="~/xml/Microsoft.Maui/_images/Easing.SpringOut.png" />

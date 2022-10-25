@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents a linear interpolation animation.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +33,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Instantiate a new <see cref="T:Microsoft.Maui.Animations.LerpingAnimation" /> object.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +55,10 @@
         <Parameter Name="animations" Type="System.Collections.Generic.List&lt;Microsoft.Maui.Animations.Animation&gt;" />
       </Parameters>
       <Docs>
-        <param name="animations">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="animations">A <see cref="T:System.Collections.Generic.List`1" /> that contains <see cref="T:Microsoft.Maui.Animations.Animation" /> objects that will be children of the newly instantiated animation.</param>
+        <summary>
+            Instantiate a new <see cref="T:Microsoft.Maui.Animations.LerpingAnimation" /> that consists of the given list of child animations.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,12 +81,14 @@
         <Parameter Name="finished" Type="System.Action" />
       </Parameters>
       <Docs>
-        <param name="callback">To be added.</param>
-        <param name="start">To be added.</param>
-        <param name="end">To be added.</param>
-        <param name="easing">To be added.</param>
-        <param name="finished">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="callback">The <see cref="T:System.Action`1" /> that is invoked after each tick of this animation.</param>
+        <param name="start">Specifies a delay (in seconds) taken into account before the animation starts.</param>
+        <param name="end">Specifies the duration that this animation should take in seconds.</param>
+        <param name="easing">The easing function to apply to this animation.</param>
+        <param name="finished">A callback <see cref="T:System.Action`1" /> that is invoked after the animation has finished.</param>
+        <summary>
+            Instantiate a new <see cref="T:Microsoft.Maui.Animations.LerpingAnimation" /> object with the given parameters.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,7 +108,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the current value for this animation.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,7 +131,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the end value of this animation.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -142,7 +154,9 @@
         <ReturnType>Microsoft.Maui.Animations.Lerp</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the linear interpolation for this animation.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -163,7 +177,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the start value of this animation.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -190,6 +206,7 @@
         <param name="percent">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="ValueChanged">
@@ -208,7 +225,9 @@
         <ReturnType>System.Action</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets a callback that is invoked when <see cref="P:Microsoft.Maui.Animations.LerpingAnimation.CurrentValue" /> is changed.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

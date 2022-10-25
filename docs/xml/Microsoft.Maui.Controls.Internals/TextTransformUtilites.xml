@@ -20,8 +20,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+            A utilities class for text transformations.
+            </summary>
+    <remarks>For internal use by the .NET MAUI platform.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetTransformedText">
@@ -50,11 +52,13 @@
         <Parameter Name="textTransform" Type="Microsoft.Maui.TextTransform" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="textTransform">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="source">The text to transform.</param>
+        <param name="textTransform">The transform to apply to <paramref name="source" />.</param>
+        <summary>
+            Applies the <paramref name="textTransform" /> to <paramref name="source" />.
+            </summary>
+        <returns>The transformed text.</returns>
+        <remarks>For internal use by the .NET MAUI platform mostly.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetPlainText">
@@ -83,10 +87,12 @@
         <Parameter Name="platformText" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="inputView">To be added.</param>
-        <param name="platformText">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="inputView">The view that will receive the text value.</param>
+        <param name="platformText">The text that will be applied to the view.</param>
+        <summary>
+            Sets the plain text value to the specified input view.
+            </summary>
+        <remarks>For internal use by the .NET MAUI platform.</remarks>
       </Docs>
     </Member>
   </Members>
