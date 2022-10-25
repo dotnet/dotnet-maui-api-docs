@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Encapsulates an animation, a collection of functions that modify properties over a user-perceptible time period.</summary>
+    <summary>
+            Encapsulates an animation, a collection of functions that modify properties over a user-perceptible time period.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +33,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new <see cref="T:Microsoft.Maui.Controls.Animation" /> object with default values.</summary>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Maui.Controls.Animation" /> object with default values.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,11 +59,13 @@
       </Parameters>
       <Docs>
         <param name="callback">An action that is called with successive animation values.</param>
-        <param name="start">The fraction into the current animation at which to start the animation.</param>
-        <param name="end">The fraction into the current animation at which to end the animation.</param>
-        <param name="easing">The easing function to use to transision in, out, or in and out of the animation.</param>
-        <param name="finished">An action to call when the animation is finished.</param>
-        <summary>Creates a new <see cref="T:Microsoft.Maui.Controls.Animation" /> object with default values.</summary>
+        <param name="start"> The fraction into the current animation at which to start the animation.</param>
+        <param name="end"> The fraction into the current animation at which to end the animation.</param>
+        <param name="easing"> The easing function to use to transition in, out, or in and out of the animation.</param>
+        <param name="finished"> An action to call when the animation is finished.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Maui.Controls.Animation" /> object with the specified parameters.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,7 +93,9 @@
         <param name="beginAt">The fraction into this animation at which the added child animation will begin animating.</param>
         <param name="finishAt">The fraction into this animation at which the added child animation will stop animating.</param>
         <param name="animation">The animation to add.</param>
-        <summary>Adds an <see cref="T:Microsoft.Maui.Controls.Animation" /> object to this <see cref="T:Microsoft.Maui.Controls.Animation" /> that begins at <paramref name="beginAt" /> and finishes at <paramref name="finishAt" />.</summary>
+        <summary>
+            Adds an <see cref="T:Microsoft.Maui.Controls.Animation" /> object to this <see cref="T:Microsoft.Maui.Controls.Animation" /> that begins at <paramref name="beginAt" /> and finishes at <paramref name="finishAt" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,10 +127,12 @@
         <param name="name">The name, or handle, that is used to access and track the animation and its state.</param>
         <param name="rate">The time, in milliseconds, between frames.</param>
         <param name="length">The number of milliseconds over which to interpolate the animation.</param>
-        <param name="easing">The easing function to use to transision in, out, or in and out of the animation.</param>
+        <param name="easing">The easing function to use to transition in, out, or in and out of the animation.</param>
         <param name="finished">An action to call when the animation is finished.</param>
-        <param name="repeat">A function that returns true if the animation should continue.</param>
-        <summary>Runs the <paramref name="owner" /> animation with the supplied parameters.</summary>
+        <param name="repeat">A function that should return true if the animation should continue.</param>
+        <summary>
+            Runs the <paramref name="owner" /> animation with the supplied parameters.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,7 +153,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a callback that recursively runs the eased animation step on this <see cref="T:Microsoft.Maui.Controls.Animation" /> object and those of its children that have begun and not finished.</summary>
+        <summary>
+            Returns a callback that recursively runs the eased animation step on this <see cref="T:Microsoft.Maui.Controls.Animation" /> object and those of its children that have begun and not finished.
+            </summary>
         <returns>A callback that recursively runs the eased animation step on this <see cref="T:Microsoft.Maui.Controls.Animation" /> object and those of its children that have begun and not finished.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -172,7 +184,9 @@
         <param name="beginAt">The fraction into this animation at which the added child animation will begin animating.</param>
         <param name="finishAt">The fraction into this animation at which the added child animation will stop animating.</param>
         <param name="animation">The animation to add.</param>
-        <summary>Adds an <see cref="T:Microsoft.Maui.Controls.Animation" /> object to this <see cref="T:Microsoft.Maui.Controls.Animation" /> that begins at <paramref name="beginAt" /> and finishes at <paramref name="finishAt" />.</summary>
+        <summary>
+            Adds an <see cref="T:Microsoft.Maui.Controls.Animation" /> object to this <see cref="T:Microsoft.Maui.Controls.Animation" /> that begins at <paramref name="beginAt" /> and finishes at <paramref name="finishAt" />.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -193,7 +207,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Specifies if this animation is currently enabled.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -217,8 +233,6 @@
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/Animation.xml" path="//Member[@MemberName='Reset']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="WithConcurrent">
@@ -244,7 +258,9 @@
         <param name="animation">The animation to add.</param>
         <param name="beginAt">The fraction into this animation at which the added child animation will begin animating.</param>
         <param name="finishAt">The fraction into this animation at which the added child animation will stop animating.</param>
-        <summary>Adds <paramref name="animation" /> to the children of this <see cref="T:Microsoft.Maui.Controls.Animation" /> object and sets the start and end times of <paramref name="animation" /> to <paramref name="beginAt" /> and <paramref name="finishAt" />, respectively.</summary>
+        <summary>
+            Adds <paramref name="animation" /> to the children of this <see cref="T:Microsoft.Maui.Controls.Animation" /> object and sets the start and end times of <paramref name="animation" /> to <paramref name="beginAt" /> and <paramref name="finishAt" />, respectively.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -275,10 +291,12 @@
         <param name="callback">An action that is called with successive animation values.</param>
         <param name="start">The fraction into the current animation at which to start the animation.</param>
         <param name="end">The fraction into the current animation at which to end the animation.</param>
-        <param name="easing">The easing function to use to transision in, out, or in and out of the animation.</param>
+        <param name="easing">The easing function to use to transition in, out, or in and out of the animation.</param>
         <param name="beginAt">The fraction into this animation at which the added child animation will begin animating.</param>
         <param name="finishAt">The fraction into this animation at which the added child animation will stop animating.</param>
-        <summary>Creates a new <see cref="T:Microsoft.Maui.Controls.Animation" /> object with the specified <paramref name="callback" />, and adds it to the children of this <see cref="T:Microsoft.Maui.Controls.Animation" /> object.</summary>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Maui.Controls.Animation" /> object with the specified <paramref name="callback" />, and adds it to the children of this <see cref="T:Microsoft.Maui.Controls.Animation" /> object.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

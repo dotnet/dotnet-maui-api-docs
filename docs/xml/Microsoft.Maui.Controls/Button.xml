@@ -81,7 +81,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>A button <see cref="T:Microsoft.Maui.Controls.View" /> that reacts to touch events.</summary>
+    <summary>
+            A button <see cref="T:Microsoft.Maui.Controls.View" /> that reacts to touch events.
+            </summary>
     <remarks>
       <format type="text/html">
         <h1>Button Appearance</h1>
@@ -169,7 +171,9 @@ void IncrementLabel()
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the Button class.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.Button" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -189,9 +193,11 @@ void IncrementLabel()
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a color that describes the border stroke color of the button. This is a bindable property.</summary>
+        <summary>
+            Gets or sets a color that describes the border stroke color of the button. This is a bindable property.
+            </summary>
         <value>The color that is used as the border stroke color.</value>
-        <remarks>This property has no effect if <see cref="P:Microsoft.Maui.Controls.Button.BorderWidth" /> is set to 0. On Android this property will not have an effect unless <see cref="P:Microsoft.Maui.Controls.VisualElement.BackgroundColor" /> is set to a non-default color.</remarks>
+        <remarks>This property has no effect if <see cref="P:Microsoft.Maui.Controls.IBorderElement.BorderWidth" /> is set to 0. On Android this property will not have an effect unless <see cref="P:Microsoft.Maui.Controls.VisualElement.BackgroundColor" /> is set to a non-default color.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderColorProperty">
@@ -210,7 +216,9 @@ void IncrementLabel()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.BorderColor" /> bindable property.</summary>
+        <summary>
+            The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.BorderColor" /> bindable property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,7 +238,9 @@ void IncrementLabel()
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the width of the border. This is a bindable property.</summary>
+        <summary>
+            Gets or sets the width of the border, in device-independent units. This is a bindable property.
+            </summary>
         <value>The width of the button border; the default is 0.</value>
         <remarks>Set this value to a non-zero value in order to have a visible border.</remarks>
       </Docs>
@@ -251,7 +261,9 @@ void IncrementLabel()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.BorderWidth" /> bindable property.</summary>
+        <summary>
+            The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.BorderWidth" /> bindable property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,7 +304,10 @@ void IncrementLabel()
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the spacing between each of the characters of <see cref="P:Microsoft.Maui.Controls.Button.Text" /> when displayed on the button.
+            This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -313,7 +328,9 @@ void IncrementLabel()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.CharacterSpacing" /> bindable property.</summary>
+        <summary>
+            The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.CharacterSpacing" /> bindable property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -333,7 +350,9 @@ void IncrementLabel()
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when the button is clicked/tapped.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -353,9 +372,11 @@ void IncrementLabel()
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the command to invoke when the button is activated. This is a bindable property.</summary>
+        <summary>
+            Gets or sets the command to invoke when the button is activated. This is a bindable property.
+            </summary>
         <value>A command to invoke when the button is activated. The default value is <see langword="null" />.</value>
-        <remarks>This property is used to associate a command with an instance of a button. This property is most often set in the MVVM pattern to bind callbacks back into the ViewModel. <see cref="P:Microsoft.Maui.Controls.VisualElement.IsEnabled" /> is controlled by the Command if set.</remarks>
+        <remarks>This property is used to associate a command with an instance of a button. This property is most often set in the MVVM pattern to bind callbacks back into the ViewModel. <see cref="P:Microsoft.Maui.Controls.VisualElement.IsEnabled" /> is controlled by the <see cref="M:Microsoft.Maui.Controls.Command.CanExecute(System.Object)" /> if set.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandParameter">
@@ -374,7 +395,10 @@ void IncrementLabel()
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the parameter to pass to the Command property. This is a bindable property.</summary>
+        <summary>
+            Gets or sets the parameter to pass to the <see cref="P:Microsoft.Maui.Controls.Button.Command" /> property.
+            The default value is <see langword="null" />. This is a bindable property.
+            </summary>
         <value>A object to pass to the command property. The default value is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -395,7 +419,9 @@ void IncrementLabel()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.CommandParameter" /> bindable property.</summary>
+        <summary>
+            The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.CommandParameter" /> bindable property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -415,7 +441,9 @@ void IncrementLabel()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.Command" /> bindable property.</summary>
+        <summary>
+            The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.Command" /> bindable property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -435,7 +463,10 @@ void IncrementLabel()
         <ReturnType>Microsoft.Maui.Controls.Button+ButtonContentLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an object that controls the position of the button image and the spacing between the button's image and the button's text.</summary>
+        <summary>
+            Gets or sets an object that controls the position of the button image and the spacing between the button's image and the button's text.
+            This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -456,7 +487,9 @@ void IncrementLabel()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.ContentLayout" /> bindable property.</summary>
+        <summary>
+            The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.ContentLayout" /> bindable property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -476,10 +509,10 @@ void IncrementLabel()
         <ReturnType>Microsoft.Maui.IPropertyMapper&lt;Microsoft.Maui.IButton,Microsoft.Maui.Handlers.ButtonHandler&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The property mapper that maps the abstract properties to the platform-specific methods for further processing.
+            </summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../../docs/Microsoft.Maui.Controls/Button.xml" path="//Member[@MemberName='ControlsButtonMapper']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="CornerRadius">
@@ -498,7 +531,9 @@ void IncrementLabel()
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the corner radius for the button, in device-independent units.</summary>
+        <summary>
+            Gets or sets the corner radius for the button, in device-independent units. This is a bindable property.
+            </summary>
         <value>The corner radius for the button, in device-independent units.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -519,7 +554,9 @@ void IncrementLabel()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.CornerRadius" /> bindable property.</summary>
+        <summary>
+            The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.CornerRadius" /> bindable property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -539,7 +576,10 @@ void IncrementLabel()
         <ReturnType>Microsoft.Maui.Controls.FontAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the font for the button text is bold, italic, or neither.</summary>
+        <summary>
+            Gets or sets a value that indicates whether the font for the text of this button is bold, italic, or neither.
+            This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -560,7 +600,9 @@ void IncrementLabel()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.FontAttributes" /> bindable property.</summary>
+        <summary>
+            The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.FontAttributes" /> bindable property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -580,11 +622,12 @@ void IncrementLabel()
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Determines whether or not the font of this entry should scale automatically according to the operating system settings. Default value is <see langword="true" />.
+            This is a bindable property.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/Button.xml" path="//Member[@MemberName='FontAutoScalingEnabled']/Docs/*" />
+        <remarks>Typically this should always be enabled for accessibility reasons.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FontAutoScalingEnabledProperty">
@@ -603,10 +646,10 @@ void IncrementLabel()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.FontAutoScalingEnabled" /> bindable property.
+            </summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/Button.xml" path="//Member[@MemberName='FontAutoScalingEnabledProperty']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="FontFamily">
@@ -625,7 +668,9 @@ void IncrementLabel()
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the font family to which the font for the button text belongs.</summary>
+        <summary>
+            Gets or sets the font family for the text of this entry. This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -646,7 +691,9 @@ void IncrementLabel()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.FontFamily" /> bindable property.</summary>
+        <summary>
+            The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.FontFamily" /> bindable property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -672,7 +719,9 @@ void IncrementLabel()
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the size of the font of the button text.</summary>
+        <summary>
+            Gets or sets the size of the font for the text of this entry. This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -693,7 +742,9 @@ void IncrementLabel()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.FontSize" /> bindable property.</summary>
+        <summary>
+            The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.FontSize" /> bindable property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -713,9 +764,11 @@ void IncrementLabel()
         <ReturnType>Microsoft.Maui.Controls.ImageSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Allows you to display a bitmap image on the Button.</summary>
+        <summary>
+            Allows you to display a bitmap image on the Button. This is a bindable property.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>For more options have a look at <see cref="T:Microsoft.Maui.Controls.ImageButton" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ImageSourceProperty">
@@ -734,7 +787,9 @@ void IncrementLabel()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.ImageSource" /> bindable property.</summary>
+        <summary>
+            The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.ImageSource" /> bindable property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -754,7 +809,9 @@ void IncrementLabel()
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>
+            Gets whether or not the button is currently pressed.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -775,7 +832,9 @@ void IncrementLabel()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.IsPressed" /> bindable property.</summary>
+        <summary>
+            The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.IsPressed" /> bindable property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -795,11 +854,12 @@ void IncrementLabel()
         <ReturnType>Microsoft.Maui.LineBreakMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Determines how <see cref="P:Microsoft.Maui.Controls.Button.Text" /> is shown when the length is overflowing the size of this button.
+            This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/Button.xml" path="//Member[@MemberName='LineBreakMode']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="LineBreakModeProperty">
@@ -818,10 +878,10 @@ void IncrementLabel()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.LineBreakMode" /> bindable property.
+            </summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/Button.xml" path="//Member[@MemberName='LineBreakModeProperty']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="MapContentLayout">
@@ -844,12 +904,12 @@ void IncrementLabel()
         <Parameter Name="button" Type="Microsoft.Maui.Controls.Button" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="button">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The handler associated to this control.</param>
+        <param name="button">The abstract control that is being mapped.</param>
+        <summary>
+            Maps the abstract <see cref="P:Microsoft.Maui.Controls.Button.ContentLayout" /> property to the platform implementation.
+            </summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../../docs/Microsoft.Maui.Controls/Button.xml" path="//Member[@MemberName='MapContentLayout']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="MapLineBreakMode">
@@ -872,9 +932,11 @@ void IncrementLabel()
         <Parameter Name="button" Type="Microsoft.Maui.Controls.Button" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="button">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The handler associated to this control.</param>
+        <param name="button">The abstract control that is being mapped.</param>
+        <summary>
+            Maps the abstract <see cref="P:Microsoft.Maui.Controls.Button.LineBreakMode" /> property to the platform implementation.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -898,12 +960,12 @@ void IncrementLabel()
         <Parameter Name="button" Type="Microsoft.Maui.Controls.Button" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="button">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The handler associated to this control.</param>
+        <param name="button">The abstract control that is being mapped.</param>
+        <summary>
+            Maps the abstract <see cref="P:Microsoft.Maui.Controls.Button.Text" /> property to the platform implementation.
+            </summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../../docs/Microsoft.Maui.Controls/Button.xml" path="//Member[@MemberName='MapText']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.Controls.IBorderElement.BorderColorDefaultValue">
@@ -1944,7 +2006,9 @@ void IncrementLabel()
         <ReturnType>Microsoft.Maui.Thickness</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the padding for the button.</summary>
+        <summary>
+            Gets or sets the padding for the button. This is a bindable property.
+            </summary>
         <value>The padding for the button.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1965,7 +2029,9 @@ void IncrementLabel()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.Padding" /> bindable property.</summary>
+        <summary>
+            The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.Padding" /> bindable property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1985,7 +2051,9 @@ void IncrementLabel()
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when the button is pressed.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2005,7 +2073,9 @@ void IncrementLabel()
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when the button is released.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2035,7 +2105,10 @@ void IncrementLabel()
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>
+            Internal method to trigger the <see cref="E:Microsoft.Maui.Controls.Button.Clicked" /> event.
+            Should not be called manually outside of .NET MAUI.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2065,7 +2138,10 @@ void IncrementLabel()
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>
+            Internal method to trigger the <see cref="E:Microsoft.Maui.Controls.Button.Pressed" /> event.
+            Should not be called manually outside of .NET MAUI.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2095,7 +2171,10 @@ void IncrementLabel()
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>
+            Internal method to trigger the <see cref="E:Microsoft.Maui.Controls.Button.Released" /> event.
+            Should not be called manually outside of .NET MAUI.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2115,9 +2194,12 @@ void IncrementLabel()
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the Text displayed as the content of the button. This is a bindable property.</summary>
+        <summary>
+            Gets or sets the text displayed as the content of the button.
+            The default value is <see langword="null" />. This is a bindable property.
+            </summary>
         <value>The text displayed in the button. The default value is <see langword="null" />.</value>
-        <remarks>Changing the Text of a button will trigger a layout cycle.</remarks>
+        <remarks>Changing the text of a button will trigger a layout cycle.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextColor">
@@ -2136,7 +2218,9 @@ void IncrementLabel()
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:Microsoft.Maui.Graphics.Color" /> for the text of the button. This is a bindable property.</summary>
+        <summary>
+            Gets or sets the <see cref="T:Microsoft.Maui.Graphics.Color" /> for the text of the button. This is a bindable property.
+            </summary>
         <value>The <see cref="T:Microsoft.Maui.Graphics.Color" /> value.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2157,7 +2241,9 @@ void IncrementLabel()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.TextColor" /> bindable property.</summary>
+        <summary>
+            The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.TextColor" /> bindable property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2177,7 +2263,9 @@ void IncrementLabel()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.Text" /> bindable property.</summary>
+        <summary>
+            The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.Text" /> bindable property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2197,7 +2285,10 @@ void IncrementLabel()
         <ReturnType>Microsoft.Maui.TextTransform</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Applies text transformation to the <see cref="P:Microsoft.Maui.Controls.Button.Text" /> displayed on this button.
+            This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2218,7 +2309,9 @@ void IncrementLabel()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.TextTransform" /> bindable property.</summary>
+        <summary>
+            The backing store for the <see cref="P:Microsoft.Maui.Controls.Button.TextTransform" /> bindable property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2242,11 +2335,13 @@ void IncrementLabel()
         <Parameter Name="textTransform" Type="Microsoft.Maui.TextTransform" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="textTransform">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="source">The text to transform.</param>
+        <param name="textTransform">The transform to apply to <paramref name="source" />.</param>
+        <summary>
+            Applies the <see cref="P:Microsoft.Maui.Controls.Button.TextTransform" /> to <see cref="P:Microsoft.Maui.Controls.Button.Text" />.
+            </summary>
+        <returns>The transformed text.</returns>
+        <remarks>For internal use by the .NET MAUI platform mostly.</remarks>
       </Docs>
     </Member>
   </Members>
