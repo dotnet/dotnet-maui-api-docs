@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents a font file.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -51,7 +53,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The filename extension for this font.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -72,7 +76,9 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Supported extensions for <see cref="T:Microsoft.Maui.FontFile" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,9 +98,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The filename for this font.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>This should not include the extension. If you want the filename including the extension use <see cref="M:Microsoft.Maui.FontFile.FileNameWithExtension" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FileNameWithExtension">
@@ -114,9 +122,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>
+            Gets the filename of this font file, including the extension.
+            </summary>
+        <returns>The filename of this font file, including the extension.</returns>
+        <remarks>This returns the combination of <see cref="P:Microsoft.Maui.FontFile.FileName" /> and <see cref="P:Microsoft.Maui.FontFile.Extension" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FileNameWithExtension">
@@ -138,10 +148,12 @@
         <Parameter Name="extension" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="extension">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="extension">The extension to append to the font filename.</param>
+        <summary>
+            Gets the filename of this font file with the provided extension appended to the end.
+            </summary>
+        <returns>The filename of this font file including the given extension.</returns>
+        <remarks>The value for <paramref name="extension" /> should include a leading dot (.) character.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FromString">
@@ -163,10 +175,13 @@
         <Parameter Name="input" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="input">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="input">Can either be a filename or font family name.</param>
+        <summary>
+            Creates a new instance of a <see cref="T:Microsoft.Maui.FontFile" /> object based on the value in <paramref name="input" />.
+            </summary>
+        <returns>A new <see cref="T:Microsoft.Maui.FontFile" /> object with all the information that could be deduced through <paramref name="input" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="input" /> is <see langword="null" /></exception>
       </Docs>
     </Member>
     <Member MemberName="GetPostScriptNameWithSpaces">
@@ -186,8 +201,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Gets the font PostScript name as read from the font file, including any spaces if it had any.
+            </summary>
+        <returns>The font PostScript name including spaces.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,9 +224,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The font PostScript name as read from the font file.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Some platforms have issues with spaces in the PostScript name. In this property spaces might be stripped.
+            To get the PostScript name with spaces (if it had any) use <see cref="M:Microsoft.Maui.FontFile.GetPostScriptNameWithSpaces" />.</remarks>
       </Docs>
     </Member>
   </Members>

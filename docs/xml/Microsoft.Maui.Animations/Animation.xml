@@ -21,7 +21,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents an animation.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,7 +40,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Instantiate a new <see cref="T:Microsoft.Maui.Animations.Animation" /> object.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,8 +62,10 @@
         <Parameter Name="animations" Type="System.Collections.Generic.List&lt;Microsoft.Maui.Animations.Animation&gt;" />
       </Parameters>
       <Docs>
-        <param name="animations">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="animations">A <see cref="T:System.Collections.Generic.List`1" /> that contains <see cref="T:Microsoft.Maui.Animations.Animation" /> objects that will be children of the newly instantiated animation.</param>
+        <summary>
+            Instantiate a new <see cref="T:Microsoft.Maui.Animations.Animation" /> object that consists of the given list of child animations.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,12 +88,14 @@
         <Parameter Name="finished" Type="System.Action" />
       </Parameters>
       <Docs>
-        <param name="callback">To be added.</param>
-        <param name="start">To be added.</param>
-        <param name="duration">To be added.</param>
-        <param name="easing">To be added.</param>
-        <param name="finished">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="callback">The <see cref="T:System.Action`1" /> that is invoked after each tick of this animation.</param>
+        <param name="start">Specifies a delay (in seconds) taken into account before the animation starts.</param>
+        <param name="duration">Specifies the duration that this animation should take in seconds.</param>
+        <param name="easing">The easing function to apply to this animation.</param>
+        <param name="finished">A callback <see cref="T:System.Action`1" /> that is invoked after the animation has finished.</param>
+        <summary>
+            Instantiate a new <see cref="T:Microsoft.Maui.Animations.Animation" /> object with the given parameters.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,11 +120,15 @@
         <Parameter Name="animation" Type="Microsoft.Maui.Animations.Animation" />
       </Parameters>
       <Docs>
-        <param name="beginAt">To be added.</param>
-        <param name="duration">To be added.</param>
-        <param name="animation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="beginAt">Specifies a delay (in seconds) taken into account before the added child animation starts.</param>
+        <param name="duration">Specifies the duration (in seconds) that the added child animation should take.</param>
+        <param name="animation">The <see cref="T:Microsoft.Maui.Animations.Animation" /> object to add to this animation as a child.</param>
+        <summary>
+            Adds a new child animation to this animation with the specified parameters.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown when <paramref name="beginAt" /> or <paramref name="duration" /> is less than 0 or more than 1.</exception>
+        <exception cref="T:System.ArgumentException">Thrown when <paramref name="duration" /> is less than or equal to <paramref name="beginAt" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AnimationManager">
@@ -135,7 +147,9 @@
         <ReturnType>Microsoft.Maui.Animations.IAnimationManager</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            A reference to the <see cref="T:Microsoft.Maui.Animations.IAnimationManager" /> that manages this animation.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -156,7 +170,9 @@
         <ReturnType>Microsoft.Maui.Animations.IAnimationManager</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            A reference to the <see cref="T:Microsoft.Maui.Animations.IAnimationManager" /> that manages this animation.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,7 +192,9 @@
         <ReturnType>System.Collections.Generic.List&lt;Microsoft.Maui.Animations.Animation&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Collection of child animations associated to this animation.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,8 +217,10 @@
         <Parameter Name="animationManger" Type="Microsoft.Maui.Animations.IAnimationManager" />
       </Parameters>
       <Docs>
-        <param name="animationManger">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="animationManger">Reference to the <see cref="T:Microsoft.Maui.Animations.IAnimationManager" /> that will manage this animation.</param>
+        <summary>
+            Sets the <see cref="T:Microsoft.Maui.Animations.IAnimationManager" /> for this animation.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,9 +241,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>
+            Creates an animation that includes both the original animation and a reversed version of the same animation.
+            </summary>
+        <returns>An <see cref="T:Microsoft.Maui.Animations.Animation" /> object with the original animation and the reversed animation.</returns>
+        <remarks>You can get just the reversed animation by using <see cref="M:Microsoft.Maui.Animations.Animation.CreateReverse" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateReverse">
@@ -243,9 +265,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>
+            Creates a reversed version of the current animation, including reversing the child animations.
+            </summary>
+        <returns>An <see cref="T:Microsoft.Maui.Animations.Animation" /> object that is the reversed version of this animation.</returns>
+        <remarks>You can the forward and reverse animation by using <see cref="M:Microsoft.Maui.Animations.Animation.CreateAutoReversing" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentTime">
@@ -264,7 +288,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The current timestamp (in seconds) of the animation.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -291,6 +317,7 @@
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -333,7 +360,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The duration of this animation in seconds.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -354,7 +383,9 @@
         <ReturnType>Microsoft.Maui.Easing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The <see cref="P:Microsoft.Maui.Animations.Animation.Easing" /> function that is applied to this animation.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -375,7 +406,9 @@
         <ReturnType>System.Action</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            A callback that is invoked when this animation finishes.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -400,8 +433,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Provides an <see cref="T:System.Collections.IEnumerator" /> of the child animations.
+            </summary>
+        <returns>
+          <see cref="T:System.Collections.IEnumerator" /> of <see cref="T:Microsoft.Maui.Animations.Animation" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -421,7 +457,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Specifies whether this animation has finished.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -442,7 +480,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a value that specifies if this animation has been disposed.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -463,7 +503,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Specifies whether this animation is currently paused.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -484,7 +526,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The name of this animation.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -508,8 +552,10 @@
         <Parameter Name="millisecondsSinceLastUpdate" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="millisecondsSinceLastUpdate">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="millisecondsSinceLastUpdate">Number of milliseconds that have passed since the last tick.</param>
+        <summary>
+            Executes the logic to update all animations within this animation.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -530,7 +576,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Pauses the animation.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -550,7 +598,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Progress of this animation in percentage.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -572,7 +622,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Removes this animation from it's parent.
+            If there is no parent, nothing will happen.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -592,7 +645,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Specifies whether this animation should repeat.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -614,7 +669,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Resets the animation (and all child animations) to its initial state.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -635,7 +692,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Resumes the animation.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -655,7 +714,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The delay (in seconds) taken into account before the animation starts.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -676,7 +737,9 @@
         <ReturnType>System.Action&lt;System.Double&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            A callback that is invoked after each tick of this animation.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -700,8 +763,10 @@
         <Parameter Name="milliseconds" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="milliseconds">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="milliseconds">Number of milliseconds that have passed since the last tick.</param>
+        <summary>
+            Method to trigger an update for this animation.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -724,8 +789,10 @@
         <Parameter Name="percent" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="percent">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="percent">Progress of this animation in percentage.</param>
+        <summary>
+            Updates this animation by updating <see cref="P:Microsoft.Maui.Animations.Animation.Progress" /> and invoking <see cref="P:Microsoft.Maui.Animations.Animation.Step" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

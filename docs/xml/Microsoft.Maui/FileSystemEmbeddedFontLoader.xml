@@ -20,6 +20,7 @@
   <Docs>
     <summary>To be added.</summary>
     <remarks>To be added.</remarks>
+    <inheritdoc />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,10 +39,14 @@
         <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="rootPath">To be added.</param>
-        <param name="serviceProvider">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rootPath">Destination filesystem path for the font.</param>
+        <param name="serviceProvider">The application's <see cref="T:System.IServiceProvider" />.
+            Typically this is provided through dependency injection for logging purposes.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Maui.FileSystemEmbeddedFontLoader" /> instance.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="rootPath" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="LoadFont">
@@ -70,6 +75,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
   </Members>

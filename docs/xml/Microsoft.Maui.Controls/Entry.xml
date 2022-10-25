@@ -51,7 +51,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>A control that can edit a single line of text.</summary>
+    <summary>
+            Entry is a single line text entry. It is best used for collecting small discrete pieces of information, like usernames and passwords.
+            </summary>
     <remarks>
       <para>Entry is a single line text entry. It is best used for collecting small discrete pieces of information, like usernames and passwords.</para>
       <example>
@@ -94,7 +96,9 @@ View CreateLoginForm ()
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the Entry class.</summary>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Maui.Controls.Entry" /> object with default values.
+            </summary>
         <remarks />
       </Docs>
     </Member>
@@ -116,6 +120,7 @@ View CreateLoginForm ()
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="F:Microsoft.Maui.Controls.InputView.CharacterSpacingProperty" />
       </Docs>
     </Member>
     <Member MemberName="ClearButtonVisibility">
@@ -134,7 +139,9 @@ View CreateLoginForm ()
         <ReturnType>Microsoft.Maui.ClearButtonVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Determines the behavior of the clear text button on this entry. This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -155,7 +162,9 @@ View CreateLoginForm ()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Backing store for the <see cref="P:Microsoft.Maui.Controls.Entry.SelectionLength" /> property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,7 +184,9 @@ View CreateLoginForm ()
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when the user finalizes the text in an entry with the return key.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,7 +229,10 @@ View CreateLoginForm ()
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the position of the cursor.</summary>
+        <summary>
+            Gets or sets the position of the cursor. The value must be more than or equal to 0 and less or equal to the length of <see cref="P:Microsoft.Maui.Controls.InputView.Text" />.
+            This is a bindable property.
+            </summary>
         <value>The position of the cursor.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -239,7 +253,9 @@ View CreateLoginForm ()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.Entry.CursorPosition" /> property.</summary>
+        <summary>
+            Backing store for the <see cref="P:Microsoft.Maui.Controls.Entry.CursorPosition" /> property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -259,7 +275,10 @@ View CreateLoginForm ()
         <ReturnType>Microsoft.Maui.Controls.FontAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the font for the Entry element text is bold, italic, or neither.</summary>
+        <summary>
+            Gets or sets a value that indicates whether the font for the text of this entry is bold, italic, or neither.
+            This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -280,7 +299,9 @@ View CreateLoginForm ()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the FontAttributes property.</summary>
+        <summary>
+            Backing store for the <see cref="P:Microsoft.Maui.Controls.Entry.ReturnType" /> property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -300,9 +321,12 @@ View CreateLoginForm ()
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Determines whether or not the font of this entry should scale automatically according to the operating system settings. Default value is <see langword="true" />.
+            This is a bindable property.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Typically this should always be enabled for accessibility reasons.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FontAutoScalingEnabledProperty">
@@ -321,7 +345,9 @@ View CreateLoginForm ()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Backing store for the <see cref="P:Microsoft.Maui.Controls.Entry.ReturnType" /> property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -341,7 +367,9 @@ View CreateLoginForm ()
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the font family for the Entry element text.</summary>
+        <summary>
+            Gets or sets the font family for the text of this entry. This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -362,7 +390,9 @@ View CreateLoginForm ()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the FontFamily property.</summary>
+        <summary>
+            Backing store for the <see cref="P:Microsoft.Maui.Controls.Entry.ReturnType" /> property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -388,7 +418,9 @@ View CreateLoginForm ()
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the size of the font for the Entry element text.</summary>
+        <summary>
+            Gets or sets the size of the font for the text of this entry. This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -409,7 +441,9 @@ View CreateLoginForm ()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.Entry.FontSize" /> property.</summary>
+        <summary>
+            Backing store for the <see cref="P:Microsoft.Maui.Controls.Entry.ReturnType" /> property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -429,7 +463,9 @@ View CreateLoginForm ()
         <ReturnType>Microsoft.Maui.TextAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the horizontal text alignment.</summary>
+        <summary>
+            Gets or sets the horizontal text alignment. This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -450,7 +486,9 @@ View CreateLoginForm ()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the HorizontalTextAlignment property.</summary>
+        <summary>
+            Backing store for the <see cref="P:Microsoft.Maui.Controls.Entry.HorizontalTextAlignment" /> property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -470,10 +508,14 @@ View CreateLoginForm ()
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates if the entry should visually obscure typed text.</summary>
+        <summary>
+            Gets or sets a value that indicates if the entry should visually obscure typed text.
+            Value is <see langword="true" /> if the element is a password box; otherwise, <see langword="false" />. Default value is <see langword="false" />.
+            This is a bindable property.
+            </summary>
         <value>
           <see langword="true" /> if the element is a password box; otherwise, <see langword="false" />. Default value is <see langword="false" />.</value>
-        <remarks>Toggling this value does not reset the contents of the entry, therefore it is advisable to be careful about setting IsPassword to false, as it may contain sensitive information.</remarks>
+        <remarks>Toggling this value does not reset the contents of the entry, therefore it is advisable to be careful about setting <see cref="P:Microsoft.Maui.Controls.Entry.IsPassword" /> to false, as it may contain sensitive information.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsPasswordProperty">
@@ -492,7 +534,9 @@ View CreateLoginForm ()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the IsPassword property.</summary>
+        <summary>
+            Backing store for the <see cref="P:Microsoft.Maui.Controls.Entry.IsPassword" /> property.
+            </summary>
         <remarks />
       </Docs>
     </Member>
@@ -512,7 +556,9 @@ View CreateLoginForm ()
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that controls whether text prediction and automatic text correction is on or off.</summary>
+        <summary>
+            Determines whether text prediction and automatic text correction is enabled. Default value is <see langword="true" />.
+            </summary>
         <value>
           <see langword="true" /> if text correction is on. Otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -534,7 +580,9 @@ View CreateLoginForm ()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.Entry.IsTextPredictionEnabled" /> property.</summary>
+        <summary>
+            Backing store for the <see cref="P:Microsoft.Maui.Controls.Entry.IsTextPredictionEnabled" /> property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -556,6 +604,7 @@ View CreateLoginForm ()
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="F:Microsoft.Maui.Controls.InputView.KeyboardProperty" />
       </Docs>
     </Member>
     <Member MemberName="MapText">
@@ -825,6 +874,7 @@ View CreateLoginForm ()
       <Docs>
         <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.InputView.PlaceholderColor" /> property.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="F:Microsoft.Maui.Controls.InputView.PlaceholderColorProperty" />
       </Docs>
     </Member>
     <Member MemberName="PlaceholderProperty">
@@ -845,6 +895,7 @@ View CreateLoginForm ()
       <Docs>
         <summary>Backing store for the Placeholder property.</summary>
         <remarks />
+        <inheritdoc cref="F:Microsoft.Maui.Controls.InputView.PlaceholderProperty" />
       </Docs>
     </Member>
     <Member MemberName="ReturnCommand">
@@ -863,7 +914,10 @@ View CreateLoginForm ()
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the command to run when the user presses the return key.</summary>
+        <summary>
+            Gets or sets the command to run when the user presses the return key, either physically or on the on-screen keyboard.
+            This is a bindable property.
+            </summary>
         <value>The command to run.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -884,7 +938,10 @@ View CreateLoginForm ()
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the parameter for the <see cref="P:Microsoft.Maui.Controls.Entry.ReturnCommand" />.</summary>
+        <summary>
+            Gets or sets the parameter object for the <see cref="P:Microsoft.Maui.Controls.Entry.ReturnCommand" /> that can be used to provide extra information.
+            This is a bindable property.
+            </summary>
         <value>Parameter for the <see cref="P:Microsoft.Maui.Controls.Entry.ReturnCommand" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -905,7 +962,9 @@ View CreateLoginForm ()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.Entry.ReturnCommandParameter" /> property.</summary>
+        <summary>
+            Backing store for the <see cref="P:Microsoft.Maui.Controls.Entry.ReturnCommandParameter" /> property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -925,7 +984,9 @@ View CreateLoginForm ()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.Entry.ReturnCommand" /> property.</summary>
+        <summary>
+            Backing store for the <see cref="P:Microsoft.Maui.Controls.Entry.ReturnCommand" /> property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -945,7 +1006,9 @@ View CreateLoginForm ()
         <ReturnType>Microsoft.Maui.ReturnType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an enumeration value that controls the appearance of the return button.</summary>
+        <summary>
+            Determines what the return key on the on-screen keyboard should look like. This is a bindable property.
+            </summary>
         <value>An enumeration value that controls the appearance of the return button.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -966,7 +1029,9 @@ View CreateLoginForm ()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.Entry.ReturnType" /> property.</summary>
+        <summary>
+            Backing store for the <see cref="P:Microsoft.Maui.Controls.Entry.ReturnType" /> property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -989,7 +1054,10 @@ View CreateLoginForm ()
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the length of the selection.</summary>
+        <summary>
+            Gets or sets the length of the selection. The selection will start at <see cref="P:Microsoft.Maui.Controls.Entry.CursorPosition" />.
+            This is a bindable property.
+            </summary>
         <value>The length of the selection.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1010,7 +1078,9 @@ View CreateLoginForm ()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.Entry.SelectionLength" /> property.</summary>
+        <summary>
+            Backing store for the <see cref="P:Microsoft.Maui.Controls.Entry.SelectionLength" /> property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1040,7 +1110,10 @@ View CreateLoginForm ()
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>
+            Internal method to trigger <see cref="E:Microsoft.Maui.Controls.Entry.Completed" /> and <see cref="P:Microsoft.Maui.Controls.Entry.ReturnCommand" />.
+            Should not be called manually outside of .NET MAUI.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1062,6 +1135,7 @@ View CreateLoginForm ()
       <Docs>
         <summary>Backing store for the TextColor property.</summary>
         <remarks />
+        <inheritdoc cref="F:Microsoft.Maui.Controls.InputView.TextColorProperty" />
       </Docs>
     </Member>
     <Member MemberName="TextProperty">
@@ -1082,6 +1156,7 @@ View CreateLoginForm ()
       <Docs>
         <summary>Backing store for the Text property.</summary>
         <remarks />
+        <inheritdoc cref="F:Microsoft.Maui.Controls.InputView.TextProperty" />
       </Docs>
     </Member>
     <Member MemberName="VerticalTextAlignment">
@@ -1100,7 +1175,9 @@ View CreateLoginForm ()
         <ReturnType>Microsoft.Maui.TextAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the vertical text alignment. This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1121,7 +1198,9 @@ View CreateLoginForm ()
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Backing store for the <see cref="P:Microsoft.Maui.Controls.Entry.ReturnType" /> property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
