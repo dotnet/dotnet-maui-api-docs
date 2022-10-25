@@ -20,6 +20,7 @@
   <Docs>
     <summary>To be added.</summary>
     <remarks>To be added.</remarks>
+    <inheritdoc />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,9 +39,12 @@
         <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="fontRegistrar">To be added.</param>
-        <param name="serviceProvider">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="fontRegistrar">A <see cref="T:Microsoft.Maui.IFontRegistrar" /> instance to retrieve details from about registered fonts.</param>
+        <param name="serviceProvider">The applications <see cref="T:System.IServiceProvider" />.
+            Typically this is provided through dependency injection.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Maui.EmbeddedFontLoader" /> instance.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,6 +70,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
   </Members>
