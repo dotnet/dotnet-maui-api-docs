@@ -20,6 +20,7 @@
   <Docs>
     <summary>To be added.</summary>
     <remarks>To be added.</remarks>
+    <inheritdoc />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,9 +39,12 @@
         <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="fontLoader">To be added.</param>
-        <param name="serviceProvider">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="fontLoader">An instance of <see cref="T:Microsoft.Maui.IEmbeddedFontLoader" /> that is responsible for actually loading fonts.</param>
+        <param name="serviceProvider">A reference to the app <see cref="T:System.IServiceProvider" />.
+            Typically this should be provided through dependency injection for logging purposes, otherwise can be ignored.</param>
+        <summary>
+            Creates a new instance of <see cref="T:Microsoft.Maui.FontRegistrar" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,6 +74,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Register">
@@ -99,6 +104,7 @@
         <param name="alias">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Register">
@@ -130,6 +136,7 @@
         <param name="assembly">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
   </Members>
