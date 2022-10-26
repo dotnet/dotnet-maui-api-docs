@@ -1,0 +1,380 @@
+<Type Name="SkiaImage" FullName="Microsoft.Maui.Graphics.Skia.SkiaImage">
+  <TypeSignature Language="C#" Value="public class SkiaImage : IDisposable, Microsoft.Maui.Graphics.IImage" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SkiaImage extends System.Object implements class Microsoft.Maui.Graphics.IDrawable, class Microsoft.Maui.Graphics.IImage, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Graphics.Skia.SkiaImage" />
+  <TypeSignature Language="VB.NET" Value="Public Class SkiaImage&#xA;Implements IDisposable, IImage" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SkiaImage : IDisposable, Microsoft::Maui::Graphics::IImage" />
+  <TypeSignature Language="F#" Value="type SkiaImage = class&#xA;    interface IImage&#xA;    interface IDrawable&#xA;    interface IDisposable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Graphics.Skia</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.Graphics.IDrawable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.Graphics.IImage</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SkiaImage (SkiaSharp.SKBitmap image);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class SkiaSharp.SKBitmap image) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Skia.SkiaImage.#ctor(SkiaSharp.SKBitmap)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (image As SKBitmap)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SkiaImage(SkiaSharp::SKBitmap ^ image);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.Graphics.Skia.SkiaImage : SkiaSharp.SKBitmap -&gt; Microsoft.Maui.Graphics.Skia.SkiaImage" Usage="new Microsoft.Maui.Graphics.Skia.SkiaImage image" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics.Skia</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="image" Type="SkiaSharp.SKBitmap" />
+      </Parameters>
+      <Docs>
+        <param name="image">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Skia.SkiaImage.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="skiaImage.Dispose " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics.Skia</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Downsize">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.IImage Downsize (float maxWidthOrHeight, bool disposeOriginal = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Maui.Graphics.IImage Downsize(float32 maxWidthOrHeight, bool disposeOriginal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Skia.SkiaImage.Downsize(System.Single,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Downsize (maxWidthOrHeight As Single, Optional disposeOriginal As Boolean = false) As IImage" />
+      <MemberSignature Language="F#" Value="abstract member Downsize : single * bool -&gt; Microsoft.Maui.Graphics.IImage&#xA;override this.Downsize : single * bool -&gt; Microsoft.Maui.Graphics.IImage" Usage="skiaImage.Downsize (maxWidthOrHeight, disposeOriginal)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.IImage.Downsize(System.Single,System.Boolean)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics.Skia</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.IImage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="maxWidthOrHeight" Type="System.Single" />
+        <Parameter Name="disposeOriginal" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="maxWidthOrHeight">To be added.</param>
+        <param name="disposeOriginal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Downsize">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.IImage Downsize (float maxWidth, float maxHeight, bool disposeOriginal = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Maui.Graphics.IImage Downsize(float32 maxWidth, float32 maxHeight, bool disposeOriginal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Skia.SkiaImage.Downsize(System.Single,System.Single,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Downsize (maxWidth As Single, maxHeight As Single, Optional disposeOriginal As Boolean = false) As IImage" />
+      <MemberSignature Language="F#" Value="abstract member Downsize : single * single * bool -&gt; Microsoft.Maui.Graphics.IImage&#xA;override this.Downsize : single * single * bool -&gt; Microsoft.Maui.Graphics.IImage" Usage="skiaImage.Downsize (maxWidth, maxHeight, disposeOriginal)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.IImage.Downsize(System.Single,System.Single,System.Boolean)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics.Skia</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.IImage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="maxWidth" Type="System.Single" />
+        <Parameter Name="maxHeight" Type="System.Single" />
+        <Parameter Name="disposeOriginal" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="maxWidth">To be added.</param>
+        <param name="maxHeight">To be added.</param>
+        <param name="disposeOriginal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Draw">
+      <MemberSignature Language="C#" Value="public void Draw (Microsoft.Maui.Graphics.ICanvas canvas, Microsoft.Maui.Graphics.RectF dirtyRect);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Draw(class Microsoft.Maui.Graphics.ICanvas canvas, valuetype Microsoft.Maui.Graphics.RectF dirtyRect) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Skia.SkiaImage.Draw(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Draw (canvas As ICanvas, dirtyRect As RectF)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Draw(Microsoft::Maui::Graphics::ICanvas ^ canvas, Microsoft::Maui::Graphics::RectF dirtyRect);" />
+      <MemberSignature Language="F#" Value="abstract member Draw : Microsoft.Maui.Graphics.ICanvas * Microsoft.Maui.Graphics.RectF -&gt; unit&#xA;override this.Draw : Microsoft.Maui.Graphics.ICanvas * Microsoft.Maui.Graphics.RectF -&gt; unit" Usage="skiaImage.Draw (canvas, dirtyRect)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.IDrawable.Draw(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics.Skia</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="canvas" Type="Microsoft.Maui.Graphics.ICanvas" />
+        <Parameter Name="dirtyRect" Type="Microsoft.Maui.Graphics.RectF" />
+      </Parameters>
+      <Docs>
+        <param name="canvas">To be added.</param>
+        <param name="dirtyRect">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromStream">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Graphics.IImage FromStream (System.IO.Stream stream, Microsoft.Maui.Graphics.ImageFormat formatHint = Microsoft.Maui.Graphics.ImageFormat.Png);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Maui.Graphics.IImage FromStream(class System.IO.Stream stream, valuetype Microsoft.Maui.Graphics.ImageFormat formatHint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Skia.SkiaImage.FromStream(System.IO.Stream,Microsoft.Maui.Graphics.ImageFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromStream (stream As Stream, Optional formatHint As ImageFormat = Microsoft.Maui.Graphics.ImageFormat.Png) As IImage" />
+      <MemberSignature Language="F#" Value="static member FromStream : System.IO.Stream * Microsoft.Maui.Graphics.ImageFormat -&gt; Microsoft.Maui.Graphics.IImage" Usage="Microsoft.Maui.Graphics.Skia.SkiaImage.FromStream (stream, formatHint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics.Skia</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.IImage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="formatHint" Type="Microsoft.Maui.Graphics.ImageFormat" />
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <param name="formatHint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public float Height { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Height" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Graphics.Skia.SkiaImage.Height" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Height As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Height { float get(); };" />
+      <MemberSignature Language="F#" Value="member this.Height : single" Usage="Microsoft.Maui.Graphics.Skia.SkiaImage.Height" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.Graphics.IImage.Height</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics.Skia</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformRepresentation">
+      <MemberSignature Language="C#" Value="public SkiaSharp.SKBitmap PlatformRepresentation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class SkiaSharp.SKBitmap PlatformRepresentation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Graphics.Skia.SkiaImage.PlatformRepresentation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PlatformRepresentation As SKBitmap" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property SkiaSharp::SKBitmap ^ PlatformRepresentation { SkiaSharp::SKBitmap ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PlatformRepresentation : SkiaSharp.SKBitmap" Usage="Microsoft.Maui.Graphics.Skia.SkiaImage.PlatformRepresentation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics.Skia</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>SkiaSharp.SKBitmap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resize">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.IImage Resize (float width, float height, Microsoft.Maui.Graphics.ResizeMode resizeMode = Microsoft.Maui.Graphics.ResizeMode.Fit, bool disposeOriginal = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Maui.Graphics.IImage Resize(float32 width, float32 height, valuetype Microsoft.Maui.Graphics.ResizeMode resizeMode, bool disposeOriginal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Skia.SkiaImage.Resize(System.Single,System.Single,Microsoft.Maui.Graphics.ResizeMode,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Resize (width As Single, height As Single, Optional resizeMode As ResizeMode = Microsoft.Maui.Graphics.ResizeMode.Fit, Optional disposeOriginal As Boolean = false) As IImage" />
+      <MemberSignature Language="F#" Value="abstract member Resize : single * single * Microsoft.Maui.Graphics.ResizeMode * bool -&gt; Microsoft.Maui.Graphics.IImage&#xA;override this.Resize : single * single * Microsoft.Maui.Graphics.ResizeMode * bool -&gt; Microsoft.Maui.Graphics.IImage" Usage="skiaImage.Resize (width, height, resizeMode, disposeOriginal)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.IImage.Resize(System.Single,System.Single,Microsoft.Maui.Graphics.ResizeMode,System.Boolean)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics.Skia</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.IImage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="width" Type="System.Single" />
+        <Parameter Name="height" Type="System.Single" />
+        <Parameter Name="resizeMode" Type="Microsoft.Maui.Graphics.ResizeMode" />
+        <Parameter Name="disposeOriginal" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="resizeMode">To be added.</param>
+        <param name="disposeOriginal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Save">
+      <MemberSignature Language="C#" Value="public void Save (System.IO.Stream stream, Microsoft.Maui.Graphics.ImageFormat format = Microsoft.Maui.Graphics.ImageFormat.Png, float quality = 1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Save(class System.IO.Stream stream, valuetype Microsoft.Maui.Graphics.ImageFormat format, float32 quality) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Skia.SkiaImage.Save(System.IO.Stream,Microsoft.Maui.Graphics.ImageFormat,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save (stream As Stream, Optional format As ImageFormat = Microsoft.Maui.Graphics.ImageFormat.Png, Optional quality As Single = 1)" />
+      <MemberSignature Language="F#" Value="abstract member Save : System.IO.Stream * Microsoft.Maui.Graphics.ImageFormat * single -&gt; unit&#xA;override this.Save : System.IO.Stream * Microsoft.Maui.Graphics.ImageFormat * single -&gt; unit" Usage="skiaImage.Save (stream, format, quality)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.IImage.Save(System.IO.Stream,Microsoft.Maui.Graphics.ImageFormat,System.Single)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics.Skia</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="format" Type="Microsoft.Maui.Graphics.ImageFormat" />
+        <Parameter Name="quality" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <param name="format">To be added.</param>
+        <param name="quality">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SaveAsync (System.IO.Stream stream, Microsoft.Maui.Graphics.ImageFormat format = Microsoft.Maui.Graphics.ImageFormat.Png, float quality = 1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task SaveAsync(class System.IO.Stream stream, valuetype Microsoft.Maui.Graphics.ImageFormat format, float32 quality) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Skia.SkiaImage.SaveAsync(System.IO.Stream,Microsoft.Maui.Graphics.ImageFormat,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SaveAsync (stream As Stream, Optional format As ImageFormat = Microsoft.Maui.Graphics.ImageFormat.Png, Optional quality As Single = 1) As Task" />
+      <MemberSignature Language="F#" Value="abstract member SaveAsync : System.IO.Stream * Microsoft.Maui.Graphics.ImageFormat * single -&gt; System.Threading.Tasks.Task&#xA;override this.SaveAsync : System.IO.Stream * Microsoft.Maui.Graphics.ImageFormat * single -&gt; System.Threading.Tasks.Task" Usage="skiaImage.SaveAsync (stream, format, quality)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.IImage.SaveAsync(System.IO.Stream,Microsoft.Maui.Graphics.ImageFormat,System.Single)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics.Skia</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="format" Type="Microsoft.Maui.Graphics.ImageFormat" />
+        <Parameter Name="quality" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <param name="format">To be added.</param>
+        <param name="quality">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToPlatformImage">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.IImage ToPlatformImage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Maui.Graphics.IImage ToPlatformImage() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Graphics.Skia.SkiaImage.ToPlatformImage" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToPlatformImage () As IImage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Maui::Graphics::IImage ^ ToPlatformImage();" />
+      <MemberSignature Language="F#" Value="abstract member ToPlatformImage : unit -&gt; Microsoft.Maui.Graphics.IImage&#xA;override this.ToPlatformImage : unit -&gt; Microsoft.Maui.Graphics.IImage" Usage="skiaImage.ToPlatformImage " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Graphics.IImage.ToPlatformImage</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics.Skia</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.IImage</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public float Width { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Width" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Graphics.Skia.SkiaImage.Width" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Width As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Width { float get(); };" />
+      <MemberSignature Language="F#" Value="member this.Width : single" Usage="Microsoft.Maui.Graphics.Skia.SkiaImage.Width" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.Graphics.IImage.Width</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Graphics.Skia</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
