@@ -7,6 +7,8 @@
     <Assembly Name="Microsoft.Maui" Version="1.0.0.0" />
     <Assembly Name="Microsoft.Maui.Essentials" Version="1.0.0.0" />
     <Assembly Name="Microsoft.Maui.Graphics" Version="1.0.0.0" />
+    <Assembly Name="Microsoft.Maui.Graphics.Skia" Version="1.0.0.0" />
+    <Assembly Name="Microsoft.Maui.Graphics.Text.Markdig" Version="1.0.0.0" />
   </Assemblies>
   <Namespace Name="Microsoft.Maui.Accessibility">
     <Type Name="Microsoft.Maui.Accessibility.ISemanticScreenReader" Id="T:Microsoft.Maui.Accessibility.ISemanticScreenReader">
@@ -11568,6 +11570,180 @@
       <Member Id="P:Microsoft.Maui.Graphics.Platform.PlatformImage.Width" />
     </Type>
   </Namespace>
+  <Namespace Name="Microsoft.Maui.Graphics.Skia">
+    <Type Name="Microsoft.Maui.Graphics.Skia.FontExtensions" Id="T:Microsoft.Maui.Graphics.Skia.FontExtensions">
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.FontExtensions.ToSKTypeface(Microsoft.Maui.Graphics.IFont)" />
+    </Type>
+    <Type Name="Microsoft.Maui.Graphics.Skia.PlatformBitmapExportService" Id="T:Microsoft.Maui.Graphics.Skia.PlatformBitmapExportService">
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.PlatformBitmapExportService.#ctor" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.PlatformBitmapExportService.CreateContext(System.Int32,System.Int32,System.Single)" />
+    </Type>
+    <Type Name="Microsoft.Maui.Graphics.Skia.SKColorExtensions" Id="T:Microsoft.Maui.Graphics.Skia.SKColorExtensions">
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SKColorExtensions.ToColor(Microsoft.Maui.Graphics.Color,System.Single)" />
+    </Type>
+    <Type Name="Microsoft.Maui.Graphics.Skia.SKGraphicsExtensions" Id="T:Microsoft.Maui.Graphics.Skia.SKGraphicsExtensions">
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SKGraphicsExtensions.AsColor(SkiaSharp.SKColor)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SKGraphicsExtensions.AsMatrix(System.Numerics.Matrix3x2@)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SKGraphicsExtensions.AsPointF(SkiaSharp.SKPoint)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SKGraphicsExtensions.AsRectangleF(SkiaSharp.SKRect)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SKGraphicsExtensions.AsRotatedAndroidPath(Microsoft.Maui.Graphics.PathF,Microsoft.Maui.Graphics.PointF,System.Single,System.Single,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SKGraphicsExtensions.AsSize(SkiaSharp.SKSize)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SKGraphicsExtensions.AsSizeF(Microsoft.Maui.Graphics.SizeF)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SKGraphicsExtensions.AsSKColor(Microsoft.Maui.Graphics.Color)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SKGraphicsExtensions.AsSKColorMultiplyAlpha(Microsoft.Maui.Graphics.Color,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SKGraphicsExtensions.AsSkiaPath(Microsoft.Maui.Graphics.PathF)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SKGraphicsExtensions.AsSkiaPath(Microsoft.Maui.Graphics.PathF,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SKGraphicsExtensions.AsSkiaPath(Microsoft.Maui.Graphics.PathF,System.Single,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SKGraphicsExtensions.AsSkiaPath(Microsoft.Maui.Graphics.PathF,System.Single,System.Single,System.Single,System.Single,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SKGraphicsExtensions.AsSkiaPathFromSegment(Microsoft.Maui.Graphics.PathF,System.Int32,System.Single,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SKGraphicsExtensions.AsSKRect(Microsoft.Maui.Graphics.RectF)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SKGraphicsExtensions.GetPatternBitmap(Microsoft.Maui.Graphics.PatternPaint,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SKGraphicsExtensions.GetPatternBitmap(Microsoft.Maui.Graphics.PatternPaint,System.Single,System.Single,System.Object)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SKGraphicsExtensions.ToArgb(Microsoft.Maui.Graphics.Color)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SKGraphicsExtensions.ToArgb(Microsoft.Maui.Graphics.Color,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SKGraphicsExtensions.ToSKPoint(Microsoft.Maui.Graphics.PointF)" />
+    </Type>
+    <Type Name="Microsoft.Maui.Graphics.Skia.SkiaBitmapExportContext" Id="T:Microsoft.Maui.Graphics.Skia.SkiaBitmapExportContext">
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaBitmapExportContext.#ctor(System.Int32,System.Int32,System.Single,System.Int32,System.Boolean,System.Boolean)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaBitmapExportContext.Dispose" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaBitmapExportContext.WriteToStream(System.IO.Stream)" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaBitmapExportContext.Bitmap" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaBitmapExportContext.Canvas" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaBitmapExportContext.Image" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaBitmapExportContext.SKImage" />
+    </Type>
+    <Type Name="Microsoft.Maui.Graphics.Skia.SkiaCanvas" Id="T:Microsoft.Maui.Graphics.Skia.SkiaCanvas">
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.#ctor" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.ClipPath(Microsoft.Maui.Graphics.PathF,Microsoft.Maui.Graphics.WindingMode)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.ClipRectangle(System.Single,System.Single,System.Single,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.Dispose" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.DrawImage(Microsoft.Maui.Graphics.IImage,System.Single,System.Single,System.Single,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.DrawString(System.String,System.Single,System.Single,Microsoft.Maui.Graphics.HorizontalAlignment)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.DrawString(System.String,System.Single,System.Single,System.Single,System.Single,Microsoft.Maui.Graphics.HorizontalAlignment,Microsoft.Maui.Graphics.VerticalAlignment,Microsoft.Maui.Graphics.TextFlow,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.DrawText(Microsoft.Maui.Graphics.Text.IAttributedText,System.Single,System.Single,System.Single,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.FillArc(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Boolean)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.FillEllipse(System.Single,System.Single,System.Single,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.FillPath(Microsoft.Maui.Graphics.PathF,Microsoft.Maui.Graphics.WindingMode)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.FillRectangle(System.Single,System.Single,System.Single,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.FillRoundedRectangle(System.Single,System.Single,System.Single,System.Single,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.PlatformConcatenateTransform(System.Numerics.Matrix3x2)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.PlatformDrawArc(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Boolean,System.Boolean)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.PlatformDrawEllipse(System.Single,System.Single,System.Single,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.PlatformDrawLine(System.Single,System.Single,System.Single,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.PlatformDrawPath(Microsoft.Maui.Graphics.PathF)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.PlatformDrawRectangle(System.Single,System.Single,System.Single,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.PlatformDrawRoundedRectangle(System.Single,System.Single,System.Single,System.Single,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.PlatformRotate(System.Single,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.PlatformRotate(System.Single,System.Single,System.Single,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.PlatformScale(System.Single,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.PlatformSetStrokeDashPattern(System.Single[],System.Single,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.PlatformTranslate(System.Single,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.ResetState" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.RestoreState" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.SaveState" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.SetBlur(System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.SetDisplayScale(System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.SetFillPaint(Microsoft.Maui.Graphics.Paint,Microsoft.Maui.Graphics.RectF)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.SetShadow(Microsoft.Maui.Graphics.SizeF,System.Single,Microsoft.Maui.Graphics.Color)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.StateRestored(Microsoft.Maui.Graphics.Skia.SkiaCanvasState)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvas.SubtractFromClip(System.Single,System.Single,System.Single,System.Single)" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvas.Alpha" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvas.Antialias" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvas.BlendMode" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvas.Canvas" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvas.DisplayScale" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvas.FillColor" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvas.Font" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvas.FontColor" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvas.FontSize" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvas.MiterLimit" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvas.PlatformStrokeSize" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvas.StrokeColor" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvas.StrokeLineCap" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvas.StrokeLineJoin" />
+    </Type>
+    <Type Name="Microsoft.Maui.Graphics.Skia.SkiaCanvasState" Id="T:Microsoft.Maui.Graphics.Skia.SkiaCanvasState">
+      <Member Id="F:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.Alpha" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.#ctor" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.#ctor(Microsoft.Maui.Graphics.Skia.SkiaCanvasState)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.Dispose" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.GetImagePaint(System.Single,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.GetShadowPaint(System.Single,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.Reset(SkiaSharp.SKPaint,SkiaSharp.SKPaint,SkiaSharp.SKPaint)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.SetBlur(System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.SetFillPaintFilterBitmap(System.Boolean)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.SetFillPaintShader(SkiaSharp.SKShader)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.SetScale(System.Single,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.SetShadow(System.Single,System.Single,System.Single,SkiaSharp.SKColor)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.SetStrokeDashPattern(System.Single[],System.Single,System.Single)" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.AntiAlias" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.BlurRadius" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.FillColor" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.FillPaint" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.FillPaintWithAlpha" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.Font" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.FontColor" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.FontPaint" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.FontSize" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.IsBlurred" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.MiterLimit" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.PlatformStrokeSize" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.ScaledFontSize" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.ScaledStrokeSize" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.ScaleX" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.ScaleY" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.StrokeColor" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.StrokeLineCap" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.StrokeLineJoin" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.StrokePaint" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.StrokePaintWithAlpha" />
+    </Type>
+    <Type Name="Microsoft.Maui.Graphics.Skia.SkiaCanvasStateService" Id="T:Microsoft.Maui.Graphics.Skia.SkiaCanvasStateService">
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvasStateService.#ctor" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvasStateService.CreateCopy(Microsoft.Maui.Graphics.Skia.SkiaCanvasState)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvasStateService.CreateNew(System.Object)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvasStateService.Dispose" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvasStateService.Reset(Microsoft.Maui.Graphics.Skia.SkiaCanvasState)" />
+    </Type>
+    <Type Name="Microsoft.Maui.Graphics.Skia.SkiaImage" Id="T:Microsoft.Maui.Graphics.Skia.SkiaImage">
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaImage.#ctor(SkiaSharp.SKBitmap)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaImage.Dispose" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaImage.Downsize(System.Single,System.Boolean)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaImage.Downsize(System.Single,System.Single,System.Boolean)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaImage.Draw(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaImage.FromStream(System.IO.Stream,Microsoft.Maui.Graphics.ImageFormat)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaImage.Resize(System.Single,System.Single,Microsoft.Maui.Graphics.ResizeMode,System.Boolean)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaImage.Save(System.IO.Stream,Microsoft.Maui.Graphics.ImageFormat,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaImage.SaveAsync(System.IO.Stream,Microsoft.Maui.Graphics.ImageFormat,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaImage.ToPlatformImage" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaImage.Height" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaImage.PlatformRepresentation" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaImage.Width" />
+    </Type>
+    <Type Name="Microsoft.Maui.Graphics.Skia.SkiaImageLoadingService" Id="T:Microsoft.Maui.Graphics.Skia.SkiaImageLoadingService">
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaImageLoadingService.#ctor" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaImageLoadingService.FromStream(System.IO.Stream,Microsoft.Maui.Graphics.ImageFormat)" />
+    </Type>
+    <Type Name="Microsoft.Maui.Graphics.Skia.SkiaStringSizeService" Id="T:Microsoft.Maui.Graphics.Skia.SkiaStringSizeService">
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaStringSizeService.#ctor" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaStringSizeService.GetStringSize(System.String,Microsoft.Maui.Graphics.IFont,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaStringSizeService.GetStringSize(System.String,Microsoft.Maui.Graphics.IFont,System.Single,Microsoft.Maui.Graphics.HorizontalAlignment,Microsoft.Maui.Graphics.VerticalAlignment)" />
+    </Type>
+    <Type Name="Microsoft.Maui.Graphics.Skia.SkiaTextLayout" Id="T:Microsoft.Maui.Graphics.Skia.SkiaTextLayout">
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaTextLayout.#ctor(System.String,Microsoft.Maui.Graphics.RectF,Microsoft.Maui.Graphics.ITextAttributes,Microsoft.Maui.Graphics.LayoutLine,Microsoft.Maui.Graphics.TextFlow,SkiaSharp.SKPaint)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaTextLayout.Dispose" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaTextLayout.LayoutText" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaTextLayout.WordWrap" />
+    </Type>
+    <Type Name="Microsoft.Maui.Graphics.Skia.SKPaintExtensions" Id="T:Microsoft.Maui.Graphics.Skia.SKPaintExtensions">
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SKPaintExtensions.CreateCopy(SkiaSharp.SKPaint)" />
+    </Type>
+    <Type Name="Microsoft.Maui.Graphics.Skia.TextLine" Id="T:Microsoft.Maui.Graphics.Skia.TextLine">
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.TextLine.#ctor(System.String,System.Single)" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.TextLine.Value" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.TextLine.Width" />
+    </Type>
+  </Namespace>
   <Namespace Name="Microsoft.Maui.Graphics.Text">
     <Type Name="Microsoft.Maui.Graphics.Text.AbstractAttributedText" Id="T:Microsoft.Maui.Graphics.Text.AbstractAttributedText">
       <Member Id="M:Microsoft.Maui.Graphics.Text.AbstractAttributedText.#ctor" />
@@ -11630,6 +11806,10 @@
       <Member Id="P:Microsoft.Maui.Graphics.Text.IAttributedTextRun.Start" />
     </Type>
     <Type Name="Microsoft.Maui.Graphics.Text.ITextAttributes" Id="T:Microsoft.Maui.Graphics.Text.ITextAttributes" />
+    <Type Name="Microsoft.Maui.Graphics.Text.MarkdownAttributedTextReader" Id="T:Microsoft.Maui.Graphics.Text.MarkdownAttributedTextReader">
+      <Member Id="M:Microsoft.Maui.Graphics.Text.MarkdownAttributedTextReader.#ctor" />
+      <Member Id="M:Microsoft.Maui.Graphics.Text.MarkdownAttributedTextReader.Read(System.String)" />
+    </Type>
     <Type Name="Microsoft.Maui.Graphics.Text.MarkerType" Id="T:Microsoft.Maui.Graphics.Text.MarkerType">
       <Member Id="F:Microsoft.Maui.Graphics.Text.MarkerType.ClosedCircle" />
       <Member Id="F:Microsoft.Maui.Graphics.Text.MarkerType.Hyphen" />
@@ -11717,6 +11897,53 @@
       <Member Id="M:Microsoft.Maui.Graphics.Text.XmlAttributedTextWriter.#ctor" />
       <Member Id="M:Microsoft.Maui.Graphics.Text.XmlAttributedTextWriter.Write(Microsoft.Maui.Graphics.Text.IAttributedText)" />
       <Member Id="M:Microsoft.Maui.Graphics.Text.XmlAttributedTextWriter.Write(Microsoft.Maui.Graphics.Text.IAttributedText,System.IO.TextWriter)" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Maui.Graphics.Text.Renderer">
+    <Type Name="Microsoft.Maui.Graphics.Text.Renderer.AttributedTextObjectRenderer`1" Id="T:Microsoft.Maui.Graphics.Text.Renderer.AttributedTextObjectRenderer`1">
+      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.AttributedTextObjectRenderer`1.#ctor" />
+    </Type>
+    <Type Name="Microsoft.Maui.Graphics.Text.Renderer.AttributedTextRenderer" Id="T:Microsoft.Maui.Graphics.Text.Renderer.AttributedTextRenderer">
+      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.AttributedTextRenderer.#ctor" />
+      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.AttributedTextRenderer.GetAttributedText" />
+      <Member Id="P:Microsoft.Maui.Graphics.Text.Renderer.AttributedTextRenderer.Count" />
+    </Type>
+    <Type Name="Microsoft.Maui.Graphics.Text.Renderer.EmphasisInlineRenderer" Id="T:Microsoft.Maui.Graphics.Text.Renderer.EmphasisInlineRenderer">
+      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.EmphasisInlineRenderer.#ctor" />
+      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.EmphasisInlineRenderer.IsBold(Markdig.Syntax.Inlines.EmphasisInline)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.EmphasisInlineRenderer.IsItalic(Markdig.Syntax.Inlines.EmphasisInline)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.EmphasisInlineRenderer.IsStrikethrough(Markdig.Syntax.Inlines.EmphasisInline)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.EmphasisInlineRenderer.IsSubscript(Markdig.Syntax.Inlines.EmphasisInline)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.EmphasisInlineRenderer.IsSuperscript(Markdig.Syntax.Inlines.EmphasisInline)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.EmphasisInlineRenderer.IsUnderline(Markdig.Syntax.Inlines.EmphasisInline)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.EmphasisInlineRenderer.Write(Microsoft.Maui.Graphics.Text.Renderer.AttributedTextRenderer,Markdig.Syntax.Inlines.EmphasisInline)" />
+    </Type>
+    <Type Name="Microsoft.Maui.Graphics.Text.Renderer.HtmlBlockRenderer" Id="T:Microsoft.Maui.Graphics.Text.Renderer.HtmlBlockRenderer">
+      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.HtmlBlockRenderer.#ctor" />
+      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.HtmlBlockRenderer.Write(Microsoft.Maui.Graphics.Text.Renderer.AttributedTextRenderer,Markdig.Syntax.HtmlBlock)" />
+    </Type>
+    <Type Name="Microsoft.Maui.Graphics.Text.Renderer.HtmlInlineRenderer" Id="T:Microsoft.Maui.Graphics.Text.Renderer.HtmlInlineRenderer">
+      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.HtmlInlineRenderer.#ctor" />
+      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.HtmlInlineRenderer.Write(Microsoft.Maui.Graphics.Text.Renderer.AttributedTextRenderer,Markdig.Syntax.Inlines.HtmlInline)" />
+    </Type>
+    <Type Name="Microsoft.Maui.Graphics.Text.Renderer.LineBreakInlineRenderer" Id="T:Microsoft.Maui.Graphics.Text.Renderer.LineBreakInlineRenderer">
+      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.LineBreakInlineRenderer.#ctor" />
+      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.LineBreakInlineRenderer.Write(Microsoft.Maui.Graphics.Text.Renderer.AttributedTextRenderer,Markdig.Syntax.Inlines.LineBreakInline)" />
+    </Type>
+    <Type Name="Microsoft.Maui.Graphics.Text.Renderer.ListRenderer" Id="T:Microsoft.Maui.Graphics.Text.Renderer.ListRenderer">
+      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.ListRenderer.#ctor" />
+      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.ListRenderer.Write(Microsoft.Maui.Graphics.Text.Renderer.AttributedTextRenderer,Markdig.Syntax.ListBlock)" />
+    </Type>
+    <Type Name="Microsoft.Maui.Graphics.Text.Renderer.LiteralInlineRenderer" Id="T:Microsoft.Maui.Graphics.Text.Renderer.LiteralInlineRenderer">
+      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.LiteralInlineRenderer.#ctor" />
+      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.LiteralInlineRenderer.Write(Microsoft.Maui.Graphics.Text.Renderer.AttributedTextRenderer,Markdig.Syntax.Inlines.LiteralInline)" />
+    </Type>
+    <Type Name="Microsoft.Maui.Graphics.Text.Renderer.ParagraphRenderer" Id="T:Microsoft.Maui.Graphics.Text.Renderer.ParagraphRenderer">
+      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.ParagraphRenderer.#ctor" />
+      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.ParagraphRenderer.Write(Microsoft.Maui.Graphics.Text.Renderer.AttributedTextRenderer,Markdig.Syntax.ParagraphBlock)" />
+    </Type>
+    <Type Name="Microsoft.Maui.Graphics.Text.Renderer.SimpleCssParser" Id="T:Microsoft.Maui.Graphics.Text.Renderer.SimpleCssParser">
+      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.SimpleCssParser.Parse(System.String)" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Maui.Handlers">
