@@ -1,10 +1,15 @@
 <Type Name="Element" FullName="Microsoft.Maui.Controls.Element">
-  <TypeSignature Language="C#" Value="public abstract class Element : Microsoft.Maui.Controls.BindableObject, Microsoft.Maui.Controls.IEffectControlProvider, Microsoft.Maui.Controls.IElementController, Microsoft.Maui.Controls.Internals.INameScope, Microsoft.Maui.IElement, Microsoft.Maui.IVisualTreeElement" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Element extends Microsoft.Maui.Controls.BindableObject implements class Microsoft.Maui.Controls.IEffectControlProvider, class Microsoft.Maui.Controls.IElementController, class Microsoft.Maui.Controls.Internals.INameScope, class Microsoft.Maui.IElement, class Microsoft.Maui.IVisualTreeElement" />
+  <TypeSignature Language="C#" Value="public abstract class Element : Microsoft.Maui.Controls.BindableObject, Microsoft.Maui.Controls.IEffectControlProvider, Microsoft.Maui.Controls.IElementController, Microsoft.Maui.Controls.Internals.INameScope, Microsoft.Maui.IElement, Microsoft.Maui.IVisualTreeElement" FrameworkAlternate="net-maui-6.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Element extends Microsoft.Maui.Controls.BindableObject implements class Microsoft.Maui.Controls.IEffectControlProvider, class Microsoft.Maui.Controls.IElementController, class Microsoft.Maui.Controls.Internals.INameScope, class Microsoft.Maui.IElement, class Microsoft.Maui.IVisualTreeElement" FrameworkAlternate="net-maui-6.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Element" />
-  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Element&#xA;Inherits BindableObject&#xA;Implements IEffectControlProvider, IElement, IElementController, INameScope, IVisualTreeElement" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Element abstract : Microsoft::Maui::Controls::BindableObject, Microsoft::Maui::Controls::IEffectControlProvider, Microsoft::Maui::Controls::IElementController, Microsoft::Maui::Controls::Internals::INameScope, Microsoft::Maui::IElement, Microsoft::Maui::IVisualTreeElement" />
-  <TypeSignature Language="F#" Value="type Element = class&#xA;    inherit BindableObject&#xA;    interface INameScope&#xA;    interface IElementController&#xA;    interface IVisualTreeElement&#xA;    interface IElement&#xA;    interface IEffectControlProvider" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Element&#xA;Inherits BindableObject&#xA;Implements IEffectControlProvider, IElement, IElementController, INameScope, IVisualTreeElement" FrameworkAlternate="net-maui-6.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Element abstract : Microsoft::Maui::Controls::BindableObject, Microsoft::Maui::Controls::IEffectControlProvider, Microsoft::Maui::Controls::IElementController, Microsoft::Maui::Controls::Internals::INameScope, Microsoft::Maui::IElement, Microsoft::Maui::IVisualTreeElement" FrameworkAlternate="net-maui-6.0" />
+  <TypeSignature Language="F#" Value="type Element = class&#xA;    inherit BindableObject&#xA;    interface INameScope&#xA;    interface IElementController&#xA;    interface IVisualTreeElement&#xA;    interface IElement&#xA;    interface IEffectControlProvider" FrameworkAlternate="net-maui-6.0" />
+  <TypeSignature Language="C#" Value="public abstract class Element : Microsoft.Maui.Controls.BindableObject, Microsoft.Maui.Controls.IEffectControlProvider, Microsoft.Maui.Controls.IElementController, Microsoft.Maui.Controls.Internals.INameScope, Microsoft.Maui.IContextFlyoutElement, Microsoft.Maui.IElement, Microsoft.Maui.IToolTipElement, Microsoft.Maui.IVisualTreeElement" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Element extends Microsoft.Maui.Controls.BindableObject implements class Microsoft.Maui.Controls.IEffectControlProvider, class Microsoft.Maui.Controls.IElementController, class Microsoft.Maui.Controls.Internals.INameScope, class Microsoft.Maui.IContextFlyoutElement, class Microsoft.Maui.IElement, class Microsoft.Maui.IToolTipElement, class Microsoft.Maui.IVisualTreeElement" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Element&#xA;Inherits BindableObject&#xA;Implements IContextFlyoutElement, IEffectControlProvider, IElement, IElementController, INameScope, IToolTipElement, IVisualTreeElement" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Element abstract : Microsoft::Maui::Controls::BindableObject, Microsoft::Maui::Controls::IEffectControlProvider, Microsoft::Maui::Controls::IElementController, Microsoft::Maui::Controls::Internals::INameScope, Microsoft::Maui::IContextFlyoutElement, Microsoft::Maui::IElement, Microsoft::Maui::IToolTipElement, Microsoft::Maui::IVisualTreeElement" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="F#" Value="type Element = class&#xA;    inherit BindableObject&#xA;    interface INameScope&#xA;    interface IElementController&#xA;    interface IVisualTreeElement&#xA;    interface IElement&#xA;    interface IEffectControlProvider&#xA;    interface IToolTipElement&#xA;    interface IContextFlyoutElement" FrameworkAlternate="net-maui-7.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -27,6 +32,12 @@
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Maui.IVisualTreeElement</InterfaceName>
+    </Interface>
+    <Interface FrameworkAlternate="net-maui-7.0">
+      <InterfaceName>Microsoft.Maui.IContextFlyoutElement</InterfaceName>
+    </Interface>
+    <Interface FrameworkAlternate="net-maui-7.0">
+      <InterfaceName>Microsoft.Maui.IToolTipElement</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>
@@ -714,6 +725,30 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Microsoft.Maui.IContextFlyoutElement.ContextFlyout">
+      <MemberSignature Language="C#" Value="Microsoft.Maui.IFlyout Microsoft.Maui.IContextFlyoutElement.ContextFlyout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.IFlyout Microsoft.Maui.IContextFlyoutElement.ContextFlyout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Element.Microsoft#Maui#IContextFlyoutElement#ContextFlyout" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property ContextFlyout As IFlyout Implements IContextFlyoutElement.ContextFlyout" />
+      <MemberSignature Language="C++ CLI" Value="property Microsoft::Maui::IFlyout ^ Microsoft::Maui::IContextFlyoutElement::ContextFlyout { Microsoft::Maui::IFlyout ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.IContextFlyoutElement.ContextFlyout : Microsoft.Maui.IFlyout" Usage="Microsoft.Maui.IContextFlyoutElement.ContextFlyout" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IContextFlyoutElement.ContextFlyout</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.IFlyout</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Microsoft.Maui.IElement.Parent">
       <MemberSignature Language="C#" Value="Microsoft.Maui.IElement Microsoft.Maui.IElement.Parent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.IElement Microsoft.Maui.IElement.Parent" />
@@ -731,6 +766,30 @@
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.IElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IToolTipElement.ToolTip">
+      <MemberSignature Language="C#" Value="Microsoft.Maui.ToolTip Microsoft.Maui.IToolTipElement.ToolTip { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.ToolTip Microsoft.Maui.IToolTipElement.ToolTip" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Element.Microsoft#Maui#IToolTipElement#ToolTip" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property ToolTip As ToolTip Implements IToolTipElement.ToolTip" />
+      <MemberSignature Language="C++ CLI" Value="property Microsoft::Maui::ToolTip ^ Microsoft::Maui::IToolTipElement::ToolTip { Microsoft::Maui::ToolTip ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.IToolTipElement.ToolTip : Microsoft.Maui.ToolTip" Usage="Microsoft.Maui.IToolTipElement.ToolTip" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IToolTipElement.ToolTip</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.ToolTip</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>

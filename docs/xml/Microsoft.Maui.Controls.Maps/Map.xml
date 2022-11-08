@@ -1,0 +1,687 @@
+<Type Name="Map" FullName="Microsoft.Maui.Controls.Maps.Map">
+  <TypeSignature Language="C#" Value="public class Map : Microsoft.Maui.Controls.View, Microsoft.Maui.Maps.IMap, System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.Maps.IMapPin&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Map extends Microsoft.Maui.Controls.View implements class Microsoft.Maui.IElement, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView, class Microsoft.Maui.Maps.IMap, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Maui.Maps.IMapPin&gt;, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Maps.Map" />
+  <TypeSignature Language="VB.NET" Value="Public Class Map&#xA;Inherits View&#xA;Implements IEnumerable(Of IMapPin), IMap" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Map : Microsoft::Maui::Controls::View, Microsoft::Maui::Maps::IMap, System::Collections::Generic::IEnumerable&lt;Microsoft::Maui::Maps::IMapPin ^&gt;" />
+  <TypeSignature Language="F#" Value="type Map = class&#xA;    inherit View&#xA;    interface IMap&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface seq&lt;IMapPin&gt;&#xA;    interface IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Maui.Controls.View</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IElement</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.ITransform</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IView</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.Maps.IMap</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.Maps.IMapPin&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Map ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Maps.Map.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Map();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Map (Microsoft.Maui.Maps.MapSpan region);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Maui.Maps.MapSpan region) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Maps.Map.#ctor(Microsoft.Maui.Maps.MapSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (region As MapSpan)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Map(Microsoft::Maui::Maps::MapSpan ^ region);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.Controls.Maps.Map : Microsoft.Maui.Maps.MapSpan -&gt; Microsoft.Maui.Controls.Maps.Map" Usage="new Microsoft.Maui.Controls.Maps.Map region" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="region" Type="Microsoft.Maui.Maps.MapSpan" />
+      </Parameters>
+      <Docs>
+        <param name="region">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerator&lt;Microsoft.Maui.Maps.IMapPin&gt; GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class Microsoft.Maui.Maps.IMapPin&gt; GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Maps.Map.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of IMapPin)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;Microsoft::Maui::Maps::IMapPin ^&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;Microsoft.Maui.Maps.IMapPin&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;Microsoft.Maui.Maps.IMapPin&gt;" Usage="map.GetEnumerator " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerator&lt;Microsoft.Maui.Maps.IMapPin&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsScrollEnabled">
+      <MemberSignature Language="C#" Value="public bool IsScrollEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsScrollEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Maps.Map.IsScrollEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsScrollEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsScrollEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsScrollEnabled : bool with get, set" Usage="Microsoft.Maui.Controls.Maps.Map.IsScrollEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsScrollEnabledProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty IsScrollEnabledProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty IsScrollEnabledProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Maps.Map.IsScrollEnabledProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsScrollEnabledProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ IsScrollEnabledProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsScrollEnabledProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Maps.Map.IsScrollEnabledProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsShowingUser">
+      <MemberSignature Language="C#" Value="public bool IsShowingUser { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsShowingUser" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Maps.Map.IsShowingUser" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsShowingUser As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsShowingUser { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsShowingUser : bool with get, set" Usage="Microsoft.Maui.Controls.Maps.Map.IsShowingUser" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsShowingUserProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty IsShowingUserProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty IsShowingUserProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Maps.Map.IsShowingUserProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsShowingUserProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ IsShowingUserProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsShowingUserProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Maps.Map.IsShowingUserProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTrafficEnabled">
+      <MemberSignature Language="C#" Value="public bool IsTrafficEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsTrafficEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Maps.Map.IsTrafficEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsTrafficEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsTrafficEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsTrafficEnabled : bool with get, set" Usage="Microsoft.Maui.Controls.Maps.Map.IsTrafficEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTrafficEnabledProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty IsTrafficEnabledProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty IsTrafficEnabledProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Maps.Map.IsTrafficEnabledProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsTrafficEnabledProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ IsTrafficEnabledProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsTrafficEnabledProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Maps.Map.IsTrafficEnabledProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsZoomEnabled">
+      <MemberSignature Language="C#" Value="public bool IsZoomEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsZoomEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Maps.Map.IsZoomEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsZoomEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsZoomEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsZoomEnabled : bool with get, set" Usage="Microsoft.Maui.Controls.Maps.Map.IsZoomEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsZoomEnabledProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty IsZoomEnabledProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty IsZoomEnabledProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Maps.Map.IsZoomEnabledProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsZoomEnabledProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ IsZoomEnabledProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsZoomEnabledProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Maps.Map.IsZoomEnabledProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemsSource">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerable ItemsSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerable ItemsSource" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Maps.Map.ItemsSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemsSource As IEnumerable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IEnumerable ^ ItemsSource { System::Collections::IEnumerable ^ get(); void set(System::Collections::IEnumerable ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemsSource : System.Collections.IEnumerable with get, set" Usage="Microsoft.Maui.Controls.Maps.Map.ItemsSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemsSourceProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty ItemsSourceProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty ItemsSourceProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Maps.Map.ItemsSourceProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemsSourceProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ ItemsSourceProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemsSourceProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Maps.Map.ItemsSourceProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemTemplate">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.DataTemplate ItemTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.DataTemplate ItemTemplate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Maps.Map.ItemTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemTemplate As DataTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::DataTemplate ^ ItemTemplate { Microsoft::Maui::Controls::DataTemplate ^ get(); void set(Microsoft::Maui::Controls::DataTemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemTemplate : Microsoft.Maui.Controls.DataTemplate with get, set" Usage="Microsoft.Maui.Controls.Maps.Map.ItemTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty ItemTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty ItemTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Maps.Map.ItemTemplateProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemTemplateProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ ItemTemplateProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemTemplateProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Maps.Map.ItemTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemTemplateSelector">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.DataTemplateSelector ItemTemplateSelector { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.DataTemplateSelector ItemTemplateSelector" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Maps.Map.ItemTemplateSelector" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemTemplateSelector As DataTemplateSelector" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::DataTemplateSelector ^ ItemTemplateSelector { Microsoft::Maui::Controls::DataTemplateSelector ^ get(); void set(Microsoft::Maui::Controls::DataTemplateSelector ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemTemplateSelector : Microsoft.Maui.Controls.DataTemplateSelector with get, set" Usage="Microsoft.Maui.Controls.Maps.Map.ItemTemplateSelector" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.DataTemplateSelector</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemTemplateSelectorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty ItemTemplateSelectorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty ItemTemplateSelectorProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Maps.Map.ItemTemplateSelectorProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemTemplateSelectorProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ ItemTemplateSelectorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemTemplateSelectorProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Maps.Map.ItemTemplateSelectorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapClicked">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Controls.Maps.MapClickedEventArgs&gt;? MapClicked;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.Maps.MapClickedEventArgs&gt; MapClicked" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.Maps.Map.MapClicked" />
+      <MemberSignature Language="VB.NET" Value="Public Event MapClicked As EventHandler(Of MapClickedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Controls::Maps::MapClickedEventArgs ^&gt; ^ MapClicked;" />
+      <MemberSignature Language="F#" Value="member this.MapClicked : EventHandler&lt;Microsoft.Maui.Controls.Maps.MapClickedEventArgs&gt; " Usage="member this.MapClicked : System.EventHandler&lt;Microsoft.Maui.Controls.Maps.MapClickedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.Maps.MapClickedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapElements">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Maui.Controls.Maps.MapElement&gt; MapElements { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Maui.Controls.Maps.MapElement&gt; MapElements" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Maps.Map.MapElements" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MapElements As IList(Of MapElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Maui::Controls::Maps::MapElement ^&gt; ^ MapElements { System::Collections::Generic::IList&lt;Microsoft::Maui::Controls::Maps::MapElement ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MapElements : System.Collections.Generic.IList&lt;Microsoft.Maui.Controls.Maps.MapElement&gt;" Usage="Microsoft.Maui.Controls.Maps.Map.MapElements" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Controls.Maps.MapElement&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapType">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Maps.MapType MapType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.Maps.MapType MapType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Maps.Map.MapType" />
+      <MemberSignature Language="VB.NET" Value="Public Property MapType As MapType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Maps::MapType MapType { Microsoft::Maui::Maps::MapType get(); void set(Microsoft::Maui::Maps::MapType value); };" />
+      <MemberSignature Language="F#" Value="member this.MapType : Microsoft.Maui.Maps.MapType with get, set" Usage="Microsoft.Maui.Controls.Maps.Map.MapType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Maps.MapType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapTypeProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty MapTypeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty MapTypeProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Maps.Map.MapTypeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MapTypeProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ MapTypeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MapTypeProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Maps.Map.MapTypeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Maps.IMap.Clicked">
+      <MemberSignature Language="C#" Value="void IMap.Clicked (Microsoft.Maui.Devices.Sensors.Location location);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.Maps.IMap.Clicked(class Microsoft.Maui.Devices.Sensors.Location location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Maps.Map.Microsoft#Maui#Maps#IMap#Clicked(Microsoft.Maui.Devices.Sensors.Location)" />
+      <MemberSignature Language="VB.NET" Value="Sub Clicked (location As Location) Implements IMap.Clicked" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.Maps.IMap.Clicked(Microsoft::Maui::Devices::Sensors::Location ^ location) = Microsoft::Maui::Maps::IMap::Clicked;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Maps.IMap.Clicked : Microsoft.Maui.Devices.Sensors.Location -&gt; unit&#xA;override this.Microsoft.Maui.Maps.IMap.Clicked : Microsoft.Maui.Devices.Sensors.Location -&gt; unit" Usage="map.Microsoft.Maui.Maps.IMap.Clicked location" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Maps.IMap.Clicked(Microsoft.Maui.Devices.Sensors.Location)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="Microsoft.Maui.Devices.Sensors.Location" />
+      </Parameters>
+      <Docs>
+        <param name="location">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Maps.IMap.Elements">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IList&lt;Microsoft.Maui.Maps.IMapElement&gt; Microsoft.Maui.Maps.IMap.Elements { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Maui.Maps.IMapElement&gt; Microsoft.Maui.Maps.IMap.Elements" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Maps.Map.Microsoft#Maui#Maps#IMap#Elements" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Elements As IList(Of IMapElement) Implements IMap.Elements" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::IList&lt;Microsoft::Maui::Maps::IMapElement ^&gt; ^ Microsoft::Maui::Maps::IMap::Elements { System::Collections::Generic::IList&lt;Microsoft::Maui::Maps::IMapElement ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.Maps.IMap.Elements : System.Collections.Generic.IList&lt;Microsoft.Maui.Maps.IMapElement&gt;" Usage="Microsoft.Maui.Maps.IMap.Elements" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.Maps.IMap.Elements</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Maps.IMapElement&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Maps.IMap.Pins">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IList&lt;Microsoft.Maui.Maps.IMapPin&gt; Microsoft.Maui.Maps.IMap.Pins { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Maui.Maps.IMapPin&gt; Microsoft.Maui.Maps.IMap.Pins" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Maps.Map.Microsoft#Maui#Maps#IMap#Pins" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Pins As IList(Of IMapPin) Implements IMap.Pins" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::IList&lt;Microsoft::Maui::Maps::IMapPin ^&gt; ^ Microsoft::Maui::Maps::IMap::Pins { System::Collections::Generic::IList&lt;Microsoft::Maui::Maps::IMapPin ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.Maps.IMap.Pins : System.Collections.Generic.IList&lt;Microsoft.Maui.Maps.IMapPin&gt;" Usage="Microsoft.Maui.Maps.IMap.Pins" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.Maps.IMap.Pins</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Maps.IMapPin&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Maps.IMap.VisibleRegion">
+      <MemberSignature Language="C#" Value="Microsoft.Maui.Maps.MapSpan? Microsoft.Maui.Maps.IMap.VisibleRegion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Maps.MapSpan Microsoft.Maui.Maps.IMap.VisibleRegion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Maps.Map.Microsoft#Maui#Maps#IMap#VisibleRegion" />
+      <MemberSignature Language="VB.NET" Value=" Property VisibleRegion As MapSpan Implements IMap.VisibleRegion" />
+      <MemberSignature Language="C++ CLI" Value="property Microsoft::Maui::Maps::MapSpan ^ Microsoft::Maui::Maps::IMap::VisibleRegion { Microsoft::Maui::Maps::MapSpan ^ get(); void set(Microsoft::Maui::Maps::MapSpan ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.Maps.IMap.VisibleRegion : Microsoft.Maui.Maps.MapSpan with get, set" Usage="Microsoft.Maui.Maps.IMap.VisibleRegion" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.Maps.IMap.VisibleRegion</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Maps.MapSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveToRegion">
+      <MemberSignature Language="C#" Value="public void MoveToRegion (Microsoft.Maui.Maps.MapSpan mapSpan);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MoveToRegion(class Microsoft.Maui.Maps.MapSpan mapSpan) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Maps.Map.MoveToRegion(Microsoft.Maui.Maps.MapSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MoveToRegion (mapSpan As MapSpan)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MoveToRegion(Microsoft::Maui::Maps::MapSpan ^ mapSpan);" />
+      <MemberSignature Language="F#" Value="abstract member MoveToRegion : Microsoft.Maui.Maps.MapSpan -&gt; unit&#xA;override this.MoveToRegion : Microsoft.Maui.Maps.MapSpan -&gt; unit" Usage="map.MoveToRegion mapSpan" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Maps.IMap.MoveToRegion(Microsoft.Maui.Maps.MapSpan)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mapSpan" Type="Microsoft.Maui.Maps.MapSpan" />
+      </Parameters>
+      <Docs>
+        <param name="mapSpan">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnHandlerChanged">
+      <MemberSignature Language="C#" Value="protected override void OnHandlerChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandlerChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Maps.Map.OnHandlerChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandlerChanged ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandlerChanged();" />
+      <MemberSignature Language="F#" Value="override this.OnHandlerChanged : unit -&gt; unit" Usage="map.OnHandlerChanged " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pins">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Maui.Controls.Maps.Pin&gt; Pins { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Maui.Controls.Maps.Pin&gt; Pins" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Maps.Map.Pins" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Pins As IList(Of Pin)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Maui::Controls::Maps::Pin ^&gt; ^ Pins { System::Collections::Generic::IList&lt;Microsoft::Maui::Controls::Maps::Pin ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Pins : System.Collections.Generic.IList&lt;Microsoft.Maui.Controls.Maps.Pin&gt;" Usage="Microsoft.Maui.Controls.Maps.Map.Pins" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Controls.Maps.Pin&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Maps.Map.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.IEnumerable.GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.System.Collections.IEnumerable.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="map.System.Collections.IEnumerable.GetEnumerator " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisibleRegion">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Maps.MapSpan? VisibleRegion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Maps.MapSpan VisibleRegion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Maps.Map.VisibleRegion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VisibleRegion As MapSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Maps::MapSpan ^ VisibleRegion { Microsoft::Maui::Maps::MapSpan ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VisibleRegion : Microsoft.Maui.Maps.MapSpan" Usage="Microsoft.Maui.Controls.Maps.Map.VisibleRegion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Maps.MapSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

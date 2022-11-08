@@ -1,0 +1,242 @@
+<Type Name="DualScreenInfo" FullName="Microsoft.Maui.Foldable.DualScreenInfo">
+  <TypeSignature Language="C#" Value="public class DualScreenInfo : System.ComponentModel.INotifyPropertyChanged" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DualScreenInfo extends System.Object implements class System.ComponentModel.INotifyPropertyChanged" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Foldable.DualScreenInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class DualScreenInfo&#xA;Implements INotifyPropertyChanged" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DualScreenInfo : System::ComponentModel::INotifyPropertyChanged" />
+  <TypeSignature Language="F#" Value="type DualScreenInfo = class&#xA;    interface INotifyPropertyChanged" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls.Foldable</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.INotifyPropertyChanged</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Provides details about the visible areas a layout occupies so the content 
+            can be positioned around where the screens split.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DualScreenInfo (Microsoft.Maui.Controls.VisualElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Maui.Controls.VisualElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Foldable.DualScreenInfo.#ctor(Microsoft.Maui.Controls.VisualElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (element As VisualElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DualScreenInfo(Microsoft::Maui::Controls::VisualElement ^ element);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.Foldable.DualScreenInfo : Microsoft.Maui.Controls.VisualElement -&gt; Microsoft.Maui.Foldable.DualScreenInfo" Usage="new Microsoft.Maui.Foldable.DualScreenInfo element" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Foldable</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.Maui.Controls.VisualElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Foldable.DualScreenInfo Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Maui.Foldable.DualScreenInfo Current" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Foldable.DualScreenInfo.Current" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Current As DualScreenInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::Maui::Foldable::DualScreenInfo ^ Current { Microsoft::Maui::Foldable::DualScreenInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="static member Current : Microsoft.Maui.Foldable.DualScreenInfo" Usage="Microsoft.Maui.Foldable.DualScreenInfo.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Foldable</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Foldable.DualScreenInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Singleton that provides information about how the app window is 
+            positioned across both screens.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHingeAngleAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;int&gt; GetHingeAngleAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;int32&gt; GetHingeAngleAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Foldable.DualScreenInfo.GetHingeAngleAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetHingeAngleAsync () As Task(Of Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;int&gt; ^ GetHingeAngleAsync();" />
+      <MemberSignature Language="F#" Value="member this.GetHingeAngleAsync : unit -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="dualScreenInfo.GetHingeAngleAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Foldable</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HingeAngleChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Foldable.HingeAngleChangedEventArgs&gt; HingeAngleChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Foldable.HingeAngleChangedEventArgs&gt; HingeAngleChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Foldable.DualScreenInfo.HingeAngleChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event HingeAngleChanged As EventHandler(Of HingeAngleChangedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Foldable::HingeAngleChangedEventArgs ^&gt; ^ HingeAngleChanged;" />
+      <MemberSignature Language="F#" Value="member this.HingeAngleChanged : EventHandler&lt;Microsoft.Maui.Foldable.HingeAngleChangedEventArgs&gt; " Usage="member this.HingeAngleChanged : System.EventHandler&lt;Microsoft.Maui.Foldable.HingeAngleChangedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Foldable</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Maui.Foldable.HingeAngleChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Triggered whenever the hinge angle is changed as a device is 
+            folded or unfolded.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HingeBounds">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.Rect HingeBounds { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.Graphics.Rect HingeBounds" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Foldable.DualScreenInfo.HingeBounds" />
+      <MemberSignature Language="VB.NET" Value="Public Property HingeBounds As Rect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Graphics::Rect HingeBounds { Microsoft::Maui::Graphics::Rect get(); void set(Microsoft::Maui::Graphics::Rect value); };" />
+      <MemberSignature Language="F#" Value="member this.HingeBounds : Microsoft.Maui.Graphics.Rect with get, set" Usage="Microsoft.Maui.Foldable.DualScreenInfo.HingeBounds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Foldable</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Rect</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A <see cref="T:Microsoft.Maui.Graphics.Rect" /> 
+            representing the absolute screen positioning of the device's hinge.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLandscape">
+      <MemberSignature Language="C#" Value="public bool IsLandscape { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsLandscape" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Foldable.DualScreenInfo.IsLandscape" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsLandscape As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLandscape { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsLandscape : bool with get, set" Usage="Microsoft.Maui.Foldable.DualScreenInfo.IsLandscape" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Foldable</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates if the device is Landscape.</summary>
+        <value>To be added.</value>
+        <remarks>
+            Used when app is detected to be on a single screen - 
+            mainly on Surface Duo (although possible also on other
+            foldable with multi-window enabled)
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyChanged">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler PropertyChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Foldable.DualScreenInfo.PropertyChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event PropertyChanged As PropertyChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::ComponentModel::PropertyChangedEventHandler ^ PropertyChanged;" />
+      <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Foldable</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Used to watch for changes of any properties.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpanMode">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.Foldable.TwoPaneViewMode SpanMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.Controls.Foldable.TwoPaneViewMode SpanMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Foldable.DualScreenInfo.SpanMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property SpanMode As TwoPaneViewMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::Foldable::TwoPaneViewMode SpanMode { Microsoft::Maui::Controls::Foldable::TwoPaneViewMode get(); void set(Microsoft::Maui::Controls::Foldable::TwoPaneViewMode value); };" />
+      <MemberSignature Language="F#" Value="member this.SpanMode : Microsoft.Maui.Controls.Foldable.TwoPaneViewMode with get, set" Usage="Microsoft.Maui.Foldable.DualScreenInfo.SpanMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Foldable</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.Foldable.TwoPaneViewMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Determines the layout direction of the panes:
+            SinglePane, Wide, Tall
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpanningBounds">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.Rect[] SpanningBounds { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.Graphics.Rect[] SpanningBounds" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Foldable.DualScreenInfo.SpanningBounds" />
+      <MemberSignature Language="VB.NET" Value="Public Property SpanningBounds As Rect()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Maui::Graphics::Rect&gt; ^ SpanningBounds { cli::array &lt;Microsoft::Maui::Graphics::Rect&gt; ^ get(); void set(cli::array &lt;Microsoft::Maui::Graphics::Rect&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SpanningBounds : Microsoft.Maui.Graphics.Rect[] with get, set" Usage="Microsoft.Maui.Foldable.DualScreenInfo.SpanningBounds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Foldable</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Rect[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            When spanned across two regions this will return a 
+            <see cref="T:Microsoft.Maui.Graphics.Rect" /> 
+            for each region. If not spanned this will return an empty array.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
