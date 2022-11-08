@@ -1,10 +1,11 @@
 <Type Name="SearchBarHandler" FullName="Microsoft.Maui.Handlers.SearchBarHandler">
   <TypeSignature Language="C#" Value="public class SearchBarHandler : Microsoft.Maui.Handlers.ViewHandler&lt;Microsoft.Maui.ISearchBar,object&gt;, Microsoft.Maui.Handlers.ISearchBarHandler" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi SearchBarHandler extends Microsoft.Maui.Handlers.ViewHandler`2&lt;class Microsoft.Maui.ISearchBar, object&gt; implements class Microsoft.Maui.Handlers.ISearchBarHandler, class Microsoft.Maui.IElementHandler, class Microsoft.Maui.IViewHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi SearchBarHandler extends Microsoft.Maui.Handlers.ViewHandler`2&lt;class Microsoft.Maui.ISearchBar, object&gt; implements class Microsoft.Maui.Handlers.ISearchBarHandler, class Microsoft.Maui.IElementHandler, class Microsoft.Maui.IViewHandler" FrameworkAlternate="net-maui-6.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Handlers.SearchBarHandler" />
   <TypeSignature Language="VB.NET" Value="Public Class SearchBarHandler&#xA;Inherits ViewHandler(Of ISearchBar, Object)&#xA;Implements ISearchBarHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class SearchBarHandler : Microsoft::Maui::Handlers::ViewHandler&lt;Microsoft::Maui::ISearchBar ^, System::Object ^&gt;, Microsoft::Maui::Handlers::ISearchBarHandler" />
   <TypeSignature Language="F#" Value="type SearchBarHandler = class&#xA;    inherit ViewHandler&lt;ISearchBar, obj&gt;&#xA;    interface ISearchBarHandler&#xA;    interface IViewHandler&#xA;    interface IElementHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SearchBarHandler extends Microsoft.Maui.Handlers.ViewHandler`2&lt;class Microsoft.Maui.ISearchBar, object&gt; implements class Microsoft.Maui.Handlers.ISearchBarHandler, class Microsoft.Maui.IElementHandler, class Microsoft.Maui.IViewHandler" FrameworkAlternate="net-maui-7.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -50,11 +51,14 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SearchBarHandler (Microsoft.Maui.IPropertyMapper? mapper = default);" />
+      <MemberSignature Language="C#" Value="public SearchBarHandler (Microsoft.Maui.IPropertyMapper? mapper = default);" FrameworkAlternate="net-maui-6.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Maui.IPropertyMapper mapper) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Handlers.SearchBarHandler.#ctor(Microsoft.Maui.IPropertyMapper)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional mapper As IPropertyMapper = Nothing)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional mapper As IPropertyMapper = Nothing)" FrameworkAlternate="net-maui-6.0" />
       <MemberSignature Language="F#" Value="new Microsoft.Maui.Handlers.SearchBarHandler : Microsoft.Maui.IPropertyMapper -&gt; Microsoft.Maui.Handlers.SearchBarHandler" Usage="new Microsoft.Maui.Handlers.SearchBarHandler mapper" />
+      <MemberSignature Language="C#" Value="public SearchBarHandler (Microsoft.Maui.IPropertyMapper? mapper);" FrameworkAlternate="net-maui-7.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (mapper As IPropertyMapper)" FrameworkAlternate="net-maui-7.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SearchBarHandler(Microsoft::Maui::IPropertyMapper ^ mapper);" FrameworkAlternate="net-maui-7.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>
@@ -65,6 +69,29 @@
       </Parameters>
       <Docs>
         <param name="mapper">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SearchBarHandler (Microsoft.Maui.IPropertyMapper? mapper, Microsoft.Maui.CommandMapper? commandMapper);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Maui.IPropertyMapper mapper, class Microsoft.Maui.CommandMapper commandMapper) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Handlers.SearchBarHandler.#ctor(Microsoft.Maui.IPropertyMapper,Microsoft.Maui.CommandMapper)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (mapper As IPropertyMapper, commandMapper As CommandMapper)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SearchBarHandler(Microsoft::Maui::IPropertyMapper ^ mapper, Microsoft::Maui::CommandMapper ^ commandMapper);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.Handlers.SearchBarHandler : Microsoft.Maui.IPropertyMapper * Microsoft.Maui.CommandMapper -&gt; Microsoft.Maui.Handlers.SearchBarHandler" Usage="new Microsoft.Maui.Handlers.SearchBarHandler (mapper, commandMapper)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="mapper" Type="Microsoft.Maui.IPropertyMapper" Index="0" FrameworkAlternate="net-maui-7.0" />
+        <Parameter Name="commandMapper" Type="Microsoft.Maui.CommandMapper" Index="1" FrameworkAlternate="net-maui-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="mapper">To be added.</param>
+        <param name="commandMapper">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>

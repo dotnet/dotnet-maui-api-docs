@@ -1,0 +1,267 @@
+<Type Name="IMap" FullName="Microsoft.Maui.Maps.IMap">
+  <TypeSignature Language="C#" Value="public interface IMap : Microsoft.Maui.IView" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMap implements class Microsoft.Maui.IElement, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Maps.IMap" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IMap&#xA;Implements IView" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IMap : Microsoft::Maui::IView" />
+  <TypeSignature Language="F#" Value="type IMap = interface&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IElement</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.ITransform</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IView</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Represents a <see cref="T:Microsoft.Maui.IView" /> that displays a map.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Clicked">
+      <MemberSignature Language="C#" Value="public void Clicked (Microsoft.Maui.Devices.Sensors.Location position);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clicked(class Microsoft.Maui.Devices.Sensors.Location position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Maps.IMap.Clicked(Microsoft.Maui.Devices.Sensors.Location)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clicked (position As Location)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clicked(Microsoft::Maui::Devices::Sensors::Location ^ position);" />
+      <MemberSignature Language="F#" Value="abstract member Clicked : Microsoft.Maui.Devices.Sensors.Location -&gt; unit" Usage="iMap.Clicked position" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="Microsoft.Maui.Devices.Sensors.Location" />
+      </Parameters>
+      <Docs>
+        <param name="position">To be added.</param>
+        <summary>
+            Method called by the handler when user clicks on the Map.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Elements">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Maui.Maps.IMapElement&gt; Elements { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Maui.Maps.IMapElement&gt; Elements" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Maps.IMap.Elements" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Elements As IList(Of IMapElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Maui::Maps::IMapElement ^&gt; ^ Elements { System::Collections::Generic::IList&lt;Microsoft::Maui::Maps::IMapElement ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Elements : System.Collections.Generic.IList&lt;Microsoft.Maui.Maps.IMapElement&gt;" Usage="Microsoft.Maui.Maps.IMap.Elements" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Maps.IMapElement&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The pins that are to be shown on this Map.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsScrollEnabled">
+      <MemberSignature Language="C#" Value="public bool IsScrollEnabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsScrollEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Maps.IMap.IsScrollEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsScrollEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsScrollEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsScrollEnabled : bool" Usage="Microsoft.Maui.Maps.IMap.IsScrollEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Get whether the Map is allowed to scroll.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsShowingUser">
+      <MemberSignature Language="C#" Value="public bool IsShowingUser { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsShowingUser" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Maps.IMap.IsShowingUser" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsShowingUser As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsShowingUser { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsShowingUser : bool" Usage="Microsoft.Maui.Maps.IMap.IsShowingUser" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Get whether the Map is showing the user's current location.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTrafficEnabled">
+      <MemberSignature Language="C#" Value="public bool IsTrafficEnabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsTrafficEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Maps.IMap.IsTrafficEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsTrafficEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsTrafficEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsTrafficEnabled : bool" Usage="Microsoft.Maui.Maps.IMap.IsTrafficEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Get whether this Map is showing traffic information.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsZoomEnabled">
+      <MemberSignature Language="C#" Value="public bool IsZoomEnabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsZoomEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Maps.IMap.IsZoomEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsZoomEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsZoomEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsZoomEnabled : bool" Usage="Microsoft.Maui.Maps.IMap.IsZoomEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Get whether this Map is allowed to zoom.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapType">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Maps.MapType MapType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.Maps.MapType MapType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Maps.IMap.MapType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MapType As MapType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Maps::MapType MapType { Microsoft::Maui::Maps::MapType get(); };" />
+      <MemberSignature Language="F#" Value="member this.MapType : Microsoft.Maui.Maps.MapType" Usage="Microsoft.Maui.Maps.IMap.MapType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Maps.MapType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the display type of map that can be shown.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveToRegion">
+      <MemberSignature Language="C#" Value="public void MoveToRegion (Microsoft.Maui.Maps.MapSpan region);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MoveToRegion(class Microsoft.Maui.Maps.MapSpan region) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Maps.IMap.MoveToRegion(Microsoft.Maui.Maps.MapSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MoveToRegion (region As MapSpan)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveToRegion(Microsoft::Maui::Maps::MapSpan ^ region);" />
+      <MemberSignature Language="F#" Value="abstract member MoveToRegion : Microsoft.Maui.Maps.MapSpan -&gt; unit" Usage="iMap.MoveToRegion region" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="region" Type="Microsoft.Maui.Maps.MapSpan" />
+      </Parameters>
+      <Docs>
+        <param name="region">To be added.</param>
+        <summary>
+            Moves the map so that it displays the specified MapSpan region.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pins">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Maui.Maps.IMapPin&gt; Pins { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Maui.Maps.IMapPin&gt; Pins" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Maps.IMap.Pins" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Pins As IList(Of IMapPin)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Maui::Maps::IMapPin ^&gt; ^ Pins { System::Collections::Generic::IList&lt;Microsoft::Maui::Maps::IMapPin ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Pins : System.Collections.Generic.IList&lt;Microsoft.Maui.Maps.IMapPin&gt;" Usage="Microsoft.Maui.Maps.IMap.Pins" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Maps.IMapPin&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The pins that are to be shown on this Map.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisibleRegion">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Maps.MapSpan? VisibleRegion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Maps.MapSpan VisibleRegion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Maps.IMap.VisibleRegion" />
+      <MemberSignature Language="VB.NET" Value="Public Property VisibleRegion As MapSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Maps::MapSpan ^ VisibleRegion { Microsoft::Maui::Maps::MapSpan ^ get(); void set(Microsoft::Maui::Maps::MapSpan ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.VisibleRegion : Microsoft.Maui.Maps.MapSpan with get, set" Usage="Microsoft.Maui.Maps.IMap.VisibleRegion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Maps.MapSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The currently visible MapSpan of this Map.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
