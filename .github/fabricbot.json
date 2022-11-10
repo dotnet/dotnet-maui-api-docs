@@ -1,0 +1,134 @@
+{
+  "tasks": [
+    {
+      "taskType": "scheduled",
+      "capabilityId": "ScheduledPR",
+      "subCapability": "ScheduledPR",
+      "version": "1.0",
+      "config": {
+        "head": "main",
+        "base": "live",
+        "title": "Merge main into live",
+        "body": "Please don't squash-merge this PR.",
+        "taskName": "Push to live branch (publish)",
+        "frequency": [
+          {
+            "weekDay": 0,
+            "hours": [
+              0,
+              3,
+              6,
+              9,
+              12,
+              15,
+              18,
+              21
+            ],
+            "timezoneOffset": 0
+          },
+          {
+            "weekDay": 1,
+            "hours": [
+              0,
+              3,
+              6,
+              9,
+              12,
+              15,
+              18,
+              21
+            ],
+            "timezoneOffset": 0
+          },
+          {
+            "weekDay": 2,
+            "hours": [
+              0,
+              3,
+              6,
+              9,
+              12,
+              15,
+              18,
+              21
+            ],
+            "timezoneOffset": 0
+          },
+          {
+            "weekDay": 3,
+            "hours": [
+              0,
+              3,
+              6,
+              9,
+              12,
+              15,
+              18,
+              21
+            ],
+            "timezoneOffset": 0
+          },
+          {
+            "weekDay": 4,
+            "hours": [
+              0,
+              3,
+              6,
+              9,
+              12,
+              15,
+              18,
+              21
+            ],
+            "timezoneOffset": 0
+          },
+          {
+            "weekDay": 5,
+            "hours": [
+              0,
+              3,
+              6,
+              9,
+              12,
+              15,
+              18,
+              21
+            ],
+            "timezoneOffset": 0
+          },
+          {
+            "weekDay": 6,
+            "hours": [
+              0,
+              3,
+              6,
+              9,
+              12,
+              15,
+              18,
+              21
+            ],
+            "timezoneOffset": 0
+          }
+        ]
+      },
+      "disabled": false
+    },
+    {
+      "taskType": "trigger",
+      "capabilityId": "PrAutoLabel",
+      "subCapability": "Branch",
+      "version": "1.0",
+      "config": {
+        "taskName": "Label PRs to live",
+        "configs": [
+          {
+            "label": "auto-merge",
+            "branchName": "live"
+          }
+        ]
+      }
+    }
+  ],
+  "userGroups": []
+}
