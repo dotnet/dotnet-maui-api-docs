@@ -11,7 +11,9 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents information about the application.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +33,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the application build number.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -52,7 +56,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the application name.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -73,9 +79,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the application package name or identifier.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>On Android and iOS, this is the application package name. On Windows, this is the application GUID.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PackagingModel">
@@ -94,9 +102,11 @@
         <ReturnType>Microsoft.Maui.ApplicationModel.AppPackagingModel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the packaging model of this application.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>On other platforms than Windows, this will always return <see cref="F:Microsoft.Maui.ApplicationModel.AppPackagingModel.Packaged" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequestedLayoutDirection">
@@ -115,7 +125,9 @@
         <ReturnType>Microsoft.Maui.ApplicationModel.LayoutDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the requested layout direction of the system or application.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -136,9 +148,11 @@
         <ReturnType>Microsoft.Maui.ApplicationModel.AppTheme</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the detected theme of the system or application.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>For platforms or platform versions which do not support themes, <see cref="F:Microsoft.Maui.ApplicationModel.AppTheme.Unspecified" /> is returned.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowSettingsUI">
@@ -158,7 +172,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Open the settings menu or page for this application.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,7 +194,9 @@
         <ReturnType>System.Version</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the application version as a <see cref="P:Microsoft.Maui.ApplicationModel.IAppInfo.Version" /> object.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -199,7 +217,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the application version as a string representation.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

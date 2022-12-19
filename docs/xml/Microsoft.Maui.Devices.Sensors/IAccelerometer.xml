@@ -11,7 +11,9 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Accelerometer data of the acceleration of the device in three-dimensional space.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +33,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a value indicating whether the accelerometer is being monitored.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -52,7 +56,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a value indicating whether reading the accelerometer is supported on this device.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -73,7 +79,9 @@
         <ReturnType>System.EventHandler&lt;Microsoft.Maui.Devices.Sensors.AccelerometerChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when the sensor reading changes.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,7 +101,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when the accelerometer detects that the device has been shaken.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,9 +126,13 @@
         <Parameter Name="sensorSpeed" Type="Microsoft.Maui.Devices.Sensors.SensorSpeed" />
       </Parameters>
       <Docs>
-        <param name="sensorSpeed">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sensorSpeed">Speed to monitor the sensor.</param>
+        <summary>
+            Start monitoring for changes to accelerometer.
+            </summary>
+        <remarks>
+            Will throw <see cref="T:Microsoft.Maui.ApplicationModel.FeatureNotSupportedException" /> if <see cref="P:Microsoft.Maui.Devices.Sensors.IAccelerometer.IsSupported" /> is <see langword="false" />.
+            Will throw <see cref="T:System.InvalidOperationException" /> if <see cref="P:Microsoft.Maui.Devices.Sensors.IAccelerometer.IsMonitoring" /> is <see langword="true" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -138,7 +152,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Stop monitoring for changes to accelerometer.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

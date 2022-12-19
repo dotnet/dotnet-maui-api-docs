@@ -14,8 +14,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Optional setting to open the browser with.</summary>
-    <remarks>These settings do not apply to all operation systems. Check documentation for more information.</remarks>
+    <summary>
+            Optional setting to open the browser with.
+            </summary>
+    <remarks>Not all settings apply to all operating systems. Check documentation for more information.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,9 +53,11 @@
         <ReturnType>Microsoft.Maui.ApplicationModel.BrowserLaunchFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Additional launch flags that may or may not take effect based on the device and launch mode.</summary>
+        <summary>
+            Gets or sets additional launch flags that may or may not take effect based on the device and <see cref="P:Microsoft.Maui.ApplicationModel.BrowserLaunchOptions.LaunchMode" />.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>The default value is <see cref="F:Microsoft.Maui.ApplicationModel.BrowserLaunchFlags.None" />. Not all flags work on all platforms, check the flag descriptions.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LaunchMode">
@@ -72,9 +76,11 @@
         <ReturnType>Microsoft.Maui.ApplicationModel.BrowserLaunchMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Launch type of the browser.</summary>
+        <summary>
+            Gets or sets how the browser should be launched.
+            </summary>
         <value>The launch type.</value>
-        <remarks />
+        <remarks>The default value is <see cref="F:Microsoft.Maui.ApplicationModel.BrowserLaunchMode.SystemPreferred" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreferredControlColor">
@@ -93,9 +99,11 @@
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Preferred color of the controls on the browser.</summary>
+        <summary>
+            Gets or sets the preferred color of the controls on the in-app browser.
+            </summary>
         <value>Gets the color for controls.</value>
-        <remarks />
+        <remarks>This setting only applies to iOS.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreferredToolbarColor">
@@ -114,9 +122,11 @@
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Preferred color of the background toolbar.</summary>
+        <summary>
+            Gets or sets the preferred color of the toolbar background of the in-app browser.
+            </summary>
         <value>Gets the toolbar color.</value>
-        <remarks />
+        <remarks>This setting only applies to iOS and Android.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TitleMode">
@@ -135,9 +145,11 @@
         <ReturnType>Microsoft.Maui.ApplicationModel.BrowserTitleMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Preferred mode for the title display.</summary>
+        <summary>
+            Gets or sets the preferred mode for the title display.
+            </summary>
         <value>Gets the title display mode.</value>
-        <remarks />
+        <remarks>The default value is <see cref="F:Microsoft.Maui.ApplicationModel.BrowserTitleMode.Default" />. This setting only applies to Android.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,0 +1,92 @@
+<Type Name="RootComponentCollectionExtensions" FullName="Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponentCollectionExtensions">
+  <TypeSignature Language="C#" Value="public static class RootComponentCollectionExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit RootComponentCollectionExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponentCollectionExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module RootComponentCollectionExtensions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RootComponentCollectionExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type RootComponentCollectionExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.AspNetCore.Components.WebView.WindowsForms</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Provides a set of extension methods for modifying collections of <see cref="T:Microsoft.AspNetCore.Components.IComponent" /> objects.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add&lt;TComponent&gt;">
+      <MemberSignature Language="C#" Value="public static void Add&lt;TComponent&gt; (this Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponentsCollection components, string selector, System.Collections.Generic.IDictionary&lt;string,object?&gt;? parameters = default) where TComponent : Microsoft.AspNetCore.Components.IComponent;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add&lt;(class Microsoft.AspNetCore.Components.IComponent) TComponent&gt;(class Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponentsCollection components, string selector, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponentCollectionExtensions.Add``1(Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponentsCollection,System.String,System.Collections.Generic.IDictionary{System.String,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Add(Of TComponent As IComponent) (components As RootComponentsCollection, selector As String, Optional parameters As IDictionary(Of String, Object) = Nothing)" />
+      <MemberSignature Language="F#" Value="static member Add : Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponentsCollection * string * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; unit (requires 'Component :&gt; Microsoft.AspNetCore.Components.IComponent)" Usage="Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponentCollectionExtensions.Add (components, selector, parameters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.AspNetCore.Components.WebView.WindowsForms</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TComponent">
+          <Constraints>
+            <InterfaceName>Microsoft.AspNetCore.Components.IComponent</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="components" Type="Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponentsCollection" RefType="this" />
+        <Parameter Name="selector" Type="System.String" />
+        <Parameter Name="parameters" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TComponent">The <see cref="T:Microsoft.AspNetCore.Components.IComponent" /> to add to the collection.</typeparam>
+        <param name="components">The collection to which the component should be added.</param>
+        <param name="selector">The selector to which the component will be associated.</param>
+        <param name="parameters">The optional creation parameters for the component.</param>
+        <summary>
+            Adds the component specified by <typeparamref name="TComponent" /> to the collection specified by
+            <paramref name="components" /> to be associated with the selector specified by <paramref name="selector" />
+            and to be instantiated with the parameters specified by <paramref name="parameters" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public static void Remove (this Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponentsCollection components, string selector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Remove(class Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponentsCollection components, string selector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponentCollectionExtensions.Remove(Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponentsCollection,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Remove (components As RootComponentsCollection, selector As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void Remove(Microsoft::AspNetCore::Components::WebView::WindowsForms::RootComponentsCollection ^ components, System::String ^ selector);" />
+      <MemberSignature Language="F#" Value="static member Remove : Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponentsCollection * string -&gt; unit" Usage="Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponentCollectionExtensions.Remove (components, selector)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.AspNetCore.Components.WebView.WindowsForms</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="components" Type="Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponentsCollection" RefType="this" />
+        <Parameter Name="selector" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="components">The collection from which the component associated with the selector should be removed.</param>
+        <param name="selector">The selector associated with the component to be removed.</param>
+        <summary>
+            Removes the component associated with the specified <paramref name="selector" /> from the collection
+            specified by <paramref name="components" /> .
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
