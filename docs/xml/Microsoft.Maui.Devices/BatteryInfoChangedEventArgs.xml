@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Battery changed information.</summary>
+    <summary>
+            Event arguments containing the current reading of <see cref="T:Microsoft.Maui.Devices.IBattery" />.
+            </summary>
     <remarks>Returns the current information of the battery.</remarks>
   </Docs>
   <Members>
@@ -36,10 +38,12 @@
         <Parameter Name="source" Type="Microsoft.Maui.Devices.BatteryPowerSource" />
       </Parameters>
       <Docs>
-        <param name="level">The current level of the batter.</param>
-        <param name="state">The state of the battery</param>
-        <param name="source">The source of the battery</param>
-        <summary>The public constructor.</summary>
+        <param name="level">The current level of the battery.</param>
+        <param name="state">The state of the battery.</param>
+        <param name="source">The source of the battery.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Devices.BatteryInfoChangedEventArgs" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,7 +63,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current charge level of the device from 0.0 to 1.0.</summary>
+        <summary>
+            Gets the current charge level of the device from 0.0 to 1.0.
+            </summary>
         <value>Level of charge.</value>
         <remarks />
       </Docs>
@@ -80,7 +86,9 @@
         <ReturnType>Microsoft.Maui.Devices.BatteryPowerSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current power source for the device.</summary>
+        <summary>
+            Gets the current power source for the device.
+            </summary>
         <value>Power source, or unknown</value>
         <remarks />
       </Docs>
@@ -101,7 +109,9 @@
         <ReturnType>Microsoft.Maui.Devices.BatteryState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the charging state of the device if it can be determined.</summary>
+        <summary>
+            Gets the charging state of the device.
+            </summary>
         <value>Battery state, or unknown.</value>
         <remarks />
       </Docs>
@@ -123,8 +133,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Outputs the data as a string.</summary>
-        <returns />
+        <summary>
+            Returns a string representation of this instance of <see cref="T:Microsoft.Maui.Devices.BatteryInfoChangedEventArgs" />.
+            </summary>
+        <returns>A string representation of this instance in the format of <c>ChargeLevel: {value}, State: {value}, PowerSource: {value}</c>.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

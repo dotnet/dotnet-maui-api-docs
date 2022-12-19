@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>API class for working with contacts on the device.</summary>
+    <summary>
+            The Contacts API lets a user pick a contact and retrieve information about it.
+            </summary>
     <remarks />
   </Docs>
   <Members>
@@ -34,7 +36,9 @@
         <ReturnType>Microsoft.Maui.ApplicationModel.Communication.IContacts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Provides the default implementation for static usage of this API.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -57,9 +61,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">A token for cancelling the operation</param>
-        <summary>Gets a collection of all the contacts on the device.</summary>
-        <returns>Returns a collection of contacts on the device.</returns>
+        <param name="cancellationToken">A token that can be used for cancelling the operation.</param>
+        <summary>
+            Gets a collection of all the contacts on the device.
+            </summary>
+        <returns>A collection of contacts on the device.</returns>
         <remarks />
       </Docs>
     </Member>
@@ -80,8 +86,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Starts file picker for selecting a single contact.</summary>
-        <returns>Returns a single contact, or null if the user cancelled the operation.</returns>
+        <summary>
+            Opens the operating system's default UI for picking a contact from the device.
+            </summary>
+        <returns>A single contact, or <see langword="null" /> if the user cancelled the operation.</returns>
         <remarks />
       </Docs>
     </Member>

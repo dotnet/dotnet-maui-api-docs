@@ -13,8 +13,10 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Launch type of the browser.</summary>
-    <remarks>Recommended to use the SystemBrowser as it is the default and falls back to UriLauncher.</remarks>
+    <summary>
+            Launch type of the browser.
+            </summary>
+    <remarks>It's recommended to use the <see cref="F:Microsoft.Maui.ApplicationModel.BrowserLaunchMode.SystemPreferred" /> as it is the default and gracefully falls back if needed.</remarks>
   </Docs>
   <Members>
     <Member MemberName="External">
@@ -54,7 +56,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Launch the optimized system browser and stay inside of your application. (Chrome Custom Tabs and SFSafariViewController).</summary>
+        <summary>Launch the optimized system browser and stay inside of your application. Chrome Custom Tabs on Android and SFSafariViewController on iOS.</summary>
       </Docs>
     </Member>
   </Members>

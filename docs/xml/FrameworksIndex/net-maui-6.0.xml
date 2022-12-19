@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Framework Name="net-maui-6.0">
   <Assemblies>
+    <Assembly Name="Microsoft.AspNetCore.Components.WebView.Maui" Version="1.0.0.0" />
+    <Assembly Name="Microsoft.AspNetCore.Components.WebView.WindowsForms" Version="1.0.0.0" />
+    <Assembly Name="Microsoft.AspNetCore.Components.WebView.Wpf" Version="1.0.0.0" />
     <Assembly Name="Microsoft.Maui.Controls.Compatibility" Version="1.0.0.0" />
     <Assembly Name="Microsoft.Maui.Controls" Version="1.0.0.0" />
     <Assembly Name="Microsoft.Maui.Controls.Xaml" Version="1.0.0.0" />
@@ -10,6 +13,150 @@
     <Assembly Name="Microsoft.Maui.Graphics.Skia" Version="1.0.0.0" />
     <Assembly Name="Microsoft.Maui.Graphics.Text.Markdig" Version="1.0.0.0" />
   </Assemblies>
+  <Namespace Name="Microsoft.AspNetCore.Components.WebView">
+    <Type Name="Microsoft.AspNetCore.Components.WebView.BlazorWebViewInitializedEventArgs" Id="T:Microsoft.AspNetCore.Components.WebView.BlazorWebViewInitializedEventArgs">
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.BlazorWebViewInitializedEventArgs.#ctor" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.BlazorWebViewInitializedEventArgs.WebView" />
+    </Type>
+    <Type Name="Microsoft.AspNetCore.Components.WebView.BlazorWebViewInitializingEventArgs" Id="T:Microsoft.AspNetCore.Components.WebView.BlazorWebViewInitializingEventArgs">
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.BlazorWebViewInitializingEventArgs.#ctor" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.BlazorWebViewInitializingEventArgs.BrowserExecutableFolder" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.BlazorWebViewInitializingEventArgs.EnvironmentOptions" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.BlazorWebViewInitializingEventArgs.UserDataFolder" />
+    </Type>
+    <Type Name="Microsoft.AspNetCore.Components.WebView.UrlLoadingEventArgs" Id="T:Microsoft.AspNetCore.Components.WebView.UrlLoadingEventArgs">
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.UrlLoadingEventArgs.Url" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.UrlLoadingEventArgs.UrlLoadingStrategy" />
+    </Type>
+    <Type Name="Microsoft.AspNetCore.Components.WebView.UrlLoadingStrategy" Id="T:Microsoft.AspNetCore.Components.WebView.UrlLoadingStrategy">
+      <Member Id="F:Microsoft.AspNetCore.Components.WebView.UrlLoadingStrategy.CancelLoad" />
+      <Member Id="F:Microsoft.AspNetCore.Components.WebView.UrlLoadingStrategy.OpenExternally" />
+      <Member Id="F:Microsoft.AspNetCore.Components.WebView.UrlLoadingStrategy.OpenInWebView" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.AspNetCore.Components.WebView.Maui">
+    <Type Name="Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView" Id="T:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView">
+      <Member Id="E:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView.BlazorWebViewInitialized" />
+      <Member Id="E:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView.BlazorWebViewInitializing" />
+      <Member Id="E:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView.UrlLoading" />
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView.#ctor" />
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView.CreateFileProvider(System.String)" />
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView.Microsoft#AspNetCore#Components#WebView#Maui#IBlazorWebView#BlazorWebViewInitialized(Microsoft.AspNetCore.Components.WebView.BlazorWebViewInitializedEventArgs)" />
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView.Microsoft#AspNetCore#Components#WebView#Maui#IBlazorWebView#BlazorWebViewInitializing(Microsoft.AspNetCore.Components.WebView.BlazorWebViewInitializingEventArgs)" />
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView.Microsoft#AspNetCore#Components#WebView#Maui#IBlazorWebView#UrlLoading(Microsoft.AspNetCore.Components.WebView.UrlLoadingEventArgs)" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView.HostPage" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView.Microsoft#AspNetCore#Components#WebView#Maui#IBlazorWebView#JSComponents" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView.RootComponents" />
+    </Type>
+    <Type Name="Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler" Id="T:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler">
+      <Member Id="F:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler.BlazorWebViewMapper" />
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler.#ctor" />
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler.#ctor(Microsoft.Maui.PropertyMapper)" />
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler.CreateFileProvider(System.String)" />
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler.CreatePlatformView" />
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler.MapHostPage(Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler,Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView)" />
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler.MapRootComponents(Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler,Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView)" />
+    </Type>
+    <Type Name="Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView" Id="T:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView">
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView.BlazorWebViewInitialized(Microsoft.AspNetCore.Components.WebView.BlazorWebViewInitializedEventArgs)" />
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView.BlazorWebViewInitializing(Microsoft.AspNetCore.Components.WebView.BlazorWebViewInitializingEventArgs)" />
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView.CreateFileProvider(System.String)" />
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView.UrlLoading(Microsoft.AspNetCore.Components.WebView.UrlLoadingEventArgs)" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView.HostPage" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView.JSComponents" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView.RootComponents" />
+    </Type>
+    <Type Name="Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder" Id="T:Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder">
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder.Services" />
+    </Type>
+    <Type Name="Microsoft.AspNetCore.Components.WebView.Maui.RootComponent" Id="T:Microsoft.AspNetCore.Components.WebView.Maui.RootComponent">
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Maui.RootComponent.#ctor" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.Maui.RootComponent.ComponentType" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.Maui.RootComponent.Parameters" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.Maui.RootComponent.Selector" />
+    </Type>
+    <Type Name="Microsoft.AspNetCore.Components.WebView.Maui.RootComponentsCollection" Id="T:Microsoft.AspNetCore.Components.WebView.Maui.RootComponentsCollection">
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Maui.RootComponentsCollection.#ctor(Microsoft.AspNetCore.Components.Web.JSComponentConfigurationStore)" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.Maui.RootComponentsCollection.JSComponents" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.AspNetCore.Components.WebView.WindowsForms">
+    <Type Name="Microsoft.AspNetCore.Components.WebView.WindowsForms.BlazorWebView" Id="T:Microsoft.AspNetCore.Components.WebView.WindowsForms.BlazorWebView">
+      <Member Id="F:Microsoft.AspNetCore.Components.WebView.WindowsForms.BlazorWebView.BlazorWebViewInitialized" />
+      <Member Id="F:Microsoft.AspNetCore.Components.WebView.WindowsForms.BlazorWebView.BlazorWebViewInitializing" />
+      <Member Id="F:Microsoft.AspNetCore.Components.WebView.WindowsForms.BlazorWebView.UrlLoading" />
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.WindowsForms.BlazorWebView.#ctor" />
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.WindowsForms.BlazorWebView.CreateControlsInstance" />
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.WindowsForms.BlazorWebView.CreateFileProvider(System.String)" />
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.WindowsForms.BlazorWebView.Dispose(System.Boolean)" />
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.WindowsForms.BlazorWebView.OnCreateControl" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.WindowsForms.BlazorWebView.HostPage" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.WindowsForms.BlazorWebView.RootComponents" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.WindowsForms.BlazorWebView.Services" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.WindowsForms.BlazorWebView.WebView" />
+    </Type>
+    <Type Name="Microsoft.AspNetCore.Components.WebView.WindowsForms.IWindowsFormsBlazorWebViewBuilder" Id="T:Microsoft.AspNetCore.Components.WebView.WindowsForms.IWindowsFormsBlazorWebViewBuilder">
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.WindowsForms.IWindowsFormsBlazorWebViewBuilder.Services" />
+    </Type>
+    <Type Name="Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponent" Id="T:Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponent">
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponent.#ctor(System.String,System.Type,System.Collections.Generic.IDictionary{System.String,System.Object})" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponent.ComponentType" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponent.Parameters" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponent.Selector" />
+    </Type>
+    <Type Name="Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponentCollectionExtensions" Id="T:Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponentCollectionExtensions">
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponentCollectionExtensions.Add``1(Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponentsCollection,System.String,System.Collections.Generic.IDictionary{System.String,System.Object})" />
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponentCollectionExtensions.Remove(Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponentsCollection,System.String)" />
+    </Type>
+    <Type Name="Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponentsCollection" Id="T:Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponentsCollection">
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponentsCollection.#ctor" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.WindowsForms.RootComponentsCollection.JSComponents" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.AspNetCore.Components.WebView.Wpf">
+    <Type Name="Microsoft.AspNetCore.Components.WebView.Wpf.BlazorWebView" Id="T:Microsoft.AspNetCore.Components.WebView.Wpf.BlazorWebView">
+      <Member Id="F:Microsoft.AspNetCore.Components.WebView.Wpf.BlazorWebView.BlazorWebViewInitializedProperty" />
+      <Member Id="F:Microsoft.AspNetCore.Components.WebView.Wpf.BlazorWebView.BlazorWebViewInitializingProperty" />
+      <Member Id="F:Microsoft.AspNetCore.Components.WebView.Wpf.BlazorWebView.HostPageProperty" />
+      <Member Id="F:Microsoft.AspNetCore.Components.WebView.Wpf.BlazorWebView.RootComponentsProperty" />
+      <Member Id="F:Microsoft.AspNetCore.Components.WebView.Wpf.BlazorWebView.ServicesProperty" />
+      <Member Id="F:Microsoft.AspNetCore.Components.WebView.Wpf.BlazorWebView.UrlLoadingProperty" />
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Wpf.BlazorWebView.#ctor" />
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Wpf.BlazorWebView.CreateFileProvider(System.String)" />
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Wpf.BlazorWebView.DisposeAsync" />
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Wpf.BlazorWebView.DisposeAsyncCore" />
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Wpf.BlazorWebView.OnApplyTemplate" />
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Wpf.BlazorWebView.OnInitialized(System.EventArgs)" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.Wpf.BlazorWebView.BlazorWebViewInitialized" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.Wpf.BlazorWebView.BlazorWebViewInitializing" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.Wpf.BlazorWebView.HostPage" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.Wpf.BlazorWebView.RootComponents" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.Wpf.BlazorWebView.Services" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.Wpf.BlazorWebView.UrlLoading" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.Wpf.BlazorWebView.WebView" />
+    </Type>
+    <Type Name="Microsoft.AspNetCore.Components.WebView.Wpf.IWpfBlazorWebViewBuilder" Id="T:Microsoft.AspNetCore.Components.WebView.Wpf.IWpfBlazorWebViewBuilder">
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.Wpf.IWpfBlazorWebViewBuilder.Services" />
+    </Type>
+    <Type Name="Microsoft.AspNetCore.Components.WebView.Wpf.RootComponent" Id="T:Microsoft.AspNetCore.Components.WebView.Wpf.RootComponent">
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Wpf.RootComponent.#ctor" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.Wpf.RootComponent.ComponentType" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.Wpf.RootComponent.Parameters" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.Wpf.RootComponent.Selector" />
+    </Type>
+    <Type Name="Microsoft.AspNetCore.Components.WebView.Wpf.RootComponentsCollection" Id="T:Microsoft.AspNetCore.Components.WebView.Wpf.RootComponentsCollection">
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Wpf.RootComponentsCollection.#ctor" />
+      <Member Id="P:Microsoft.AspNetCore.Components.WebView.Wpf.RootComponentsCollection.JSComponents" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Extensions.DependencyInjection">
+    <Type Name="Microsoft.Extensions.DependencyInjection.BlazorWebViewServiceCollectionExtensions" Id="T:Microsoft.Extensions.DependencyInjection.BlazorWebViewServiceCollectionExtensions">
+      <Member Id="M:Microsoft.Extensions.DependencyInjection.BlazorWebViewServiceCollectionExtensions.AddBlazorWebViewDeveloperTools(Microsoft.Extensions.DependencyInjection.IServiceCollection)" />
+      <Member Id="M:Microsoft.Extensions.DependencyInjection.BlazorWebViewServiceCollectionExtensions.AddMauiBlazorWebView(Microsoft.Extensions.DependencyInjection.IServiceCollection)" />
+      <Member Id="M:Microsoft.Extensions.DependencyInjection.BlazorWebViewServiceCollectionExtensions.AddWindowsFormsBlazorWebView(Microsoft.Extensions.DependencyInjection.IServiceCollection)" />
+      <Member Id="M:Microsoft.Extensions.DependencyInjection.BlazorWebViewServiceCollectionExtensions.AddWpfBlazorWebView(Microsoft.Extensions.DependencyInjection.IServiceCollection)" />
+    </Type>
+  </Namespace>
   <Namespace Name="Microsoft.Maui.Accessibility">
     <Type Name="Microsoft.Maui.Accessibility.ISemanticScreenReader" Id="T:Microsoft.Maui.Accessibility.ISemanticScreenReader">
       <Member Id="M:Microsoft.Maui.Accessibility.ISemanticScreenReader.Announce(System.String)" />
