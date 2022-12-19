@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The current connectivity information from the change event.</summary>
+    <summary>
+            The current connectivity information from the change event.
+            </summary>
     <remarks />
   </Docs>
   <Members>
@@ -35,9 +37,11 @@
         <Parameter Name="connectionProfiles" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.Networking.ConnectionProfile&gt;" />
       </Parameters>
       <Docs>
-        <param name="access">The current access of the network</param>
-        <param name="connectionProfiles">The connection profiles of the events changing</param>
-        <summary>Public constructor</summary>
+        <param name="access">The current access of the network.</param>
+        <param name="connectionProfiles">The connection profiles changing correspondingto this event.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Networking.ConnectivityChangedEventArgs" /> class.
+            </summary>
         <remarks />
       </Docs>
     </Member>
@@ -57,7 +61,9 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.Networking.ConnectionProfile&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the active connectivity types for the device.</summary>
+        <summary>
+            Gets the active connectivity profiles for the device.
+            </summary>
         <value>List of all connection profiles.</value>
         <remarks />
       </Docs>
@@ -78,9 +84,14 @@
         <ReturnType>Microsoft.Maui.Networking.NetworkAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current state of network access. Does not guarantee full access to the internet.</summary>
+        <summary>
+            Gets the current state of network access.
+            </summary>
         <value>The current network access state.</value>
-        <remarks />
+        <remarks>
+          <para>Even when <see cref="F:Microsoft.Maui.Networking.NetworkAccess.Internet" /> is returned, full internet access is not guaranteed.</para>
+          <para>Can throw <see cref="T:Microsoft.Maui.ApplicationModel.PermissionException" /> on Android if <c>ACCESS_NETWORK_STATE</c> is not set in manifest.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -100,8 +111,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>The string representation of the event.</summary>
-        <returns />
+        <summary>
+            Returns a string representation of the current values of <see cref="T:Microsoft.Maui.Networking.ConnectivityChangedEventArgs" />.
+            </summary>
+        <returns>A string representation of this instance in the format of <c>NetworkAccess: {value}, ConnectionProfiles: [{value1}, {value2}]</c>.</returns>
         <remarks />
       </Docs>
     </Member>

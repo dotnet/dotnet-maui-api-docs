@@ -25,8 +25,8 @@
   </Attributes>
   <Docs>
     <summary>
-      <para>Contains the pressure measured by the user's device.</para>
-    </summary>
+            Contains the pressure measured by the user's device barometer.
+            </summary>
     <remarks />
   </Docs>
   <Members>
@@ -46,8 +46,10 @@
         <Parameter Name="pressure" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="pressure">The current pressure</param>
-        <summary>Public constructor for barometer data.</summary>
+        <param name="pressure">The current pressure reading.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Devices.Sensors.BarometerData" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,9 +75,13 @@
         <Parameter Name="other" Type="Microsoft.Maui.Devices.Sensors.BarometerData" />
       </Parameters>
       <Docs>
-        <param name="other">Other object to compare</param>
-        <summary>If equal to another object</summary>
-        <returns>If equal</returns>
+        <param name="other">
+          <see cref="T:Microsoft.Maui.Devices.Sensors.BarometerData" /> object to compare with.</param>
+        <summary>
+            Compares the underlying <see cref="P:Microsoft.Maui.Devices.Sensors.BarometerData.PressureInHectopascals" /> instances.
+            </summary>
+        <returns>
+          <see langword="true" /> if they are equal, otherwise <see langword="false" />.</returns>
         <remarks />
       </Docs>
     </Member>
@@ -98,9 +104,12 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">Object to compare</param>
-        <summary>If equal to another object</summary>
-        <returns>If equal</returns>
+        <param name="obj">Object to compare with.</param>
+        <summary>
+            Compares the underlying <see cref="T:Microsoft.Maui.Devices.Sensors.BarometerData" /> instances.
+            </summary>
+        <returns>
+          <see langword="true" /> if they are equal, otherwise <see langword="false" />.</returns>
         <remarks />
       </Docs>
     </Member>
@@ -146,10 +155,13 @@
         <Parameter Name="right" Type="Microsoft.Maui.Devices.Sensors.BarometerData" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">Left to compare.</param>
+        <param name="right">Left to compare.</param>
+        <summary>
+            Equality operator for equals.
+            </summary>
+        <returns>
+          <see langword="true" /> if objects are equal, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,10 +185,13 @@
         <Parameter Name="right" Type="Microsoft.Maui.Devices.Sensors.BarometerData" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">Left to compare.</param>
+        <param name="right">Left to compare.</param>
+        <summary>
+            Inequality operator.
+            </summary>
+        <returns>
+          <see langword="true" /> if objects are not equal, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -196,7 +211,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current pressure in hectopascals.</summary>
+        <summary>
+            Gets the current pressure in hectopascals.
+            </summary>
         <value />
         <remarks>To be added.</remarks>
       </Docs>
@@ -218,8 +235,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Outputs the data as a string.</summary>
-        <returns />
+        <summary>
+            Returns a string representation of the current values of <see cref="P:Microsoft.Maui.Devices.Sensors.BarometerData.PressureInHectopascals" />.
+            </summary>
+        <returns>A string representation of this instance in the format of <c>PressureInHectopascals: {value}</c>.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

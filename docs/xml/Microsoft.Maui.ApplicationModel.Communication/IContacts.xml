@@ -11,7 +11,9 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            The Contacts API lets a user pick a contact and retrieve information about it.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,9 +35,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="cancellationToken">A token that can be used for cancelling the operation.</param>
+        <summary>
+            Gets a collection of all the contacts on the device.
+            </summary>
+        <returns>A collection of contacts on the device.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,8 +60,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Opens the operating system's default UI for picking a contact from the device.
+            </summary>
+        <returns>A single contact, or <see langword="null" /> if the user cancelled the operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

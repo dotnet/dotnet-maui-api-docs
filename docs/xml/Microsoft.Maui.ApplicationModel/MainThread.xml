@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Main Thread helpers.</summary>
+    <summary>
+            The MainThread class allows applications to run code on the main thread of execution, and to determine if a particular block of code is currently running on the main thread.
+            </summary>
     <remarks>Main Thread helpers.</remarks>
   </Docs>
   <Members>
@@ -37,8 +39,10 @@
         <Parameter Name="action" Type="System.Action" />
       </Parameters>
       <Docs>
-        <param name="action">Action to execute.</param>
-        <summary>Invokes an action on the main thread of the application.</summary>
+        <param name="action">The action to invoke on the main thread.</param>
+        <summary>
+            Invokes an action on the main thread of the application.
+            </summary>
         <remarks />
       </Docs>
     </Member>
@@ -59,8 +63,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the main thread synchonization context</summary>
-        <returns>The syncrhonization context for the main thread</returns>
+        <summary>
+            Gets the main thread synchonization context.
+            </summary>
+        <returns>The synchronization context for the main thread.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,9 +89,11 @@
         <Parameter Name="action" Type="System.Action" />
       </Parameters>
       <Docs>
-        <param name="action">Action to invoke</param>
-        <summary>Invoke the main thread aysnc</summary>
-        <returns>A task that can be awaited</returns>
+        <param name="action">The action to invoke on the main thread.</param>
+        <summary>
+            Invokes an action on the main thread of the application asynchronously.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,9 +116,11 @@
         <Parameter Name="funcTask" Type="System.Func&lt;System.Threading.Tasks.Task&gt;" />
       </Parameters>
       <Docs>
-        <param name="funcTask">A function task to execute</param>
-        <summary>Invoke the main thread aysnc</summary>
-        <returns>A task that can be awaited</returns>
+        <param name="funcTask">The function task to execute on the main thread.</param>
+        <summary>
+            Invokes a function on the main thread of the application asynchronously.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object that can be awaited.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,10 +146,12 @@
         <Parameter Name="funcTask" Type="System.Func&lt;System.Threading.Tasks.Task&lt;T&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="funcTask">A function task to execute</param>
-        <summary>Invoke the main thread aysnc</summary>
-        <returns>A task that can be awaited</returns>
+        <typeparam name="T">Type of the object to be returned.</typeparam>
+        <param name="funcTask">The function task to execute on the main thread.</param>
+        <summary>
+            Invokes a function on the main thread of the application asynchronously.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object that can be awaited to capture the result object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,10 +177,12 @@
         <Parameter Name="func" Type="System.Func&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="func">A function to execute</param>
-        <summary>Invoke the main thread aysnc</summary>
-        <returns>A task that can be awaited</returns>
+        <typeparam name="T">Type of the object to be returned.</typeparam>
+        <param name="func">The function task to execute on the main thread.</param>
+        <summary>
+            Invokes a function on the main thread of the application asynchronously.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object that can be awaited to capture the result object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,7 +202,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets if it is the current main UI thread.</summary>
+        <summary>
+            True if the current thread is the UI thread.
+            </summary>
         <value>If main thread.</value>
         <remarks />
       </Docs>

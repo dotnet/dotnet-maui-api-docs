@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Methods and properties for battery and charging information of the device.</summary>
+    <summary>
+            Methods and properties for battery and charging information of the device.
+            </summary>
     <remarks>
       <para>Platform specific remarks:</para>
       <para>- Android: Battery_Stats permission must be set in manifest.</para>
@@ -39,7 +41,9 @@
         <ReturnType>System.EventHandler&lt;Microsoft.Maui.Devices.BatteryInfoChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Event trigger when battery properties have changed.</summary>
+        <summary>
+            Event trigger when battery properties have changed.
+            </summary>
         <remarks />
       </Docs>
     </Member>
@@ -59,11 +63,13 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current charge level of the device from 0.0 to 1.0.</summary>
+        <summary>
+            Gets the current charge level of the device from 0.0 to 1.0.
+            </summary>
         <value>
           <para>Level of charge. Returns -1 if no battery exists.</para>
         </value>
-        <remarks />
+        <remarks>Returns -1 if no battery exists.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -82,7 +88,9 @@
         <ReturnType>Microsoft.Maui.Devices.IBattery</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Provides the default implementation for static usage of this API.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -103,7 +111,9 @@
         <ReturnType>Microsoft.Maui.Devices.EnergySaverStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current energy saver status of the device.</summary>
+        <summary>
+            Gets the current energy saver status of the device.
+            </summary>
         <value>The current status of energy saver mode.</value>
         <remarks />
       </Docs>
@@ -124,7 +134,9 @@
         <ReturnType>System.EventHandler&lt;Microsoft.Maui.Devices.EnergySaverStatusChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Event that is triggered when energy saver status changes.</summary>
+        <summary>
+            Occurs when the energy saver status changes.
+            </summary>
         <remarks />
       </Docs>
     </Member>
@@ -144,7 +156,9 @@
         <ReturnType>Microsoft.Maui.Devices.BatteryPowerSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current power source for the device.</summary>
+        <summary>
+            Gets the current power source for the device.
+            </summary>
         <value>
           <para>Power source, or uknown.</para>
         </value>
@@ -167,7 +181,9 @@
         <ReturnType>Microsoft.Maui.Devices.BatteryState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the charging state of the device if it can be determined.</summary>
+        <summary>
+            Gets the charging state of the device.
+            </summary>
         <value>Battery state, or unknown.</value>
         <remarks />
       </Docs>

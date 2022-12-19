@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            The AppActions API lets you create and respond to app shortcuts from the app icon.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,7 +36,9 @@
         <ReturnType>Microsoft.Maui.ApplicationModel.IAppActions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Provides the default implementation for static usage of this API.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -56,8 +60,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Retrieves all the currently available <see cref="T:Microsoft.Maui.ApplicationModel.AppAction" /> instances.
+            </summary>
+        <returns>A collection of <see cref="T:Microsoft.Maui.ApplicationModel.AppAction" /> available for this app.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,7 +83,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets if app actions are supported on this device.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -98,7 +106,9 @@
         <ReturnType>System.EventHandler&lt;Microsoft.Maui.ApplicationModel.AppActionEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when an app action is activated.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,9 +138,12 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="actions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="actions">
+          <see cref="T:Microsoft.Maui.ApplicationModel.AppAction" /> objects that will be set for this app.</param>
+        <summary>
+            Sets the app actions that will be available for this app.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,9 +166,11 @@
         <Parameter Name="actions" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.ApplicationModel.AppAction&gt;" />
       </Parameters>
       <Docs>
-        <param name="actions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="actions">A collection of <see cref="T:Microsoft.Maui.ApplicationModel.AppAction" /> that is to be set for this app.</param>
+        <summary>
+            Sets the app actions that will be available for this app.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

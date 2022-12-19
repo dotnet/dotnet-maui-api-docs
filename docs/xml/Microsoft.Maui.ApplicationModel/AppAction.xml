@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            The <see cref="T:Microsoft.Maui.ApplicationModel.AppAction" /> class lets you create and respond to app shortcuts from the app icon.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,12 +38,15 @@
         <Parameter Name="icon" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="id">To be added.</param>
-        <param name="title">To be added.</param>
-        <param name="subtitle">To be added.</param>
-        <param name="icon">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="id">A unique identifier used to respond to the action tap.</param>
+        <param name="title">The visible title to display on the app icon.</param>
+        <param name="subtitle">If supported, a sub-title to display under the title.</param>
+        <param name="icon">An icon that is shown next to the title.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.ApplicationModel.AppAction" /> class.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when either <paramref name="id" /> or <paramref name="title" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -60,7 +65,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the unique identifier used to respond to the action tap.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -81,9 +88,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets a sub-title to display under the <see cref="P:Microsoft.Maui.ApplicationModel.AppAction.Title" />.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Not supported on all platforms.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -102,7 +111,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the visible title to display on the app icon.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
