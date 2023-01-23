@@ -11,7 +11,9 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Provides a way to get the current location of the device.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,9 +34,14 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>
+            Returns the last known location of the device.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Maui.Devices.Sensors.Location" /> object containing recent location information or <see langword="null" /> if no location is known.</returns>
+        <remarks>
+          <para>The location permissions will be requested at runtime if needed. You might still need to declare something in your app manifest.</para>
+          <para>This location may be a recently cached location.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLocationAsync">
@@ -57,11 +64,13 @@
         <Parameter Name="cancelToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="cancelToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="request">The criteria to use when determining the location of the device.</param>
+        <param name="cancelToken">A token that can be used for cancelling the operation.</param>
+        <summary>
+            Returns the current location of the device.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Maui.Devices.Sensors.Location" /> object containing current location information or <see langword="null" /> if no location could be determined.</returns>
+        <remarks>The location permissions will be requested at runtime if needed. You might still need to declare something in your app manifest.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The latitude, longitude, altitude and time information reported by the device.</summary>
+    <summary>
+            Represents a physical location with the latitude, longitude, altitude and time information reported by the device.
+            </summary>
     <remarks />
   </Docs>
   <Members>
@@ -31,7 +33,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Default constructor.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Devices.Sensors.Location" /> class.
+            </summary>
         <remarks />
       </Docs>
     </Member>
@@ -51,9 +55,12 @@
         <Parameter Name="point" Type="Microsoft.Maui.Devices.Sensors.Location" />
       </Parameters>
       <Docs>
-        <param name="point">Location to copy values from.</param>
-        <summary>Copy constructor.</summary>
+        <param name="point">A <see cref="T:Microsoft.Maui.Devices.Sensors.Location" /> instance that will be used to clone.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Devices.Sensors.Location" /> class from an existing instance.
+            </summary>
         <remarks />
+        <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="point" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -75,7 +82,9 @@
       <Docs>
         <param name="latitude">Default latitude for location.</param>
         <param name="longitude">Default longitude for location.</param>
-        <summary>Parametrized constructor with latitude and longitude parameters.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Devices.Sensors.Location" /> class with the specified latitude and longitude.
+            </summary>
         <remarks />
       </Docs>
     </Member>
@@ -99,8 +108,10 @@
       <Docs>
         <param name="latitude">Default latitude for location.</param>
         <param name="longitude">Default longitude for location.</param>
-        <param name="timestamp">Timestamp for the location (Utc based).</param>
-        <summary>Parametrized constructor with latitude, longitude and timestamp parameters.</summary>
+        <param name="timestamp">UTC timestamp for the location.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Devices.Sensors.Location" /> class with the specified latitude, longitude, and timestamp.
+            </summary>
         <remarks />
       </Docs>
     </Member>
@@ -124,8 +135,10 @@
       <Docs>
         <param name="latitude">Default latitude for location.</param>
         <param name="longitude">Default longitude for location.</param>
-        <param name="altitude">To be added.</param>
-        <summary>Parametrized constructor with latitude, longitude and altitude parameters.</summary>
+        <param name="altitude">Default altitude for location.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Devices.Sensors.Location" /> class with the specified latitude, longitude, and altitude.
+            </summary>
         <remarks />
       </Docs>
     </Member>
@@ -145,7 +158,9 @@
         <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the horizontal accuracy (in meters) of the location.</summary>
+        <summary>
+            Gets or sets the horizontal accuracy (in meters) of the location.
+            </summary>
         <value>The horizontal accuracy of the location.</value>
         <remarks />
       </Docs>
@@ -166,9 +181,11 @@
         <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the altitude in meters (if available) in a reference system which is specified by AltitudeReferenceSystem.</summary>
+        <summary>
+            Gets the altitude in meters (if available) in a reference system which is specified by <see cref="P:Microsoft.Maui.Devices.Sensors.Location.AltitudeReferenceSystem" />.
+            </summary>
         <value>Altitude of location if available.</value>
-        <remarks>Returns 0 or no value if not available.</remarks>
+        <remarks>Returns 0 or <see langword="null" /> if not available.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AltitudeReferenceSystem">
@@ -187,7 +204,9 @@
         <ReturnType>Microsoft.Maui.Devices.Sensors.AltitudeReferenceSystem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the reference system in which the altitude value is given.</summary>
+        <summary>
+            Specifies the reference system in which the <see cref="P:Microsoft.Maui.Devices.Sensors.Location.Altitude" /> value is expressed.
+            </summary>
         <value>The altitude reference system.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -213,10 +232,12 @@
         <Parameter Name="units" Type="Microsoft.Maui.Devices.Sensors.DistanceUnits" />
       </Parameters>
       <Docs>
-        <param name="locationStart">Start location to calculate from.</param>
-        <param name="locationEnd">End location to calculate from.</param>
-        <param name="units">Units to return.</param>
-        <summary>Calculate distance between two locations.</summary>
+        <param name="locationStart">The start location.</param>
+        <param name="locationEnd">The end location.</param>
+        <param name="units">The unit in which the result distance is returned.</param>
+        <summary>
+            Calculate distance between two locations.
+            </summary>
         <returns>Distance between two locations in the unit selected.</returns>
         <remarks />
       </Docs>
@@ -243,12 +264,14 @@
         <Parameter Name="units" Type="Microsoft.Maui.Devices.Sensors.DistanceUnits" />
       </Parameters>
       <Docs>
-        <param name="locationStart">Start location to calculate from.</param>
-        <param name="latitudeEnd">End latitude to calculate from.</param>
-        <param name="longitudeEnd">End longitude to calculate from.</param>
-        <param name="units">Unit to use.</param>
-        <summary>Calculate distance between two locations.</summary>
-        <returns>Distance calculated.</returns>
+        <param name="locationStart">The start location.</param>
+        <param name="latitudeEnd">Latitude coordinate of the end location.</param>
+        <param name="longitudeEnd">Longitude coordinate of the end location.</param>
+        <param name="units">The unit in which the result distance is returned.</param>
+        <summary>
+            Calculate distance between two locations.
+            </summary>
+        <returns>Distance between two locations in the unit selected.</returns>
         <remarks />
       </Docs>
     </Member>
@@ -274,12 +297,14 @@
         <Parameter Name="units" Type="Microsoft.Maui.Devices.Sensors.DistanceUnits" />
       </Parameters>
       <Docs>
-        <param name="latitudeStart">Start latitude to calculate from.</param>
-        <param name="longitudeStart">Start longitude to calculate from.</param>
-        <param name="locationEnd">End location to calculate from.</param>
-        <param name="units">Unit to return.</param>
-        <summary>Calculate distance between two locations.</summary>
-        <returns>Distance calculated.</returns>
+        <param name="latitudeStart">Latitude coordinate of the starting location.</param>
+        <param name="longitudeStart">Longitude coordinate of the starting location.</param>
+        <param name="locationEnd">The end location.</param>
+        <param name="units">The unit in which the result distance is returned.</param>
+        <summary>
+            Calculate distance between two locations.
+            </summary>
+        <returns>Distance between two locations in the unit selected.</returns>
         <remarks />
       </Docs>
     </Member>
@@ -306,12 +331,14 @@
         <Parameter Name="units" Type="Microsoft.Maui.Devices.Sensors.DistanceUnits" />
       </Parameters>
       <Docs>
-        <param name="latitudeStart">Start latitude to calculate from.</param>
-        <param name="longitudeStart">Start longitude to calculate from.</param>
-        <param name="latitudeEnd">End latitude to calculate from.</param>
-        <param name="longitudeEnd">End longitude to calculate from.</param>
-        <param name="units">Units to return.</param>
-        <summary>Calculate distance between two locations.</summary>
+        <param name="latitudeStart">Latitude coordinate of the starting location.</param>
+        <param name="longitudeStart">Longitude coordinate of the starting location.</param>
+        <param name="latitudeEnd">Latitude coordinate of the end location.</param>
+        <param name="longitudeEnd">Longitude coordinate of the end location.</param>
+        <param name="units">The unit in which the result distance is returned.</param>
+        <summary>
+            Calculate distance between two <see cref="T:Microsoft.Maui.Devices.Sensors.Location" /> instances.
+            </summary>
         <returns>Distance between two locations in the unit selected.</returns>
         <remarks />
       </Docs>
@@ -332,13 +359,11 @@
         <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Degrees relative to true north.</summary>
+        <summary>
+            Gets or sets the current degrees relative to true north at the time when this location was determined.
+            </summary>
         <value>0..360 in degrees relative to true north. null if unavailable.</value>
-        <remarks>
-          <para>
-          Requires a high accuracy query of location and may not be returned by Geolocation.GetLastKnownLocationAsync 
-          </para>
-        </remarks>
+        <remarks>Returns 0 or <see langword="null" /> if not available.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -404,7 +429,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Inform if location is from GPS or from Mock.</summary>
+        <summary>
+            Gets or sets whether this location originates from a mocked sensor and thus might not be the real location of the device.
+            </summary>
         <value>True if is from Mock and False if from GPS.</value>
         <remarks />
       </Docs>
@@ -425,7 +452,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the latitude of location.</summary>
+        <summary>
+            Gets or sets the latitude coordinate of this location.
+            </summary>
         <value>Latitude of the location.</value>
         <remarks />
       </Docs>
@@ -446,7 +475,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the longitude of location.</summary>
+        <summary>
+            Gets or sets the longitude coordinate of this location.
+            </summary>
         <value>Longitude of the location.</value>
         <remarks />
       </Docs>
@@ -471,10 +502,13 @@
         <Parameter Name="right" Type="Microsoft.Maui.Devices.Sensors.Location" Index="1" FrameworkAlternate="net-maui-7.0" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">Left to compare.</param>
+        <param name="right">Right to compare.</param>
+        <summary>
+            Equality operator for equals.
+            </summary>
+        <returns>
+          <see langword="true" /> if objects are equal, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -498,10 +532,13 @@
         <Parameter Name="right" Type="Microsoft.Maui.Devices.Sensors.Location" Index="1" FrameworkAlternate="net-maui-7.0" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">Left to compare.</param>
+        <param name="right">Right to compare.</param>
+        <summary>
+            Inequality operator.
+            </summary>
+        <returns>
+          <see langword="true" /> if objects are not equal, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -521,9 +558,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether this location has a reduced accuracy reading.</summary>
+        <summary>
+            Gets or sets whether this location has a reduced accuracy reading.
+            </summary>
         <value>True if the accuracy is reduced, false if the accuracy is not reduced.</value>
-        <remarks>This functionality only applies to iOS. On other platforms this will always be false.</remarks>
+        <remarks>This functionality only applies to iOS. Other platforms will always report false.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Speed">
@@ -542,9 +581,15 @@
         <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Speed in meters per second.</summary>
+        <summary>
+            Gets or sets the current speed in meters per second at the time when this location was determined.
+            </summary>
         <value>Speed measured by the device..</value>
-        <remarks />
+        <remarks>
+          <para>Returns 0 or <see langword="null" /> if not available. Otherwise the value will range between 0-360.</para>
+          <para>Requires <see cref="P:Microsoft.Maui.Devices.Sensors.Location.Accuracy" /> to be <see cref="F:Microsoft.Maui.Devices.Sensors.GeolocationAccuracy.High" /> or better
+            and may not be returned when calling <see cref="M:Microsoft.Maui.Devices.Sensors.Geolocation.GetLastKnownLocationAsync" />.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Timestamp">
@@ -563,7 +608,9 @@
         <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the timestamp of the location.</summary>
+        <summary>
+            Gets or sets the timestamp of the location in UTC.
+            </summary>
         <value>UTC timestamp.</value>
         <remarks />
       </Docs>
@@ -585,8 +632,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>A string representation of the location.</summary>
-        <returns>A string representation of the location.</returns>
+        <summary>
+            Returns a string representation of the current values of <see cref="T:Microsoft.Maui.Devices.Sensors.Location" />.
+            </summary>
+        <returns>A string representation of this instance in the format of <c>Latitude: {value}, Longitude: {value}, Altitude: {value}, Accuracy: {value}, VerticalAccuracy: {value}, Speed: {value}, Course: {value}, Timestamp: {value}</c>.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -606,7 +655,9 @@
         <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the vertical accuracy (in meters) of the location.</summary>
+        <summary>
+            Gets or sets the vertical accuracy (in meters) of the location.
+            </summary>
         <value>The vertical accuracy of the location.</value>
         <remarks />
       </Docs>

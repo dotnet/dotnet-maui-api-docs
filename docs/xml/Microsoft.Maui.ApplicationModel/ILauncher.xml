@@ -11,8 +11,14 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+            The Launcher API enables an application to open a URI by the system.
+            This is often used when deep linking into another application's custom URI schemes.
+            </summary>
+    <remarks>
+      <para>If you are looking to open the browser to a website then you should refer to the <see cref="T:Microsoft.Maui.ApplicationModel.IBrowser" /> API.</para>
+      <para>On iOS 9+, you will have to specify the <c>LSApplicationQueriesSchemes</c> key in the <c>info.plist</c> file with URI schemes you want to query from your app.</para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CanOpenAsync">
@@ -34,10 +40,14 @@
         <Parameter Name="uri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="uri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="uri">URI scheme to query.</param>
+        <summary>
+            Queries if the device supports opening the given URI scheme.
+            </summary>
+        <returns>
+          <see langword="true" /> if opening is supported, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.UriFormatException">Thrown when <paramref name="uri" /> is malformed.</exception>
       </Docs>
     </Member>
     <Member MemberName="OpenAsync">
@@ -59,9 +69,12 @@
         <Parameter Name="request" Type="Microsoft.Maui.ApplicationModel.OpenFileRequest" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">Request that contains information on the file to open.</param>
+        <summary>
+            Requests to open a file in an application based on content type.
+            </summary>
+        <returns>
+          <see langword="true" /> if the file was opened, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,10 +97,14 @@
         <Parameter Name="uri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="uri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="uri">URI to open.</param>
+        <summary>
+            Opens the app specified by the URI scheme.
+            </summary>
+        <returns>
+          <see langword="true" /> if the URI was opened, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.UriFormatException">Thrown when <paramref name="uri" /> is malformed.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryOpenAsync">
@@ -109,10 +126,14 @@
         <Parameter Name="uri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="uri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="uri">URI to try and open.</param>
+        <summary>
+            First checks if the provided URI is supported, then opens the app specified by the URI.
+            </summary>
+        <returns>
+          <see langword="true" /> if the URI was opened, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.UriFormatException">Thrown when <paramref name="uri" /> is malformed.</exception>
       </Docs>
     </Member>
   </Members>
