@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Static class with extension methods for the <see cref="T:Microsoft.Maui.ApplicationModel.ILauncher" /> APIs.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,11 +40,15 @@
         <Parameter Name="uri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="launcher">To be added.</param>
-        <param name="uri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="launcher">The object this method is invoked on.</param>
+        <param name="uri">URI scheme to query.</param>
+        <summary>
+            Queries if the device supports opening the given URI scheme.
+            </summary>
+        <returns>
+          <see langword="true" /> if opening is supported, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.UriFormatException">Thrown when <paramref name="uri" /> is malformed.</exception>
       </Docs>
     </Member>
     <Member MemberName="OpenAsync">
@@ -65,11 +71,15 @@
         <Parameter Name="uri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="launcher">To be added.</param>
-        <param name="uri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="launcher">The object this method is invoked on.</param>
+        <param name="uri">URI to open.</param>
+        <summary>
+            Opens the app specified by the URI scheme.
+            </summary>
+        <returns>
+          <see langword="true" /> if the URI was opened, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.UriFormatException">Thrown when <paramref name="uri" /> is malformed.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryOpenAsync">
@@ -92,11 +102,15 @@
         <Parameter Name="uri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="launcher">To be added.</param>
-        <param name="uri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="launcher">The object this method is invoked on.</param>
+        <param name="uri">URI to try and open.</param>
+        <summary>
+            First checks if the provided URI is supported, then opens the app specified by the URI.
+            </summary>
+        <returns>
+          <see langword="true" /> if the URI was opened, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.UriFormatException">Thrown when <paramref name="uri" /> is malformed.</exception>
       </Docs>
     </Member>
   </Members>

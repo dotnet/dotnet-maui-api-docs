@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Email file attachment.</summary>
+    <summary>
+            Represents a email file attachment.
+            </summary>
     <remarks />
   </Docs>
   <Members>
@@ -34,8 +36,10 @@
         <Parameter Name="file" Type="Microsoft.Maui.Storage.FileBase" />
       </Parameters>
       <Docs>
-        <param name="file">Existing file.</param>
-        <summary>Email attachment from existing file.</summary>
+        <param name="file">An instance of <see cref="T:Microsoft.Maui.Storage.FileBase" /> with file information.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.ApplicationModel.Communication.EmailAttachment" /> class based off a <see cref="T:Microsoft.Maui.Storage.FileBase" /> object.
+            </summary>
         <remarks />
       </Docs>
     </Member>
@@ -55,8 +59,10 @@
         <Parameter Name="fullPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fullPath">Full path and filename to file.</param>
-        <summary>Email attachment from filename.</summary>
+        <param name="fullPath">Full path and filename to file on filesystem.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.ApplicationModel.Communication.EmailAttachment" /> class based off the file specified in the provided path.
+            </summary>
         <remarks />
       </Docs>
     </Member>
@@ -77,9 +83,12 @@
         <Parameter Name="contentType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fullPath">Full path and filename to file.</param>
-        <param name="contentType">Content type (MIME type) of the file (eg: `image/png`).</param>
-        <summary>Explicit content type (MIME type) of file.</summary>
+        <param name="fullPath">Full path and filename to file on filesystem.</param>
+        <param name="contentType">Content type (MIME type) of the file (e.g.: <c>image/png</c>).</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.ApplicationModel.Communication.EmailAttachment" /> class based off the file specified in the provided path
+            and providing an explicit MIME filetype.
+            </summary>
         <remarks />
       </Docs>
     </Member>

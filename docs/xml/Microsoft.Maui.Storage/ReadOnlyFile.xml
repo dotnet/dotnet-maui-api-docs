@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>A representation of a file and its content type.</summary>
+    <summary>
+            A representation of a file, that is read-only, and its content type.
+            </summary>
     <remarks />
   </Docs>
   <Members>
@@ -34,8 +36,10 @@
         <Parameter Name="file" Type="Microsoft.Maui.Storage.FileBase" />
       </Parameters>
       <Docs>
-        <param name="file">File to use for ReadOnlyFile</param>
-        <summary>Construct a file taking in file.</summary>
+        <param name="file">A <see cref="T:Microsoft.Maui.Storage.FileBase" /> instance that will be used to clone.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Storage.ReadOnlyFile" /> class from an existing instance.
+            </summary>
         <remarks />
       </Docs>
     </Member>
@@ -55,8 +59,10 @@
         <Parameter Name="fullPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fullPath">Full file path.</param>
-        <summary>Construct a file taking in file path.</summary>
+        <param name="fullPath">Full file path to the corresponding file on the filesystem.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Storage.ReadOnlyFile" /> class from a file path.
+            </summary>
         <remarks />
       </Docs>
     </Member>
@@ -77,9 +83,11 @@
         <Parameter Name="contentType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fullPath">Full file path.</param>
-        <param name="contentType">Content type (MIME type) of the file (eg: `image/png`).</param>
-        <summary>Construct a file taking in file path and content type (MIME type).</summary>
+        <param name="fullPath">Full file path to the corresponding file on the filesystem.</param>
+        <param name="contentType">Content type (MIME type) of the file (e.g.: <c>image/png</c>).</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Storage.ReadOnlyFile" /> class from a file path, explicitly specifying the content type.
+            </summary>
         <remarks />
       </Docs>
     </Member>

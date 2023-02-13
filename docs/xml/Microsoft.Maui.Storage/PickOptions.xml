@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>File picking options.</summary>
+    <summary>
+            Represents file picking options that can be used to customize the working of <see cref="T:Microsoft.Maui.Storage.IFilePicker" />.
+            </summary>
     <remarks>This file picking options object can be passed to a call to PickAsync().</remarks>
   </Docs>
   <Members>
@@ -51,7 +53,9 @@
         <ReturnType>Microsoft.Maui.Storage.PickOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Default file picking options</summary>
+        <summary>
+            Default file picking options. This object can be used when no special pick options are necessary.
+            </summary>
         <value>A PickOptions object with default values.</value>
         <remarks>This object can be used when no special pick options are necessary.</remarks>
       </Docs>
@@ -72,18 +76,19 @@
         <ReturnType>Microsoft.Maui.Storage.FilePickerFileType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>List of file types that file file picker should return.</summary>
+        <summary>
+             List of file types that file file picker should return.
+             </summary>
         <value />
         <remarks>
-          On Android and iOS the files not matching this list is only displayed grayed out.
-          When the array is null or empty, all file types can be selected while picking.
-          The contents of this array is platform specific; every platform has its own way to
-          specify the file types.
-          On Android you can specify one or more MIME types, e.g.
-          "image/png"; also wild card characters can be used, e.g. "image/*".
-          On iOS you can specify UTType constants, e.g. UTType.Image.
-          On UWP, specify a list of extensions, like this: ".jpg", ".png".
-        </remarks>
+             On Android and iOS the files not matching this list are shown in the file picker,
+             but will be grayed out and cannot be selected.
+             When the <see cref="P:Microsoft.Maui.Storage.FilePickerFileType.Value" /> array is <see langword="null" /> or empty,
+             all file types can be selected while picking.
+             The contents of this array is platform specific; every platform has its own way to
+             specify the file types.
+             <para>On Android you can specify one or more MIME types, e.g.
+             <c>image/png</c>. Additionally, wildcard characters can be used, e.g. <c>image/*</c></para><para>On iOS, you can specify <c>UTType</c> constants, e.g. <c>UTType.Image</c>.</para><para>On Windows, you can specify a list of extensions, like this: <c>".jpg", ".png"</c>.</para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Images">
@@ -102,7 +107,9 @@
         <ReturnType>Microsoft.Maui.Storage.PickOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Predefined PickOptions object for picking image files only.</summary>
+        <summary>
+            Predefined <see cref="T:Microsoft.Maui.Storage.PickOptions" /> object for picking image files only.
+            </summary>
         <value />
         <remarks>
           Due to specifying the file types to pick being very platform specific, this predefined
@@ -126,9 +133,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Title for the file picker.</summary>
+        <summary>
+            Title used for the file picker that is shown to the user.
+            </summary>
         <value />
-        <remarks>Note that the file picker title is only used on the Android platform.</remarks>
+        <remarks>The file picker title is only used on the Android platform and only for certain file pickers. This title is not guaranteed to be shown.</remarks>
       </Docs>
     </Member>
   </Members>
