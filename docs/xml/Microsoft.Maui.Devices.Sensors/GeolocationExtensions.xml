@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Static class with extension methods for the <see cref="T:Microsoft.Maui.Devices.Sensors.IGeolocation" /> APIs.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,10 +39,12 @@
         <Parameter Name="geolocation" Type="Microsoft.Maui.Devices.Sensors.IGeolocation" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="geolocation">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="geolocation">The object this method is invoked on.</param>
+        <summary>
+            Returns the current location of the device.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Maui.Devices.Sensors.Location" /> object containing current location information or <see langword="null" /> if no location could be determined.</returns>
+        <remarks>The location permissions will be requested at runtime if needed. You might still need to declare something in your app manifest.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLocationAsync">
@@ -63,11 +67,13 @@
         <Parameter Name="request" Type="Microsoft.Maui.Devices.Sensors.GeolocationRequest" />
       </Parameters>
       <Docs>
-        <param name="geolocation">To be added.</param>
-        <param name="request">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="geolocation">The object this method is invoked on.</param>
+        <param name="request">The criteria to use when determining the location of the device.</param>
+        <summary>
+            Returns the current location of the device.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Maui.Devices.Sensors.Location" /> object containing current location information or <see langword="null" /> if no location could be determined.</returns>
+        <remarks>The location permissions will be requested at runtime if needed. You might still need to declare something in your app manifest.</remarks>
       </Docs>
     </Member>
   </Members>

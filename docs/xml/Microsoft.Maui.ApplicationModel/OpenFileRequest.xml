@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Standard request for opening a file to another application.</summary>
+    <summary>
+            Represents a request for opening a file in another application.
+            </summary>
     <remarks />
   </Docs>
   <Members>
@@ -31,7 +33,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Open request with an existing file.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.ApplicationModel.OpenFileRequest" /> class.
+            </summary>
         <remarks />
       </Docs>
     </Member>
@@ -52,10 +56,12 @@
         <Parameter Name="file" Type="Microsoft.Maui.Storage.FileBase" />
       </Parameters>
       <Docs>
-        <param name="title">Title to display on open dialog if available.</param>
+        <param name="title">Title to display on the open dialog.</param>
         <param name="file">File to open.</param>
-        <summary>Open request with an existing file.</summary>
-        <remarks />
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.ApplicationModel.OpenFileRequest" /> class with the given title and existing file.
+            </summary>
+        <remarks>The title might not always be displayed on every platform.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -75,10 +81,12 @@
         <Parameter Name="file" Type="Microsoft.Maui.Storage.ReadOnlyFile" />
       </Parameters>
       <Docs>
-        <param name="title">Title to display on open dialog if available.</param>
+        <param name="title">Title to display on open dialog.</param>
         <param name="file">File to open.</param>
-        <summary>Open request with an existing file.</summary>
-        <remarks />
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.ApplicationModel.OpenFileRequest" /> class with the given title and existing file.
+            </summary>
+        <remarks>The title might not always be displayed on every platform.</remarks>
       </Docs>
     </Member>
     <Member MemberName="File">
@@ -97,7 +105,9 @@
         <ReturnType>Microsoft.Maui.Storage.ReadOnlyFile</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>File to open.</summary>
+        <summary>
+            Gets or sets the file to open through this request.
+            </summary>
         <value />
         <remarks />
       </Docs>
@@ -118,9 +128,11 @@
         <ReturnType>Microsoft.Maui.Graphics.Rect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the source rectangle to display the Share UI from.</summary>
+        <summary>
+            Gets or sets the source rectangle to display the Share UI from.
+            </summary>
         <value />
-        <remarks>This is only used on iOS currently.</remarks>
+        <remarks>This only has effect on iPadOS.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -139,9 +151,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Title to display on open dialog if available.</summary>
+        <summary>
+            Gets or sets the title to display on the open dialog.
+            </summary>
         <value />
-        <remarks />
+        <remarks>The title might not always be displayed on every platform.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary />
+    <summary>
+            A representation of a file, as a result of a pick action by the user, and its content type.
+            </summary>
     <remarks />
   </Docs>
   <Members>
@@ -34,8 +36,10 @@
         <Parameter Name="file" Type="Microsoft.Maui.Storage.FileBase" />
       </Parameters>
       <Docs>
-        <param name="file">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="file">A <see cref="T:Microsoft.Maui.Storage.FileBase" /> instance that will be used to clone.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Storage.FileResult" /> class from an existing instance.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,8 +59,10 @@
         <Parameter Name="fullPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fullPath">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="fullPath">Full file path to the corresponding file on the filesystem.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Storage.FileResult" /> class from a file path.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,9 +83,11 @@
         <Parameter Name="contentType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fullPath">To be added.</param>
-        <param name="contentType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="fullPath">Full file path to the corresponding file on the filesystem.</param>
+        <param name="contentType">Content type (MIME type) of the file (e.g.: <c>image/png</c>).</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Storage.FileResult" /> class from a file path, explicitly specifying the content type.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

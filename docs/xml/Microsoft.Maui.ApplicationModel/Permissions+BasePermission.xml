@@ -31,7 +31,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.ApplicationModel.Permissions.BasePermission" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,9 +54,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>
+            Retrieves the current status of this permission.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Maui.ApplicationModel.PermissionStatus" /> value indicating the current status of this permission.</returns>
+        <remarks>
+            Will throw <see cref="T:Microsoft.Maui.ApplicationModel.PermissionException" /> if a required entry was not found in the application manifest.
+            Not all permissions require a manifest entry.
+            </remarks>
+        <exception cref="T:Microsoft.Maui.ApplicationModel.PermissionException">Thrown if a required entry was not found in the application manifest.</exception>
       </Docs>
     </Member>
     <Member MemberName="EnsureDeclared">
@@ -74,8 +82,14 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+            Ensures that a required entry matching this permission is found in the application manifest file.
+            </summary>
+        <remarks>
+            Will throw <see cref="T:Microsoft.Maui.ApplicationModel.PermissionException" /> if a required entry was not found in the application manifest.
+            Not all permissions require a manifest entry.
+            </remarks>
+        <exception cref="T:Microsoft.Maui.ApplicationModel.PermissionException">Thrown if a required entry was not found in the application manifest.</exception>
       </Docs>
     </Member>
     <Member MemberName="RequestAsync">
@@ -95,9 +109,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>
+            Requests this permission from the user for this application.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Maui.ApplicationModel.PermissionStatus" /> value indicating the result of this permission request.</returns>
+        <remarks>
+            Will throw <see cref="T:Microsoft.Maui.ApplicationModel.PermissionException" /> if a required entry was not found in the application manifest.
+            Not all permissions require a manifest entry.
+            </remarks>
+        <exception cref="T:Microsoft.Maui.ApplicationModel.PermissionException">Thrown if a required entry was not found in the application manifest.</exception>
       </Docs>
     </Member>
     <Member MemberName="ShouldShowRationale">
@@ -117,9 +137,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>
+            Determines if an educational UI should be displayed explaining to the user how this permission will be used in the application.
+            </summary>
+        <returns>
+          <see langword="true" /> if the user has denied or disabled this permission in the past, else <see langword="false" />.</returns>
+        <remarks>Only used on Android, other platforms will always return <see langword="false" />.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -11,7 +11,9 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            The Geocoding API provides functionality to geocode a placemark to positional coordinates and reverse-geocode coordinates to a placemark.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,9 +36,11 @@
         <Parameter Name="address" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="address">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="address">Address to retrieve the location for.</param>
+        <summary>
+            Retrieve potential locations for a given address.
+            </summary>
+        <returns>List of <see cref="T:Microsoft.Maui.Devices.Sensors.Location" /> that best match the address or <see langword="null" /> if no locations are found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,10 +64,12 @@
         <Parameter Name="longitude" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="latitude">To be added.</param>
-        <param name="longitude">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="latitude">The latitude coordinate to find placemarks near.</param>
+        <param name="longitude">The longitude coordinate to find placemarks near.</param>
+        <summary>
+            Retrieve potential placemarks for a given location specified by coordinates.
+            </summary>
+        <returns>List of <see cref="T:Microsoft.Maui.Devices.Sensors.Placemark" /> that best match the coordinates or <see langword="null" /> if no placemarks are found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
