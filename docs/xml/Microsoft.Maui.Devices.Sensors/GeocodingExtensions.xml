@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Static class with extension methods for the <see cref="T:Microsoft.Maui.Devices.Sensors.IGeocoding" /> APIs.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,11 +40,14 @@
         <Parameter Name="location" Type="Microsoft.Maui.Devices.Sensors.Location" />
       </Parameters>
       <Docs>
-        <param name="geocoding">To be added.</param>
-        <param name="location">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geocoding">The object this method is invoked on.</param>
+        <param name="location">A <see cref="T:Microsoft.Maui.Devices.Sensors.Location" /> instance to find placemarks near.</param>
+        <summary>
+            Retrieve potential placemarks for a given location specified by <see cref="T:Microsoft.Maui.Devices.Sensors.Location" />.
+            </summary>
+        <returns>List of <see cref="T:Microsoft.Maui.Devices.Sensors.Placemark" /> that best match the coordinates or <see langword="null" /> if no placemarks are found.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="location" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

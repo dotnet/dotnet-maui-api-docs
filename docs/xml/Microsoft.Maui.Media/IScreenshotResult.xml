@@ -11,7 +11,9 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            A representation of a screenshot, as a result of a screenshot captured by the user.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,11 +37,11 @@
         <Parameter Name="quality" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="destination">To be added.</param>
-        <param name="format">To be added.</param>
-        <param name="quality">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="destination">The destination <see cref="T:System.IO.Stream" /> to copy the screenshot file data to.</param>
+        <param name="format">The image format used to copy this screenshot.</param>
+        <param name="quality">The quality used to copy this screenshot.</param>
+        <summary />
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,7 +61,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The height of this screenshot in pixels.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -83,10 +87,12 @@
         <Parameter Name="quality" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="quality">To be added.</param>
-        <param name="format">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="format">The image format used to read this screenshot.</param>
+        <param name="quality">The quality used to read this screenshot.</param>
+        <summary>
+            Opens a <see cref="T:System.IO.Stream" /> to the corresponding screenshot file on the filesystem.
+            </summary>
+        <returns>A <see cref="T:System.IO.Stream" /> containing the screenshot file data.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,7 +112,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The width of this screenshot in pixels.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
