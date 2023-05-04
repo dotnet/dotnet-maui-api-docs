@@ -14,15 +14,19 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>
-            The Preferences API helps to store application preferences in a key/value store.
-            </summary>
+    <summary>A class to interact with the preferences/settings of the native platform.</summary>
     <remarks>
       <para>Each platform uses the platform provided native APIs for storing application/user preferences:</para>
       <list type="bullet">
-        <item>iOS: NSUserDefaults</item>
-        <item>Android: SharedPreferences</item>
-        <item>Windows: ApplicationDataContainer</item>
+        <item>
+          <term>iOS: NSUserDefaults</term>
+        </item>
+        <item>
+          <term>Android: SharedPreferences</term>
+        </item>
+        <item>
+          <term>UWP: ApplicationDataContainer</term>
+        </item>
       </list>
     </remarks>
   </Docs>
@@ -44,9 +48,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-            Clears all keys and values.
-            </summary>
+        <summary>Clears all keys and values.</summary>
         <remarks />
       </Docs>
     </Member>
@@ -94,12 +96,9 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The key to check.</param>
-        <summary>
-            Checks the existence of a given key.
-            </summary>
-        <returns>
-          <see langword="true" /> if the key exists in the preferences, otherwise <see langword="false" />.</returns>
+        <param name="key">Preference key.</param>
+        <summary>Checks the existence of a given key.</summary>
+        <returns>Returns true if the key exists.</returns>
         <remarks />
       </Docs>
     </Member>
@@ -337,7 +336,7 @@
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
         <Attributes>
-          <Attribute FrameworkAlternate="net-maui-6.0">
+          <Attribute>
             <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.NotNullIfNotNull("defaultValue")]</AttributeName>
             <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.NotNullIfNotNull("defaultValue")&gt;]</AttributeName>
           </Attribute>
@@ -348,12 +347,10 @@
         <Parameter Name="defaultValue" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The key to retrieve the value for.</param>
-        <param name="defaultValue">The default value to return when no existing value for <paramref name="key" /> exists.</param>
-        <summary>
-            Gets the value for a given key, or the default specified if the key does not exist.
-            </summary>
-        <returns>Value for the given key, or the value in <paramref name="defaultValue" /> if it does not exist.</returns>
+        <param name="key">Preference key.</param>
+        <param name="defaultValue">Default value to return if the key does not exist.</param>
+        <summary>Gets the value for a given key, or the default specified if the key does not exist.</summary>
+        <returns>Value for the given key, or the default if it does not exist.</returns>
         <remarks />
       </Docs>
     </Member>
@@ -552,7 +549,7 @@
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
         <Attributes>
-          <Attribute FrameworkAlternate="net-maui-6.0">
+          <Attribute>
             <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.NotNullIfNotNull("defaultValue")]</AttributeName>
             <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.NotNullIfNotNull("defaultValue")&gt;]</AttributeName>
           </Attribute>
@@ -592,10 +589,8 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The key to remove.</param>
-        <summary>
-            Removes a key and its associated value if it exists.
-            </summary>
+        <param name="key">Preference key.</param>
+        <summary>Removes a key and its associated value if it exists.</summary>
         <remarks />
       </Docs>
     </Member>
@@ -808,11 +803,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The key to set the value for.</param>
-        <param name="value">Value to set.</param>
-        <summary>
-            Sets a value for a given key.
-            </summary>
+        <param name="key">Preference key.</param>
+        <param name="value">Preference value.</param>
+        <summary>Sets a value for a given key.</summary>
         <remarks />
       </Docs>
     </Member>

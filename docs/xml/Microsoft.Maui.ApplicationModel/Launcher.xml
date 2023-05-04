@@ -14,14 +14,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>
-            The Launcher API enables an application to open a URI by the system.
-            This is often used when deep linking into another application's custom URI schemes.
-            </summary>
-    <remarks>
-      <para>If you are looking to open the browser to a website then you should refer to the <see cref="T:Microsoft.Maui.ApplicationModel.IBrowser" /> API.</para>
-      <para>On iOS 9+, you will have to specify the <c>LSApplicationQueriesSchemes</c> key in the <c>info.plist</c> file with URI schemes you want to query from your app.</para>
-    </remarks>
+    <summary>Launches an application specified by the passed uri.</summary>
+    <remarks>Has to be a valid System.Uri</remarks>
   </Docs>
   <Members>
     <Member MemberName="CanOpenAsync">
@@ -43,12 +37,9 @@
         <Parameter Name="uri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="uri">URI scheme to query.</param>
-        <summary>
-            Queries if the device supports opening the given URI scheme.
-            </summary>
-        <returns>
-          <see langword="true" /> if opening is supported, otherwise <see langword="false" />.</returns>
+        <param name="uri">string uri scheme</param>
+        <summary>Queries if device supports opening the uri scheme</summary>
+        <returns>True if opening is supported, otherwise false</returns>
         <remarks>May throw System.UriFormatException if uri is malformed</remarks>
         <exception cref="T:System.UriFormatException">Thrown when <paramref name="uri" /> is malformed.</exception>
       </Docs>
@@ -72,12 +63,9 @@
         <Parameter Name="uri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="uri">URI scheme to query.</param>
-        <summary>
-            Queries if the device supports opening the given URI scheme.
-            </summary>
-        <returns>
-          <see langword="true" /> if opening is supported, otherwise <see langword="false" />.</returns>
+        <param name="uri">uri scheme</param>
+        <summary>Queries if device supports opening the uri scheme</summary>
+        <returns>True if opening is supported, otherwise false</returns>
         <remarks>May throw System.UriFormatException if uri is malformed</remarks>
         <exception cref="T:System.UriFormatException">Thrown when <paramref name="uri" /> is malformed.</exception>
       </Docs>
@@ -125,11 +113,8 @@
       </Parameters>
       <Docs>
         <param name="request">Request that contains information on the file to open.</param>
-        <summary>
-            Requests to open a file in an application based on content type.
-            </summary>
-        <returns>
-          <see langword="true" /> if the file was opened, otherwise <see langword="false" />.</returns>
+        <summary>Requests to open a file in an application based on content type.</summary>
+        <returns />
         <remarks />
       </Docs>
     </Member>
@@ -152,12 +137,9 @@
         <Parameter Name="uri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="uri">URI to open.</param>
-        <summary>
-            Opens the app specified by the URI scheme.
-            </summary>
-        <returns>
-          <see langword="true" /> if the URI was opened, otherwise <see langword="false" />.</returns>
+        <param name="uri">string uri scheme</param>
+        <summary>Launches the app specified by the uri scheme</summary>
+        <returns />
         <remarks>May throw System.UriFormatException if uri is malformed. Verify if the uri scheme is supported before calling this method</remarks>
         <exception cref="T:System.UriFormatException">Thrown when <paramref name="uri" /> is malformed.</exception>
       </Docs>
@@ -181,12 +163,9 @@
         <Parameter Name="uri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="uri">URI to open.</param>
-        <summary>
-            Opens the app specified by the URI scheme.
-            </summary>
-        <returns>
-          <see langword="true" /> if the URI was opened, otherwise <see langword="false" />.</returns>
+        <param name="uri">uri scheme</param>
+        <summary>Launches the app specified by the uri scheme</summary>
+        <returns />
         <remarks>May throw System.UriFormatException if uri is malformed. Verify if the uri scheme is supported before calling this method</remarks>
         <exception cref="T:System.UriFormatException">Thrown when <paramref name="uri" /> is malformed.</exception>
       </Docs>
@@ -210,12 +189,11 @@
         <Parameter Name="uri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="uri">URI to try and open.</param>
+        <param name="uri">string uri scheme</param>
         <summary>
-            First checks if the provided URI is supported, then opens the app specified by the URI.
-            </summary>
-        <returns>
-          <see langword="true" /> if the URI was opened, otherwise <see langword="false" />.</returns>
+          <para>Launches the app specified by the uri scheme and returns if it was supported or not</para>
+        </summary>
+        <returns>True if opening is supported, otherwise false</returns>
         <remarks>May throw System.UriFormatException if uri is malformed</remarks>
         <exception cref="T:System.UriFormatException">Thrown when <paramref name="uri" /> is malformed.</exception>
       </Docs>
@@ -239,12 +217,11 @@
         <Parameter Name="uri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="uri">URI to try and open.</param>
+        <param name="uri">uri scheme</param>
         <summary>
-            First checks if the provided URI is supported, then opens the app specified by the URI.
-            </summary>
-        <returns>
-          <see langword="true" /> if the URI was opened, otherwise <see langword="false" />.</returns>
+          <para>Launches the app specified by the uri scheme and returns if it was supported or not</para>
+        </summary>
+        <returns>True if opening is supported, otherwise false</returns>
         <remarks>May throw System.UriFormatException if uri is malformed</remarks>
         <exception cref="T:System.UriFormatException">Thrown when <paramref name="uri" /> is malformed.</exception>
       </Docs>

@@ -14,9 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>
-            The Geocoding API provides functionality to geocode a placemark to positional coordinates and reverse-geocode coordinates to a placemark.
-            </summary>
+    <summary>Easily convert between geographic coordinated and place names.</summary>
     <remarks />
   </Docs>
   <Members>
@@ -62,11 +60,11 @@
         <Parameter Name="address" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="address">Address to retrieve the location for.</param>
-        <summary>
-            Retrieve potential locations for a given address.
-            </summary>
-        <returns>List of <see cref="T:Microsoft.Maui.Devices.Sensors.Location" /> that best match the address or <see langword="null" /> if no locations are found.</returns>
+        <param name="address">Address to retrieve the lcoation for.</param>
+        <summary>Retrieve location for a given address.</summary>
+        <returns>
+          <para>List of locations that best match the address or null if none found.</para>
+        </returns>
         <remarks />
       </Docs>
     </Member>
@@ -89,11 +87,9 @@
         <Parameter Name="location" Type="Microsoft.Maui.Devices.Sensors.Location" />
       </Parameters>
       <Docs>
-        <param name="location">A <see cref="T:Microsoft.Maui.Devices.Sensors.Location" /> instance to find placemarks near.</param>
-        <summary>
-            Retrieve potential placemarks for a given location specified by <see cref="T:Microsoft.Maui.Devices.Sensors.Location" />.
-            </summary>
-        <returns>List of <see cref="T:Microsoft.Maui.Devices.Sensors.Placemark" /> that best match the coordinates or <see langword="null" /> if no placemarks are found.</returns>
+        <param name="location">Location to find placemarks for.</param>
+        <summary>Retrieve placemarks for a given location.</summary>
+        <returns>List of placemarks or null if no placemarks are found.</returns>
         <remarks />
       </Docs>
     </Member>
@@ -117,12 +113,10 @@
         <Parameter Name="longitude" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="latitude">The latitude coordinate to find placemarks.</param>
-        <param name="longitude">The longitude coordinate to find placemarks.</param>
-        <summary>
-            Retrieve potential placemarks for a given location specified by coordinates.
-            </summary>
-        <returns>List of <see cref="T:Microsoft.Maui.Devices.Sensors.Placemark" /> that best match the coordinates or <see langword="null" /> if no placemarks are found.</returns>
+        <param name="latitude">Latitude of the location.</param>
+        <param name="longitude">Longitude of the location.</param>
+        <summary>Retrieve location for a given address.</summary>
+        <returns>List of placemarks or null if no placemarks are found.</returns>
         <remarks />
       </Docs>
     </Member>

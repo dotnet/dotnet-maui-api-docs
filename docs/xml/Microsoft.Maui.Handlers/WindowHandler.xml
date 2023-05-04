@@ -47,14 +47,12 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WindowHandler (Microsoft.Maui.IPropertyMapper? mapper = default);" FrameworkAlternate="net-maui-6.0" />
+      <MemberSignature Language="C#" Value="public WindowHandler (Microsoft.Maui.IPropertyMapper? mapper);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Maui.IPropertyMapper mapper) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Handlers.WindowHandler.#ctor(Microsoft.Maui.IPropertyMapper)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional mapper As IPropertyMapper = Nothing)" FrameworkAlternate="net-maui-6.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (mapper As IPropertyMapper)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowHandler(Microsoft::Maui::IPropertyMapper ^ mapper);" />
       <MemberSignature Language="F#" Value="new Microsoft.Maui.Handlers.WindowHandler : Microsoft.Maui.IPropertyMapper -&gt; Microsoft.Maui.Handlers.WindowHandler" Usage="new Microsoft.Maui.Handlers.WindowHandler mapper" />
-      <MemberSignature Language="C#" Value="public WindowHandler (Microsoft.Maui.IPropertyMapper? mapper);" FrameworkAlternate="net-maui-7.0" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (mapper As IPropertyMapper)" FrameworkAlternate="net-maui-7.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowHandler(Microsoft::Maui::IPropertyMapper ^ mapper);" FrameworkAlternate="net-maui-7.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>
@@ -70,14 +68,12 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WindowHandler (Microsoft.Maui.IPropertyMapper? mapper = default, Microsoft.Maui.CommandMapper? commandMapper = default);" FrameworkAlternate="net-maui-6.0" />
+      <MemberSignature Language="C#" Value="public WindowHandler (Microsoft.Maui.IPropertyMapper? mapper, Microsoft.Maui.CommandMapper? commandMapper);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Maui.IPropertyMapper mapper, class Microsoft.Maui.CommandMapper commandMapper) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Handlers.WindowHandler.#ctor(Microsoft.Maui.IPropertyMapper,Microsoft.Maui.CommandMapper)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional mapper As IPropertyMapper = Nothing, Optional commandMapper As CommandMapper = Nothing)" FrameworkAlternate="net-maui-6.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (mapper As IPropertyMapper, commandMapper As CommandMapper)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowHandler(Microsoft::Maui::IPropertyMapper ^ mapper, Microsoft::Maui::CommandMapper ^ commandMapper);" />
       <MemberSignature Language="F#" Value="new Microsoft.Maui.Handlers.WindowHandler : Microsoft.Maui.IPropertyMapper * Microsoft.Maui.CommandMapper -&gt; Microsoft.Maui.Handlers.WindowHandler" Usage="new Microsoft.Maui.Handlers.WindowHandler (mapper, commandMapper)" />
-      <MemberSignature Language="C#" Value="public WindowHandler (Microsoft.Maui.IPropertyMapper? mapper, Microsoft.Maui.CommandMapper? commandMapper);" FrameworkAlternate="net-maui-7.0" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (mapper As IPropertyMapper, commandMapper As CommandMapper)" FrameworkAlternate="net-maui-7.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowHandler(Microsoft::Maui::IPropertyMapper ^ mapper, Microsoft::Maui::CommandMapper ^ commandMapper);" FrameworkAlternate="net-maui-7.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>
@@ -178,8 +174,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="handler" Type="Microsoft.Maui.Handlers.IWindowHandler" Index="0" FrameworkAlternate="net-maui-7.0" />
-        <Parameter Name="view" Type="Microsoft.Maui.IWindow" Index="1" FrameworkAlternate="net-maui-7.0" />
+        <Parameter Name="handler" Type="Microsoft.Maui.Handlers.IWindowHandler" />
+        <Parameter Name="view" Type="Microsoft.Maui.IWindow" />
       </Parameters>
       <Docs>
         <param name="handler">To be added.</param>
@@ -278,8 +274,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="handler" Type="Microsoft.Maui.Handlers.IWindowHandler" Index="0" FrameworkAlternate="net-maui-7.0" />
-        <Parameter Name="view" Type="Microsoft.Maui.IWindow" Index="1" FrameworkAlternate="net-maui-7.0" />
+        <Parameter Name="handler" Type="Microsoft.Maui.Handlers.IWindowHandler" />
+        <Parameter Name="view" Type="Microsoft.Maui.IWindow" />
       </Parameters>
       <Docs>
         <param name="handler">To be added.</param>
@@ -304,8 +300,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="handler" Type="Microsoft.Maui.Handlers.IWindowHandler" Index="0" FrameworkAlternate="net-maui-7.0" />
-        <Parameter Name="view" Type="Microsoft.Maui.IWindow" Index="1" FrameworkAlternate="net-maui-7.0" />
+        <Parameter Name="handler" Type="Microsoft.Maui.Handlers.IWindowHandler" />
+        <Parameter Name="view" Type="Microsoft.Maui.IWindow" />
       </Parameters>
       <Docs>
         <param name="handler">To be added.</param>
@@ -330,8 +326,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="handler" Type="Microsoft.Maui.Handlers.IWindowHandler" Index="0" FrameworkAlternate="net-maui-7.0" />
-        <Parameter Name="view" Type="Microsoft.Maui.IWindow" Index="1" FrameworkAlternate="net-maui-7.0" />
+        <Parameter Name="handler" Type="Microsoft.Maui.Handlers.IWindowHandler" />
+        <Parameter Name="view" Type="Microsoft.Maui.IWindow" />
       </Parameters>
       <Docs>
         <param name="handler">To be added.</param>

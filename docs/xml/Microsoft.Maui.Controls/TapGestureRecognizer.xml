@@ -77,13 +77,12 @@
       </Docs>
     </Member>
     <Member MemberName="Command">
-      <MemberSignature Language="C#" Value="public System.Windows.Input.ICommand Command { get; set; }" FrameworkAlternate="net-maui-6.0" />
+      <MemberSignature Language="C#" Value="public System.Windows.Input.ICommand? Command { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.ICommand Command" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.TapGestureRecognizer.Command" />
       <MemberSignature Language="VB.NET" Value="Public Property Command As ICommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::ICommand ^ Command { System::Windows::Input::ICommand ^ get(); void set(System::Windows::Input::ICommand ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Command : System.Windows.Input.ICommand with get, set" Usage="Microsoft.Maui.Controls.TapGestureRecognizer.Command" />
-      <MemberSignature Language="C#" Value="public System.Windows.Input.ICommand? Command { get; set; }" FrameworkAlternate="net-maui-7.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -99,13 +98,12 @@
       </Docs>
     </Member>
     <Member MemberName="CommandParameter">
-      <MemberSignature Language="C#" Value="public object CommandParameter { get; set; }" FrameworkAlternate="net-maui-6.0" />
+      <MemberSignature Language="C#" Value="public object? CommandParameter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object CommandParameter" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.TapGestureRecognizer.CommandParameter" />
       <MemberSignature Language="VB.NET" Value="Public Property CommandParameter As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CommandParameter { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberSignature Language="F#" Value="member this.CommandParameter : obj with get, set" Usage="Microsoft.Maui.Controls.TapGestureRecognizer.CommandParameter" />
-      <MemberSignature Language="C#" Value="public object? CommandParameter { get; set; }" FrameworkAlternate="net-maui-7.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -202,25 +200,19 @@
       </Docs>
     </Member>
     <Member MemberName="Tapped">
-      <MemberSignature Language="C#" Value="public event EventHandler Tapped;" FrameworkAlternate="net-maui-6.0" />
-      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Tapped" FrameworkAlternate="net-maui-6.0" />
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Controls.TappedEventArgs&gt;? Tapped;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.TappedEventArgs&gt; Tapped" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.TapGestureRecognizer.Tapped" />
-      <MemberSignature Language="VB.NET" Value="Public Event Tapped As EventHandler " FrameworkAlternate="net-maui-6.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Tapped;" FrameworkAlternate="net-maui-6.0" />
-      <MemberSignature Language="F#" Value="member this.Tapped : EventHandler " Usage="member this.Tapped : System.EventHandler " FrameworkAlternate="net-maui-6.0" />
-      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Controls.TappedEventArgs&gt;? Tapped;" FrameworkAlternate="net-maui-7.0" />
-      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.TappedEventArgs&gt; Tapped" FrameworkAlternate="net-maui-7.0" />
-      <MemberSignature Language="VB.NET" Value="Public Event Tapped As EventHandler(Of TappedEventArgs) " FrameworkAlternate="net-maui-7.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Controls::TappedEventArgs ^&gt; ^ Tapped;" FrameworkAlternate="net-maui-7.0" />
-      <MemberSignature Language="F#" Value="member this.Tapped : EventHandler&lt;Microsoft.Maui.Controls.TappedEventArgs&gt; " Usage="member this.Tapped : System.EventHandler&lt;Microsoft.Maui.Controls.TappedEventArgs&gt; " FrameworkAlternate="net-maui-7.0" />
+      <MemberSignature Language="VB.NET" Value="Public Event Tapped As EventHandler(Of TappedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Controls::TappedEventArgs ^&gt; ^ Tapped;" />
+      <MemberSignature Language="F#" Value="member this.Tapped : EventHandler&lt;Microsoft.Maui.Controls.TappedEventArgs&gt; " Usage="member this.Tapped : System.EventHandler&lt;Microsoft.Maui.Controls.TappedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="net-maui-6.0">System.EventHandler</ReturnType>
-        <ReturnType FrameworkAlternate="net-maui-7.0">System.EventHandler&lt;Microsoft.Maui.Controls.TappedEventArgs&gt;</ReturnType>
+        <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.TappedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
