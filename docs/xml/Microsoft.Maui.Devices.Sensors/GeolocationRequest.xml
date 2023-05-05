@@ -14,9 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>
-            Represents the criteria for a location request.
-            </summary>
+    <summary>Represents the criteria for a location request.</summary>
     <remarks />
   </Docs>
   <Members>
@@ -33,9 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>
-            Initializes a new instance of the <see cref="T:Microsoft.Maui.Devices.Sensors.GeolocationRequest" /> class with default options.
-            </summary>
+        <summary>Creates a new instance of GeolocationRequest.</summary>
         <remarks />
       </Docs>
     </Member>
@@ -55,10 +51,8 @@
         <Parameter Name="accuracy" Type="Microsoft.Maui.Devices.Sensors.GeolocationAccuracy" />
       </Parameters>
       <Docs>
-        <param name="accuracy">The desired accuracy for determining the location.</param>
-        <summary>
-            Initializes a new instance of the <see cref="T:Microsoft.Maui.Devices.Sensors.GeolocationRequest" /> class with the specified accuracy.
-            </summary>
+        <param name="accuracy">The desired accuracy.</param>
+        <summary>Creates a new instance of GeolocationRequest with the specified accuracy.</summary>
         <remarks />
       </Docs>
     </Member>
@@ -79,11 +73,9 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="accuracy">The desired accuracy for determining the location.</param>
-        <param name="timeout">A timeout value after which the location determination will be cancelled.</param>
-        <summary>
-            Initializes a new instance of the <see cref="T:Microsoft.Maui.Devices.Sensors.GeolocationRequest" /> class with the specified accuracy and timeout.
-            </summary>
+        <param name="accuracy">The desired accuracy.</param>
+        <param name="timeout">The request timeout.</param>
+        <summary>Creates a new instance of GeolocationRequest with the specified accuracy and timeout.</summary>
         <remarks />
       </Docs>
     </Member>
@@ -103,9 +95,7 @@
         <ReturnType>Microsoft.Maui.Devices.Sensors.GeolocationAccuracy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Gets or sets the desired accuracy of the resulting location.
-            </summary>
+        <summary>Gets or sets the desired accuracy of the resulting location.</summary>
         <value>The desired accuracy of the location.</value>
         <remarks />
       </Docs>
@@ -126,11 +116,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Gets or sets whether to request full permission to temporarily use location services with full accuracy.
-            </summary>
+        <summary>Gets or sets whether the full accuracy should be requested or coarse location.</summary>
         <value>True will request full accuracy, false requests only the coarse location.</value>
-        <remarks>This value is only used on iOS 14+. Using this functionality requires the <c>NSLocationTemporaryUsageDescriptionDictionary</c> key to be present in the <c>info.plist</c> file.</remarks>
+        <remarks>This functionality only applies to iOS.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Timeout">
@@ -149,9 +137,7 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Gets or sets the location request timeout.
-            </summary>
+        <summary>Gets or sets the location request timeout.</summary>
         <value>The location request timeout.</value>
         <remarks />
       </Docs>
@@ -173,10 +159,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-            Returns a string representation of the current values of <see cref="T:Microsoft.Maui.Devices.Sensors.GeolocationRequest" />.
-            </summary>
-        <returns>A string representation of this instance in the format of <c>DesiredAccuracy: {value}, Timeout: {value}</c>.</returns>
+        <summary>A string representation of the request.</summary>
+        <returns>A string representation of the request.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

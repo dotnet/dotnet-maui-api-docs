@@ -1,11 +1,10 @@
 <Type Name="LabelHandler" FullName="Microsoft.Maui.Handlers.LabelHandler">
   <TypeSignature Language="C#" Value="public class LabelHandler : Microsoft.Maui.Handlers.ViewHandler&lt;Microsoft.Maui.ILabel,object&gt;, Microsoft.Maui.Handlers.ILabelHandler" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi LabelHandler extends Microsoft.Maui.Handlers.ViewHandler`2&lt;class Microsoft.Maui.ILabel, object&gt; implements class Microsoft.Maui.Handlers.ILabelHandler, class Microsoft.Maui.IElementHandler, class Microsoft.Maui.IViewHandler" FrameworkAlternate="net-maui-6.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LabelHandler extends Microsoft.Maui.Handlers.ViewHandler`2&lt;class Microsoft.Maui.ILabel, object&gt; implements class Microsoft.Maui.Handlers.ILabelHandler, class Microsoft.Maui.IElementHandler, class Microsoft.Maui.IViewHandler" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Handlers.LabelHandler" />
   <TypeSignature Language="VB.NET" Value="Public Class LabelHandler&#xA;Inherits ViewHandler(Of ILabel, Object)&#xA;Implements ILabelHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class LabelHandler : Microsoft::Maui::Handlers::ViewHandler&lt;Microsoft::Maui::ILabel ^, System::Object ^&gt;, Microsoft::Maui::Handlers::ILabelHandler" />
   <TypeSignature Language="F#" Value="type LabelHandler = class&#xA;    inherit ViewHandler&lt;ILabel, obj&gt;&#xA;    interface ILabelHandler&#xA;    interface IViewHandler&#xA;    interface IElementHandler" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LabelHandler extends Microsoft.Maui.Handlers.ViewHandler`2&lt;class Microsoft.Maui.ILabel, object&gt; implements class Microsoft.Maui.Handlers.ILabelHandler, class Microsoft.Maui.IElementHandler, class Microsoft.Maui.IViewHandler" FrameworkAlternate="net-maui-7.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -51,14 +50,12 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public LabelHandler (Microsoft.Maui.IPropertyMapper? mapper = default);" FrameworkAlternate="net-maui-6.0" />
+      <MemberSignature Language="C#" Value="public LabelHandler (Microsoft.Maui.IPropertyMapper? mapper);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Maui.IPropertyMapper mapper) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Handlers.LabelHandler.#ctor(Microsoft.Maui.IPropertyMapper)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional mapper As IPropertyMapper = Nothing)" FrameworkAlternate="net-maui-6.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (mapper As IPropertyMapper)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LabelHandler(Microsoft::Maui::IPropertyMapper ^ mapper);" />
       <MemberSignature Language="F#" Value="new Microsoft.Maui.Handlers.LabelHandler : Microsoft.Maui.IPropertyMapper -&gt; Microsoft.Maui.Handlers.LabelHandler" Usage="new Microsoft.Maui.Handlers.LabelHandler mapper" />
-      <MemberSignature Language="C#" Value="public LabelHandler (Microsoft.Maui.IPropertyMapper? mapper);" FrameworkAlternate="net-maui-7.0" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (mapper As IPropertyMapper)" FrameworkAlternate="net-maui-7.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; LabelHandler(Microsoft::Maui::IPropertyMapper ^ mapper);" FrameworkAlternate="net-maui-7.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>
@@ -86,8 +83,8 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="mapper" Type="Microsoft.Maui.IPropertyMapper" Index="0" FrameworkAlternate="net-maui-7.0" />
-        <Parameter Name="commandMapper" Type="Microsoft.Maui.CommandMapper" Index="1" FrameworkAlternate="net-maui-7.0" />
+        <Parameter Name="mapper" Type="Microsoft.Maui.IPropertyMapper" />
+        <Parameter Name="commandMapper" Type="Microsoft.Maui.CommandMapper" />
       </Parameters>
       <Docs>
         <param name="mapper">To be added.</param>

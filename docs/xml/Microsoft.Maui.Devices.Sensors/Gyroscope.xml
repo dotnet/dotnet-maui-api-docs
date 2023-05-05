@@ -14,9 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>
-            The Gyroscope API lets you monitor the device's gyroscope sensor which is the rotation around the device's three primary axes.
-            </summary>
+    <summary>Gyroscope data of the rotation around the device's three primary axis.</summary>
     <remarks />
   </Docs>
   <Members>
@@ -59,9 +57,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Gets a value indicating whether the gyroscope is actively being monitored.
-            </summary>
+        <summary>Gets if gyro is being monitored.</summary>
         <value>If monitoring.</value>
         <remarks />
       </Docs>
@@ -130,10 +126,8 @@
         <Parameter Name="sensorSpeed" Type="Microsoft.Maui.Devices.Sensors.SensorSpeed" />
       </Parameters>
       <Docs>
-        <param name="sensorSpeed">The speed to listen for changes.</param>
-        <summary>
-            Start monitoring for changes to the gyroscope.
-            </summary>
+        <param name="sensorSpeed">Speed to monitor sensor.</param>
+        <summary>Start monitoring for changes to gyro.</summary>
         <remarks>Will throw FeatureNotSupportedException if not supported on device. Will throw ArgumentNullException if handler is null.</remarks>
       </Docs>
     </Member>
@@ -154,9 +148,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-            Stop monitoring for changes to the gyroscope.
-            </summary>
+        <summary>Stop monitoring for changes to gyro.</summary>
         <remarks />
       </Docs>
     </Member>

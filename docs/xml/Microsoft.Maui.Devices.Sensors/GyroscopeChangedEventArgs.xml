@@ -14,9 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>
-            Contains the current axis reading information from the <see cref="E:Microsoft.Maui.Devices.Sensors.IGyroscope.ReadingChanged" /> event.
-            </summary>
+    <summary>Event arguments containing the current reading.</summary>
     <remarks />
   </Docs>
   <Members>
@@ -36,10 +34,8 @@
         <Parameter Name="reading" Type="Microsoft.Maui.Devices.Sensors.GyroscopeData" />
       </Parameters>
       <Docs>
-        <param name="reading">The gyroscope data reading.</param>
-        <summary>
-            Initializes a new instance of the <see cref="T:Microsoft.Maui.Devices.Sensors.GyroscopeChangedEventArgs" /> class.
-            </summary>
+        <param name="reading">The current reading of the gyroscope</param>
+        <summary>public constructor</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,9 +55,7 @@
         <ReturnType>Microsoft.Maui.Devices.Sensors.GyroscopeData</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            The current values of the gyroscope.
-            </summary>
+        <summary>Gets the reading of the gyro.</summary>
         <value>The reading.</value>
         <remarks />
       </Docs>
