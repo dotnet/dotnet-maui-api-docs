@@ -24,9 +24,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-            Contains the orientation measured by the user's device orientation sensor.
-            </summary>
+    <summary>Sensor data for orientation.</summary>
     <remarks />
   </Docs>
   <Members>
@@ -49,13 +47,11 @@
         <Parameter Name="w" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="x">X axis data.</param>
-        <param name="y">Y axis data.</param>
-        <param name="z">Z axis data.</param>
-        <param name="w">W axis data.</param>
-        <summary>
-            Initializes a new instance of the <see cref="T:Microsoft.Maui.Devices.Sensors.OrientationSensorData" /> class.
-            </summary>
+        <param name="x">X data</param>
+        <param name="y">Y data</param>
+        <param name="z">Z data</param>
+        <param name="w">W data</param>
+        <summary>Public constructor</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,13 +74,11 @@
         <Parameter Name="w" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">X axis data.</param>
-        <param name="y">Y axis data.</param>
-        <param name="z">Z axis data.</param>
-        <param name="w">W axis data.</param>
-        <summary>
-            Initializes a new instance of the <see cref="T:Microsoft.Maui.Devices.Sensors.OrientationSensorData" /> class.
-            </summary>
+        <param name="x">X data</param>
+        <param name="y">Y data</param>
+        <param name="z">Z data</param>
+        <param name="w">W data</param>
+        <summary>Public constructor</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,13 +104,9 @@
         <Parameter Name="other" Type="Microsoft.Maui.Devices.Sensors.OrientationSensorData" />
       </Parameters>
       <Docs>
-        <param name="other">
-          <see cref="T:Microsoft.Maui.Devices.Sensors.OrientationSensorData" /> object to compare with.</param>
-        <summary>
-            Compares the underlying <see cref="T:Microsoft.Maui.Devices.Sensors.OrientationSensorData" /> instances.
-            </summary>
-        <returns>
-          <see langword="true" /> if they are equal, otherwise <see langword="false" />.</returns>
+        <param name="other">Other OrientationSensorData to compare with.</param>
+        <summary>Compares the underlying Quaternion instances.</summary>
+        <returns>True if they match, otherwise false.</returns>
         <remarks />
       </Docs>
     </Member>
@@ -139,12 +129,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">Object to compare with.</param>
-        <summary>
-            Compares the underlying <see cref="T:Microsoft.Maui.Devices.Sensors.OrientationSensorData" /> instances.
-            </summary>
-        <returns>
-          <see langword="true" /> if they are equal, otherwise <see langword="false" />.</returns>
+        <param name="obj">Object to compare</param>
+        <summary>If equal to another object</summary>
+        <returns>If equal</returns>
         <remarks />
       </Docs>
     </Member>
@@ -247,9 +234,7 @@
         <ReturnType>System.Numerics.Quaternion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Gets the current orientation that represents a <see cref="T:System.Numerics.Quaternion" />.
-            </summary>
+        <summary>Gets the current orientation that represents a Quaternion.</summary>
         <value>Gets the current orientation</value>
         <remarks />
       </Docs>
@@ -271,10 +256,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-            Returns a string representation of the current values of <see cref="P:Microsoft.Maui.Devices.Sensors.OrientationSensorData.Orientation" />.
-            </summary>
-        <returns>A string representation of this instance in the format of <c>Orientation.X: {value}, Orientation.Y: {value}, Orientation.Z: {value}, Orientation.W: {value}</c>.</returns>
+        <summary>A string representation of the data.</summary>
+        <returns>A string representation of the data.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
