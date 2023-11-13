@@ -1,10 +1,11 @@
 <Type Name="IGeolocation" FullName="Microsoft.Maui.Devices.Sensors.IGeolocation">
   <TypeSignature Language="C#" Value="public interface IGeolocation" />
-  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IGeolocation" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IGeolocation" FrameworkAlternate="net-maui-7.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Devices.Sensors.IGeolocation" />
   <TypeSignature Language="VB.NET" Value="Public Interface IGeolocation" />
   <TypeSignature Language="C++ CLI" Value="public interface class IGeolocation" />
   <TypeSignature Language="F#" Value="type IGeolocation = interface" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IGeolocation" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -71,6 +72,132 @@
             </summary>
         <returns>A <see cref="T:Microsoft.Maui.Devices.Sensors.Location" /> object containing current location information or <see langword="null" /> if no location could be determined.</returns>
         <remarks>The location permissions will be requested at runtime if needed. You might still need to declare something in your app manifest.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsListeningForeground">
+      <MemberSignature Language="C#" Value="public bool IsListeningForeground { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsListeningForeground" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Devices.Sensors.IGeolocation.IsListeningForeground" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsListeningForeground As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsListeningForeground { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsListeningForeground : bool" Usage="Microsoft.Maui.Devices.Sensors.IGeolocation.IsListeningForeground" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Indicates if currently listening to location updates while the app is in foreground.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListeningFailed">
+      <MemberSignature Language="C#" Value="event EventHandler&lt;Microsoft.Maui.Devices.Sensors.GeolocationListeningFailedEventArgs&gt;? ListeningFailed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Devices.Sensors.GeolocationListeningFailedEventArgs&gt; ListeningFailed" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Devices.Sensors.IGeolocation.ListeningFailed" />
+      <MemberSignature Language="VB.NET" Value="Event ListeningFailed As EventHandler(Of GeolocationListeningFailedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Devices::Sensors::GeolocationListeningFailedEventArgs ^&gt; ^ ListeningFailed;" />
+      <MemberSignature Language="F#" Value="member this.ListeningFailed : EventHandler&lt;Microsoft.Maui.Devices.Sensors.GeolocationListeningFailedEventArgs&gt; " Usage="member this.ListeningFailed : System.EventHandler&lt;Microsoft.Maui.Devices.Sensors.GeolocationListeningFailedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Maui.Devices.Sensors.GeolocationListeningFailedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Occurs when an error during listening for location updates arises. When the event is
+            fired, listening for further location updates has been stopped and no further
+            <see cref="E:Microsoft.Maui.Devices.Sensors.IGeolocation.LocationChanged" /> events are sent.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocationChanged">
+      <MemberSignature Language="C#" Value="event EventHandler&lt;Microsoft.Maui.Devices.Sensors.GeolocationLocationChangedEventArgs&gt;? LocationChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Devices.Sensors.GeolocationLocationChangedEventArgs&gt; LocationChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Devices.Sensors.IGeolocation.LocationChanged" />
+      <MemberSignature Language="VB.NET" Value="Event LocationChanged As EventHandler(Of GeolocationLocationChangedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Devices::Sensors::GeolocationLocationChangedEventArgs ^&gt; ^ LocationChanged;" />
+      <MemberSignature Language="F#" Value="member this.LocationChanged : EventHandler&lt;Microsoft.Maui.Devices.Sensors.GeolocationLocationChangedEventArgs&gt; " Usage="member this.LocationChanged : System.EventHandler&lt;Microsoft.Maui.Devices.Sensors.GeolocationLocationChangedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Maui.Devices.Sensors.GeolocationLocationChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Occurs while listening to location updates.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartListeningForegroundAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; StartListeningForegroundAsync (Microsoft.Maui.Devices.Sensors.GeolocationListeningRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; StartListeningForegroundAsync(class Microsoft.Maui.Devices.Sensors.GeolocationListeningRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Devices.Sensors.IGeolocation.StartListeningForegroundAsync(Microsoft.Maui.Devices.Sensors.GeolocationListeningRequest)" />
+      <MemberSignature Language="VB.NET" Value="Public Function StartListeningForegroundAsync (request As GeolocationListeningRequest) As Task(Of Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;bool&gt; ^ StartListeningForegroundAsync(Microsoft::Maui::Devices::Sensors::GeolocationListeningRequest ^ request);" />
+      <MemberSignature Language="F#" Value="abstract member StartListeningForegroundAsync : Microsoft.Maui.Devices.Sensors.GeolocationListeningRequest -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="iGeolocation.StartListeningForegroundAsync request" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.Maui.Devices.Sensors.GeolocationListeningRequest" Index="0" FrameworkAlternate="net-maui-8.0" />
+      </Parameters>
+      <Docs>
+        <param name="request">The listening request parameters to use.</param>
+        <summary>
+            Starts listening to location updates using the <see cref="E:Microsoft.Maui.Devices.Sensors.IGeolocation.LocationChanged" /> event. Events
+            may only sent when the app is in the foreground. Requests
+            <see cref="T:Microsoft.Maui.ApplicationModel.Permissions.LocationWhenInUse" /> from the user.
+            </summary>
+        <returns>
+          <see langword="true" /> when listening was started, or <see langword="false" /> when listening couldn't be started.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="request" /> is <see langword="null" />.</exception>
+        <exception cref="T:Microsoft.Maui.ApplicationModel.FeatureNotSupportedException">Thrown if listening is not supported on this platform.</exception>
+        <exception cref="T:System.InvalidOperationException">Thrown if already listening and <see cref="P:Microsoft.Maui.Devices.Sensors.IGeolocation.IsListeningForeground" /> returns <see langword="true" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StopListeningForeground">
+      <MemberSignature Language="C#" Value="public void StopListeningForeground ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StopListeningForeground() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Devices.Sensors.IGeolocation.StopListeningForeground" />
+      <MemberSignature Language="VB.NET" Value="Public Sub StopListeningForeground ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void StopListeningForeground();" />
+      <MemberSignature Language="F#" Value="abstract member StopListeningForeground : unit -&gt; unit" Usage="iGeolocation.StopListeningForeground " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Stop listening for location updates when the app is in the foreground.
+            Has no effect when <see cref="P:Microsoft.Maui.Devices.Sensors.IGeolocation.IsListeningForeground" /> is currently <see langword="false" />.
+            </summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

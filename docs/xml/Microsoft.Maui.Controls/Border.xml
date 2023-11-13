@@ -1,10 +1,12 @@
 <Type Name="Border" FullName="Microsoft.Maui.Controls.Border">
   <TypeSignature Language="C#" Value="public class Border : Microsoft.Maui.Controls.View, Microsoft.Maui.Controls.IPaddingElement, Microsoft.Maui.IBorderView" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Border extends Microsoft.Maui.Controls.View implements class Microsoft.Maui.Controls.IPaddingElement, class Microsoft.Maui.IBorderStroke, class Microsoft.Maui.IBorderView, class Microsoft.Maui.IContentView, class Microsoft.Maui.IElement, class Microsoft.Maui.IPadding, class Microsoft.Maui.IStroke, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Border extends Microsoft.Maui.Controls.View implements class Microsoft.Maui.Controls.IPaddingElement, class Microsoft.Maui.IBorderStroke, class Microsoft.Maui.IBorderView, class Microsoft.Maui.IContentView, class Microsoft.Maui.IElement, class Microsoft.Maui.IPadding, class Microsoft.Maui.IStroke, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" FrameworkAlternate="net-maui-7.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Border" />
   <TypeSignature Language="VB.NET" Value="Public Class Border&#xA;Inherits View&#xA;Implements IBorderView, IPaddingElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class Border : Microsoft::Maui::Controls::View, Microsoft::Maui::Controls::IPaddingElement, Microsoft::Maui::IBorderView" />
-  <TypeSignature Language="F#" Value="type Border = class&#xA;    inherit View&#xA;    interface IContentView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IPadding&#xA;    interface IBorderView&#xA;    interface IBorderStroke&#xA;    interface IStroke&#xA;    interface IPaddingElement" />
+  <TypeSignature Language="F#" Value="type Border = class&#xA;    inherit View&#xA;    interface IContentView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IPadding&#xA;    interface IBorderView&#xA;    interface IBorderStroke&#xA;    interface IStroke&#xA;    interface IPaddingElement" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Border extends Microsoft.Maui.Controls.View implements class Microsoft.Maui.Controls.IPaddingElement, class Microsoft.Maui.IBorderStroke, class Microsoft.Maui.IBorderView, class Microsoft.Maui.IContentView, class Microsoft.Maui.ICrossPlatformLayout, class Microsoft.Maui.IElement, class Microsoft.Maui.IPadding, class Microsoft.Maui.IStroke, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" FrameworkAlternate="net-maui-8.0" />
+  <TypeSignature Language="F#" Value="type Border = class&#xA;    inherit View&#xA;    interface IContentView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IPadding&#xA;    interface ICrossPlatformLayout&#xA;    interface IBorderView&#xA;    interface IBorderStroke&#xA;    interface IStroke&#xA;    interface IPaddingElement" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -39,6 +41,9 @@
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Maui.IView</InterfaceName>
+    </Interface>
+    <Interface FrameworkAlternate="net-maui-8.0">
+      <InterfaceName>Microsoft.Maui.ICrossPlatformLayout</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
@@ -134,7 +139,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Border.Content" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,6 +153,7 @@
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Maui.IContentView.CrossPlatformArrange(Microsoft.Maui.Graphics.Rect)</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-maui-8.0">M:Microsoft.Maui.IContentView.Microsoft#Maui#ICrossPlatformLayout#CrossPlatformArrange(Microsoft.Maui.Graphics.Rect)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -176,6 +182,7 @@
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Maui.IContentView.CrossPlatformMeasure(System.Double,System.Double)</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-maui-8.0">M:Microsoft.Maui.IContentView.Microsoft#Maui#ICrossPlatformLayout#CrossPlatformMeasure(System.Double,System.Double)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -193,6 +200,27 @@
         <param name="heightConstraint">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~Border ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Border.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!Border ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="border.Finalize " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -509,7 +537,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Border.Padding" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -571,7 +599,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Border.StrokeDashArray" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -612,7 +640,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Border.StrokeDashOffset" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -677,7 +705,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Border.StrokeLineCap" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -718,7 +746,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Border.StrokeLineJoin" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -759,7 +787,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Border.StrokeMiterLimit" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -779,7 +807,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Border.Stroke" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -826,7 +854,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Border.StrokeShape" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -895,7 +923,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Border.StrokeThickness" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

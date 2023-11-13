@@ -45,11 +45,13 @@
         <Parameter Name="implementationFactory" Type="System.Func&lt;System.IServiceProvider,Microsoft.Maui.IImageSourceService&lt;TImageSource&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TImageSource">To be added.</typeparam>
-        <param name="services">To be added.</param>
-        <param name="implementationFactory">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TImageSource">The image type to register for</typeparam>
+        <param name="services">The service collection</param>
+        <param name="implementationFactory">A factory method to create the service</param>
+        <summary>
+            Registers an image service with the underlying service container via AddSingleton.
+            </summary>
+        <returns>The service collection</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,7 +78,7 @@
         </TypeParameter>
         <TypeParameter Name="TImageSourceService">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="net-maui-7.0">
               <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembers(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.PublicConstructors)]</AttributeName>
               <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembers(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.PublicConstructors)&gt;]</AttributeName>
             </Attribute>
@@ -91,11 +93,13 @@
         <Parameter Name="services" Type="Microsoft.Maui.Hosting.IImageSourceServiceCollection" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TImageSource">To be added.</typeparam>
-        <typeparam name="TImageSourceService">To be added.</typeparam>
-        <param name="services">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TImageSource">The image type to register for</typeparam>
+        <typeparam name="TImageSourceService">The service type to register</typeparam>
+        <param name="services">The service collection</param>
+        <summary>
+            Registers an image service with the underlying service container via AddSingleton.
+            </summary>
+        <returns>The service collection</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

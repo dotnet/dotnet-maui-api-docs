@@ -1,17 +1,20 @@
 <Type Name="IShare" FullName="Microsoft.Maui.ApplicationModel.DataTransfer.IShare">
   <TypeSignature Language="C#" Value="public interface IShare" />
-  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IShare" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IShare" FrameworkAlternate="net-maui-7.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.ApplicationModel.DataTransfer.IShare" />
   <TypeSignature Language="VB.NET" Value="Public Interface IShare" />
   <TypeSignature Language="C++ CLI" Value="public interface class IShare" />
   <TypeSignature Language="F#" Value="type IShare = interface" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IShare" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            The Share API enables an application to share data such as text and web links to other applications on the device.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,9 +37,11 @@
         <Parameter Name="request" Type="Microsoft.Maui.ApplicationModel.DataTransfer.ShareFileRequest" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">A <see cref="T:Microsoft.Maui.ApplicationModel.DataTransfer.ShareFileRequest" /> object containing the details of the data to share.</param>
+        <summary>
+            Show the operating system's user interface to share a single file.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,9 +64,11 @@
         <Parameter Name="request" Type="Microsoft.Maui.ApplicationModel.DataTransfer.ShareMultipleFilesRequest" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">A <see cref="T:Microsoft.Maui.ApplicationModel.DataTransfer.ShareMultipleFilesRequest" /> object containing the details of the data to share.</param>
+        <summary>
+            Show the operating system's user interface to share multiple files.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,9 +91,11 @@
         <Parameter Name="request" Type="Microsoft.Maui.ApplicationModel.DataTransfer.ShareTextRequest" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">A <see cref="T:Microsoft.Maui.ApplicationModel.DataTransfer.ShareTextRequest" /> object containing the details of the data to share.</param>
+        <summary>
+            Show the operating systems user interface to share text.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

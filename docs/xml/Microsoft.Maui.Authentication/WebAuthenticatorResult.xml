@@ -14,8 +14,12 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Web Authenticator Result parsed from the callback Url.</summary>
-    <remarks>All of the querystring or url fragment properties are parsed into a dictionary and can be accessed by their key.</remarks>
+    <summary>
+            Represents a Web Authenticator Result object parsed from the callback Url.
+            </summary>
+    <remarks>
+            All of the query string or url fragment properties are parsed into a dictionary and can be accessed by their key.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +35,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary />
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Authentication.WebAuthenticatorResult" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +57,10 @@
         <Parameter Name="properties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="properties">To be added.</param>
-        <summary>Create a new instance from an existing dictionary.</summary>
+        <param name="properties">The dictionary of properties to incorporate.</param>
+        <summary>
+            Create a new instance from an existing dictionary.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,9 +80,39 @@
         <Parameter Name="uri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="uri">To be added.</param>
-        <summary>Create a new instance by parsing a Uri's querystring parameters.</summary>
+        <param name="uri">The callback uri that was used to end the authentication sequence.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Authentication.WebAuthenticatorResult" /> class by parsing a URI's query string parameters.
+            </summary>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebAuthenticatorResult (Uri uri, Microsoft.Maui.Authentication.IWebAuthenticatorResponseDecoder responseDecoder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri uri, class Microsoft.Maui.Authentication.IWebAuthenticatorResponseDecoder responseDecoder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Authentication.WebAuthenticatorResult.#ctor(System.Uri,Microsoft.Maui.Authentication.IWebAuthenticatorResponseDecoder)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (uri As Uri, responseDecoder As IWebAuthenticatorResponseDecoder)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebAuthenticatorResult(Uri ^ uri, Microsoft::Maui::Authentication::IWebAuthenticatorResponseDecoder ^ responseDecoder);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.Authentication.WebAuthenticatorResult : Uri * Microsoft.Maui.Authentication.IWebAuthenticatorResponseDecoder -&gt; Microsoft.Maui.Authentication.WebAuthenticatorResult" Usage="new Microsoft.Maui.Authentication.WebAuthenticatorResult (uri, responseDecoder)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" Index="0" FrameworkAlternate="net-maui-8.0" />
+        <Parameter Name="responseDecoder" Type="Microsoft.Maui.Authentication.IWebAuthenticatorResponseDecoder" Index="1" FrameworkAlternate="net-maui-8.0" />
+      </Parameters>
+      <Docs>
+        <param name="uri">The callback uri that was used to end the authentication sequence.</param>
+        <param name="responseDecoder">The decoder that can be used to decode the callback uri.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Authentication.WebAuthenticatorResult" /> class by parsing a URI's query string parameters.
+            </summary>
+        <remarks>
+            If the responseDecoder is non-null, then it is used to decode the fragment or query string 
+            returned by the authorization service.  Otherwise, a default response decoder is used.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="AccessToken">
@@ -98,6 +136,32 @@
         <remarks />
       </Docs>
     </Member>
+    <Member MemberName="CallbackUri">
+      <MemberSignature Language="C#" Value="public Uri CallbackUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri CallbackUri" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Authentication.WebAuthenticatorResult.CallbackUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CallbackUri As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ CallbackUri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CallbackUri : Uri" Usage="Microsoft.Maui.Authentication.WebAuthenticatorResult.CallbackUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The uri that was used to call back with the access token.
+            </summary>
+        <value>
+            The value of the callback URI, including the fragment or query string bearing 
+            the access token and associated information.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ExpiresIn">
       <MemberSignature Language="C#" Value="public DateTimeOffset? ExpiresIn { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; ExpiresIn" />
@@ -114,7 +178,10 @@
         <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The expiry date as calculated by the timestamp of when the result was created plus the value in seconds for the `expires_in` key.</summary>
+        <summary>
+            The expiry date as calculated by the timestamp of when the result was created plus 
+            the value in seconds for the `expires_in` key.
+            </summary>
         <value>Timestamp of the creation of the object instance plus the expires_in seconds parsed from the callback URI.</value>
         <remarks />
       </Docs>
@@ -181,7 +248,9 @@
         <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The dictionary of key/value pairs parsed form the callback URI's querystring.</summary>
+        <summary>
+            The dictionary of key/value pairs parsed form the callback URI's query string.
+            </summary>
         <value />
         <remarks />
       </Docs>
@@ -249,7 +318,10 @@
         <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The refresh token expiry date as calculated by the timestamp of when the result was created plus the value in seconds for the refresh_token_expires_in key.</summary>
+        <summary>
+            The refresh token expiry date as calculated by the timestamp of when the result was created plus 
+            the value in seconds for the refresh_token_expires_in key.
+            </summary>
         <value>Timestamp of the creation of the object instance plus the expires_in seconds parsed from the callback URI.</value>
         <remarks />
       </Docs>
@@ -270,7 +342,9 @@
         <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The timestamp when the class was instantiated, which usually corresponds with the parsed result of a request.</summary>
+        <summary>
+            The timestamp when the class was instantiated, which usually corresponds with the parsed result of a request.
+            </summary>
         <value />
         <remarks />
       </Docs>

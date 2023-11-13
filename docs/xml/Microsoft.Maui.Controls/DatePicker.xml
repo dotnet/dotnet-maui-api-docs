@@ -121,7 +121,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.DatePicker.CharacterSpacing" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,6 +137,12 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.Obsolete("Use DatePickerHandler.Mapper instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use DatePickerHandler.Mapper instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.IPropertyMapper&lt;Microsoft.Maui.IDatePicker,Microsoft.Maui.Handlers.DatePickerHandler&gt;</ReturnType>
       </ReturnValue>
@@ -154,7 +160,7 @@
       <MemberSignature Language="F#" Value="member this.Date : DateTime with get, set" Usage="Microsoft.Maui.Controls.DatePicker.Date" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:Microsoft.Maui.IDatePicker.Date</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-maui-7.0">P:Microsoft.Maui.IDatePicker.Date</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -185,7 +191,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the Date bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.DatePicker.Date" />.</summary>
         <remarks />
       </Docs>
     </Member>
@@ -246,7 +252,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.DatePicker.FontAttributes" /> property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.DatePicker.FontAttributes" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -287,7 +293,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.DatePicker.FontAutoScalingEnabled" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -328,7 +334,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.DatePicker.FontFamily" /> property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.DatePicker.FontFamily" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -375,7 +381,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.DatePicker.FontSize" /> property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.DatePicker.FontSize" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -388,7 +394,7 @@
       <MemberSignature Language="F#" Value="member this.Format : string with get, set" Usage="Microsoft.Maui.Controls.DatePicker.Format" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:Microsoft.Maui.IDatePicker.Format</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-maui-7.0">P:Microsoft.Maui.IDatePicker.Format</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -419,7 +425,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the Format dependency property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.DatePicker.Format" />.</summary>
         <remarks />
       </Docs>
     </Member>
@@ -460,7 +466,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the MaximumDate bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.DatePicker.MaximumDate" />.</summary>
         <remarks />
       </Docs>
     </Member>
@@ -605,6 +611,54 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Microsoft.Maui.IDatePicker.Date">
+      <MemberSignature Language="C#" Value="DateTime Microsoft.Maui.IDatePicker.Date { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime Microsoft.Maui.IDatePicker.Date" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.DatePicker.Microsoft#Maui#IDatePicker#Date" />
+      <MemberSignature Language="VB.NET" Value=" Property Date As DateTime Implements IDatePicker.Date" />
+      <MemberSignature Language="C++ CLI" Value="property DateTime Microsoft::Maui::IDatePicker::Date { DateTime get(); void set(DateTime value); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.IDatePicker.Date : DateTime with get, set" Usage="Microsoft.Maui.IDatePicker.Date" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IDatePicker.Date</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IDatePicker.Format">
+      <MemberSignature Language="C#" Value="string Microsoft.Maui.IDatePicker.Format { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Microsoft.Maui.IDatePicker.Format" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.DatePicker.Microsoft#Maui#IDatePicker#Format" />
+      <MemberSignature Language="VB.NET" Value=" Property Format As String Implements IDatePicker.Format" />
+      <MemberSignature Language="C++ CLI" Value="property System::String ^ Microsoft::Maui::IDatePicker::Format { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.IDatePicker.Format : string with get, set" Usage="Microsoft.Maui.IDatePicker.Format" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IDatePicker.Format</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Microsoft.Maui.ITextStyle.Font">
       <MemberSignature Language="C#" Value="Microsoft.Maui.Font Microsoft.Maui.ITextStyle.Font { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.Font Microsoft.Maui.ITextStyle.Font" />
@@ -666,7 +720,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the MinimumDate bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.DatePicker.MinimumDate" />.</summary>
         <remarks />
       </Docs>
     </Member>
@@ -741,7 +795,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.DatePicker.TextColor" /> property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.DatePicker.TextColor" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

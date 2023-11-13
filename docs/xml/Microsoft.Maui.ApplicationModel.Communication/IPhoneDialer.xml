@@ -1,17 +1,20 @@
 <Type Name="IPhoneDialer" FullName="Microsoft.Maui.ApplicationModel.Communication.IPhoneDialer">
   <TypeSignature Language="C#" Value="public interface IPhoneDialer" />
-  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPhoneDialer" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPhoneDialer" FrameworkAlternate="net-maui-7.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.ApplicationModel.Communication.IPhoneDialer" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPhoneDialer" />
   <TypeSignature Language="C++ CLI" Value="public interface class IPhoneDialer" />
   <TypeSignature Language="F#" Value="type IPhoneDialer = interface" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IPhoneDialer" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            The PhoneDialer API enables an application to open a phone number in the dialer.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +34,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a value indicating whether using the phone dialer is supported on this device.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -55,9 +60,16 @@
         <Parameter Name="number" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="number">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="number">Phone number to initialize the dialer with.</param>
+        <summary>
+            Open the phone dialer to a specific phone number.
+            </summary>
+        <remarks>
+            Will throw <see cref="T:System.ArgumentNullException" /> if <paramref name="number" /> is not valid.
+            Will throw <see cref="T:Microsoft.Maui.ApplicationModel.FeatureNotSupportedException" /> if making phone calls is not supported on the device.
+            </remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="number" /> is not valid.</exception>
+        <exception cref="T:Microsoft.Maui.ApplicationModel.FeatureNotSupportedException">Thrown if making phone calls is not supported on the device.</exception>
       </Docs>
     </Member>
   </Members>

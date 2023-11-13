@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>This type contains information about a particular contact.</summary>
+    <summary>
+            Represents a contact on the user's device.
+            </summary>
     <remarks />
   </Docs>
   <Members>
@@ -31,7 +33,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Constructs a new instance of <see cref="T:Microsoft.Maui.ApplicationModel.Communication.Contact" />.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.ApplicationModel.Communication.Contact" /> class.
+            </summary>
         <remarks />
       </Docs>
     </Member>
@@ -60,14 +64,16 @@
       <Docs>
         <param name="id">The identifier of the contact.</param>
         <param name="namePrefix">The prefix of the contact.</param>
-        <param name="givenName">The given name or first name of the contact.</param>
+        <param name="givenName">The given name (or first name) of the contact.</param>
         <param name="middleName">The middle name(s) of the contact.</param>
-        <param name="familyName">The family name or last name of the contact.</param>
+        <param name="familyName">The family name (or last name) of the contact.</param>
         <param name="nameSuffix">The suffix of the contact.</param>
         <param name="phones">A collection of phone numbers for the contact.</param>
         <param name="email">A collection of email addresses for the contact.</param>
         <param name="displayName">The display name of the contact.</param>
-        <summary>Constructs a new instance of <see cref="T:Microsoft.Maui.ApplicationModel.Communication.Contact" />.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.ApplicationModel.Communication.Contact" /> class with the given data.
+            </summary>
         <remarks />
       </Docs>
     </Member>
@@ -87,9 +93,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the display name of the contact.</summary>
+        <summary>
+            Gets or sets the display name of the contact.
+            </summary>
         <value />
-        <remarks />
+        <remarks>If no display name is set, a display name is inferred from <see cref="P:Microsoft.Maui.ApplicationModel.Communication.Contact.GivenName" /> and <see cref="P:Microsoft.Maui.ApplicationModel.Communication.Contact.FamilyName" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Emails">
@@ -108,7 +116,9 @@
         <ReturnType>System.Collections.Generic.List&lt;Microsoft.Maui.ApplicationModel.Communication.ContactEmail&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a collection of email addresses of the contact.</summary>
+        <summary>
+            Gets or sets a collection of email addresses of the contact.
+            </summary>
         <value />
         <remarks />
       </Docs>
@@ -129,7 +139,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the family name or last name of the contact.</summary>
+        <summary>
+            Gets or sets the family name (or last name) of the contact.
+            </summary>
         <value />
         <remarks />
       </Docs>
@@ -150,7 +162,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the given name or first name of the contact.</summary>
+        <summary>
+            Gets or sets the given name (or first name) of the contact.
+            </summary>
         <value />
         <remarks />
       </Docs>
@@ -171,7 +185,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the identifier of the contact.</summary>
+        <summary>
+            Gets or sets the identifier of the contact.
+            </summary>
         <value />
         <remarks />
       </Docs>
@@ -192,7 +208,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the middle name(s) of the contact.</summary>
+        <summary>
+            Gets or sets the middle name(s) of the contact.
+            </summary>
         <value />
         <remarks />
       </Docs>
@@ -213,7 +231,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name prefix of the contact.</summary>
+        <summary>
+            Gets or sets the name prefix of the contact.
+            </summary>
         <value />
         <remarks />
       </Docs>
@@ -234,7 +254,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name suffix of the contact.</summary>
+        <summary>
+            Gets or sets the name suffix of the contact.
+            </summary>
         <value />
         <remarks />
       </Docs>
@@ -255,7 +277,9 @@
         <ReturnType>System.Collections.Generic.List&lt;Microsoft.Maui.ApplicationModel.Communication.ContactPhone&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a collection of phone numbers of the contact.</summary>
+        <summary>
+            Gets or sets a collection of phone numbers of the contact.
+            </summary>
         <value />
         <remarks />
       </Docs>
@@ -278,9 +302,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <see cref="P:Microsoft.Maui.ApplicationModel.Communication.Contact.DisplayName" />
-        </summary>
-        <returns />
+            Returns a string representation of the current values of <see cref="T:Microsoft.Maui.ApplicationModel.Communication.Contact" />.
+            </summary>
+        <returns>A string representation of this instance. The return value is the current value of <see cref="P:Microsoft.Maui.ApplicationModel.Communication.Contact.DisplayName" />.</returns>
         <remarks />
       </Docs>
     </Member>

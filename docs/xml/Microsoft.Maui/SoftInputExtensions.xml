@@ -1,0 +1,112 @@
+<Type Name="SoftInputExtensions" FullName="Microsoft.Maui.SoftInputExtensions">
+  <TypeSignature Language="C#" Value="public static class SoftInputExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SoftInputExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.SoftInputExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module SoftInputExtensions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoftInputExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type SoftInputExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Extension methods for interacting with a platform's Soft Input Pane
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="HideSoftInputAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; HideSoftInputAsync (this Microsoft.Maui.ITextInput targetView, System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; HideSoftInputAsync(class Microsoft.Maui.ITextInput targetView, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.SoftInputExtensions.HideSoftInputAsync(Microsoft.Maui.ITextInput,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function HideSoftInputAsync (targetView As ITextInput, token As CancellationToken) As Task(Of Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Threading::Tasks::Task&lt;bool&gt; ^ HideSoftInputAsync(Microsoft::Maui::ITextInput ^ targetView, System::Threading::CancellationToken token);" />
+      <MemberSignature Language="F#" Value="static member HideSoftInputAsync : Microsoft.Maui.ITextInput * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="Microsoft.Maui.SoftInputExtensions.HideSoftInputAsync (targetView, token)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetView" Type="Microsoft.Maui.ITextInput" RefType="this" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="targetView" />
+        <param name="token">Cancellation token</param>
+        <summary>
+            If a soft input pane is currently showing, this will attempt to hide it.
+            </summary>
+        <returns>
+            Returns <c>true</c> if the platform was able to hide the soft input pane.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSoftInputShowing">
+      <MemberSignature Language="C#" Value="public static bool IsSoftInputShowing (this Microsoft.Maui.ITextInput targetView);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsSoftInputShowing(class Microsoft.Maui.ITextInput targetView) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.SoftInputExtensions.IsSoftInputShowing(Microsoft.Maui.ITextInput)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsSoftInputShowing (targetView As ITextInput) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool IsSoftInputShowing(Microsoft::Maui::ITextInput ^ targetView);" />
+      <MemberSignature Language="F#" Value="static member IsSoftInputShowing : Microsoft.Maui.ITextInput -&gt; bool" Usage="Microsoft.Maui.SoftInputExtensions.IsSoftInputShowing targetView" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetView" Type="Microsoft.Maui.ITextInput" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="targetView" />
+        <summary>
+            Checks to see if the platform is currently showing the soft input pane
+            </summary>
+        <returns>
+            Returns <c>true</c> if the soft input pane is currently showing.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowSoftInputAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; ShowSoftInputAsync (this Microsoft.Maui.ITextInput targetView, System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; ShowSoftInputAsync(class Microsoft.Maui.ITextInput targetView, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.SoftInputExtensions.ShowSoftInputAsync(Microsoft.Maui.ITextInput,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ShowSoftInputAsync (targetView As ITextInput, token As CancellationToken) As Task(Of Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Threading::Tasks::Task&lt;bool&gt; ^ ShowSoftInputAsync(Microsoft::Maui::ITextInput ^ targetView, System::Threading::CancellationToken token);" />
+      <MemberSignature Language="F#" Value="static member ShowSoftInputAsync : Microsoft.Maui.ITextInput * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="Microsoft.Maui.SoftInputExtensions.ShowSoftInputAsync (targetView, token)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetView" Type="Microsoft.Maui.ITextInput" RefType="this" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="targetView" />
+        <param name="token">Cancellation token</param>
+        <summary>
+            If a soft input pane is currently hiding, this will attempt to show it.
+            </summary>
+        <returns>
+            Returns <c>true</c> if the platform was able to show the soft input pane.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

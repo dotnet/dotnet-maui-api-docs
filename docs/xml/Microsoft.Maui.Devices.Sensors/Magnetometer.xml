@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Detect device's orentation relative to Earth's magnetic field in microteslas (µ).</summary>
+    <summary>
+            Detect device's orentation relative to Earth's magnetic field in microteslas (µ).
+            </summary>
     <remarks />
   </Docs>
   <Members>
@@ -57,7 +59,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets if magnetometer is being monitored.</summary>
+        <summary>
+            Gets a value indicating whether the magnetometer is actively being monitored.
+            </summary>
         <value>If monitoring.</value>
         <remarks />
       </Docs>
@@ -126,9 +130,14 @@
         <Parameter Name="sensorSpeed" Type="Microsoft.Maui.Devices.Sensors.SensorSpeed" />
       </Parameters>
       <Docs>
-        <param name="sensorSpeed">Speed to get sensor information.</param>
-        <summary>Start monitoring for changes to magnetometer.</summary>
-        <remarks>Will throw FeatureNotSupportedException if not supported on device. Will throw ArgumentNullException if handler is null.</remarks>
+        <param name="sensorSpeed">The speed to listen for changes.</param>
+        <summary>
+            Start monitoring for changes to the magnetometer.
+            </summary>
+        <remarks>
+            Will throw <see cref="T:Microsoft.Maui.ApplicationModel.FeatureNotSupportedException" /> if not supported on device.
+            Will throw <see cref="T:System.InvalidOperationException" /> if <see cref="P:Microsoft.Maui.Devices.Sensors.Magnetometer.IsMonitoring" /> is <see langword="true" />.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -148,7 +157,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Stop monitoring for changes to magnetometer.</summary>
+        <summary>
+            Stop monitoring for changes to the magnetometer.
+            </summary>
         <remarks />
       </Docs>
     </Member>

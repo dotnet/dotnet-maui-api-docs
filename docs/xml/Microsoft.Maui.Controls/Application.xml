@@ -190,6 +190,12 @@ public partial class App : Application
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.Obsolete("Use ApplicationHandler.Mapper instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use ApplicationHandler.Mapper instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.IPropertyMapper&lt;Microsoft.Maui.IApplication,Microsoft.Maui.Handlers.ApplicationHandler&gt;</ReturnType>
       </ReturnValue>
@@ -767,7 +773,7 @@ public partial class App : Application
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="net-maui-7.0">
           <AttributeName Language="C#">[System.Obsolete("Properties API is obsolete, use Microsoft.Maui.Storage.Preferences instead.", true)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Obsolete("Properties API is obsolete, use Microsoft.Maui.Storage.Preferences instead.", true)&gt;]</AttributeName>
         </Attribute>
@@ -879,7 +885,7 @@ public partial class App : Application
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="net-maui-7.0">
           <AttributeName Language="C#">[System.Obsolete("Properties API is obsolete, use Microsoft.Maui.Storage.Preferences instead.", true)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Obsolete("Properties API is obsolete, use Microsoft.Maui.Storage.Preferences instead.", true)&gt;]</AttributeName>
         </Attribute>

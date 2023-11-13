@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            This class contains static extension methods for use with <see cref="T:Microsoft.Maui.Authentication.WebAuthenticator" />.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,11 +41,13 @@
         <Parameter Name="callbackUrl" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="webAuthenticator">To be added.</param>
-        <param name="url">To be added.</param>
-        <param name="callbackUrl">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="webAuthenticator">The <see cref="T:Microsoft.Maui.Authentication.IWebAuthenticator" /> to use for the authentication flow.</param>
+        <param name="url"> Url to navigate to, beginning the authentication flow.</param>
+        <param name="callbackUrl"> Expected callback url that the navigation flow will eventually redirect to.</param>
+        <summary>
+            Begin an authentication flow by navigating to the specified url and waiting for a callback/redirect to the callbackUrl scheme.
+            </summary>
+        <returns>Returns a result parsed out from the callback url.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

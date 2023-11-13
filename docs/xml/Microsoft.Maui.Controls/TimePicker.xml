@@ -4,7 +4,8 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.TimePicker" />
   <TypeSignature Language="VB.NET" Value="Public Class TimePicker&#xA;Inherits View&#xA;Implements IElementConfiguration(Of TimePicker), IFontElement, ITimePicker" />
   <TypeSignature Language="C++ CLI" Value="public ref class TimePicker : Microsoft::Maui::Controls::View, Microsoft::Maui::Controls::IElementConfiguration&lt;Microsoft::Maui::Controls::TimePicker ^&gt;, Microsoft::Maui::Controls::Internals::IFontElement, Microsoft::Maui::ITimePicker" />
-  <TypeSignature Language="F#" Value="type TimePicker = class&#xA;    inherit View&#xA;    interface ITimePicker&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface ITextStyle&#xA;    interface IFontElement&#xA;    interface IElementConfiguration&lt;TimePicker&gt;" />
+  <TypeSignature Language="F#" Value="type TimePicker = class&#xA;    inherit View&#xA;    interface ITimePicker&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface ITextStyle&#xA;    interface IFontElement&#xA;    interface IElementConfiguration&lt;TimePicker&gt;" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="F#" Value="type TimePicker = class&#xA;    inherit View&#xA;    interface IFontElement&#xA;    interface IElementConfiguration&lt;TimePicker&gt;&#xA;    interface ITimePicker&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface ITextStyle" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -107,7 +108,7 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.TimePicker.CharacterSpacing" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,6 +124,12 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.Obsolete("Use TimePickerHandler.Mapper instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use TimePickerHandler.Mapper instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.IPropertyMapper&lt;Microsoft.Maui.ITimePicker,Microsoft.Maui.Handlers.TimePickerHandler&gt;</ReturnType>
       </ReturnValue>
@@ -168,7 +175,7 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.TimePicker.FontAttributes" /> property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.TimePicker.FontAttributes" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,7 +216,7 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.TimePicker.FontAutoScalingEnabled" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -250,7 +257,7 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.TimePicker.FontFamily" /> property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.TimePicker.FontFamily" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -297,7 +304,7 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.TimePicker.FontSize" /> property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.TimePicker.FontSize" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -338,7 +345,7 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.TimePicker.Format" /> property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.TimePicker.Format" />.</summary>
         <remarks />
       </Docs>
     </Member>
@@ -507,6 +514,30 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Microsoft.Maui.ITimePicker.Time">
+      <MemberSignature Language="C#" Value="TimeSpan Microsoft.Maui.ITimePicker.Time { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Microsoft.Maui.ITimePicker.Time" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.TimePicker.Microsoft#Maui#ITimePicker#Time" />
+      <MemberSignature Language="VB.NET" Value=" Property Time As TimeSpan Implements ITimePicker.Time" />
+      <MemberSignature Language="C++ CLI" Value="property TimeSpan Microsoft::Maui::ITimePicker::Time { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.ITimePicker.Time : TimeSpan with get, set" Usage="Microsoft.Maui.ITimePicker.Time" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.ITimePicker.Time</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="On&lt;T&gt;">
       <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;T,Microsoft.Maui.Controls.TimePicker&gt; On&lt;T&gt; () where T : Microsoft.Maui.Controls.IConfigPlatform;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Maui.Controls.IPlatformElementConfiguration`2&lt;!!T, class Microsoft.Maui.Controls.TimePicker&gt; On&lt;(class Microsoft.Maui.Controls.IConfigPlatform) T&gt;() cil managed" />
@@ -578,7 +609,7 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.TimePicker.TextColor" /> property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.TimePicker.TextColor" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -591,7 +622,7 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
       <MemberSignature Language="F#" Value="member this.Time : TimeSpan with get, set" Usage="Microsoft.Maui.Controls.TimePicker.Time" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:Microsoft.Maui.ITimePicker.Time</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-maui-7.0">P:Microsoft.Maui.ITimePicker.Time</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -622,7 +653,7 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the Time bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.TimePicker.Time" />.</summary>
         <remarks />
       </Docs>
     </Member>

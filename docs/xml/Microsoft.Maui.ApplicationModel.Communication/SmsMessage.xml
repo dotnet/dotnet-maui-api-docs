@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a single SMS message.</summary>
+    <summary>
+            Represents a single SMS message.
+            </summary>
     <remarks />
   </Docs>
   <Members>
@@ -31,7 +33,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of SmsMessage</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.ApplicationModel.Communication.SmsMessage" /> class.
+            </summary>
         <remarks />
       </Docs>
     </Member>
@@ -52,10 +56,12 @@
         <Parameter Name="recipients" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="body">Content of the message</param>
-        <param name="recipients">Recipients to receive the message.</param>
-        <summary>Creates a new instance of SmsMessage</summary>
-        <remarks />
+        <param name="body">The body text that is used to prefill the composed SMS message.</param>
+        <param name="recipients">A collection of recipients that are added to the composed SMS message.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.ApplicationModel.Communication.SmsMessage" /> class.
+            </summary>
+        <remarks>Values in <paramref name="recipients" /> that are <see langword="null" /> or whitespace are not added as recipients.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -75,9 +81,11 @@
         <Parameter Name="recipient" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="body">Content of the message</param>
-        <param name="recipient">Recipient to receive the message.</param>
-        <summary>Creates a new instance of SmsMessage</summary>
+        <param name="body">The body text that is used to prefill the composed SMS message.</param>
+        <param name="recipient">A single recipient that is added to the composed SMS message.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.ApplicationModel.Communication.SmsMessage" /> class.
+            </summary>
         <remarks />
       </Docs>
     </Member>
@@ -97,7 +105,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the body of the message.</summary>
+        <summary>
+            Gets or sets the body of this message.
+            </summary>
         <value />
         <remarks />
       </Docs>
@@ -118,7 +128,9 @@
         <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the recipient of the message.</summary>
+        <summary>
+            Gets or sets the recipients for this message.
+            </summary>
         <value />
         <remarks />
       </Docs>

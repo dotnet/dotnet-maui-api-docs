@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Location Extensions</summary>
+    <summary>
+            This class contains static extension methods for use with <see cref="T:Microsoft.Maui.Devices.Sensors.Location" /> objects.
+            </summary>
     <remarks />
   </Docs>
   <Members>
@@ -45,6 +47,7 @@
         <summary>Extension to calculate distance from location to another location.</summary>
         <returns>Distance in units fro two locations.</returns>
         <remarks />
+        <inheritdoc cref="M:Microsoft.Maui.Devices.Sensors.Location.CalculateDistance(Microsoft.Maui.Devices.Sensors.Location,Microsoft.Maui.Devices.Sensors.Location,Microsoft.Maui.Devices.Sensors.DistanceUnits)" />
       </Docs>
     </Member>
     <Member MemberName="CalculateDistance">
@@ -76,6 +79,7 @@
         <summary>Extension to calculate distance from location to another location.</summary>
         <returns>Distance calculated.</returns>
         <remarks />
+        <inheritdoc cref="M:Microsoft.Maui.Devices.Sensors.Location.CalculateDistance(System.Double,System.Double,System.Double,System.Double,Microsoft.Maui.Devices.Sensors.DistanceUnits)" />
       </Docs>
     </Member>
     <Member MemberName="OpenMapsAsync">
@@ -101,6 +105,7 @@
         <summary>Open maps to this location.</summary>
         <returns>Task to wait.</returns>
         <remarks />
+        <inheritdoc cref="M:Microsoft.Maui.ApplicationModel.Map.OpenAsync(Microsoft.Maui.Devices.Sensors.Location)" />
       </Docs>
     </Member>
     <Member MemberName="OpenMapsAsync">
@@ -128,6 +133,7 @@
         <summary>Open maps to this location.</summary>
         <returns>Task to wait.</returns>
         <remarks />
+        <inheritdoc cref="M:Microsoft.Maui.ApplicationModel.Map.OpenAsync(Microsoft.Maui.Devices.Sensors.Location,Microsoft.Maui.ApplicationModel.MapLaunchOptions)" />
       </Docs>
     </Member>
   </Members>

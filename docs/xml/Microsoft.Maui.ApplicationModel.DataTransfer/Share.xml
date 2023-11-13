@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Share data such as text and uris to other applications.</summary>
+    <summary>
+            The Share API enables an application to share data such as text and web links to other applications on the device.
+            </summary>
     <remarks />
   </Docs>
   <Members>
@@ -34,7 +36,9 @@
         <ReturnType>Microsoft.Maui.ApplicationModel.DataTransfer.IShare</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Provides the default implementation for static usage of this API.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -58,9 +62,11 @@
         <Parameter Name="request" Type="Microsoft.Maui.ApplicationModel.DataTransfer.ShareFileRequest" />
       </Parameters>
       <Docs>
-        <param name="request">File request to share.</param>
-        <summary>Show the user interface to share a file.</summary>
-        <returns>Task when completed.</returns>
+        <param name="request">A <see cref="T:Microsoft.Maui.ApplicationModel.DataTransfer.ShareFileRequest" /> object containing the details of the data to share.</param>
+        <summary>
+            Show the operating system's user interface to share a single file.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks />
       </Docs>
     </Member>
@@ -83,9 +89,11 @@
         <Parameter Name="request" Type="Microsoft.Maui.ApplicationModel.DataTransfer.ShareMultipleFilesRequest" />
       </Parameters>
       <Docs>
-        <param name="request">Multiple Files request to share.</param>
-        <summary>Show the user interface to share a multiple files.</summary>
-        <returns>Task when completed.</returns>
+        <param name="request">A <see cref="T:Microsoft.Maui.ApplicationModel.DataTransfer.ShareMultipleFilesRequest" /> object containing the details of the data to share.</param>
+        <summary>
+            Show the operating system's user interface to share multiple files.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks />
       </Docs>
     </Member>
@@ -108,9 +116,11 @@
         <Parameter Name="request" Type="Microsoft.Maui.ApplicationModel.DataTransfer.ShareTextRequest" />
       </Parameters>
       <Docs>
-        <param name="request">Share request with options.</param>
-        <summary>Show the share user interface to share text or uri.</summary>
-        <returns>Task when completed.</returns>
+        <param name="request">A <see cref="T:Microsoft.Maui.ApplicationModel.DataTransfer.ShareTextRequest" /> object containing the details of the data to share.</param>
+        <summary>
+            Show the operating system's user interface to share text.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks />
       </Docs>
     </Member>
@@ -133,9 +143,11 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">Text to share.</param>
-        <summary>Show the share user interface to share text.</summary>
-        <returns>Task when completed.</returns>
+        <param name="text">The text to share.</param>
+        <summary>
+            Show the operating system's user interface to share text.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks />
       </Docs>
     </Member>
@@ -159,10 +171,12 @@
         <Parameter Name="title" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">Text to share.</param>
-        <param name="title">Title for the share user interface.</param>
-        <summary>Show the share user interface to share text with a title.</summary>
-        <returns>Task when completed.</returns>
+        <param name="text">The text to share.</param>
+        <param name="title">The title to display on the operating system share dialog.</param>
+        <summary>
+            Show the operating system's user interface to share text.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks />
       </Docs>
     </Member>

@@ -1,10 +1,12 @@
 <Type Name="FlexLayout" FullName="Microsoft.Maui.Controls.FlexLayout">
   <TypeSignature Language="C#" Value="public class FlexLayout : Microsoft.Maui.Controls.Layout, Microsoft.Maui.IFlexLayout, System.Collections.Generic.ICollection&lt;Microsoft.Maui.IView&gt;, System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.IView&gt;, System.Collections.Generic.IList&lt;Microsoft.Maui.IView&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FlexLayout extends Microsoft.Maui.Controls.Layout implements class Microsoft.Maui.IContainer, class Microsoft.Maui.IElement, class Microsoft.Maui.IFlexLayout, class Microsoft.Maui.ILayout, class Microsoft.Maui.IPadding, class Microsoft.Maui.ISafeAreaView, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView, class System.Collections.Generic.ICollection`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IList`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FlexLayout extends Microsoft.Maui.Controls.Layout implements class Microsoft.Maui.IContainer, class Microsoft.Maui.IElement, class Microsoft.Maui.IFlexLayout, class Microsoft.Maui.ILayout, class Microsoft.Maui.IPadding, class Microsoft.Maui.ISafeAreaView, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView, class System.Collections.Generic.ICollection`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IList`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.IEnumerable" FrameworkAlternate="net-maui-7.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.FlexLayout" />
   <TypeSignature Language="VB.NET" Value="Public Class FlexLayout&#xA;Inherits Layout&#xA;Implements ICollection(Of IView), IEnumerable(Of IView), IFlexLayout, IList(Of IView)" />
   <TypeSignature Language="C++ CLI" Value="public ref class FlexLayout : Microsoft::Maui::Controls::Layout, Microsoft::Maui::IFlexLayout, System::Collections::Generic::ICollection&lt;Microsoft::Maui::IView ^&gt;, System::Collections::Generic::IEnumerable&lt;Microsoft::Maui::IView ^&gt;, System::Collections::Generic::IList&lt;Microsoft::Maui::IView ^&gt;" />
-  <TypeSignature Language="F#" Value="type FlexLayout = class&#xA;    inherit Layout&#xA;    interface IFlexLayout&#xA;    interface ILayout&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IContainer&#xA;    interface IList&lt;IView&gt;&#xA;    interface ICollection&lt;IView&gt;&#xA;    interface seq&lt;IView&gt;&#xA;    interface IEnumerable&#xA;    interface ISafeAreaView&#xA;    interface IPadding" />
+  <TypeSignature Language="F#" Value="type FlexLayout = class&#xA;    inherit Layout&#xA;    interface IFlexLayout&#xA;    interface ILayout&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IContainer&#xA;    interface IList&lt;IView&gt;&#xA;    interface ICollection&lt;IView&gt;&#xA;    interface seq&lt;IView&gt;&#xA;    interface IEnumerable&#xA;    interface ISafeAreaView&#xA;    interface IPadding" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FlexLayout extends Microsoft.Maui.Controls.Layout implements class Microsoft.Maui.IContainer, class Microsoft.Maui.ICrossPlatformLayout, class Microsoft.Maui.IElement, class Microsoft.Maui.IFlexLayout, class Microsoft.Maui.ILayout, class Microsoft.Maui.IPadding, class Microsoft.Maui.ISafeAreaView, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView, class System.Collections.Generic.ICollection`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IList`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.IEnumerable" FrameworkAlternate="net-maui-8.0" />
+  <TypeSignature Language="F#" Value="type FlexLayout = class&#xA;    inherit Layout&#xA;    interface IFlexLayout&#xA;    interface ILayout&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IContainer&#xA;    interface IList&lt;IView&gt;&#xA;    interface ICollection&lt;IView&gt;&#xA;    interface seq&lt;IView&gt;&#xA;    interface IEnumerable&#xA;    interface ISafeAreaView&#xA;    interface IPadding&#xA;    interface ICrossPlatformLayout" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -55,6 +57,9 @@
     <Interface>
       <InterfaceName>System.Collections.IEnumerable</InterfaceName>
     </Interface>
+    <Interface FrameworkAlternate="net-maui-8.0">
+      <InterfaceName>Microsoft.Maui.ICrossPlatformLayout</InterfaceName>
+    </Interface>
   </Interfaces>
   <Attributes>
     <Attribute>
@@ -69,7 +74,7 @@
       <para>The <see cref="P:Microsoft.Maui.Controls.FlexLayout.Direction" /> property determines the primary axis of the layout. The <see cref="P:Microsoft.Maui.Controls.FlexLayout.JustifyContent" /> property determines how <see cref="P:Microsoft.Maui.Controls.Layout.Children" /> are laid out along the primary axis. The <see cref="P:Microsoft.Maui.Controls.FlexLayout.AlignItems" /> property specifies how <see cref="P:Microsoft.Maui.Controls.Layout.Children" /> are laid out along the cross axis; the <see cref="P:Microsoft.Maui.Controls.FlexLayout.AlignContent" /> property works similarly, but applies to entire rows or columns, not individual elements.</para>
       <para>The initial size of a child element is set with <see cref="M:Microsoft.Maui.Controls.FlexLayout.SetBasis(Microsoft.Maui.Controls.BindableObject,Microsoft.Maui.Layouts.FlexBasis)" /> and its resizing behavior is set with  <see cref="M:Microsoft.Maui.Controls.FlexLayout.SetGrow(Microsoft.Maui.Controls.BindableObject,System.Single)" /> and <see cref="M:Microsoft.Maui.Controls.FlexLayout.SetShrink(Microsoft.Maui.Controls.BindableObject,System.Single)" />.</para>
     </remarks>
-    <related type="article" href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/layouts/flex-layout">The Microsoft.Maui.Controls FlexLayout</related>
+    <related type="article" href="https://learn.microsoft.com/dotnet/maui/user-interface/layouts/flexlayout">The .NET MAUI FlexLayout</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -131,7 +136,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.FlexLayout.AlignContent" /> property.</summary>
+        <summary>Bindable property for attached property <see cref="P:Microsoft.Maui.Controls.FlexLayout.AlignContent" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,7 +182,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.FlexLayout.AlignItems" /> property.</summary>
+        <summary>Bindable property for attached property <see cref="P:Microsoft.Maui.Controls.FlexLayout.AlignItems" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,7 +202,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the attached property that optionally overrides the item alignment for this child within its row or column in the parent.</summary>
+        <summary>Bindable property for attached property <c>AlignSelf</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,7 +222,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the attached property that contains information about this element's relative or absolute basis.</summary>
+        <summary>Bindable property for attached property <c>Basis</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -315,7 +320,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.FlexLayout.Direction" /> property.</summary>
+        <summary>Bindable property for attached property <see cref="P:Microsoft.Maui.Controls.FlexLayout.Direction" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -628,7 +633,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the attached property that determines the proportional growth that this element will accept to acccommodate the layout in the row or column.</summary>
+        <summary>Bindable property for attached property <c>Grow</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -674,7 +679,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.FlexLayout.JustifyContent" /> property.</summary>
+        <summary>Bindable property for attached property <see cref="P:Microsoft.Maui.Controls.FlexLayout.JustifyContent" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -871,7 +876,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the attached property that determines this element's visual order among its siblings.</summary>
+        <summary>Bindable property for attached property <c>Order</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -912,7 +917,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.FlexLayout.Position" /> property.</summary>
+        <summary>Bindable property for attached property <see cref="P:Microsoft.Maui.Controls.FlexLayout.Position" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1203,7 +1208,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the attached property that determines the proportional reduction in size that this element will accept to acccommodate the layout in the row or column.</summary>
+        <summary>Bindable property for attached property <c>Shrink</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1244,7 +1249,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.FlexLayout.Wrap" /> property.</summary>
+        <summary>Bindable property for attached property <see cref="P:Microsoft.Maui.Controls.FlexLayout.Wrap" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

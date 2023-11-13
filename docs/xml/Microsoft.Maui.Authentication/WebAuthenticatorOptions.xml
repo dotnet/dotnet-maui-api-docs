@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents additional options for <see cref="T:Microsoft.Maui.Authentication.WebAuthenticator" />.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -51,7 +53,9 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the callback URL that should be called when authentication completes.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -72,7 +76,33 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets whether the browser used for the authentication flow is short-lived.
+            This means it will not share session nor cookies with the regular browser on this device if set the <see langword="true" />. 
+            </summary>
+        <value>To be added.</value>
+        <remarks>This setting only has effect on iOS.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseDecoder">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Authentication.IWebAuthenticatorResponseDecoder? ResponseDecoder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Authentication.IWebAuthenticatorResponseDecoder ResponseDecoder" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Authentication.WebAuthenticatorOptions.ResponseDecoder" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResponseDecoder As IWebAuthenticatorResponseDecoder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Authentication::IWebAuthenticatorResponseDecoder ^ ResponseDecoder { Microsoft::Maui::Authentication::IWebAuthenticatorResponseDecoder ^ get(); void set(Microsoft::Maui::Authentication::IWebAuthenticatorResponseDecoder ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ResponseDecoder : Microsoft.Maui.Authentication.IWebAuthenticatorResponseDecoder with get, set" Usage="Microsoft.Maui.Authentication.WebAuthenticatorOptions.ResponseDecoder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Authentication.IWebAuthenticatorResponseDecoder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the decoder implementation used to decode the incoming authentication result URI. 
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,7 +123,9 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the URL that will start the authentication flow.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

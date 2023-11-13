@@ -101,6 +101,12 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.Obsolete("Use FlyoutViewHandler.Mapper instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use FlyoutViewHandler.Mapper instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.IPropertyMapper&lt;Microsoft.Maui.IFlyoutView,Microsoft.Maui.Handlers.FlyoutViewHandler&gt;</ReturnType>
       </ReturnValue>
@@ -188,7 +194,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.FlyoutPage.FlyoutLayoutBehavior" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -229,7 +235,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.FlyoutPage.IsGestureEnabled" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -293,7 +299,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.FlyoutPage.IsPresented" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

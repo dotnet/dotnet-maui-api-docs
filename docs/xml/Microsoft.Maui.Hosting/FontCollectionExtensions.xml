@@ -39,13 +39,17 @@
         <Parameter Name="alias" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fontCollection">To be added.</param>
-        <param name="assembly">To be added.</param>
-        <param name="filename">To be added.</param>
-        <param name="alias">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="fontCollection">The collection to add the font to.</param>
+        <param name="assembly">The assembly that contains the specified font as an embedded resource.</param>
+        <param name="filename">The embedded resource filename of the font to add, such as a True type format (TTF) or open type font (OTF) font file.</param>
+        <param name="alias">An optional alias that can also be used to reference this font.</param>
+        <summary>
+            Adds the font specified in <paramref name="filename" /> from an embedded resource in <paramref name="assembly" /> to the <paramref name="fontCollection" />, with an optional font alias specified in <paramref name="alias" />.
+            </summary>
+        <returns />
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="filename" /> parameter is <c>null</c>. -or- The <paramref name="assembly" /> parameter is <c>null</c>.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="filename" /> parameter is empty or only whitespace.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddFont">
@@ -68,12 +72,16 @@
         <Parameter Name="alias" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fontCollection">To be added.</param>
-        <param name="filename">To be added.</param>
-        <param name="alias">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="fontCollection">The collection to add the font to.</param>
+        <param name="filename">The filename of the font to add, such as a True type format (TTF) or open type font (OTF) font file. Font files can be added to the 'Resources\Fonts' of a .NET MAUI project.</param>
+        <param name="alias">An optional alias that can also be used to reference this font.</param>
+        <summary>
+            Adds the font specified in <paramref name="filename" /> to the <paramref name="fontCollection" />, with an optional font alias specified in <paramref name="alias" />.
+            </summary>
+        <returns />
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="filename" /> parameter is <c>null</c>.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="filename" /> parameter is empty or only whitespace.</exception>
       </Docs>
     </Member>
   </Members>

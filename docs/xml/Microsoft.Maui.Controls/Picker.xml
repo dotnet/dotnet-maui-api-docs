@@ -4,7 +4,8 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Picker" />
   <TypeSignature Language="VB.NET" Value="Public Class Picker&#xA;Inherits View&#xA;Implements IElementConfiguration(Of Picker), IFontElement, IItemDelegate(Of String), IPicker" />
   <TypeSignature Language="C++ CLI" Value="public ref class Picker : Microsoft::Maui::Controls::View, Microsoft::Maui::Controls::IElementConfiguration&lt;Microsoft::Maui::Controls::Picker ^&gt;, Microsoft::Maui::Controls::Internals::IFontElement, Microsoft::Maui::IItemDelegate&lt;System::String ^&gt;, Microsoft::Maui::IPicker" />
-  <TypeSignature Language="F#" Value="type Picker = class&#xA;    inherit View&#xA;    interface IPicker&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface ITextStyle&#xA;    interface ITextAlignment&#xA;    interface IItemDelegate&lt;string&gt;&#xA;    interface IFontElement&#xA;    interface IElementConfiguration&lt;Picker&gt;" />
+  <TypeSignature Language="F#" Value="type Picker = class&#xA;    inherit View&#xA;    interface IPicker&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface ITextStyle&#xA;    interface ITextAlignment&#xA;    interface IItemDelegate&lt;string&gt;&#xA;    interface IFontElement&#xA;    interface IElementConfiguration&lt;Picker&gt;" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="F#" Value="type Picker = class&#xA;    inherit View&#xA;    interface IFontElement&#xA;    interface IElementConfiguration&lt;Picker&gt;&#xA;    interface IPicker&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface ITextStyle&#xA;    interface ITextAlignment&#xA;    interface IItemDelegate&lt;string&gt;" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -189,7 +190,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Picker.CharacterSpacing" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,6 +206,12 @@ namespace FormsGallery
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.Obsolete("Use PickerHandler.Mapper instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use PickerHandler.Mapper instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.IPropertyMapper&lt;Microsoft.Maui.IPicker,Microsoft.Maui.Handlers.PickerHandler&gt;</ReturnType>
       </ReturnValue>
@@ -250,7 +257,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.Picker.FontAttributes" /> property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Picker.FontAttributes" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -291,7 +298,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Picker.FontAutoScalingEnabled" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -332,7 +339,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.Picker.FontFamily" /> property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Picker.FontFamily" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -379,7 +386,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.Picker.FontSize" /> property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Picker.FontSize" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -420,7 +427,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Picker.HorizontalTextAlignment" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -503,7 +510,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.Picker.ItemsSource" /> property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Picker.ItemsSource" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -725,6 +732,30 @@ namespace FormsGallery
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Microsoft.Maui.IPicker.SelectedIndex">
+      <MemberSignature Language="C#" Value="int Microsoft.Maui.IPicker.SelectedIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Microsoft.Maui.IPicker.SelectedIndex" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Picker.Microsoft#Maui#IPicker#SelectedIndex" />
+      <MemberSignature Language="VB.NET" Value=" Property SelectedIndex As Integer Implements IPicker.SelectedIndex" />
+      <MemberSignature Language="C++ CLI" Value="property int Microsoft::Maui::IPicker::SelectedIndex { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.IPicker.SelectedIndex : int with get, set" Usage="Microsoft.Maui.IPicker.SelectedIndex" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IPicker.SelectedIndex</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Microsoft.Maui.ITextStyle.Font">
       <MemberSignature Language="C#" Value="Microsoft.Maui.Font Microsoft.Maui.ITextStyle.Font { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.Font Microsoft.Maui.ITextStyle.Font" />
@@ -792,7 +823,7 @@ namespace FormsGallery
       <MemberSignature Language="F#" Value="member this.SelectedIndex : int with get, set" Usage="Microsoft.Maui.Controls.Picker.SelectedIndex" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:Microsoft.Maui.IPicker.SelectedIndex</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-maui-7.0">P:Microsoft.Maui.IPicker.SelectedIndex</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -843,7 +874,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the SelectedIndex bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Picker.SelectedIndex" />.</summary>
         <remarks />
       </Docs>
     </Member>
@@ -884,7 +915,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.Picker.SelectedItem" /> property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Picker.SelectedItem" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -925,7 +956,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.Picker.TextColor" /> property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Picker.TextColor" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -987,7 +1018,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.Picker.TitleColor" /> field.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Picker.TitleColor" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1007,7 +1038,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the Title bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Picker.Title" />.</summary>
         <remarks />
       </Docs>
     </Member>
@@ -1075,7 +1106,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Picker.VerticalTextAlignment" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

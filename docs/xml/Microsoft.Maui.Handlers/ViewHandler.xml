@@ -21,8 +21,11 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+            Base class for handlers that manage views which implement <see cref="T:Microsoft.Maui.IView" />.
+            </summary>
+    <remarks>Handlers map virtual views (.NET MAUI layer) to controls on each platform (iOS, Android, Windows, macOS, etc.), which are known as platform views.
+            Handlers are also responsible for instantiating the underlying platform view, and mapping the cross-platform control API to the platform view API. </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,9 +44,11 @@
         <Parameter Name="commandMapper" Type="Microsoft.Maui.CommandMapper" />
       </Parameters>
       <Docs>
-        <param name="mapper">To be added.</param>
-        <param name="commandMapper">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="mapper">The default mapper to use for this handler.</param>
+        <param name="commandMapper">The command mapper to use for this handler.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Handlers.ViewHandler" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,9 +68,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the view that acts as a container for the <see cref="P:Microsoft.Maui.Handlers.ViewHandler.PlatformView" />.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Note that this can be <see langword="null" />. Especially when <see cref="P:Microsoft.Maui.Handlers.ViewHandler.HasContainer" /> is set to <see langword="false" /> this value might not be set.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDesiredSize">
@@ -96,6 +103,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="HasContainer">
@@ -117,9 +125,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets a value that indicates whether the <see cref="P:Microsoft.Maui.Handlers.ViewHandler.PlatformView" /> is contained within a view.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>When set to <see langword="true" />, <see cref="M:Microsoft.Maui.Handlers.ViewHandler.SetupContainer" /> is called to setup the container view.
+            When set to <see langword="false" />, <see cref="M:Microsoft.Maui.Handlers.ViewHandler.RemoveContainer" /> is called to remove the current container view.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MapAnchorX">
@@ -194,9 +205,11 @@
         <Parameter Name="view" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The associated handler.</param>
+        <param name="view">The associated <see cref="T:Microsoft.Maui.IView" /> instance.</param>
+        <summary>
+            Maps the abstract <see cref="P:Microsoft.Maui.IView.AutomationId" /> property to the platform-specific implementations.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,9 +233,11 @@
         <Parameter Name="view" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The associated handler.</param>
+        <param name="view">The associated <see cref="T:Microsoft.Maui.IView" /> instance.</param>
+        <summary>
+            Maps the abstract <see cref="P:Microsoft.Maui.IView.Background" /> property to the platform-specific implementations.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -246,9 +261,11 @@
         <Parameter Name="view" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The associated handler.</param>
+        <param name="view">The associated <see cref="T:Microsoft.Maui.IView" /> instance.</param>
+        <summary>
+            Maps the abstract <see cref="P:Microsoft.Maui.IBorder.Border" /> property to the platform-specific implementations.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -272,9 +289,11 @@
         <Parameter Name="view" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The associated handler.</param>
+        <param name="view">The associated <see cref="T:Microsoft.Maui.IView" /> instance.</param>
+        <summary>
+            Maps the abstract <see cref="P:Microsoft.Maui.IView.Clip" /> property to the platform-specific implementations.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -298,9 +317,11 @@
         <Parameter Name="view" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The associated handler.</param>
+        <param name="view">The associated <see cref="T:Microsoft.Maui.IView" /> instance.</param>
+        <summary>
+            Maps the abstract <see cref="P:Microsoft.Maui.IViewHandler.ContainerView" /> property to the platform-specific implementations.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -350,9 +371,11 @@
         <Parameter Name="view" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The associated handler.</param>
+        <param name="view">The associated <see cref="T:Microsoft.Maui.IView" /> instance.</param>
+        <summary>
+            Maps the abstract <see cref="P:Microsoft.Maui.IView.FlowDirection" /> property to the platform-specific implementations.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -377,10 +400,12 @@
         <Parameter Name="args" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="view">To be added.</param>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The associated handler.</param>
+        <param name="view">The associated <see cref="T:Microsoft.Maui.IView" /> instance.</param>
+        <param name="args">The arguments passed associated to this event.</param>
+        <summary>
+            Maps the abstract <see cref="M:Microsoft.Maui.IView.Focus" /> property to the platform-specific implementations.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -405,10 +430,12 @@
         <Parameter Name="args" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="view">To be added.</param>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The associated handler.</param>
+        <param name="view">The associated <see cref="T:Microsoft.Maui.IView" /> instance.</param>
+        <param name="args">The arguments passed associated to this event.</param>
+        <summary>
+            Maps the abstract <see cref="P:Microsoft.Maui.IView.Frame" /> property to the platform-specific implementations.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -432,9 +459,11 @@
         <Parameter Name="view" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The associated handler.</param>
+        <param name="view">The associated <see cref="T:Microsoft.Maui.IView" /> instance.</param>
+        <summary>
+            Maps the abstract <see cref="P:Microsoft.Maui.IView.Height" /> property to the platform-specific implementations.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -458,9 +487,11 @@
         <Parameter Name="view" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The associated handler.</param>
+        <param name="view">The associated <see cref="T:Microsoft.Maui.IView" /> instance.</param>
+        <summary>
+            Maps the abstract <see cref="P:Microsoft.Maui.IView.InputTransparent" /> property to the platform-specific implementations.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -485,10 +516,12 @@
         <Parameter Name="args" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="view">To be added.</param>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The associated handler.</param>
+        <param name="view">The associated <see cref="T:Microsoft.Maui.IView" /> instance.</param>
+        <param name="args">The arguments passed associated to this event.</param>
+        <summary>
+            Maps the abstract <see cref="M:Microsoft.Maui.IView.InvalidateMeasure" /> method to the platform-specific implementations.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -512,9 +545,11 @@
         <Parameter Name="view" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The associated handler.</param>
+        <param name="view">The associated <see cref="T:Microsoft.Maui.IView" /> instance.</param>
+        <summary>
+            Maps the abstract <see cref="P:Microsoft.Maui.IView.IsEnabled" /> property to the platform-specific implementations.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -538,9 +573,11 @@
         <Parameter Name="view" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The associated handler.</param>
+        <param name="view">The associated <see cref="T:Microsoft.Maui.IView" /> instance.</param>
+        <summary>
+            Maps the abstract <see cref="P:Microsoft.Maui.IView.MaximumHeight" /> property to the platform-specific implementations.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -564,9 +601,11 @@
         <Parameter Name="view" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The associated handler.</param>
+        <param name="view">The associated <see cref="T:Microsoft.Maui.IView" /> instance.</param>
+        <summary>
+            Maps the abstract <see cref="P:Microsoft.Maui.IView.MaximumWidth" /> property to the platform-specific implementations.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -590,9 +629,11 @@
         <Parameter Name="view" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The associated handler.</param>
+        <param name="view">The associated <see cref="T:Microsoft.Maui.IView" /> instance.</param>
+        <summary>
+            Maps the abstract <see cref="P:Microsoft.Maui.IView.MinimumHeight" /> property to the platform-specific implementations.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -616,9 +657,11 @@
         <Parameter Name="view" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The associated handler.</param>
+        <param name="view">The associated <see cref="T:Microsoft.Maui.IView" /> instance.</param>
+        <summary>
+            Maps the abstract <see cref="P:Microsoft.Maui.IView.MinimumWidth" /> property to the platform-specific implementations.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -642,9 +685,11 @@
         <Parameter Name="view" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The associated handler.</param>
+        <param name="view">The associated <see cref="T:Microsoft.Maui.IView" /> instance.</param>
+        <summary>
+            Maps the abstract <see cref="P:Microsoft.Maui.IView.Opacity" /> property to the platform-specific implementations.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -824,9 +869,11 @@
         <Parameter Name="view" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The associated handler.</param>
+        <param name="view">The associated <see cref="T:Microsoft.Maui.IView" /> instance.</param>
+        <summary>
+            Maps the abstract <see cref="P:Microsoft.Maui.IView.Semantics" /> property to the platform-specific implementations.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -850,9 +897,11 @@
         <Parameter Name="view" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The associated handler.</param>
+        <param name="view">The associated <see cref="T:Microsoft.Maui.IView" /> instance.</param>
+        <summary>
+            Maps the abstract <see cref="P:Microsoft.Maui.IView.Shadow" /> property to the platform-specific implementations.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -876,9 +925,11 @@
         <Parameter Name="view" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The associated handler.</param>
+        <param name="view">The associated <see cref="T:Microsoft.Maui.IView" /> instance.</param>
+        <summary>
+            Maps the abstract <see cref="P:Microsoft.Maui.IToolTipElement.ToolTip" /> property to the platform-specific implementations.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -955,10 +1006,12 @@
         <Parameter Name="args" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="view">To be added.</param>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The associated handler.</param>
+        <param name="view">The associated <see cref="T:Microsoft.Maui.IView" /> instance.</param>
+        <param name="args">The arguments passed associated to this event.</param>
+        <summary>
+            Maps the abstract <see cref="M:Microsoft.Maui.IView.Unfocus" /> method to the platform-specific implementations.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -982,9 +1035,11 @@
         <Parameter Name="view" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The associated handler.</param>
+        <param name="view">The associated <see cref="T:Microsoft.Maui.IView" /> instance.</param>
+        <summary>
+            Maps the abstract <see cref="P:Microsoft.Maui.IView.Visibility" /> property to the platform-specific implementations.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1008,9 +1063,11 @@
         <Parameter Name="view" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The associated handler.</param>
+        <param name="view">The associated <see cref="T:Microsoft.Maui.IView" /> instance.</param>
+        <summary>
+            Maps the abstract <see cref="P:Microsoft.Maui.IView.Width" /> property to the platform-specific implementations.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1035,10 +1092,12 @@
         <Parameter Name="args" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="view">To be added.</param>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The associated handler.</param>
+        <param name="view">The associated <see cref="T:Microsoft.Maui.IView" /> instance.</param>
+        <param name="args">The arguments passed associated to this event.</param>
+        <summary>
+            Maps the abstract <see cref="P:Microsoft.Maui.IView.ZIndex" /> property to the platform-specific implementations.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1082,7 +1141,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a value that indicates whether or not the <see cref="P:Microsoft.Maui.Handlers.ViewHandler.VirtualView" /> needs a container view.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1112,6 +1173,7 @@
         <param name="frame">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="PlatformView">
@@ -1130,9 +1192,12 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the platform representation of the view associated to this handler.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>This property holds the reference to platform layer view, e.g. the iOS/macOS, Android or Windows view.
+            The abstract (.NET MAUI) view is found in <see cref="P:Microsoft.Maui.Handlers.ViewHandler.VirtualView" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveContainer">
@@ -1152,8 +1217,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+            Deconstructs the <see cref="P:Microsoft.Maui.Handlers.ViewHandler.ContainerView" /> and removes <see cref="P:Microsoft.Maui.Handlers.ViewHandler.PlatformView" /> from its container. 
+            </summary>
+        <remarks>This method is called when <see cref="P:Microsoft.Maui.Handlers.ViewHandler.HasContainer" /> is set to <see langword="false" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetupContainer">
@@ -1173,8 +1240,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+            Constructs the <see cref="P:Microsoft.Maui.Handlers.ViewHandler.ContainerView" /> and adds <see cref="P:Microsoft.Maui.Handlers.ViewHandler.PlatformView" /> to a container.
+            </summary>
+        <remarks>This method is called when <see cref="P:Microsoft.Maui.Handlers.ViewHandler.HasContainer" /> is set to <see langword="true" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ViewCommandMapper">
@@ -1193,8 +1262,11 @@
         <ReturnType>Microsoft.Maui.CommandMapper&lt;Microsoft.Maui.IView,Microsoft.Maui.IViewHandler&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+            A dictionary that maps the virtual view commands to their platform view counterparts.
+            </summary>
+        <remarks>The concept or a command mapper is very similar to the property mapper with
+            the addition that you can provide extra data in the form of arguments with the command mapper.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ViewMapper">
@@ -1213,7 +1285,9 @@
         <ReturnType>Microsoft.Maui.IPropertyMapper&lt;Microsoft.Maui.IView,Microsoft.Maui.IViewHandler&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            A dictionary that maps the virtual view properties to their platform view counterparts.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1233,9 +1307,12 @@
         <ReturnType>Microsoft.Maui.IView</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the .NET MAUI repesentation of the view associated to this handler.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>This property holds the reference to the abstract (.NET MAUI) view.
+            The platform view is found in <see cref="P:Microsoft.Maui.Handlers.ViewHandler.PlatformView" />.</remarks>
       </Docs>
     </Member>
   </Members>

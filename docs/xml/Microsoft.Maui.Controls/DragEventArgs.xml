@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Provides data for the <see cref="E:Microsoft.Maui.Controls.DropGestureRecognizer.DragOver" /> and <see cref="E:Microsoft.Maui.Controls.DropGestureRecognizer.DragLeave" /> events.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,8 +36,10 @@
         <Parameter Name="dataPackage" Type="Microsoft.Maui.Controls.DataPackage" />
       </Parameters>
       <Docs>
-        <param name="dataPackage">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dataPackage">The data package associated with the drag source.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.DragEventArgs" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,7 +59,9 @@
         <ReturnType>Microsoft.Maui.Controls.DataPackageOperation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets a value that specifies which operations are allowed by the drop target.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -76,7 +82,59 @@
         <ReturnType>Microsoft.Maui.Controls.DataPackage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the data package associated with the drag source.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPosition">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.Maui.Graphics.Point? GetPosition (Microsoft.Maui.Controls.Element? relativeTo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Nullable`1&lt;valuetype Microsoft.Maui.Graphics.Point&gt; GetPosition(class Microsoft.Maui.Controls.Element relativeTo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.DragEventArgs.GetPosition(Microsoft.Maui.Controls.Element)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPosition (relativeTo As Element) As Nullable(Of Point)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Nullable&lt;Microsoft::Maui::Graphics::Point&gt; GetPosition(Microsoft::Maui::Controls::Element ^ relativeTo);" />
+      <MemberSignature Language="F#" Value="abstract member GetPosition : Microsoft.Maui.Controls.Element -&gt; Nullable&lt;Microsoft.Maui.Graphics.Point&gt;&#xA;override this.GetPosition : Microsoft.Maui.Controls.Element -&gt; Nullable&lt;Microsoft.Maui.Graphics.Point&gt;" Usage="dragEventArgs.GetPosition relativeTo" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Microsoft.Maui.Graphics.Point&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="relativeTo" Type="Microsoft.Maui.Controls.Element" Index="0" FrameworkAlternate="net-maui-8.0" />
+      </Parameters>
+      <Docs>
+        <param name="relativeTo">Element whose position is used to calculate the relative position.</param>
+        <summary>
+            Gets the location of the drag relative to the specified element.
+            </summary>
+        <returns>The point where dragging is occurring relative to <paramref name="relativeTo" />.</returns>
+        <remarks>If <paramref name="relativeTo" /> is <see langword="null" /> then the position relative to the screen is returned.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformArgs">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.PlatformDragEventArgs? PlatformArgs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.PlatformDragEventArgs PlatformArgs" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.DragEventArgs.PlatformArgs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PlatformArgs As PlatformDragEventArgs" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::PlatformDragEventArgs ^ PlatformArgs { Microsoft::Maui::Controls::PlatformDragEventArgs ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PlatformArgs : Microsoft.Maui.Controls.PlatformDragEventArgs" Usage="Microsoft.Maui.Controls.DragEventArgs.PlatformArgs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.PlatformDragEventArgs</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the platform-specific arguments associated with the <see cref="T:Microsoft.Maui.Controls.DragEventArgs" />.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

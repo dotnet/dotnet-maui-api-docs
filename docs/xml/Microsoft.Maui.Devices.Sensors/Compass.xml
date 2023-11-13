@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Monitor changes to the orientation of the user's device.</summary>
+    <summary>
+            Monitor changes to the orientation of the user's device.
+            </summary>
     <remarks />
   </Docs>
   <Members>
@@ -34,7 +36,9 @@
         <ReturnType>Microsoft.Maui.Devices.Sensors.ICompass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Provides the default implementation for static usage of this API.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -55,7 +59,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets if compass is actively being monitored.</summary>
+        <summary>
+            Gets a value indicating whether the compass is actively being monitored.
+            </summary>
         <value>If compass is being monitored.</value>
         <remarks />
       </Docs>
@@ -76,7 +82,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a value indicating whether reading the compass is supported on this device.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -97,7 +105,9 @@
         <ReturnType>System.EventHandler&lt;Microsoft.Maui.Devices.Sensors.CompassChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when compass reading changes.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,8 +131,13 @@
       </Parameters>
       <Docs>
         <param name="sensorSpeed">The speed to monitor for changes.</param>
-        <summary>Start monitoring for changes to the compass.</summary>
-        <remarks>Will throw FeatureNotSupportedException if not supported on device. Will throw ArgumentNullException if handler is null.</remarks>
+        <summary>
+            Start monitoring for changes to the compass.
+            </summary>
+        <remarks>
+            Will throw <see cref="T:Microsoft.Maui.ApplicationModel.FeatureNotSupportedException" /> if not supported on device.
+            Will throw <see cref="T:System.InvalidOperationException" /> if <see cref="P:Microsoft.Maui.Devices.Sensors.Compass.IsMonitoring" /> is <see langword="true" />.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -147,8 +162,13 @@
       <Docs>
         <param name="sensorSpeed">The speed to monitor for changes.</param>
         <param name="applyLowPassFilter">Whether or not to apply a moving average filter (only used on Android).</param>
-        <summary>Start monitoring for changes to the compass.</summary>
-        <remarks>Will throw FeatureNotSupportedException if not supported on device. Will throw ArgumentNullException if handler is null.</remarks>
+        <summary>
+            Start monitoring for changes to the compass.
+            </summary>
+        <remarks>
+            Will throw <see cref="T:Microsoft.Maui.ApplicationModel.FeatureNotSupportedException" /> if not supported on device.
+            Will throw <see cref="T:System.InvalidOperationException" /> if <see cref="P:Microsoft.Maui.Devices.Sensors.Compass.IsMonitoring" /> is <see langword="true" />.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -168,7 +188,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Stop monitoring for changes to the compass.</summary>
+        <summary>
+            Stop monitoring for changes to the compass.
+            </summary>
         <remarks />
       </Docs>
     </Member>

@@ -1,10 +1,14 @@
 <Type Name="LayoutOptions" FullName="Microsoft.Maui.Controls.LayoutOptions">
-  <TypeSignature Language="C#" Value="public struct LayoutOptions" />
-  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit LayoutOptions extends System.ValueType" />
+  <TypeSignature Language="C#" Value="public struct LayoutOptions" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit LayoutOptions extends System.ValueType" FrameworkAlternate="net-maui-7.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.LayoutOptions" />
-  <TypeSignature Language="VB.NET" Value="Public Structure LayoutOptions" />
-  <TypeSignature Language="C++ CLI" Value="public value class LayoutOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Structure LayoutOptions" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="C++ CLI" Value="public value class LayoutOptions" FrameworkAlternate="net-maui-7.0" />
   <TypeSignature Language="F#" Value="type LayoutOptions = struct" />
+  <TypeSignature Language="C#" Value="public struct LayoutOptions : IEquatable&lt;Microsoft.Maui.Controls.LayoutOptions&gt;" FrameworkAlternate="net-maui-8.0" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit LayoutOptions extends System.ValueType implements class System.IEquatable`1&lt;valuetype Microsoft.Maui.Controls.LayoutOptions&gt;" FrameworkAlternate="net-maui-8.0" />
+  <TypeSignature Language="VB.NET" Value="Public Structure LayoutOptions&#xA;Implements IEquatable(Of LayoutOptions)" FrameworkAlternate="net-maui-8.0" />
+  <TypeSignature Language="C++ CLI" Value="public value class LayoutOptions : IEquatable&lt;Microsoft::Maui::Controls::LayoutOptions&gt;" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -12,7 +16,11 @@
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
-  <Interfaces />
+  <Interfaces>
+    <Interface FrameworkAlternate="net-maui-8.0">
+      <InterfaceName>System.IEquatable&lt;Microsoft.Maui.Controls.LayoutOptions&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
   <Attributes>
     <Attribute>
       <AttributeName Language="C#">[System.ComponentModel.TypeConverter(typeof(Microsoft.Maui.Controls.LayoutOptionsConverter))]</AttributeName>
@@ -160,6 +168,59 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (Microsoft.Maui.Controls.LayoutOptions other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype Microsoft.Maui.Controls.LayoutOptions other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.LayoutOptions.Equals(Microsoft.Maui.Controls.LayoutOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As LayoutOptions) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(Microsoft::Maui::Controls::LayoutOptions other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : Microsoft.Maui.Controls.LayoutOptions -&gt; bool" Usage="layoutOptions.Equals other" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="Microsoft.Maui.Controls.LayoutOptions" Index="0" FrameworkAlternate="net-maui-8.0" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.LayoutOptions.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="layoutOptions.Equals obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" Index="0" FrameworkAlternate="net-maui-8.0" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Expands">
       <MemberSignature Language="C#" Value="public bool Expands { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Expands" />
@@ -224,6 +285,82 @@
       </ReturnValue>
       <Docs>
         <summary>A <see cref="T:Microsoft.Maui.Controls.LayoutOptions" /> structure that describes an element that has no padding around itself and expands.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.LayoutOptions.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="layoutOptions.GetHashCode " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool operator == (Microsoft.Maui.Controls.LayoutOptions left, Microsoft.Maui.Controls.LayoutOptions right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype Microsoft.Maui.Controls.LayoutOptions left, valuetype Microsoft.Maui.Controls.LayoutOptions right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.LayoutOptions.op_Equality(Microsoft.Maui.Controls.LayoutOptions,Microsoft.Maui.Controls.LayoutOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As LayoutOptions, right As LayoutOptions) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(Microsoft::Maui::Controls::LayoutOptions left, Microsoft::Maui::Controls::LayoutOptions right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : Microsoft.Maui.Controls.LayoutOptions * Microsoft.Maui.Controls.LayoutOptions -&gt; bool" Usage="left = right" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="Microsoft.Maui.Controls.LayoutOptions" Index="0" FrameworkAlternate="net-maui-8.0" />
+        <Parameter Name="right" Type="Microsoft.Maui.Controls.LayoutOptions" Index="1" FrameworkAlternate="net-maui-8.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool operator != (Microsoft.Maui.Controls.LayoutOptions left, Microsoft.Maui.Controls.LayoutOptions right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype Microsoft.Maui.Controls.LayoutOptions left, valuetype Microsoft.Maui.Controls.LayoutOptions right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.LayoutOptions.op_Inequality(Microsoft.Maui.Controls.LayoutOptions,Microsoft.Maui.Controls.LayoutOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As LayoutOptions, right As LayoutOptions) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(Microsoft::Maui::Controls::LayoutOptions left, Microsoft::Maui::Controls::LayoutOptions right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : Microsoft.Maui.Controls.LayoutOptions * Microsoft.Maui.Controls.LayoutOptions -&gt; bool" Usage="Microsoft.Maui.Controls.LayoutOptions.op_Inequality (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="Microsoft.Maui.Controls.LayoutOptions" Index="0" FrameworkAlternate="net-maui-8.0" />
+        <Parameter Name="right" Type="Microsoft.Maui.Controls.LayoutOptions" Index="1" FrameworkAlternate="net-maui-8.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -36,31 +36,33 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides the base class for all Microsoft.Maui.Controls hierarchal elements. This class contains all the methods and properties required to represent an element in the Microsoft.Maui.Controls hierarchy.</summary>
+    <summary>Provides the base class for all Microsoft.Maui.Controls hierarchal elements.
+             This class contains all the methods and properties required to represent an element in the Microsoft.Maui.Controls hierarchy.
+             </summary>
     <remarks>
       <para>Important categories of visual elements are noted in the following table:</para>
       <list type="table">
         <listheader>
-          <term>Class</term>
-          <description>Description</description>
+          <term> Class </term>
+          <description> Description </description>
         </listheader>
         <item>
           <term>
             <see cref="T:Microsoft.Maui.Controls.VisualElement" />
           </term>
-          <description>A <see cref="T:Microsoft.Maui.Controls.Element" /> that occupies an area on the screen, has a visual appearance, and can obtain touch input.</description>
+          <description>An <see cref="T:Microsoft.Maui.Controls.Element" /> that occupies an area on the screen, has a visual appearance, and can obtain touch input.</description>
         </item>
         <item>
           <term>
             <see cref="T:Microsoft.Maui.Controls.Cell" />
           </term>
-          <description>Cells are elements meant to be added to <see cref="T:Microsoft.Maui.Controls.ListView" /> or <see cref="T:Microsoft.Maui.Controls.TableView" />.</description>
+          <description> Cells are elements meant to be added to <see cref="T:Microsoft.Maui.Controls.ListView" /> or <see cref="T:Microsoft.Maui.Controls.TableView" />.</description>
         </item>
         <item>
           <term>
             <see cref="T:Microsoft.Maui.Controls.Page" />
           </term>
-          <description>A <see cref="T:Microsoft.Maui.Controls.VisualElement" /> that occupies most or all of the screen and contains a single child.</description>
+          <description> A <see cref="T:Microsoft.Maui.Controls.VisualElement" /> that occupies most or all of the screen and contains a single child.</description>
         </item>
         <item>
           <term>
@@ -70,10 +72,8 @@
             <see cref="T:Microsoft.Maui.Controls.Layout" /> have a single child of type <see cref="T:Microsoft.Maui.Controls.View" />, while subclasses of <see cref="T:Microsoft.Maui.Controls.Layout" /> have a collection of multiple children views, including other layouts.</description>
         </item>
         <item>
-          <term>
-            Controls and specialized <see cref="T:Microsoft.Maui.Controls.View" />s
-          </term>
-          <description>The lower part of the diagram shows the Microsoft.Maui.Controls classes for universally-available controls, such as <see cref="T:Microsoft.Maui.Controls.Button" />s and <see cref="T:Microsoft.Maui.Controls.TableView" />s.</description>
+          <term> Controls and specialized <see cref="T:Microsoft.Maui.Controls.View" /></term>
+          <description>The lower part of the diagram shows the Microsoft.Maui.Controls classes for universally-available controls, such as <see cref="T:Microsoft.Maui.Controls.Button" /> and <see cref="T:Microsoft.Maui.Controls.TableView" />.</description>
         </item>
       </list>
     </remarks>
@@ -93,6 +93,32 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddLogicalChild">
+      <MemberSignature Language="C#" Value="public void AddLogicalChild (Microsoft.Maui.Controls.Element element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddLogicalChild(class Microsoft.Maui.Controls.Element element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Element.AddLogicalChild(Microsoft.Maui.Controls.Element)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddLogicalChild (element As Element)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddLogicalChild(Microsoft::Maui::Controls::Element ^ element);" />
+      <MemberSignature Language="F#" Value="member this.AddLogicalChild : Microsoft.Maui.Controls.Element -&gt; unit" Usage="element.AddLogicalChild element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.Maui.Controls.Element" Index="0" FrameworkAlternate="net-maui-8.0" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:Microsoft.Maui.Controls.Element" /> to add to the logical children.</param>
+        <summary>
+            Adds an <see cref="T:Microsoft.Maui.Controls.Element" /> to the logical children.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,7 +159,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.Element.AutomationId" /> field.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Element.AutomationId" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,7 +179,7 @@
         <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.ElementEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Raised whenever a child element is added to the element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,7 +199,7 @@
         <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.ElementEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Raised whenever a child element is removed from the element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,7 +221,7 @@
       <Docs>
         <summary>Gets or sets a value used to identify a collection of semantically similar elements.</summary>
         <value>A string that represents the collection the element belongs to.</value>
-        <remarks>Use the class id property to collect together elements into semantically similar groups for identification in ui testing and in theme engines.</remarks>
+        <remarks>Use the class id property to collect together elements into semantically similar groups for identification in UI testing and in theme engines.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClassIdProperty">
@@ -214,7 +240,30 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the ClassId bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Element.ClassId" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearLogicalChildren">
+      <MemberSignature Language="C#" Value="public void ClearLogicalChildren ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearLogicalChildren() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Element.ClearLogicalChildren" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearLogicalChildren ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearLogicalChildren();" />
+      <MemberSignature Language="F#" Value="member this.ClearLogicalChildren : unit -&gt; unit" Usage="element.ClearLogicalChildren " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+             Removes all child <see cref="T:Microsoft.Maui.Controls.Element" />s.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,11 +279,19 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.Obsolete("Use ViewHandler.ViewMapper instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use ViewHandler.ViewMapper instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.IPropertyMapper&lt;Microsoft.Maui.IElement,Microsoft.Maui.IElementHandler&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Maps UI information to platform-specific implementations for accessibility services
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -254,7 +311,7 @@
         <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.ElementEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Raised whenever a child element is added to the element's subtree.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -274,7 +331,7 @@
         <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.ElementEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Raised whenever a child element is removed from the elements subtree.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -303,7 +360,7 @@
         <ReturnType>Microsoft.Maui.Controls.IEffectControlProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>For internal use by .NET MAUI.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -337,7 +394,7 @@
       </Parameters>
       <Docs>
         <param name="name">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>For internal use by .NET MAUI.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -358,8 +415,8 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Controls.Effect&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A list of the effects that are applied to this item.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the styles and properties that will be applied to the element during runtime.</summary>
+        <value>A collection containing the different <see cref="T:Microsoft.Maui.Controls.Effect" /> to be applied to the element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -385,10 +442,11 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the element to find.</param>
+        <param name="name">The name of the element to be found.</param>
         <summary>Returns the element that has the specified name.</summary>
         <returns>The element that has the specified name.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown if the element's namescope couldn't be found.</exception>
       </Docs>
     </Member>
     <Member MemberName="Handler">
@@ -410,9 +468,9 @@
         <ReturnType>Microsoft.Maui.IElementHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the associated handler for this element.</summary>
+        <value>An implementation of <see cref="T:Microsoft.Maui.IElementHandler" />.</value>
+        <remarks>Maps the element to platform-specific controls and implementations.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HandlerChanged">
@@ -420,8 +478,9 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler HandlerChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.Element.HandlerChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event HandlerChanged As EventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ HandlerChanged;" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ HandlerChanged;" FrameworkAlternate="net-maui-7.0" />
       <MemberSignature Language="F#" Value="member this.HandlerChanged : EventHandler " Usage="member this.HandlerChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ HandlerChanged;" FrameworkAlternate="net-maui-8.0" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -431,7 +490,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Raised whenever the element's handler has changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -440,8 +499,9 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.HandlerChangingEventArgs&gt; HandlerChanging" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.Element.HandlerChanging" />
       <MemberSignature Language="VB.NET" Value="Public Event HandlerChanging As EventHandler(Of HandlerChangingEventArgs) " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Controls::HandlerChangingEventArgs ^&gt; ^ HandlerChanging;" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Controls::HandlerChangingEventArgs ^&gt; ^ HandlerChanging;" FrameworkAlternate="net-maui-7.0" />
       <MemberSignature Language="F#" Value="member this.HandlerChanging : EventHandler&lt;Microsoft.Maui.Controls.HandlerChangingEventArgs&gt; " Usage="member this.HandlerChanging : System.EventHandler&lt;Microsoft.Maui.Controls.HandlerChangingEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;Microsoft::Maui::Controls::HandlerChangingEventArgs ^&gt; ^ HandlerChanging;" FrameworkAlternate="net-maui-8.0" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -451,7 +511,7 @@
         <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.HandlerChangingEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Raised whenever the element's handler starts to change.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -471,9 +531,38 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that can be used to uniquely identify an element through the run of an application.</summary>
-        <value>A Guid uniquely identifying the element.</value>
-        <remarks>This value is generated at runtime and is not stable across runs of your app.</remarks>
+        <summary>Gets a value that can be used to uniquely identify an element throughout the run of your application.</summary>
+        <value>A <see cref="T:System.Guid" /> uniquely identifying the element.</value>
+        <remarks>This value is generated at runtime and is not stable across different runs.</remarks>
+        <altmember cref="P:Microsoft.Maui.Controls.Element.StyleId" />
+      </Docs>
+    </Member>
+    <Member MemberName="InsertLogicalChild">
+      <MemberSignature Language="C#" Value="public void InsertLogicalChild (int index, Microsoft.Maui.Controls.Element element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InsertLogicalChild(int32 index, class Microsoft.Maui.Controls.Element element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Element.InsertLogicalChild(System.Int32,Microsoft.Maui.Controls.Element)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InsertLogicalChild (index As Integer, element As Element)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InsertLogicalChild(int index, Microsoft::Maui::Controls::Element ^ element);" />
+      <MemberSignature Language="F#" Value="member this.InsertLogicalChild : int * Microsoft.Maui.Controls.Element -&gt; unit" Usage="element.InsertLogicalChild (index, element)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="net-maui-8.0" />
+        <Parameter Name="element" Type="Microsoft.Maui.Controls.Element" Index="1" FrameworkAlternate="net-maui-8.0" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index at which <see cref="T:Microsoft.Maui.Controls.Element" /> should be inserted.</param>
+        <param name="element">The <see cref="T:Microsoft.Maui.Controls.Element" /> to insert into the logical children.</param>
+        <summary>
+            Inserts an <see cref="T:Microsoft.Maui.Controls.Element" /> to the logical children at the specified index.
+            </summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LogicalChildren">
@@ -527,9 +616,11 @@
         <Parameter Name="element" Type="Microsoft.Maui.Controls.Element" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The associated handler.</param>
+        <param name="element">The associated <see cref="T:Microsoft.Maui.Controls.Element" /> instance.</param>
+        <summary>
+            Maps the abstract <see cref="F:Microsoft.Maui.Controls.AutomationProperties.ExcludedWithChildrenProperty" /> property to the platform-specific implementations.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -553,9 +644,11 @@
         <Parameter Name="element" Type="Microsoft.Maui.Controls.Element" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The associated handler.</param>
+        <param name="element">The associated <see cref="T:Microsoft.Maui.Controls.Element" /> instance</param>
+        <summary>
+            Maps the abstract <see cref="F:Microsoft.Maui.Controls.AutomationProperties.IsInAccessibleTreeProperty" /> property to the platform-specific implementations.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -609,6 +702,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.Controls.IElementController.LogicalChildren">
@@ -633,6 +727,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.Controls.IElementController.SetValueFromRenderer">
@@ -660,7 +755,7 @@
       <Docs>
         <param name="property">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>For internal use by .NET MAUI.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -691,6 +786,7 @@
         <param name="scopedElement">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.Controls.Internals.INameScope.UnregisterName">
@@ -718,6 +814,7 @@
         <param name="name">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.IContextFlyoutElement.ContextFlyout">
@@ -742,6 +839,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.IElement.Parent">
@@ -766,6 +864,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.IToolTipElement.ToolTip">
@@ -790,6 +889,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.IVisualTreeElement.GetVisualChildren">
@@ -815,6 +915,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.IVisualTreeElement.GetVisualParent">
@@ -840,6 +941,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="OnBindingContextChanged">
@@ -859,8 +961,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Invoked whenever the binding context of the element changes. Implement this method to add class handling for this event.</summary>
+        <remarks>Implementors must call the base method.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnChildAdded">
@@ -882,9 +984,9 @@
         <Parameter Name="child" Type="Microsoft.Maui.Controls.Element" />
       </Parameters>
       <Docs>
-        <param name="child">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="child">The element that's been added as a child.</param>
+        <summary>Raises the <see cref="E:Microsoft.Maui.Controls.Element.ChildAdded" /> event. Implement this method to add class handling for this event.</summary>
+        <remarks>This method has no default implementation. You should still call the base implementation in case an intermediate class has implemented this method.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnChildRemoved">
@@ -907,10 +1009,13 @@
         <Parameter Name="oldLogicalIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="child">To be added.</param>
-        <param name="oldLogicalIndex">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="child">The child element that's been removed.</param>
+        <param name="oldLogicalIndex">The child's element index in the logical tree.</param>
+        <summary> Raises the <see cref="E:Microsoft.Maui.Controls.Element.ChildRemoved" /> event. Implement this method to add class handling for this event </summary>
+        <remarks>
+            This method has no default implementation. You should still call the base implementation in case an intermediate class has implemented this method.
+            If not debugging, the logical tree index will not have any effect.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnHandlerChanged">
@@ -930,8 +1035,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>When overridden in a derived class, should raise the <see cref="E:Microsoft.Maui.Controls.Element.HandlerChanged" /> event.</summary>
+        <remarks>It is the implementor's responsibility to raise the <see cref="E:Microsoft.Maui.Controls.Element.HandlerChanged" /> event.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnHandlerChanging">
@@ -953,9 +1058,9 @@
         <Parameter Name="args" Type="Microsoft.Maui.Controls.HandlerChangingEventArgs" />
       </Parameters>
       <Docs>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="args">Provides data for the <see cref="E:Microsoft.Maui.Controls.Element.HandlerChanging" /> event.</param>
+        <summary>When overridden in a derived class, should raise the <see cref="E:Microsoft.Maui.Controls.Element.HandlerChanging" /> event.</summary>
+        <remarks>It is the implementor's responsibility to raise the <see cref="E:Microsoft.Maui.Controls.Element.HandlerChanging" /> event.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnParentChanged">
@@ -975,8 +1080,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>When overridden in a derived class, should raise the <see cref="E:Microsoft.Maui.Controls.Element.ParentChanged" /> event.</summary>
+        <remarks>It is the implementor's responsibility to raise the <see cref="E:Microsoft.Maui.Controls.Element.ParentChanged" /> event.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnParentChanging">
@@ -998,9 +1103,9 @@
         <Parameter Name="args" Type="Microsoft.Maui.Controls.ParentChangingEventArgs" />
       </Parameters>
       <Docs>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="args">Provides data for the <see cref="E:Microsoft.Maui.Controls.Element.ParentChanging" /> event.</param>
+        <summary>When overridden in a derived class, should raise the <see cref="E:Microsoft.Maui.Controls.Element.ParentChanging" /> event.</summary>
+        <remarks>It is the implementor's responsibility to raise the <see cref="E:Microsoft.Maui.Controls.Element.ParentChanging" /> event.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnParentSet">
@@ -1020,8 +1125,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Raises the (internal) <c>ParentSet</c> event. Implement this method in order to add behavior when the element is added to a parent.</summary>
+        <remarks>Implementors must call the base method.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPropertyChanged">
@@ -1049,8 +1154,8 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="propertyName">The name of the bound property that changed.</param>
+        <summary>Method that is called when a bound property is changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1070,8 +1175,8 @@
         <ReturnType>Microsoft.Maui.Controls.Element</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the parent element of the element.</summary>
-        <value>The element which should be the parent of this element.</value>
+        <summary>Gets or sets the parent <see cref="T:Microsoft.Maui.Controls.Element" /> of this element.</summary>
+        <value>The <see cref="T:Microsoft.Maui.Controls.Element" /> which should be the parent of this element.</value>
         <remarks>Most application authors will not need to set the parent element by hand.</remarks>
       </Docs>
     </Member>
@@ -1091,7 +1196,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Raised whenever the element's parent has changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1111,7 +1216,7 @@
         <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.ParentChangingEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Raised whenever the element's starts to change.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1124,7 +1229,7 @@
       <MemberSignature Language="F#" Value="member this.RealParent : Microsoft.Maui.Controls.Element" Usage="Microsoft.Maui.Controls.Element.RealParent" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:Microsoft.Maui.Controls.IElementController.RealParent</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-maui-7.0">P:Microsoft.Maui.Controls.IElementController.RealParent</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -1140,7 +1245,7 @@
         <ReturnType>Microsoft.Maui.Controls.Element</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>For internal use by .NET MAUI.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1164,9 +1269,39 @@
         <Parameter Name="property" Type="Microsoft.Maui.Controls.BindableProperty" />
       </Parameters>
       <Docs>
-        <param name="property">The BindableProperty from which to remove the DynamicResource.</param>
-        <summary>Removes a previously set dynamic resource</summary>
+        <param name="property">The <see cref="T:Microsoft.Maui.Controls.BindableProperty" /> from which to remove the DynamicResource.</param>
+        <summary>Removes a previously set dynamic resource.</summary>
         <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveLogicalChild">
+      <MemberSignature Language="C#" Value="public bool RemoveLogicalChild (Microsoft.Maui.Controls.Element element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveLogicalChild(class Microsoft.Maui.Controls.Element element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Element.RemoveLogicalChild(Microsoft.Maui.Controls.Element)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveLogicalChild (element As Element) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveLogicalChild(Microsoft::Maui::Controls::Element ^ element);" />
+      <MemberSignature Language="F#" Value="member this.RemoveLogicalChild : Microsoft.Maui.Controls.Element -&gt; bool" Usage="element.RemoveLogicalChild element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.Maui.Controls.Element" Index="0" FrameworkAlternate="net-maui-8.0" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:Microsoft.Maui.Controls.Element" /> to remove.</param>
+        <summary>
+            Removes the first occurrence of a specific <see cref="T:Microsoft.Maui.Controls.Element" /> from the logical children.
+            </summary>
+        <returns>
+            true if item was successfully removed from the logical children;
+            otherwise, false. This method also returns false if <see cref="T:Microsoft.Maui.Controls.Element" /> is not found.
+            </returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetDynamicResource">
@@ -1189,9 +1324,9 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="property">The BindableProperty.</param>
-        <param name="key">The key of the DynamicResource</param>
-        <summary>Sets the BindableProperty property of this element to be updated via the DynamicResource with the provided key.</summary>
+        <param name="property">The property to be updated.</param>
+        <param name="key">The key for the requested resource.</param>
+        <summary>Sets the <see cref="T:Microsoft.Maui.Controls.BindableProperty" /> property of this element to be updated via the DynamicResource with the provided key.</summary>
         <remarks />
       </Docs>
     </Member>
@@ -1223,7 +1358,7 @@
       <Docs>
         <param name="property">For internal use by the Microsoft.Maui.Controls platform.</param>
         <param name="value">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>For internal use by .NET MAUI.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1258,7 +1393,7 @@
       <Docs>
         <param name="property">For internal use by the Microsoft.Maui.Controls platform.</param>
         <param name="value">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>For internal use by .NET MAUI.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1280,7 +1415,7 @@
       <Docs>
         <summary>Gets or sets a user defined value to uniquely identify the element.</summary>
         <value>A string uniquely identifying the element.</value>
-        <remarks>Use the StyleId property to identify individual elements in your application for identification in ui testing and in theme engines.</remarks>
+        <remarks>Use the <see cref="P:Microsoft.Maui.Controls.Element.StyleId" /> property to identify individual elements in your application for identification in UI testing and in theme engines.</remarks>
       </Docs>
     </Member>
   </Members>
