@@ -1,17 +1,20 @@
 <Type Name="ISms" FullName="Microsoft.Maui.ApplicationModel.Communication.ISms">
   <TypeSignature Language="C#" Value="public interface ISms" />
-  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISms" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISms" FrameworkAlternate="net-maui-7.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.ApplicationModel.Communication.ISms" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISms" />
   <TypeSignature Language="C++ CLI" Value="public interface class ISms" />
   <TypeSignature Language="F#" Value="type ISms = interface" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit ISms" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            The SMS API enables an application to open the default SMS application with a specified message to send to a recipient.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,9 +37,11 @@
         <Parameter Name="message" Type="Microsoft.Maui.ApplicationModel.Communication.SmsMessage" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">A <see cref="T:Microsoft.Maui.ApplicationModel.Communication.SmsMessage" /> instance with information about the message to send.</param>
+        <summary>
+            Opens the default SMS client to allow the user to send the message.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,7 +61,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a value indicating whether composing of SMS messages is supported on this device.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

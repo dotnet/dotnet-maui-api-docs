@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Text-to-speech options.</summary>
+    <summary>
+            Represents options that can be used to influence the <see cref="T:Microsoft.Maui.Media.ITextToSpeech" /> behavior.
+            </summary>
     <remarks />
   </Docs>
   <Members>
@@ -51,9 +53,11 @@
         <ReturnType>Microsoft.Maui.Media.Locale</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or Sets a specific Locale to use with text to speech.</summary>
+        <summary>
+            Gets or sets the locale to use with text-to-speech.
+            </summary>
         <value />
-        <remarks>The Language property should match a Locale value returned by GetLocalesAsync().</remarks>
+        <remarks>The <see cref="P:Microsoft.Maui.Media.Locale.Language" /> property should match a <see cref="P:Microsoft.Maui.Media.Locale.Language" /> value returned by <see cref="M:Microsoft.Maui.Media.ITextToSpeech.GetLocalesAsync" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Pitch">
@@ -72,9 +76,11 @@
         <ReturnType>System.Nullable&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The pitch to use when speaking.</summary>
+        <summary>
+            The pitch to use when speaking.
+            </summary>
         <value />
-        <remarks>This value should be between 0f and 2.0f.</remarks>
+        <remarks>This value should be between <c>0f</c> and <c>2.0f</c>.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Volume">
@@ -93,9 +99,11 @@
         <ReturnType>System.Nullable&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The volume to use when speaking.</summary>
+        <summary>
+            The volume to use when speaking.
+            </summary>
         <value />
-        <remarks>This value should be between 0f and 1.0f.</remarks>
+        <remarks>This value should be between <c>0f</c> and <c>1.0f</c>.</remarks>
       </Docs>
     </Member>
   </Members>

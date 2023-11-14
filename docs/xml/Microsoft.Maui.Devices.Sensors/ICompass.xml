@@ -1,17 +1,20 @@
 <Type Name="ICompass" FullName="Microsoft.Maui.Devices.Sensors.ICompass">
   <TypeSignature Language="C#" Value="public interface ICompass" />
-  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICompass" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICompass" FrameworkAlternate="net-maui-7.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Devices.Sensors.ICompass" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICompass" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICompass" />
   <TypeSignature Language="F#" Value="type ICompass = interface" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit ICompass" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Monitor changes to the orientation of the user's device.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +34,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets if compass is actively being monitored.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -52,7 +57,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a value indicating whether reading the compass is supported on this device.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -73,7 +80,9 @@
         <ReturnType>System.EventHandler&lt;Microsoft.Maui.Devices.Sensors.CompassChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when compass reading changes.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,8 +105,10 @@
         <Parameter Name="sensorSpeed" Type="Microsoft.Maui.Devices.Sensors.SensorSpeed" />
       </Parameters>
       <Docs>
-        <param name="sensorSpeed">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sensorSpeed">The speed to monitor for changes.</param>
+        <summary>
+            Start monitoring for changes to the compass.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,9 +132,11 @@
         <Parameter Name="applyLowPassFilter" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="sensorSpeed">To be added.</param>
-        <param name="applyLowPassFilter">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sensorSpeed">The speed to monitor for changes.</param>
+        <param name="applyLowPassFilter">Whether or not to apply a moving average filter (only used on Android).</param>
+        <summary>
+            Start monitoring for changes to the compass.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,7 +157,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Stop monitoring for changes to the compass.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

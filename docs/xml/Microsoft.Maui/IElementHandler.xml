@@ -1,17 +1,20 @@
 <Type Name="IElementHandler" FullName="Microsoft.Maui.IElementHandler">
   <TypeSignature Language="C#" Value="public interface IElementHandler" />
-  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IElementHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IElementHandler" FrameworkAlternate="net-maui-7.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.IElementHandler" />
   <TypeSignature Language="VB.NET" Value="Public Interface IElementHandler" />
   <TypeSignature Language="C++ CLI" Value="public interface class IElementHandler" />
   <TypeSignature Language="F#" Value="type IElementHandler = interface" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IElementHandler" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Defines the core behavior necessary to create a custom element handler.
+            <seealso href="https://learn.microsoft.com/dotnet/maui/user-interface/handlers/"> Conceptual documentation on handlers</seealso></summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +35,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>  
+            Disconnects the element handler from the element for clean up.  
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,9 +60,11 @@
         <Parameter Name="args" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="command">To be added.</param>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="command">The name of the command to invoke.</param>
+        <param name="args">Optional arguments to pass to the command.</param>
+        <summary>  
+            Invokes the specified command on the element with the given arguments.  
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,7 +84,9 @@
         <ReturnType>Microsoft.Maui.IMauiContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>  
+            Gets the .NET MAUI context associated with the element.  
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -98,7 +107,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>  
+            Gets the platform-specific view object associated with the handler.  
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -122,8 +133,10 @@
         <Parameter Name="mauiContext" Type="Microsoft.Maui.IMauiContext" />
       </Parameters>
       <Docs>
-        <param name="mauiContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="mauiContext">The .NET MAUI context to set.</param>
+        <summary>  
+            Sets the .NET MAUI context for the element handler.  
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,8 +159,10 @@
         <Parameter Name="view" Type="Microsoft.Maui.IElement" />
       </Parameters>
       <Docs>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="view">The element to handle.</param>
+        <summary>  
+            Sets the cross-platform virtual view associated with the handler.  
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,8 +185,10 @@
         <Parameter Name="property" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="property">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="property">The name of the property to update.</param>
+        <summary>  
+            Updates the value of the specified property on the handler.  
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,7 +208,9 @@
         <ReturnType>Microsoft.Maui.IElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>  
+            Gets the cross-platform virtual view associated with the handler.  
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

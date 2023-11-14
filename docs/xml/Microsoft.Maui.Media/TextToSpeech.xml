@@ -14,8 +14,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Speak text to Speech</summary>
-    <remarks />
+    <summary>
+            The TextToSpeech API enables an application to utilize the built-in text-to-speech engines to speak back text from the device and also to query available languages that the engine can support.
+            </summary>
+    <remarks>When using this on Android targeting Android 11 (R API 30) you must update your Android Manifest with queries that are used with the new package visibility requirements. See the conceptual docs for more information.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -34,7 +36,9 @@
         <ReturnType>Microsoft.Maui.Media.ITextToSpeech</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Provides the default implementation for static usage of this API.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -56,8 +60,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a list of Locales supported by Text to Speech.</summary>
-        <returns />
+        <summary>
+            Gets a list of languages supported by text-to-speech.
+            </summary>
+        <returns>A collection of <see cref="T:Microsoft.Maui.Media.Locale" /> objects with languages supported by text-to-speech on this device.</returns>
         <remarks />
       </Docs>
     </Member>
@@ -80,10 +86,12 @@
         <Parameter Name="cancelToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="text">The text to speak..</param>
+        <param name="text">The text to speak.</param>
         <param name="cancelToken">Optional cancellation token to stop speaking.</param>
-        <summary>Speaks the given text with default options.</summary>
-        <returns />
+        <summary>
+            Speaks the given text through the device's speech-to-text.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks />
       </Docs>
     </Member>
@@ -110,8 +118,10 @@
         <param name="text">The text to speak.</param>
         <param name="options">The options to use for speaking.</param>
         <param name="cancelToken">Optional cancellation token to stop speaking.</param>
-        <summary>Speaks the given text with the specified options.</summary>
-        <returns />
+        <summary>
+            Speaks the given text through the device's speech-to-text.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks />
       </Docs>
     </Member>

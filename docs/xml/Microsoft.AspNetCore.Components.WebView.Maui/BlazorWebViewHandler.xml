@@ -193,5 +193,33 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="TryDispatchAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;bool&gt; TryDispatchAsync (Action&lt;IServiceProvider&gt; workItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; TryDispatchAsync(class System.Action`1&lt;class System.IServiceProvider&gt; workItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler.TryDispatchAsync(System.Action{System.IServiceProvider})" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TryDispatchAsync (workItem As Action(Of IServiceProvider)) As Task(Of Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;bool&gt; ^ TryDispatchAsync(Action&lt;IServiceProvider ^&gt; ^ workItem);" />
+      <MemberSignature Language="F#" Value="abstract member TryDispatchAsync : Action&lt;IServiceProvider&gt; -&gt; System.Threading.Tasks.Task&lt;bool&gt;&#xA;override this.TryDispatchAsync : Action&lt;IServiceProvider&gt; -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="blazorWebViewHandler.TryDispatchAsync workItem" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.AspNetCore.Components.WebView.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="workItem" Type="System.Action&lt;System.IServiceProvider&gt;" Index="0" FrameworkAlternate="net-maui-8.0" />
+      </Parameters>
+      <Docs>
+        <param name="workItem">The action to call.</param>
+        <summary>
+            Calls the specified <paramref name="workItem" /> asynchronously and passes in the scoped services available to Razor components.
+            </summary>
+        <returns>Returns a <see cref="T:System.Threading.Tasks.Task" /> representing <c>true</c> if the <paramref name="workItem" /> was called, or <c>false</c> if it was not called because Blazor is not currently running.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="workItem" /> is <c>null</c>.</exception>
+      </Docs>
+    </Member>
   </Members>
 </Type>

@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Take a screenshot depicting the current View.</summary>
+    <summary>
+            The Screenshot API lets you take a capture of the current displayed screen of the app.
+            </summary>
     <remarks />
   </Docs>
   <Members>
@@ -35,8 +37,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Capture the screen.</summary>
-        <returns>Returns the caprured screenshot.</returns>
+        <summary>
+            Captures a screenshot of the current screen of the running application.
+            </summary>
+        <returns>An instance of <see cref="T:Microsoft.Maui.Media.IScreenshotResult" /> with information about the captured screenshot.</returns>
         <remarks />
         <exception cref="T:Microsoft.Maui.ApplicationModel.FeatureNotSupportedException">Thrown when <see cref="P:Microsoft.Maui.Media.Screenshot.IsCaptureSupported" /> is <see langword="false" />.</exception>
       </Docs>
@@ -80,7 +84,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether capturing screenshots are supported.</summary>
+        <summary>
+            Gets a value indicating whether capturing screenshots is supported on this device.
+            </summary>
         <value />
         <remarks />
       </Docs>

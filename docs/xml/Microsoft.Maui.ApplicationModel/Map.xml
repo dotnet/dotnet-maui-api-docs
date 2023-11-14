@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Map helpers to open a route to specified places via default platforms maps implementation.</summary>
+    <summary>
+            The Map API enables an application to open the installed map application to a specific location or placemark.
+            </summary>
     <remarks />
   </Docs>
   <Members>
@@ -34,7 +36,9 @@
         <ReturnType>Microsoft.Maui.ApplicationModel.IMap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Provides the default implementation for static usage of this API.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -58,9 +62,11 @@
         <Parameter Name="location" Type="Microsoft.Maui.Devices.Sensors.Location" />
       </Parameters>
       <Docs>
-        <param name="location">Location to open on maps.</param>
-        <summary>Open the installed application to a specific location.</summary>
-        <returns>Task to be completed.</returns>
+        <param name="location">Location to open in the map application.</param>
+        <summary>
+            Open the installed application to a specific location.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks />
       </Docs>
     </Member>
@@ -83,9 +89,11 @@
         <Parameter Name="placemark" Type="Microsoft.Maui.Devices.Sensors.Placemark" />
       </Parameters>
       <Docs>
-        <param name="placemark">Placemark to open on maps.</param>
-        <summary>Open the installed application to a specific placemark.</summary>
-        <returns>Task to be completed.</returns>
+        <param name="placemark">Placemark to open in the map application.</param>
+        <summary>
+            Open the installed application to a specific location.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks />
       </Docs>
     </Member>
@@ -109,10 +117,12 @@
         <Parameter Name="options" Type="Microsoft.Maui.ApplicationModel.MapLaunchOptions" />
       </Parameters>
       <Docs>
-        <param name="location">Location to open maps to.</param>
+        <param name="location">Location to open in the map application.</param>
         <param name="options">Launch options to use.</param>
-        <summary>Open the installed application to a specific location with launch options.</summary>
-        <returns>Task to be completed.</returns>
+        <summary>
+            Open the installed application to a specific location with launch options.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks />
       </Docs>
     </Member>
@@ -136,10 +146,12 @@
         <Parameter Name="options" Type="Microsoft.Maui.ApplicationModel.MapLaunchOptions" />
       </Parameters>
       <Docs>
-        <param name="placemark">Placemark to open maps to.</param>
+        <param name="placemark">Placemark to open in the map application.</param>
         <param name="options">Launch options to use.</param>
-        <summary>Open the installed application to a specific placemark with launch options.</summary>
-        <returns>Task to be completed.</returns>
+        <summary>
+            Open the installed application to a specific location with launch options.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks />
       </Docs>
     </Member>
@@ -163,10 +175,12 @@
         <Parameter Name="longitude" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="latitude">Latitude to open to.</param>
-        <param name="longitude">Longitude to open to.</param>
-        <summary>Open the installed application to a specific location.</summary>
-        <returns>Task to be completed.</returns>
+        <param name="latitude">Target latitude.</param>
+        <param name="longitude">Target longitude.</param>
+        <summary>
+            Open the installed application to a specific location.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks />
       </Docs>
     </Member>
@@ -191,11 +205,13 @@
         <Parameter Name="options" Type="Microsoft.Maui.ApplicationModel.MapLaunchOptions" />
       </Parameters>
       <Docs>
-        <param name="latitude">Latitude to open to.</param>
-        <param name="longitude">Longitude to open to.</param>
+        <param name="latitude">Target latitude.</param>
+        <param name="longitude">Target longitude.</param>
         <param name="options">Launch options to use.</param>
-        <summary>Open the installed application to a specific location.</summary>
-        <returns>Task to be completed.</returns>
+        <summary>
+            Open the installed application to a specific location with launch options.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks />
       </Docs>
     </Member>
@@ -218,9 +234,13 @@
         <Parameter Name="location" Type="Microsoft.Maui.Devices.Sensors.Location" />
       </Parameters>
       <Docs>
-        <param name="location">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="location">Location to open in the map application.</param>
+        <summary>
+            First checks if the installed map application can be opened,
+            then opens the installed application to a specific location with launch options.
+            </summary>
+        <returns>
+          <see langword="true" /> if the map application is opened, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,9 +263,13 @@
         <Parameter Name="placemark" Type="Microsoft.Maui.Devices.Sensors.Placemark" />
       </Parameters>
       <Docs>
-        <param name="placemark">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="placemark">Placemark to open in the map application.</param>
+        <summary>
+            First checks if the installed map application can be opened,
+            then open the installed application to a specific placemark with launch options.
+            </summary>
+        <returns>
+          <see langword="true" /> if the map application is opened, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -269,10 +293,14 @@
         <Parameter Name="options" Type="Microsoft.Maui.ApplicationModel.MapLaunchOptions" />
       </Parameters>
       <Docs>
-        <param name="location">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="location">Location to open in the map application.</param>
+        <param name="options">Launch options to use.</param>
+        <summary>
+            First checks if the installed map application can be opened,
+            then opens the installed application to a specific location with launch options.
+            </summary>
+        <returns>
+          <see langword="true" /> if the map application is opened, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -296,10 +324,14 @@
         <Parameter Name="options" Type="Microsoft.Maui.ApplicationModel.MapLaunchOptions" />
       </Parameters>
       <Docs>
-        <param name="placemark">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="placemark">Placemark to open in the map application.</param>
+        <param name="options">Launch options to use.</param>
+        <summary>
+            First checks if the installed map application can be opened,
+            then open the installed application to a specific placemark with launch options.
+            </summary>
+        <returns>
+          <see langword="true" /> if the map application is opened, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -323,10 +355,14 @@
         <Parameter Name="longitude" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="latitude">To be added.</param>
-        <param name="longitude">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="latitude">Target latitude.</param>
+        <param name="longitude">Target longitude.</param>
+        <summary>
+            First checks if the installed map application can be opened,
+            then open the installed application to a specific location with launch options.
+            </summary>
+        <returns>
+          <see langword="true" /> if the map application is opened, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -351,11 +387,15 @@
         <Parameter Name="options" Type="Microsoft.Maui.ApplicationModel.MapLaunchOptions" />
       </Parameters>
       <Docs>
-        <param name="latitude">To be added.</param>
-        <param name="longitude">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="latitude">Latitude to open to.</param>
+        <param name="longitude">Longitude to open to.</param>
+        <param name="options">Launch options to use.</param>
+        <summary>
+            First checks if the installed map application can be opened,
+            then opens the installed application to a specific location with launch options.
+            </summary>
+        <returns>
+          <see langword="true" /> if the map application is opened, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

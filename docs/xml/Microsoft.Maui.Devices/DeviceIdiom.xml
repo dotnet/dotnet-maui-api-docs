@@ -24,7 +24,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>The idiom (form factor) of the device.</summary>
+    <summary>
+            Represents the idiom (form factor) of the device.
+            </summary>
     <remarks />
   </Docs>
   <Members>
@@ -47,9 +49,11 @@
         <Parameter Name="deviceIdiom" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="deviceIdiom">The idiom name of the device</param>
-        <summary>Creates a new device idiom.</summary>
-        <returns />
+        <param name="deviceIdiom">The idiom name of the device.</param>
+        <summary>
+            Creates a new device idiom instance. This can be used to define your custom idioms.
+            </summary>
+        <returns>A new instance of <see cref="T:Microsoft.Maui.Devices.DeviceIdiom" /> with the specified idiom type.</returns>
         <remarks />
       </Docs>
     </Member>
@@ -69,7 +73,9 @@
         <ReturnType>Microsoft.Maui.Devices.DeviceIdiom</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the desktop idiom.</summary>
+        <summary>
+            Gets an instance of <see cref="T:Microsoft.Maui.Devices.DeviceIdiom" /> that represents a desktop computer idiom.
+            </summary>
         <value />
         <remarks>To be added.</remarks>
       </Docs>
@@ -96,9 +102,13 @@
         <Parameter Name="other" Type="Microsoft.Maui.Devices.DeviceIdiom" />
       </Parameters>
       <Docs>
-        <param name="other">The object ot compare.</param>
-        <summary>Checks the equality of the idiom.</summary>
-        <returns>If the values are equal</returns>
+        <param name="other">
+          <see cref="T:Microsoft.Maui.Devices.DeviceIdiom" /> object to compare with.</param>
+        <summary>
+            Compares the underlying <see cref="T:Microsoft.Maui.Devices.DeviceIdiom" /> instances.
+            </summary>
+        <returns>
+          <see langword="true" /> if they are equal, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,6 +135,7 @@
         <summary>Checks the equality of the idiom.</summary>
         <returns>If the values are equal</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.IEquatable`1.Equals(`0)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -144,8 +155,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the hash code for the idom.</summary>
-        <returns>The hashc ode</returns>
+        <summary>
+            Gets the hash code for this idiom instance.
+            </summary>
+        <returns>The computed hash code for this device idiom or <c>0</c> when the device idiom is <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,10 +182,13 @@
         <Parameter Name="right" Type="Microsoft.Maui.Devices.DeviceIdiom" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">Left to compare.</param>
+        <param name="right">Right to compare.</param>
+        <summary>
+            Equality operator for equals.
+            </summary>
+        <returns>
+          <see langword="true" /> if objects are equal, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -196,10 +212,13 @@
         <Parameter Name="right" Type="Microsoft.Maui.Devices.DeviceIdiom" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">Left to compare.</param>
+        <param name="right">Right to compare.</param>
+        <summary>
+            Inequality operator.
+            </summary>
+        <returns>
+          <see langword="true" /> if objects are not equal, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,7 +238,9 @@
         <ReturnType>Microsoft.Maui.Devices.DeviceIdiom</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the phone idiom.</summary>
+        <summary>
+            Gets an instance of <see cref="T:Microsoft.Maui.Devices.DeviceIdiom" /> that represents a (mobile) phone idiom.
+            </summary>
         <value>The phone idiom</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -240,7 +261,9 @@
         <ReturnType>Microsoft.Maui.Devices.DeviceIdiom</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the tablet idiom.</summary>
+        <summary>
+            Gets an instance of <see cref="T:Microsoft.Maui.Devices.DeviceIdiom" /> that represents a tablet idiom.
+            </summary>
         <value>The tablet idiom</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -262,8 +285,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>String representation of the idiom.</summary>
-        <returns>String representation of the idiom.</returns>
+        <summary>
+            Returns a string representation of the current device idiom.
+            </summary>
+        <returns>A string representation of this instance in the format of <c>{device idiom}</c> or an empty string when no device idiom is set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,7 +308,9 @@
         <ReturnType>Microsoft.Maui.Devices.DeviceIdiom</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the TV idiom.</summary>
+        <summary>
+            Gets an instance of <see cref="T:Microsoft.Maui.Devices.DeviceIdiom" /> that represents a television (TV) idiom.
+            </summary>
         <value>The TV idiom</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -304,7 +331,9 @@
         <ReturnType>Microsoft.Maui.Devices.DeviceIdiom</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the unknown idiom.</summary>
+        <summary>
+            Gets an instance of <see cref="T:Microsoft.Maui.Devices.DeviceIdiom" /> that represents an unknown idiom. This is used for when the current device idiom is unknown.
+            </summary>
         <value>An unknown idiom.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -325,7 +354,9 @@
         <ReturnType>Microsoft.Maui.Devices.DeviceIdiom</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the watch idiom.</summary>
+        <summary>
+            Gets an instance of <see cref="T:Microsoft.Maui.Devices.DeviceIdiom" /> that represents a watch idiom.
+            </summary>
         <value>The watch idiom</value>
         <remarks>To be added.</remarks>
       </Docs>

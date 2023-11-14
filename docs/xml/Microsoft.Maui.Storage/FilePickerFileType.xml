@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents the file types that are allowed to be picked by the user when using <see cref="T:Microsoft.Maui.Storage.IFilePicker" />.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +33,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Storage.FilePickerFileType" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +55,15 @@
         <Parameter Name="fileTypes" Type="System.Collections.Generic.IDictionary&lt;Microsoft.Maui.Devices.DevicePlatform,System.Collections.Generic.IEnumerable&lt;System.String&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="fileTypes">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="fileTypes">
+            A <see cref="T:System.Collections.Generic.IDictionary`2" /> where the key is the platform
+            and the value is a collection of file types that are allowed to be picked by the user.
+            </param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Storage.FilePickerFileType" /> class.
+            </summary>
+        <remarks>Note that the file types (specified in the <paramref name="fileTypes" /> value)
+            should be identified differently per platform.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPlatformFileType">
@@ -76,9 +86,12 @@
       </Parameters>
       <Docs>
         <param name="platform">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the configured allowed file types that can be picked by the user for the current platform.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.PlatformNotSupportedException">Thrown if the current platform does not have any file types configured.</exception>
       </Docs>
     </Member>
     <Member MemberName="Images">
@@ -97,7 +110,9 @@
         <ReturnType>Microsoft.Maui.Storage.FilePickerFileType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Image file types.</summary>
+        <summary>
+            Predefined <see cref="T:Microsoft.Maui.Storage.FilePickerFileType" /> object for allowing picking image files only.
+            </summary>
         <remarks />
       </Docs>
     </Member>
@@ -117,7 +132,9 @@
         <ReturnType>Microsoft.Maui.Storage.FilePickerFileType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>JPEG file type (*.jpeg, *.jpg).</summary>
+        <summary>
+            Predefined <see cref="T:Microsoft.Maui.Storage.FilePickerFileType" /> object for allowing picking JPEG image files only.
+            </summary>
         <remarks />
       </Docs>
     </Member>
@@ -137,7 +154,9 @@
         <ReturnType>Microsoft.Maui.Storage.FilePickerFileType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>PDF file type (*.pdf).</summary>
+        <summary>
+            Predefined <see cref="T:Microsoft.Maui.Storage.FilePickerFileType" /> object for allowing picking PDF files only.
+            </summary>
         <remarks />
       </Docs>
     </Member>
@@ -157,7 +176,9 @@
         <ReturnType>Microsoft.Maui.Storage.FilePickerFileType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>PNG file type (*.png).</summary>
+        <summary>
+            Predefined <see cref="T:Microsoft.Maui.Storage.FilePickerFileType" /> object for allowing picking PNG image files only.
+            </summary>
         <remarks />
       </Docs>
     </Member>
@@ -177,7 +198,9 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the configured allowed file types that can be picked by the user for the current platform.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.PlatformNotSupportedException">Thrown if the current platform does not have any file types configured.</exception>
@@ -199,7 +222,9 @@
         <ReturnType>Microsoft.Maui.Storage.FilePickerFileType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Video file types.</summary>
+        <summary>
+            Predefined <see cref="T:Microsoft.Maui.Storage.FilePickerFileType" /> object for allowing picking video files only.
+            </summary>
         <remarks />
       </Docs>
     </Member>

@@ -1,10 +1,12 @@
 <Type Name="ScrollView" FullName="Microsoft.Maui.Controls.ScrollView">
   <TypeSignature Language="C#" Value="public class ScrollView : Microsoft.Maui.Controls.Compatibility.Layout, Microsoft.Maui.Controls.IElementConfiguration&lt;Microsoft.Maui.Controls.ScrollView&gt;, Microsoft.Maui.Controls.IScrollViewController, Microsoft.Maui.IScrollView" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScrollView extends Microsoft.Maui.Controls.Compatibility.Layout implements class Microsoft.Maui.Controls.IElementConfiguration`1&lt;class Microsoft.Maui.Controls.ScrollView&gt;, class Microsoft.Maui.Controls.ILayoutController, class Microsoft.Maui.Controls.IScrollViewController, class Microsoft.Maui.IContentView, class Microsoft.Maui.IElement, class Microsoft.Maui.IPadding, class Microsoft.Maui.IScrollView, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScrollView extends Microsoft.Maui.Controls.Compatibility.Layout implements class Microsoft.Maui.Controls.IElementConfiguration`1&lt;class Microsoft.Maui.Controls.ScrollView&gt;, class Microsoft.Maui.Controls.ILayoutController, class Microsoft.Maui.Controls.IScrollViewController, class Microsoft.Maui.IContentView, class Microsoft.Maui.IElement, class Microsoft.Maui.IPadding, class Microsoft.Maui.IScrollView, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" FrameworkAlternate="net-maui-7.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.ScrollView" />
   <TypeSignature Language="VB.NET" Value="Public Class ScrollView&#xA;Inherits Layout&#xA;Implements IElementConfiguration(Of ScrollView), IScrollView, IScrollViewController" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScrollView : Microsoft::Maui::Controls::Compatibility::Layout, Microsoft::Maui::Controls::IElementConfiguration&lt;Microsoft::Maui::Controls::ScrollView ^&gt;, Microsoft::Maui::Controls::IScrollViewController, Microsoft::Maui::IScrollView" />
-  <TypeSignature Language="F#" Value="type ScrollView = class&#xA;    inherit Layout&#xA;    interface IScrollView&#xA;    interface IContentView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IPadding&#xA;    interface IScrollViewController&#xA;    interface ILayoutController&#xA;    interface IElementConfiguration&lt;ScrollView&gt;" />
+  <TypeSignature Language="F#" Value="type ScrollView = class&#xA;    inherit Layout&#xA;    interface IScrollView&#xA;    interface IContentView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IPadding&#xA;    interface IScrollViewController&#xA;    interface ILayoutController&#xA;    interface IElementConfiguration&lt;ScrollView&gt;" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScrollView extends Microsoft.Maui.Controls.Compatibility.Layout implements class Microsoft.Maui.Controls.IElementConfiguration`1&lt;class Microsoft.Maui.Controls.ScrollView&gt;, class Microsoft.Maui.Controls.ILayoutController, class Microsoft.Maui.Controls.IScrollViewController, class Microsoft.Maui.IContentView, class Microsoft.Maui.ICrossPlatformLayout, class Microsoft.Maui.IElement, class Microsoft.Maui.IPadding, class Microsoft.Maui.IScrollView, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" FrameworkAlternate="net-maui-8.0" />
+  <TypeSignature Language="F#" Value="type ScrollView = class&#xA;    inherit Layout&#xA;    interface IScrollViewController&#xA;    interface ILayoutController&#xA;    interface IElementConfiguration&lt;ScrollView&gt;&#xA;    interface IScrollView&#xA;    interface IContentView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IPadding&#xA;    interface ICrossPlatformLayout" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -39,6 +41,9 @@
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Maui.IView</InterfaceName>
+    </Interface>
+    <Interface FrameworkAlternate="net-maui-8.0">
+      <InterfaceName>Microsoft.Maui.ICrossPlatformLayout</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
@@ -141,7 +146,7 @@ MainPage = new ContentPage
       <MemberSignature Language="F#" Value="member this.ContentSize : Microsoft.Maui.Graphics.Size" Usage="Microsoft.Maui.Controls.ScrollView.ContentSize" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:Microsoft.Maui.IScrollView.ContentSize</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-maui-7.0">P:Microsoft.Maui.IScrollView.ContentSize</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -172,7 +177,7 @@ MainPage = new ContentPage
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the ContentSize bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ScrollView.ContentSize" />.</summary>
         <remarks>This bindable property is read-only.</remarks>
       </Docs>
     </Member>
@@ -188,6 +193,12 @@ MainPage = new ContentPage
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.Obsolete("Use ScrollViewHandler.Mapper instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use ScrollViewHandler.Mapper instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.IPropertyMapper&lt;Microsoft.Maui.IScrollView,Microsoft.Maui.Handlers.ScrollViewHandler&gt;</ReturnType>
       </ReturnValue>
@@ -269,7 +280,7 @@ MainPage = new ContentPage
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.ScrollView.HorizontalScrollBarVisibility" /> property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ScrollView.HorizontalScrollBarVisibility" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -403,7 +414,7 @@ MainPage = new ContentPage
         <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="bounds" Type="Microsoft.Maui.Graphics.Rect" />
+        <Parameter Name="bounds" Type="Microsoft.Maui.Graphics.Rect" Index="0" FrameworkAlternate="net-maui-7.0" />
       </Parameters>
       <Docs>
         <param name="bounds">To be added.</param>
@@ -431,8 +442,8 @@ MainPage = new ContentPage
         <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="widthConstraint" Type="System.Double" />
-        <Parameter Name="heightConstraint" Type="System.Double" />
+        <Parameter Name="widthConstraint" Type="System.Double" Index="0" FrameworkAlternate="net-maui-7.0" />
+        <Parameter Name="heightConstraint" Type="System.Double" Index="1" FrameworkAlternate="net-maui-7.0" />
       </Parameters>
       <Docs>
         <param name="widthConstraint">To be added.</param>
@@ -463,6 +474,64 @@ MainPage = new ContentPage
       <Docs>
         <summary>To be added.</summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.ICrossPlatformLayout.CrossPlatformArrange">
+      <MemberSignature Language="C#" Value="Microsoft.Maui.Graphics.Size ICrossPlatformLayout.CrossPlatformArrange (Microsoft.Maui.Graphics.Rect bounds);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype Microsoft.Maui.Graphics.Size Microsoft.Maui.ICrossPlatformLayout.CrossPlatformArrange(valuetype Microsoft.Maui.Graphics.Rect bounds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ScrollView.Microsoft#Maui#ICrossPlatformLayout#CrossPlatformArrange(Microsoft.Maui.Graphics.Rect)" />
+      <MemberSignature Language="VB.NET" Value="Function CrossPlatformArrange (bounds As Rect) As Size Implements ICrossPlatformLayout.CrossPlatformArrange" />
+      <MemberSignature Language="C++ CLI" Value=" virtual Microsoft::Maui::Graphics::Size Microsoft.Maui.ICrossPlatformLayout.CrossPlatformArrange(Microsoft::Maui::Graphics::Rect bounds) = Microsoft::Maui::ICrossPlatformLayout::CrossPlatformArrange;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.ICrossPlatformLayout.CrossPlatformArrange : Microsoft.Maui.Graphics.Rect -&gt; Microsoft.Maui.Graphics.Size&#xA;override this.Microsoft.Maui.ICrossPlatformLayout.CrossPlatformArrange : Microsoft.Maui.Graphics.Rect -&gt; Microsoft.Maui.Graphics.Size" Usage="scrollView.Microsoft.Maui.ICrossPlatformLayout.CrossPlatformArrange bounds" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.IContentView.CrossPlatformArrange(Microsoft.Maui.Graphics.Rect)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bounds" Type="Microsoft.Maui.Graphics.Rect" Index="0" FrameworkAlternate="net-maui-8.0" />
+      </Parameters>
+      <Docs>
+        <param name="bounds">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.ICrossPlatformLayout.CrossPlatformMeasure">
+      <MemberSignature Language="C#" Value="Microsoft.Maui.Graphics.Size ICrossPlatformLayout.CrossPlatformMeasure (double widthConstraint, double heightConstraint);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype Microsoft.Maui.Graphics.Size Microsoft.Maui.ICrossPlatformLayout.CrossPlatformMeasure(float64 widthConstraint, float64 heightConstraint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ScrollView.Microsoft#Maui#ICrossPlatformLayout#CrossPlatformMeasure(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Function CrossPlatformMeasure (widthConstraint As Double, heightConstraint As Double) As Size Implements ICrossPlatformLayout.CrossPlatformMeasure" />
+      <MemberSignature Language="C++ CLI" Value=" virtual Microsoft::Maui::Graphics::Size Microsoft.Maui.ICrossPlatformLayout.CrossPlatformMeasure(double widthConstraint, double heightConstraint) = Microsoft::Maui::ICrossPlatformLayout::CrossPlatformMeasure;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.ICrossPlatformLayout.CrossPlatformMeasure : double * double -&gt; Microsoft.Maui.Graphics.Size&#xA;override this.Microsoft.Maui.ICrossPlatformLayout.CrossPlatformMeasure : double * double -&gt; Microsoft.Maui.Graphics.Size" Usage="scrollView.Microsoft.Maui.ICrossPlatformLayout.CrossPlatformMeasure (widthConstraint, heightConstraint)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.IContentView.CrossPlatformMeasure(System.Double,System.Double)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="widthConstraint" Type="System.Double" Index="0" FrameworkAlternate="net-maui-8.0" />
+        <Parameter Name="heightConstraint" Type="System.Double" Index="1" FrameworkAlternate="net-maui-8.0" />
+      </Parameters>
+      <Docs>
+        <param name="widthConstraint">To be added.</param>
+        <param name="heightConstraint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -667,7 +736,7 @@ MainPage = new ContentPage
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the Orientation bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ScrollView.Orientation" />.</summary>
         <remarks />
       </Docs>
     </Member>
@@ -815,7 +884,7 @@ MainPage = new ContentPage
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.ScrollView.ScrollX" /> property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ScrollView.ScrollX" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -856,7 +925,7 @@ MainPage = new ContentPage
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.ScrollView.ScrollY" /> property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ScrollView.ScrollY" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -962,7 +1031,7 @@ MainPage = new ContentPage
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.ScrollView.VerticalScrollBarVisibility" /> property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ScrollView.VerticalScrollBarVisibility" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

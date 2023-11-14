@@ -1,10 +1,12 @@
 <Type Name="Grid" FullName="Microsoft.Maui.Controls.Grid">
   <TypeSignature Language="C#" Value="public class Grid : Microsoft.Maui.Controls.Layout, Microsoft.Maui.IGridLayout, System.Collections.Generic.ICollection&lt;Microsoft.Maui.IView&gt;, System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.IView&gt;, System.Collections.Generic.IList&lt;Microsoft.Maui.IView&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Grid extends Microsoft.Maui.Controls.Layout implements class Microsoft.Maui.IContainer, class Microsoft.Maui.IElement, class Microsoft.Maui.IGridLayout, class Microsoft.Maui.ILayout, class Microsoft.Maui.IPadding, class Microsoft.Maui.ISafeAreaView, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView, class System.Collections.Generic.ICollection`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IList`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Grid extends Microsoft.Maui.Controls.Layout implements class Microsoft.Maui.IContainer, class Microsoft.Maui.IElement, class Microsoft.Maui.IGridLayout, class Microsoft.Maui.ILayout, class Microsoft.Maui.IPadding, class Microsoft.Maui.ISafeAreaView, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView, class System.Collections.Generic.ICollection`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IList`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.IEnumerable" FrameworkAlternate="net-maui-7.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Grid" />
   <TypeSignature Language="VB.NET" Value="Public Class Grid&#xA;Inherits Layout&#xA;Implements ICollection(Of IView), IEnumerable(Of IView), IGridLayout, IList(Of IView)" />
   <TypeSignature Language="C++ CLI" Value="public ref class Grid : Microsoft::Maui::Controls::Layout, Microsoft::Maui::IGridLayout, System::Collections::Generic::ICollection&lt;Microsoft::Maui::IView ^&gt;, System::Collections::Generic::IEnumerable&lt;Microsoft::Maui::IView ^&gt;, System::Collections::Generic::IList&lt;Microsoft::Maui::IView ^&gt;" />
-  <TypeSignature Language="F#" Value="type Grid = class&#xA;    inherit Layout&#xA;    interface IGridLayout&#xA;    interface ILayout&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IContainer&#xA;    interface IList&lt;IView&gt;&#xA;    interface ICollection&lt;IView&gt;&#xA;    interface seq&lt;IView&gt;&#xA;    interface IEnumerable&#xA;    interface ISafeAreaView&#xA;    interface IPadding" />
+  <TypeSignature Language="F#" Value="type Grid = class&#xA;    inherit Layout&#xA;    interface IGridLayout&#xA;    interface ILayout&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IContainer&#xA;    interface IList&lt;IView&gt;&#xA;    interface ICollection&lt;IView&gt;&#xA;    interface seq&lt;IView&gt;&#xA;    interface IEnumerable&#xA;    interface ISafeAreaView&#xA;    interface IPadding" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Grid extends Microsoft.Maui.Controls.Layout implements class Microsoft.Maui.IContainer, class Microsoft.Maui.ICrossPlatformLayout, class Microsoft.Maui.IElement, class Microsoft.Maui.IGridLayout, class Microsoft.Maui.ILayout, class Microsoft.Maui.IPadding, class Microsoft.Maui.ISafeAreaView, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView, class System.Collections.Generic.ICollection`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IList`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.IEnumerable" FrameworkAlternate="net-maui-8.0" />
+  <TypeSignature Language="F#" Value="type Grid = class&#xA;    inherit Layout&#xA;    interface IGridLayout&#xA;    interface ILayout&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IContainer&#xA;    interface IList&lt;IView&gt;&#xA;    interface ICollection&lt;IView&gt;&#xA;    interface seq&lt;IView&gt;&#xA;    interface IEnumerable&#xA;    interface ISafeAreaView&#xA;    interface IPadding&#xA;    interface ICrossPlatformLayout" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -55,6 +57,9 @@
     <Interface>
       <InterfaceName>System.Collections.IEnumerable</InterfaceName>
     </Interface>
+    <Interface FrameworkAlternate="net-maui-8.0">
+      <InterfaceName>Microsoft.Maui.ICrossPlatformLayout</InterfaceName>
+    </Interface>
   </Interfaces>
   <Attributes>
     <Attribute>
@@ -95,32 +100,32 @@ namespace FormsGallery
                 }
             };
     
-            grid.Children.Add(new Label
+            grid.AddWithSpan(new Label
                 {
                     Text = "Grid",
                     FontSize = Device.GetNamedSize (NamedSize.Large, typeof(Label)),
                     HorizontalOptions = LayoutOptions.Center
                 }, 0, 3, 0, 1);
     
-            grid.Children.Add(new Label
+            grid.Add(new Label
                 {
                     Text = "Autosized cell",
                     TextColor = Color.White,
                     BackgroundColor = Color.Blue
                 }, 0, 1);
     
-            grid.Children.Add(new BoxView
+            grid.Add(new BoxView
                 {
                     Color = Color.Silver,
                     HeightRequest = 0
                 }, 1, 1);
     
-            grid.Children.Add(new BoxView
+            grid.Add(new BoxView
                 {
                     Color = Color.Teal
                 }, 0, 2);
     
-            grid.Children.Add(new Label
+            grid.Add(new Label
                 {
                     Text = "Leftover space",
                     TextColor = Color.Purple,
@@ -129,7 +134,7 @@ namespace FormsGallery
                     VerticalTextAlignment = TextAlignment.Center,
                 }, 1, 2);
     
-            grid.Children.Add(new Label
+            grid.AddWithSpan(new Label
                 {
                     Text = "Span two rows (or more if you want)",
                     TextColor = Color.Yellow,
@@ -138,7 +143,7 @@ namespace FormsGallery
                     VerticalTextAlignment = TextAlignment.Center
                 }, 2, 3, 1, 3);
     
-            grid.Children.Add(new Label
+            grid.AddWithSpan(new Label
                 {
                     Text = "Span 2 columns",
                     TextColor = Color.Blue,
@@ -147,7 +152,7 @@ namespace FormsGallery
                     VerticalTextAlignment = TextAlignment.Center
                 }, 0, 2, 3, 4);
     
-            grid.Children.Add(new Label
+            grid.Add(new Label
                 {
                     Text = "Fixed 100x100",
                     TextColor = Color.Aqua,
@@ -287,7 +292,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Implements the <see cref="P:Microsoft.Maui.Controls.Grid.ColumnDefinitions" /> property, and allows the <see cref="T:Microsoft.Maui.Controls.Grid" /> class to bind it to properties on other objects at run time.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Grid.ColumnDefinitions" />.</summary>
         <remarks />
       </Docs>
     </Member>
@@ -307,7 +312,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Implements the attached property that represents the zero-based column index of a child element. See Remarks.</summary>
+        <summary>Bindable property for attached property <c>Column</c>.</summary>
         <remarks>
           <para>The interface for this property is defined by the <see cref="M:Microsoft.Maui.Controls.Grid.GetColumn(Microsoft.Maui.Controls.BindableObject)" /> and <see cref="M:Microsoft.Maui.Controls.Grid.SetColumn(Microsoft.Maui.Controls.BindableObject,System.Int32)" /> methods.</para>
         </remarks>
@@ -329,8 +334,8 @@ namespace FormsGallery
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Provides the interface for the bound property that gets or sets the distance between columns in the Grid.</summary>
-        <value>The space between columns in this <see cref="T:Microsoft.Maui.Controls.Grid" /> layout. The default is 6.</value>
+        <summary>Gets or sets the amount of space between columns in the Grid. This is a bindable property.</summary>
+        <value>The space between columns in this <see cref="T:Microsoft.Maui.Controls.Grid" /> layout. The default is 0.</value>
         <remarks>
           <para>The <see cref="P:Microsoft.Maui.Controls.Grid.ColumnSpacing" /> property does not control spacing on the left and right edges of the <see cref="T:Microsoft.Maui.Controls.Grid" /> layout. Application developers can control the spacing around the outside of the <see cref="T:Microsoft.Maui.Controls.Grid" /> layout by setting the <see cref="P:Microsoft.Maui.Controls.Page.Padding" /> property of the visual element to which it belongs.</para>
         </remarks>
@@ -352,7 +357,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Implements the <see cref="P:Microsoft.Maui.Controls.Grid.ColumnSpacing" /> property, and allows the <see cref="T:Microsoft.Maui.Controls.Grid" /> class to bind it to properties on other objects at run time.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Grid.ColumnSpacing" />.</summary>
         <remarks />
       </Docs>
     </Member>
@@ -372,7 +377,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Implements the attached property that represents the number of columns that a child element spans. See Remarks.</summary>
+        <summary>Bindable property for attached property <c>ColumnSpan</c>.</summary>
         <remarks>
           <para>The interface for this property is defined by the <see cref="M:Microsoft.Maui.Controls.Grid.GetColumnSpan(Microsoft.Maui.Controls.BindableObject)" /> and <see cref="M:Microsoft.Maui.Controls.Grid.SetColumnSpan(Microsoft.Maui.Controls.BindableObject,System.Int32)" /> methods.</para>
         </remarks>
@@ -935,7 +940,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Implements the <see cref="P:Microsoft.Maui.Controls.Grid.RowDefinitions" /> property, and allows the <see cref="T:Microsoft.Maui.Controls.Grid" /> class to bind it to properties on other objects at run time.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Grid.RowDefinitions" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -955,7 +960,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Implements the attached property that represents the zero-based row index of a child element. See Remarks.</summary>
+        <summary>Bindable property for attached property <c>Row</c>.</summary>
         <remarks>
           <para>The interface for this property is defined by the <see cref="M:Microsoft.Maui.Controls.Grid.GetRow(Microsoft.Maui.Controls.BindableObject)" /> and <see cref="M:Microsoft.Maui.Controls.Grid.SetRow(Microsoft.Maui.Controls.BindableObject,System.Int32)" /> methods.</para>
         </remarks>
@@ -977,8 +982,8 @@ namespace FormsGallery
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the amount of space left between rows in the Grid. This is a bindable property.</summary>
-        <value>The space between rows</value>
+        <summary>Gets or sets the amount of space between rows in the Grid. This is a bindable property.</summary>
+        <value>The space between rows in this <see cref="T:Microsoft.Maui.Controls.Grid" /> layout. The default is 0.</value>
         <remarks>
           <para>The <see cref="P:Microsoft.Maui.Controls.Grid.RowSpacing" /> property does not control spacing on the top and bottom edges of the <see cref="T:Microsoft.Maui.Controls.Grid" /> layout. Application developers can control the spacing around the outside of the <see cref="T:Microsoft.Maui.Controls.Grid" /> layout by setting the <see cref="P:Microsoft.Maui.Controls.Page.Padding" /> property of the visual element to which it belongs.</para>
         </remarks>
@@ -1000,7 +1005,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Implements the <see cref="P:Microsoft.Maui.Controls.Grid.RowSpacing" /> property, and allows the <see cref="T:Microsoft.Maui.Controls.Grid" /> class to bind it to properties on other objects at run time.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Grid.RowSpacing" />.</summary>
         <remarks />
       </Docs>
     </Member>
@@ -1020,7 +1025,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Implements the attached property that represents the number of rows that a child element spans, and allows the <see cref="T:Microsoft.Maui.Controls.Grid" /> class to bind it to properties on other objects at run time.</summary>
+        <summary>Bindable property for attached property <c>RowSpan</c>.</summary>
         <remarks>
           <para>The interface for this property is defined by the <see cref="M:Microsoft.Maui.Controls.Grid.GetRowSpan(Microsoft.Maui.Controls.BindableObject)" /> and <see cref="M:Microsoft.Maui.Controls.Grid.SetRowSpan(Microsoft.Maui.Controls.BindableObject,System.Int32)" /> methods.</para>
         </remarks>

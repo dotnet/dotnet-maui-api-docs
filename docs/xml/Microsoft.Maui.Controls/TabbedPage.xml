@@ -4,7 +4,8 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.TabbedPage" />
   <TypeSignature Language="VB.NET" Value="Public Class TabbedPage&#xA;Inherits MultiPage(Of Page)&#xA;Implements IElementConfiguration(Of TabbedPage), ITabbedView" />
   <TypeSignature Language="C++ CLI" Value="public ref class TabbedPage : Microsoft::Maui::Controls::MultiPage&lt;Microsoft::Maui::Controls::Page ^&gt;, Microsoft::Maui::Controls::IElementConfiguration&lt;Microsoft::Maui::Controls::TabbedPage ^&gt;, Microsoft::Maui::ITabbedView" />
-  <TypeSignature Language="F#" Value="type TabbedPage = class&#xA;    inherit MultiPage&lt;Page&gt;&#xA;    interface ITabbedView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IElementConfiguration&lt;TabbedPage&gt;" />
+  <TypeSignature Language="F#" Value="type TabbedPage = class&#xA;    inherit MultiPage&lt;Page&gt;&#xA;    interface ITabbedView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IElementConfiguration&lt;TabbedPage&gt;" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="F#" Value="type TabbedPage = class&#xA;    inherit MultiPage&lt;Page&gt;&#xA;    interface IElementConfiguration&lt;TabbedPage&gt;&#xA;    interface ITabbedView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -45,7 +46,7 @@
       <para>The user interface of a tabbed page consists of a list of tabs and a larger detail area. On iOS, the list of tabs appears at the bottom of the screen, and the detail area is above. On Android and Windows phones, the tabs appear across the top of the screen. The user can scroll the collection of tabs that are across the top of the screen if that collection is too large to fit on one screen.</para>
       <para>App developers can create tabbed pages in either of two ways. First, application developers can assign a list of objects of a single class, or its subclasses, to the <see cref="P:Microsoft.Maui.Controls.MultiPage`1.ItemsSource" /> property and assign a <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> to the <see cref="P:Microsoft.Maui.Controls.MultiPage`1.ItemTemplate" /> property to return pages for objects of the least derived type. Second, app developers can add a succession of <see cref="T:Microsoft.Maui.Controls.Page" /> objects to the <see cref="P:Microsoft.Maui.Controls.MultiPage`1.Children" /> property. Both methods are shown in the code examples below.</para>
       <example>
-        <para>The following example code, adapted for brevity from the FormsGallery sample that can be found on the <format type="text/html"><a href="https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/formsgallery/" target="_blank">Sample Applications</a></format> page, shows how to display data of a specific type by assigning a <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> to the <see cref="P:Microsoft.Maui.Controls.MultiPage`1.ItemTemplate" /> property. Note how <c>NamedColorPage</c> gets its color by binding its <see cref="F:Microsoft.Maui.Controls.BoxView.ColorProperty" /> field.</para>
+        <para>The following example code shows how to display data of a specific type by assigning a <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> to the <see cref="P:Microsoft.Maui.Controls.MultiPage`1.ItemTemplate" /> property. Note how <c>NamedColorPage</c> gets its color by binding its <see cref="F:Microsoft.Maui.Controls.BoxView.ColorProperty" /> field.</para>
         <code lang="csharp lang-csharp"><![CDATA[
 using System;
 using Microsoft.Maui.Controls;
@@ -230,7 +231,7 @@ class TabbedPageDemoPage2 : TabbedPage
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.TabbedPage.BarBackgroundColor" /> property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.TabbedPage.BarBackgroundColor" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -250,7 +251,7 @@ class TabbedPageDemoPage2 : TabbedPage
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.TabbedPage.BarBackground" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -291,7 +292,7 @@ class TabbedPageDemoPage2 : TabbedPage
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.TabbedPage.BarTextColor" /> property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.TabbedPage.BarTextColor" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -307,6 +308,12 @@ class TabbedPageDemoPage2 : TabbedPage
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.Obsolete("Use TabbedViewHandler.Mapper instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use TabbedViewHandler.Mapper instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.IPropertyMapper&lt;Microsoft.Maui.ITabbedView,Microsoft.Maui.Handlers.ITabbedViewHandler&gt;</ReturnType>
       </ReturnValue>
@@ -441,7 +448,7 @@ class TabbedPageDemoPage2 : TabbedPage
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.TabbedPage.SelectedTabColor" /> field.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.TabbedPage.SelectedTabColor" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -482,7 +489,7 @@ class TabbedPageDemoPage2 : TabbedPage
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.TabbedPage.UnselectedTabColor" /> field.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.TabbedPage.UnselectedTabColor" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

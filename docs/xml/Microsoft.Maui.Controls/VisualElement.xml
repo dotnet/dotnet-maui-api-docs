@@ -4,7 +4,8 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.VisualElement" />
   <TypeSignature Language="VB.NET" Value="Public Class VisualElement&#xA;Inherits NavigableElement&#xA;Implements IAnimatable, IView, IVisualElementController" />
   <TypeSignature Language="C++ CLI" Value="public ref class VisualElement : Microsoft::Maui::Controls::NavigableElement, Microsoft::Maui::Controls::IAnimatable, Microsoft::Maui::Controls::IVisualElementController, Microsoft::Maui::IView" />
-  <TypeSignature Language="F#" Value="type VisualElement = class&#xA;    inherit NavigableElement&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IAnimatable&#xA;    interface IVisualElementController&#xA;    interface IElementController" />
+  <TypeSignature Language="F#" Value="type VisualElement = class&#xA;    inherit NavigableElement&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IAnimatable&#xA;    interface IVisualElementController&#xA;    interface IElementController" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="F#" Value="type VisualElement = class&#xA;    inherit NavigableElement&#xA;    interface IAnimatable&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -33,7 +34,12 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>A <see cref="T:Microsoft.Maui.Controls.Element" /> that occupies an area on the screen, has a visual appearance, and can obtain touch input.</summary>
+    <summary>
+            An <see cref="T:Microsoft.Maui.Controls.Element" /> that occupies an area on the screen, has a visual appearance, and can obtain touch input.
+            </summary>
+    <remarks>
+            The base class for most Microsoft.Maui.Controls on-screen elements. Provides most properties, events, and methods for presenting an item on screen.
+            </remarks>
     <remarks>
       <para>The base class for most Microsoft.Maui.Controls on-screen elements. Provides most properties, events, and methods for presenting an item on screen.</para>
     </remarks>
@@ -52,7 +58,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.VisualElement" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,9 +80,11 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the X component of the center point for any transform, relative to the bounds of the element. This is a bindable property.</summary>
+        <summary>
+            Gets or sets the X component of the center point for any transform operation, relative to the bounds of the element. This is a bindable property.
+            </summary>
         <value>The value that declares the X component of the transform. The default value is 0.5.</value>
-        <remarks>To be added.</remarks>
+        <remarks>The default value is 0.5.</remarks>
         <altmember cref="P:Microsoft.Maui.Controls.VisualElement.AnchorY" />
       </Docs>
     </Member>
@@ -94,7 +104,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the AnchorX bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.AnchorX" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,9 +124,11 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the Y component of the center point for any transform, relative to the bounds of the element. This is a bindable property.</summary>
+        <summary>
+            Gets or sets the Y component of the center point for any transform operation, relative to the bounds of the element. This is a bindable property.
+            </summary>
         <value>The value that declares the Y component of the transform. The default value is 0.5.</value>
-        <remarks>To be added.</remarks>
+        <remarks>The default value is 0.5.</remarks>
         <altmember cref="P:Microsoft.Maui.Controls.VisualElement.AnchorX" />
       </Docs>
     </Member>
@@ -136,7 +148,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the AnchorY bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.AnchorY" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,9 +171,11 @@
         <Parameter Name="bounds" Type="Microsoft.Maui.Graphics.Rect" />
       </Parameters>
       <Docs>
-        <param name="bounds">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="bounds">The final size that the parent computes for the child in layout, provided as a <see cref="T:Microsoft.Maui.Graphics.Rect" /> value.</param>
+        <summary>
+            Positions child objects and determines a size for an element.
+            </summary>
+        <remarks>Parent objects that implement custom layout for their child elements should call this method from their layout override implementations to form a recursive layout update.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ArrangeOverride">
@@ -183,9 +197,12 @@
         <Parameter Name="bounds" Type="Microsoft.Maui.Graphics.Rect" />
       </Parameters>
       <Docs>
-        <param name="bounds">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bounds">The new bounds of the element.</param>
+        <summary>
+            Allows subclasses to override <see cref="M:Microsoft.Maui.Controls.VisualElement.Arrange(Microsoft.Maui.Graphics.Rect)" /> even though
+            the interface has to be explicitly implemented to avoid conflict with the old <see cref="M:Microsoft.Maui.Controls.VisualElement.Arrange(Microsoft.Maui.Graphics.Rect)" /> method.
+            </summary>
+        <returns>The resulting size of this element's frame by the platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,7 +228,9 @@
         <ReturnType>Microsoft.Maui.Controls.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the <see cref="T:Microsoft.Maui.Controls.Brush" /> which will be used to fill the background of an element. This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -232,9 +251,11 @@
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the color which will fill the background of a VisualElement. This is a bindable property.</summary>
+        <summary>
+            Gets or sets the <see cref="T:Microsoft.Maui.Graphics.Color" /> which will fill the background of an element. This is a bindable property.
+            </summary>
         <value>The color that is used to fill the background of a VisualElement.</value>
-        <remarks>To be added.</remarks>
+        <remarks>For background gradients and such, use <see cref="P:Microsoft.Maui.Controls.VisualElement.Background" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundColorProperty">
@@ -253,7 +274,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the BackgroundColor bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.BackgroundColor" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -273,7 +294,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.Background" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -297,8 +318,13 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Signals the start of a batch of changes to the elements properties.</summary>
-        <remarks>Application authors will not generally need to batch updates manually as the animation framework will do this for them.</remarks>
+        <summary>
+            Signals the start of a batch of changes to the elements properties. This can benefit performance if a bigger number of property values are changed.
+            </summary>
+        <remarks>
+          <para>Application authors will generally not need to batch updates manually as the animation framework will do this for them.</para>
+          <para>When the operation is done, <see cref="M:Microsoft.Maui.Controls.VisualElement.BatchCommit" /> should be called.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BatchCommit">
@@ -321,8 +347,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Signals the end of a batch of commands to the element and that those commands should now be committed.</summary>
-        <remarks>This method merely ensures that updates sent during the batch have been committed. It does not ensure that they were not committed before calling this.</remarks>
+        <summary>
+            Signals the end of a batch of commands to the element and that those commands should now be committed.
+            </summary>
+        <remarks>This method only ensures that updates sent during the batch have been committed. It does not ensure that they were not committed before calling this.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BatchCommitted">
@@ -350,8 +378,10 @@
         <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.Internals.EventArg&lt;Microsoft.Maui.Controls.VisualElement&gt;&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+            Occurs when a batch of property changes have been committed by calling <see cref="M:Microsoft.Maui.Controls.VisualElement.BatchCommit" />.
+            </summary>
+        <remarks>For internal use only. This API can be changed or removed without notice at any time.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Batched">
@@ -379,9 +409,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>
+            Gets a value that indicates there are batched changes done for this element.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>For internal use only. This API can be changed or removed without notice at any time.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Behaviors">
@@ -400,7 +432,9 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Controls.Behavior&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the list of Behaviors associated to this element. This is a bindable property.</summary>
+        <summary>
+            Gets the list of <see cref="T:Microsoft.Maui.Controls.Behavior" /> objects associated to this element. This is a read-only bindable property.
+            </summary>
         <value />
         <remarks>To be added.</remarks>
       </Docs>
@@ -421,7 +455,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the Behaviors bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.Behaviors" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -441,9 +475,12 @@
         <ReturnType>Microsoft.Maui.Graphics.Rect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the bounds of the element.</summary>
+        <summary>
+            Gets the bounds of the element in device-independent units.
+            </summary>
         <value>The bounds of an element, in device-independent units.</value>
-        <remarks>Bounds is assigned during the Layout cycle by a call to <see cref="M:Microsoft.Maui.Controls.VisualElement.Layout(Microsoft.Maui.Graphics.Rect)" />.</remarks>
+        <remarks>
+          <see cref="P:Microsoft.Maui.Controls.VisualElement.Bounds" /> is assigned during layout.</remarks>
         <altmember cref="P:Microsoft.Maui.Controls.VisualElement.WidthRequest" />
         <altmember cref="P:Microsoft.Maui.Controls.VisualElement.HeightRequest" />
       </Docs>
@@ -465,7 +502,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Changes the current visual state based on this elements current property values.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -485,7 +524,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when the order of this element's children changes.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -511,9 +552,11 @@
         <ReturnType>Microsoft.Maui.Controls.Shapes.Geometry</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Specifies the clipping region for an element. This is a bindable property.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>When an element is rendered, only the portion of the element that falls inside the clipping <see cref="T:Microsoft.Maui.Controls.Shapes.Geometry" /> is displayed, while any content that extends outside the clipping region is clipped (that is, not displayed).</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClipProperty">
@@ -532,7 +575,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.Clip" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -548,6 +591,12 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.Obsolete("Use ViewHandler.ViewMapper instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use ViewHandler.ViewMapper instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.IPropertyMapper&lt;Microsoft.Maui.IView,Microsoft.Maui.IViewHandler&gt;</ReturnType>
       </ReturnValue>
@@ -572,7 +621,9 @@
         <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the size that this element computed during the measure pass of the layout process.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -602,8 +653,31 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>
+            Gets a value that indicates that layout for this element is disabled.
+            </summary>
         <value>To be added.</value>
+        <remarks>For internal use only. This API can be changed or removed without notice at any time.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~VisualElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.VisualElement.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!VisualElement ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="visualElement.Finalize " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -629,7 +703,9 @@
         <ReturnType>Microsoft.Maui.FlowDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the layout flow direction.</summary>
+        <summary>
+            Gets or sets the layout flow direction. This is a bindable property.
+            </summary>
         <value>The layout flow direction.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -650,7 +726,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.VisualElement.FlowDirection" /> property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.FlowDirection" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -674,10 +750,13 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Attemps to set focus to this element.</summary>
+        <summary>
+            Attempts to set focus to this element.
+            </summary>
         <returns>
-          <see langword="true" /> if the keyboard focus was set to this element; <see langword="false" /> if the call to this method did not force a focus change.</returns>
-        <remarks>Element must be able to receive focus for this to work. Calling Focus on offscreen or unrealized elements has undefined behavior.</remarks>
+          <see langword="true" /> if the keyboard focus was set to this element; <see langword="false" /> if the call to this method did not force a focus change.
+            </returns>
+        <remarks>Element must be able to receive focus for this to work. Calling <see cref="M:Microsoft.Maui.Controls.VisualElement.Focus" /> on offscreen or unrealized elements has undefined behavior.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FocusChangeRequested">
@@ -699,6 +778,10 @@
         <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.Obsolete("This is now handled through VisualElement.MapFocus, this event handler will be removed in the future.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This is now handled through VisualElement.MapFocus, this event handler will be removed in the future.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -725,7 +808,9 @@
         <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.FocusEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when this element is focused.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -748,7 +833,9 @@
         <ReturnType>Microsoft.Maui.Graphics.Rect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the frame this element resides in on screen.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -772,7 +859,9 @@
         <ReturnType>Microsoft.Maui.IViewHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the <see cref="T:Microsoft.Maui.IViewHandler" /> associated to this element.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -793,9 +882,11 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current rendered height of this element. This is a read-only bindable property.</summary>
+        <summary>
+            Gets the current rendered height of this element. This is a read-only bindable property.
+            </summary>
         <value>The renderered height of this element.</value>
-        <remarks>The height of an element is set during the Layout phase.</remarks>
+        <remarks>The height of an element is set during layout.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HeightProperty">
@@ -814,7 +905,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the Height bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.Height" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -834,10 +925,15 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the desired height override of this element.</summary>
+        <summary>
+            Gets or sets the desired height override of this element. This is a bindable property.
+            </summary>
         <value>The height this element desires to be.</value>
-        <remarks>HeightRequest does not immediately change the Bounds of a VisualElement, however setting the HeightRequest will change the result of calls to GetSizeRequest, which will in turn modify the final size the element receives during a layout cycle.</remarks>
-        <remarks>To revert to the default "auto" behavior of this property, use ClearValue(HeightRequestProperty).</remarks>
+        <remarks>
+          <para>The default value is -1, which means the value is unset; the effective minimum height will be zero.</para>
+          <para>
+            <see cref="P:Microsoft.Maui.Controls.VisualElement.HeightRequest" /> does not immediately change the <see cref="P:Microsoft.Maui.Controls.VisualElement.Bounds" /> of an element; setting the <see cref="P:Microsoft.Maui.Controls.VisualElement.HeightRequest" /> will change the resulting height of the element during the next layout pass.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeightRequestProperty">
@@ -856,7 +952,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the HeightRequest property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.HeightRequest" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -876,10 +972,15 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether this element should be involved in the user interaction cycle. This is a bindable property.</summary>
+        <summary>
+            Gets or sets a value indicating whether this element responds to hit testing during user interaction. This is a bindable property.
+            </summary>
         <value>
           <see langword="false" /> if the element and its children should receive input; <see langword="true" /> if neither the element nor its children should receive input and should, instead, pass inputs to the elements that are visually behind the current visual element. Default is <see langword="false" />.</value>
-        <remarks>Setting InputTransparent is not the same as setting IsEnabled to false. Setting InputTransparent only disables inputs and instead causes them to be passed to the <see cref="T:Microsoft.Maui.Controls.VisualElement" /> that is visually behind the element. Usually, this is the parent of the element. The value of the <see cref="P:Microsoft.Maui.Controls.VisualElement.InputTransparent" /> property is inherited by a visual element's child elements.</remarks>
+        <remarks>
+          <para>The default value is <see langword="false" />.</para>
+          <para>Setting <see cref="P:Microsoft.Maui.Controls.VisualElement.InputTransparent" /> to <see langword="true" /> makes the element invisible to touch and pointer input. The input is passed to the first non-input-transparent element that is visually behind the input transparent element. </para>
+        </remarks>
         <altmember cref="P:Microsoft.Maui.Controls.VisualElement.IsEnabled" />
       </Docs>
     </Member>
@@ -899,7 +1000,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the InputTransparent bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.InputTransparent" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -920,7 +1021,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Marks the current measure of an element as invalidated.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -950,8 +1053,10 @@
       </Parameters>
       <Docs>
         <param name="trigger">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+            Invalidates the measure of an element.
+            </summary>
+        <remarks>For internal use only. This API can be changed or removed without notice at any time.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InvalidateMeasureOverride">
@@ -971,7 +1076,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Provides a way to allow subclasses (e.g., Layout) to override <see cref="M:Microsoft.Maui.Controls.VisualElement.InvalidateMeasure" /> even though
+            the interface has to be explicitly implemented to avoid conflict with the <see cref="M:Microsoft.Maui.Controls.VisualElement.InvalidateMeasure" /> method.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -991,29 +1099,40 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether this element is enabled in the user interface. This is a bindable property.</summary>
+        <summary>
+            Gets or sets a value indicating whether this element is enabled in the user interface. This is a bindable property.
+            </summary>
         <value>
           <see langword="true" /> if the element is enabled; otherwise, <see langword="false" />. The default value is <see langword="true" /></value>
         <remarks>
-          <para>
-            Elements that are not enabled do not participate in hit detection, and therefore will not receive focus or emit input events.
-          </para>
-          <para>
-              The following example shows a handler on a button which will then set IsEnabled to false on another button.
-              </para>
-          <example>
-            <code lang="csharp lang-csharp"><![CDATA[
-  public partial class ButtonDisableExample {
-    void BuildButtons ()
-    {
-      Button button1 = new Button {Text = "New button"};
-      Button button2 = new Button {Text = "Disabled on click"};
-      button1.Activated += (o, e) => button2.IsEnabled = false;
-    }
-  }
-              ]]></code>
-          </example>
+          <para>The default value is <see langword="true" />.</para>
+          <para>Elements that are not enabled will not receive focus or respond to input events.</para>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabledCore">
+      <MemberSignature Language="C#" Value="protected virtual bool IsEnabledCore { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEnabledCore" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.VisualElement.IsEnabledCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property IsEnabledCore As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool IsEnabledCore { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEnabledCore : bool" Usage="Microsoft.Maui.Controls.VisualElement.IsEnabledCore" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            This value represents the cumulative IsEnabled value.
+            All types that override this property need to also invoke
+            the RefreshIsEnabledProperty() method if the value will change.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEnabledProperty">
@@ -1032,7 +1151,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the IsEnabled bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.IsEnabled" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1052,28 +1171,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether this element is focused currently. This is a bindable property.</summary>
+        <summary>
+            Gets a value indicating whether this element is focused currently. This is a bindable property.
+            </summary>
         <value>
           <see langword="true" /> if the element is focused; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <para>
-            Applications may have multiple focuses depending on the implementation of the underlying toolkit. Menus and modals in particular may leave multiple items with focus.
-          </para>
-          <para>
-              The following example shows conditionally setting a background color based on the focus state.
-              </para>
-          <example>
-            <code lang="csharp lang-csharp"><![CDATA[
-  void UpdateBackground ()
-  {
-    if (myElement.IsFocused)
-      myElement.BackgroundColor = Color.Red;
-    else
-      myElement.BackgroundColor = Color.Blue;
-  }
-              ]]></code>
-          </example>
-        </remarks>
+        <remarks>Applications may have multiple focuses depending on the implementation of the underlying platform. Menus and modals in particular may leave multiple items with focus.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsFocusedProperty">
@@ -1092,7 +1195,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the IsFocused bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.IsFocused" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1118,8 +1221,8 @@
         <ReturnType>Microsoft.Maui.Controls.BindablePropertyKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.IsFocused" />.</summary>
+        <remarks>For internal use only. This API can be changed or removed without notice at any time.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsInPlatformLayout">
@@ -1147,9 +1250,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets a value that indicates that this element is currently going through the platform layout cycle.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>For internal use only. This API can be changed or removed without notice at any time.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsLoaded">
@@ -1169,7 +1274,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Indicates if a VisualElement is connected to the main object tree.
+            Indicates if an element is connected to the main object tree.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1200,9 +1305,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>
+            Gets or sets a value that indicates whether this elements's platform equivalent element is enabled.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>For internal use only. This API can be changed or removed without notice at any time.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsPlatformStateConsistent">
@@ -1230,9 +1337,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets a value that indicates that this element is currently consistent with the platform equivalent element state.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>For internal use only. This API can be changed or removed without notice at any time.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsVisible">
@@ -1257,44 +1366,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that determines whether this elements should be part of the visual tree or not. This is a bindable property.</summary>
+        <summary>
+            Gets or sets a value that determines whether this element will be visible on screen and take up space in layouts. This is a bindable property.
+            </summary>
         <value>
           <see langword="true" /> if the element should be rendered; otherwise, <see langword="false" />. Default value is <see langword="true" />.</value>
-        <remarks>
-          <para>Setting IsVisible to false will remove the element from the visual tree. The element will no longer take up space in layouts or be eligle to receive any kind of input event.</para>
-          <para>
-              The following example shows a stack where the middle element is toggled when a button is activated.
-              </para>
-          <example>
-            <code lang="csharp lang-csharp"><![CDATA[
-  partial class LabelToggle {
-    Label label;
-    
-    void Build ()
-    {
-      var firstView = new Button {Text = "Tap Me"};
-      label = new Label {Text = "I can be toggled"};
-      var thirdView = new Image {Source = "image.png"};
-    
-      firstView.Activated += OnButtonActivated;
-    
-      Content = new StackLayout {
-        Children {
-          firstView,
-          label,
-          thirdView
-        }
-      };
-    }
-    
-    void OnButtonActivated (object sender, EventArgs args)
-    {
-      label.IsVisible = !label.IsVisible;
-    }
-  }
-              ]]></code>
-          </example>
-        </remarks>
+        <remarks>When an element has <see cref="P:Microsoft.Maui.Controls.VisualElement.IsVisible" /> set to <see langword="false" /> it will no longer take up space in layouts or be eligible to receive any kind of input event.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsVisibleProperty">
@@ -1313,7 +1390,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the IsVisible bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.IsVisible" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1337,8 +1414,10 @@
       </Parameters>
       <Docs>
         <param name="bounds">The new bounds of the element.</param>
-        <summary>Updates the bounds of the element during the layout cycle.</summary>
-        <remarks>Calling Layout will trigger a layout cycle for the sub-tree of this element.</remarks>
+        <summary>
+            Updates the bounds of the element during the layout cycle.
+            </summary>
+        <remarks>Calling this method will trigger a layout cycle for the sub-tree of this element.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Loaded">
@@ -1358,10 +1437,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Occurs when a VisualElement has been constructed and added to the object tree.
-            This event may occur before the VisualElement has been measured so should not be relied on for size information.  
+            Occurs when an element has been constructed and added to the object tree.
             </summary>
-        <remarks>To be added.</remarks>
+        <remarks>This event may occur before the element has been measured so should not be relied on for size information.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MapBackgroundColor">
@@ -1432,9 +1510,15 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the maximum height the element will request during layout. This is a bindable property.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The default value is <see cref="F:System.Double.PositiveInfinity" />.</para>
+          <para>
+            <see cref="P:Microsoft.Maui.Controls.VisualElement.MaximumHeightRequest" /> is used to ensure that the element has no more than the specified height during layout.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaximumHeightRequestProperty">
@@ -1453,7 +1537,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.MaximumHeightRequest" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1473,9 +1557,15 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the maximum width the element will request during layout. This is a bindable property.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The default value is <see cref="F:System.Double.PositiveInfinity" />.</para>
+          <para>
+            <see cref="P:Microsoft.Maui.Controls.VisualElement.MaximumWidthRequest" /> is used to ensure the element has no more than the specified width during layout.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaximumWidthRequestProperty">
@@ -1494,7 +1584,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.MaximumWidthRequest" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1518,14 +1608,14 @@
         <Parameter Name="flags" Type="Microsoft.Maui.Controls.MeasureFlags" />
       </Parameters>
       <Docs>
-        <param name="widthConstraint">The suggested maximum width constraint for the visual element to render.</param>
-        <param name="heightConstraint">The suggested maximum height constraint for the visual element to render.</param>
+        <param name="widthConstraint">The suggested maximum width constraint for the element to render.</param>
+        <param name="heightConstraint">The suggested maximum height constraint for the element to render.</param>
         <param name="flags">A value that controls whether margins are included in the returned size.</param>
-        <summary>Returns the minimum size that a visual element needs in order to be displayed on the device.</summary>
-        <returns>The minimum size that a visual element needs in order to be displayed on the device.</returns>
-        <remarks>
-          <para>If the minimum sized that the visual element needs in order to be displayed on the device is larger than can be accommodated by <paramref name="widthConstraint" /> and <paramref name="heightConstraint" />, the return value may represent a rectangle that is larger in either or both of those parameters.</para>
-        </remarks>
+        <summary>
+            Returns the minimum size that an element needs in order to be displayed on the device.
+            </summary>
+        <returns>The minimum size that an element needs in order to be displayed on the device.</returns>
+        <remarks>If the minimum size that the element needs in order to be displayed on the device is larger than can be accommodated by <paramref name="widthConstraint" /> and <paramref name="heightConstraint" />, the return value may represent a rectangle that is larger in either one or both of those parameters.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MeasureInvalidated">
@@ -1544,7 +1634,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when the current measure of an element has been invalidated.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1568,10 +1660,13 @@
         <Parameter Name="heightConstraint" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="widthConstraint">To be added.</param>
-        <param name="heightConstraint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="widthConstraint">The width constraint to request.</param>
+        <param name="heightConstraint">The height constraint to request.</param>
+        <summary>
+            Provides a way to allow subclasses to override <see cref="M:Microsoft.Maui.Controls.VisualElement.Measure(System.Double,System.Double,Microsoft.Maui.Controls.MeasureFlags)" /> even though
+            the interface has to be explicitly implemented to avoid conflict with the old Measure method.
+            </summary>
+        <returns>The requested size that an element wants in order to be displayed on the device.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1597,6 +1692,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.Controls.IVisualElementController.InvalidateMeasure">
@@ -1624,6 +1720,7 @@
         <param name="trigger">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.IElement.Handler">
@@ -1648,6 +1745,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.IView.Arrange">
@@ -1676,6 +1774,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.IView.Background">
@@ -1700,6 +1799,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.IView.Clip">
@@ -1724,6 +1824,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.IView.FlowDirection">
@@ -1748,6 +1849,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.IView.Height">
@@ -1772,6 +1874,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.IView.HorizontalLayoutAlignment">
@@ -1796,6 +1899,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.IView.InvalidateArrange">
@@ -1820,6 +1924,7 @@
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.IView.InvalidateMeasure">
@@ -1844,6 +1949,7 @@
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.IView.IsFocused">
@@ -1868,6 +1974,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.IView.Margin">
@@ -1892,6 +1999,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.IView.MaximumHeight">
@@ -1916,6 +2024,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.IView.MaximumWidth">
@@ -1940,6 +2049,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.IView.Measure">
@@ -1970,6 +2080,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.IView.MinimumHeight">
@@ -1994,6 +2105,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.IView.MinimumWidth">
@@ -2018,6 +2130,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.IView.Semantics">
@@ -2042,6 +2155,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.IView.Shadow">
@@ -2066,6 +2180,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.IView.VerticalLayoutAlignment">
@@ -2090,6 +2205,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.IView.Visibility">
@@ -2114,6 +2230,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.IView.Width">
@@ -2138,6 +2255,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="MinimumHeightRequest">
@@ -2156,32 +2274,14 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value which overrides the minimum height the element will request during layout.</summary>
+        <summary>
+            Gets or sets the minimum height the element will request during layout. This is a bindable property.
+            </summary>
         <value>The minimum height the element requires. Default value is -1.</value>
         <remarks>
+          <para>The default value is -1, which means the value is unset and a height will be determined automatically.</para>
           <para>
-            MinimumHeightRequest is used to override the results of a call to GetSizeRequest by setting the minimum height property. This causes overflow handling to shrink this element to its minimum height before elements who do not have a minimum size set.
-          </para>
-          <para>
-              The following example sets the MinimumHeightRequest to enable an image to shrink below its normal size.
-              </para>
-          <example>
-            <code lang="csharp lang-csharp"><![CDATA[
-  void Build (string veryLongString)
-  {
-    var label = new Label {Text = veryLongString};
-    var image = new Image {Source = "image500x500.png"};
-    
-    image.MinimumHeightRequest = 20;
-    Content = new StackLayout {
-      Children {
-        label,
-        image
-      }
-    };
-  }
-              ]]></code>
-          </example>
+            <see cref="P:Microsoft.Maui.Controls.VisualElement.MinimumHeightRequest" /> is used to ensure that the element has at least the specified height during layout.</para>
         </remarks>
       </Docs>
     </Member>
@@ -2201,7 +2301,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the MinimumHeightRequest property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.MinimumHeightRequest" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2221,33 +2321,14 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value which overrides the minimum width the element will request during layout.</summary>
+        <summary>
+            Gets or sets the minimum width the element will request during layout. This is a bindable property.
+            </summary>
         <value>The minimum width the element requires. Default value is -1.</value>
         <remarks>
+          <para>The default value is -1, which means the value is unset; the effective minimum width will be zero.</para>
           <para>
-            MinimumWidthRequest is used to override the results of a call to GetSizeRequest by setting the minimum width property. This causes overflow handling to shrink this element to its minimum width before elements who do not have a minimum size set.
-          </para>
-          <para>
-              The following example sets the MinimumWidthRequest to enable an image to shrink below its normal size.
-              </para>
-          <example>
-            <code lang="csharp lang-csharp"><![CDATA[
-  void Build (string veryLongString)
-  {
-    var label = new Label {Text = veryLongString};
-    var image = new Image {Source = "image500x500.png"};
-    
-    image.MinimumWidthRequest = 20;
-    Content = new StackLayout {
-      Orientation = StackOrientation.Horizontal,
-      Children {
-        label,
-        image
-      }
-    };
-  }
-              ]]></code>
-          </example>
+            <see cref="P:Microsoft.Maui.Controls.VisualElement.MinimumWidthRequest" /> is used to ensure that the element has at least the specified width during layout.</para>
         </remarks>
       </Docs>
     </Member>
@@ -2267,7 +2348,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the MinimumWidthRequest property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.MinimumWidthRequest" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2287,7 +2368,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.NavigableElement.Navigation" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2379,7 +2460,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Raises the <see cref="E:Microsoft.Maui.Controls.VisualElement.ChildrenReordered" /> event.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2403,10 +2486,12 @@
         <Parameter Name="heightConstraint" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="widthConstraint">To be added.</param>
-        <param name="heightConstraint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="widthConstraint">The width constraint to request.</param>
+        <param name="heightConstraint">The height constraint to request.</param>
+        <summary>
+            Method that is called when a layout measurement happens.
+            </summary>
+        <returns>The requested size that the element requires in order to be displayed on the device.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2430,9 +2515,11 @@
         <Parameter Name="height" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="width">To be added.</param>
-        <param name="height">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="width">The new width of the element.</param>
+        <param name="height">The new height of the element.</param>
+        <summary>
+            Method that is called when the size of the element is set during a layout cycle. Implement this method to add class handling for this event.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2452,31 +2539,15 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the opacity value applied to the element when it is rendered. This is a bindable property.</summary>
+        <summary>
+            Gets or sets the opacity value applied to the element when it is rendered. The range of this value is 0 to 1; values outside this range will be set to the nearest valid value. This is a bindable property.
+            </summary>
         <value>The opacity value. Default opacity is 1.0. Values will be clamped between 0 and 1 on set.</value>
         <remarks>
+          <para>The default value is 1.0.</para>
           <para>
-            The opacity value has no effect unless IsVisible is <see langword="true" />. Opacity is inherited down the element hierarchy. If a parent has 0.5 opacity, and a child has 0.5 opacity, the child will render with an effective 0.25 opacity. Setting opacity to 0 has undefined behavior with input elements.
-          </para>
-          <para>
-              The following example sets the opacity of a layout to 0.5 and the opacity of one of its children to 0.5, making the child 25% opaque.
-              </para>
-          <example>
-            <code lang="csharp lang-csharp"><![CDATA[
-  StackLayout stack = new StackLayout ();
-  Button button1 = new Button {Text="A Button"};
-  Button button2 = new Button {Text="Another Button"};
-    
-  stack.Children.Add (button1);
-  stack.Children.Add (button2);
-    
-  // The stack and everything in it will become 50% opaque
-  stack.Opacity = 0.5;
-    
-  // button1 will become 25% opaque while the stack and button2 remane 50% opaque
-  button1.Opacity = 0.5;
-              ]]></code>
-          </example>
+            The opacity value has no effect unless <see cref="P:Microsoft.Maui.Controls.VisualElement.IsVisible" /> is <see langword="true" />. The effective opacity of an element is the value of <see cref="P:Microsoft.Maui.Controls.VisualElement.Opacity" /> multiplied by the opacity of the element's <c>Parent</c>. If a parent has 0.5 opacity, and a child has 0.5 opacity, the child will render with an effective 0.25 opacity.
+            </para>
         </remarks>
       </Docs>
     </Member>
@@ -2496,7 +2567,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the Opacity bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.Opacity" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2526,7 +2597,33 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Signals that the platform equivalent element for this element's size has changed and a new layout cycle might be needed.
+            </summary>
+        <remarks>For internal use only. This API can be changed or removed without notice at any time.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshIsEnabledProperty">
+      <MemberSignature Language="C#" Value="protected void RefreshIsEnabledProperty ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RefreshIsEnabledProperty() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.VisualElement.RefreshIsEnabledProperty" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RefreshIsEnabledProperty ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RefreshIsEnabledProperty();" />
+      <MemberSignature Language="F#" Value="member this.RefreshIsEnabledProperty : unit -&gt; unit" Usage="visualElement.RefreshIsEnabledProperty " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            This method must always be called if some event occurs and the value of
+            the <see cref="P:Microsoft.Maui.Controls.VisualElement.IsEnabledCore" /> property will change.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2546,35 +2643,14 @@
         <ReturnType>Microsoft.Maui.Controls.ResourceDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the local resource dictionary.</summary>
+        <summary>
+            Gets or sets the local resource dictionary.
+            </summary>
         <value>The current resource dictionary, where resources are stored by key.</value>
         <remarks>
-          <para>In XAML, resource dictionaries are filled with key/value pairs that are specified in XML and consequently created at run time. The keys in the resource dictionary are specified with the <c>x:Key</c> attribute of the XML tag for the type to create. An object of that type is created, and is initialized with the property and field values that are specified either by additional attributes or by nested tags, both of which, when present are simply string representations of the property or field names. The object is then inserted into the <see cref="T:Microsoft.Maui.Controls.ResourceDictionary" /> for the enclosing type at runtime.</para>
-          <example>
-            <para>For example, the XAML below, taken from  the <format type="text/html"><a href="https://docs.microsoft.com/xamarin/xamarin-forms/xaml/">XAML for Microsoft.Maui.Controls</a></format> series, creates a resource dictionary that contains <see cref="T:Microsoft.Maui.Controls.LayoutOptions" /> object constants that can be used for any <see cref="T:Microsoft.Maui.Controls.Layout" /> objects that are added to the surrounding <see cref="T:Microsoft.Maui.Controls.ContentPage" />:</para>
-            <code><![CDATA[
-<ContentPage.Resources>
-    <ResourceDictionary>
-        <LayoutOptions x:Key="horzOptions"
-                     Alignment="Center" />
-    
-        <LayoutOptions x:Key="vertOptions"
-                     Alignment="Center"
-                     Expands="True" />
-    </ResourceDictionary>
-</ContentPage.Resources>
-]]></code>
-            <para>Note that the above snippet is only valid when nested within a <c>&lt;ContentPage&gt;...&lt;/ContentPage&gt;</c> tag pair. Within that pair, the app developer can use both of the <c>horzOptions</c> and <c>vertOptions</c> keys to specify values for properties of type <see cref="T:Microsoft.Maui.Controls.LayoutOptions" /> by using the <c>"{...}"</c> static resource syntax. The short example below, also taken from  the <format type="text/html"><a href="https://docs.microsoft.com/xamarin/xamarin-forms/xaml/">XAML for Microsoft.Maui.Controls</a></format> series, illustrates this syntax:</para>
-            <code><![CDATA[
-<Button Text="Do this!"
-        HorizontalOptions="{StaticResource horzOptions}"
-        VerticalOptions="{StaticResource vertOptions}"
-        BorderWidth="3"
-        Rotation="-15"
-        TextColor="Red"
-        Font="Large" />]]></code>
-            <para>Resource dictionaries and their associated XML provide the application developer with a convenient method to reuse code inside the XAML compile-time and run-time engines.</para>
-          </example>
+          <para>In XAML, resource dictionaries are filled with key/value pairs that are specified in XAML and consequently created at runtime. The keys in the resource dictionary are specified with the <c>x:Key</c> attribute of the XAML tag for the type to create. An object of that type is created, and is initialized with the property and field values that are specified either by additional attributes or by nested tags, both of which, when present, are simply string representations of the property or field names. The object is then inserted into the <see cref="T:Microsoft.Maui.Controls.ResourceDictionary" /> for the enclosing type at runtime.</para>
+          <para>Resource dictionaries and their associated XML provide the application developer with a convenient method to reuse code inside the XAML compile-time and runtime engines.</para>
+          <para>For more information, see: <see href="https://learn.microsoft.com/dotnet/maui/fundamentals/resource-dictionaries">Resource Dictionaries (Microsoft Learn)</see>.</para>
         </remarks>
       </Docs>
     </Member>
@@ -2594,7 +2670,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the rotation (in degrees) about the Z-axis (affine rotation) when the element is rendered.</summary>
+        <summary>
+            Gets or sets the rotation (in degrees) about the Z-axis (affine rotation) when the element is rendered. This is a bindable property.
+            </summary>
         <value>The rotation about the Z-axis in degrees.</value>
         <remarks>Rotation is applied relative to <see cref="P:Microsoft.Maui.Controls.VisualElement.AnchorX" /> and <see cref="P:Microsoft.Maui.Controls.VisualElement.AnchorY" />.</remarks>
       </Docs>
@@ -2615,7 +2693,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the Rotation bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.Rotation" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2635,9 +2713,11 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the rotation (in degrees) about the X-axis (perspective rotation) when the element is rendered.</summary>
+        <summary>
+            Gets or sets the rotation (in degrees) about the X-axis (perspective rotation) when the element is rendered. This is a bindable property.
+            </summary>
         <value>The rotation about the X-axis in degrees.</value>
-        <remarks>RotationX is applied relative to <see cref="P:Microsoft.Maui.Controls.VisualElement.AnchorX" /> and <see cref="P:Microsoft.Maui.Controls.VisualElement.AnchorY" />.</remarks>
+        <remarks>Rotation is applied relative to <see cref="P:Microsoft.Maui.Controls.VisualElement.AnchorX" /> and <see cref="P:Microsoft.Maui.Controls.VisualElement.AnchorY" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RotationXProperty">
@@ -2656,7 +2736,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the RotationX bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.RotationX" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2676,9 +2756,11 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the rotation (in degrees) about the Y-axis (perspective rotation) when the element is rendered.</summary>
+        <summary>
+            Gets or sets the rotation (in degrees) about the Y-axis (perspective rotation) when the element is rendered. This is a bindable property.
+            </summary>
         <value>The rotation about the Y-axis in degrees.</value>
-        <remarks>RotationY is applied relative to <see cref="P:Microsoft.Maui.Controls.VisualElement.AnchorX" /> and <see cref="P:Microsoft.Maui.Controls.VisualElement.AnchorY" />.</remarks>
+        <remarks>Rotation is applied relative to <see cref="P:Microsoft.Maui.Controls.VisualElement.AnchorX" /> and <see cref="P:Microsoft.Maui.Controls.VisualElement.AnchorY" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RotationYProperty">
@@ -2697,7 +2779,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the RotationY bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.RotationY" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2717,9 +2799,15 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the scale factor applied to the element.</summary>
+        <summary>
+            Gets or sets the scale factor applied to the element. This is a bindable property.
+            </summary>
         <value>The scale factor of the element. Default value is 1.0.</value>
-        <remarks>Scale is applied relative to <see cref="P:Microsoft.Maui.Controls.VisualElement.AnchorX" /> and <see cref="P:Microsoft.Maui.Controls.VisualElement.AnchorY" />.</remarks>
+        <remarks>
+          <para>Default value is 1.0.</para>
+          <para>
+            <see cref="P:Microsoft.Maui.Controls.VisualElement.Scale" /> is applied relative to <see cref="P:Microsoft.Maui.Controls.VisualElement.AnchorX" /> and <see cref="P:Microsoft.Maui.Controls.VisualElement.AnchorY" />.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ScaleProperty">
@@ -2738,7 +2826,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the Scale bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.Scale" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2758,9 +2846,11 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a scale value to apply to the X direction.</summary>
+        <summary>
+            Gets or sets a scale value to apply to the X direction. This is a bindable property.
+            </summary>
         <value>The scale value to apply to the X direction.</value>
-        <remarks>To be added.</remarks>
+        <remarks>The default value is 1.0.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScaleXProperty">
@@ -2779,7 +2869,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.VisualElement.ScaleX" /> property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.ScaleX" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2799,9 +2889,11 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a scale value to apply to the Y direction.</summary>
+        <summary>
+            Gets or sets a scale value to apply to the Y direction. This is a bindable property.
+            </summary>
         <value>The scale value to apply to the Y direction.</value>
-        <remarks>To be added.</remarks>
+        <remarks>The default value is 1.0.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScaleYProperty">
@@ -2820,7 +2912,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.VisualElement.ScaleY" /> property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.ScaleY" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2840,7 +2932,9 @@
         <ReturnType>Microsoft.Maui.Controls.Shadow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the shadow effect cast by the element. This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2861,7 +2955,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.Shadow" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2885,10 +2979,12 @@
         <Parameter Name="height" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="width">To be added.</param>
-        <param name="height">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="width">The newly allocated width.</param>
+        <param name="height">The newly allocated height.</param>
+        <summary>
+            Method that is called during a layout cycle to signal the start of a sub-tree layout.
+            </summary>
+        <remarks>Calling <see cref="M:Microsoft.Maui.Controls.VisualElement.SizeAllocated(System.Double,System.Double)" /> will start a new layout cycle on the children of the element. Excessive calls to this method may cause performance problems.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SizeChanged">
@@ -2907,7 +3003,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when the size of an element changed.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2927,7 +3025,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.NavigableElement.Style" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2947,7 +3045,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the X translation delta of the element.</summary>
+        <summary>
+            Gets or sets the X translation delta of the element. This is a bindable property.
+            </summary>
         <value>The amount to translate the element.</value>
         <remarks>Translation is applied post layout. It is particularly good for applying animations. Translating an element outside the bounds of its parent container may prevent inputs from working.</remarks>
       </Docs>
@@ -2968,7 +3068,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the TranslationX bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.TranslationX" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2988,7 +3088,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the Y translation delta of the element.</summary>
+        <summary>
+            Gets or sets the Y translation delta of the element. This is a bindable property.
+            </summary>
         <value>The amount to translate the element.</value>
         <remarks>Translation is applied post layout. It is particularly good for applying animations. Translating an element outside the bounds of its parent container may prevent inputs from working.</remarks>
       </Docs>
@@ -3009,7 +3111,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the TranslationY bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.TranslationY" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3029,7 +3131,9 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Controls.TriggerBase&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the list of Trigger associated to this element. This is a bindable property.</summary>
+        <summary>
+            Gets the list of <see cref="T:Microsoft.Maui.Controls.TriggerBase" /> objects associated to this element. This is a read-only bindable property.
+            </summary>
         <value />
         <remarks>To be added.</remarks>
       </Docs>
@@ -3050,7 +3154,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the Triggers bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.Triggers" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3074,7 +3178,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Unsets focus to this element.</summary>
+        <summary>
+            Unsets keyboard focus on this element.
+            </summary>
         <remarks>Element must already have focus for this to have any effect.</remarks>
       </Docs>
     </Member>
@@ -3094,8 +3200,10 @@
         <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.FocusEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+            Occurs when this element is unfocused.
+            </summary>
+        <remarks>This event is not triggered when the element does not currently have focus.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Unloaded">
@@ -3115,7 +3223,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Occurs when this VisualElement is no longer connected to the main object tree.
+            Occurs when an element is no longer connected to the main object tree.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3142,7 +3250,9 @@
         <ReturnType>Microsoft.Maui.Controls.IVisual</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets a <see cref="T:Microsoft.Maui.Controls.IVisual" /> implementation that overrides the visual appearance of an element. This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3163,7 +3273,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.VisualElement.Visual" /> field.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.Visual" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3183,9 +3293,11 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current rendered width of this element. This is a read-only bindable property.</summary>
+        <summary>
+            Gets the current width of this element. This is a read-only bindable property.
+            </summary>
         <value>The renderered width of this element.</value>
-        <remarks>The width of an element is set during the Layout phase.</remarks>
+        <remarks>The width value of an element is set during the layout cycle.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WidthProperty">
@@ -3204,7 +3316,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the Width bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.Width" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3224,10 +3336,15 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the desired width override of this element.</summary>
+        <summary>
+            Gets or sets the desired width override of this element. This is a bindable property.
+            </summary>
         <value>The width this element desires to be.</value>
-        <remarks>WidthRequest does not immediately change the Bounds of a VisualElement, however setting the WidthRequest will change the result of calls to GetSizeRequest, which will in turn modify the final size the element receives during a layout cycle.</remarks>
-        <remarks>To revert to the default "auto" behavior of this property, use ClearValue(WidthRequestProperty).</remarks>
+        <remarks>
+          <para>The default value is -1, which means the value is unset and a width will be determined automatically.</para>
+          <para>
+            <see cref="P:Microsoft.Maui.Controls.VisualElement.WidthRequest" /> does not immediately change the <see cref="P:Microsoft.Maui.Controls.VisualElement.Bounds" /> of an element; setting the <see cref="P:Microsoft.Maui.Controls.VisualElement.WidthRequest" /> will change the resulting width of the element during the next layout pass.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WidthRequestProperty">
@@ -3246,7 +3363,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the WidthRequest property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.WidthRequest" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3266,7 +3383,9 @@
         <ReturnType>Microsoft.Maui.Controls.Window</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the <see cref="P:Microsoft.Maui.Controls.VisualElement.Window" /> that is associated with an element. This is a read-only bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3287,7 +3406,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.Window" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3307,9 +3426,11 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current X position of this element. This is a read-only bindable property.</summary>
+        <summary>
+            Gets the current X position of this element. This is a read-only bindable property.
+            </summary>
         <value>The X position of this element relative to its parents bounds.</value>
-        <remarks>The x value of an element is set during the Layout phase.</remarks>
+        <remarks>The position of an element is set during layout.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XProperty">
@@ -3328,7 +3449,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the X bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.X" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3348,9 +3469,11 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current Y position of this element. This is a read-only bindable property.</summary>
+        <summary>
+            Gets the current Y position of this element. This is a read-only bindable property.
+            </summary>
         <value>The Y position of this element relative to its parents bounds.</value>
-        <remarks>The y value of an element is set during the Layout phase.</remarks>
+        <remarks>The position of an element is set during layout.</remarks>
       </Docs>
     </Member>
     <Member MemberName="YProperty">
@@ -3369,7 +3492,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the Y bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.Y" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3389,9 +3512,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the front-to-back z-index of an element within a layout. This is a bindable property.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>An element with a higher <see cref="P:Microsoft.Maui.Controls.VisualElement.ZIndex" /> value will be shown on top of an element with a lower <see cref="P:Microsoft.Maui.Controls.VisualElement.ZIndex" /> value.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ZIndexProperty">
@@ -3410,7 +3535,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.ZIndex" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

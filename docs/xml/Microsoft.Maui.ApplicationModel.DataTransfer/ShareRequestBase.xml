@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary />
+    <summary>
+            Base class for the different share requests that can be used with the <see cref="T:Microsoft.Maui.ApplicationModel.DataTransfer.IShare" /> API.
+            </summary>
     <remarks />
   </Docs>
   <Members>
@@ -51,9 +53,11 @@
         <ReturnType>Microsoft.Maui.Graphics.Rect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the source rectangle to display the Share UI from.</summary>
+        <summary>
+            Gets or sets the source rectangle to display the iOS share user interface from.
+            </summary>
         <value />
-        <remarks>This is only used on iOS currently.</remarks>
+        <remarks>This functionality is only available on iOS on an iPad.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -72,7 +76,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the title to use on the share user interface</summary>
+        <summary>
+            Gets or sets the title to use on the operating system's share user interface.
+            </summary>
         <value>The title to be displayed.</value>
         <remarks />
       </Docs>

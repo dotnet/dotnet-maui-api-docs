@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Provides drag gesture recognition and defines the associated events for dragging and dropping. 
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +33,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.DragGestureRecognizer" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +55,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the value which indicates whether the element the gesture recognizer is attached to can be a drag source.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Default value is <see langword="true" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanDragProperty">
@@ -72,17 +78,18 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.DragGestureRecognizer.CanDrag" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DragStarting">
-      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Controls.DragStartingEventArgs&gt; DragStarting;" />
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Controls.DragStartingEventArgs&gt; DragStarting;" FrameworkAlternate="net-maui-7.0" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.DragStartingEventArgs&gt; DragStarting" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.DragGestureRecognizer.DragStarting" />
       <MemberSignature Language="VB.NET" Value="Public Event DragStarting As EventHandler(Of DragStartingEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Controls::DragStartingEventArgs ^&gt; ^ DragStarting;" />
       <MemberSignature Language="F#" Value="member this.DragStarting : EventHandler&lt;Microsoft.Maui.Controls.DragStartingEventArgs&gt; " Usage="member this.DragStarting : System.EventHandler&lt;Microsoft.Maui.Controls.DragStartingEventArgs&gt; " />
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Controls.DragStartingEventArgs&gt;? DragStarting;" FrameworkAlternate="net-maui-8.0" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -92,7 +99,9 @@
         <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.DragStartingEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when a drag gesture is detected.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,7 +121,9 @@
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the command to be executed when a drag gesture is first recognized.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -133,7 +144,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the parameter that's to be passed to the <see cref="P:Microsoft.Maui.Controls.DragGestureRecognizer.DragStartingCommand" />.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,7 +167,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.DragGestureRecognizer.DragStartingCommandParameter" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,17 +187,18 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.DragGestureRecognizer.DragStartingCommand" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DropCompleted">
-      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Controls.DropCompletedEventArgs&gt; DropCompleted;" />
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Controls.DropCompletedEventArgs&gt; DropCompleted;" FrameworkAlternate="net-maui-7.0" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.DropCompletedEventArgs&gt; DropCompleted" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.DragGestureRecognizer.DropCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Event DropCompleted As EventHandler(Of DropCompletedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Controls::DropCompletedEventArgs ^&gt; ^ DropCompleted;" />
       <MemberSignature Language="F#" Value="member this.DropCompleted : EventHandler&lt;Microsoft.Maui.Controls.DropCompletedEventArgs&gt; " Usage="member this.DropCompleted : System.EventHandler&lt;Microsoft.Maui.Controls.DropCompletedEventArgs&gt; " />
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Controls.DropCompletedEventArgs&gt;? DropCompleted;" FrameworkAlternate="net-maui-8.0" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -194,7 +208,9 @@
         <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.DropCompletedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when a drop gesture is completed.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,7 +230,9 @@
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the command to be executed when a drop gesture is completed.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -235,7 +253,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the parameter that's to be passed to the <see cref="P:Microsoft.Maui.Controls.DragGestureRecognizer.DropCompletedCommand" />.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -256,7 +276,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.DragGestureRecognizer.DropCompletedCommandParameter" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -276,7 +296,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.DragGestureRecognizer.DropCompletedCommand" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,10 +1,11 @@
 <Type Name="IClipboard" FullName="Microsoft.Maui.ApplicationModel.DataTransfer.IClipboard">
   <TypeSignature Language="C#" Value="public interface IClipboard" />
-  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IClipboard" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IClipboard" FrameworkAlternate="net-maui-7.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.ApplicationModel.DataTransfer.IClipboard" />
   <TypeSignature Language="VB.NET" Value="Public Interface IClipboard" />
   <TypeSignature Language="C++ CLI" Value="public interface class IClipboard" />
   <TypeSignature Language="F#" Value="type IClipboard = interface" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IClipboard" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -109,7 +110,7 @@
         <summary>
             Sets the contents of the clipboard to be the specified text.
             </summary>
-        <returns>Text content that is on the clipboard, or <see langword="null" /> if there is none.</returns>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks>This method returns immediately and does not guarentee that the text is on the clipboard by the time this method returns.</remarks>
       </Docs>
     </Member>

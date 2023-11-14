@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Static class with extension methods for the <see cref="T:Microsoft.Maui.ApplicationModel.IMap" /> APIs.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,10 +40,12 @@
         <Parameter Name="location" Type="Microsoft.Maui.Devices.Sensors.Location" />
       </Parameters>
       <Docs>
-        <param name="map">To be added.</param>
-        <param name="location">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="map">The object this method is invoked on.</param>
+        <param name="location">Location to open in the map application.</param>
+        <summary>
+            Open the installed application to a specific location.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,10 +69,12 @@
         <Parameter Name="placemark" Type="Microsoft.Maui.Devices.Sensors.Placemark" />
       </Parameters>
       <Docs>
-        <param name="map">To be added.</param>
-        <param name="placemark">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="map">The object this method is invoked on.</param>
+        <param name="placemark">Placemark to open in the map application.</param>
+        <summary>
+            Open the installed application to a specific placemark.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,12 +99,15 @@
         <Parameter Name="options" Type="Microsoft.Maui.ApplicationModel.MapLaunchOptions" />
       </Parameters>
       <Docs>
-        <param name="map">To be added.</param>
-        <param name="location">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="map">The object this method is invoked on.</param>
+        <param name="location">Location to open in the map application.</param>
+        <param name="options">Launch options to use.</param>
+        <summary>
+            Open the installed application to a specific location with launch options.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when either <paramref name="location" /> or <paramref name="options" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="OpenAsync">
@@ -122,11 +131,13 @@
         <Parameter Name="longitude" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="map">To be added.</param>
-        <param name="latitude">To be added.</param>
-        <param name="longitude">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="map">The object this method is invoked on.</param>
+        <param name="latitude">Target latitude.</param>
+        <param name="longitude">Target longitude.</param>
+        <summary>
+            Open the installed application to a specific location.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,11 +161,16 @@
         <Parameter Name="location" Type="Microsoft.Maui.Devices.Sensors.Location" />
       </Parameters>
       <Docs>
-        <param name="map">To be added.</param>
-        <param name="location">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="map">The object this method is invoked on.</param>
+        <param name="location">Location to open in the map application.</param>
+        <summary>
+            First checks if the installed map application can be opened,
+            then opens the installed application to a specific location with launch options.
+            </summary>
+        <returns>
+          <see langword="true" /> if the map application is opened, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="location" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryOpenAsync">
@@ -177,10 +193,14 @@
         <Parameter Name="placemark" Type="Microsoft.Maui.Devices.Sensors.Placemark" />
       </Parameters>
       <Docs>
-        <param name="map">To be added.</param>
-        <param name="placemark">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="map">The object this method is invoked on.</param>
+        <param name="placemark">Placemark to open in the map application.</param>
+        <summary>
+            First checks if the installed map application can be opened,
+            then opens the installed application to a specific placemark with launch options.
+            </summary>
+        <returns>
+          <see langword="true" /> if the map application is opened, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,12 +225,17 @@
         <Parameter Name="options" Type="Microsoft.Maui.ApplicationModel.MapLaunchOptions" />
       </Parameters>
       <Docs>
-        <param name="map">To be added.</param>
-        <param name="location">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="map">The object this method is invoked on.</param>
+        <param name="location">Location to open in the map application.</param>
+        <param name="options">Launch options to use.</param>
+        <summary>
+            First checks if the installed map application can be opened,
+            then open the installed application to a specific location with launch options.
+            </summary>
+        <returns>
+          <see langword="true" /> if the map application is opened, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when either <paramref name="location" /> or <paramref name="options" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryOpenAsync">
@@ -234,11 +259,15 @@
         <Parameter Name="longitude" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="map">To be added.</param>
-        <param name="latitude">To be added.</param>
-        <param name="longitude">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="map">The object this method is invoked on.</param>
+        <param name="latitude">Target latitude.</param>
+        <param name="longitude">Target longitude.</param>
+        <summary>
+            First checks if the installed map application can be opened,
+            then opens the installed application to a specific location with launch options.
+            </summary>
+        <returns>
+          <see langword="true" /> if the map application is opened, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

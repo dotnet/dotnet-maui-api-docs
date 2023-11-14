@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Open the platform phone dialer to place a call.</summary>
+    <summary>
+            The PhoneDialer API enables an application to open a phone number in the dialer.
+            </summary>
     <remarks />
   </Docs>
   <Members>
@@ -55,7 +57,9 @@
         <ReturnType>Microsoft.Maui.ApplicationModel.Communication.IPhoneDialer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Provides the default implementation for static usage of this API.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -76,7 +80,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a value indicating whether using the phone dialer is supported on this device.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -100,13 +106,16 @@
         <Parameter Name="number" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="number">Phone number to initialize the dialer with. Example 15555555555</param>
-        <summary>Open the phone dialer to a specific phone number.</summary>
+        <param name="number">Phone number to initialize the dialer with.</param>
+        <summary>
+            Open the phone dialer to a specific phone number.
+            </summary>
         <remarks>
-          <para>
-          Throws ArgumentNullException if number is not valid.</para>
-          <para>Throws FeatureNotSupportedException if placing phone call is not supported on the device.</para>
-        </remarks>
+            Will throw <see cref="T:System.ArgumentNullException" /> if <paramref name="number" /> is not valid.
+            Will throw <see cref="T:Microsoft.Maui.ApplicationModel.FeatureNotSupportedException" /> if making phone calls is not supported on the device.
+            </remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="number" /> is not valid.</exception>
+        <exception cref="T:Microsoft.Maui.ApplicationModel.FeatureNotSupportedException">Thrown if making phone calls is not supported on the device.</exception>
       </Docs>
     </Member>
   </Members>
