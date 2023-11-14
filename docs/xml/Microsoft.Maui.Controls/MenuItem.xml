@@ -4,7 +4,8 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.MenuItem" />
   <TypeSignature Language="VB.NET" Value="Public Class MenuItem&#xA;Inherits BaseMenuItem&#xA;Implements IMenuElement, IMenuItemController" />
   <TypeSignature Language="C++ CLI" Value="public ref class MenuItem : Microsoft::Maui::Controls::BaseMenuItem, Microsoft::Maui::Controls::IMenuItemController, Microsoft::Maui::IMenuElement" />
-  <TypeSignature Language="F#" Value="type MenuItem = class&#xA;    inherit BaseMenuItem&#xA;    interface IMenuElement&#xA;    interface IElement&#xA;    interface IImageSourcePart&#xA;    interface IText&#xA;    interface ITextStyle&#xA;    interface IMenuItemController" />
+  <TypeSignature Language="F#" Value="type MenuItem = class&#xA;    inherit BaseMenuItem&#xA;    interface IMenuElement&#xA;    interface IElement&#xA;    interface IImageSourcePart&#xA;    interface IText&#xA;    interface ITextStyle&#xA;    interface IMenuItemController" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="F#" Value="type MenuItem = class&#xA;    inherit BaseMenuItem&#xA;    interface IMenuItemController&#xA;    interface IMenuElement&#xA;    interface IElement&#xA;    interface IImageSourcePart&#xA;    interface IText&#xA;    interface ITextStyle" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -66,11 +67,17 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.Obsolete("Use MenuFlyoutItem.KeyboardAcceleratorsProperty instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use MenuFlyoutItem.KeyboardAcceleratorsProperty instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the accelerator attached property.</summary>
+        <summary>Bindable property for <see cref="T:Microsoft.Maui.Controls.Accelerator" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,7 +186,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the command parameter bound property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.MenuItem.CommandParameter" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,7 +206,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the command bound property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.MenuItem.Command" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,6 +222,12 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.Obsolete("Use MenuFlyoutItem.KeyboardAcceleratorsProperty instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use MenuFlyoutItem.KeyboardAcceleratorsProperty instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.Accelerator</ReturnType>
       </ReturnValue>
@@ -265,7 +278,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.MenuItem.IconImageSource" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -315,7 +328,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the IsDestructive bound property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.MenuItem.IsDestructive" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -335,7 +348,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="net-maui-7.0">
           <AttributeName Language="C#">[set: System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;set: System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -365,7 +378,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.MenuItem.IsEnabled" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -597,6 +610,12 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.Obsolete("Use MenuFlyoutItem.KeyboardAcceleratorsProperty instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use MenuFlyoutItem.KeyboardAcceleratorsProperty instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -675,7 +694,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the text bound property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.MenuItem.Text" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

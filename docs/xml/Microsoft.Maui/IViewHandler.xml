@@ -1,10 +1,11 @@
 <Type Name="IViewHandler" FullName="Microsoft.Maui.IViewHandler">
   <TypeSignature Language="C#" Value="public interface IViewHandler : Microsoft.Maui.IElementHandler" />
-  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IViewHandler implements class Microsoft.Maui.IElementHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IViewHandler implements class Microsoft.Maui.IElementHandler" FrameworkAlternate="net-maui-7.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.IViewHandler" />
   <TypeSignature Language="VB.NET" Value="Public Interface IViewHandler&#xA;Implements IElementHandler" />
   <TypeSignature Language="C++ CLI" Value="public interface class IViewHandler : Microsoft::Maui::IElementHandler" />
   <TypeSignature Language="F#" Value="type IViewHandler = interface&#xA;    interface IElementHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IViewHandler implements class Microsoft.Maui.IElementHandler" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -15,7 +16,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Defines members that view handlers should implement to provide mapping virtual views to platform views.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +38,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the container view for this view.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -60,10 +65,12 @@
         <Parameter Name="heightConstraint" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="widthConstraint">To be added.</param>
-        <param name="heightConstraint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="widthConstraint">The constraint on the width of the view.</param>
+        <param name="heightConstraint">The constraint on the height of the view.</param>
+        <summary>
+            Computes the actual size of a view based on the desired size and constraints. 
+            </summary>
+        <returns>The computed size for the view associated to this handler.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,7 +90,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets a value that indicates whether the <see cref="P:Microsoft.Maui.IElementHandler.PlatformView" /> is contained within a view.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -107,8 +116,10 @@
         <Parameter Name="frame" Type="Microsoft.Maui.Graphics.Rect" />
       </Parameters>
       <Docs>
-        <param name="frame">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="frame">The size that the parent determines for the child views.</param>
+        <summary>
+            Positions child elements and determines a size for a view.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,7 +139,9 @@
         <ReturnType>Microsoft.Maui.IView</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the virtual view (.NET MAUI layer) that is managed by this handler.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

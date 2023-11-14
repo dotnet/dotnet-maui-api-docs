@@ -18,7 +18,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides an easy way to access the locations for device folders.</summary>
+    <summary>
+            Concrete implementation of the <see cref="T:Microsoft.Maui.Storage.IFileSystem" /> APIs.
+            </summary>
     <remarks />
   </Docs>
   <Members>
@@ -61,6 +63,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="P:Microsoft.Maui.Storage.IFileSystem.AppDataDirectory" />
       </Docs>
     </Member>
     <Member MemberName="AppPackageFileExistsAsync">
@@ -89,6 +92,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:Microsoft.Maui.Storage.IFileSystem.AppPackageFileExistsAsync(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CacheDirectory">
@@ -113,6 +117,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="P:Microsoft.Maui.Storage.IFileSystem.CacheDirectory" />
       </Docs>
     </Member>
     <Member MemberName="OpenAppPackageFileAsync">
@@ -141,6 +146,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:Microsoft.Maui.Storage.IFileSystem.OpenAppPackageFileAsync(System.String)" />
       </Docs>
     </Member>
   </Members>

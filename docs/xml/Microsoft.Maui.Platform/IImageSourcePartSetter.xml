@@ -1,0 +1,100 @@
+<Type Name="IImageSourcePartSetter" FullName="Microsoft.Maui.Platform.IImageSourcePartSetter">
+  <TypeSignature Language="C#" Value="public interface IImageSourcePartSetter" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IImageSourcePartSetter" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Platform.IImageSourcePartSetter" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IImageSourcePartSetter" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IImageSourcePartSetter" />
+  <TypeSignature Language="F#" Value="type IImageSourcePartSetter = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            This represents a object that knows what the desired image is and how to apply a loaded version
+            of the image to a platform view.
+            </summary>
+    <remarks>
+            If a handler has multiple image parts, then multiple <see cref="T:Microsoft.Maui.Platform.IImageSourcePartSetter" />
+            instances can be used for each image part.
+            
+            The handler should not implement this interface itself as is breaks re-use of
+            mappers and/or handlers.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Handler">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.IElementHandler? Handler { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.IElementHandler Handler" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Platform.IImageSourcePartSetter.Handler" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Handler As IElementHandler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::IElementHandler ^ Handler { Microsoft::Maui::IElementHandler ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Handler : Microsoft.Maui.IElementHandler" Usage="Microsoft.Maui.Platform.IImageSourcePartSetter.Handler" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.IElementHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the <see cref="T:Microsoft.Maui.IElementHandler" /> which is doing the image loading.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageSourcePart">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.IImageSourcePart? ImageSourcePart { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.IImageSourcePart ImageSourcePart" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Platform.IImageSourcePartSetter.ImageSourcePart" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImageSourcePart As IImageSourcePart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::IImageSourcePart ^ ImageSourcePart { Microsoft::Maui::IImageSourcePart ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ImageSourcePart : Microsoft.Maui.IImageSourcePart" Usage="Microsoft.Maui.Platform.IImageSourcePartSetter.ImageSourcePart" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.IImageSourcePart</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the <see cref="T:Microsoft.Maui.IImageSourcePart" /> that is being loaded.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetImageSource">
+      <MemberSignature Language="C#" Value="public void SetImageSource (object? platformImage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetImageSource(object platformImage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.IImageSourcePartSetter.SetImageSource(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetImageSource (platformImage As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetImageSource(System::Object ^ platformImage);" />
+      <MemberSignature Language="F#" Value="abstract member SetImageSource : obj -&gt; unit" Usage="iImageSourcePartSetter.SetImageSource platformImage" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformImage" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="platformImage">The platform image to set.</param>
+        <summary>
+            The platform-specific implementation that knows how to set the loaded image into a platform view.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

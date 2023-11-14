@@ -14,8 +14,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Lets the user pick a file from the device's storage.</summary>
-    <remarks />
+    <summary>
+            Lets the user pick a file from the device's storage.
+            </summary>
+    <remarks>To enable iCloud capabilities in the file picker on iOS, you'll need to add the iCloud Documents in your <c>Entitlements.plist</c>.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -59,16 +61,18 @@
         <Parameter Name="options" Type="Microsoft.Maui.Storage.PickOptions" />
       </Parameters>
       <Docs>
-        <param name="options">File picker options to use; may be null</param>
-        <summary>Starts file picker for selecting files.</summary>
-        <returns>File picking result object, or null when picking was cancelled by the user.</returns>
+        <param name="options">File picker options to use; may be <see langword="null" /> for default options.</param>
+        <summary>
+            Opens the default file picker to allow the user to pick a single file.
+            </summary>
+        <returns>File picking result object, or <see langword="null" /> if picking was cancelled by the user.</returns>
         <remarks>
-          File types can be specified in order to limit files that can be selected, using a
-          PickOptions object. Note that this method may re-throw platform specific exceptions that
-          occured during file picking. When calling PickAsync() again while showing a file
-          picker, the Task object that was returned from the first call is cancelled. Be sure to
-          also handle the TaskCanceledException in this case.
-        </remarks>
+            File types can be specified in order to limit files that can be selected, using a
+            <see cref="T:Microsoft.Maui.Storage.PickOptions" /> object. Note that this method may re-throw platform specific exceptions that
+            occurred during file picking. When calling <see cref="M:Microsoft.Maui.Storage.FilePicker.PickAsync(Microsoft.Maui.Storage.PickOptions)" /> again while showing a file
+            picker, the <see cref="T:System.Threading.Tasks.Task" /> object that was returned from the first call is cancelled. Be sure to
+            also handle the <see cref="T:System.Threading.Tasks.TaskCanceledException" /> in this case.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="PickMultipleAsync">
@@ -89,16 +93,18 @@
         <Parameter Name="options" Type="Microsoft.Maui.Storage.PickOptions" />
       </Parameters>
       <Docs>
-        <param name="options">File picker options to use; may be null</param>
-        <summary>Starts file picker for selecting a single file.</summary>
-        <returns>File picking result object, or null when picking was cancelled by the user.</returns>
+        <param name="options">File picker options to use; may be <see langword="null" /> for default options.</param>
+        <summary>
+            Opens the default file picker to allow the user to pick one or more files.
+            </summary>
+        <returns>An IEnumerable of file picking result objects, or <see langword="null" /> if picking was cancelled by the user.</returns>
         <remarks>
-          File types can be specified in order to limit files that can be selected, using a
-          PickOptions object. Note that this method may re-throw platform specific exceptions that
-          occured during file picking. When calling PickMultipleAsync() again while showing a file
-          picker, the Task object that was returned from the first call is cancelled. Be sure to
-          also handle the TaskCanceledException in this case.
-        </remarks>
+            File types can be specified in order to limit files that can be selected, using a
+            <see cref="T:Microsoft.Maui.Storage.PickOptions" /> object. Note that this method may re-throw platform specific exceptions that
+            occurred during file picking. When calling <see cref="M:Microsoft.Maui.Storage.FilePicker.PickMultipleAsync(Microsoft.Maui.Storage.PickOptions)" /> again while showing a file
+            picker, the <see cref="T:System.Threading.Tasks.Task" /> object that was returned from the first call is cancelled. Be sure to
+            also handle the <see cref="T:System.Threading.Tasks.TaskCanceledException" /> in this case.
+            </remarks>
       </Docs>
     </Member>
   </Members>

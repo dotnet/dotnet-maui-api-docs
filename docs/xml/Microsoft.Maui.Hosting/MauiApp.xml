@@ -1,10 +1,15 @@
 <Type Name="MauiApp" FullName="Microsoft.Maui.Hosting.MauiApp">
-  <TypeSignature Language="C#" Value="public sealed class MauiApp : IDisposable" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MauiApp extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="C#" Value="public sealed class MauiApp : IDisposable" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MauiApp extends System.Object implements class System.IDisposable" FrameworkAlternate="net-maui-7.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Hosting.MauiApp" />
-  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MauiApp&#xA;Implements IDisposable" />
-  <TypeSignature Language="C++ CLI" Value="public ref class MauiApp sealed : IDisposable" />
-  <TypeSignature Language="F#" Value="type MauiApp = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MauiApp&#xA;Implements IDisposable" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MauiApp sealed : IDisposable" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="F#" Value="type MauiApp = class&#xA;    interface IDisposable" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="C#" Value="public sealed class MauiApp : IAsyncDisposable, IDisposable" FrameworkAlternate="net-maui-8.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MauiApp extends System.Object implements class System.IAsyncDisposable, class System.IDisposable" FrameworkAlternate="net-maui-8.0" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MauiApp&#xA;Implements IAsyncDisposable, IDisposable" FrameworkAlternate="net-maui-8.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MauiApp sealed : IAsyncDisposable, IDisposable" FrameworkAlternate="net-maui-8.0" />
+  <TypeSignature Language="F#" Value="type MauiApp = class&#xA;    interface IDisposable&#xA;    interface IAsyncDisposable" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -16,9 +21,14 @@
     <Interface>
       <InterfaceName>System.IDisposable</InterfaceName>
     </Interface>
+    <Interface FrameworkAlternate="net-maui-8.0">
+      <InterfaceName>System.IAsyncDisposable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            A .NET MAUI application with registered services and configuration data.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -92,6 +102,32 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="DisposeAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.ValueTask DisposeAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.ValueTask DisposeAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Hosting.MauiApp.DisposeAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function DisposeAsync () As ValueTask" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::ValueTask DisposeAsync();" />
+      <MemberSignature Language="F#" Value="abstract member DisposeAsync : unit -&gt; System.Threading.Tasks.ValueTask&#xA;override this.DisposeAsync : unit -&gt; System.Threading.Tasks.ValueTask" Usage="mauiApp.DisposeAsync " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IAsyncDisposable.DisposeAsync</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <inheritdoc />
       </Docs>

@@ -4,7 +4,8 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Shell" />
   <TypeSignature Language="VB.NET" Value="Public Class Shell&#xA;Inherits Page&#xA;Implements IFlyoutView, IPageContainer(Of Page), IShellController" />
   <TypeSignature Language="C++ CLI" Value="public ref class Shell : Microsoft::Maui::Controls::Page, Microsoft::Maui::Controls::IPageContainer&lt;Microsoft::Maui::Controls::Page ^&gt;, Microsoft::Maui::Controls::IShellController, Microsoft::Maui::IFlyoutView" />
-  <TypeSignature Language="F#" Value="type Shell = class&#xA;    inherit Page&#xA;    interface IFlyoutView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IShellController&#xA;    interface IPageController&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IPageContainer&lt;Page&gt;" />
+  <TypeSignature Language="F#" Value="type Shell = class&#xA;    inherit Page&#xA;    interface IFlyoutView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IShellController&#xA;    interface IPageController&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IPageContainer&lt;Page&gt;" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="F#" Value="type Shell = class&#xA;    inherit Page&#xA;    interface IShellController&#xA;    interface IPageController&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IPageContainer&lt;Page&gt;&#xA;    interface IFlyoutView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -85,7 +86,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="element" Type="Microsoft.Maui.Controls.Element" />
+        <Parameter Name="element" Type="Microsoft.Maui.Controls.Element" Index="0" FrameworkAlternate="net-maui-7.0" />
       </Parameters>
       <Docs>
         <param name="element">To be added.</param>
@@ -109,7 +110,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="M:Microsoft.Maui.Controls.Shell.GetBackButtonBehavior(Microsoft.Maui.Controls.BindableObject)" /> and <see cref="M:Microsoft.Maui.Controls.Shell.SetBackButtonBehavior(Microsoft.Maui.Controls.BindableObject,Microsoft.Maui.Controls.BackButtonBehavior)" /> methods.</summary>
+        <summary>Bindable property for attached property <c>BackButtonBehavior</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,7 +194,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.Shell.CurrentItem" /> field.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Shell.CurrentItem" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,7 +259,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.Shell.CurrentState" /> field.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Shell.CurrentState" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,7 +279,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for attached property <c>DisabledColor</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -319,7 +320,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for attached property <c>FlyoutBackdrop</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -381,7 +382,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.Shell.FlyoutBackgroundColor" /> field.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Shell.FlyoutBackgroundColor" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -449,7 +450,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Shell.FlyoutBackgroundImageAspect" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -469,7 +470,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Shell.FlyoutBackgroundImage" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -489,7 +490,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Shell.FlyoutBackground" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -530,7 +531,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.Shell.FlyoutBehavior" /> field.</summary>
+        <summary>Bindable property for attached property <c>FlyoutBehavior</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -571,7 +572,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Shell.FlyoutContent" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -612,7 +613,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Shell.FlyoutContentTemplate" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -653,7 +654,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Shell.FlyoutFooter" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -694,7 +695,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Shell.FlyoutFooterTemplate" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -756,7 +757,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.Shell.FlyoutHeaderBehavior" /> field.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Shell.FlyoutHeaderBehavior" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -776,7 +777,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.Shell.FlyoutHeader" /> field.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Shell.FlyoutHeader" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -817,7 +818,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.Shell.FlyoutHeaderTemplate" /> field.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Shell.FlyoutHeaderTemplate" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -858,7 +859,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for attached property <c>FlyoutHeight</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -899,7 +900,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.Shell.FlyoutIcon" /> field.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Shell.FlyoutIcon" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -940,7 +941,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.Shell.FlyoutIsPresented" /> field.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Shell.FlyoutIsPresented" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -960,7 +961,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for attached property <c>FlyoutItemIsVisible</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1022,7 +1023,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Shell.FlyoutVerticalScrollMode" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1063,7 +1064,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for attached property <c>FlyoutWidth</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1083,7 +1084,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for attached property <c>ForegroundColor</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1714,6 +1715,35 @@
       </Docs>
     </Member>
     <Member MemberName="GoToAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task GoToAsync (Microsoft.Maui.Controls.ShellNavigationState state, Microsoft.Maui.Controls.ShellNavigationQueryParameters shellNavigationQueryParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task GoToAsync(class Microsoft.Maui.Controls.ShellNavigationState state, class Microsoft.Maui.Controls.ShellNavigationQueryParameters shellNavigationQueryParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Shell.GoToAsync(Microsoft.Maui.Controls.ShellNavigationState,Microsoft.Maui.Controls.ShellNavigationQueryParameters)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GoToAsync (state As ShellNavigationState, shellNavigationQueryParameters As ShellNavigationQueryParameters) As Task" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ GoToAsync(Microsoft::Maui::Controls::ShellNavigationState ^ state, Microsoft::Maui::Controls::ShellNavigationQueryParameters ^ shellNavigationQueryParameters);" />
+      <MemberSignature Language="F#" Value="member this.GoToAsync : Microsoft.Maui.Controls.ShellNavigationState * Microsoft.Maui.Controls.ShellNavigationQueryParameters -&gt; System.Threading.Tasks.Task" Usage="shell.GoToAsync (state, shellNavigationQueryParameters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="Microsoft.Maui.Controls.ShellNavigationState" Index="0" FrameworkAlternate="net-maui-8.0" />
+        <Parameter Name="shellNavigationQueryParameters" Type="Microsoft.Maui.Controls.ShellNavigationQueryParameters" Index="1" FrameworkAlternate="net-maui-8.0" />
+      </Parameters>
+      <Docs>
+        <param name="state">Defines the path for Shell to navigate to.</param>
+        <param name="shellNavigationQueryParameters">Parameters to use for this specific navigation operation.</param>
+        <summary>
+            This method navigates to a <see cref="T:Microsoft.Maui.Controls.ShellNavigationState" /> and returns a <see cref="T:System.Threading.Tasks.Task" /> that will complete once the navigation animation.
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GoToAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task GoToAsync (Microsoft.Maui.Controls.ShellNavigationState state, bool animate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task GoToAsync(class Microsoft.Maui.Controls.ShellNavigationState state, bool animate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Shell.GoToAsync(Microsoft.Maui.Controls.ShellNavigationState,System.Boolean)" />
@@ -1771,6 +1801,37 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <param name="state">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GoToAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task GoToAsync (Microsoft.Maui.Controls.ShellNavigationState state, bool animate, Microsoft.Maui.Controls.ShellNavigationQueryParameters shellNavigationQueryParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task GoToAsync(class Microsoft.Maui.Controls.ShellNavigationState state, bool animate, class Microsoft.Maui.Controls.ShellNavigationQueryParameters shellNavigationQueryParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Shell.GoToAsync(Microsoft.Maui.Controls.ShellNavigationState,System.Boolean,Microsoft.Maui.Controls.ShellNavigationQueryParameters)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GoToAsync (state As ShellNavigationState, animate As Boolean, shellNavigationQueryParameters As ShellNavigationQueryParameters) As Task" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ GoToAsync(Microsoft::Maui::Controls::ShellNavigationState ^ state, bool animate, Microsoft::Maui::Controls::ShellNavigationQueryParameters ^ shellNavigationQueryParameters);" />
+      <MemberSignature Language="F#" Value="member this.GoToAsync : Microsoft.Maui.Controls.ShellNavigationState * bool * Microsoft.Maui.Controls.ShellNavigationQueryParameters -&gt; System.Threading.Tasks.Task" Usage="shell.GoToAsync (state, animate, shellNavigationQueryParameters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="Microsoft.Maui.Controls.ShellNavigationState" Index="0" FrameworkAlternate="net-maui-8.0" />
+        <Parameter Name="animate" Type="System.Boolean" Index="1" FrameworkAlternate="net-maui-8.0" />
+        <Parameter Name="shellNavigationQueryParameters" Type="Microsoft.Maui.Controls.ShellNavigationQueryParameters" Index="2" FrameworkAlternate="net-maui-8.0" />
+      </Parameters>
+      <Docs>
+        <param name="state">Defines the path for Shell to navigate to.</param>
+        <param name="animate">Indicates if your transition is animated</param>
+        <param name="shellNavigationQueryParameters">Parameters to use for this specific navigation operation.</param>
+        <summary>
+            This method navigates to a <see cref="T:Microsoft.Maui.Controls.ShellNavigationState" /> and returns a <see cref="T:System.Threading.Tasks.Task" />.
+            </summary>
+        <returns />
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1847,7 +1908,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.Shell.Items" /> field.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Shell.Items" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1888,7 +1949,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.Shell.ItemTemplate" /> field.</summary>
+        <summary>Bindable property for attached property <c>ItemTemplate</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1959,7 +2020,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.Shell.MenuItemTemplate" /> field.</summary>
+        <summary>Bindable property for attached property <c>MenuItemTemplate</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2610,7 +2671,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for attached property <c>NavBarHasShadow</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2630,7 +2691,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="M:Microsoft.Maui.Controls.Shell.GetNavBarIsVisible(Microsoft.Maui.Controls.BindableObject)" /> and <see cref="M:Microsoft.Maui.Controls.Shell.SetNavBarIsVisible(Microsoft.Maui.Controls.BindableObject,System.Boolean)" /> methods.</summary>
+        <summary>Bindable property for attached property <c>NavBarIsVisible</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2811,7 +2872,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for attached property <c>PresentationMode</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2831,7 +2892,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="element" Type="Microsoft.Maui.Controls.Element" />
+        <Parameter Name="element" Type="Microsoft.Maui.Controls.Element" Index="0" FrameworkAlternate="net-maui-7.0" />
       </Parameters>
       <Docs>
         <param name="element">To be added.</param>
@@ -2855,7 +2916,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="M:Microsoft.Maui.Controls.Shell.GetSearchHandler(Microsoft.Maui.Controls.BindableObject)" /> and <see cref="M:Microsoft.Maui.Controls.Shell.SetSearchHandler(Microsoft.Maui.Controls.BindableObject,Microsoft.Maui.Controls.SearchHandler)" /> methods.</summary>
+        <summary>Bindable property for attached property <c>SearchHandler</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3499,7 +3560,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for attached property <c>TabBarBackgroundColor</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3519,7 +3580,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for attached property <c>TabBarDisabledColor</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3539,7 +3600,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for attached property <c>TabBarForegroundColor</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3559,7 +3620,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="M:Microsoft.Maui.Controls.Shell.GetTabBarIsVisible(Microsoft.Maui.Controls.BindableObject)" /> and <see cref="M:Microsoft.Maui.Controls.Shell.SetTabBarIsVisible(Microsoft.Maui.Controls.BindableObject,System.Boolean)" /> methods.</summary>
+        <summary>Bindable property for attached property <c>TabBarIsVisible</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3579,7 +3640,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for attached property <c>TabBarTitleColor</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3599,7 +3660,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for attached property <c>TabBarUnselectedColor</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3619,7 +3680,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for attached property <c>TitleColor</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3639,7 +3700,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>xThe backing store for the <see cref="M:Microsoft.Maui.Controls.Shell.GetTitleView(Microsoft.Maui.Controls.BindableObject)" /> and <see cref="M:Microsoft.Maui.Controls.Shell.SetTitleView(Microsoft.Maui.Controls.BindableObject,Microsoft.Maui.Controls.View)" /> methods.</summary>
+        <summary>Bindable property for attached property <c>TitleView</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3659,7 +3720,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for attached property <c>UnselectedColor</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

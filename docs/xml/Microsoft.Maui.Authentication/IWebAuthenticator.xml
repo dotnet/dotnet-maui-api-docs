@@ -1,17 +1,20 @@
 <Type Name="IWebAuthenticator" FullName="Microsoft.Maui.Authentication.IWebAuthenticator">
   <TypeSignature Language="C#" Value="public interface IWebAuthenticator" />
-  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWebAuthenticator" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWebAuthenticator" FrameworkAlternate="net-maui-7.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Authentication.IWebAuthenticator" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWebAuthenticator" />
   <TypeSignature Language="C++ CLI" Value="public interface class IWebAuthenticator" />
   <TypeSignature Language="F#" Value="type IWebAuthenticator = interface" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IWebAuthenticator" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            A web navigation API intended to be used for authentication with external web services such as OAuth.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,9 +37,11 @@
         <Parameter Name="webAuthenticatorOptions" Type="Microsoft.Maui.Authentication.WebAuthenticatorOptions" />
       </Parameters>
       <Docs>
-        <param name="webAuthenticatorOptions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="webAuthenticatorOptions">A <see cref="T:Microsoft.Maui.Authentication.WebAuthenticatorOptions" /> instance containing additional configuration for this authentication call.</param>
+        <summary>
+            Begin an authentication flow by navigating to the specified URL and waiting for a callback/redirect to the callback URL scheme.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Maui.Authentication.WebAuthenticatorResult" /> object with the results of this operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

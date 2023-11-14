@@ -1,10 +1,12 @@
 <Type Name="StackLayout" FullName="Microsoft.Maui.Controls.StackLayout">
   <TypeSignature Language="C#" Value="public class StackLayout : Microsoft.Maui.Controls.StackBase, Microsoft.Maui.IStackLayout, System.Collections.Generic.ICollection&lt;Microsoft.Maui.IView&gt;, System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.IView&gt;, System.Collections.Generic.IList&lt;Microsoft.Maui.IView&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StackLayout extends Microsoft.Maui.Controls.StackBase implements class Microsoft.Maui.IContainer, class Microsoft.Maui.IElement, class Microsoft.Maui.ILayout, class Microsoft.Maui.IPadding, class Microsoft.Maui.ISafeAreaView, class Microsoft.Maui.IStackLayout, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView, class System.Collections.Generic.ICollection`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IList`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StackLayout extends Microsoft.Maui.Controls.StackBase implements class Microsoft.Maui.IContainer, class Microsoft.Maui.IElement, class Microsoft.Maui.ILayout, class Microsoft.Maui.IPadding, class Microsoft.Maui.ISafeAreaView, class Microsoft.Maui.IStackLayout, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView, class System.Collections.Generic.ICollection`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IList`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.IEnumerable" FrameworkAlternate="net-maui-7.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.StackLayout" />
   <TypeSignature Language="VB.NET" Value="Public Class StackLayout&#xA;Inherits StackBase&#xA;Implements ICollection(Of IView), IEnumerable(Of IView), IList(Of IView), IStackLayout" />
   <TypeSignature Language="C++ CLI" Value="public ref class StackLayout : Microsoft::Maui::Controls::StackBase, Microsoft::Maui::IStackLayout, System::Collections::Generic::ICollection&lt;Microsoft::Maui::IView ^&gt;, System::Collections::Generic::IEnumerable&lt;Microsoft::Maui::IView ^&gt;, System::Collections::Generic::IList&lt;Microsoft::Maui::IView ^&gt;" />
-  <TypeSignature Language="F#" Value="type StackLayout = class&#xA;    inherit StackBase&#xA;    interface IStackLayout&#xA;    interface ILayout&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IContainer&#xA;    interface IList&lt;IView&gt;&#xA;    interface ICollection&lt;IView&gt;&#xA;    interface seq&lt;IView&gt;&#xA;    interface IEnumerable&#xA;    interface ISafeAreaView&#xA;    interface IPadding" />
+  <TypeSignature Language="F#" Value="type StackLayout = class&#xA;    inherit StackBase&#xA;    interface IStackLayout&#xA;    interface ILayout&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IContainer&#xA;    interface IList&lt;IView&gt;&#xA;    interface ICollection&lt;IView&gt;&#xA;    interface seq&lt;IView&gt;&#xA;    interface IEnumerable&#xA;    interface ISafeAreaView&#xA;    interface IPadding" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StackLayout extends Microsoft.Maui.Controls.StackBase implements class Microsoft.Maui.IContainer, class Microsoft.Maui.ICrossPlatformLayout, class Microsoft.Maui.IElement, class Microsoft.Maui.ILayout, class Microsoft.Maui.IPadding, class Microsoft.Maui.ISafeAreaView, class Microsoft.Maui.IStackLayout, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView, class System.Collections.Generic.ICollection`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IList`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.IEnumerable" FrameworkAlternate="net-maui-8.0" />
+  <TypeSignature Language="F#" Value="type StackLayout = class&#xA;    inherit StackBase&#xA;    interface IStackLayout&#xA;    interface ILayout&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IContainer&#xA;    interface IList&lt;IView&gt;&#xA;    interface ICollection&lt;IView&gt;&#xA;    interface seq&lt;IView&gt;&#xA;    interface IEnumerable&#xA;    interface ISafeAreaView&#xA;    interface IPadding&#xA;    interface ICrossPlatformLayout" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -55,13 +57,16 @@
     <Interface>
       <InterfaceName>System.Collections.IEnumerable</InterfaceName>
     </Interface>
+    <Interface FrameworkAlternate="net-maui-8.0">
+      <InterfaceName>Microsoft.Maui.ICrossPlatformLayout</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
     <summary>A <see cref="T:Microsoft.Maui.Controls.Layout" /> that positions child elements in a single line which can be oriented vertically or horizontally.</summary>
     <remarks>
       <para>Because <see cref="T:Microsoft.Maui.Controls.StackLayout" /> layouts override the bounds on their child elements, application developers should not set bounds on them.</para>
       <example>
-        <para>The following example code, adapted from the <format type="text/html"><a href="https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/formsgallery/" target="_blank">FormsGallery</a></format> example shows how to create a new <see cref="T:Microsoft.Maui.Controls.StackLayout" /> with children that explore many of the layout behaviors of <see cref="T:Microsoft.Maui.Controls.StackLayout" />:</para>
+        <para>The following example code shows how to create a new <see cref="T:Microsoft.Maui.Controls.StackLayout" /> with children that explore many of the layout behaviors of <see cref="T:Microsoft.Maui.Controls.StackLayout" />:</para>
         <code lang="csharp lang-csharp"><![CDATA[
 StackLayout stackLayout = new StackLayout
 {
@@ -220,7 +225,7 @@ StackLayout stackLayout = new StackLayout
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the Orientation bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.StackLayout.Orientation" />.</summary>
         <remarks />
       </Docs>
     </Member>

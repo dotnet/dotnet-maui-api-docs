@@ -18,7 +18,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Device orientation (quaternion) relative to magnetic fields.</summary>
+    <summary>
+            Concrete implementation of the <see cref="T:Microsoft.Maui.Devices.Sensors.IOrientationSensor" /> APIs.
+            </summary>
     <remarks />
   </Docs>
   <Members>
@@ -48,7 +50,7 @@
       <MemberSignature Language="F#" Value="member this.IsMonitoring : bool" Usage="Microsoft.Maui.Devices.Sensors.OrientationSensorImplementation.IsMonitoring" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:Microsoft.Maui.Devices.Sensors.IOrientationSensor.IsMonitoring</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-maui-7.0">P:Microsoft.Maui.Devices.Sensors.IOrientationSensor.IsMonitoring</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
@@ -58,7 +60,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a value indicating whether the orientation sensor is actively being monitored.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -82,7 +86,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a value indicating whether reading the orientation sensor is supported on this device.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -106,7 +112,9 @@
         <ReturnType>System.EventHandler&lt;Microsoft.Maui.Devices.Sensors.OrientationSensorChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when the orientation reading changes.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,9 +140,14 @@
         <Parameter Name="sensorSpeed" Type="Microsoft.Maui.Devices.Sensors.SensorSpeed" />
       </Parameters>
       <Docs>
-        <param name="sensorSpeed">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sensorSpeed">The speed to listen for changes.</param>
+        <summary>
+            Start monitoring for changes to the orientation.
+            </summary>
+        <remarks>
+            Will throw <see cref="T:Microsoft.Maui.ApplicationModel.FeatureNotSupportedException" /> if not supported on device.
+            Will throw <see cref="T:System.InvalidOperationException" /> if <see cref="P:Microsoft.Maui.Devices.Sensors.OrientationSensorImplementation.IsMonitoring" /> is <see langword="true" />.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -157,7 +170,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Stop monitoring for changes to the orientation.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

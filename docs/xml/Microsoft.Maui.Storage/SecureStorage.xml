@@ -14,18 +14,23 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides simple secure storage for key/value pairs.</summary>
+    <summary>
+            The SecureStorage API helps securely store simple key/value pairs.
+            </summary>
     <remarks>
-      <para>Each platform uses the platform provided native API's for storing data securely:</para>
+      <para>Each platform uses the platform provided APIs for storing data securely:</para>
       <list type="bullet">
         <item>
-          <term>iOS: Data is stored in KeyChain. Additional information on SecAccessible at: <see cref="T:Security.SecAccessible" /></term>
+          <term>iOS</term>
+          <description>Data is stored in KeyChain. Additional information on SecAccessible at: <see cref="T:Security.SecAccessible" />.</description>
         </item>
         <item>
-          <term>Android: Encryption keys are stored in KeyStore and encrypted data is stored in a named shared preference container (PackageId.Microsoft.Maui.Essentials).</term>
+          <term>Android</term>
+          <description>Encryption keys are stored in KeyStore and encrypted data is stored in a named shared preference container (PackageId.microsoft.maui.essentials.preferences).</description>
         </item>
         <item>
-          <term>UWP: Data is encrypted with DataProtectionProvider and stored in a named ApplicationDataContainer (with a container name of ApplicationId.Microsoft.Maui.Essentials).</term>
+          <term>Windows</term>
+          <description>Data is encrypted with DataProtectionProvider and stored in a named ApplicationDataContainer (with a container name of ApplicationId.microsoft.maui.essentials.preferences).</description>
         </item>
       </list>
       <para>NOTE: On Android devices running below API 23 (6.0 Marshmallow) there is no AES available in KeyStore.  As a best practice this API will generate an RSA/ECB/PKCS7Padding key pair stored in KeyStore (the only type supported in KeyStore by these lower API levels), which is used to wrap an AES key generated at runtime.  This wrapped key is stored in Preferences.</para>
@@ -56,12 +61,13 @@
       </Docs>
     </Member>
     <Member MemberName="GetAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;string&gt; GetAsync (string key);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;string&gt; GetAsync (string key);" FrameworkAlternate="net-maui-7.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;string&gt; GetAsync(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.SecureStorage.GetAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetAsync (key As String) As Task(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;System::String ^&gt; ^ GetAsync(System::String ^ key);" />
       <MemberSignature Language="F#" Value="static member GetAsync : string -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="Microsoft.Maui.Storage.SecureStorage.GetAsync key" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;string?&gt; GetAsync (string key);" FrameworkAlternate="net-maui-8.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
@@ -74,9 +80,11 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">Storage Key.</param>
-        <summary>Gets the decrypted value for a given Key.</summary>
-        <returns>Decrypted string or null if key does not exist.</returns>
+        <param name="key">The key to retrieve the value for.</param>
+        <summary>
+            Gets and decrypts the value for a given key.
+            </summary>
+        <returns>The decrypted string value or <see langword="null" /> if a value was not found.</returns>
         <remarks />
       </Docs>
     </Member>
@@ -100,7 +108,9 @@
       </Parameters>
       <Docs>
         <param name="key">The key to remove.</param>
-        <summary>Removes the encrypted key/value pair for the given key.</summary>
+        <summary>
+            Removes a key and its associated value if it exists.
+            </summary>
         <returns>Returns true if the key value pair was removed.</returns>
         <remarks />
       </Docs>
@@ -122,7 +132,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all of the stored encrypted key/value pairs.</summary>
+        <summary>
+            Removes all of the stored encrypted key/value pairs.
+            </summary>
         <remarks />
       </Docs>
     </Member>

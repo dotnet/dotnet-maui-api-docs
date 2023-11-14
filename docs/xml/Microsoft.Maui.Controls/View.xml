@@ -4,7 +4,8 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.View" />
   <TypeSignature Language="VB.NET" Value="Public Class View&#xA;Inherits VisualElement&#xA;Implements IGestureController, IGestureRecognizers, IHotReloadableView, IPropertyMapperView, IViewController" />
   <TypeSignature Language="C++ CLI" Value="public ref class View : Microsoft::Maui::Controls::VisualElement, Microsoft::Maui::Controls::IGestureRecognizers, Microsoft::Maui::Controls::Internals::IGestureController, Microsoft::Maui::Controls::IViewController, Microsoft::Maui::HotReload::IHotReloadableView, Microsoft::Maui::IPropertyMapperView" />
-  <TypeSignature Language="F#" Value="type View = class&#xA;    inherit VisualElement&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IPropertyMapperView&#xA;    interface IHotReloadableView&#xA;    interface IReplaceableView&#xA;    interface IViewController&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IGestureController&#xA;    interface IGestureRecognizers" />
+  <TypeSignature Language="F#" Value="type View = class&#xA;    inherit VisualElement&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IPropertyMapperView&#xA;    interface IHotReloadableView&#xA;    interface IReplaceableView&#xA;    interface IViewController&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IGestureController&#xA;    interface IGestureRecognizers" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="F#" Value="type View = class&#xA;    inherit VisualElement&#xA;    interface IViewController&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IGestureController&#xA;    interface IGestureRecognizers&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IPropertyMapperView&#xA;    interface IHotReloadableView&#xA;    interface IReplaceableView" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -50,8 +51,9 @@
   <Docs>
     <summary>A visual element that is used to place layouts and controls on the screen.</summary>
     <remarks>
-      <para>The <see cref="T:Microsoft.Maui.Controls.View" /> class is a base class for the <see cref="T:Microsoft.Maui.Controls.Layout" /> class, and most of the controls that application developers will use. Nearly all UI elements that an application developer will use are derived from <see cref="T:Microsoft.Maui.Controls.View" /> class. Because the <see cref="T:Microsoft.Maui.Controls.View" /> class ultimately inherits from <see cref="T:Microsoft.Maui.Controls.BindableObject" /> class, application developers can use the Model-View-ViewModel architecture, as well as XAML, to develop portable user interfaces. The remarks in the <see cref="T:Microsoft.Maui.Controls.BindableObject" /> topic provide a discussion of MVVM and bound properties.</para>
-    </remarks>
+            This is the base class for <see cref="T:Microsoft.Maui.Controls.Layout" /> and most of the controls.
+            Because <see cref="T:Microsoft.Maui.Controls.View" /> ultimately inherits from <see cref="T:Microsoft.Maui.Controls.BindableObject" />, application developers can use the Model-View-ViewModel architecture, as well as XAML, to develop portable user interfaces.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,6 +67,29 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.View" /> class
+            </summary>
+        <remarks>It is unlikely that an application developer would want to create an instance of <see cref="T:Microsoft.Maui.Controls.View" /> on their own.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeVisualState">
+      <MemberSignature Language="C#" Value="protected internal override void ChangeVisualState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void ChangeVisualState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.View.ChangeVisualState" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub ChangeVisualState ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void ChangeVisualState();" />
+      <MemberSignature Language="F#" Value="override this.ChangeVisualState : unit -&gt; unit" Usage="view.ChangeVisualState " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
@@ -114,23 +139,11 @@
         <summary>The collection of gesture recognizers associated with this view.</summary>
         <value>A List of <see cref="T:Microsoft.Maui.Controls.IGestureRecognizer" />.</value>
         <remarks>
-          <para>
-            Adding items to this collection will associate gesture events with this element. This is not nessesary for elements which natively support input, such as a Button.
-          </para>
-          <para>
-              This example creates a tap gesture recognizer and associates it with an image. When the image is double tapped, it will become semi-transparent.
-              </para>
-          <example>
-            <code lang="csharp lang-csharp"><![CDATA[
-  var image = new Image {Source = "image.png"};
-  var gestureRecognizer = new TapGestureRecognizer {
-    TappedCallback = o => image.Opacity = 0.5,
-    NumberOfTapsRequired = 2
-  };
-  image.GestureRecognizers.Add (gestureRecognizer);
-              ]]></code>
-          </example>
-        </remarks>
+            Adding items to this collection will associate gesture events with this element.
+            It is not recommended to add gesture recognizers for gestures that elements already natively support.
+            <para>
+            For example, adding a <see cref="T:Microsoft.Maui.Controls.TapGestureRecognizer" /> to a <see cref="T:Microsoft.Maui.Controls.Button" /> may lead to unexpected results.
+            </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetChildElements">
@@ -156,18 +169,24 @@
       </Parameters>
       <Docs>
         <param name="point">The point under which to search for child elements.</param>
-        <summary>Returns the child elements that are visually beneath the specified <paramref name="point" />.</summary>
-        <returns>The child elements that are visually beneath the specified <paramref name="point" />.</returns>
+        <summary>
+            Gets the child elements that are visually beneath the specified <paramref name="point" />.
+            </summary>
+        <returns>All child elements visually beneath <paramref name="point" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRendererOverrides&lt;T&gt;">
-      <MemberSignature Language="C#" Value="protected Microsoft.Maui.PropertyMapper&lt;T&gt; GetRendererOverrides&lt;T&gt; () where T : Microsoft.Maui.IView;" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class Microsoft.Maui.PropertyMapper`1&lt;!!T&gt; GetRendererOverrides&lt;(class Microsoft.Maui.IView) T&gt;() cil managed" />
+      <MemberSignature Language="C#" Value="protected Microsoft.Maui.PropertyMapper&lt;T&gt; GetRendererOverrides&lt;T&gt; () where T : Microsoft.Maui.IView;" FrameworkAlternate="net-maui-7.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class Microsoft.Maui.PropertyMapper`1&lt;!!T&gt; GetRendererOverrides&lt;(class Microsoft.Maui.IView) T&gt;() cil managed" FrameworkAlternate="net-maui-7.0" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.View.GetRendererOverrides``1" />
-      <MemberSignature Language="VB.NET" Value="Protected Function GetRendererOverrides(Of T As IView) () As PropertyMapper(Of T)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA;generic &lt;typename T&gt;&#xA; where T : Microsoft::Maui::IView Microsoft::Maui::PropertyMapper&lt;T&gt; ^ GetRendererOverrides();" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetRendererOverrides(Of T As IView) () As PropertyMapper(Of T)" FrameworkAlternate="net-maui-7.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA;generic &lt;typename T&gt;&#xA; where T : Microsoft::Maui::IView Microsoft::Maui::PropertyMapper&lt;T&gt; ^ GetRendererOverrides();" FrameworkAlternate="net-maui-7.0" />
       <MemberSignature Language="F#" Value="member this.GetRendererOverrides : unit -&gt; Microsoft.Maui.PropertyMapper&lt;'T (requires 'T :&gt; Microsoft.Maui.IView)&gt; (requires 'T :&gt; Microsoft.Maui.IView)" Usage="view.GetRendererOverrides " />
+      <MemberSignature Language="C#" Value="protected internal Microsoft.Maui.PropertyMapper&lt;T&gt; GetRendererOverrides&lt;T&gt; () where T : Microsoft.Maui.IView;" FrameworkAlternate="net-maui-8.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance class Microsoft.Maui.PropertyMapper`1&lt;!!T&gt; GetRendererOverrides&lt;(class Microsoft.Maui.IView) T&gt;() cil managed" FrameworkAlternate="net-maui-8.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function GetRendererOverrides(Of T As IView) () As PropertyMapper(Of T)" FrameworkAlternate="net-maui-8.0" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA;generic &lt;typename T&gt;&#xA; where T : Microsoft::Maui::IView Microsoft::Maui::PropertyMapper&lt;T&gt; ^ GetRendererOverrides();" FrameworkAlternate="net-maui-8.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -207,38 +226,14 @@
         <ReturnType>Microsoft.Maui.Controls.LayoutOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:Microsoft.Maui.Controls.LayoutOptions" /> that define how the element gets laid in a layout cycle. This is a bindable property.</summary>
+        <summary>
+            Gets or sets the <see cref="T:Microsoft.Maui.Controls.LayoutOptions" /> that define how the element gets laid out in a layout cycle. This is a bindable property.
+            </summary>
         <value>A <see cref="T:Microsoft.Maui.Controls.LayoutOptions" /> which defines how to lay out the element. Default value is <see cref="F:Microsoft.Maui.Controls.LayoutOptions.Fill" /> unless otherwise documented.</value>
         <remarks>
-          <para>
-            Assigning the HorizontalOptions modifies how the element is laid out when there is excess space available along the X axis from the parent layout. Additionally it specifies if the element should consume leftover space in the X axis from the parent layout. If multiple children of a layout are set to expand, the extra space is distributed proportionally.
-          </para>
-          <para>
-              This example creates four views and adds them to a stack, each laying out in a different manner.
-              </para>
-          <example>
-            <code lang="csharp lang-csharp"><![CDATA[
-  private View CreateButtons ()
-  {
-    var button1 = new Button {Text = "LeftAligned", HorizontalOptions=LayoutOptions.Start};
-    var button2 = new Button {Text = "CenterAligned", HorizontalOptions=LayoutOptions.Center};
-    var button3 = new Button {Text = "EndAligned", HorizontalOptions=LayoutOptions.End};
-    var button4 = new Button {Text = "Fill", HorizontalOptions=LayoutOptions.Fill};
-    
-    StackLayout stack = new StackLayout {
-      Children = {
-        button1,
-        button2,
-        button3,
-        button4
-      }
-    };
-    
-    return stack;
-  }
-              ]]></code>
-          </example>
-        </remarks>
+            Assigning <see cref="P:Microsoft.Maui.Controls.View.HorizontalOptions" /> modifies how the element is laid out when there is excess space available along the X axis from the parent layout.
+            If multiple elements inside a layout are set to expand, the extra space is distributed proportionally.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalOptionsProperty">
@@ -257,7 +252,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the HorizontalOptions bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.View.HorizontalOptions" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -277,7 +272,9 @@
         <ReturnType>Microsoft.Maui.Thickness</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the margin for the view.</summary>
+        <summary>
+            Gets or set the margin for the view.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -298,7 +295,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.View.Margin" /> property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.View.Margin" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -472,6 +469,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.IView.Margin">
@@ -496,6 +494,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.IView.VerticalLayoutAlignment">
@@ -520,6 +519,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="OnBindingContextChanged">
@@ -539,8 +539,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+            Invoked whenever the binding context of the <see cref="T:Microsoft.Maui.Controls.View" /> changes. 
+            </summary>
+        <remarks>This method can be overridden to add class handling for this event. Overrides must call the base method.</remarks>
       </Docs>
     </Member>
     <Member MemberName="propertyMapper">
@@ -559,8 +561,10 @@
         <ReturnType>Microsoft.Maui.PropertyMapper</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+            Represents the view's internal <see cref="T:Microsoft.Maui.PropertyMapper" />.
+            </summary>
+        <remarks>Contains the unique property overrides that are used by <see cref="M:Microsoft.Maui.IPropertyMapperView.GetPropertyMapperOverrides" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalOptions">
@@ -579,39 +583,14 @@
         <ReturnType>Microsoft.Maui.Controls.LayoutOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:Microsoft.Maui.Controls.LayoutOptions" /> that define how the element gets laid in a layout cycle. This is a bindable property.</summary>
+        <summary>
+            Gets or sets the <see cref="T:Microsoft.Maui.Controls.LayoutOptions" /> that define how the element gets laid out in a layout cycle. This is a bindable property.
+            </summary>
         <value>A <see cref="T:Microsoft.Maui.Controls.LayoutOptions" /> which defines how to lay out the element. Default value is <see cref="F:Microsoft.Maui.Controls.LayoutOptions.Fill" /> unless otherwise documented.</value>
         <remarks>
-          <para>
-            Assigning the VerticalOptions modifies how the element is laid out when there is excess space available along the Y axis from the parent layout. Additionally it specifies if the element should consume leftover space in the Y axis from the parent layout. If multiple children of a layout are set to expand, the extra space is distributed proportionally.
-          </para>
-          <para>
-              This example creates four views and adds them to a stack, each laying out in a different manner.
-              </para>
-          <example>
-            <code lang="csharp lang-csharp"><![CDATA[
-  private View CreateButtons ()
-  {
-    var button1 = new Button {Text = "TopAligned", VerticalOptions=LayoutOptions.Start};
-    var button2 = new Button {Text = "CenterAligned", VerticalOptions=LayoutOptions.Center};
-    var button3 = new Button {Text = "BottomAligned", VerticalOptions=LayoutOptions.End};
-    var button4 = new Button {Text = "Fill", VerticalOptions=LayoutOptions.Fill};
-    
-    StackLayout stack = new StackLayout {
-      Orientation = StackOrientation.Horizontal,
-      Children = {
-        button1,
-        button2,
-        button3,
-        button4
-      }
-    };
-    
-    return stack;
-  }
-              ]]></code>
-          </example>
-        </remarks>
+            Assigning <see cref="P:Microsoft.Maui.Controls.View.VerticalOptions" /> modifies how the element is laid out when there is excess space available along the Y axis from the parent layout.
+            If multiple elements inside a layout are set to expand, the extra space is distributed proportionally.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalOptionsProperty">
@@ -630,7 +609,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the VerticalOptions bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.View.VerticalOptions" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

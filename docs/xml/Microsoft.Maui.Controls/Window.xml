@@ -1,10 +1,15 @@
 <Type Name="Window" FullName="Microsoft.Maui.Controls.Window">
-  <TypeSignature Language="C#" Value="public class Window : Microsoft.Maui.Controls.NavigableElement, Microsoft.Maui.IMenuBarElement, Microsoft.Maui.IToolbarElement, Microsoft.Maui.IVisualTreeElement, Microsoft.Maui.IWindow" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Window extends Microsoft.Maui.Controls.NavigableElement implements class Microsoft.Maui.IElement, class Microsoft.Maui.IMenuBarElement, class Microsoft.Maui.ITitledElement, class Microsoft.Maui.IToolbarElement, class Microsoft.Maui.IVisualTreeElement, class Microsoft.Maui.IWindow" />
+  <TypeSignature Language="C#" Value="public class Window : Microsoft.Maui.Controls.NavigableElement, Microsoft.Maui.IMenuBarElement, Microsoft.Maui.IToolbarElement, Microsoft.Maui.IVisualTreeElement, Microsoft.Maui.IWindow" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Window extends Microsoft.Maui.Controls.NavigableElement implements class Microsoft.Maui.IElement, class Microsoft.Maui.IMenuBarElement, class Microsoft.Maui.ITitledElement, class Microsoft.Maui.IToolbarElement, class Microsoft.Maui.IVisualTreeElement, class Microsoft.Maui.IWindow" FrameworkAlternate="net-maui-7.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Window" />
-  <TypeSignature Language="VB.NET" Value="Public Class Window&#xA;Inherits NavigableElement&#xA;Implements IMenuBarElement, IToolbarElement, IVisualTreeElement, IWindow" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Window : Microsoft::Maui::Controls::NavigableElement, Microsoft::Maui::IMenuBarElement, Microsoft::Maui::IToolbarElement, Microsoft::Maui::IVisualTreeElement, Microsoft::Maui::IWindow" />
-  <TypeSignature Language="F#" Value="type Window = class&#xA;    inherit NavigableElement&#xA;    interface IWindow&#xA;    interface ITitledElement&#xA;    interface IElement&#xA;    interface IVisualTreeElement&#xA;    interface IToolbarElement&#xA;    interface IMenuBarElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class Window&#xA;Inherits NavigableElement&#xA;Implements IMenuBarElement, IToolbarElement, IVisualTreeElement, IWindow" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Window : Microsoft::Maui::Controls::NavigableElement, Microsoft::Maui::IMenuBarElement, Microsoft::Maui::IToolbarElement, Microsoft::Maui::IVisualTreeElement, Microsoft::Maui::IWindow" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="F#" Value="type Window = class&#xA;    inherit NavigableElement&#xA;    interface IWindow&#xA;    interface ITitledElement&#xA;    interface IElement&#xA;    interface IVisualTreeElement&#xA;    interface IToolbarElement&#xA;    interface IMenuBarElement" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="C#" Value="public class Window : Microsoft.Maui.Controls.NavigableElement, Microsoft.Maui.IMenuBarElement, Microsoft.Maui.IToolbarElement, Microsoft.Maui.IWindow" FrameworkAlternate="net-maui-8.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Window extends Microsoft.Maui.Controls.NavigableElement implements class Microsoft.Maui.IElement, class Microsoft.Maui.IMenuBarElement, class Microsoft.Maui.ITitledElement, class Microsoft.Maui.IToolbarElement, class Microsoft.Maui.IWindow" FrameworkAlternate="net-maui-8.0" />
+  <TypeSignature Language="VB.NET" Value="Public Class Window&#xA;Inherits NavigableElement&#xA;Implements IMenuBarElement, IToolbarElement, IWindow" FrameworkAlternate="net-maui-8.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Window : Microsoft::Maui::Controls::NavigableElement, Microsoft::Maui::IMenuBarElement, Microsoft::Maui::IToolbarElement, Microsoft::Maui::IWindow" FrameworkAlternate="net-maui-8.0" />
+  <TypeSignature Language="F#" Value="type Window = class&#xA;    inherit NavigableElement&#xA;    interface IWindow&#xA;    interface ITitledElement&#xA;    interface IElement&#xA;    interface IToolbarElement&#xA;    interface IMenuBarElement" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -25,7 +30,7 @@
     <Interface>
       <InterfaceName>Microsoft.Maui.IToolbarElement</InterfaceName>
     </Interface>
-    <Interface>
+    <Interface FrameworkAlternate="net-maui-7.0">
       <InterfaceName>Microsoft.Maui.IVisualTreeElement</InterfaceName>
     </Interface>
     <Interface>
@@ -162,6 +167,12 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.Obsolete("Use WindowHandler.Mapper instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use WindowHandler.Mapper instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.IPropertyMapper&lt;Microsoft.Maui.IWindow,Microsoft.Maui.Handlers.WindowHandler&gt;</ReturnType>
       </ReturnValue>
@@ -308,7 +319,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Window.FlowDirection" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -349,7 +360,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Window.Height" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -390,7 +401,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Window.MaximumHeight" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -431,7 +442,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Window.MaximumWidth" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1084,7 +1095,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Window.MinimumHeight" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1125,7 +1136,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Window.MinimumWidth" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1474,7 +1485,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Window.Page" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1624,7 +1635,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Window.Title" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1689,7 +1700,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Window.Width" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1730,7 +1741,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Window.X" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1771,7 +1782,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Window.Y" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

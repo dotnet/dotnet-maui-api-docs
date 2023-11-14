@@ -19,6 +19,27 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ImageSourcePartLoader (Microsoft.Maui.Platform.IImageSourcePartSetter setter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Maui.Platform.IImageSourcePartSetter setter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ImageSourcePartLoader.#ctor(Microsoft.Maui.Platform.IImageSourcePartSetter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (setter As IImageSourcePartSetter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ImageSourcePartLoader(Microsoft::Maui::Platform::IImageSourcePartSetter ^ setter);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.Platform.ImageSourcePartLoader : Microsoft.Maui.Platform.IImageSourcePartSetter -&gt; Microsoft.Maui.Platform.ImageSourcePartLoader" Usage="new Microsoft.Maui.Platform.ImageSourcePartLoader setter" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="setter" Type="Microsoft.Maui.Platform.IImageSourcePartSetter" Index="0" FrameworkAlternate="net-maui-8.0" />
+      </Parameters>
+      <Docs>
+        <param name="setter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ImageSourcePartLoader (Microsoft.Maui.IElementHandler handler, Func&lt;Microsoft.Maui.IImageSourcePart?&gt; imageSourcePart, Action&lt;object?&gt; setImage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Maui.IElementHandler handler, class System.Func`1&lt;class Microsoft.Maui.IImageSourcePart&gt; imageSourcePart, class System.Action`1&lt;object&gt; setImage) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Platform.ImageSourcePartLoader.#ctor(Microsoft.Maui.IElementHandler,System.Func{Microsoft.Maui.IImageSourcePart},System.Action{System.Object})" />
@@ -30,6 +51,16 @@
         <AssemblyName>Microsoft.Maui</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.Obsolete("Use ImageSourcePartLoader(IImageSourcePartSetter setter) instead.", true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use ImageSourcePartLoader(IImageSourcePartSetter setter) instead.", true)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="handler" Type="Microsoft.Maui.IElementHandler" />
         <Parameter Name="imageSourcePart" Type="System.Func&lt;Microsoft.Maui.IImageSourcePart&gt;" />

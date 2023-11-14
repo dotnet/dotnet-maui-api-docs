@@ -4,7 +4,8 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.ImageButton" />
   <TypeSignature Language="VB.NET" Value="Public Class ImageButton&#xA;Inherits View&#xA;Implements IBorderElement, IButtonController, IElementConfiguration(Of ImageButton), IImageButton, IImageController, IImageElement, IPaddingElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ImageButton : Microsoft::Maui::Controls::View, Microsoft::Maui::Controls::IBorderElement, Microsoft::Maui::Controls::IButtonController, Microsoft::Maui::Controls::IElementConfiguration&lt;Microsoft::Maui::Controls::ImageButton ^&gt;, Microsoft::Maui::Controls::IImageController, Microsoft::Maui::Controls::IImageElement, Microsoft::Maui::Controls::IPaddingElement, Microsoft::Maui::IImageButton" />
-  <TypeSignature Language="F#" Value="type ImageButton = class&#xA;    inherit View&#xA;    interface IImageButton&#xA;    interface IButton&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IPadding&#xA;    interface IButtonStroke&#xA;    interface IImage&#xA;    interface IImageSourcePart&#xA;    interface IImageController&#xA;    interface IViewController&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IElementConfiguration&lt;ImageButton&gt;&#xA;    interface IBorderElement&#xA;    interface IButtonController&#xA;    interface IPaddingElement&#xA;    interface IImageElement" />
+  <TypeSignature Language="F#" Value="type ImageButton = class&#xA;    inherit View&#xA;    interface IImageButton&#xA;    interface IButton&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IPadding&#xA;    interface IButtonStroke&#xA;    interface IImage&#xA;    interface IImageSourcePart&#xA;    interface IImageController&#xA;    interface IViewController&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IElementConfiguration&lt;ImageButton&gt;&#xA;    interface IBorderElement&#xA;    interface IButtonController&#xA;    interface IPaddingElement&#xA;    interface IImageElement" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="F#" Value="type ImageButton = class&#xA;    inherit View&#xA;    interface IImageController&#xA;    interface IViewController&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IElementConfiguration&lt;ImageButton&gt;&#xA;    interface IBorderElement&#xA;    interface IButtonController&#xA;    interface IPaddingElement&#xA;    interface IImageElement&#xA;    interface IImageButton&#xA;    interface IButton&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IPadding&#xA;    interface IButtonStroke&#xA;    interface IImage&#xA;    interface IImageSourcePart" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -127,7 +128,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.ImageButton.Aspect" /> field.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.Aspect" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,7 +169,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.ImageButton.BorderColor" /> field.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.BorderColor" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,7 +210,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.ImageButton.BorderWidth" /> field.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.BorderWidth" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -312,7 +313,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.ImageButton.CommandParameter" /> field.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.CommandParameter" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -332,7 +333,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.ImageButton.Command" /> field.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.Command" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -373,7 +374,28 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.ImageButton.CornerRadius" /> field.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.CornerRadius" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabledCore">
+      <MemberSignature Language="C#" Value="protected override bool IsEnabledCore { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEnabledCore" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.ImageButton.IsEnabledCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property IsEnabledCore As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool IsEnabledCore { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEnabledCore : bool" Usage="Microsoft.Maui.Controls.ImageButton.IsEnabledCore" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -417,7 +439,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.ImageButton.IsLoading" /> field.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.IsLoading" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -458,7 +480,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.ImageButton.IsOpaque" /> field.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.IsOpaque" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -499,7 +521,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.ImageButton.IsPressed" /> field.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.IsPressed" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -942,7 +964,8 @@
       <MemberSignature Language="F#" Value="member this.Microsoft.Maui.IButtonStroke.CornerRadius : int" Usage="Microsoft.Maui.IButtonStroke.CornerRadius" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:Microsoft.Maui.IButtonStroke.CornerRadius</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-maui-7.0">P:Microsoft.Maui.IButtonStroke.CornerRadius</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-maui-8.0">P:Microsoft.Maui.Controls.IBorderElement.CornerRadius</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -1014,7 +1037,8 @@
       <MemberSignature Language="F#" Value="member this.Microsoft.Maui.IImageSourcePart.IsAnimationPlaying : bool" Usage="Microsoft.Maui.IImageSourcePart.IsAnimationPlaying" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:Microsoft.Maui.IImageSourcePart.IsAnimationPlaying</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-maui-7.0">P:Microsoft.Maui.IImageSourcePart.IsAnimationPlaying</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-maui-8.0">P:Microsoft.Maui.Controls.IImageElement.IsAnimationPlaying</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -1162,6 +1186,36 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="OnPropertyChanged">
+      <MemberSignature Language="C#" Value="protected override void OnPropertyChanged (string propertyName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPropertyChanged(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ImageButton.OnPropertyChanged(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPropertyChanged (Optional propertyName As String = Nothing)" />
+      <MemberSignature Language="F#" Value="override this.OnPropertyChanged : string -&gt; unit" Usage="imageButton.OnPropertyChanged propertyName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" Index="0" FrameworkAlternate="net-maui-8.0">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Padding">
       <MemberSignature Language="C#" Value="public Microsoft.Maui.Thickness Padding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.Thickness Padding" />
@@ -1199,7 +1253,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.ImageButton.Padding" /> field.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.Padding" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1526,7 +1580,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.ImageButton.Source" /> field.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.Source" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

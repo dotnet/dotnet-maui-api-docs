@@ -1,0 +1,75 @@
+<Type Name="ICrossPlatformLayout" FullName="Microsoft.Maui.ICrossPlatformLayout">
+  <TypeSignature Language="C#" Value="public interface ICrossPlatformLayout" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit ICrossPlatformLayout" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.ICrossPlatformLayout" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ICrossPlatformLayout" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ICrossPlatformLayout" />
+  <TypeSignature Language="F#" Value="type ICrossPlatformLayout = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CrossPlatformArrange">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.Size CrossPlatformArrange (Microsoft.Maui.Graphics.Rect bounds);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.Maui.Graphics.Size CrossPlatformArrange(valuetype Microsoft.Maui.Graphics.Rect bounds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ICrossPlatformLayout.CrossPlatformArrange(Microsoft.Maui.Graphics.Rect)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CrossPlatformArrange (bounds As Rect) As Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Maui::Graphics::Size CrossPlatformArrange(Microsoft::Maui::Graphics::Rect bounds);" />
+      <MemberSignature Language="F#" Value="abstract member CrossPlatformArrange : Microsoft.Maui.Graphics.Rect -&gt; Microsoft.Maui.Graphics.Size" Usage="iCrossPlatformLayout.CrossPlatformArrange bounds" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bounds" Type="Microsoft.Maui.Graphics.Rect" />
+      </Parameters>
+      <Docs>
+        <param name="bounds">The bounds in which the ICrossPlatformLayout's children should be arranged.</param>
+        <summary>
+            Arranges the children of the ICrossPlatformLayout within the given bounds.
+            </summary>
+        <returns>The actual size of the arranged ICrossPlatformLayout.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CrossPlatformMeasure">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.Size CrossPlatformMeasure (double widthConstraint, double heightConstraint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.Maui.Graphics.Size CrossPlatformMeasure(float64 widthConstraint, float64 heightConstraint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ICrossPlatformLayout.CrossPlatformMeasure(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CrossPlatformMeasure (widthConstraint As Double, heightConstraint As Double) As Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Maui::Graphics::Size CrossPlatformMeasure(double widthConstraint, double heightConstraint);" />
+      <MemberSignature Language="F#" Value="abstract member CrossPlatformMeasure : double * double -&gt; Microsoft.Maui.Graphics.Size" Usage="iCrossPlatformLayout.CrossPlatformMeasure (widthConstraint, heightConstraint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="widthConstraint" Type="System.Double" />
+        <Parameter Name="heightConstraint" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="widthConstraint">The width limit for measuring the ICrossPlatformLayout.</param>
+        <param name="heightConstraint">The height limit for measuring the ICrossPlatformLayout.</param>
+        <summary>
+            Measures the desired size of the ICrossPlatformLayout within the given constraints.
+            </summary>
+        <returns>The desired size of the ILayout.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

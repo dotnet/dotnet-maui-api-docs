@@ -4,7 +4,8 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.RefreshView" />
   <TypeSignature Language="VB.NET" Value="Public Class RefreshView&#xA;Inherits ContentView&#xA;Implements IElementConfiguration(Of RefreshView), IRefreshView" />
   <TypeSignature Language="C++ CLI" Value="public ref class RefreshView : Microsoft::Maui::Controls::ContentView, Microsoft::Maui::Controls::IElementConfiguration&lt;Microsoft::Maui::Controls::RefreshView ^&gt;, Microsoft::Maui::IRefreshView" />
-  <TypeSignature Language="F#" Value="type RefreshView = class&#xA;    inherit ContentView&#xA;    interface IRefreshView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IElementConfiguration&lt;RefreshView&gt;" />
+  <TypeSignature Language="F#" Value="type RefreshView = class&#xA;    inherit ContentView&#xA;    interface IRefreshView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IElementConfiguration&lt;RefreshView&gt;" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="F#" Value="type RefreshView = class&#xA;    inherit ContentView&#xA;    interface IElementConfiguration&lt;RefreshView&gt;&#xA;    interface IRefreshView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -115,7 +116,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RefreshView.CommandParameter" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,7 +136,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RefreshView.Command" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,6 +152,12 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.Obsolete("Use RefreshViewHandler.Mapper instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use RefreshViewHandler.Mapper instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.IPropertyMapper&lt;Microsoft.Maui.IRefreshView,Microsoft.Maui.Handlers.RefreshViewHandler&gt;</ReturnType>
       </ReturnValue>
@@ -168,7 +175,7 @@
       <MemberSignature Language="F#" Value="member this.IsRefreshing : bool with get, set" Usage="Microsoft.Maui.Controls.RefreshView.IsRefreshing" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:Microsoft.Maui.IRefreshView.IsRefreshing</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-maui-7.0">P:Microsoft.Maui.IRefreshView.IsRefreshing</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -199,7 +206,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RefreshView.IsRefreshing" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,6 +227,30 @@
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.IView</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IRefreshView.IsRefreshing">
+      <MemberSignature Language="C#" Value="bool Microsoft.Maui.IRefreshView.IsRefreshing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Microsoft.Maui.IRefreshView.IsRefreshing" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.RefreshView.Microsoft#Maui#IRefreshView#IsRefreshing" />
+      <MemberSignature Language="VB.NET" Value=" Property IsRefreshing As Boolean Implements IRefreshView.IsRefreshing" />
+      <MemberSignature Language="C++ CLI" Value="property bool Microsoft::Maui::IRefreshView::IsRefreshing { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.IRefreshView.IsRefreshing : bool with get, set" Usage="Microsoft.Maui.IRefreshView.IsRefreshing" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IRefreshView.IsRefreshing</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
@@ -352,7 +383,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RefreshView.RefreshColor" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

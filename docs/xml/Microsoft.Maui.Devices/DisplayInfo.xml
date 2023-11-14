@@ -24,7 +24,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents information about the screen.</summary>
+    <summary>
+            Represents information about the device's screen.
+            </summary>
     <remarks />
   </Docs>
   <Members>
@@ -48,12 +50,14 @@
         <Parameter Name="rotation" Type="Microsoft.Maui.Devices.DisplayRotation" />
       </Parameters>
       <Docs>
-        <param name="width">The width of the display</param>
-        <param name="height">The height of the display</param>
-        <param name="density">The screen density</param>
-        <param name="orientation">The current orientation</param>
+        <param name="width">The width of the display.</param>
+        <param name="height">The height of the display.</param>
+        <param name="density">The screen density.</param>
+        <param name="orientation">The current orientation.</param>
         <param name="rotation">The rotation of the device.</param>
-        <summary>Main constructor for Display Information</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Devices.DisplayInfo" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,13 +82,15 @@
         <Parameter Name="rate" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="width">The width of the display</param>
-        <param name="height">The height of the display</param>
-        <param name="density">The screen density</param>
-        <param name="orientation">The current orientation</param>
+        <param name="width">The width of the display.</param>
+        <param name="height">The height of the display.</param>
+        <param name="density">The screen density.</param>
+        <param name="orientation">The current orientation.</param>
         <param name="rotation">The rotation of the device.</param>
         <param name="rate">The refresh rate of the display.</param>
-        <summary>Main constructor for Display Information</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Devices.DisplayInfo" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,12 +110,14 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value representing the screen density.</summary>
+        <summary>
+            Gets a value representing the screen density.
+            </summary>
         <value>The screen density.</value>
         <remarks>
           <para>The density is the scaling or a factor that can be used to convert between physical pixels and scaled pixels. For example, on high resolution displays, the physical number of pixels increases, but the scaled pixels remain the same.</para>
           <para>In a practical example for iOS, the Retina display will have a density of 2.0 or 3.0, but the units used to lay out a view does not change much. A view with a UI width of 100 may be 100 physical pixels (density = 1) on a non-Retina device, but be 200 physical pixels (density = 2) on a Retina device.</para>
-          <para>On Windows or UWP, the density works similarly, and may often relate to the scale used in the display. On some monitors, the scale is set to 100% (density = 1), but on other high resolution monitors, the scale may be set to 200% (density = 2) or even 250% (density = 2.5).</para>
+          <para>On Windows, the density works similarly, and may often relate to the scale used in the display. On some monitors, the scale is set to 100% (density = 1), but on other high resolution monitors, the scale may be set to 200% (density = 2) or even 250% (density = 2.5).</para>
         </remarks>
       </Docs>
     </Member>
@@ -135,10 +143,14 @@
         <Parameter Name="other" Type="Microsoft.Maui.Devices.DisplayInfo" />
       </Parameters>
       <Docs>
-        <param name="other">The other display info to compare.</param>
-        <summary>If equal to another object.</summary>
-        <returns>If equal.</returns>
-        <remarks />
+        <param name="other">
+          <see cref="T:Microsoft.Maui.Devices.DisplayInfo" /> object to compare with.</param>
+        <summary>
+            Compares the underlying <see cref="T:Microsoft.Maui.Devices.DisplayInfo" /> instances.
+            </summary>
+        <returns>
+          <see langword="true" /> if they are equal, otherwise <see langword="false" />.</returns>
+        <remarks>Equality is established by comparing if <see cref="P:Microsoft.Maui.Devices.DisplayInfo.Height" />, <see cref="P:Microsoft.Maui.Devices.DisplayInfo.Width" />, <see cref="P:Microsoft.Maui.Devices.DisplayInfo.Density" />, <see cref="P:Microsoft.Maui.Devices.DisplayInfo.Orientation" /> and <see cref="P:Microsoft.Maui.Devices.DisplayInfo.Rotation" /> are all equal.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -164,6 +176,7 @@
         <summary>If equal to another object.</summary>
         <returns>If equal.</returns>
         <remarks />
+        <inheritdoc cref="M:System.IEquatable`1.Equals(`0)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -183,9 +196,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the hash code for object.</summary>
-        <returns>The hash code.</returns>
-        <remarks />
+        <summary>
+            Gets the hash code for this display info instance.
+            </summary>
+        <returns>The computed hash code for this device idiom or <c>0</c> when the device platform is <see langword="null" />.</returns>
+        <remarks>The hash code is computed from <see cref="P:Microsoft.Maui.Devices.DisplayInfo.Height" />, <see cref="P:Microsoft.Maui.Devices.DisplayInfo.Width" />, <see cref="P:Microsoft.Maui.Devices.DisplayInfo.Density" />, <see cref="P:Microsoft.Maui.Devices.DisplayInfo.Orientation" /> and <see cref="P:Microsoft.Maui.Devices.DisplayInfo.Rotation" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -204,7 +219,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the height of the screen for the current orientation.</summary>
+        <summary>
+            Gets the height of the screen (in pixels) for the current <see cref="P:Microsoft.Maui.Devices.DisplayInfo.Orientation" />.
+            </summary>
         <value>The height in pixels.</value>
         <remarks />
       </Docs>
@@ -229,10 +246,13 @@
         <Parameter Name="right" Type="Microsoft.Maui.Devices.DisplayInfo" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">Left to compare.</param>
+        <param name="right">Right to compare.</param>
+        <summary>
+            Equality operator for equals.
+            </summary>
+        <returns>
+          <see langword="true" /> if objects are equal, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,10 +276,13 @@
         <Parameter Name="right" Type="Microsoft.Maui.Devices.DisplayInfo" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">Left to compare.</param>
+        <param name="right">Right to compare.</param>
+        <summary>
+            Inequality operator.
+            </summary>
+        <returns>
+          <see langword="true" /> if objects are not equal, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -279,7 +302,9 @@
         <ReturnType>Microsoft.Maui.Devices.DisplayOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the orientation of the device.</summary>
+        <summary>
+            Gets the orientation of the device's display.
+            </summary>
         <value>The orientation.</value>
         <remarks />
       </Docs>
@@ -300,7 +325,9 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the refresh rate of the display.</summary>
+        <summary>
+            Gets the refresh rate (in Hertz) of the device's display.
+            </summary>
         <value>The refresh rate in Hz.</value>
         <remarks>
           <para />
@@ -323,7 +350,9 @@
         <ReturnType>Microsoft.Maui.Devices.DisplayRotation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the rotation from the designated orientation.</summary>
+        <summary>
+            Gets the orientation of the device's display.
+            </summary>
         <value>The rotation</value>
         <remarks />
       </Docs>
@@ -345,8 +374,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>String representation of information.</summary>
-        <returns>String information about display info.</returns>
+        <summary>
+            Returns a string representation of the current values of this display info instance.
+            </summary>
+        <returns>A string representation of this instance in the format of <c>Height: {value}, Width: {value}, Density: {value}, Orientation: {value}, Rotation: {value}</c>.</returns>
         <remarks />
       </Docs>
     </Member>
@@ -366,7 +397,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the width of the scrreen for the current orientation.</summary>
+        <summary>
+            Gets the width of the screen (in pixels) for the current <see cref="P:Microsoft.Maui.Devices.DisplayInfo.Orientation" />.
+            </summary>
         <value>The width in pixels.</value>
         <remarks />
       </Docs>

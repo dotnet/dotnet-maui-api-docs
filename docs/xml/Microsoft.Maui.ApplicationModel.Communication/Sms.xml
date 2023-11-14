@@ -14,8 +14,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides an easy way to allow the user to send SMS messages.</summary>
-    <remarks />
+    <summary>
+            The SMS API enables an application to open the default SMS application with a specified message to send to a recipient.
+            </summary>
+    <remarks>When using this on Android targeting Android 11 (R API 30) you must update your Android Manifest with queries that are used with the new package visibility requirements. See the conceptual docs for more information.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ComposeAsync">
@@ -35,8 +37,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Opens the default SMS client to allow the user to send the message.</summary>
-        <returns />
+        <summary>
+            Opens the default SMS client to allow the user to send the message.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks />
       </Docs>
     </Member>
@@ -59,9 +63,11 @@
         <Parameter Name="message" Type="Microsoft.Maui.ApplicationModel.Communication.SmsMessage" />
       </Parameters>
       <Docs>
-        <param name="message">The message to send.</param>
-        <summary>Opens the default SMS client to allow the user to send the message.</summary>
-        <returns />
+        <param name="message">A <see cref="T:Microsoft.Maui.ApplicationModel.Communication.SmsMessage" /> instance with information about the message to send.</param>
+        <summary>
+            Opens the default SMS client to allow the user to send the message.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks />
       </Docs>
     </Member>
@@ -81,7 +87,9 @@
         <ReturnType>Microsoft.Maui.ApplicationModel.Communication.ISms</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Provides the default implementation for static usage of this API.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

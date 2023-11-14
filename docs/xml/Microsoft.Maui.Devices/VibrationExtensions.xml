@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Static class with extension methods for the <see cref="T:Microsoft.Maui.Devices.IVibration" /> APIs.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,9 +40,11 @@
         <Parameter Name="duration" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="vibration">To be added.</param>
-        <param name="duration">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="vibration">The object this method is invoked on.</param>
+        <param name="duration">The time to vibrate for. This value will be ignored on iOS as it only supports a vibration of 500ms.</param>
+        <summary>
+            Vibrates the device for the specified time in the range [0, 5000]ms.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

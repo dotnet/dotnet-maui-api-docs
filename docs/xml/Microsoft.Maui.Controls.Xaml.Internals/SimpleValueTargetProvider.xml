@@ -37,6 +37,12 @@
         <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.Obsolete("Use the other ctor")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use the other ctor")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="objectAndParents" Type="System.Object[]" />
         <Parameter Name="targetProperty" Type="System.Object" />
@@ -46,6 +52,33 @@
         <param name="objectAndParents">To be added.</param>
         <param name="targetProperty">To be added.</param>
         <param name="scope">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SimpleValueTargetProvider (object[] objectAndParents, object targetProperty, Microsoft.Maui.Controls.Internals.INameScope[] scopes, bool notused);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object[] objectAndParents, object targetProperty, class Microsoft.Maui.Controls.Internals.INameScope[] scopes, bool notused) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Xaml.Internals.SimpleValueTargetProvider.#ctor(System.Object[],System.Object,Microsoft.Maui.Controls.Internals.INameScope[],System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (objectAndParents As Object(), targetProperty As Object, scopes As INameScope(), notused As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SimpleValueTargetProvider(cli::array &lt;System::Object ^&gt; ^ objectAndParents, System::Object ^ targetProperty, cli::array &lt;Microsoft::Maui::Controls::Internals::INameScope ^&gt; ^ scopes, bool notused);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.Controls.Xaml.Internals.SimpleValueTargetProvider : obj[] * obj * Microsoft.Maui.Controls.Internals.INameScope[] * bool -&gt; Microsoft.Maui.Controls.Xaml.Internals.SimpleValueTargetProvider" Usage="new Microsoft.Maui.Controls.Xaml.Internals.SimpleValueTargetProvider (objectAndParents, targetProperty, scopes, notused)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="objectAndParents" Type="System.Object[]" Index="0" FrameworkAlternate="net-maui-8.0" />
+        <Parameter Name="targetProperty" Type="System.Object" Index="1" FrameworkAlternate="net-maui-8.0" />
+        <Parameter Name="scopes" Type="Microsoft.Maui.Controls.Internals.INameScope[]" Index="2" FrameworkAlternate="net-maui-8.0" />
+        <Parameter Name="notused" Type="System.Boolean" Index="3" FrameworkAlternate="net-maui-8.0" />
+      </Parameters>
+      <Docs>
+        <param name="objectAndParents">To be added.</param>
+        <param name="targetProperty">To be added.</param>
+        <param name="scopes">To be added.</param>
+        <param name="notused">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>

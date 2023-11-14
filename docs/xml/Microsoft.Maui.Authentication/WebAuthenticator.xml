@@ -14,8 +14,13 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>A web navigation API intended to be used for Authentication with external web services such as OAuth.</summary>
-    <remarks>This API helps with navigating to a start URL and waiting for a callback URL to the app.  Your app must be registered to handle the callback scheme you provide in the call to authenticate.</remarks>
+    <summary>
+            A web navigation API intended to be used for Authentication with external web services such as OAuth.
+            </summary>
+    <remarks>
+            This API helps with navigating to a start URL and waiting for a callback URL to the app.  Your app must 
+            be registered to handle the callback scheme you provide in the call to authenticate.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName="AuthenticateAsync">
@@ -37,9 +42,9 @@
         <Parameter Name="webAuthenticatorOptions" Type="Microsoft.Maui.Authentication.WebAuthenticatorOptions" />
       </Parameters>
       <Docs>
-        <param name="webAuthenticatorOptions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="webAuthenticatorOptions">Options to configure the authentication request.</param>
+        <summary>Begin an authentication flow by navigating to the specified url and waiting for a callback/redirect to the callbackUrl scheme.The start url and callbackUrl are specified in the webAuthenticatorOptions.</summary>
+        <returns>Returns a result parsed out from the callback url.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,8 +68,8 @@
         <Parameter Name="callbackUrl" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="url">Url to navigate to, beginning the authentication flow.</param>
-        <param name="callbackUrl">Expected callback url that the navigation flow will eventually redirect to.</param>
+        <param name="url"> Url to navigate to, beginning the authentication flow.</param>
+        <param name="callbackUrl"> Expected callback url that the navigation flow will eventually redirect to.</param>
         <summary>Begin an authentication flow by navigating to the specified url and waiting for a callback/redirect to the callbackUrl scheme.</summary>
         <returns>Returns a result parsed out from the callback url.</returns>
         <remarks />
@@ -86,7 +91,9 @@
         <ReturnType>Microsoft.Maui.Authentication.IWebAuthenticator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Provides the default implementation for static usage of this API.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

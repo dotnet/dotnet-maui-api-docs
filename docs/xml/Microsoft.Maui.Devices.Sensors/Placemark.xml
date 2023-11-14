@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>User-friendly description of a geographic coordinate. This contains information such as the name of the place, its address, and other information.</summary>
+    <summary>
+            Represents a user-friendly description of a geographic coordinate. This contains information such as the name of the place, its address, and other information.
+            </summary>
     <remarks />
   </Docs>
   <Members>
@@ -31,7 +33,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Default constructor for placemark.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Devices.Sensors.Placemark" /> class.
+            </summary>
         <remarks />
       </Docs>
     </Member>
@@ -51,9 +55,12 @@
         <Parameter Name="placemark" Type="Microsoft.Maui.Devices.Sensors.Placemark" />
       </Parameters>
       <Docs>
-        <param name="placemark">Placemark to copy.</param>
-        <summary>Constructor to create a deep copy.</summary>
+        <param name="placemark">An instance of <see cref="T:Microsoft.Maui.Devices.Sensors.Placemark" /> that will be used to clone into this instance.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Devices.Sensors.Placemark" /> class.
+            </summary>
         <remarks />
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="placemark" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AdminArea">
@@ -72,7 +79,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the administrative area name of the address, for example, "CA", or null if it is unknown.</summary>
+        <summary>
+            Gets or sets the administrative area name of the address, for example, "CA", or <see langword="null" /> if it is unknown.
+            </summary>
         <value>The admin area.</value>
         <remarks />
       </Docs>
@@ -93,7 +102,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the country ISO code.</summary>
+        <summary>
+            Gets or sets the country ISO standard code.
+            </summary>
         <value>The country ISO code.</value>
         <remarks />
       </Docs>
@@ -114,7 +125,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the country name.</summary>
+        <summary>
+            Gets or sets the country name.
+            </summary>
         <value>The country name.</value>
         <remarks />
       </Docs>
@@ -135,7 +148,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the feature name.</summary>
+        <summary>
+            Gets or sets the feature name.
+            </summary>
         <value>The feature name.</value>
         <remarks />
       </Docs>
@@ -156,7 +171,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the city or town.</summary>
+        <summary>
+            Gets or sets the city or town.
+            </summary>
         <value>The city or town of the locality.</value>
         <remarks />
       </Docs>
@@ -177,7 +194,9 @@
         <ReturnType>Microsoft.Maui.Devices.Sensors.Location</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the location of the placemark.</summary>
+        <summary>
+            Gets or sets the location of the placemark.
+            </summary>
         <value>The location of the placemark.</value>
         <remarks />
       </Docs>
@@ -198,7 +217,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the postal code.</summary>
+        <summary>
+            Gets or sets the postal code.
+            </summary>
         <value>The postal code.</value>
         <remarks />
       </Docs>
@@ -219,7 +240,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the sub-administrative area name of the address, for example, "Santa Clara County", or null if it is unknown.</summary>
+        <summary>
+            Gets or sets the sub-administrative area name of the address, for example, "Santa Clara County", or <see langword="null" /> if it is unknown.
+            </summary>
         <value>The sub-admin area.</value>
         <remarks />
       </Docs>
@@ -240,7 +263,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the sub locality.</summary>
+        <summary>
+            Gets or sets the sub locality.
+            </summary>
         <value>The sub locality.</value>
         <remarks />
       </Docs>
@@ -261,7 +286,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets optional info: sub street or region.</summary>
+        <summary>
+            Gets or sets optional info: sub street or region.
+            </summary>
         <value>The sub thoroughfare.</value>
         <remarks />
       </Docs>
@@ -282,7 +309,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the street name.</summary>
+        <summary>
+            Gets or sets the street name.
+            </summary>
         <value>The street name.</value>
         <remarks />
       </Docs>
@@ -304,8 +333,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>A string representation of the placemark.</summary>
-        <returns>Returns a string representation of the placemark.</returns>
+        <summary>
+            Returns a string representation of the current values of <see cref="T:Microsoft.Maui.Devices.Sensors.Placemark" />.
+            </summary>
+        <returns>A string representation of this instance in the format of <c>Location: {value}, CountryCode: {value}, CountryName: {value}, FeatureName: {value}, PostalCode: {value}, SubLocality: {value}, Thoroughfare: {value}, SubThoroughfare: {value}, Locality: {value}, AdminArea: {value}, SubAdminArea: {value}</c>.</returns>
         <remarks />
       </Docs>
     </Member>

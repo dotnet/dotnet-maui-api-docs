@@ -1,17 +1,20 @@
 <Type Name="ITextToSpeech" FullName="Microsoft.Maui.Media.ITextToSpeech">
   <TypeSignature Language="C#" Value="public interface ITextToSpeech" />
-  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITextToSpeech" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITextToSpeech" FrameworkAlternate="net-maui-7.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Media.ITextToSpeech" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITextToSpeech" />
   <TypeSignature Language="C++ CLI" Value="public interface class ITextToSpeech" />
   <TypeSignature Language="F#" Value="type ITextToSpeech = interface" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit ITextToSpeech" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            The TextToSpeech API enables an application to utilize the built-in text-to-speech engines to speak back text from the device and also to query available languages that the engine can support.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,8 +35,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Gets a list of languages supported by text-to-speech.
+            </summary>
+        <returns>A collection of <see cref="T:Microsoft.Maui.Media.Locale" /> objects with languages supported by text-to-speech on this device.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,11 +62,13 @@
         <Parameter Name="cancelToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="cancelToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="text">The text to speak.</param>
+        <param name="options">The options to use for speaking.</param>
+        <param name="cancelToken">Optional cancellation token to stop speaking.</param>
+        <summary>
+            Speaks the given text through the device's speech-to-text.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

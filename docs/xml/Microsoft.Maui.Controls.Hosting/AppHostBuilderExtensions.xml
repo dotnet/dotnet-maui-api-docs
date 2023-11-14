@@ -124,10 +124,12 @@
         <Parameter Name="builder" Type="Microsoft.Maui.Hosting.MauiAppBuilder" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TApp">To be added.</typeparam>
-        <param name="builder">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TApp">The type to use as the application.</typeparam>
+        <param name="builder">The <see cref="T:Microsoft.Maui.Hosting.MauiAppBuilder" /> to configure.</param>
+        <summary>
+            Configures the <see cref="T:Microsoft.Maui.Hosting.MauiAppBuilder" /> to use the specified <typeparamref name="TApp" /> as the main application type.
+            </summary>
+        <returns>The configured <see cref="T:Microsoft.Maui.Hosting.MauiAppBuilder" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,11 +159,13 @@
         <Parameter Name="implementationFactory" Type="System.Func&lt;System.IServiceProvider,TApp&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TApp">To be added.</typeparam>
-        <param name="builder">To be added.</param>
-        <param name="implementationFactory">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TApp">The type to use as the application.</typeparam>
+        <param name="builder">The <see cref="T:Microsoft.Maui.Hosting.MauiAppBuilder" /> to configure.</param>
+        <param name="implementationFactory">A factory to create the specified <typeparamref name="TApp" /> using the services provided in a <see cref="T:System.IServiceProvider" />.</param>
+        <summary>
+            Configures the <see cref="T:Microsoft.Maui.Hosting.MauiAppBuilder" /> to use the specified <typeparamref name="TApp" /> as the main application type.
+            </summary>
+        <returns>The configured <see cref="T:Microsoft.Maui.Hosting.MauiAppBuilder" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,9 +186,11 @@
         <Parameter Name="builder" Type="Microsoft.Maui.Hosting.MauiAppBuilder" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="builder">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="builder">The <see cref="T:Microsoft.Maui.Hosting.MauiAppBuilder" /> to configure.</param>
+        <summary>
+            Configures <see cref="T:Microsoft.Maui.Hosting.MauiAppBuilder" /> to add support for the <see cref="T:Microsoft.Maui.Controls.Maps.Map" /> control.
+            </summary>
+        <returns>The configured <see cref="T:Microsoft.Maui.Hosting.MauiAppBuilder" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

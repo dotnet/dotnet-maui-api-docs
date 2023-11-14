@@ -4,7 +4,8 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Image" />
   <TypeSignature Language="VB.NET" Value="Public Class Image&#xA;Inherits View&#xA;Implements IElementConfiguration(Of Image), IImage, IImageController, IImageElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class Image : Microsoft::Maui::Controls::View, Microsoft::Maui::Controls::IElementConfiguration&lt;Microsoft::Maui::Controls::Image ^&gt;, Microsoft::Maui::Controls::IImageController, Microsoft::Maui::Controls::IImageElement, Microsoft::Maui::IImage" />
-  <TypeSignature Language="F#" Value="type Image = class&#xA;    inherit View&#xA;    interface IImage&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IImageSourcePart&#xA;    interface IImageController&#xA;    interface IViewController&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IElementConfiguration&lt;Image&gt;&#xA;    interface IImageElement" />
+  <TypeSignature Language="F#" Value="type Image = class&#xA;    inherit View&#xA;    interface IImage&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IImageSourcePart&#xA;    interface IImageController&#xA;    interface IViewController&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IElementConfiguration&lt;Image&gt;&#xA;    interface IImageElement" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="F#" Value="type Image = class&#xA;    inherit View&#xA;    interface IImageController&#xA;    interface IViewController&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IElementConfiguration&lt;Image&gt;&#xA;    interface IImageElement&#xA;    interface IImage&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IImageSourcePart" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -58,7 +59,6 @@
         <code lang="csharp lang-csharp"><![CDATA[
 var image = new Image { Source = "picture.png" };]]></code>
       </example>
-      <para>The FormsGallery sample, which can be found on the <format type="text/html"><a href="https://developer.xamarin.com/samples/tag/Microsoft.Maui.Controls/" target="_blank">Sample Applications</a></format> page, has a ImageDemoPage.cs file. This file contains a longer and more complete example.</para>
     </remarks>
   </Docs>
   <Members>
@@ -124,7 +124,7 @@ var image = new Image { Source = "picture.png" };]]></code>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the Aspect bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Image.Aspect" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,7 +165,7 @@ var image = new Image { Source = "picture.png" };]]></code>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Image.IsAnimationPlaying" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,7 +178,7 @@ var image = new Image { Source = "picture.png" };]]></code>
       <MemberSignature Language="F#" Value="member this.IsLoading : bool" Usage="Microsoft.Maui.Controls.Image.IsLoading" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:Microsoft.Maui.Controls.IImageElement.IsLoading</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-maui-7.0">P:Microsoft.Maui.Controls.IImageElement.IsLoading</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -227,7 +227,7 @@ indicator.BindingContext = image;]]></code>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the IsLoading bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Image.IsLoading" />.</summary>
         <remarks>This bindable property is readonly.</remarks>
       </Docs>
     </Member>
@@ -271,7 +271,7 @@ indicator.BindingContext = image;]]></code>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the IsOpaque bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Image.IsOpaque" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -556,7 +556,7 @@ indicator.BindingContext = image;]]></code>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the Source bindable property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Image.Source" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

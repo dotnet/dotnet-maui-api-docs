@@ -37,9 +37,11 @@
         <Parameter Name="builder" Type="Microsoft.Maui.Hosting.MauiAppBuilder" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="builder">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="builder">The <see cref="T:Microsoft.Maui.Hosting.MauiAppBuilder" /> to configure.</param>
+        <summary>
+            Configures the <see cref="T:Microsoft.Maui.Hosting.MauiAppBuilder" /> with fonts.
+            </summary>
+        <returns>The configured <see cref="T:Microsoft.Maui.Hosting.MauiAppBuilder" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,10 +65,12 @@
         <Parameter Name="configureDelegate" Type="System.Action&lt;Microsoft.Maui.Hosting.IFontCollection&gt;" />
       </Parameters>
       <Docs>
-        <param name="builder">To be added.</param>
-        <param name="configureDelegate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="builder">The <see cref="T:Microsoft.Maui.Hosting.MauiAppBuilder" /> to configure.</param>
+        <param name="configureDelegate">A configuration delegate that can register fonts in the provided <see cref="T:Microsoft.Maui.Hosting.IFontCollection" />.</param>
+        <summary>
+            Configures the <see cref="T:Microsoft.Maui.Hosting.MauiAppBuilder" /> with a specified delegate <paramref name="configureDelegate" /> to register fonts in the application.
+            </summary>
+        <returns>The configured <see cref="T:Microsoft.Maui.Hosting.MauiAppBuilder" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

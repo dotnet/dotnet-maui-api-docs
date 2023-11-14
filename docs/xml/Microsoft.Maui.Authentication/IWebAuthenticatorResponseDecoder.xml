@@ -1,0 +1,48 @@
+<Type Name="IWebAuthenticatorResponseDecoder" FullName="Microsoft.Maui.Authentication.IWebAuthenticatorResponseDecoder">
+  <TypeSignature Language="C#" Value="public interface IWebAuthenticatorResponseDecoder" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IWebAuthenticatorResponseDecoder" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Authentication.IWebAuthenticatorResponseDecoder" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IWebAuthenticatorResponseDecoder" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IWebAuthenticatorResponseDecoder" />
+  <TypeSignature Language="F#" Value="type IWebAuthenticatorResponseDecoder = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Provides abstractions used for decoding a URI returned from a authentication request, for use with <see cref="T:Microsoft.Maui.Authentication.IWebAuthenticator" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DecodeResponse">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt;? DecodeResponse (Uri uri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; DecodeResponse(class System.Uri uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Authentication.IWebAuthenticatorResponseDecoder.DecodeResponse(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DecodeResponse (uri As Uri) As IDictionary(Of String, String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ DecodeResponse(Uri ^ uri);" />
+      <MemberSignature Language="F#" Value="abstract member DecodeResponse : Uri -&gt; System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="iWebAuthenticatorResponseDecoder.DecodeResponse uri" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="uri">The <see cref="T:System.Uri" /> object to decode the query parameters from.</param>
+        <summary>
+            Decodes the given URIs query string into a dictionary.
+            </summary>
+        <returns>A <see cref="T:System.Collections.Generic.IDictionary`2" /> object where each of the query parameters values of <paramref name="uri" /> are accessible through their respective keys.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

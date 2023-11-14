@@ -1,17 +1,20 @@
 <Type Name="IAppleSignInAuthenticator" FullName="Microsoft.Maui.Authentication.IAppleSignInAuthenticator">
   <TypeSignature Language="C#" Value="public interface IAppleSignInAuthenticator" />
-  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAppleSignInAuthenticator" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAppleSignInAuthenticator" FrameworkAlternate="net-maui-7.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Authentication.IAppleSignInAuthenticator" />
   <TypeSignature Language="VB.NET" Value="Public Interface IAppleSignInAuthenticator" />
   <TypeSignature Language="C++ CLI" Value="public interface class IAppleSignInAuthenticator" />
   <TypeSignature Language="F#" Value="type IAppleSignInAuthenticator = interface" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IAppleSignInAuthenticator" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents platform native Apple Sign In authentication APIs.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,9 +36,11 @@
         <Parameter Name="options" Type="Microsoft.Maui.Authentication.AppleSignInAuthenticator+Options" />
       </Parameters>
       <Docs>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="options">Additional Sign In options.</param>
+        <summary>
+            Performs a native Apple Sign In authentication request.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Maui.Authentication.WebAuthenticatorResult" /> object with the results of this operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

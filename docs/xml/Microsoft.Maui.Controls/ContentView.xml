@@ -1,10 +1,12 @@
 <Type Name="ContentView" FullName="Microsoft.Maui.Controls.ContentView">
   <TypeSignature Language="C#" Value="public class ContentView : Microsoft.Maui.Controls.TemplatedView, Microsoft.Maui.IContentView" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContentView extends Microsoft.Maui.Controls.TemplatedView implements class Microsoft.Maui.IContentView, class Microsoft.Maui.IElement, class Microsoft.Maui.IPadding, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContentView extends Microsoft.Maui.Controls.TemplatedView implements class Microsoft.Maui.IContentView, class Microsoft.Maui.IElement, class Microsoft.Maui.IPadding, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" FrameworkAlternate="net-maui-7.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.ContentView" />
   <TypeSignature Language="VB.NET" Value="Public Class ContentView&#xA;Inherits TemplatedView&#xA;Implements IContentView" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContentView : Microsoft::Maui::Controls::TemplatedView, Microsoft::Maui::IContentView" />
-  <TypeSignature Language="F#" Value="type ContentView = class&#xA;    inherit TemplatedView&#xA;    interface IContentView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IPadding" />
+  <TypeSignature Language="F#" Value="type ContentView = class&#xA;    inherit TemplatedView&#xA;    interface IContentView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IPadding" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContentView extends Microsoft.Maui.Controls.TemplatedView implements class Microsoft.Maui.IContentView, class Microsoft.Maui.ICrossPlatformLayout, class Microsoft.Maui.IElement, class Microsoft.Maui.IPadding, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" FrameworkAlternate="net-maui-8.0" />
+  <TypeSignature Language="F#" Value="type ContentView = class&#xA;    inherit TemplatedView&#xA;    interface IContentView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IPadding&#xA;    interface ICrossPlatformLayout" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -27,6 +29,9 @@
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Maui.IView</InterfaceName>
+    </Interface>
+    <Interface FrameworkAlternate="net-maui-8.0">
+      <InterfaceName>Microsoft.Maui.ICrossPlatformLayout</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
@@ -112,7 +117,7 @@ MainPage = new ContentPage () {
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.ContentView.Content" /> property.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ContentView.Content" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

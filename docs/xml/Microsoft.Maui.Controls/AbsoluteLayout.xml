@@ -1,10 +1,12 @@
 <Type Name="AbsoluteLayout" FullName="Microsoft.Maui.Controls.AbsoluteLayout">
   <TypeSignature Language="C#" Value="public class AbsoluteLayout : Microsoft.Maui.Controls.Layout, Microsoft.Maui.IAbsoluteLayout, System.Collections.Generic.ICollection&lt;Microsoft.Maui.IView&gt;, System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.IView&gt;, System.Collections.Generic.IList&lt;Microsoft.Maui.IView&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AbsoluteLayout extends Microsoft.Maui.Controls.Layout implements class Microsoft.Maui.IAbsoluteLayout, class Microsoft.Maui.IContainer, class Microsoft.Maui.IElement, class Microsoft.Maui.ILayout, class Microsoft.Maui.IPadding, class Microsoft.Maui.ISafeAreaView, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView, class System.Collections.Generic.ICollection`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IList`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AbsoluteLayout extends Microsoft.Maui.Controls.Layout implements class Microsoft.Maui.IAbsoluteLayout, class Microsoft.Maui.IContainer, class Microsoft.Maui.IElement, class Microsoft.Maui.ILayout, class Microsoft.Maui.IPadding, class Microsoft.Maui.ISafeAreaView, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView, class System.Collections.Generic.ICollection`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IList`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.IEnumerable" FrameworkAlternate="net-maui-7.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.AbsoluteLayout" />
   <TypeSignature Language="VB.NET" Value="Public Class AbsoluteLayout&#xA;Inherits Layout&#xA;Implements IAbsoluteLayout, ICollection(Of IView), IEnumerable(Of IView), IList(Of IView)" />
   <TypeSignature Language="C++ CLI" Value="public ref class AbsoluteLayout : Microsoft::Maui::Controls::Layout, Microsoft::Maui::IAbsoluteLayout, System::Collections::Generic::ICollection&lt;Microsoft::Maui::IView ^&gt;, System::Collections::Generic::IEnumerable&lt;Microsoft::Maui::IView ^&gt;, System::Collections::Generic::IList&lt;Microsoft::Maui::IView ^&gt;" />
-  <TypeSignature Language="F#" Value="type AbsoluteLayout = class&#xA;    inherit Layout&#xA;    interface IAbsoluteLayout&#xA;    interface ILayout&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IContainer&#xA;    interface IList&lt;IView&gt;&#xA;    interface ICollection&lt;IView&gt;&#xA;    interface seq&lt;IView&gt;&#xA;    interface IEnumerable&#xA;    interface ISafeAreaView&#xA;    interface IPadding" />
+  <TypeSignature Language="F#" Value="type AbsoluteLayout = class&#xA;    inherit Layout&#xA;    interface IAbsoluteLayout&#xA;    interface ILayout&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IContainer&#xA;    interface IList&lt;IView&gt;&#xA;    interface ICollection&lt;IView&gt;&#xA;    interface seq&lt;IView&gt;&#xA;    interface IEnumerable&#xA;    interface ISafeAreaView&#xA;    interface IPadding" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AbsoluteLayout extends Microsoft.Maui.Controls.Layout implements class Microsoft.Maui.IAbsoluteLayout, class Microsoft.Maui.IContainer, class Microsoft.Maui.ICrossPlatformLayout, class Microsoft.Maui.IElement, class Microsoft.Maui.ILayout, class Microsoft.Maui.IPadding, class Microsoft.Maui.ISafeAreaView, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView, class System.Collections.Generic.ICollection`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IList`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.IEnumerable" FrameworkAlternate="net-maui-8.0" />
+  <TypeSignature Language="F#" Value="type AbsoluteLayout = class&#xA;    inherit Layout&#xA;    interface IAbsoluteLayout&#xA;    interface ILayout&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IContainer&#xA;    interface IList&lt;IView&gt;&#xA;    interface ICollection&lt;IView&gt;&#xA;    interface seq&lt;IView&gt;&#xA;    interface IEnumerable&#xA;    interface ISafeAreaView&#xA;    interface IPadding&#xA;    interface ICrossPlatformLayout" FrameworkAlternate="net-maui-8.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -54,6 +56,9 @@
     </Interface>
     <Interface>
       <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+    <Interface FrameworkAlternate="net-maui-8.0">
+      <InterfaceName>Microsoft.Maui.ICrossPlatformLayout</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>
@@ -168,11 +173,6 @@
     
     }]]></code>
       </example>
-      <para>The following image shows the AbsoluteLayout demo from the <format type="text/html"><a href="https://developer.xamarin.com/samples/tag/Microsoft.Maui.Controls/" target="_blank">FormsGallery</a></format> sample.
-    </para>
-      <para>
-        <img href="~/xml/Microsoft.Maui.Controls/_images/AbsoluteLayout.TripleScreenShot.png" />
-      </para>
       <example>
         <para>XAML for Microsoft.Maui.Controls supports the following attached properties for the <see cref="T:Microsoft.Maui.Controls.AbsoluteLayout" /> class:</para>
         <list type="table">
@@ -445,7 +445,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Implements the attached property that represents the layout bounds of child elements. Bindable at run time with the string "LayoutBounds". See Remarks.</summary>
+        <summary>Bindable property for attached property <c>LayoutBounds</c>.</summary>
         <remarks>The interface for this property is defined by the <see cref="M:Microsoft.Maui.Controls.AbsoluteLayout.GetLayoutBounds(Microsoft.Maui.Controls.BindableObject)" /> and <see cref="M:Microsoft.Maui.Controls.AbsoluteLayout.SetLayoutBounds(Microsoft.Maui.IView,Microsoft.Maui.Graphics.Rect)" /> methods.
         </remarks>
       </Docs>
@@ -466,7 +466,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Implements the attached property that contains the <see cref="T:Microsoft.Maui.Layouts.AbsoluteLayoutFlags" /> values for child elements.</summary>
+        <summary>Bindable property for attached property <c>LayoutFlags</c>.</summary>
         <remarks>The interface for this property is defined by the <see cref="M:Microsoft.Maui.Controls.AbsoluteLayout.GetLayoutFlags(Microsoft.Maui.Controls.BindableObject)" /> and <see cref="M:Microsoft.Maui.Controls.AbsoluteLayout.SetLayoutFlags(Microsoft.Maui.Controls.BindableObject,Microsoft.Maui.Layouts.AbsoluteLayoutFlags)" /> methods.
         </remarks>
       </Docs>

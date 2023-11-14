@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a single email message.</summary>
+    <summary>
+            Represents a single email message.
+            </summary>
     <remarks />
   </Docs>
   <Members>
@@ -31,7 +33,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of EmailMessage.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.ApplicationModel.Communication.EmailMessage" /> class.
+            </summary>
         <remarks />
       </Docs>
     </Member>
@@ -62,8 +66,10 @@
       <Docs>
         <param name="subject">The email subject.</param>
         <param name="body">The email body.</param>
-        <param name="to">The email's recipients.</param>
-        <summary>Creates a new instance of EmailMessage with the specified subject, body and recipients.</summary>
+        <param name="to">The email recipients.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.ApplicationModel.Communication.EmailMessage" /> class with the specified subject, body, and recipients.
+            </summary>
         <remarks />
       </Docs>
     </Member>
@@ -83,7 +89,9 @@
         <ReturnType>System.Collections.Generic.List&lt;Microsoft.Maui.ApplicationModel.Communication.EmailAttachment&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a list of file attachments.</summary>
+        <summary>
+            Gets or sets a list of file attachments as <see cref="T:Microsoft.Maui.ApplicationModel.Communication.EmailAttachment" /> objects.
+            </summary>
         <value />
         <remarks />
       </Docs>
@@ -104,7 +112,9 @@
         <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the email's BCC recipients.</summary>
+        <summary>
+            Gets or sets the email's BCC (Blind Carbon Copy) recipients.
+            </summary>
         <value />
         <remarks />
       </Docs>
@@ -125,7 +135,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the email's body.</summary>
+        <summary>
+            Gets or sets the email's body.
+            </summary>
         <value />
         <remarks />
       </Docs>
@@ -146,9 +158,12 @@
         <ReturnType>Microsoft.Maui.ApplicationModel.Communication.EmailBodyFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the message is in plain text or HTML (not supported on UWP).</summary>
+        <summary>
+            Gets or sets a value indicating whether the message is in plain text or HTML.
+            </summary>
         <value />
-        <remarks />
+        <remarks>
+          <see cref="F:Microsoft.Maui.ApplicationModel.Communication.EmailBodyFormat.Html" /> is not supported on Windows.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Cc">
@@ -167,7 +182,9 @@
         <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the email's CC recipients.</summary>
+        <summary>
+            Gets or sets the email's CC (Carbon Copy) recipients.
+            </summary>
         <value />
         <remarks />
       </Docs>
@@ -188,7 +205,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the email's subject.</summary>
+        <summary>
+            Gets or sets the email's subject.
+            </summary>
         <value />
         <remarks />
       </Docs>
@@ -209,7 +228,9 @@
         <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the email's recipients.</summary>
+        <summary>
+            Gets or sets the email's recipients.
+            </summary>
         <value />
         <remarks />
       </Docs>
