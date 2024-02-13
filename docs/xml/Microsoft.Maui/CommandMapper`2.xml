@@ -5,11 +5,11 @@
   <TypeSignature Language="VB.NET" Value="Public Class CommandMapper(Of TVirtualView, TViewHandler)&#xA;Inherits CommandMapper" FrameworkAlternate="net-maui-7.0" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TVirtualView, typename TViewHandler&gt;&#xA; where TVirtualView : IElement where TViewHandler : IElementHandlerpublic ref class CommandMapper : Microsoft::Maui::CommandMapper" FrameworkAlternate="net-maui-7.0" />
   <TypeSignature Language="F#" Value="type CommandMapper&lt;'VirtualView, 'ViewHandler (requires 'VirtualView :&gt; IElement and 'ViewHandler :&gt; IElementHandler)&gt; = class&#xA;    inherit CommandMapper" FrameworkAlternate="net-maui-7.0" />
-  <TypeSignature Language="C#" Value="public class CommandMapper&lt;TVirtualView,TViewHandler&gt; : Microsoft.Maui.CommandMapper, Microsoft.Maui.ICommandMapper&lt;TVirtualView,TViewHandler&gt; where TVirtualView : IElement where TViewHandler : IElementHandler" FrameworkAlternate="net-maui-8.0" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CommandMapper`2&lt;(class Microsoft.Maui.IElement) TVirtualView, (class Microsoft.Maui.IElementHandler) TViewHandler&gt; extends Microsoft.Maui.CommandMapper implements class Microsoft.Maui.ICommandMapper, class Microsoft.Maui.ICommandMapper`2&lt;!TVirtualView, !TViewHandler&gt;" FrameworkAlternate="net-maui-8.0" />
-  <TypeSignature Language="VB.NET" Value="Public Class CommandMapper(Of TVirtualView, TViewHandler)&#xA;Inherits CommandMapper&#xA;Implements ICommandMapper(Of TVirtualView, TViewHandler)" FrameworkAlternate="net-maui-8.0" />
-  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TVirtualView, typename TViewHandler&gt;&#xA; where TVirtualView : IElement where TViewHandler : IElementHandlerpublic ref class CommandMapper : Microsoft::Maui::CommandMapper, Microsoft::Maui::ICommandMapper&lt;TVirtualView, TViewHandler&gt;" FrameworkAlternate="net-maui-8.0" />
-  <TypeSignature Language="F#" Value="type CommandMapper&lt;'VirtualView, 'ViewHandler (requires 'VirtualView :&gt; IElement and 'ViewHandler :&gt; IElementHandler)&gt; = class&#xA;    inherit CommandMapper&#xA;    interface ICommandMapper&lt;'VirtualView, 'ViewHandler (requires 'VirtualView :&gt; IElement and 'ViewHandler :&gt; IElementHandler)&gt;&#xA;    interface ICommandMapper" FrameworkAlternate="net-maui-8.0" />
+  <TypeSignature Language="C#" Value="public class CommandMapper&lt;TVirtualView,TViewHandler&gt; : Microsoft.Maui.CommandMapper, Microsoft.Maui.ICommandMapper&lt;TVirtualView,TViewHandler&gt; where TVirtualView : IElement where TViewHandler : IElementHandler" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CommandMapper`2&lt;(class Microsoft.Maui.IElement) TVirtualView, (class Microsoft.Maui.IElementHandler) TViewHandler&gt; extends Microsoft.Maui.CommandMapper implements class Microsoft.Maui.ICommandMapper, class Microsoft.Maui.ICommandMapper`2&lt;!TVirtualView, !TViewHandler&gt;" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="VB.NET" Value="Public Class CommandMapper(Of TVirtualView, TViewHandler)&#xA;Inherits CommandMapper&#xA;Implements ICommandMapper(Of TVirtualView, TViewHandler)" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TVirtualView, typename TViewHandler&gt;&#xA; where TVirtualView : IElement where TViewHandler : IElementHandlerpublic ref class CommandMapper : Microsoft::Maui::CommandMapper, Microsoft::Maui::ICommandMapper&lt;TVirtualView, TViewHandler&gt;" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="F#" Value="type CommandMapper&lt;'VirtualView, 'ViewHandler (requires 'VirtualView :&gt; IElement and 'ViewHandler :&gt; IElementHandler)&gt; = class&#xA;    inherit CommandMapper&#xA;    interface ICommandMapper&lt;'VirtualView, 'ViewHandler (requires 'VirtualView :&gt; IElement and 'ViewHandler :&gt; IElementHandler)&gt;&#xA;    interface ICommandMapper" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -30,10 +30,10 @@
     <BaseTypeName>Microsoft.Maui.CommandMapper</BaseTypeName>
   </Base>
   <Interfaces>
-    <Interface FrameworkAlternate="net-maui-8.0">
+    <Interface FrameworkAlternate="net-maui-8.0;net-maui-9.0">
       <InterfaceName>Microsoft.Maui.ICommandMapper</InterfaceName>
     </Interface>
-    <Interface FrameworkAlternate="net-maui-8.0">
+    <Interface FrameworkAlternate="net-maui-8.0;net-maui-9.0">
       <InterfaceName>Microsoft.Maui.ICommandMapper&lt;TVirtualView,TViewHandler&gt;</InterfaceName>
     </Interface>
   </Interfaces>
@@ -89,12 +89,12 @@
       <MemberSignature Language="VB.NET" Value="Public Sub Add (key As String, action As Action(Of TViewHandler, TVirtualView, Object))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ key, Action&lt;TViewHandler, TVirtualView, System::Object ^&gt; ^ action);" FrameworkAlternate="net-maui-7.0" />
       <MemberSignature Language="F#" Value="member this.Add : string * Action&lt;'ViewHandler, 'VirtualView, obj (requires 'ViewHandler :&gt; Microsoft.Maui.IElementHandler and 'VirtualView :&gt; Microsoft.Maui.IElement)&gt; -&gt; unit" Usage="commandMapper.Add (key, action)" FrameworkAlternate="net-maui-7.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(string key, class System.Action`3&lt;!TViewHandler, !TVirtualView, object&gt; action) cil managed" FrameworkAlternate="net-maui-8.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::String ^ key, Action&lt;TViewHandler, TVirtualView, System::Object ^&gt; ^ action);" FrameworkAlternate="net-maui-8.0" />
-      <MemberSignature Language="F#" Value="abstract member Add : string * Action&lt;'ViewHandler, 'VirtualView, obj (requires 'ViewHandler :&gt; Microsoft.Maui.IElementHandler and 'VirtualView :&gt; Microsoft.Maui.IElement)&gt; -&gt; unit&#xA;override this.Add : string * Action&lt;'ViewHandler, 'VirtualView, obj (requires 'ViewHandler :&gt; Microsoft.Maui.IElementHandler and 'VirtualView :&gt; Microsoft.Maui.IElement)&gt; -&gt; unit" Usage="commandMapper.Add (key, action)" FrameworkAlternate="net-maui-8.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(string key, class System.Action`3&lt;!TViewHandler, !TVirtualView, object&gt; action) cil managed" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::String ^ key, Action&lt;TViewHandler, TVirtualView, System::Object ^&gt; ^ action);" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * Action&lt;'ViewHandler, 'VirtualView, obj (requires 'ViewHandler :&gt; Microsoft.Maui.IElementHandler and 'VirtualView :&gt; Microsoft.Maui.IElement)&gt; -&gt; unit&#xA;override this.Add : string * Action&lt;'ViewHandler, 'VirtualView, obj (requires 'ViewHandler :&gt; Microsoft.Maui.IElementHandler and 'VirtualView :&gt; Microsoft.Maui.IElement)&gt; -&gt; unit" Usage="commandMapper.Add (key, action)" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember FrameworkAlternate="net-maui-8.0">M:Microsoft.Maui.ICommandMapper`2.Add(System.String,System.Action{`1,`0,System.Object})</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-maui-8.0;net-maui-9.0">M:Microsoft.Maui.ICommandMapper`2.Add(System.String,System.Action{`1,`0,System.Object})</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>
@@ -121,12 +121,12 @@
       <MemberSignature Language="VB.NET" Value="Public Sub Add (key As String, action As Action(Of TViewHandler, TVirtualView))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ key, Action&lt;TViewHandler, TVirtualView&gt; ^ action);" FrameworkAlternate="net-maui-7.0" />
       <MemberSignature Language="F#" Value="member this.Add : string * Action&lt;'ViewHandler, 'VirtualView (requires 'ViewHandler :&gt; Microsoft.Maui.IElementHandler and 'VirtualView :&gt; Microsoft.Maui.IElement)&gt; -&gt; unit" Usage="commandMapper.Add (key, action)" FrameworkAlternate="net-maui-7.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(string key, class System.Action`2&lt;!TViewHandler, !TVirtualView&gt; action) cil managed" FrameworkAlternate="net-maui-8.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::String ^ key, Action&lt;TViewHandler, TVirtualView&gt; ^ action);" FrameworkAlternate="net-maui-8.0" />
-      <MemberSignature Language="F#" Value="abstract member Add : string * Action&lt;'ViewHandler, 'VirtualView (requires 'ViewHandler :&gt; Microsoft.Maui.IElementHandler and 'VirtualView :&gt; Microsoft.Maui.IElement)&gt; -&gt; unit&#xA;override this.Add : string * Action&lt;'ViewHandler, 'VirtualView (requires 'ViewHandler :&gt; Microsoft.Maui.IElementHandler and 'VirtualView :&gt; Microsoft.Maui.IElement)&gt; -&gt; unit" Usage="commandMapper.Add (key, action)" FrameworkAlternate="net-maui-8.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(string key, class System.Action`2&lt;!TViewHandler, !TVirtualView&gt; action) cil managed" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::String ^ key, Action&lt;TViewHandler, TVirtualView&gt; ^ action);" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * Action&lt;'ViewHandler, 'VirtualView (requires 'ViewHandler :&gt; Microsoft.Maui.IElementHandler and 'VirtualView :&gt; Microsoft.Maui.IElement)&gt; -&gt; unit&#xA;override this.Add : string * Action&lt;'ViewHandler, 'VirtualView (requires 'ViewHandler :&gt; Microsoft.Maui.IElementHandler and 'VirtualView :&gt; Microsoft.Maui.IElement)&gt; -&gt; unit" Usage="commandMapper.Add (key, action)" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember FrameworkAlternate="net-maui-8.0">M:Microsoft.Maui.ICommandMapper`2.Add(System.String,System.Action{`1,`0})</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-maui-8.0;net-maui-9.0">M:Microsoft.Maui.ICommandMapper`2.Add(System.String,System.Action{`1,`0})</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>

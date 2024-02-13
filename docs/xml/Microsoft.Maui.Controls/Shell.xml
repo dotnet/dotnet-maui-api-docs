@@ -5,7 +5,7 @@
   <TypeSignature Language="VB.NET" Value="Public Class Shell&#xA;Inherits Page&#xA;Implements IFlyoutView, IPageContainer(Of Page), IShellController" />
   <TypeSignature Language="C++ CLI" Value="public ref class Shell : Microsoft::Maui::Controls::Page, Microsoft::Maui::Controls::IPageContainer&lt;Microsoft::Maui::Controls::Page ^&gt;, Microsoft::Maui::Controls::IShellController, Microsoft::Maui::IFlyoutView" />
   <TypeSignature Language="F#" Value="type Shell = class&#xA;    inherit Page&#xA;    interface IFlyoutView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IShellController&#xA;    interface IPageController&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IPageContainer&lt;Page&gt;" FrameworkAlternate="net-maui-7.0" />
-  <TypeSignature Language="F#" Value="type Shell = class&#xA;    inherit Page&#xA;    interface IShellController&#xA;    interface IPageController&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IPageContainer&lt;Page&gt;&#xA;    interface IFlyoutView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform" FrameworkAlternate="net-maui-8.0" />
+  <TypeSignature Language="F#" Value="type Shell = class&#xA;    inherit Page&#xA;    interface IShellController&#xA;    interface IPageController&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IPageContainer&lt;Page&gt;&#xA;    interface IFlyoutView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -1730,8 +1730,8 @@
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="state" Type="Microsoft.Maui.Controls.ShellNavigationState" Index="0" FrameworkAlternate="net-maui-8.0" />
-        <Parameter Name="shellNavigationQueryParameters" Type="Microsoft.Maui.Controls.ShellNavigationQueryParameters" Index="1" FrameworkAlternate="net-maui-8.0" />
+        <Parameter Name="state" Type="Microsoft.Maui.Controls.ShellNavigationState" Index="0" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+        <Parameter Name="shellNavigationQueryParameters" Type="Microsoft.Maui.Controls.ShellNavigationQueryParameters" Index="1" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       </Parameters>
       <Docs>
         <param name="state">Defines the path for Shell to navigate to.</param>
@@ -1820,9 +1820,9 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="state" Type="Microsoft.Maui.Controls.ShellNavigationState" Index="0" FrameworkAlternate="net-maui-8.0" />
-        <Parameter Name="animate" Type="System.Boolean" Index="1" FrameworkAlternate="net-maui-8.0" />
-        <Parameter Name="shellNavigationQueryParameters" Type="Microsoft.Maui.Controls.ShellNavigationQueryParameters" Index="2" FrameworkAlternate="net-maui-8.0" />
+        <Parameter Name="state" Type="Microsoft.Maui.Controls.ShellNavigationState" Index="0" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+        <Parameter Name="animate" Type="System.Boolean" Index="1" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+        <Parameter Name="shellNavigationQueryParameters" Type="Microsoft.Maui.Controls.ShellNavigationQueryParameters" Index="2" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       </Parameters>
       <Docs>
         <param name="state">Defines the path for Shell to navigate to.</param>

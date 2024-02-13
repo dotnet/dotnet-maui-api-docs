@@ -21,11 +21,12 @@
   </Docs>
   <Members>
     <Member MemberName="CapturePhotoAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Maui.Storage.FileResult&gt; CapturePhotoAsync (Microsoft.Maui.Media.MediaPickerOptions? options = default);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Maui.Storage.FileResult&gt; CapturePhotoAsync (Microsoft.Maui.Media.MediaPickerOptions? options = default);" FrameworkAlternate="net-maui-7.0;net-maui-8.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Maui.Storage.FileResult&gt; CapturePhotoAsync(class Microsoft.Maui.Media.MediaPickerOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Media.MediaPicker.CapturePhotoAsync(Microsoft.Maui.Media.MediaPickerOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CapturePhotoAsync (Optional options As MediaPickerOptions = Nothing) As Task(Of FileResult)" />
       <MemberSignature Language="F#" Value="static member CapturePhotoAsync : Microsoft.Maui.Media.MediaPickerOptions -&gt; System.Threading.Tasks.Task&lt;Microsoft.Maui.Storage.FileResult&gt;" Usage="Microsoft.Maui.Media.MediaPicker.CapturePhotoAsync options" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Maui.Storage.FileResult?&gt; CapturePhotoAsync (Microsoft.Maui.Media.MediaPickerOptions? options = default);" FrameworkAlternate="net-maui-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
@@ -42,16 +43,17 @@
         <summary>
             Opens the camera to take a photo.
             </summary>
-        <returns>A <see cref="T:Microsoft.Maui.Storage.FileResult" /> object containing details of the captured photo.</returns>
+        <returns>A <see cref="T:Microsoft.Maui.Storage.FileResult" /> object containing details of the captured photo. When the operation was cancelled by the user, this will return <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CaptureVideoAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Maui.Storage.FileResult&gt; CaptureVideoAsync (Microsoft.Maui.Media.MediaPickerOptions? options = default);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Maui.Storage.FileResult&gt; CaptureVideoAsync (Microsoft.Maui.Media.MediaPickerOptions? options = default);" FrameworkAlternate="net-maui-7.0;net-maui-8.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Maui.Storage.FileResult&gt; CaptureVideoAsync(class Microsoft.Maui.Media.MediaPickerOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Media.MediaPicker.CaptureVideoAsync(Microsoft.Maui.Media.MediaPickerOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CaptureVideoAsync (Optional options As MediaPickerOptions = Nothing) As Task(Of FileResult)" />
       <MemberSignature Language="F#" Value="static member CaptureVideoAsync : Microsoft.Maui.Media.MediaPickerOptions -&gt; System.Threading.Tasks.Task&lt;Microsoft.Maui.Storage.FileResult&gt;" Usage="Microsoft.Maui.Media.MediaPicker.CaptureVideoAsync options" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Maui.Storage.FileResult?&gt; CaptureVideoAsync (Microsoft.Maui.Media.MediaPickerOptions? options = default);" FrameworkAlternate="net-maui-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
@@ -68,7 +70,7 @@
         <summary>
             Opens the camera to take a video.
             </summary>
-        <returns>A <see cref="T:Microsoft.Maui.Storage.FileResult" /> object containing details of the captured video.</returns>
+        <returns>A <see cref="T:Microsoft.Maui.Storage.FileResult" /> object containing details of the captured video. When the operation was cancelled by the user, this will return <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,11 +121,12 @@
       </Docs>
     </Member>
     <Member MemberName="PickPhotoAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Maui.Storage.FileResult&gt; PickPhotoAsync (Microsoft.Maui.Media.MediaPickerOptions? options = default);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Maui.Storage.FileResult&gt; PickPhotoAsync (Microsoft.Maui.Media.MediaPickerOptions? options = default);" FrameworkAlternate="net-maui-7.0;net-maui-8.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Maui.Storage.FileResult&gt; PickPhotoAsync(class Microsoft.Maui.Media.MediaPickerOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Media.MediaPicker.PickPhotoAsync(Microsoft.Maui.Media.MediaPickerOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function PickPhotoAsync (Optional options As MediaPickerOptions = Nothing) As Task(Of FileResult)" />
       <MemberSignature Language="F#" Value="static member PickPhotoAsync : Microsoft.Maui.Media.MediaPickerOptions -&gt; System.Threading.Tasks.Task&lt;Microsoft.Maui.Storage.FileResult&gt;" Usage="Microsoft.Maui.Media.MediaPicker.PickPhotoAsync options" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Maui.Storage.FileResult?&gt; PickPhotoAsync (Microsoft.Maui.Media.MediaPickerOptions? options = default);" FrameworkAlternate="net-maui-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
@@ -140,16 +143,17 @@
         <summary>
             Opens the media browser to select a photo.
             </summary>
-        <returns>A <see cref="T:Microsoft.Maui.Storage.FileResult" /> object containing details of the picked photo.</returns>
+        <returns>A <see cref="T:Microsoft.Maui.Storage.FileResult" /> object containing details of the picked photo. When the operation was cancelled by the user, this will return <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PickVideoAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Maui.Storage.FileResult&gt; PickVideoAsync (Microsoft.Maui.Media.MediaPickerOptions? options = default);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Maui.Storage.FileResult&gt; PickVideoAsync (Microsoft.Maui.Media.MediaPickerOptions? options = default);" FrameworkAlternate="net-maui-7.0;net-maui-8.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Maui.Storage.FileResult&gt; PickVideoAsync(class Microsoft.Maui.Media.MediaPickerOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Media.MediaPicker.PickVideoAsync(Microsoft.Maui.Media.MediaPickerOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function PickVideoAsync (Optional options As MediaPickerOptions = Nothing) As Task(Of FileResult)" />
       <MemberSignature Language="F#" Value="static member PickVideoAsync : Microsoft.Maui.Media.MediaPickerOptions -&gt; System.Threading.Tasks.Task&lt;Microsoft.Maui.Storage.FileResult&gt;" Usage="Microsoft.Maui.Media.MediaPicker.PickVideoAsync options" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Maui.Storage.FileResult?&gt; PickVideoAsync (Microsoft.Maui.Media.MediaPickerOptions? options = default);" FrameworkAlternate="net-maui-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
@@ -166,7 +170,7 @@
         <summary>
             Opens the media browser to select a video.
             </summary>
-        <returns>A <see cref="T:Microsoft.Maui.Storage.FileResult" /> object containing details of the picked video.</returns>
+        <returns>A <see cref="T:Microsoft.Maui.Storage.FileResult" /> object containing details of the picked video. When the operation was cancelled by the user, this will return <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
