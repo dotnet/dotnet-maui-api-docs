@@ -5,8 +5,8 @@
   <TypeSignature Language="VB.NET" Value="Public Class ScrollView&#xA;Inherits Layout&#xA;Implements IElementConfiguration(Of ScrollView), IScrollView, IScrollViewController" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScrollView : Microsoft::Maui::Controls::Compatibility::Layout, Microsoft::Maui::Controls::IElementConfiguration&lt;Microsoft::Maui::Controls::ScrollView ^&gt;, Microsoft::Maui::Controls::IScrollViewController, Microsoft::Maui::IScrollView" />
   <TypeSignature Language="F#" Value="type ScrollView = class&#xA;    inherit Layout&#xA;    interface IScrollView&#xA;    interface IContentView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IPadding&#xA;    interface IScrollViewController&#xA;    interface ILayoutController&#xA;    interface IElementConfiguration&lt;ScrollView&gt;" FrameworkAlternate="net-maui-7.0" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScrollView extends Microsoft.Maui.Controls.Compatibility.Layout implements class Microsoft.Maui.Controls.IElementConfiguration`1&lt;class Microsoft.Maui.Controls.ScrollView&gt;, class Microsoft.Maui.Controls.ILayoutController, class Microsoft.Maui.Controls.IScrollViewController, class Microsoft.Maui.IContentView, class Microsoft.Maui.ICrossPlatformLayout, class Microsoft.Maui.IElement, class Microsoft.Maui.IPadding, class Microsoft.Maui.IScrollView, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" FrameworkAlternate="net-maui-8.0" />
-  <TypeSignature Language="F#" Value="type ScrollView = class&#xA;    inherit Layout&#xA;    interface IScrollViewController&#xA;    interface ILayoutController&#xA;    interface IElementConfiguration&lt;ScrollView&gt;&#xA;    interface IScrollView&#xA;    interface IContentView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IPadding&#xA;    interface ICrossPlatformLayout" FrameworkAlternate="net-maui-8.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScrollView extends Microsoft.Maui.Controls.Compatibility.Layout implements class Microsoft.Maui.Controls.IElementConfiguration`1&lt;class Microsoft.Maui.Controls.ScrollView&gt;, class Microsoft.Maui.Controls.ILayoutController, class Microsoft.Maui.Controls.IScrollViewController, class Microsoft.Maui.IContentView, class Microsoft.Maui.ICrossPlatformLayout, class Microsoft.Maui.IElement, class Microsoft.Maui.IPadding, class Microsoft.Maui.IScrollView, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="F#" Value="type ScrollView = class&#xA;    inherit Layout&#xA;    interface IScrollViewController&#xA;    interface ILayoutController&#xA;    interface IElementConfiguration&lt;ScrollView&gt;&#xA;    interface IScrollView&#xA;    interface IContentView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IPadding&#xA;    interface ICrossPlatformLayout" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -42,7 +42,7 @@
     <Interface>
       <InterfaceName>Microsoft.Maui.IView</InterfaceName>
     </Interface>
-    <Interface FrameworkAlternate="net-maui-8.0">
+    <Interface FrameworkAlternate="net-maui-8.0;net-maui-9.0">
       <InterfaceName>Microsoft.Maui.ICrossPlatformLayout</InterfaceName>
     </Interface>
   </Interfaces>
@@ -194,7 +194,7 @@ MainPage = new ContentPage
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-maui-8.0">
+        <Attribute FrameworkAlternate="net-maui-8.0;net-maui-9.0">
           <AttributeName Language="C#">[System.Obsolete("Use ScrollViewHandler.Mapper instead.")]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Obsolete("Use ScrollViewHandler.Mapper instead.")&gt;]</AttributeName>
         </Attribute>
@@ -496,7 +496,7 @@ MainPage = new ContentPage
         <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="bounds" Type="Microsoft.Maui.Graphics.Rect" Index="0" FrameworkAlternate="net-maui-8.0" />
+        <Parameter Name="bounds" Type="Microsoft.Maui.Graphics.Rect" Index="0" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       </Parameters>
       <Docs>
         <param name="bounds">To be added.</param>
@@ -524,8 +524,8 @@ MainPage = new ContentPage
         <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="widthConstraint" Type="System.Double" Index="0" FrameworkAlternate="net-maui-8.0" />
-        <Parameter Name="heightConstraint" Type="System.Double" Index="1" FrameworkAlternate="net-maui-8.0" />
+        <Parameter Name="widthConstraint" Type="System.Double" Index="0" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+        <Parameter Name="heightConstraint" Type="System.Double" Index="1" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       </Parameters>
       <Docs>
         <param name="widthConstraint">To be added.</param>

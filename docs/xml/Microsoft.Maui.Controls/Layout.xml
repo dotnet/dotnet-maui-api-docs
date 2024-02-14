@@ -5,8 +5,8 @@
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Layout&#xA;Inherits View&#xA;Implements IBindableLayout, ICollection(Of IView), IEnumerable(Of IView), ILayout, IList(Of IView), IPaddingElement, IVisualTreeElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class Layout abstract : Microsoft::Maui::Controls::View, Microsoft::Maui::Controls::IBindableLayout, Microsoft::Maui::Controls::IPaddingElement, Microsoft::Maui::ILayout, Microsoft::Maui::IVisualTreeElement, System::Collections::Generic::ICollection&lt;Microsoft::Maui::IView ^&gt;, System::Collections::Generic::IEnumerable&lt;Microsoft::Maui::IView ^&gt;, System::Collections::Generic::IList&lt;Microsoft::Maui::IView ^&gt;" />
   <TypeSignature Language="F#" Value="type Layout = class&#xA;    inherit View&#xA;    interface ILayout&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IContainer&#xA;    interface IList&lt;IView&gt;&#xA;    interface ICollection&lt;IView&gt;&#xA;    interface seq&lt;IView&gt;&#xA;    interface IEnumerable&#xA;    interface ISafeAreaView&#xA;    interface IPadding&#xA;    interface IBindableLayout&#xA;    interface IPaddingElement&#xA;    interface IVisualTreeElement" FrameworkAlternate="net-maui-7.0" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Layout extends Microsoft.Maui.Controls.View implements class Microsoft.Maui.Controls.IBindableLayout, class Microsoft.Maui.Controls.IPaddingElement, class Microsoft.Maui.IContainer, class Microsoft.Maui.ICrossPlatformLayout, class Microsoft.Maui.IElement, class Microsoft.Maui.ILayout, class Microsoft.Maui.IPadding, class Microsoft.Maui.ISafeAreaView, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView, class Microsoft.Maui.IVisualTreeElement, class System.Collections.Generic.ICollection`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IList`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.IEnumerable" FrameworkAlternate="net-maui-8.0" />
-  <TypeSignature Language="F#" Value="type Layout = class&#xA;    inherit View&#xA;    interface ILayout&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IContainer&#xA;    interface IList&lt;IView&gt;&#xA;    interface ICollection&lt;IView&gt;&#xA;    interface seq&lt;IView&gt;&#xA;    interface IEnumerable&#xA;    interface ISafeAreaView&#xA;    interface IPadding&#xA;    interface ICrossPlatformLayout&#xA;    interface IBindableLayout&#xA;    interface IPaddingElement&#xA;    interface IVisualTreeElement" FrameworkAlternate="net-maui-8.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Layout extends Microsoft.Maui.Controls.View implements class Microsoft.Maui.Controls.IBindableLayout, class Microsoft.Maui.Controls.IPaddingElement, class Microsoft.Maui.IContainer, class Microsoft.Maui.ICrossPlatformLayout, class Microsoft.Maui.IElement, class Microsoft.Maui.ILayout, class Microsoft.Maui.IPadding, class Microsoft.Maui.ISafeAreaView, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView, class Microsoft.Maui.IVisualTreeElement, class System.Collections.Generic.ICollection`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IList`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.IEnumerable" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="F#" Value="type Layout = class&#xA;    inherit View&#xA;    interface ILayout&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IContainer&#xA;    interface IList&lt;IView&gt;&#xA;    interface ICollection&lt;IView&gt;&#xA;    interface seq&lt;IView&gt;&#xA;    interface IEnumerable&#xA;    interface ISafeAreaView&#xA;    interface IPadding&#xA;    interface ICrossPlatformLayout&#xA;    interface IBindableLayout&#xA;    interface IPaddingElement&#xA;    interface IVisualTreeElement" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -63,7 +63,7 @@
     <Interface>
       <InterfaceName>System.Collections.IEnumerable</InterfaceName>
     </Interface>
-    <Interface FrameworkAlternate="net-maui-8.0">
+    <Interface FrameworkAlternate="net-maui-8.0;net-maui-9.0">
       <InterfaceName>Microsoft.Maui.ICrossPlatformLayout</InterfaceName>
     </Interface>
   </Interfaces>
@@ -277,7 +277,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-maui-8.0">
+        <Attribute FrameworkAlternate="net-maui-8.0;net-maui-9.0">
           <AttributeName Language="C#">[System.Obsolete("Use LayoutHandler.Mapper instead.")]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Obsolete("Use LayoutHandler.Mapper instead.")&gt;]</AttributeName>
         </Attribute>
@@ -375,7 +375,7 @@
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Maui.ILayout.CrossPlatformArrange(Microsoft.Maui.Graphics.Rect)</InterfaceMember>
-        <InterfaceMember FrameworkAlternate="net-maui-8.0">M:Microsoft.Maui.ILayout.Microsoft#Maui#ICrossPlatformLayout#CrossPlatformArrange(Microsoft.Maui.Graphics.Rect)</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-maui-8.0;net-maui-9.0">M:Microsoft.Maui.ILayout.Microsoft#Maui#ICrossPlatformLayout#CrossPlatformArrange(Microsoft.Maui.Graphics.Rect)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -404,7 +404,7 @@
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Maui.ILayout.CrossPlatformMeasure(System.Double,System.Double)</InterfaceMember>
-        <InterfaceMember FrameworkAlternate="net-maui-8.0">M:Microsoft.Maui.ILayout.Microsoft#Maui#ICrossPlatformLayout#CrossPlatformMeasure(System.Double,System.Double)</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-maui-8.0;net-maui-9.0">M:Microsoft.Maui.ILayout.Microsoft#Maui#ICrossPlatformLayout#CrossPlatformMeasure(System.Double,System.Double)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -656,7 +656,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-maui-8.0">
+        <Attribute FrameworkAlternate="net-maui-8.0;net-maui-9.0">
           <AttributeName Language="C#">[System.Obsolete]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Obsolete&gt;]</AttributeName>
         </Attribute>
@@ -688,7 +688,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-maui-8.0">
+        <Attribute FrameworkAlternate="net-maui-8.0;net-maui-9.0">
           <AttributeName Language="C#">[System.Obsolete]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Obsolete&gt;]</AttributeName>
         </Attribute>

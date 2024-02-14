@@ -5,11 +5,11 @@
   <TypeSignature Language="VB.NET" Value="Public Class Frame&#xA;Inherits ContentView&#xA;Implements IBorderElement, IElementConfiguration(Of Frame)" FrameworkAlternate="net-maui-7.0" />
   <TypeSignature Language="C++ CLI" Value="public ref class Frame : Microsoft::Maui::Controls::ContentView, Microsoft::Maui::Controls::IBorderElement, Microsoft::Maui::Controls::IElementConfiguration&lt;Microsoft::Maui::Controls::Frame ^&gt;" FrameworkAlternate="net-maui-7.0" />
   <TypeSignature Language="F#" Value="type Frame = class&#xA;    inherit ContentView&#xA;    interface IElementConfiguration&lt;Frame&gt;&#xA;    interface IPaddingElement&#xA;    interface IBorderElement&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform" FrameworkAlternate="net-maui-7.0" />
-  <TypeSignature Language="C#" Value="public class Frame : Microsoft.Maui.Controls.ContentView, Microsoft.Maui.Controls.IBorderElement, Microsoft.Maui.Controls.IElementConfiguration&lt;Microsoft.Maui.Controls.Frame&gt;, Microsoft.Maui.IContentView" FrameworkAlternate="net-maui-8.0" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Frame extends Microsoft.Maui.Controls.ContentView implements class Microsoft.Maui.Controls.IBorderElement, class Microsoft.Maui.Controls.IElementConfiguration`1&lt;class Microsoft.Maui.Controls.Frame&gt;, class Microsoft.Maui.Controls.IPaddingElement, class Microsoft.Maui.IContentView, class Microsoft.Maui.ICrossPlatformLayout, class Microsoft.Maui.IElement, class Microsoft.Maui.IPadding, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" FrameworkAlternate="net-maui-8.0" />
-  <TypeSignature Language="VB.NET" Value="Public Class Frame&#xA;Inherits ContentView&#xA;Implements IBorderElement, IContentView, IElementConfiguration(Of Frame)" FrameworkAlternate="net-maui-8.0" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Frame : Microsoft::Maui::Controls::ContentView, Microsoft::Maui::Controls::IBorderElement, Microsoft::Maui::Controls::IElementConfiguration&lt;Microsoft::Maui::Controls::Frame ^&gt;, Microsoft::Maui::IContentView" FrameworkAlternate="net-maui-8.0" />
-  <TypeSignature Language="F#" Value="type Frame = class&#xA;    inherit ContentView&#xA;    interface IElementConfiguration&lt;Frame&gt;&#xA;    interface IPaddingElement&#xA;    interface IBorderElement&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IContentView&#xA;    interface IPadding&#xA;    interface ICrossPlatformLayout" FrameworkAlternate="net-maui-8.0" />
+  <TypeSignature Language="C#" Value="public class Frame : Microsoft.Maui.Controls.ContentView, Microsoft.Maui.Controls.IBorderElement, Microsoft.Maui.Controls.IElementConfiguration&lt;Microsoft.Maui.Controls.Frame&gt;, Microsoft.Maui.IContentView" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Frame extends Microsoft.Maui.Controls.ContentView implements class Microsoft.Maui.Controls.IBorderElement, class Microsoft.Maui.Controls.IElementConfiguration`1&lt;class Microsoft.Maui.Controls.Frame&gt;, class Microsoft.Maui.Controls.IPaddingElement, class Microsoft.Maui.IContentView, class Microsoft.Maui.ICrossPlatformLayout, class Microsoft.Maui.IElement, class Microsoft.Maui.IPadding, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="VB.NET" Value="Public Class Frame&#xA;Inherits ContentView&#xA;Implements IBorderElement, IContentView, IElementConfiguration(Of Frame)" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Frame : Microsoft::Maui::Controls::ContentView, Microsoft::Maui::Controls::IBorderElement, Microsoft::Maui::Controls::IElementConfiguration&lt;Microsoft::Maui::Controls::Frame ^&gt;, Microsoft::Maui::IContentView" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="F#" Value="type Frame = class&#xA;    inherit ContentView&#xA;    interface IElementConfiguration&lt;Frame&gt;&#xA;    interface IPaddingElement&#xA;    interface IBorderElement&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IContentView&#xA;    interface IPadding&#xA;    interface ICrossPlatformLayout" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -36,13 +36,13 @@
     <Interface>
       <InterfaceName>Microsoft.Maui.IView</InterfaceName>
     </Interface>
-    <Interface FrameworkAlternate="net-maui-8.0">
+    <Interface FrameworkAlternate="net-maui-8.0;net-maui-9.0">
       <InterfaceName>Microsoft.Maui.IContentView</InterfaceName>
     </Interface>
-    <Interface FrameworkAlternate="net-maui-8.0">
+    <Interface FrameworkAlternate="net-maui-8.0;net-maui-9.0">
       <InterfaceName>Microsoft.Maui.ICrossPlatformLayout</InterfaceName>
     </Interface>
-    <Interface FrameworkAlternate="net-maui-8.0">
+    <Interface FrameworkAlternate="net-maui-8.0;net-maui-9.0">
       <InterfaceName>Microsoft.Maui.IPadding</InterfaceName>
     </Interface>
   </Interfaces>
@@ -536,7 +536,7 @@
         <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="bounds" Type="Microsoft.Maui.Graphics.Rect" Index="0" FrameworkAlternate="net-maui-8.0" />
+        <Parameter Name="bounds" Type="Microsoft.Maui.Graphics.Rect" Index="0" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       </Parameters>
       <Docs>
         <param name="bounds">To be added.</param>
@@ -565,8 +565,8 @@
         <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="widthConstraint" Type="System.Double" Index="0" FrameworkAlternate="net-maui-8.0" />
-        <Parameter Name="heightConstraint" Type="System.Double" Index="1" FrameworkAlternate="net-maui-8.0" />
+        <Parameter Name="widthConstraint" Type="System.Double" Index="0" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+        <Parameter Name="heightConstraint" Type="System.Double" Index="1" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       </Parameters>
       <Docs>
         <param name="widthConstraint">To be added.</param>

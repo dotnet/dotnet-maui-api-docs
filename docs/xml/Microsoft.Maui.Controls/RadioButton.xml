@@ -5,8 +5,8 @@
   <TypeSignature Language="VB.NET" Value="Public Class RadioButton&#xA;Inherits TemplatedView&#xA;Implements IBorderElement, IElementConfiguration(Of RadioButton), IFontElement, IRadioButton" />
   <TypeSignature Language="C++ CLI" Value="public ref class RadioButton : Microsoft::Maui::Controls::TemplatedView, Microsoft::Maui::Controls::IBorderElement, Microsoft::Maui::Controls::IElementConfiguration&lt;Microsoft::Maui::Controls::RadioButton ^&gt;, Microsoft::Maui::Controls::Internals::IFontElement, Microsoft::Maui::IRadioButton" />
   <TypeSignature Language="F#" Value="type RadioButton = class&#xA;    inherit TemplatedView&#xA;    interface IRadioButton&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface ITextStyle&#xA;    interface IContentView&#xA;    interface IPadding&#xA;    interface IButtonStroke&#xA;    interface IElementConfiguration&lt;RadioButton&gt;&#xA;    interface IFontElement&#xA;    interface IBorderElement" FrameworkAlternate="net-maui-7.0" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RadioButton extends Microsoft.Maui.Controls.TemplatedView implements class Microsoft.Maui.Controls.IBorderElement, class Microsoft.Maui.Controls.IElementConfiguration`1&lt;class Microsoft.Maui.Controls.RadioButton&gt;, class Microsoft.Maui.Controls.Internals.IFontElement, class Microsoft.Maui.IButtonStroke, class Microsoft.Maui.IContentView, class Microsoft.Maui.ICrossPlatformLayout, class Microsoft.Maui.IElement, class Microsoft.Maui.IPadding, class Microsoft.Maui.IRadioButton, class Microsoft.Maui.ITextStyle, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" FrameworkAlternate="net-maui-8.0" />
-  <TypeSignature Language="F#" Value="type RadioButton = class&#xA;    inherit TemplatedView&#xA;    interface IElementConfiguration&lt;RadioButton&gt;&#xA;    interface IFontElement&#xA;    interface IBorderElement&#xA;    interface IRadioButton&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface ITextStyle&#xA;    interface IContentView&#xA;    interface IPadding&#xA;    interface ICrossPlatformLayout&#xA;    interface IButtonStroke" FrameworkAlternate="net-maui-8.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RadioButton extends Microsoft.Maui.Controls.TemplatedView implements class Microsoft.Maui.Controls.IBorderElement, class Microsoft.Maui.Controls.IElementConfiguration`1&lt;class Microsoft.Maui.Controls.RadioButton&gt;, class Microsoft.Maui.Controls.Internals.IFontElement, class Microsoft.Maui.IButtonStroke, class Microsoft.Maui.IContentView, class Microsoft.Maui.ICrossPlatformLayout, class Microsoft.Maui.IElement, class Microsoft.Maui.IPadding, class Microsoft.Maui.IRadioButton, class Microsoft.Maui.ITextStyle, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="F#" Value="type RadioButton = class&#xA;    inherit TemplatedView&#xA;    interface IElementConfiguration&lt;RadioButton&gt;&#xA;    interface IFontElement&#xA;    interface IBorderElement&#xA;    interface IRadioButton&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface ITextStyle&#xA;    interface IContentView&#xA;    interface IPadding&#xA;    interface ICrossPlatformLayout&#xA;    interface IButtonStroke" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -48,7 +48,7 @@
     <Interface>
       <InterfaceName>Microsoft.Maui.IView</InterfaceName>
     </Interface>
-    <Interface FrameworkAlternate="net-maui-8.0">
+    <Interface FrameworkAlternate="net-maui-8.0;net-maui-9.0">
       <InterfaceName>Microsoft.Maui.ICrossPlatformLayout</InterfaceName>
     </Interface>
   </Interfaces>
@@ -354,7 +354,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-maui-8.0">
+        <Attribute FrameworkAlternate="net-maui-8.0;net-maui-9.0">
           <AttributeName Language="C#">[System.Obsolete("Use RadioButtonHandler.Mapper instead.")]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Obsolete("Use RadioButtonHandler.Mapper instead.")&gt;]</AttributeName>
         </Attribute>
@@ -700,8 +700,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="handler" Type="Microsoft.Maui.Handlers.IRadioButtonHandler" Index="0" FrameworkAlternate="net-maui-8.0" />
-        <Parameter Name="radioButton" Type="Microsoft.Maui.Controls.RadioButton" Index="1" FrameworkAlternate="net-maui-8.0" />
+        <Parameter Name="handler" Type="Microsoft.Maui.Handlers.IRadioButtonHandler" Index="0" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+        <Parameter Name="radioButton" Type="Microsoft.Maui.Controls.RadioButton" Index="1" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       </Parameters>
       <Docs>
         <param name="handler">To be added.</param>
@@ -726,8 +726,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="handler" Type="Microsoft.Maui.Handlers.RadioButtonHandler" Index="0" FrameworkAlternate="net-maui-8.0" />
-        <Parameter Name="radioButton" Type="Microsoft.Maui.Controls.RadioButton" Index="1" FrameworkAlternate="net-maui-8.0" />
+        <Parameter Name="handler" Type="Microsoft.Maui.Handlers.RadioButtonHandler" Index="0" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+        <Parameter Name="radioButton" Type="Microsoft.Maui.Controls.RadioButton" Index="1" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       </Parameters>
       <Docs>
         <param name="handler">To be added.</param>
@@ -1113,7 +1113,7 @@
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember FrameworkAlternate="net-maui-7.0">P:Microsoft.Maui.IButtonStroke.CornerRadius</InterfaceMember>
-        <InterfaceMember FrameworkAlternate="net-maui-8.0">P:Microsoft.Maui.Controls.IBorderElement.CornerRadius</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-maui-8.0;net-maui-9.0">P:Microsoft.Maui.Controls.IBorderElement.CornerRadius</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
