@@ -1,15 +1,10 @@
 <Type Name="Window" FullName="Microsoft.Maui.Controls.Window">
-  <TypeSignature Language="C#" Value="public class Window : Microsoft.Maui.Controls.NavigableElement, Microsoft.Maui.IMenuBarElement, Microsoft.Maui.IToolbarElement, Microsoft.Maui.IVisualTreeElement, Microsoft.Maui.IWindow" FrameworkAlternate="net-maui-7.0" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Window extends Microsoft.Maui.Controls.NavigableElement implements class Microsoft.Maui.IElement, class Microsoft.Maui.IMenuBarElement, class Microsoft.Maui.ITitledElement, class Microsoft.Maui.IToolbarElement, class Microsoft.Maui.IVisualTreeElement, class Microsoft.Maui.IWindow" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="C#" Value="public class Window : Microsoft.Maui.Controls.NavigableElement, Microsoft.Maui.IMenuBarElement, Microsoft.Maui.IToolbarElement, Microsoft.Maui.IWindow" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Window extends Microsoft.Maui.Controls.NavigableElement implements class Microsoft.Maui.IElement, class Microsoft.Maui.IMenuBarElement, class Microsoft.Maui.ITitledElement, class Microsoft.Maui.IToolbarElement, class Microsoft.Maui.IWindow" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Window" />
-  <TypeSignature Language="VB.NET" Value="Public Class Window&#xA;Inherits NavigableElement&#xA;Implements IMenuBarElement, IToolbarElement, IVisualTreeElement, IWindow" FrameworkAlternate="net-maui-7.0" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Window : Microsoft::Maui::Controls::NavigableElement, Microsoft::Maui::IMenuBarElement, Microsoft::Maui::IToolbarElement, Microsoft::Maui::IVisualTreeElement, Microsoft::Maui::IWindow" FrameworkAlternate="net-maui-7.0" />
-  <TypeSignature Language="F#" Value="type Window = class&#xA;    inherit NavigableElement&#xA;    interface IWindow&#xA;    interface ITitledElement&#xA;    interface IElement&#xA;    interface IVisualTreeElement&#xA;    interface IToolbarElement&#xA;    interface IMenuBarElement" FrameworkAlternate="net-maui-7.0" />
-  <TypeSignature Language="C#" Value="public class Window : Microsoft.Maui.Controls.NavigableElement, Microsoft.Maui.IMenuBarElement, Microsoft.Maui.IToolbarElement, Microsoft.Maui.IWindow" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Window extends Microsoft.Maui.Controls.NavigableElement implements class Microsoft.Maui.IElement, class Microsoft.Maui.IMenuBarElement, class Microsoft.Maui.ITitledElement, class Microsoft.Maui.IToolbarElement, class Microsoft.Maui.IWindow" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
-  <TypeSignature Language="VB.NET" Value="Public Class Window&#xA;Inherits NavigableElement&#xA;Implements IMenuBarElement, IToolbarElement, IWindow" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Window : Microsoft::Maui::Controls::NavigableElement, Microsoft::Maui::IMenuBarElement, Microsoft::Maui::IToolbarElement, Microsoft::Maui::IWindow" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
-  <TypeSignature Language="F#" Value="type Window = class&#xA;    inherit NavigableElement&#xA;    interface IWindow&#xA;    interface ITitledElement&#xA;    interface IElement&#xA;    interface IToolbarElement&#xA;    interface IMenuBarElement" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="VB.NET" Value="Public Class Window&#xA;Inherits NavigableElement&#xA;Implements IMenuBarElement, IToolbarElement, IWindow" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Window : Microsoft::Maui::Controls::NavigableElement, Microsoft::Maui::IMenuBarElement, Microsoft::Maui::IToolbarElement, Microsoft::Maui::IWindow" />
+  <TypeSignature Language="F#" Value="type Window = class&#xA;    inherit NavigableElement&#xA;    interface IWindow&#xA;    interface ITitledElement&#xA;    interface IElement&#xA;    interface IToolbarElement&#xA;    interface IMenuBarElement" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -29,9 +24,6 @@
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Maui.IToolbarElement</InterfaceName>
-    </Interface>
-    <Interface FrameworkAlternate="net-maui-7.0">
-      <InterfaceName>Microsoft.Maui.IVisualTreeElement</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Maui.IWindow</InterfaceName>
@@ -168,7 +160,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-maui-8.0;net-maui-9.0">
+        <Attribute>
           <AttributeName Language="C#">[System.Obsolete("Use WindowHandler.Mapper instead.")]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Obsolete("Use WindowHandler.Mapper instead.")&gt;]</AttributeName>
         </Attribute>
@@ -515,31 +507,6 @@
       <Docs>
         <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Microsoft.Maui.IVisualTreeElement.GetVisualChildren">
-      <MemberSignature Language="C#" Value="System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IVisualTreeElement&gt; IVisualTreeElement.GetVisualChildren ();" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Maui.IVisualTreeElement&gt; Microsoft.Maui.IVisualTreeElement.GetVisualChildren() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Window.Microsoft#Maui#IVisualTreeElement#GetVisualChildren" />
-      <MemberSignature Language="VB.NET" Value="Function GetVisualChildren () As IReadOnlyList(Of IVisualTreeElement) Implements IVisualTreeElement.GetVisualChildren" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IReadOnlyList&lt;Microsoft::Maui::IVisualTreeElement ^&gt; ^ Microsoft.Maui.IVisualTreeElement.GetVisualChildren() = Microsoft::Maui::IVisualTreeElement::GetVisualChildren;" />
-      <MemberSignature Language="F#" Value="override this.Microsoft.Maui.IVisualTreeElement.GetVisualChildren : unit -&gt; System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IVisualTreeElement&gt;" Usage="window.Microsoft.Maui.IVisualTreeElement.GetVisualChildren " />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.Maui.IVisualTreeElement.GetVisualChildren</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IVisualTreeElement&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
