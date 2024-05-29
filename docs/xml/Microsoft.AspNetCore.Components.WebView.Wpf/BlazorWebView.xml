@@ -17,6 +17,16 @@
       <InterfaceName>System.IAsyncDisposable</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
             A Windows Presentation Foundation (WPF) control for hosting Razor components locally in Windows desktop applications.
@@ -459,7 +469,7 @@
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="workItem" Type="System.Action&lt;System.IServiceProvider&gt;" Index="0" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+        <Parameter Name="workItem" Type="System.Action&lt;System.IServiceProvider&gt;" />
       </Parameters>
       <Docs>
         <param name="workItem">The action to call.</param>

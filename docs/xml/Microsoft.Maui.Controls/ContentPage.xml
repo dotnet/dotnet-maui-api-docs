@@ -1,12 +1,10 @@
 <Type Name="ContentPage" FullName="Microsoft.Maui.Controls.ContentPage">
   <TypeSignature Language="C#" Value="public class ContentPage : Microsoft.Maui.Controls.TemplatedPage, Microsoft.Maui.HotReload.IHotReloadableView, Microsoft.Maui.IContentView" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContentPage extends Microsoft.Maui.Controls.TemplatedPage implements class Microsoft.Maui.HotReload.IHotReloadableView, class Microsoft.Maui.IContentView, class Microsoft.Maui.IElement, class Microsoft.Maui.IPadding, class Microsoft.Maui.IReplaceableView, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContentPage extends Microsoft.Maui.Controls.TemplatedPage implements class Microsoft.Maui.HotReload.IHotReloadableView, class Microsoft.Maui.IContentView, class Microsoft.Maui.ICrossPlatformLayout, class Microsoft.Maui.IElement, class Microsoft.Maui.IPadding, class Microsoft.Maui.IReplaceableView, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.ContentPage" />
   <TypeSignature Language="VB.NET" Value="Public Class ContentPage&#xA;Inherits TemplatedPage&#xA;Implements IContentView, IHotReloadableView" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContentPage : Microsoft::Maui::Controls::TemplatedPage, Microsoft::Maui::HotReload::IHotReloadableView, Microsoft::Maui::IContentView" />
-  <TypeSignature Language="F#" Value="type ContentPage = class&#xA;    inherit TemplatedPage&#xA;    interface IContentView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IPadding&#xA;    interface IHotReloadableView&#xA;    interface IReplaceableView" FrameworkAlternate="net-maui-7.0" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContentPage extends Microsoft.Maui.Controls.TemplatedPage implements class Microsoft.Maui.HotReload.IHotReloadableView, class Microsoft.Maui.IContentView, class Microsoft.Maui.ICrossPlatformLayout, class Microsoft.Maui.IElement, class Microsoft.Maui.IPadding, class Microsoft.Maui.IReplaceableView, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
-  <TypeSignature Language="F#" Value="type ContentPage = class&#xA;    inherit TemplatedPage&#xA;    interface IContentView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IPadding&#xA;    interface ICrossPlatformLayout&#xA;    interface IHotReloadableView&#xA;    interface IReplaceableView" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="F#" Value="type ContentPage = class&#xA;    inherit TemplatedPage&#xA;    interface IContentView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IPadding&#xA;    interface ICrossPlatformLayout&#xA;    interface IHotReloadableView&#xA;    interface IReplaceableView" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -22,6 +20,9 @@
       <InterfaceName>Microsoft.Maui.IContentView</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>Microsoft.Maui.ICrossPlatformLayout</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Microsoft.Maui.IElement</InterfaceName>
     </Interface>
     <Interface>
@@ -35,9 +36,6 @@
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Maui.IView</InterfaceName>
-    </Interface>
-    <Interface FrameworkAlternate="net-maui-8.0;net-maui-9.0">
-      <InterfaceName>Microsoft.Maui.ICrossPlatformLayout</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
@@ -457,7 +455,7 @@ namespace ContentPageExample
         <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="bounds" Type="Microsoft.Maui.Graphics.Rect" Index="0" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+        <Parameter Name="bounds" Type="Microsoft.Maui.Graphics.Rect" />
       </Parameters>
       <Docs>
         <param name="bounds">To be added.</param>
@@ -486,8 +484,8 @@ namespace ContentPageExample
         <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="widthConstraint" Type="System.Double" Index="0" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
-        <Parameter Name="heightConstraint" Type="System.Double" Index="1" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+        <Parameter Name="widthConstraint" Type="System.Double" />
+        <Parameter Name="heightConstraint" Type="System.Double" />
       </Parameters>
       <Docs>
         <param name="widthConstraint">To be added.</param>

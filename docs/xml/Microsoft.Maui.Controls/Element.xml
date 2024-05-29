@@ -112,7 +112,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="element" Type="Microsoft.Maui.Controls.Element" Index="0" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+        <Parameter Name="element" Type="Microsoft.Maui.Controls.Element" />
       </Parameters>
       <Docs>
         <param name="element">The <see cref="T:Microsoft.Maui.Controls.Element" /> to add to the logical children.</param>
@@ -280,7 +280,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-maui-8.0;net-maui-9.0">
+        <Attribute>
           <AttributeName Language="C#">[System.Obsolete("Use ViewHandler.ViewMapper instead.")]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Obsolete("Use ViewHandler.ViewMapper instead.")&gt;]</AttributeName>
         </Attribute>
@@ -478,9 +478,8 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler HandlerChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.Element.HandlerChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event HandlerChanged As EventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ HandlerChanged;" FrameworkAlternate="net-maui-7.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ HandlerChanged;" />
       <MemberSignature Language="F#" Value="member this.HandlerChanged : EventHandler " Usage="member this.HandlerChanged : System.EventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ HandlerChanged;" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -499,9 +498,8 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.HandlerChangingEventArgs&gt; HandlerChanging" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.Element.HandlerChanging" />
       <MemberSignature Language="VB.NET" Value="Public Event HandlerChanging As EventHandler(Of HandlerChangingEventArgs) " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Controls::HandlerChangingEventArgs ^&gt; ^ HandlerChanging;" FrameworkAlternate="net-maui-7.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;Microsoft::Maui::Controls::HandlerChangingEventArgs ^&gt; ^ HandlerChanging;" />
       <MemberSignature Language="F#" Value="member this.HandlerChanging : EventHandler&lt;Microsoft.Maui.Controls.HandlerChangingEventArgs&gt; " Usage="member this.HandlerChanging : System.EventHandler&lt;Microsoft.Maui.Controls.HandlerChangingEventArgs&gt; " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;Microsoft::Maui::Controls::HandlerChangingEventArgs ^&gt; ^ HandlerChanging;" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -553,8 +551,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
-        <Parameter Name="element" Type="Microsoft.Maui.Controls.Element" Index="1" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="element" Type="Microsoft.Maui.Controls.Element" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index at which <see cref="T:Microsoft.Maui.Controls.Element" /> should be inserted.</param>
@@ -1228,9 +1226,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::Element ^ RealParent { Microsoft::Maui::Controls::Element ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.RealParent : Microsoft.Maui.Controls.Element" Usage="Microsoft.Maui.Controls.Element.RealParent" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember FrameworkAlternate="net-maui-7.0">P:Microsoft.Maui.Controls.IElementController.RealParent</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -1290,7 +1285,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="element" Type="Microsoft.Maui.Controls.Element" Index="0" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+        <Parameter Name="element" Type="Microsoft.Maui.Controls.Element" />
       </Parameters>
       <Docs>
         <param name="element">The <see cref="T:Microsoft.Maui.Controls.Element" /> to remove.</param>
