@@ -1,12 +1,10 @@
 <Type Name="ContentPresenter" FullName="Microsoft.Maui.Controls.ContentPresenter">
   <TypeSignature Language="C#" Value="public class ContentPresenter : Microsoft.Maui.Controls.Compatibility.Layout, Microsoft.Maui.IContentView" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContentPresenter extends Microsoft.Maui.Controls.Compatibility.Layout implements class Microsoft.Maui.IContentView, class Microsoft.Maui.IElement, class Microsoft.Maui.IPadding, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" FrameworkAlternate="net-maui-7.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContentPresenter extends Microsoft.Maui.Controls.Compatibility.Layout implements class Microsoft.Maui.IContentView, class Microsoft.Maui.ICrossPlatformLayout, class Microsoft.Maui.IElement, class Microsoft.Maui.IPadding, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.ContentPresenter" />
   <TypeSignature Language="VB.NET" Value="Public Class ContentPresenter&#xA;Inherits Layout&#xA;Implements IContentView" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContentPresenter : Microsoft::Maui::Controls::Compatibility::Layout, Microsoft::Maui::IContentView" />
-  <TypeSignature Language="F#" Value="type ContentPresenter = class&#xA;    inherit Layout&#xA;    interface IContentView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IPadding" FrameworkAlternate="net-maui-7.0" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContentPresenter extends Microsoft.Maui.Controls.Compatibility.Layout implements class Microsoft.Maui.IContentView, class Microsoft.Maui.ICrossPlatformLayout, class Microsoft.Maui.IElement, class Microsoft.Maui.IPadding, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
-  <TypeSignature Language="F#" Value="type ContentPresenter = class&#xA;    inherit Layout&#xA;    interface IContentView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IPadding&#xA;    interface ICrossPlatformLayout" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="F#" Value="type ContentPresenter = class&#xA;    inherit Layout&#xA;    interface IContentView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IPadding&#xA;    interface ICrossPlatformLayout" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -19,6 +17,9 @@
       <InterfaceName>Microsoft.Maui.IContentView</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>Microsoft.Maui.ICrossPlatformLayout</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Microsoft.Maui.IElement</InterfaceName>
     </Interface>
     <Interface>
@@ -29,9 +30,6 @@
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Maui.IView</InterfaceName>
-    </Interface>
-    <Interface FrameworkAlternate="net-maui-8.0;net-maui-9.0">
-      <InterfaceName>Microsoft.Maui.ICrossPlatformLayout</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>
@@ -203,64 +201,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Microsoft.Maui.IContentView.CrossPlatformArrange">
-      <MemberSignature Language="C#" Value="Microsoft.Maui.Graphics.Size IContentView.CrossPlatformArrange (Microsoft.Maui.Graphics.Rect bounds);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype Microsoft.Maui.Graphics.Size Microsoft.Maui.IContentView.CrossPlatformArrange(valuetype Microsoft.Maui.Graphics.Rect bounds) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ContentPresenter.Microsoft#Maui#IContentView#CrossPlatformArrange(Microsoft.Maui.Graphics.Rect)" />
-      <MemberSignature Language="VB.NET" Value="Function CrossPlatformArrange (bounds As Rect) As Size Implements IContentView.CrossPlatformArrange" />
-      <MemberSignature Language="C++ CLI" Value=" virtual Microsoft::Maui::Graphics::Size Microsoft.Maui.IContentView.CrossPlatformArrange(Microsoft::Maui::Graphics::Rect bounds) = Microsoft::Maui::IContentView::CrossPlatformArrange;" />
-      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.IContentView.CrossPlatformArrange : Microsoft.Maui.Graphics.Rect -&gt; Microsoft.Maui.Graphics.Size&#xA;override this.Microsoft.Maui.IContentView.CrossPlatformArrange : Microsoft.Maui.Graphics.Rect -&gt; Microsoft.Maui.Graphics.Size" Usage="contentPresenter.Microsoft.Maui.IContentView.CrossPlatformArrange bounds" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.Maui.IContentView.CrossPlatformArrange(Microsoft.Maui.Graphics.Rect)</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="bounds" Type="Microsoft.Maui.Graphics.Rect" Index="0" FrameworkAlternate="net-maui-7.0" />
-      </Parameters>
-      <Docs>
-        <param name="bounds">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Microsoft.Maui.IContentView.CrossPlatformMeasure">
-      <MemberSignature Language="C#" Value="Microsoft.Maui.Graphics.Size IContentView.CrossPlatformMeasure (double widthConstraint, double heightConstraint);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype Microsoft.Maui.Graphics.Size Microsoft.Maui.IContentView.CrossPlatformMeasure(float64 widthConstraint, float64 heightConstraint) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ContentPresenter.Microsoft#Maui#IContentView#CrossPlatformMeasure(System.Double,System.Double)" />
-      <MemberSignature Language="VB.NET" Value="Function CrossPlatformMeasure (widthConstraint As Double, heightConstraint As Double) As Size Implements IContentView.CrossPlatformMeasure" />
-      <MemberSignature Language="C++ CLI" Value=" virtual Microsoft::Maui::Graphics::Size Microsoft.Maui.IContentView.CrossPlatformMeasure(double widthConstraint, double heightConstraint) = Microsoft::Maui::IContentView::CrossPlatformMeasure;" />
-      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.IContentView.CrossPlatformMeasure : double * double -&gt; Microsoft.Maui.Graphics.Size&#xA;override this.Microsoft.Maui.IContentView.CrossPlatformMeasure : double * double -&gt; Microsoft.Maui.Graphics.Size" Usage="contentPresenter.Microsoft.Maui.IContentView.CrossPlatformMeasure (widthConstraint, heightConstraint)" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.Maui.IContentView.CrossPlatformMeasure(System.Double,System.Double)</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="widthConstraint" Type="System.Double" Index="0" FrameworkAlternate="net-maui-7.0" />
-        <Parameter Name="heightConstraint" Type="System.Double" Index="1" FrameworkAlternate="net-maui-7.0" />
-      </Parameters>
-      <Docs>
-        <param name="widthConstraint">To be added.</param>
-        <param name="heightConstraint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Microsoft.Maui.IContentView.PresentedContent">
       <MemberSignature Language="C#" Value="Microsoft.Maui.IView Microsoft.Maui.IContentView.PresentedContent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.IView Microsoft.Maui.IContentView.PresentedContent" />
@@ -305,7 +245,7 @@
         <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="bounds" Type="Microsoft.Maui.Graphics.Rect" Index="0" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+        <Parameter Name="bounds" Type="Microsoft.Maui.Graphics.Rect" />
       </Parameters>
       <Docs>
         <param name="bounds">To be added.</param>
@@ -334,8 +274,8 @@
         <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="widthConstraint" Type="System.Double" Index="0" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
-        <Parameter Name="heightConstraint" Type="System.Double" Index="1" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+        <Parameter Name="widthConstraint" Type="System.Double" />
+        <Parameter Name="heightConstraint" Type="System.Double" />
       </Parameters>
       <Docs>
         <param name="widthConstraint">To be added.</param>

@@ -35,12 +35,6 @@
       </ReturnValue>
       <TypeParameters>
         <TypeParameter Name="TApp">
-          <Attributes>
-            <Attribute FrameworkAlternate="net-maui-7.0">
-              <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembers(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.PublicConstructors)]</AttributeName>
-              <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembers(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.PublicConstructors)&gt;]</AttributeName>
-            </Attribute>
-          </Attributes>
           <Constraints>
             <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
             <InterfaceName>Microsoft.Maui.IApplication</InterfaceName>
@@ -53,48 +47,6 @@
       <Docs>
         <typeparam name="TApp">To be added.</typeparam>
         <param name="builder">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="UseMauiEmbedding&lt;TApp&gt;">
-      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Hosting.MauiAppBuilder UseMauiEmbedding&lt;TApp&gt; (this Microsoft.Maui.Hosting.MauiAppBuilder builder, Func&lt;IServiceProvider,Microsoft.Maui.Controls.Application&gt; implementationFactory) where TApp : class, Microsoft.Maui.IApplication;" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Maui.Hosting.MauiAppBuilder UseMauiEmbedding&lt;class (class Microsoft.Maui.IApplication) TApp&gt;(class Microsoft.Maui.Hosting.MauiAppBuilder builder, class System.Func`2&lt;class System.IServiceProvider, class Microsoft.Maui.Controls.Application&gt; implementationFactory) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Embedding.AppHostBuilderExtensions.UseMauiEmbedding``1(Microsoft.Maui.Hosting.MauiAppBuilder,System.Func{System.IServiceProvider,Microsoft.Maui.Controls.Application})" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function UseMauiEmbedding(Of TApp As {Class, IApplication}) (builder As MauiAppBuilder, implementationFactory As Func(Of IServiceProvider, Application)) As MauiAppBuilder" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TApp&gt;&#xA; where TApp : class, Microsoft::Maui::IApplication[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::Maui::Hosting::MauiAppBuilder ^ UseMauiEmbedding(Microsoft::Maui::Hosting::MauiAppBuilder ^ builder, Func&lt;IServiceProvider ^, Microsoft::Maui::Controls::Application ^&gt; ^ implementationFactory);" />
-      <MemberSignature Language="F#" Value="static member UseMauiEmbedding : Microsoft.Maui.Hosting.MauiAppBuilder * Func&lt;IServiceProvider, Microsoft.Maui.Controls.Application&gt; -&gt; Microsoft.Maui.Hosting.MauiAppBuilder (requires 'App : null and 'App :&gt; Microsoft.Maui.IApplication)" Usage="Microsoft.Maui.Embedding.AppHostBuilderExtensions.UseMauiEmbedding (builder, implementationFactory)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Maui.Controls.Compatibility</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Maui.Hosting.MauiAppBuilder</ReturnType>
-      </ReturnValue>
-      <TypeParameters>
-        <TypeParameter Name="TApp">
-          <Attributes>
-            <Attribute>
-              <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembers(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.PublicConstructors)]</AttributeName>
-              <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembers(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.PublicConstructors)&gt;]</AttributeName>
-            </Attribute>
-          </Attributes>
-          <Constraints>
-            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
-            <InterfaceName>Microsoft.Maui.IApplication</InterfaceName>
-          </Constraints>
-        </TypeParameter>
-      </TypeParameters>
-      <Parameters>
-        <Parameter Name="builder" Type="Microsoft.Maui.Hosting.MauiAppBuilder" Index="0" FrameworkAlternate="net-maui-7.0" RefType="this" />
-        <Parameter Name="implementationFactory" Type="System.Func&lt;System.IServiceProvider,Microsoft.Maui.Controls.Application&gt;" Index="1" FrameworkAlternate="net-maui-7.0" />
-      </Parameters>
-      <Docs>
-        <typeparam name="TApp">To be added.</typeparam>
-        <param name="builder">To be added.</param>
-        <param name="implementationFactory">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -124,8 +76,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="builder" Type="Microsoft.Maui.Hosting.MauiAppBuilder" RefType="this" Index="0" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
-        <Parameter Name="implementationFactory" Type="System.Func&lt;System.IServiceProvider,TApp&gt;" Index="1" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+        <Parameter Name="builder" Type="Microsoft.Maui.Hosting.MauiAppBuilder" RefType="this" />
+        <Parameter Name="implementationFactory" Type="System.Func&lt;System.IServiceProvider,TApp&gt;" />
       </Parameters>
       <Docs>
         <typeparam name="TApp">To be added.</typeparam>
