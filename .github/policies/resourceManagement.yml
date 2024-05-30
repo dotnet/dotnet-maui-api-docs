@@ -1,12 +1,12 @@
-name: GitOps.PullRequestIssueManagement
-description: Create publishing pull requests
+name: GitOps.PullRequestIssueManagement - Scheduled PRs
+description: Create pull requests on a schedule
 resource: repository
 disabled: false
 where:
 configuration:
   resourceManagementConfiguration:
     scheduledSearches:
-    - description: Push to live branch (publish)
+    - description: Push to live branch (scheduled publish)
       frequencies:
       - hourly:
           hour: 3
@@ -16,7 +16,7 @@ configuration:
           head: main
           base: live
           title: Merge main into live
-          body: Please don't squash-merge this PR.          
+          body: Please don't squash-merge this PR.
     eventResponderTasks:
     - description: Label main to live PRs
       triggerOnOwnActions: true
