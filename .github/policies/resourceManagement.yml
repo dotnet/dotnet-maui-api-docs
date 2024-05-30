@@ -8,8 +8,8 @@ configuration:
     scheduledSearches:
     - description: Push to live branch (scheduled publish)
       frequencies:
-      - hourly:
-          hour: 3
+      - daily:
+          hour: 08:0
       filters: []
       actions:
       - createPullRequest:
