@@ -1,0 +1,143 @@
+<Type Name="GridExtensions" FullName="Microsoft.Maui.Controls.GridExtensions">
+  <TypeSignature Language="C#" Value="public static class GridExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit GridExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.GridExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module GridExtensions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GridExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type GridExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static void Add (this Microsoft.Maui.Controls.Grid grid, Microsoft.Maui.IView view, int column = 0, int row = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class Microsoft.Maui.Controls.Grid grid, class Microsoft.Maui.IView view, int32 column, int32 row) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.GridExtensions.Add(Microsoft.Maui.Controls.Grid,Microsoft.Maui.IView,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Add (grid As Grid, view As IView, Optional column As Integer = 0, Optional row As Integer = 0)" />
+      <MemberSignature Language="F#" Value="static member Add : Microsoft.Maui.Controls.Grid * Microsoft.Maui.IView * int * int -&gt; unit" Usage="Microsoft.Maui.Controls.GridExtensions.Add (grid, view, column, row)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="grid" Type="Microsoft.Maui.Controls.Grid" RefType="this" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+        <Parameter Name="column" Type="System.Int32" />
+        <Parameter Name="row" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="grid">The <see cref="T:Microsoft.Maui.Controls.Grid" /> to which the <see cref="T:Microsoft.Maui.IView" /> will be added.</param>
+        <param name="view">The <see cref="T:Microsoft.Maui.IView" /> to add.</param>
+        <param name="column">The column in which to place the <see cref="T:Microsoft.Maui.IView" />.</param>
+        <param name="row">The row in which to place the <see cref="T:Microsoft.Maui.IView" />.</param>
+        <summary>
+            Adds an <see cref="T:Microsoft.Maui.IView" /> to the <see cref="T:Microsoft.Maui.Controls.Grid" /> at the specified column and row with a row span of 1 and a column span of 1.
+            </summary>
+        <remarks>If the <see cref="T:Microsoft.Maui.Controls.Grid" /> does not have enough rows/columns to encompass the specified location, they will be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="view" /> is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+            Thrown when <paramref name="row" /> or <paramref name="column" /> are less than 0.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static void Add (this Microsoft.Maui.Controls.Grid grid, Microsoft.Maui.IView view, int left, int right, int top, int bottom);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class Microsoft.Maui.Controls.Grid grid, class Microsoft.Maui.IView view, int32 left, int32 right, int32 top, int32 bottom) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.GridExtensions.Add(Microsoft.Maui.Controls.Grid,Microsoft.Maui.IView,System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Add (grid As Grid, view As IView, left As Integer, right As Integer, top As Integer, bottom As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void Add(Microsoft::Maui::Controls::Grid ^ grid, Microsoft::Maui::IView ^ view, int left, int right, int top, int bottom);" />
+      <MemberSignature Language="F#" Value="static member Add : Microsoft.Maui.Controls.Grid * Microsoft.Maui.IView * int * int * int * int -&gt; unit" Usage="Microsoft.Maui.Controls.GridExtensions.Add (grid, view, left, right, top, bottom)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("This method is obsolete. Please use AddWithSpan(this Grid, IView, int, int, int, int) instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method is obsolete. Please use AddWithSpan(this Grid, IView, int, int, int, int) instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="grid" Type="Microsoft.Maui.Controls.Grid" RefType="this" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+        <Parameter Name="left" Type="System.Int32" />
+        <Parameter Name="right" Type="System.Int32" />
+        <Parameter Name="top" Type="System.Int32" />
+        <Parameter Name="bottom" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="grid">The <see cref="T:Microsoft.Maui.Controls.Grid" /> to which the <see cref="T:Microsoft.Maui.IView" /> will be added.</param>
+        <param name="view">The <see cref="T:Microsoft.Maui.IView" /> to add.</param>
+        <param name="left">The left edge of the column span. Must be greater than or equal to 0.</param>
+        <param name="right">The right edge of the column span. Must be greater than left. The <see cref="T:Microsoft.Maui.IView" /> won't occupy this column, but will stop just before it.</param>
+        <param name="top">The top edge of the row span. Must be greater than or equal to 0.</param>
+        <param name="bottom">The bottom edge of the row span. Must be greater than top. The <see cref="T:Microsoft.Maui.IView" /> won't occupy this row, but will stop just before it.</param>
+        <summary>
+            Adds an <see cref="T:Microsoft.Maui.IView" /> to the <see cref="T:Microsoft.Maui.Controls.Grid" /> at the specified row and column spans. 
+            </summary>
+        <remarks>If the <see cref="T:Microsoft.Maui.Controls.Grid" /> does not have enough rows/columns to encompass the specified spans, they will be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="view" /> is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+            Thrown when <paramref name="left" /> or <paramref name="top" /> are less than 0, <paramref name="bottom" /> is less than or equal to <paramref name="top" />,
+            or <paramref name="right" /> is less than or equal to <paramref name="left" />.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddWithSpan">
+      <MemberSignature Language="C#" Value="public static void AddWithSpan (this Microsoft.Maui.Controls.Grid grid, Microsoft.Maui.IView view, int row = 0, int column = 0, int rowSpan = 1, int columnSpan = 1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddWithSpan(class Microsoft.Maui.Controls.Grid grid, class Microsoft.Maui.IView view, int32 row, int32 column, int32 rowSpan, int32 columnSpan) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.GridExtensions.AddWithSpan(Microsoft.Maui.Controls.Grid,Microsoft.Maui.IView,System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub AddWithSpan (grid As Grid, view As IView, Optional row As Integer = 0, Optional column As Integer = 0, Optional rowSpan As Integer = 1, Optional columnSpan As Integer = 1)" />
+      <MemberSignature Language="F#" Value="static member AddWithSpan : Microsoft.Maui.Controls.Grid * Microsoft.Maui.IView * int * int * int * int -&gt; unit" Usage="Microsoft.Maui.Controls.GridExtensions.AddWithSpan (grid, view, row, column, rowSpan, columnSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="grid" Type="Microsoft.Maui.Controls.Grid" RefType="this" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+        <Parameter Name="row" Type="System.Int32" />
+        <Parameter Name="column" Type="System.Int32" />
+        <Parameter Name="rowSpan" Type="System.Int32" />
+        <Parameter Name="columnSpan" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="grid">The <see cref="T:Microsoft.Maui.Controls.Grid" /> to which the <see cref="T:Microsoft.Maui.IView" /> will be added.</param>
+        <param name="view">The <see cref="T:Microsoft.Maui.IView" /> to add.</param>
+        <param name="row">The top row in which to place the <see cref="T:Microsoft.Maui.IView" />. Defaults to 0.</param>
+        <param name="column">The left column in which to place the <see cref="T:Microsoft.Maui.IView" />. Defaults to 0.</param>
+        <param name="rowSpan">The number of rows the <see cref="T:Microsoft.Maui.IView" /> should span. Defaults to 1.</param>
+        <param name="columnSpan">The number of columns the <see cref="T:Microsoft.Maui.IView" /> should span. Defaults to 1.</param>
+        <summary>
+            Adds an <see cref="T:Microsoft.Maui.IView" /> to the the <see cref="T:Microsoft.Maui.Controls.Grid" /> at the specified row and column with the specified row and column spans.
+            </summary>
+        <remarks>If the <see cref="T:Microsoft.Maui.Controls.Grid" /> does not have enough rows/columns to encompass the specified spans, they will be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="view" /> is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+            Thrown when <paramref name="row" /> or <paramref name="column" /> are less than 0, or  <paramref name="rowSpan" /> or <paramref name="columnSpan" /> are less than 1.
+            </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

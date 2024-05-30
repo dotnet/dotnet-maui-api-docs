@@ -1,0 +1,499 @@
+<Type Name="ITemplatedItemsList&lt;TItem&gt;" FullName="Microsoft.Maui.Controls.ITemplatedItemsList&lt;TItem&gt;">
+  <TypeSignature Language="C#" Value="public interface ITemplatedItemsList&lt;TItem&gt; : System.Collections.Generic.IEnumerable&lt;TItem&gt;, System.Collections.Generic.IReadOnlyCollection&lt;TItem&gt;, System.Collections.Generic.IReadOnlyList&lt;TItem&gt;, System.Collections.Specialized.INotifyCollectionChanged where TItem : BindableObject" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit ITemplatedItemsList`1&lt;(class Microsoft.Maui.Controls.BindableObject) TItem&gt; implements class System.Collections.Generic.IEnumerable`1&lt;!TItem&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;!TItem&gt;, class System.Collections.Generic.IReadOnlyList`1&lt;!TItem&gt;, class System.Collections.IEnumerable, class System.Collections.Specialized.INotifyCollectionChanged" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.ITemplatedItemsList`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITemplatedItemsList(Of TItem)&#xA;Implements IEnumerable(Of TItem), INotifyCollectionChanged, IReadOnlyCollection(Of TItem), IReadOnlyList(Of TItem)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TItem&gt;&#xA; where TItem : BindableObjectpublic interface class ITemplatedItemsList : System::Collections::Generic::IEnumerable&lt;TItem&gt;, System::Collections::Generic::IReadOnlyCollection&lt;TItem&gt;, System::Collections::Generic::IReadOnlyList&lt;TItem&gt;, System::Collections::Specialized::INotifyCollectionChanged" />
+  <TypeSignature Language="F#" Value="type ITemplatedItemsList&lt;'Item (requires 'Item :&gt; BindableObject)&gt; = interface&#xA;    interface IReadOnlyList&lt;'Item (requires 'Item :&gt; BindableObject)&gt;&#xA;    interface seq&lt;'Item (requires 'Item :&gt; BindableObject)&gt;&#xA;    interface IEnumerable&#xA;    interface IReadOnlyCollection&lt;'Item (requires 'Item :&gt; BindableObject)&gt;&#xA;    interface INotifyCollectionChanged" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TItem">
+      <Constraints>
+        <BaseTypeName>Microsoft.Maui.Controls.BindableObject</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;TItem&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IReadOnlyCollection&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IReadOnlyCollection&lt;TItem&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IReadOnlyList&lt;TItem&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Specialized.INotifyCollectionChanged</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TItem">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ActivateContent">
+      <MemberSignature Language="C#" Value="public TItem ActivateContent (int index, object item = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TItem ActivateContent(int32 index, object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ITemplatedItemsList`1.ActivateContent(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ActivateContent (index As Integer, Optional item As Object = Nothing) As TItem" />
+      <MemberSignature Language="F#" Value="abstract member ActivateContent : int * obj -&gt; 'Item" Usage="iTemplatedItemsList.ActivateContent (index, item)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BindingContext">
+      <MemberSignature Language="C#" Value="public object BindingContext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object BindingContext" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.ITemplatedItemsList`1.BindingContext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BindingContext As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ BindingContext { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BindingContext : obj" Usage="Microsoft.Maui.Controls.ITemplatedItemsList&lt;'Item (requires 'Item :&gt; Microsoft.Maui.Controls.BindableObject)&gt;.BindingContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGlobalIndexForGroup">
+      <MemberSignature Language="C#" Value="public int GetGlobalIndexForGroup (Microsoft.Maui.Controls.ITemplatedItemsList&lt;TItem&gt; group);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetGlobalIndexForGroup(class Microsoft.Maui.Controls.ITemplatedItemsList`1&lt;!TItem&gt; group) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ITemplatedItemsList`1.GetGlobalIndexForGroup(Microsoft.Maui.Controls.ITemplatedItemsList{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetGlobalIndexForGroup (group As ITemplatedItemsList(Of TItem)) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetGlobalIndexForGroup(Microsoft::Maui::Controls::ITemplatedItemsList&lt;TItem&gt; ^ group);" />
+      <MemberSignature Language="F#" Value="abstract member GetGlobalIndexForGroup : Microsoft.Maui.Controls.ITemplatedItemsList&lt;'Item (requires 'Item :&gt; Microsoft.Maui.Controls.BindableObject)&gt; -&gt; int" Usage="iTemplatedItemsList.GetGlobalIndexForGroup group" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="group" Type="Microsoft.Maui.Controls.ITemplatedItemsList&lt;TItem&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="group">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGlobalIndexOfItem">
+      <MemberSignature Language="C#" Value="public int GetGlobalIndexOfItem (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetGlobalIndexOfItem(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ITemplatedItemsList`1.GetGlobalIndexOfItem(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetGlobalIndexOfItem (item As Object) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetGlobalIndexOfItem(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member GetGlobalIndexOfItem : obj -&gt; int" Usage="iTemplatedItemsList.GetGlobalIndexOfItem item" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGroup">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.ITemplatedItemsList&lt;TItem&gt; GetGroup (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Maui.Controls.ITemplatedItemsList`1&lt;!TItem&gt; GetGroup(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ITemplatedItemsList`1.GetGroup(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetGroup (index As Integer) As ITemplatedItemsList(Of TItem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Maui::Controls::ITemplatedItemsList&lt;TItem&gt; ^ GetGroup(int index);" />
+      <MemberSignature Language="F#" Value="abstract member GetGroup : int -&gt; Microsoft.Maui.Controls.ITemplatedItemsList&lt;'Item (requires 'Item :&gt; Microsoft.Maui.Controls.BindableObject)&gt;" Usage="iTemplatedItemsList.GetGroup index" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.ITemplatedItemsList&lt;TItem&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGroupAndIndexOfItem">
+      <MemberSignature Language="C#" Value="public Tuple&lt;int,int&gt; GetGroupAndIndexOfItem (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Tuple`2&lt;int32, int32&gt; GetGroupAndIndexOfItem(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ITemplatedItemsList`1.GetGroupAndIndexOfItem(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetGroupAndIndexOfItem (item As Object) As Tuple(Of Integer, Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Tuple&lt;int, int&gt; ^ GetGroupAndIndexOfItem(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member GetGroupAndIndexOfItem : obj -&gt; int * int" Usage="iTemplatedItemsList.GetGroupAndIndexOfItem item" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Tuple&lt;System.Int32,System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGroupAndIndexOfItem">
+      <MemberSignature Language="C#" Value="public Tuple&lt;int,int&gt; GetGroupAndIndexOfItem (object group, object item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Tuple`2&lt;int32, int32&gt; GetGroupAndIndexOfItem(object group, object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ITemplatedItemsList`1.GetGroupAndIndexOfItem(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetGroupAndIndexOfItem (group As Object, item As Object) As Tuple(Of Integer, Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Tuple&lt;int, int&gt; ^ GetGroupAndIndexOfItem(System::Object ^ group, System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member GetGroupAndIndexOfItem : obj * obj -&gt; int * int" Usage="iTemplatedItemsList.GetGroupAndIndexOfItem (group, item)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Tuple&lt;System.Int32,System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="group" Type="System.Object" />
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="group">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGroupIndexFromGlobal">
+      <MemberSignature Language="C#" Value="public int GetGroupIndexFromGlobal (int globalIndex, out int leftOver);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetGroupIndexFromGlobal(int32 globalIndex, [out] int32&amp; leftOver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ITemplatedItemsList`1.GetGroupIndexFromGlobal(System.Int32,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetGroupIndexFromGlobal (globalIndex As Integer, ByRef leftOver As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetGroupIndexFromGlobal(int globalIndex, [Runtime::InteropServices::Out] int % leftOver);" />
+      <MemberSignature Language="F#" Value="abstract member GetGroupIndexFromGlobal : int * int -&gt; int" Usage="iTemplatedItemsList.GetGroupIndexFromGlobal (globalIndex, leftOver)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="globalIndex" Type="System.Int32" />
+        <Parameter Name="leftOver" Type="System.Int32" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="globalIndex">To be added.</param>
+        <param name="leftOver">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupedCollectionChanged">
+      <MemberSignature Language="C#" Value="event System.Collections.Specialized.NotifyCollectionChangedEventHandler GroupedCollectionChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Collections.Specialized.NotifyCollectionChangedEventHandler GroupedCollectionChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.ITemplatedItemsList`1.GroupedCollectionChanged" />
+      <MemberSignature Language="VB.NET" Value="Event GroupedCollectionChanged As NotifyCollectionChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Collections::Specialized::NotifyCollectionChangedEventHandler ^ GroupedCollectionChanged;" />
+      <MemberSignature Language="F#" Value="member this.GroupedCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " Usage="member this.GroupedCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.NotifyCollectionChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderContent">
+      <MemberSignature Language="C#" Value="public TItem HeaderContent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TItem HeaderContent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.ITemplatedItemsList`1.HeaderContent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HeaderContent As TItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TItem HeaderContent { TItem get(); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderContent : 'Item" Usage="Microsoft.Maui.Controls.ITemplatedItemsList&lt;'Item (requires 'Item :&gt; Microsoft.Maui.Controls.BindableObject)&gt;.HeaderContent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (TItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(!TItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ITemplatedItemsList`1.IndexOf(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (item As TItem) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(TItem item);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : 'Item -&gt; int" Usage="iTemplatedItemsList.IndexOf item" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="TItem" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemsSource">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerable ItemsSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerable ItemsSource" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.ITemplatedItemsList`1.ItemsSource" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemsSource As IEnumerable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IEnumerable ^ ItemsSource { System::Collections::IEnumerable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemsSource : System.Collections.IEnumerable" Usage="Microsoft.Maui.Controls.ITemplatedItemsList&lt;'Item (requires 'Item :&gt; Microsoft.Maui.Controls.BindableObject)&gt;.ItemsSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListProxy">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.IListProxy ListProxy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.IListProxy ListProxy" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.ITemplatedItemsList`1.ListProxy" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListProxy As IListProxy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::IListProxy ^ ListProxy { Microsoft::Maui::Controls::IListProxy ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ListProxy : Microsoft.Maui.Controls.IListProxy" Usage="Microsoft.Maui.Controls.ITemplatedItemsList&lt;'Item (requires 'Item :&gt; Microsoft.Maui.Controls.BindableObject)&gt;.ListProxy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.IListProxy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.ITemplatedItemsList`1.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Maui.Controls.ITemplatedItemsList&lt;'Item (requires 'Item :&gt; Microsoft.Maui.Controls.BindableObject)&gt;.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyChanged">
+      <MemberSignature Language="C#" Value="event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler PropertyChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.ITemplatedItemsList`1.PropertyChanged" />
+      <MemberSignature Language="VB.NET" Value="Event PropertyChanged As PropertyChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::PropertyChangedEventHandler ^ PropertyChanged;" />
+      <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectDataTemplate">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.DataTemplate SelectDataTemplate (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Maui.Controls.DataTemplate SelectDataTemplate(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ITemplatedItemsList`1.SelectDataTemplate(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SelectDataTemplate (item As Object) As DataTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Maui::Controls::DataTemplate ^ SelectDataTemplate(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member SelectDataTemplate : obj -&gt; Microsoft.Maui.Controls.DataTemplate" Usage="iTemplatedItemsList.SelectDataTemplate item" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShortNames">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;string&gt; ShortNames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;string&gt; ShortNames" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.ITemplatedItemsList`1.ShortNames" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ShortNames As IReadOnlyList(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IReadOnlyList&lt;System::String ^&gt; ^ ShortNames { System::Collections::Generic::IReadOnlyList&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ShortNames : System.Collections.Generic.IReadOnlyList&lt;string&gt;" Usage="Microsoft.Maui.Controls.ITemplatedItemsList&lt;'Item (requires 'Item :&gt; Microsoft.Maui.Controls.BindableObject)&gt;.ShortNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateContent">
+      <MemberSignature Language="C#" Value="public TItem UpdateContent (TItem content, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TItem UpdateContent(!TItem content, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ITemplatedItemsList`1.UpdateContent(`0,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UpdateContent (content As TItem, index As Integer) As TItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TItem UpdateContent(TItem content, int index);" />
+      <MemberSignature Language="F#" Value="abstract member UpdateContent : 'Item * int -&gt; 'Item" Usage="iTemplatedItemsList.UpdateContent (content, index)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="TItem" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="content">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateHeader">
+      <MemberSignature Language="C#" Value="public TItem UpdateHeader (TItem content, int groupIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TItem UpdateHeader(!TItem content, int32 groupIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ITemplatedItemsList`1.UpdateHeader(`0,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UpdateHeader (content As TItem, groupIndex As Integer) As TItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TItem UpdateHeader(TItem content, int groupIndex);" />
+      <MemberSignature Language="F#" Value="abstract member UpdateHeader : 'Item * int -&gt; 'Item" Usage="iTemplatedItemsList.UpdateHeader (content, groupIndex)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="TItem" />
+        <Parameter Name="groupIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="content">To be added.</param>
+        <param name="groupIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,390 @@
+<Type Name="ItemsView&lt;TVisual&gt;" FullName="Microsoft.Maui.Controls.ItemsView&lt;TVisual&gt;">
+  <TypeSignature Language="C#" Value="public abstract class ItemsView&lt;TVisual&gt; : Microsoft.Maui.Controls.View, Microsoft.Maui.Controls.IItemsView&lt;TVisual&gt;, Microsoft.Maui.Controls.ITemplatedItemsView&lt;TVisual&gt; where TVisual : BindableObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ItemsView`1&lt;(class Microsoft.Maui.Controls.BindableObject) TVisual&gt; extends Microsoft.Maui.Controls.View implements class Microsoft.Maui.Controls.IItemsView`1&lt;!TVisual&gt;, class Microsoft.Maui.Controls.ITemplatedItemsView`1&lt;!TVisual&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.ItemsView`1" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ItemsView(Of TVisual)&#xA;Inherits View&#xA;Implements IItemsView(Of TVisual), ITemplatedItemsView(Of TVisual)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TVisual&gt;&#xA; where TVisual : BindableObjectpublic ref class ItemsView abstract : Microsoft::Maui::Controls::View, Microsoft::Maui::Controls::IItemsView&lt;TVisual&gt;, Microsoft::Maui::Controls::ITemplatedItemsView&lt;TVisual&gt;" />
+  <TypeSignature Language="F#" Value="type ItemsView&lt;'Visual (requires 'Visual :&gt; BindableObject)&gt; = class&#xA;    inherit View&#xA;    interface ITemplatedItemsView&lt;'Visual (requires 'Visual :&gt; BindableObject)&gt;&#xA;    interface IItemsView&lt;'Visual (requires 'Visual :&gt; BindableObject)&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TVisual">
+      <Constraints>
+        <BaseTypeName>Microsoft.Maui.Controls.BindableObject</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.Maui.Controls.View</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.Controls.IItemsView&lt;TItem&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.Controls.IItemsView&lt;TVisual&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.Controls.ITemplatedItemsView&lt;TVisual&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TVisual">To be added.</typeparam>
+    <summary>A <see cref="T:Microsoft.Maui.Controls.View" /> that serves as a base class for views that contain a templated list of items.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateDefault">
+      <MemberSignature Language="C#" Value="protected abstract TVisual CreateDefault (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance !TVisual CreateDefault(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ItemsView`1.CreateDefault(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateDefault (item As Object) As TVisual" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract TVisual CreateDefault(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member CreateDefault : obj -&gt; 'Visual" Usage="itemsView.CreateDefault item" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.IItemsView`1.CreateDefault(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TVisual</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemsSource">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerable ItemsSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerable ItemsSource" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.ItemsView`1.ItemsSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemsSource As IEnumerable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IEnumerable ^ ItemsSource { System::Collections::IEnumerable ^ get(); void set(System::Collections::IEnumerable ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemsSource : System.Collections.IEnumerable with get, set" Usage="Microsoft.Maui.Controls.ItemsView&lt;'Visual (requires 'Visual :&gt; Microsoft.Maui.Controls.BindableObject)&gt;.ItemsSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemsSourceProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty ItemsSourceProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty ItemsSourceProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.ItemsView`1.ItemsSourceProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemsSourceProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ ItemsSourceProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemsSourceProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.ItemsView&lt;'Visual (requires 'Visual :&gt; Microsoft.Maui.Controls.BindableObject)&gt;.ItemsSourceProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ItemsView`1.ItemsSource" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemTemplate">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.DataTemplate ItemTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.DataTemplate ItemTemplate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.ItemsView`1.ItemTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemTemplate As DataTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::DataTemplate ^ ItemTemplate { Microsoft::Maui::Controls::DataTemplate ^ get(); void set(Microsoft::Maui::Controls::DataTemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemTemplate : Microsoft.Maui.Controls.DataTemplate with get, set" Usage="Microsoft.Maui.Controls.ItemsView&lt;'Visual (requires 'Visual :&gt; Microsoft.Maui.Controls.BindableObject)&gt;.ItemTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty ItemTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty ItemTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.ItemsView`1.ItemTemplateProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemTemplateProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ ItemTemplateProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemTemplateProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.ItemsView&lt;'Visual (requires 'Visual :&gt; Microsoft.Maui.Controls.BindableObject)&gt;.ItemTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ItemsView`1.ItemTemplate" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Controls.IItemsView&lt;TVisual&gt;.CreateDefault">
+      <MemberSignature Language="C#" Value="TVisual IItemsView&lt;TVisual&gt;.CreateDefault (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance !TVisual Microsoft.Maui.Controls.IItemsView&lt;TVisual&gt;.CreateDefault(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ItemsView`1.Microsoft#Maui#Controls#IItemsView&lt;TVisual&gt;#CreateDefault(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function CreateDefault (item As Object) As TVisual Implements IItemsView(Of TVisual).CreateDefault" />
+      <MemberSignature Language="C++ CLI" Value=" virtual TVisual Microsoft.Maui.Controls.IItemsView&lt;TVisual&gt;.CreateDefault(System::Object ^ item) = Microsoft::Maui::Controls::IItemsView&lt;TVisual&gt;::CreateDefault;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Controls.IItemsView&lt;TVisual&gt;.CreateDefault : obj -&gt; 'Visual&#xA;override this.Microsoft.Maui.Controls.IItemsView&lt;TVisual&gt;.CreateDefault : obj -&gt; 'Visual" Usage="itemsView.Microsoft.Maui.Controls.IItemsView&lt;TVisual&gt;.CreateDefault item" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.IItemsView`1.CreateDefault(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TVisual</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Controls.IItemsView&lt;TVisual&gt;.SetupContent">
+      <MemberSignature Language="C#" Value="void IItemsView&lt;TVisual&gt;.SetupContent (TVisual content, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.Controls.IItemsView&lt;TVisual&gt;.SetupContent(!TVisual content, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ItemsView`1.Microsoft#Maui#Controls#IItemsView&lt;TVisual&gt;#SetupContent(`0,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Sub SetupContent (content As TVisual, index As Integer) Implements IItemsView(Of TVisual).SetupContent" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.Controls.IItemsView&lt;TVisual&gt;.SetupContent(TVisual content, int index) = Microsoft::Maui::Controls::IItemsView&lt;TVisual&gt;::SetupContent;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Controls.IItemsView&lt;TVisual&gt;.SetupContent : 'Visual * int -&gt; unit&#xA;override this.Microsoft.Maui.Controls.IItemsView&lt;TVisual&gt;.SetupContent : 'Visual * int -&gt; unit" Usage="itemsView.Microsoft.Maui.Controls.IItemsView&lt;TVisual&gt;.SetupContent (content, index)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.IItemsView`1.SetupContent(`0,System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="TVisual" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="content">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Controls.IItemsView&lt;TVisual&gt;.UnhookContent">
+      <MemberSignature Language="C#" Value="void IItemsView&lt;TVisual&gt;.UnhookContent (TVisual content);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.Controls.IItemsView&lt;TVisual&gt;.UnhookContent(!TVisual content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ItemsView`1.Microsoft#Maui#Controls#IItemsView&lt;TVisual&gt;#UnhookContent(`0)" />
+      <MemberSignature Language="VB.NET" Value="Sub UnhookContent (content As TVisual) Implements IItemsView(Of TVisual).UnhookContent" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.Controls.IItemsView&lt;TVisual&gt;.UnhookContent(TVisual content) = Microsoft::Maui::Controls::IItemsView&lt;TVisual&gt;::UnhookContent;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Controls.IItemsView&lt;TVisual&gt;.UnhookContent : 'Visual -&gt; unit&#xA;override this.Microsoft.Maui.Controls.IItemsView&lt;TVisual&gt;.UnhookContent : 'Visual -&gt; unit" Usage="itemsView.Microsoft.Maui.Controls.IItemsView&lt;TVisual&gt;.UnhookContent content" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.IItemsView`1.UnhookContent(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="TVisual" />
+      </Parameters>
+      <Docs>
+        <param name="content">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Controls.ITemplatedItemsView&lt;TVisual&gt;.ListProxy">
+      <MemberSignature Language="C#" Value="Microsoft.Maui.Controls.IListProxy Microsoft.Maui.Controls.ITemplatedItemsView&lt;TVisual&gt;.ListProxy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.IListProxy Microsoft.Maui.Controls.ITemplatedItemsView&lt;TVisual&gt;.ListProxy" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.ItemsView`1.Microsoft#Maui#Controls#ITemplatedItemsView&lt;TVisual&gt;#ListProxy" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property ListProxy As IListProxy Implements ITemplatedItemsView(Of TVisual).ListProxy" />
+      <MemberSignature Language="C++ CLI" Value="property Microsoft::Maui::Controls::IListProxy ^ Microsoft::Maui::Controls::ITemplatedItemsView&lt;TVisual&gt;::ListProxy { Microsoft::Maui::Controls::IListProxy ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.Controls.ITemplatedItemsView&lt;TVisual&gt;.ListProxy : Microsoft.Maui.Controls.IListProxy" Usage="Microsoft.Maui.Controls.ITemplatedItemsView&lt;TVisual&gt;.ListProxy" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.Controls.ITemplatedItemsView`1.ListProxy</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.IListProxy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Controls.ITemplatedItemsView&lt;TVisual&gt;.TemplatedItems">
+      <MemberSignature Language="C#" Value="Microsoft.Maui.Controls.ITemplatedItemsList&lt;TVisual&gt; Microsoft.Maui.Controls.ITemplatedItemsView&lt;TVisual&gt;.TemplatedItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.ITemplatedItemsList`1&lt;!TVisual&gt; Microsoft.Maui.Controls.ITemplatedItemsView&lt;TVisual&gt;.TemplatedItems" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.ItemsView`1.Microsoft#Maui#Controls#ITemplatedItemsView&lt;TVisual&gt;#TemplatedItems" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property TemplatedItems As ITemplatedItemsList(Of TVisual) Implements ITemplatedItemsView(Of TVisual).TemplatedItems" />
+      <MemberSignature Language="C++ CLI" Value="property Microsoft::Maui::Controls::ITemplatedItemsList&lt;TVisual&gt; ^ Microsoft::Maui::Controls::ITemplatedItemsView&lt;TVisual&gt;::TemplatedItems { Microsoft::Maui::Controls::ITemplatedItemsList&lt;TVisual&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.Controls.ITemplatedItemsView&lt;TVisual&gt;.TemplatedItems : Microsoft.Maui.Controls.ITemplatedItemsList&lt;'Visual (requires 'Visual :&gt; Microsoft.Maui.Controls.BindableObject)&gt;" Usage="Microsoft.Maui.Controls.ITemplatedItemsView&lt;TVisual&gt;.TemplatedItems" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.Controls.ITemplatedItemsView`1.TemplatedItems</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.ITemplatedItemsList&lt;TVisual&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetupContent">
+      <MemberSignature Language="C#" Value="protected virtual void SetupContent (TVisual content, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void SetupContent(!TVisual content, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ItemsView`1.SetupContent(`0,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub SetupContent (content As TVisual, index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void SetupContent(TVisual content, int index);" />
+      <MemberSignature Language="F#" Value="abstract member SetupContent : 'Visual * int -&gt; unit&#xA;override this.SetupContent : 'Visual * int -&gt; unit" Usage="itemsView.SetupContent (content, index)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.IItemsView`1.SetupContent(`0,System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="TVisual" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="content">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplatedItems">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.Internals.TemplatedItemsList&lt;Microsoft.Maui.Controls.ItemsView&lt;TVisual&gt;,TVisual&gt; TemplatedItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.Internals.TemplatedItemsList`2&lt;class Microsoft.Maui.Controls.ItemsView`1&lt;!TVisual&gt;, !TVisual&gt; TemplatedItems" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.ItemsView`1.TemplatedItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TemplatedItems As TemplatedItemsList(Of ItemsView(Of TVisual), TVisual)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::Internals::TemplatedItemsList&lt;Microsoft::Maui::Controls::ItemsView&lt;TVisual&gt; ^, TVisual&gt; ^ TemplatedItems { Microsoft::Maui::Controls::Internals::TemplatedItemsList&lt;Microsoft::Maui::Controls::ItemsView&lt;TVisual&gt; ^, TVisual&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TemplatedItems : Microsoft.Maui.Controls.Internals.TemplatedItemsList&lt;Microsoft.Maui.Controls.ItemsView&lt;'Visual&gt;, 'Visual (requires 'Visual :&gt; Microsoft.Maui.Controls.BindableObject)&gt;" Usage="Microsoft.Maui.Controls.ItemsView&lt;'Visual (requires 'Visual :&gt; Microsoft.Maui.Controls.BindableObject)&gt;.TemplatedItems" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.Internals.TemplatedItemsList&lt;Microsoft.Maui.Controls.ItemsView&lt;TVisual&gt;,TVisual&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnhookContent">
+      <MemberSignature Language="C#" Value="protected virtual void UnhookContent (TVisual content);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void UnhookContent(!TVisual content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ItemsView`1.UnhookContent(`0)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub UnhookContent (content As TVisual)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void UnhookContent(TVisual content);" />
+      <MemberSignature Language="F#" Value="abstract member UnhookContent : 'Visual -&gt; unit&#xA;override this.UnhookContent : 'Visual -&gt; unit" Usage="itemsView.UnhookContent content" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.IItemsView`1.UnhookContent(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="TVisual" />
+      </Parameters>
+      <Docs>
+        <param name="content">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateItemTemplate">
+      <MemberSignature Language="C#" Value="protected virtual bool ValidateItemTemplate (Microsoft.Maui.Controls.DataTemplate template);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ValidateItemTemplate(class Microsoft.Maui.Controls.DataTemplate template) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ItemsView`1.ValidateItemTemplate(Microsoft.Maui.Controls.DataTemplate)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ValidateItemTemplate (template As DataTemplate) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ValidateItemTemplate(Microsoft::Maui::Controls::DataTemplate ^ template);" />
+      <MemberSignature Language="F#" Value="abstract member ValidateItemTemplate : Microsoft.Maui.Controls.DataTemplate -&gt; bool&#xA;override this.ValidateItemTemplate : Microsoft.Maui.Controls.DataTemplate -&gt; bool" Usage="itemsView.ValidateItemTemplate template" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="template" Type="Microsoft.Maui.Controls.DataTemplate" />
+      </Parameters>
+      <Docs>
+        <param name="template">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

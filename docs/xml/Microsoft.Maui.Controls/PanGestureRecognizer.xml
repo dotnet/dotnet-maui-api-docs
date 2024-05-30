@@ -1,0 +1,251 @@
+<Type Name="PanGestureRecognizer" FullName="Microsoft.Maui.Controls.PanGestureRecognizer">
+  <TypeSignature Language="C#" Value="public class PanGestureRecognizer : Microsoft.Maui.Controls.GestureRecognizer, Microsoft.Maui.Controls.IPanGestureController" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PanGestureRecognizer extends Microsoft.Maui.Controls.GestureRecognizer implements class Microsoft.Maui.Controls.IPanGestureController" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.PanGestureRecognizer" />
+  <TypeSignature Language="VB.NET" Value="Public Class PanGestureRecognizer&#xA;Inherits GestureRecognizer&#xA;Implements IPanGestureController" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PanGestureRecognizer : Microsoft::Maui::Controls::GestureRecognizer, Microsoft::Maui::Controls::IPanGestureController" />
+  <TypeSignature Language="F#" Value="type PanGestureRecognizer = class&#xA;    inherit GestureRecognizer&#xA;    interface IPanGestureController" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Maui.Controls.GestureRecognizer</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.Controls.IPanGestureController</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>A gesture recognizer for panning content that is larger than its parent view.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PanGestureRecognizer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.PanGestureRecognizer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PanGestureRecognizer();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentId">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Controls.Internals.AutoId CurrentId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Maui.Controls.Internals.AutoId CurrentId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.PanGestureRecognizer.CurrentId" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CurrentId As AutoId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::Maui::Controls::Internals::AutoId ^ CurrentId { Microsoft::Maui::Controls::Internals::AutoId ^ get(); };" />
+      <MemberSignature Language="F#" Value="static member CurrentId : Microsoft.Maui.Controls.Internals.AutoId" Usage="Microsoft.Maui.Controls.PanGestureRecognizer.CurrentId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.Internals.AutoId</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Controls.IPanGestureController.SendPan">
+      <MemberSignature Language="C#" Value="void IPanGestureController.SendPan (Microsoft.Maui.Controls.Element sender, double totalX, double totalY, int gestureId);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.Controls.IPanGestureController.SendPan(class Microsoft.Maui.Controls.Element sender, float64 totalX, float64 totalY, int32 gestureId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.PanGestureRecognizer.Microsoft#Maui#Controls#IPanGestureController#SendPan(Microsoft.Maui.Controls.Element,System.Double,System.Double,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Sub SendPan (sender As Element, totalX As Double, totalY As Double, gestureId As Integer) Implements IPanGestureController.SendPan" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.Controls.IPanGestureController.SendPan(Microsoft::Maui::Controls::Element ^ sender, double totalX, double totalY, int gestureId) = Microsoft::Maui::Controls::IPanGestureController::SendPan;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Controls.IPanGestureController.SendPan : Microsoft.Maui.Controls.Element * double * double * int -&gt; unit&#xA;override this.Microsoft.Maui.Controls.IPanGestureController.SendPan : Microsoft.Maui.Controls.Element * double * double * int -&gt; unit" Usage="panGestureRecognizer.Microsoft.Maui.Controls.IPanGestureController.SendPan (sender, totalX, totalY, gestureId)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.IPanGestureController.SendPan(Microsoft.Maui.Controls.Element,System.Double,System.Double,System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="Microsoft.Maui.Controls.Element" />
+        <Parameter Name="totalX" Type="System.Double" />
+        <Parameter Name="totalY" Type="System.Double" />
+        <Parameter Name="gestureId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="sender">To be added.</param>
+        <param name="totalX">To be added.</param>
+        <param name="totalY">To be added.</param>
+        <param name="gestureId">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Controls.IPanGestureController.SendPanCanceled">
+      <MemberSignature Language="C#" Value="void IPanGestureController.SendPanCanceled (Microsoft.Maui.Controls.Element sender, int gestureId);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.Controls.IPanGestureController.SendPanCanceled(class Microsoft.Maui.Controls.Element sender, int32 gestureId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.PanGestureRecognizer.Microsoft#Maui#Controls#IPanGestureController#SendPanCanceled(Microsoft.Maui.Controls.Element,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Sub SendPanCanceled (sender As Element, gestureId As Integer) Implements IPanGestureController.SendPanCanceled" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.Controls.IPanGestureController.SendPanCanceled(Microsoft::Maui::Controls::Element ^ sender, int gestureId) = Microsoft::Maui::Controls::IPanGestureController::SendPanCanceled;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Controls.IPanGestureController.SendPanCanceled : Microsoft.Maui.Controls.Element * int -&gt; unit&#xA;override this.Microsoft.Maui.Controls.IPanGestureController.SendPanCanceled : Microsoft.Maui.Controls.Element * int -&gt; unit" Usage="panGestureRecognizer.Microsoft.Maui.Controls.IPanGestureController.SendPanCanceled (sender, gestureId)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.IPanGestureController.SendPanCanceled(Microsoft.Maui.Controls.Element,System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="Microsoft.Maui.Controls.Element" />
+        <Parameter Name="gestureId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="sender">To be added.</param>
+        <param name="gestureId">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Controls.IPanGestureController.SendPanCompleted">
+      <MemberSignature Language="C#" Value="void IPanGestureController.SendPanCompleted (Microsoft.Maui.Controls.Element sender, int gestureId);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.Controls.IPanGestureController.SendPanCompleted(class Microsoft.Maui.Controls.Element sender, int32 gestureId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.PanGestureRecognizer.Microsoft#Maui#Controls#IPanGestureController#SendPanCompleted(Microsoft.Maui.Controls.Element,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Sub SendPanCompleted (sender As Element, gestureId As Integer) Implements IPanGestureController.SendPanCompleted" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.Controls.IPanGestureController.SendPanCompleted(Microsoft::Maui::Controls::Element ^ sender, int gestureId) = Microsoft::Maui::Controls::IPanGestureController::SendPanCompleted;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Controls.IPanGestureController.SendPanCompleted : Microsoft.Maui.Controls.Element * int -&gt; unit&#xA;override this.Microsoft.Maui.Controls.IPanGestureController.SendPanCompleted : Microsoft.Maui.Controls.Element * int -&gt; unit" Usage="panGestureRecognizer.Microsoft.Maui.Controls.IPanGestureController.SendPanCompleted (sender, gestureId)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.IPanGestureController.SendPanCompleted(Microsoft.Maui.Controls.Element,System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="Microsoft.Maui.Controls.Element" />
+        <Parameter Name="gestureId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="sender">To be added.</param>
+        <param name="gestureId">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Controls.IPanGestureController.SendPanStarted">
+      <MemberSignature Language="C#" Value="void IPanGestureController.SendPanStarted (Microsoft.Maui.Controls.Element sender, int gestureId);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.Controls.IPanGestureController.SendPanStarted(class Microsoft.Maui.Controls.Element sender, int32 gestureId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.PanGestureRecognizer.Microsoft#Maui#Controls#IPanGestureController#SendPanStarted(Microsoft.Maui.Controls.Element,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Sub SendPanStarted (sender As Element, gestureId As Integer) Implements IPanGestureController.SendPanStarted" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.Controls.IPanGestureController.SendPanStarted(Microsoft::Maui::Controls::Element ^ sender, int gestureId) = Microsoft::Maui::Controls::IPanGestureController::SendPanStarted;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Controls.IPanGestureController.SendPanStarted : Microsoft.Maui.Controls.Element * int -&gt; unit&#xA;override this.Microsoft.Maui.Controls.IPanGestureController.SendPanStarted : Microsoft.Maui.Controls.Element * int -&gt; unit" Usage="panGestureRecognizer.Microsoft.Maui.Controls.IPanGestureController.SendPanStarted (sender, gestureId)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.IPanGestureController.SendPanStarted(Microsoft.Maui.Controls.Element,System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="Microsoft.Maui.Controls.Element" />
+        <Parameter Name="gestureId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="sender">To be added.</param>
+        <param name="gestureId">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PanUpdated">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Controls.PanUpdatedEventArgs&gt; PanUpdated;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.PanUpdatedEventArgs&gt; PanUpdated" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.PanGestureRecognizer.PanUpdated" />
+      <MemberSignature Language="VB.NET" Value="Public Event PanUpdated As EventHandler(Of PanUpdatedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Controls::PanUpdatedEventArgs ^&gt; ^ PanUpdated;" />
+      <MemberSignature Language="F#" Value="member this.PanUpdated : EventHandler&lt;Microsoft.Maui.Controls.PanUpdatedEventArgs&gt; " Usage="member this.PanUpdated : System.EventHandler&lt;Microsoft.Maui.Controls.PanUpdatedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.PanUpdatedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TouchPoints">
+      <MemberSignature Language="C#" Value="public int TouchPoints { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TouchPoints" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.PanGestureRecognizer.TouchPoints" />
+      <MemberSignature Language="VB.NET" Value="Public Property TouchPoints As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TouchPoints { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.TouchPoints : int with get, set" Usage="Microsoft.Maui.Controls.PanGestureRecognizer.TouchPoints" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of touch points in the gesture.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TouchPointsProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty TouchPointsProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty TouchPointsProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.PanGestureRecognizer.TouchPointsProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TouchPointsProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ TouchPointsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TouchPointsProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.PanGestureRecognizer.TouchPointsProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.PanGestureRecognizer.TouchPoints" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

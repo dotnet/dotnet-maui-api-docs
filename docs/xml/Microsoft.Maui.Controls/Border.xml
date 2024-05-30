@@ -1,0 +1,929 @@
+<Type Name="Border" FullName="Microsoft.Maui.Controls.Border">
+  <TypeSignature Language="C#" Value="public class Border : Microsoft.Maui.Controls.View, Microsoft.Maui.Controls.IPaddingElement, Microsoft.Maui.IBorderView" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Border extends Microsoft.Maui.Controls.View implements class Microsoft.Maui.Controls.IPaddingElement, class Microsoft.Maui.IBorderStroke, class Microsoft.Maui.IBorderView, class Microsoft.Maui.IContentView, class Microsoft.Maui.ICrossPlatformLayout, class Microsoft.Maui.IElement, class Microsoft.Maui.IPadding, class Microsoft.Maui.IStroke, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Border" />
+  <TypeSignature Language="VB.NET" Value="Public Class Border&#xA;Inherits View&#xA;Implements IBorderView, IPaddingElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Border : Microsoft::Maui::Controls::View, Microsoft::Maui::Controls::IPaddingElement, Microsoft::Maui::IBorderView" />
+  <TypeSignature Language="F#" Value="type Border = class&#xA;    inherit View&#xA;    interface IContentView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IPadding&#xA;    interface ICrossPlatformLayout&#xA;    interface IBorderView&#xA;    interface IBorderStroke&#xA;    interface IStroke&#xA;    interface IPaddingElement" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Maui.Controls.View</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.Controls.IPaddingElement</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IBorderStroke</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IBorderView</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IContentView</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.ICrossPlatformLayout</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IElement</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IPadding</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IStroke</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.ITransform</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IView</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.Maui.Controls.ContentProperty("Content")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Maui.Controls.ContentProperty("Content")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Border ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Border.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Border();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Content">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.View? Content { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.View Content" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Border.Content" />
+      <MemberSignature Language="VB.NET" Value="Public Property Content As View" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::View ^ Content { Microsoft::Maui::Controls::View ^ get(); void set(Microsoft::Maui::Controls::View ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Content : Microsoft.Maui.Controls.View with get, set" Usage="Microsoft.Maui.Controls.Border.Content" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.View</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentChanged">
+      <MemberSignature Language="C#" Value="public static void ContentChanged (Microsoft.Maui.Controls.BindableObject bindable, object oldValue, object newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ContentChanged(class Microsoft.Maui.Controls.BindableObject bindable, object oldValue, object newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Border.ContentChanged(Microsoft.Maui.Controls.BindableObject,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ContentChanged (bindable As BindableObject, oldValue As Object, newValue As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ContentChanged(Microsoft::Maui::Controls::BindableObject ^ bindable, System::Object ^ oldValue, System::Object ^ newValue);" />
+      <MemberSignature Language="F#" Value="static member ContentChanged : Microsoft.Maui.Controls.BindableObject * obj * obj -&gt; unit" Usage="Microsoft.Maui.Controls.Border.ContentChanged (bindable, oldValue, newValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Microsoft.Maui.Controls.BindableObject" />
+        <Parameter Name="oldValue" Type="System.Object" />
+        <Parameter Name="newValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">To be added.</param>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty ContentProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty ContentProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Border.ContentProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContentProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ ContentProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ContentProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Border.ContentProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Border.Content" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CrossPlatformArrange">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.Size CrossPlatformArrange (Microsoft.Maui.Graphics.Rect bounds);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.Maui.Graphics.Size CrossPlatformArrange(valuetype Microsoft.Maui.Graphics.Rect bounds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Border.CrossPlatformArrange(Microsoft.Maui.Graphics.Rect)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CrossPlatformArrange (bounds As Rect) As Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Maui::Graphics::Size CrossPlatformArrange(Microsoft::Maui::Graphics::Rect bounds);" />
+      <MemberSignature Language="F#" Value="abstract member CrossPlatformArrange : Microsoft.Maui.Graphics.Rect -&gt; Microsoft.Maui.Graphics.Size&#xA;override this.CrossPlatformArrange : Microsoft.Maui.Graphics.Rect -&gt; Microsoft.Maui.Graphics.Size" Usage="border.CrossPlatformArrange bounds" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.IContentView.CrossPlatformArrange(Microsoft.Maui.Graphics.Rect)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Maui.IContentView.Microsoft#Maui#ICrossPlatformLayout#CrossPlatformArrange(Microsoft.Maui.Graphics.Rect)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bounds" Type="Microsoft.Maui.Graphics.Rect" />
+      </Parameters>
+      <Docs>
+        <param name="bounds">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CrossPlatformMeasure">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.Size CrossPlatformMeasure (double widthConstraint, double heightConstraint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.Maui.Graphics.Size CrossPlatformMeasure(float64 widthConstraint, float64 heightConstraint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Border.CrossPlatformMeasure(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CrossPlatformMeasure (widthConstraint As Double, heightConstraint As Double) As Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Maui::Graphics::Size CrossPlatformMeasure(double widthConstraint, double heightConstraint);" />
+      <MemberSignature Language="F#" Value="abstract member CrossPlatformMeasure : double * double -&gt; Microsoft.Maui.Graphics.Size&#xA;override this.CrossPlatformMeasure : double * double -&gt; Microsoft.Maui.Graphics.Size" Usage="border.CrossPlatformMeasure (widthConstraint, heightConstraint)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.IContentView.CrossPlatformMeasure(System.Double,System.Double)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Maui.IContentView.Microsoft#Maui#ICrossPlatformLayout#CrossPlatformMeasure(System.Double,System.Double)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="widthConstraint" Type="System.Double" />
+        <Parameter Name="heightConstraint" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="widthConstraint">To be added.</param>
+        <param name="heightConstraint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~Border ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Border.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!Border ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="border.Finalize " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IBorderStroke.Shape">
+      <MemberSignature Language="C#" Value="Microsoft.Maui.Graphics.IShape? Microsoft.Maui.IBorderStroke.Shape { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Graphics.IShape Microsoft.Maui.IBorderStroke.Shape" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Border.Microsoft#Maui#IBorderStroke#Shape" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Shape As IShape Implements IBorderStroke.Shape" />
+      <MemberSignature Language="C++ CLI" Value="property Microsoft::Maui::Graphics::IShape ^ Microsoft::Maui::IBorderStroke::Shape { Microsoft::Maui::Graphics::IShape ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.IBorderStroke.Shape : Microsoft.Maui.Graphics.IShape" Usage="Microsoft.Maui.IBorderStroke.Shape" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IBorderStroke.Shape</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.IShape</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IContentView.Content">
+      <MemberSignature Language="C#" Value="object? Microsoft.Maui.IContentView.Content { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Microsoft.Maui.IContentView.Content" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Border.Microsoft#Maui#IContentView#Content" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Content As Object Implements IContentView.Content" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ Microsoft::Maui::IContentView::Content { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.IContentView.Content : obj" Usage="Microsoft.Maui.IContentView.Content" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IContentView.Content</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IContentView.PresentedContent">
+      <MemberSignature Language="C#" Value="Microsoft.Maui.IView? Microsoft.Maui.IContentView.PresentedContent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.IView Microsoft.Maui.IContentView.PresentedContent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Border.Microsoft#Maui#IContentView#PresentedContent" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property PresentedContent As IView Implements IContentView.PresentedContent" />
+      <MemberSignature Language="C++ CLI" Value="property Microsoft::Maui::IView ^ Microsoft::Maui::IContentView::PresentedContent { Microsoft::Maui::IView ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.IContentView.PresentedContent : Microsoft.Maui.IView" Usage="Microsoft.Maui.IContentView.PresentedContent" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IContentView.PresentedContent</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.IView</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IStroke.Stroke">
+      <MemberSignature Language="C#" Value="Microsoft.Maui.Graphics.Paint? Microsoft.Maui.IStroke.Stroke { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Graphics.Paint Microsoft.Maui.IStroke.Stroke" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Border.Microsoft#Maui#IStroke#Stroke" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Stroke As Paint Implements IStroke.Stroke" />
+      <MemberSignature Language="C++ CLI" Value="property Microsoft::Maui::Graphics::Paint ^ Microsoft::Maui::IStroke::Stroke { Microsoft::Maui::Graphics::Paint ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.IStroke.Stroke : Microsoft.Maui.Graphics.Paint" Usage="Microsoft.Maui.IStroke.Stroke" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IStroke.Stroke</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Paint</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IStroke.StrokeDashOffset">
+      <MemberSignature Language="C#" Value="float Microsoft.Maui.IStroke.StrokeDashOffset { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Microsoft.Maui.IStroke.StrokeDashOffset" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Border.Microsoft#Maui#IStroke#StrokeDashOffset" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property StrokeDashOffset As Single Implements IStroke.StrokeDashOffset" />
+      <MemberSignature Language="C++ CLI" Value="property float Microsoft::Maui::IStroke::StrokeDashOffset { float get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.IStroke.StrokeDashOffset : single" Usage="Microsoft.Maui.IStroke.StrokeDashOffset" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IStroke.StrokeDashOffset</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IStroke.StrokeLineCap">
+      <MemberSignature Language="C#" Value="Microsoft.Maui.Graphics.LineCap Microsoft.Maui.IStroke.StrokeLineCap { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.Graphics.LineCap Microsoft.Maui.IStroke.StrokeLineCap" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Border.Microsoft#Maui#IStroke#StrokeLineCap" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property StrokeLineCap As LineCap Implements IStroke.StrokeLineCap" />
+      <MemberSignature Language="C++ CLI" Value="property Microsoft::Maui::Graphics::LineCap Microsoft::Maui::IStroke::StrokeLineCap { Microsoft::Maui::Graphics::LineCap get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.IStroke.StrokeLineCap : Microsoft.Maui.Graphics.LineCap" Usage="Microsoft.Maui.IStroke.StrokeLineCap" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IStroke.StrokeLineCap</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.LineCap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IStroke.StrokeLineJoin">
+      <MemberSignature Language="C#" Value="Microsoft.Maui.Graphics.LineJoin Microsoft.Maui.IStroke.StrokeLineJoin { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.Graphics.LineJoin Microsoft.Maui.IStroke.StrokeLineJoin" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Border.Microsoft#Maui#IStroke#StrokeLineJoin" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property StrokeLineJoin As LineJoin Implements IStroke.StrokeLineJoin" />
+      <MemberSignature Language="C++ CLI" Value="property Microsoft::Maui::Graphics::LineJoin Microsoft::Maui::IStroke::StrokeLineJoin { Microsoft::Maui::Graphics::LineJoin get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.IStroke.StrokeLineJoin : Microsoft.Maui.Graphics.LineJoin" Usage="Microsoft.Maui.IStroke.StrokeLineJoin" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IStroke.StrokeLineJoin</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.LineJoin</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IStroke.StrokeMiterLimit">
+      <MemberSignature Language="C#" Value="float Microsoft.Maui.IStroke.StrokeMiterLimit { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Microsoft.Maui.IStroke.StrokeMiterLimit" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Border.Microsoft#Maui#IStroke#StrokeMiterLimit" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property StrokeMiterLimit As Single Implements IStroke.StrokeMiterLimit" />
+      <MemberSignature Language="C++ CLI" Value="property float Microsoft::Maui::IStroke::StrokeMiterLimit { float get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.IStroke.StrokeMiterLimit : single" Usage="Microsoft.Maui.IStroke.StrokeMiterLimit" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IStroke.StrokeMiterLimit</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPaddingPropertyChanged">
+      <MemberSignature Language="C#" Value="public void OnPaddingPropertyChanged (Microsoft.Maui.Thickness oldValue, Microsoft.Maui.Thickness newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnPaddingPropertyChanged(valuetype Microsoft.Maui.Thickness oldValue, valuetype Microsoft.Maui.Thickness newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Border.OnPaddingPropertyChanged(Microsoft.Maui.Thickness,Microsoft.Maui.Thickness)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OnPaddingPropertyChanged (oldValue As Thickness, newValue As Thickness)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnPaddingPropertyChanged(Microsoft::Maui::Thickness oldValue, Microsoft::Maui::Thickness newValue);" />
+      <MemberSignature Language="F#" Value="abstract member OnPaddingPropertyChanged : Microsoft.Maui.Thickness * Microsoft.Maui.Thickness -&gt; unit&#xA;override this.OnPaddingPropertyChanged : Microsoft.Maui.Thickness * Microsoft.Maui.Thickness -&gt; unit" Usage="border.OnPaddingPropertyChanged (oldValue, newValue)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.IPaddingElement.OnPaddingPropertyChanged(Microsoft.Maui.Thickness,Microsoft.Maui.Thickness)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldValue" Type="Microsoft.Maui.Thickness" />
+        <Parameter Name="newValue" Type="Microsoft.Maui.Thickness" />
+      </Parameters>
+      <Docs>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPropertyChanged">
+      <MemberSignature Language="C#" Value="protected override void OnPropertyChanged (string? propertyName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPropertyChanged(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Border.OnPropertyChanged(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPropertyChanged (Optional propertyName As String = Nothing)" />
+      <MemberSignature Language="F#" Value="override this.OnPropertyChanged : string -&gt; unit" Usage="border.OnPropertyChanged propertyName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Padding">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Thickness Padding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.Thickness Padding" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Border.Padding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Padding As Thickness" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Thickness Padding { Microsoft::Maui::Thickness get(); void set(Microsoft::Maui::Thickness value); };" />
+      <MemberSignature Language="F#" Value="member this.Padding : Microsoft.Maui.Thickness with get, set" Usage="Microsoft.Maui.Controls.Border.Padding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Thickness</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PaddingDefaultValueCreator">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Thickness PaddingDefaultValueCreator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.Maui.Thickness PaddingDefaultValueCreator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Border.PaddingDefaultValueCreator" />
+      <MemberSignature Language="VB.NET" Value="Public Function PaddingDefaultValueCreator () As Thickness" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Maui::Thickness PaddingDefaultValueCreator();" />
+      <MemberSignature Language="F#" Value="abstract member PaddingDefaultValueCreator : unit -&gt; Microsoft.Maui.Thickness&#xA;override this.PaddingDefaultValueCreator : unit -&gt; Microsoft.Maui.Thickness" Usage="border.PaddingDefaultValueCreator " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.IPaddingElement.PaddingDefaultValueCreator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Thickness</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PaddingProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty PaddingProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty PaddingProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Border.PaddingProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PaddingProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ PaddingProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PaddingProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Border.PaddingProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Border.Padding" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stroke">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.Brush? Stroke { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.Brush Stroke" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Border.Stroke" />
+      <MemberSignature Language="VB.NET" Value="Public Property Stroke As Brush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::Brush ^ Stroke { Microsoft::Maui::Controls::Brush ^ get(); void set(Microsoft::Maui::Controls::Brush ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Stroke : Microsoft.Maui.Controls.Brush with get, set" Usage="Microsoft.Maui.Controls.Border.Stroke" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrokeDashArray">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.DoubleCollection? StrokeDashArray { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.DoubleCollection StrokeDashArray" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Border.StrokeDashArray" />
+      <MemberSignature Language="VB.NET" Value="Public Property StrokeDashArray As DoubleCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::DoubleCollection ^ StrokeDashArray { Microsoft::Maui::Controls::DoubleCollection ^ get(); void set(Microsoft::Maui::Controls::DoubleCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StrokeDashArray : Microsoft.Maui.Controls.DoubleCollection with get, set" Usage="Microsoft.Maui.Controls.Border.StrokeDashArray" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.DoubleCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrokeDashArrayProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty StrokeDashArrayProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty StrokeDashArrayProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Border.StrokeDashArrayProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StrokeDashArrayProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ StrokeDashArrayProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StrokeDashArrayProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Border.StrokeDashArrayProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Border.StrokeDashArray" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrokeDashOffset">
+      <MemberSignature Language="C#" Value="public double StrokeDashOffset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 StrokeDashOffset" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Border.StrokeDashOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Property StrokeDashOffset As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double StrokeDashOffset { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.StrokeDashOffset : double with get, set" Usage="Microsoft.Maui.Controls.Border.StrokeDashOffset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrokeDashOffsetProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty StrokeDashOffsetProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty StrokeDashOffsetProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Border.StrokeDashOffsetProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StrokeDashOffsetProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ StrokeDashOffsetProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StrokeDashOffsetProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Border.StrokeDashOffsetProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Border.StrokeDashOffset" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrokeDashPattern">
+      <MemberSignature Language="C#" Value="public float[]? StrokeDashPattern { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32[] StrokeDashPattern" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Border.StrokeDashPattern" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StrokeDashPattern As Single()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;float&gt; ^ StrokeDashPattern { cli::array &lt;float&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StrokeDashPattern : single[]" Usage="Microsoft.Maui.Controls.Border.StrokeDashPattern" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IStroke.StrokeDashPattern</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrokeLineCap">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.Shapes.PenLineCap StrokeLineCap { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.Controls.Shapes.PenLineCap StrokeLineCap" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Border.StrokeLineCap" />
+      <MemberSignature Language="VB.NET" Value="Public Property StrokeLineCap As PenLineCap" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::Shapes::PenLineCap StrokeLineCap { Microsoft::Maui::Controls::Shapes::PenLineCap get(); void set(Microsoft::Maui::Controls::Shapes::PenLineCap value); };" />
+      <MemberSignature Language="F#" Value="member this.StrokeLineCap : Microsoft.Maui.Controls.Shapes.PenLineCap with get, set" Usage="Microsoft.Maui.Controls.Border.StrokeLineCap" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.Shapes.PenLineCap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrokeLineCapProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty StrokeLineCapProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty StrokeLineCapProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Border.StrokeLineCapProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StrokeLineCapProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ StrokeLineCapProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StrokeLineCapProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Border.StrokeLineCapProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Border.StrokeLineCap" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrokeLineJoin">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.Shapes.PenLineJoin StrokeLineJoin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.Controls.Shapes.PenLineJoin StrokeLineJoin" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Border.StrokeLineJoin" />
+      <MemberSignature Language="VB.NET" Value="Public Property StrokeLineJoin As PenLineJoin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::Shapes::PenLineJoin StrokeLineJoin { Microsoft::Maui::Controls::Shapes::PenLineJoin get(); void set(Microsoft::Maui::Controls::Shapes::PenLineJoin value); };" />
+      <MemberSignature Language="F#" Value="member this.StrokeLineJoin : Microsoft.Maui.Controls.Shapes.PenLineJoin with get, set" Usage="Microsoft.Maui.Controls.Border.StrokeLineJoin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.Shapes.PenLineJoin</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrokeLineJoinProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty StrokeLineJoinProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty StrokeLineJoinProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Border.StrokeLineJoinProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StrokeLineJoinProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ StrokeLineJoinProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StrokeLineJoinProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Border.StrokeLineJoinProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Border.StrokeLineJoin" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrokeMiterLimit">
+      <MemberSignature Language="C#" Value="public double StrokeMiterLimit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 StrokeMiterLimit" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Border.StrokeMiterLimit" />
+      <MemberSignature Language="VB.NET" Value="Public Property StrokeMiterLimit As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double StrokeMiterLimit { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.StrokeMiterLimit : double with get, set" Usage="Microsoft.Maui.Controls.Border.StrokeMiterLimit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrokeMiterLimitProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty StrokeMiterLimitProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty StrokeMiterLimitProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Border.StrokeMiterLimitProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StrokeMiterLimitProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ StrokeMiterLimitProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StrokeMiterLimitProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Border.StrokeMiterLimitProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Border.StrokeMiterLimit" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrokeProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty StrokeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty StrokeProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Border.StrokeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StrokeProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ StrokeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StrokeProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Border.StrokeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Border.Stroke" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrokeShape">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.IShape? StrokeShape { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Graphics.IShape StrokeShape" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Border.StrokeShape" />
+      <MemberSignature Language="VB.NET" Value="Public Property StrokeShape As IShape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Graphics::IShape ^ StrokeShape { Microsoft::Maui::Graphics::IShape ^ get(); void set(Microsoft::Maui::Graphics::IShape ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StrokeShape : Microsoft.Maui.Graphics.IShape with get, set" Usage="Microsoft.Maui.Controls.Border.StrokeShape" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.TypeConverter(typeof(Microsoft.Maui.Controls.Shapes.StrokeShapeTypeConverter))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.TypeConverter(typeof(Microsoft.Maui.Controls.Shapes.StrokeShapeTypeConverter))&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.IShape</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrokeShapeProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty StrokeShapeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty StrokeShapeProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Border.StrokeShapeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StrokeShapeProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ StrokeShapeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StrokeShapeProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Border.StrokeShapeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Border.StrokeShape" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrokeThickness">
+      <MemberSignature Language="C#" Value="public double StrokeThickness { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 StrokeThickness" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Border.StrokeThickness" />
+      <MemberSignature Language="VB.NET" Value="Public Property StrokeThickness As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double StrokeThickness { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.StrokeThickness : double with get, set" Usage="Microsoft.Maui.Controls.Border.StrokeThickness" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrokeThicknessChanged">
+      <MemberSignature Language="C#" Value="public static void StrokeThicknessChanged (Microsoft.Maui.Controls.BindableObject bindable, object oldValue, object newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void StrokeThicknessChanged(class Microsoft.Maui.Controls.BindableObject bindable, object oldValue, object newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Border.StrokeThicknessChanged(Microsoft.Maui.Controls.BindableObject,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub StrokeThicknessChanged (bindable As BindableObject, oldValue As Object, newValue As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void StrokeThicknessChanged(Microsoft::Maui::Controls::BindableObject ^ bindable, System::Object ^ oldValue, System::Object ^ newValue);" />
+      <MemberSignature Language="F#" Value="static member StrokeThicknessChanged : Microsoft.Maui.Controls.BindableObject * obj * obj -&gt; unit" Usage="Microsoft.Maui.Controls.Border.StrokeThicknessChanged (bindable, oldValue, newValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Microsoft.Maui.Controls.BindableObject" />
+        <Parameter Name="oldValue" Type="System.Object" />
+        <Parameter Name="newValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">To be added.</param>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrokeThicknessProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty StrokeThicknessProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty StrokeThicknessProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Border.StrokeThicknessProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StrokeThicknessProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ StrokeThicknessProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StrokeThicknessProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Border.StrokeThicknessProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Border.StrokeThickness" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

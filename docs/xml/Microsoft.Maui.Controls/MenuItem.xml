@@ -1,0 +1,695 @@
+<Type Name="MenuItem" FullName="Microsoft.Maui.Controls.MenuItem">
+  <TypeSignature Language="C#" Value="public class MenuItem : Microsoft.Maui.Controls.BaseMenuItem, Microsoft.Maui.Controls.IMenuItemController, Microsoft.Maui.IMenuElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MenuItem extends Microsoft.Maui.Controls.BaseMenuItem implements class Microsoft.Maui.Controls.IMenuItemController, class Microsoft.Maui.IElement, class Microsoft.Maui.IImageSourcePart, class Microsoft.Maui.IMenuElement, class Microsoft.Maui.IText, class Microsoft.Maui.ITextStyle" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.MenuItem" />
+  <TypeSignature Language="VB.NET" Value="Public Class MenuItem&#xA;Inherits BaseMenuItem&#xA;Implements IMenuElement, IMenuItemController" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MenuItem : Microsoft::Maui::Controls::BaseMenuItem, Microsoft::Maui::Controls::IMenuItemController, Microsoft::Maui::IMenuElement" />
+  <TypeSignature Language="F#" Value="type MenuItem = class&#xA;    inherit BaseMenuItem&#xA;    interface IMenuItemController&#xA;    interface IMenuElement&#xA;    interface IElement&#xA;    interface IImageSourcePart&#xA;    interface IText&#xA;    interface ITextStyle" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Maui.Controls.BaseMenuItem</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.Controls.IMenuItemController</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IElement</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IImageSourcePart</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IMenuElement</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IText</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.ITextStyle</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Class that presents a menu item and associates it with a command.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MenuItem ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.MenuItem.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MenuItem();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Intitializes a new <see cref="T:Microsoft.Maui.Controls.MenuItem" /> instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceleratorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty AcceleratorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty AcceleratorProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.MenuItem.AcceleratorProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AcceleratorProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ AcceleratorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AcceleratorProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.MenuItem.AcceleratorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("Use MenuFlyoutItem.KeyboardAcceleratorsProperty instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use MenuFlyoutItem.KeyboardAcceleratorsProperty instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="T:Microsoft.Maui.Controls.Accelerator" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="class">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; class { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; class" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.MenuItem.class" />
+      <MemberSignature Language="VB.NET" Value="Public Property class As IList(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::String ^&gt; ^ class { System::Collections::Generic::IList&lt;System::String ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.class : System.Collections.Generic.IList&lt;string&gt; with get, set" Usage="Microsoft.Maui.Controls.MenuItem.class" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.TypeConverter(typeof(Microsoft.Maui.Controls.ListStringTypeConverter))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.TypeConverter(typeof(Microsoft.Maui.Controls.ListStringTypeConverter))&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clicked">
+      <MemberSignature Language="C#" Value="public event EventHandler Clicked;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Clicked" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.MenuItem.Clicked" />
+      <MemberSignature Language="VB.NET" Value="Public Event Clicked As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Clicked;" />
+      <MemberSignature Language="F#" Value="member this.Clicked : EventHandler " Usage="member this.Clicked : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Command">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.ICommand Command { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.ICommand Command" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.MenuItem.Command" />
+      <MemberSignature Language="VB.NET" Value="Public Property Command As ICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::ICommand ^ Command { System::Windows::Input::ICommand ^ get(); void set(System::Windows::Input::ICommand ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Command : System.Windows.Input.ICommand with get, set" Usage="Microsoft.Maui.Controls.MenuItem.Command" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the command that is run when the menu is clicked.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandParameter">
+      <MemberSignature Language="C#" Value="public object CommandParameter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object CommandParameter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.MenuItem.CommandParameter" />
+      <MemberSignature Language="VB.NET" Value="Public Property CommandParameter As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CommandParameter { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CommandParameter : obj with get, set" Usage="Microsoft.Maui.Controls.MenuItem.CommandParameter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the parameter that is passed to the command.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandParameterProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty CommandParameterProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty CommandParameterProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.MenuItem.CommandParameterProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CommandParameterProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ CommandParameterProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CommandParameterProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.MenuItem.CommandParameterProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.MenuItem.CommandParameter" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty CommandProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty CommandProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.MenuItem.CommandProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CommandProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ CommandProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CommandProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.MenuItem.CommandProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.MenuItem.Command" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAccelerator">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Controls.Accelerator GetAccelerator (Microsoft.Maui.Controls.BindableObject bindable);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Maui.Controls.Accelerator GetAccelerator(class Microsoft.Maui.Controls.BindableObject bindable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.MenuItem.GetAccelerator(Microsoft.Maui.Controls.BindableObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetAccelerator (bindable As BindableObject) As Accelerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Maui::Controls::Accelerator ^ GetAccelerator(Microsoft::Maui::Controls::BindableObject ^ bindable);" />
+      <MemberSignature Language="F#" Value="static member GetAccelerator : Microsoft.Maui.Controls.BindableObject -&gt; Microsoft.Maui.Controls.Accelerator" Usage="Microsoft.Maui.Controls.MenuItem.GetAccelerator bindable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("Use MenuFlyoutItem.KeyboardAcceleratorsProperty instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use MenuFlyoutItem.KeyboardAcceleratorsProperty instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.Accelerator</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Microsoft.Maui.Controls.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">The bindable object for which to retrieve the accelerator keys.</param>
+        <summary>Gets the accelerator for the specified bindable object.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IconImageSource">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.ImageSource IconImageSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.ImageSource IconImageSource" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.MenuItem.IconImageSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property IconImageSource As ImageSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::ImageSource ^ IconImageSource { Microsoft::Maui::Controls::ImageSource ^ get(); void set(Microsoft::Maui::Controls::ImageSource ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.IconImageSource : Microsoft.Maui.Controls.ImageSource with get, set" Usage="Microsoft.Maui.Controls.MenuItem.IconImageSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.ImageSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IconImageSourceProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty IconImageSourceProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty IconImageSourceProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.MenuItem.IconImageSourceProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IconImageSourceProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ IconImageSourceProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IconImageSourceProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.MenuItem.IconImageSourceProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.MenuItem.IconImageSource" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDestructive">
+      <MemberSignature Language="C#" Value="public bool IsDestructive { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDestructive" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.MenuItem.IsDestructive" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsDestructive As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDestructive { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsDestructive : bool with get, set" Usage="Microsoft.Maui.Controls.MenuItem.IsDestructive" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether or not the menu item removes its associated UI element.</summary>
+        <value>False</value>
+        <remarks>
+          <para>The following example shows how to add a MenuItem with IsDestructive set to True.</para>
+          <example>
+            <code lang="XAML"><![CDATA[
+<ViewCell.ContextActions>
+    <MenuItem Text="Delete" IsDestructive="True"/>
+</ViewCell.ContextActions>
+      ]]></code>
+          </example>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDestructiveProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty IsDestructiveProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty IsDestructiveProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.MenuItem.IsDestructiveProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsDestructiveProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ IsDestructiveProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsDestructiveProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.MenuItem.IsDestructiveProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.MenuItem.IsDestructive" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabled">
+      <MemberSignature Language="C#" Value="public bool IsEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.MenuItem.IsEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsEnabled : bool with get, set" Usage="Microsoft.Maui.Controls.MenuItem.IsEnabled" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.Controls.IMenuItemController.IsEnabled</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabledProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty IsEnabledProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty IsEnabledProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.MenuItem.IsEnabledProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsEnabledProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ IsEnabledProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsEnabledProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.MenuItem.IsEnabledProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.MenuItem.IsEnabled" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Controls.IMenuItemController.Activate">
+      <MemberSignature Language="C#" Value="void IMenuItemController.Activate ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.Controls.IMenuItemController.Activate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.MenuItem.Microsoft#Maui#Controls#IMenuItemController#Activate" />
+      <MemberSignature Language="VB.NET" Value="Sub Activate () Implements IMenuItemController.Activate" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.Controls.IMenuItemController.Activate() = Microsoft::Maui::Controls::IMenuItemController::Activate;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Controls.IMenuItemController.Activate : unit -&gt; unit&#xA;override this.Microsoft.Maui.Controls.IMenuItemController.Activate : unit -&gt; unit" Usage="menuItem.Microsoft.Maui.Controls.IMenuItemController.Activate " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.IMenuItemController.Activate</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IImageSourcePart.IsAnimationPlaying">
+      <MemberSignature Language="C#" Value="bool Microsoft.Maui.IImageSourcePart.IsAnimationPlaying { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Microsoft.Maui.IImageSourcePart.IsAnimationPlaying" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.MenuItem.Microsoft#Maui#IImageSourcePart#IsAnimationPlaying" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsAnimationPlaying As Boolean Implements IImageSourcePart.IsAnimationPlaying" />
+      <MemberSignature Language="C++ CLI" Value="property bool Microsoft::Maui::IImageSourcePart::IsAnimationPlaying { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.IImageSourcePart.IsAnimationPlaying : bool" Usage="Microsoft.Maui.IImageSourcePart.IsAnimationPlaying" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IImageSourcePart.IsAnimationPlaying</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IImageSourcePart.Source">
+      <MemberSignature Language="C#" Value="Microsoft.Maui.IImageSource Microsoft.Maui.IImageSourcePart.Source { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.IImageSource Microsoft.Maui.IImageSourcePart.Source" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.MenuItem.Microsoft#Maui#IImageSourcePart#Source" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Source As IImageSource Implements IImageSourcePart.Source" />
+      <MemberSignature Language="C++ CLI" Value="property Microsoft::Maui::IImageSource ^ Microsoft::Maui::IImageSourcePart::Source { Microsoft::Maui::IImageSource ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.IImageSourcePart.Source : Microsoft.Maui.IImageSource" Usage="Microsoft.Maui.IImageSourcePart.Source" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IImageSourcePart.Source</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.IImageSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IImageSourcePart.UpdateIsLoading">
+      <MemberSignature Language="C#" Value="void IImageSourcePart.UpdateIsLoading (bool isLoading);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.IImageSourcePart.UpdateIsLoading(bool isLoading) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.MenuItem.Microsoft#Maui#IImageSourcePart#UpdateIsLoading(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Sub UpdateIsLoading (isLoading As Boolean) Implements IImageSourcePart.UpdateIsLoading" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.IImageSourcePart.UpdateIsLoading(bool isLoading) = Microsoft::Maui::IImageSourcePart::UpdateIsLoading;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.IImageSourcePart.UpdateIsLoading : bool -&gt; unit&#xA;override this.Microsoft.Maui.IImageSourcePart.UpdateIsLoading : bool -&gt; unit" Usage="menuItem.Microsoft.Maui.IImageSourcePart.UpdateIsLoading isLoading" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.IImageSourcePart.UpdateIsLoading(System.Boolean)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="isLoading" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="isLoading">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IMenuElement.Clicked">
+      <MemberSignature Language="C#" Value="void IMenuElement.Clicked ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.IMenuElement.Clicked() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.MenuItem.Microsoft#Maui#IMenuElement#Clicked" />
+      <MemberSignature Language="VB.NET" Value="Sub Clicked () Implements IMenuElement.Clicked" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.IMenuElement.Clicked() = Microsoft::Maui::IMenuElement::Clicked;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.IMenuElement.Clicked : unit -&gt; unit&#xA;override this.Microsoft.Maui.IMenuElement.Clicked : unit -&gt; unit" Usage="menuItem.Microsoft.Maui.IMenuElement.Clicked " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.IMenuElement.Clicked</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.ITextStyle.CharacterSpacing">
+      <MemberSignature Language="C#" Value="double Microsoft.Maui.ITextStyle.CharacterSpacing { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Microsoft.Maui.ITextStyle.CharacterSpacing" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.MenuItem.Microsoft#Maui#ITextStyle#CharacterSpacing" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property CharacterSpacing As Double Implements ITextStyle.CharacterSpacing" />
+      <MemberSignature Language="C++ CLI" Value="property double Microsoft::Maui::ITextStyle::CharacterSpacing { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.ITextStyle.CharacterSpacing : double" Usage="Microsoft.Maui.ITextStyle.CharacterSpacing" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.ITextStyle.CharacterSpacing</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.ITextStyle.Font">
+      <MemberSignature Language="C#" Value="Microsoft.Maui.Font Microsoft.Maui.ITextStyle.Font { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.Font Microsoft.Maui.ITextStyle.Font" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.MenuItem.Microsoft#Maui#ITextStyle#Font" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Font As Font Implements ITextStyle.Font" />
+      <MemberSignature Language="C++ CLI" Value="property Microsoft::Maui::Font Microsoft::Maui::ITextStyle::Font { Microsoft::Maui::Font get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.ITextStyle.Font : Microsoft.Maui.Font" Usage="Microsoft.Maui.ITextStyle.Font" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.ITextStyle.Font</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Font</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.ITextStyle.TextColor">
+      <MemberSignature Language="C#" Value="Microsoft.Maui.Graphics.Color Microsoft.Maui.ITextStyle.TextColor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Graphics.Color Microsoft.Maui.ITextStyle.TextColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.MenuItem.Microsoft#Maui#ITextStyle#TextColor" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property TextColor As Color Implements ITextStyle.TextColor" />
+      <MemberSignature Language="C++ CLI" Value="property Microsoft::Maui::Graphics::Color ^ Microsoft::Maui::ITextStyle::TextColor { Microsoft::Maui::Graphics::Color ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.ITextStyle.TextColor : Microsoft.Maui.Graphics.Color" Usage="Microsoft.Maui.ITextStyle.TextColor" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.ITextStyle.TextColor</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnClicked">
+      <MemberSignature Language="C#" Value="protected virtual void OnClicked ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnClicked() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.MenuItem.OnClicked" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnClicked ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnClicked();" />
+      <MemberSignature Language="F#" Value="abstract member OnClicked : unit -&gt; unit&#xA;override this.OnClicked : unit -&gt; unit" Usage="menuItem.OnClicked " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAccelerator">
+      <MemberSignature Language="C#" Value="public static void SetAccelerator (Microsoft.Maui.Controls.BindableObject bindable, Microsoft.Maui.Controls.Accelerator value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAccelerator(class Microsoft.Maui.Controls.BindableObject bindable, class Microsoft.Maui.Controls.Accelerator value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.MenuItem.SetAccelerator(Microsoft.Maui.Controls.BindableObject,Microsoft.Maui.Controls.Accelerator)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetAccelerator (bindable As BindableObject, value As Accelerator)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetAccelerator(Microsoft::Maui::Controls::BindableObject ^ bindable, Microsoft::Maui::Controls::Accelerator ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetAccelerator : Microsoft.Maui.Controls.BindableObject * Microsoft.Maui.Controls.Accelerator -&gt; unit" Usage="Microsoft.Maui.Controls.MenuItem.SetAccelerator (bindable, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("Use MenuFlyoutItem.KeyboardAcceleratorsProperty instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use MenuFlyoutItem.KeyboardAcceleratorsProperty instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Microsoft.Maui.Controls.BindableObject" />
+        <Parameter Name="value" Type="Microsoft.Maui.Controls.Accelerator" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">The bindable object for which to set the accelerator keys.</param>
+        <param name="value">The new accelerator for the object.</param>
+        <summary>Sets the accelerator for the specified bindable object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StyleClass">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; StyleClass { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; StyleClass" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.MenuItem.StyleClass" />
+      <MemberSignature Language="VB.NET" Value="Public Property StyleClass As IList(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::String ^&gt; ^ StyleClass { System::Collections::Generic::IList&lt;System::String ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StyleClass : System.Collections.Generic.IList&lt;string&gt; with get, set" Usage="Microsoft.Maui.Controls.MenuItem.StyleClass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.TypeConverter(typeof(Microsoft.Maui.Controls.ListStringTypeConverter))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.TypeConverter(typeof(Microsoft.Maui.Controls.ListStringTypeConverter))&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Sets the StyleClass of the generated <see cref="T:Microsoft.Maui.Controls.FlyoutItem" /> when used with <see cref="T:Microsoft.Maui.Controls.Shell" /></summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.MenuItem.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="Microsoft.Maui.Controls.MenuItem.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The text of the menu item.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty TextProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty TextProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.MenuItem.TextProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ TextProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TextProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.MenuItem.TextProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.MenuItem.Text" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

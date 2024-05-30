@@ -1,0 +1,432 @@
+<Type Name="Switch" FullName="Microsoft.Maui.Controls.Switch">
+  <TypeSignature Language="C#" Value="public class Switch : Microsoft.Maui.Controls.View, Microsoft.Maui.Controls.IElementConfiguration&lt;Microsoft.Maui.Controls.Switch&gt;, Microsoft.Maui.ISwitch" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Switch extends Microsoft.Maui.Controls.View implements class Microsoft.Maui.Controls.IElementConfiguration`1&lt;class Microsoft.Maui.Controls.Switch&gt;, class Microsoft.Maui.IElement, class Microsoft.Maui.ISwitch, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Switch" />
+  <TypeSignature Language="VB.NET" Value="Public Class Switch&#xA;Inherits View&#xA;Implements IElementConfiguration(Of Switch), ISwitch" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Switch : Microsoft::Maui::Controls::View, Microsoft::Maui::Controls::IElementConfiguration&lt;Microsoft::Maui::Controls::Switch ^&gt;, Microsoft::Maui::ISwitch" />
+  <TypeSignature Language="F#" Value="type Switch = class&#xA;    inherit View&#xA;    interface IElementConfiguration&lt;Switch&gt;&#xA;    interface ISwitch&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Maui.Controls.View</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.Controls.IElementConfiguration&lt;Microsoft.Maui.Controls.Switch&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IElement</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.ISwitch</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.ITransform</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IView</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>A <see cref="T:Microsoft.Maui.Controls.View" /> control that provides a toggled value.</summary>
+    <remarks>
+      <para>The following example describes a basic use.</para>
+      <example>
+        <code lang="csharp lang-csharp"><![CDATA[using System;
+using Microsoft.Maui.Controls;
+    
+namespace FormsGallery
+{
+    class SwitchDemoPage : ContentPage
+    {
+        Label label;
+    
+        public SwitchDemoPage()
+        {
+            Label header = new Label
+            {
+                Text = "Switch",
+                FontSize = Device.GetNamedSize (NamedSize.Large, typeof(Label)),
+                HorizontalOptions = LayoutOptions.Center
+            };
+    
+            Switch switcher = new Switch
+            {
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.CenterAndExpand
+            };
+            switcher.Toggled += switcher_Toggled;
+    
+            label = new Label
+            {
+                Text = "Switch is now False",
+                FontSize = Device.GetNamedSize (NamedSize.Large, typeof(Label)),
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.CenterAndExpand
+            };
+    
+            // Accomodate iPhone status bar.
+            this.Padding = new Thickness(10, Device.OnPlatform(20, 0, 0), 10, 5);
+    
+            // Build the page.
+            this.Content = new StackLayout
+            {
+                Children =
+                {
+                    header,
+                    switcher,
+                    label
+                }
+            };
+        }
+    
+        void switcher_Toggled(object sender, ToggledEventArgs e)
+        {
+            label.Text = String.Format("Switch is now {0}", e.Value);
+        }
+    }
+}]]></code>
+      </example>
+      <para>
+        <img href="~/xml/Microsoft.Maui.Controls/_images/Switch.TripleScreenShot.png" />
+      </para>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Switch ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Switch.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Switch();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new <see cref="T:Microsoft.Maui.Controls.Switch" /> element with default values.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeVisualState">
+      <MemberSignature Language="C#" Value="protected internal override void ChangeVisualState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void ChangeVisualState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Switch.ChangeVisualState" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub ChangeVisualState ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void ChangeVisualState();" />
+      <MemberSignature Language="F#" Value="override this.ChangeVisualState : unit -&gt; unit" Usage="switch.ChangeVisualState " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsToggled">
+      <MemberSignature Language="C#" Value="public bool IsToggled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsToggled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Switch.IsToggled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsToggled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsToggled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsToggled : bool with get, set" Usage="Microsoft.Maui.Controls.Switch.IsToggled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that indicates whether this <see cref="T:Microsoft.Maui.Controls.Switch" /> element is toggled.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsToggledProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty IsToggledProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty IsToggledProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Switch.IsToggledProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsToggledProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ IsToggledProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsToggledProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Switch.IsToggledProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Switch.IsToggled" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.ISwitch.IsOn">
+      <MemberSignature Language="C#" Value="bool Microsoft.Maui.ISwitch.IsOn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Microsoft.Maui.ISwitch.IsOn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Switch.Microsoft#Maui#ISwitch#IsOn" />
+      <MemberSignature Language="VB.NET" Value=" Property IsOn As Boolean Implements ISwitch.IsOn" />
+      <MemberSignature Language="C++ CLI" Value="property bool Microsoft::Maui::ISwitch::IsOn { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.ISwitch.IsOn : bool with get, set" Usage="Microsoft.Maui.ISwitch.IsOn" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.ISwitch.IsOn</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.ISwitch.TrackColor">
+      <MemberSignature Language="C#" Value="Microsoft.Maui.Graphics.Color Microsoft.Maui.ISwitch.TrackColor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Graphics.Color Microsoft.Maui.ISwitch.TrackColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Switch.Microsoft#Maui#ISwitch#TrackColor" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property TrackColor As Color Implements ISwitch.TrackColor" />
+      <MemberSignature Language="C++ CLI" Value="property Microsoft::Maui::Graphics::Color ^ Microsoft::Maui::ISwitch::TrackColor { Microsoft::Maui::Graphics::Color ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.ISwitch.TrackColor : Microsoft.Maui.Graphics.Color" Usage="Microsoft.Maui.ISwitch.TrackColor" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.ISwitch.TrackColor</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="On&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;T,Microsoft.Maui.Controls.Switch&gt; On&lt;T&gt; () where T : Microsoft.Maui.Controls.IConfigPlatform;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Maui.Controls.IPlatformElementConfiguration`2&lt;!!T, class Microsoft.Maui.Controls.Switch&gt; On&lt;(class Microsoft.Maui.Controls.IConfigPlatform) T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Switch.On``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function On(Of T As IConfigPlatform) () As IPlatformElementConfiguration(Of T, Switch)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : Microsoft::Maui::Controls::IConfigPlatform virtual Microsoft::Maui::Controls::IPlatformElementConfiguration&lt;T, Microsoft::Maui::Controls::Switch ^&gt; ^ On();" />
+      <MemberSignature Language="F#" Value="abstract member On : unit -&gt; Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;'T, Microsoft.Maui.Controls.Switch (requires 'T :&gt; Microsoft.Maui.Controls.IConfigPlatform)&gt; (requires 'T :&gt; Microsoft.Maui.Controls.IConfigPlatform)&#xA;override this.On : unit -&gt; Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;'T, Microsoft.Maui.Controls.Switch (requires 'T :&gt; Microsoft.Maui.Controls.IConfigPlatform)&gt; (requires 'T :&gt; Microsoft.Maui.Controls.IConfigPlatform)" Usage="switch.On " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.IElementConfiguration`1.On``1</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;T,Microsoft.Maui.Controls.Switch&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>Microsoft.Maui.Controls.IConfigPlatform</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="OnColor">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.Color OnColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Graphics.Color OnColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Switch.OnColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property OnColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Graphics::Color ^ OnColor { Microsoft::Maui::Graphics::Color ^ get(); void set(Microsoft::Maui::Graphics::Color ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OnColor : Microsoft.Maui.Graphics.Color with get, set" Usage="Microsoft.Maui.Controls.Switch.OnColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the color of the switch when it is in the "On" position.</summary>
+        <value>The color of the switch when it is in the "On" position.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty OnColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty OnColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Switch.OnColorProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OnColorProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ OnColorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable OnColorProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Switch.OnColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Switch.OnColor" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPropertyChanged">
+      <MemberSignature Language="C#" Value="protected override void OnPropertyChanged (string propertyName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPropertyChanged(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Switch.OnPropertyChanged(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPropertyChanged (Optional propertyName As String = Nothing)" />
+      <MemberSignature Language="F#" Value="override this.OnPropertyChanged : string -&gt; unit" Usage="switch.OnPropertyChanged propertyName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SwitchOffVisualState">
+      <MemberSignature Language="C#" Value="public const string SwitchOffVisualState;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string SwitchOffVisualState" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Switch.SwitchOffVisualState" />
+      <MemberSignature Language="VB.NET" Value="Public Const SwitchOffVisualState As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ SwitchOffVisualState;" />
+      <MemberSignature Language="F#" Value="val mutable SwitchOffVisualState : string" Usage="Microsoft.Maui.Controls.Switch.SwitchOffVisualState" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SwitchOnVisualState">
+      <MemberSignature Language="C#" Value="public const string SwitchOnVisualState;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string SwitchOnVisualState" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Switch.SwitchOnVisualState" />
+      <MemberSignature Language="VB.NET" Value="Public Const SwitchOnVisualState As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ SwitchOnVisualState;" />
+      <MemberSignature Language="F#" Value="val mutable SwitchOnVisualState : string" Usage="Microsoft.Maui.Controls.Switch.SwitchOnVisualState" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThumbColor">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.Color ThumbColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Graphics.Color ThumbColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Switch.ThumbColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ThumbColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Graphics::Color ^ ThumbColor { Microsoft::Maui::Graphics::Color ^ get(); void set(Microsoft::Maui::Graphics::Color ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ThumbColor : Microsoft.Maui.Graphics.Color with get, set" Usage="Microsoft.Maui.Controls.Switch.ThumbColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThumbColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty ThumbColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty ThumbColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Switch.ThumbColorProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ThumbColorProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ ThumbColorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ThumbColorProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Switch.ThumbColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Switch.ThumbColor" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Toggled">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Controls.ToggledEventArgs&gt; Toggled;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.ToggledEventArgs&gt; Toggled" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.Switch.Toggled" />
+      <MemberSignature Language="VB.NET" Value="Public Event Toggled As EventHandler(Of ToggledEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Controls::ToggledEventArgs ^&gt; ^ Toggled;" />
+      <MemberSignature Language="F#" Value="member this.Toggled : EventHandler&lt;Microsoft.Maui.Controls.ToggledEventArgs&gt; " Usage="member this.Toggled : System.EventHandler&lt;Microsoft.Maui.Controls.ToggledEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.ToggledEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

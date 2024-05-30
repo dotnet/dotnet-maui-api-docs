@@ -1,0 +1,350 @@
+<Type Name="BindableProperty" FullName="Microsoft.Maui.Controls.BindableProperty">
+  <TypeSignature Language="C#" Value="public sealed class BindableProperty" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BindableProperty extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.BindableProperty" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BindableProperty" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BindableProperty sealed" />
+  <TypeSignature Language="F#" Value="type BindableProperty = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.ComponentModel.TypeConverter(typeof(Microsoft.Maui.Controls.BindablePropertyConverter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.TypeConverter(typeof(Microsoft.Maui.Controls.BindablePropertyConverter))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerDisplay("{PropertyName}")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("{PropertyName}")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>A BindableProperty is a backing store for properties allowing bindings on <see cref="T:Microsoft.Maui.Controls.BindableObject" />.</summary>
+    <remarks />
+    <related type="article" href="https://devblogs.microsoft.com/xamarin/introduction-to-data-binding/">Introduction To Data Binding</related>
+  </Docs>
+  <Members>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Controls.BindableProperty Create (string propertyName, Type returnType, Type declaringType, object defaultValue = default, Microsoft.Maui.Controls.BindingMode defaultBindingMode = Microsoft.Maui.Controls.BindingMode.OneWay, Microsoft.Maui.Controls.BindableProperty.ValidateValueDelegate validateValue = default, Microsoft.Maui.Controls.BindableProperty.BindingPropertyChangedDelegate propertyChanged = default, Microsoft.Maui.Controls.BindableProperty.BindingPropertyChangingDelegate propertyChanging = default, Microsoft.Maui.Controls.BindableProperty.CoerceValueDelegate coerceValue = default, Microsoft.Maui.Controls.BindableProperty.CreateDefaultValueDelegate defaultValueCreator = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Maui.Controls.BindableProperty Create(string propertyName, class System.Type returnType, class System.Type declaringType, object defaultValue, valuetype Microsoft.Maui.Controls.BindingMode defaultBindingMode, class Microsoft.Maui.Controls.BindableProperty/ValidateValueDelegate validateValue, class Microsoft.Maui.Controls.BindableProperty/BindingPropertyChangedDelegate propertyChanged, class Microsoft.Maui.Controls.BindableProperty/BindingPropertyChangingDelegate propertyChanging, class Microsoft.Maui.Controls.BindableProperty/CoerceValueDelegate coerceValue, class Microsoft.Maui.Controls.BindableProperty/CreateDefaultValueDelegate defaultValueCreator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.BindableProperty.Create(System.String,System.Type,System.Type,System.Object,Microsoft.Maui.Controls.BindingMode,Microsoft.Maui.Controls.BindableProperty.ValidateValueDelegate,Microsoft.Maui.Controls.BindableProperty.BindingPropertyChangedDelegate,Microsoft.Maui.Controls.BindableProperty.BindingPropertyChangingDelegate,Microsoft.Maui.Controls.BindableProperty.CoerceValueDelegate,Microsoft.Maui.Controls.BindableProperty.CreateDefaultValueDelegate)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (propertyName As String, returnType As Type, declaringType As Type, Optional defaultValue As Object = Nothing, Optional defaultBindingMode As BindingMode = Microsoft.Maui.Controls.BindingMode.OneWay, Optional validateValue As BindableProperty.ValidateValueDelegate = Nothing, Optional propertyChanged As BindableProperty.BindingPropertyChangedDelegate = Nothing, Optional propertyChanging As BindableProperty.BindingPropertyChangingDelegate = Nothing, Optional coerceValue As BindableProperty.CoerceValueDelegate = Nothing, Optional defaultValueCreator As BindableProperty.CreateDefaultValueDelegate = Nothing) As BindableProperty" />
+      <MemberSignature Language="F#" Value="static member Create : string * Type * Type * obj * Microsoft.Maui.Controls.BindingMode * Microsoft.Maui.Controls.BindableProperty.ValidateValueDelegate * Microsoft.Maui.Controls.BindableProperty.BindingPropertyChangedDelegate * Microsoft.Maui.Controls.BindableProperty.BindingPropertyChangingDelegate * Microsoft.Maui.Controls.BindableProperty.CoerceValueDelegate * Microsoft.Maui.Controls.BindableProperty.CreateDefaultValueDelegate -&gt; Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.BindableProperty.Create (propertyName, returnType, declaringType, defaultValue, defaultBindingMode, validateValue, propertyChanged, propertyChanging, coerceValue, defaultValueCreator)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="returnType" Type="System.Type" />
+        <Parameter Name="declaringType" Type="System.Type" />
+        <Parameter Name="defaultValue" Type="System.Object" />
+        <Parameter Name="defaultBindingMode" Type="Microsoft.Maui.Controls.BindingMode" />
+        <Parameter Name="validateValue" Type="Microsoft.Maui.Controls.BindableProperty+ValidateValueDelegate" />
+        <Parameter Name="propertyChanged" Type="Microsoft.Maui.Controls.BindableProperty+BindingPropertyChangedDelegate" />
+        <Parameter Name="propertyChanging" Type="Microsoft.Maui.Controls.BindableProperty+BindingPropertyChangingDelegate" />
+        <Parameter Name="coerceValue" Type="Microsoft.Maui.Controls.BindableProperty+CoerceValueDelegate" />
+        <Parameter Name="defaultValueCreator" Type="Microsoft.Maui.Controls.BindableProperty+CreateDefaultValueDelegate" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the BindableProperty.</param>
+        <param name="returnType">The type of the property.</param>
+        <param name="declaringType">The type of the declaring object.</param>
+        <param name="defaultValue">The default value for the property.</param>
+        <param name="defaultBindingMode">The BindingMode to use on SetBinding() if no BindingMode is given. This parameter is optional. Default is BindingMode.OneWay.</param>
+        <param name="validateValue">A delegate to be run when a value is set. This parameter is optional. Default is null.</param>
+        <param name="propertyChanged">A delegate to be run when the value has changed. This parameter is optional. Default is null.</param>
+        <param name="propertyChanging">A delegate to be run when the value will change. This parameter is optional. Default is null.</param>
+        <param name="coerceValue">A delegate used to coerce the range of a value. This parameter is optional. Default is null.</param>
+        <param name="defaultValueCreator">A Func used to initialize default value for reference types.</param>
+        <summary>Creates a new instance of the BindableProperty class.</summary>
+        <returns>A newly created BindableProperty.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAttached">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Controls.BindableProperty CreateAttached (string propertyName, Type returnType, Type declaringType, object defaultValue, Microsoft.Maui.Controls.BindingMode defaultBindingMode = Microsoft.Maui.Controls.BindingMode.OneWay, Microsoft.Maui.Controls.BindableProperty.ValidateValueDelegate validateValue = default, Microsoft.Maui.Controls.BindableProperty.BindingPropertyChangedDelegate propertyChanged = default, Microsoft.Maui.Controls.BindableProperty.BindingPropertyChangingDelegate propertyChanging = default, Microsoft.Maui.Controls.BindableProperty.CoerceValueDelegate coerceValue = default, Microsoft.Maui.Controls.BindableProperty.CreateDefaultValueDelegate defaultValueCreator = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Maui.Controls.BindableProperty CreateAttached(string propertyName, class System.Type returnType, class System.Type declaringType, object defaultValue, valuetype Microsoft.Maui.Controls.BindingMode defaultBindingMode, class Microsoft.Maui.Controls.BindableProperty/ValidateValueDelegate validateValue, class Microsoft.Maui.Controls.BindableProperty/BindingPropertyChangedDelegate propertyChanged, class Microsoft.Maui.Controls.BindableProperty/BindingPropertyChangingDelegate propertyChanging, class Microsoft.Maui.Controls.BindableProperty/CoerceValueDelegate coerceValue, class Microsoft.Maui.Controls.BindableProperty/CreateDefaultValueDelegate defaultValueCreator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.BindableProperty.CreateAttached(System.String,System.Type,System.Type,System.Object,Microsoft.Maui.Controls.BindingMode,Microsoft.Maui.Controls.BindableProperty.ValidateValueDelegate,Microsoft.Maui.Controls.BindableProperty.BindingPropertyChangedDelegate,Microsoft.Maui.Controls.BindableProperty.BindingPropertyChangingDelegate,Microsoft.Maui.Controls.BindableProperty.CoerceValueDelegate,Microsoft.Maui.Controls.BindableProperty.CreateDefaultValueDelegate)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateAttached (propertyName As String, returnType As Type, declaringType As Type, defaultValue As Object, Optional defaultBindingMode As BindingMode = Microsoft.Maui.Controls.BindingMode.OneWay, Optional validateValue As BindableProperty.ValidateValueDelegate = Nothing, Optional propertyChanged As BindableProperty.BindingPropertyChangedDelegate = Nothing, Optional propertyChanging As BindableProperty.BindingPropertyChangingDelegate = Nothing, Optional coerceValue As BindableProperty.CoerceValueDelegate = Nothing, Optional defaultValueCreator As BindableProperty.CreateDefaultValueDelegate = Nothing) As BindableProperty" />
+      <MemberSignature Language="F#" Value="static member CreateAttached : string * Type * Type * obj * Microsoft.Maui.Controls.BindingMode * Microsoft.Maui.Controls.BindableProperty.ValidateValueDelegate * Microsoft.Maui.Controls.BindableProperty.BindingPropertyChangedDelegate * Microsoft.Maui.Controls.BindableProperty.BindingPropertyChangingDelegate * Microsoft.Maui.Controls.BindableProperty.CoerceValueDelegate * Microsoft.Maui.Controls.BindableProperty.CreateDefaultValueDelegate -&gt; Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.BindableProperty.CreateAttached (propertyName, returnType, declaringType, defaultValue, defaultBindingMode, validateValue, propertyChanged, propertyChanging, coerceValue, defaultValueCreator)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="returnType" Type="System.Type" />
+        <Parameter Name="declaringType" Type="System.Type" />
+        <Parameter Name="defaultValue" Type="System.Object" />
+        <Parameter Name="defaultBindingMode" Type="Microsoft.Maui.Controls.BindingMode" />
+        <Parameter Name="validateValue" Type="Microsoft.Maui.Controls.BindableProperty+ValidateValueDelegate" />
+        <Parameter Name="propertyChanged" Type="Microsoft.Maui.Controls.BindableProperty+BindingPropertyChangedDelegate" />
+        <Parameter Name="propertyChanging" Type="Microsoft.Maui.Controls.BindableProperty+BindingPropertyChangingDelegate" />
+        <Parameter Name="coerceValue" Type="Microsoft.Maui.Controls.BindableProperty+CoerceValueDelegate" />
+        <Parameter Name="defaultValueCreator" Type="Microsoft.Maui.Controls.BindableProperty+CreateDefaultValueDelegate" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the BindableProperty.</param>
+        <param name="returnType">The type of the property.</param>
+        <param name="declaringType">The type of the declaring object.</param>
+        <param name="defaultValue">The default value for the property.</param>
+        <param name="defaultBindingMode">The BindingMode to use on SetBinding() if no BindingMode is given. This parameter is optional. Default is BindingMode.OneWay.</param>
+        <param name="validateValue">A delegate to be run when a value is set. This parameter is optional. Default is null.</param>
+        <param name="propertyChanged">A delegate to be run when the value has changed. This parameter is optional. Default is null.</param>
+        <param name="propertyChanging">A delegate to be run when the value will change. This parameter is optional. Default is null.</param>
+        <param name="coerceValue">A delegate used to coerce the range of a value. This parameter is optional. Default is null.</param>
+        <param name="defaultValueCreator">A Func used to initialize default value for reference types.</param>
+        <summary>Creates a new instance of the BindableProperty class for an attached property.</summary>
+        <returns>A newly created attached BindableProperty.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAttachedReadOnly">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Controls.BindablePropertyKey CreateAttachedReadOnly (string propertyName, Type returnType, Type declaringType, object defaultValue, Microsoft.Maui.Controls.BindingMode defaultBindingMode = Microsoft.Maui.Controls.BindingMode.OneWayToSource, Microsoft.Maui.Controls.BindableProperty.ValidateValueDelegate validateValue = default, Microsoft.Maui.Controls.BindableProperty.BindingPropertyChangedDelegate propertyChanged = default, Microsoft.Maui.Controls.BindableProperty.BindingPropertyChangingDelegate propertyChanging = default, Microsoft.Maui.Controls.BindableProperty.CoerceValueDelegate coerceValue = default, Microsoft.Maui.Controls.BindableProperty.CreateDefaultValueDelegate defaultValueCreator = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Maui.Controls.BindablePropertyKey CreateAttachedReadOnly(string propertyName, class System.Type returnType, class System.Type declaringType, object defaultValue, valuetype Microsoft.Maui.Controls.BindingMode defaultBindingMode, class Microsoft.Maui.Controls.BindableProperty/ValidateValueDelegate validateValue, class Microsoft.Maui.Controls.BindableProperty/BindingPropertyChangedDelegate propertyChanged, class Microsoft.Maui.Controls.BindableProperty/BindingPropertyChangingDelegate propertyChanging, class Microsoft.Maui.Controls.BindableProperty/CoerceValueDelegate coerceValue, class Microsoft.Maui.Controls.BindableProperty/CreateDefaultValueDelegate defaultValueCreator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.BindableProperty.CreateAttachedReadOnly(System.String,System.Type,System.Type,System.Object,Microsoft.Maui.Controls.BindingMode,Microsoft.Maui.Controls.BindableProperty.ValidateValueDelegate,Microsoft.Maui.Controls.BindableProperty.BindingPropertyChangedDelegate,Microsoft.Maui.Controls.BindableProperty.BindingPropertyChangingDelegate,Microsoft.Maui.Controls.BindableProperty.CoerceValueDelegate,Microsoft.Maui.Controls.BindableProperty.CreateDefaultValueDelegate)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateAttachedReadOnly (propertyName As String, returnType As Type, declaringType As Type, defaultValue As Object, Optional defaultBindingMode As BindingMode = Microsoft.Maui.Controls.BindingMode.OneWayToSource, Optional validateValue As BindableProperty.ValidateValueDelegate = Nothing, Optional propertyChanged As BindableProperty.BindingPropertyChangedDelegate = Nothing, Optional propertyChanging As BindableProperty.BindingPropertyChangingDelegate = Nothing, Optional coerceValue As BindableProperty.CoerceValueDelegate = Nothing, Optional defaultValueCreator As BindableProperty.CreateDefaultValueDelegate = Nothing) As BindablePropertyKey" />
+      <MemberSignature Language="F#" Value="static member CreateAttachedReadOnly : string * Type * Type * obj * Microsoft.Maui.Controls.BindingMode * Microsoft.Maui.Controls.BindableProperty.ValidateValueDelegate * Microsoft.Maui.Controls.BindableProperty.BindingPropertyChangedDelegate * Microsoft.Maui.Controls.BindableProperty.BindingPropertyChangingDelegate * Microsoft.Maui.Controls.BindableProperty.CoerceValueDelegate * Microsoft.Maui.Controls.BindableProperty.CreateDefaultValueDelegate -&gt; Microsoft.Maui.Controls.BindablePropertyKey" Usage="Microsoft.Maui.Controls.BindableProperty.CreateAttachedReadOnly (propertyName, returnType, declaringType, defaultValue, defaultBindingMode, validateValue, propertyChanged, propertyChanging, coerceValue, defaultValueCreator)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindablePropertyKey</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="returnType" Type="System.Type" />
+        <Parameter Name="declaringType" Type="System.Type" />
+        <Parameter Name="defaultValue" Type="System.Object" />
+        <Parameter Name="defaultBindingMode" Type="Microsoft.Maui.Controls.BindingMode" />
+        <Parameter Name="validateValue" Type="Microsoft.Maui.Controls.BindableProperty+ValidateValueDelegate" />
+        <Parameter Name="propertyChanged" Type="Microsoft.Maui.Controls.BindableProperty+BindingPropertyChangedDelegate" />
+        <Parameter Name="propertyChanging" Type="Microsoft.Maui.Controls.BindableProperty+BindingPropertyChangingDelegate" />
+        <Parameter Name="coerceValue" Type="Microsoft.Maui.Controls.BindableProperty+CoerceValueDelegate" />
+        <Parameter Name="defaultValueCreator" Type="Microsoft.Maui.Controls.BindableProperty+CreateDefaultValueDelegate" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the BindableProperty.</param>
+        <param name="returnType">The type of the property.</param>
+        <param name="declaringType">The type of the declaring object.</param>
+        <param name="defaultValue">The default value for the property.</param>
+        <param name="defaultBindingMode">The BindingMode to use on SetBinding() if no BindingMode is given. This parameter is optional. Default is BindingMode.OneWay.</param>
+        <param name="validateValue">A delegate to be run when a value is set. This parameter is optional. Default is null.</param>
+        <param name="propertyChanged">A delegate to be run when the value has changed. This parameter is optional. Default is null.</param>
+        <param name="propertyChanging">A delegate to be run when the value will change. This parameter is optional. Default is null.</param>
+        <param name="coerceValue">A delegate used to coerce the range of a value. This parameter is optional. Default is null.</param>
+        <param name="defaultValueCreator">A Func used to initialize default value for reference types.</param>
+        <summary>Creates a new instance of the BindableProperty class for attached read-only properties.</summary>
+        <returns>A newly created attached read-only BindableProperty.</returns>
+        <remarks>
+          <para>Attached properties are bindable properties that are bound to an object other than their parent. Often, they are used for child items in tables and grids, where data about the location of an item is maintained by its parent, but must be accessed from the child item itself.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateReadOnly">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Controls.BindablePropertyKey CreateReadOnly (string propertyName, Type returnType, Type declaringType, object defaultValue, Microsoft.Maui.Controls.BindingMode defaultBindingMode = Microsoft.Maui.Controls.BindingMode.OneWayToSource, Microsoft.Maui.Controls.BindableProperty.ValidateValueDelegate validateValue = default, Microsoft.Maui.Controls.BindableProperty.BindingPropertyChangedDelegate propertyChanged = default, Microsoft.Maui.Controls.BindableProperty.BindingPropertyChangingDelegate propertyChanging = default, Microsoft.Maui.Controls.BindableProperty.CoerceValueDelegate coerceValue = default, Microsoft.Maui.Controls.BindableProperty.CreateDefaultValueDelegate defaultValueCreator = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Maui.Controls.BindablePropertyKey CreateReadOnly(string propertyName, class System.Type returnType, class System.Type declaringType, object defaultValue, valuetype Microsoft.Maui.Controls.BindingMode defaultBindingMode, class Microsoft.Maui.Controls.BindableProperty/ValidateValueDelegate validateValue, class Microsoft.Maui.Controls.BindableProperty/BindingPropertyChangedDelegate propertyChanged, class Microsoft.Maui.Controls.BindableProperty/BindingPropertyChangingDelegate propertyChanging, class Microsoft.Maui.Controls.BindableProperty/CoerceValueDelegate coerceValue, class Microsoft.Maui.Controls.BindableProperty/CreateDefaultValueDelegate defaultValueCreator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.BindableProperty.CreateReadOnly(System.String,System.Type,System.Type,System.Object,Microsoft.Maui.Controls.BindingMode,Microsoft.Maui.Controls.BindableProperty.ValidateValueDelegate,Microsoft.Maui.Controls.BindableProperty.BindingPropertyChangedDelegate,Microsoft.Maui.Controls.BindableProperty.BindingPropertyChangingDelegate,Microsoft.Maui.Controls.BindableProperty.CoerceValueDelegate,Microsoft.Maui.Controls.BindableProperty.CreateDefaultValueDelegate)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateReadOnly (propertyName As String, returnType As Type, declaringType As Type, defaultValue As Object, Optional defaultBindingMode As BindingMode = Microsoft.Maui.Controls.BindingMode.OneWayToSource, Optional validateValue As BindableProperty.ValidateValueDelegate = Nothing, Optional propertyChanged As BindableProperty.BindingPropertyChangedDelegate = Nothing, Optional propertyChanging As BindableProperty.BindingPropertyChangingDelegate = Nothing, Optional coerceValue As BindableProperty.CoerceValueDelegate = Nothing, Optional defaultValueCreator As BindableProperty.CreateDefaultValueDelegate = Nothing) As BindablePropertyKey" />
+      <MemberSignature Language="F#" Value="static member CreateReadOnly : string * Type * Type * obj * Microsoft.Maui.Controls.BindingMode * Microsoft.Maui.Controls.BindableProperty.ValidateValueDelegate * Microsoft.Maui.Controls.BindableProperty.BindingPropertyChangedDelegate * Microsoft.Maui.Controls.BindableProperty.BindingPropertyChangingDelegate * Microsoft.Maui.Controls.BindableProperty.CoerceValueDelegate * Microsoft.Maui.Controls.BindableProperty.CreateDefaultValueDelegate -&gt; Microsoft.Maui.Controls.BindablePropertyKey" Usage="Microsoft.Maui.Controls.BindableProperty.CreateReadOnly (propertyName, returnType, declaringType, defaultValue, defaultBindingMode, validateValue, propertyChanged, propertyChanging, coerceValue, defaultValueCreator)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindablePropertyKey</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="returnType" Type="System.Type" />
+        <Parameter Name="declaringType" Type="System.Type" />
+        <Parameter Name="defaultValue" Type="System.Object" />
+        <Parameter Name="defaultBindingMode" Type="Microsoft.Maui.Controls.BindingMode" />
+        <Parameter Name="validateValue" Type="Microsoft.Maui.Controls.BindableProperty+ValidateValueDelegate" />
+        <Parameter Name="propertyChanged" Type="Microsoft.Maui.Controls.BindableProperty+BindingPropertyChangedDelegate" />
+        <Parameter Name="propertyChanging" Type="Microsoft.Maui.Controls.BindableProperty+BindingPropertyChangingDelegate" />
+        <Parameter Name="coerceValue" Type="Microsoft.Maui.Controls.BindableProperty+CoerceValueDelegate" />
+        <Parameter Name="defaultValueCreator" Type="Microsoft.Maui.Controls.BindableProperty+CreateDefaultValueDelegate" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the BindableProperty.</param>
+        <param name="returnType">The type of the property.</param>
+        <param name="declaringType">The type of the declaring object.</param>
+        <param name="defaultValue">The default value for the property.</param>
+        <param name="defaultBindingMode">The BindingMode to use on SetBinding() if no BindingMode is given. This parameter is optional. Default is BindingMode.OneWay.</param>
+        <param name="validateValue">A delegate to be run when a value is set. This parameter is optional. Default is null.</param>
+        <param name="propertyChanged">A delegate to be run when the value has changed. This parameter is optional. Default is null.</param>
+        <param name="propertyChanging">A delegate to be run when the value will change. This parameter is optional. Default is null.</param>
+        <param name="coerceValue">A delegate used to coerce the range of a value. This parameter is optional. Default is null.</param>
+        <param name="defaultValueCreator">A Func used to initialize default value for reference types.</param>
+        <summary>Creates a new instance of the BindablePropertyKey class.</summary>
+        <returns />
+        <remarks>To be added.</remarks>
+        <para>Attached properties are bindable properties that are bound to an object other than their parent. Often, they are used for child items in tables and grids, where data about the location of an item is maintained by its parent, but must be accessed from the child item itself.</para>
+      </Docs>
+    </Member>
+    <Member MemberName="DeclaringType">
+      <MemberSignature Language="C#" Value="public Type DeclaringType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type DeclaringType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.BindableProperty.DeclaringType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeclaringType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ DeclaringType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeclaringType : Type" Usage="Microsoft.Maui.Controls.BindableProperty.DeclaringType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type declaring the BindableProperty</summary>
+        <value />
+        <remarks>Unused</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultBindingMode">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.BindingMode DefaultBindingMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.Controls.BindingMode DefaultBindingMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.BindableProperty.DefaultBindingMode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultBindingMode As BindingMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::BindingMode DefaultBindingMode { Microsoft::Maui::Controls::BindingMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultBindingMode : Microsoft.Maui.Controls.BindingMode" Usage="Microsoft.Maui.Controls.BindableProperty.DefaultBindingMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default BindingMode.</summary>
+        <value />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultValue">
+      <MemberSignature Language="C#" Value="public object DefaultValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object DefaultValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.BindableProperty.DefaultValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultValue As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DefaultValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultValue : obj" Usage="Microsoft.Maui.Controls.BindableProperty.DefaultValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default value for the BindableProperty.</summary>
+        <value />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.BindableProperty.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="Microsoft.Maui.Controls.BindableProperty.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating if the BindableProperty is created form a BindablePropertyKey.</summary>
+        <value />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyName">
+      <MemberSignature Language="C#" Value="public string PropertyName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PropertyName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.BindableProperty.PropertyName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : string" Usage="Microsoft.Maui.Controls.BindableProperty.PropertyName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the property name.</summary>
+        <value />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnType">
+      <MemberSignature Language="C#" Value="public Type ReturnType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ReturnType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.BindableProperty.ReturnType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReturnType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ReturnType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnType : Type" Usage="Microsoft.Maui.Controls.BindableProperty.ReturnType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the BindableProperty.</summary>
+        <value />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsetValue">
+      <MemberSignature Language="C#" Value="public static readonly object UnsetValue;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly object UnsetValue" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.BindableProperty.UnsetValue" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UnsetValue As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Object ^ UnsetValue;" />
+      <MemberSignature Language="F#" Value=" staticval mutable UnsetValue : obj" Usage="Microsoft.Maui.Controls.BindableProperty.UnsetValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

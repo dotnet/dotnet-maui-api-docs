@@ -1,0 +1,143 @@
+<Type Name="DropEventArgs" FullName="Microsoft.Maui.Controls.DropEventArgs">
+  <TypeSignature Language="C#" Value="public class DropEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DropEventArgs extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.DropEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DropEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DropEventArgs" />
+  <TypeSignature Language="F#" Value="type DropEventArgs = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Provides data for the <see cref="E:Microsoft.Maui.Controls.DropGestureRecognizer.Drop" /> event.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DropEventArgs (Microsoft.Maui.Controls.DataPackageView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Maui.Controls.DataPackageView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.DropEventArgs.#ctor(Microsoft.Maui.Controls.DataPackageView)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (view As DataPackageView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DropEventArgs(Microsoft::Maui::Controls::DataPackageView ^ view);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.Controls.DropEventArgs : Microsoft.Maui.Controls.DataPackageView -&gt; Microsoft.Maui.Controls.DropEventArgs" Usage="new Microsoft.Maui.Controls.DropEventArgs view" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.Controls.DataPackageView" />
+      </Parameters>
+      <Docs>
+        <param name="view">The data package associated with the drop.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.DropEventArgs" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Data">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.DataPackageView Data { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.DataPackageView Data" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.DropEventArgs.Data" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Data As DataPackageView" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::DataPackageView ^ Data { Microsoft::Maui::Controls::DataPackageView ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Data : Microsoft.Maui.Controls.DataPackageView" Usage="Microsoft.Maui.Controls.DropEventArgs.Data" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.DataPackageView</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the data package associated with the drop event.
+            </summary>
+        <value>To be added.</value>
+        <remarks>This is a read-only version of a <see cref="T:Microsoft.Maui.Controls.DataPackage" />.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPosition">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.Maui.Graphics.Point? GetPosition (Microsoft.Maui.Controls.Element? relativeTo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Nullable`1&lt;valuetype Microsoft.Maui.Graphics.Point&gt; GetPosition(class Microsoft.Maui.Controls.Element relativeTo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.DropEventArgs.GetPosition(Microsoft.Maui.Controls.Element)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPosition (relativeTo As Element) As Nullable(Of Point)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Nullable&lt;Microsoft::Maui::Graphics::Point&gt; GetPosition(Microsoft::Maui::Controls::Element ^ relativeTo);" />
+      <MemberSignature Language="F#" Value="abstract member GetPosition : Microsoft.Maui.Controls.Element -&gt; Nullable&lt;Microsoft.Maui.Graphics.Point&gt;&#xA;override this.GetPosition : Microsoft.Maui.Controls.Element -&gt; Nullable&lt;Microsoft.Maui.Graphics.Point&gt;" Usage="dropEventArgs.GetPosition relativeTo" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Microsoft.Maui.Graphics.Point&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="relativeTo" Type="Microsoft.Maui.Controls.Element" />
+      </Parameters>
+      <Docs>
+        <param name="relativeTo">Element whose position is used to calculate the relative position.</param>
+        <summary>
+            Gets the location of the drag relative to the specified element.
+            </summary>
+        <returns>The point where dragging is occurring relative to <paramref name="relativeTo" />.</returns>
+        <remarks>If <paramref name="relativeTo" /> is <see langword="null" /> then the position relative to the screen is returned.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Handled">
+      <MemberSignature Language="C#" Value="public bool Handled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Handled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.DropEventArgs.Handled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Handled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Handled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Handled : bool with get, set" Usage="Microsoft.Maui.Controls.DropEventArgs.Handled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value that indicates whether the event handler has handled the event or whether .NET MAUI should continue its own processing.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformArgs">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.PlatformDropEventArgs? PlatformArgs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.PlatformDropEventArgs PlatformArgs" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.DropEventArgs.PlatformArgs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PlatformArgs As PlatformDropEventArgs" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::PlatformDropEventArgs ^ PlatformArgs { Microsoft::Maui::Controls::PlatformDropEventArgs ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PlatformArgs : Microsoft.Maui.Controls.PlatformDropEventArgs" Usage="Microsoft.Maui.Controls.DropEventArgs.PlatformArgs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.PlatformDropEventArgs</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the platform-specific arguments associated with the <see cref="T:Microsoft.Maui.Controls.DropEventArgs" />.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

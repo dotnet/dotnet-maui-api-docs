@@ -1,0 +1,749 @@
+<Type Name="AbsoluteLayout" FullName="Microsoft.Maui.Controls.AbsoluteLayout">
+  <TypeSignature Language="C#" Value="public class AbsoluteLayout : Microsoft.Maui.Controls.Layout, Microsoft.Maui.IAbsoluteLayout, System.Collections.Generic.ICollection&lt;Microsoft.Maui.IView&gt;, System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.IView&gt;, System.Collections.Generic.IList&lt;Microsoft.Maui.IView&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AbsoluteLayout extends Microsoft.Maui.Controls.Layout implements class Microsoft.Maui.IAbsoluteLayout, class Microsoft.Maui.IContainer, class Microsoft.Maui.ICrossPlatformLayout, class Microsoft.Maui.IElement, class Microsoft.Maui.ILayout, class Microsoft.Maui.IPadding, class Microsoft.Maui.ISafeAreaView, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView, class System.Collections.Generic.ICollection`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.Generic.IList`1&lt;class Microsoft.Maui.IView&gt;, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.AbsoluteLayout" />
+  <TypeSignature Language="VB.NET" Value="Public Class AbsoluteLayout&#xA;Inherits Layout&#xA;Implements IAbsoluteLayout, ICollection(Of IView), IEnumerable(Of IView), IList(Of IView)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AbsoluteLayout : Microsoft::Maui::Controls::Layout, Microsoft::Maui::IAbsoluteLayout, System::Collections::Generic::ICollection&lt;Microsoft::Maui::IView ^&gt;, System::Collections::Generic::IEnumerable&lt;Microsoft::Maui::IView ^&gt;, System::Collections::Generic::IList&lt;Microsoft::Maui::IView ^&gt;" />
+  <TypeSignature Language="F#" Value="type AbsoluteLayout = class&#xA;    inherit Layout&#xA;    interface IAbsoluteLayout&#xA;    interface ILayout&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IContainer&#xA;    interface IList&lt;IView&gt;&#xA;    interface ICollection&lt;IView&gt;&#xA;    interface seq&lt;IView&gt;&#xA;    interface IEnumerable&#xA;    interface ISafeAreaView&#xA;    interface IPadding&#xA;    interface ICrossPlatformLayout" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Maui.Controls.Layout</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IAbsoluteLayout</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IContainer</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.ICrossPlatformLayout</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IElement</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.ILayout</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IPadding</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.ISafeAreaView</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.ITransform</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IView</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.ICollection&lt;Microsoft.Maui.IView&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.ICollection&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.IView&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IList&lt;Microsoft.Maui.IView&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Positions child elements at absolute positions.</summary>
+    <remarks>
+      <para>Application developers can control the placement of child elements by providing proportional coordinates, device coordinates, or a combination of both, depending on the <see cref="T:Microsoft.Maui.Layouts.AbsoluteLayoutFlags" /> values that are passed to <see cref="M:Microsoft.Maui.Controls.AbsoluteLayout.SetLayoutFlags(Microsoft.Maui.Controls.BindableObject,Microsoft.Maui.Layouts.AbsoluteLayoutFlags)" /> method. When one of the proportional <see cref="T:Microsoft.Maui.Layouts.AbsoluteLayoutFlags" /> enumeration values is provided, the corresponding X, or Y arguments that range between 0.0 and 1.0 will always cause the child to be displayed completely on screen. That is, you do not need to subtract or add the height or width of a child in order to display it flush with the left, right, top, or bottom of the <see cref="T:Microsoft.Maui.Controls.AbsoluteLayout" />. For width, height, X, or Y values that are not specified proportionally, application developers use device-dependent units to locate and size the child element.</para>
+      <example>
+        <para>The following example shows how to use an <see cref="T:Microsoft.Maui.Controls.AbsoluteLayout" /> with proportional position arguments.</para>
+        <code lang="csharp lang-csharp"><![CDATA[
+    
+    Label header = new Label
+    {
+        Text = "AbsoluteLayout Demo",
+        FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
+        HorizontalOptions = LayoutOptions.Center
+    };
+    
+    AbsoluteLayout simpleLayout = new AbsoluteLayout
+    {
+        BackgroundColor = Color.Blue.WithLuminosity(0.9),
+        VerticalOptions = LayoutOptions.FillAndExpand
+    };
+    
+    topLeftLabel = new Label
+    {
+        Text = "Top Left",
+        TextColor = Color.Black
+    };
+    
+    centerLabel = new Label
+    {
+        Text = "Centered",
+        TextColor = Color.Black
+    };
+    
+    bottomRightLabel = new Label
+    {
+        Text = "Bottom Right",
+        TextColor = Color.Black
+    };
+    
+    // PositionProportional flag maps the range (0.0, 1.0) to
+    // the range "flush [left|top]" to "flush [right|bottom]"
+    AbsoluteLayout.SetLayoutFlags(bottomRightLabel,
+        AbsoluteLayoutFlags.PositionProportional);
+    
+    AbsoluteLayout.SetLayoutBounds(topLeftLabel,
+        new Rectangle(0f,
+            0f, AbsoluteLayout.AutoSize, AbsoluteLayout.AutoSize));
+    
+    AbsoluteLayout.SetLayoutFlags(centerLabel,
+        AbsoluteLayoutFlags.PositionProportional);
+    
+    AbsoluteLayout.SetLayoutBounds(centerLabel,
+        new Rectangle(0.5,
+            0.5, AbsoluteLayout.AutoSize, AbsoluteLayout.AutoSize));
+    
+    AbsoluteLayout.SetLayoutFlags(bottomRightLabel,
+        AbsoluteLayoutFlags.PositionProportional);
+    
+    AbsoluteLayout.SetLayoutBounds(bottomRightLabel,
+        new Rectangle(1f,
+            1f, AbsoluteLayout.AutoSize, AbsoluteLayout.AutoSize));
+    
+    simpleLayout.Children.Add(topLeftLabel);
+    simpleLayout.Children.Add(centerLabel);
+    simpleLayout.Children.Add(bottomRightLabel);
+    ]]></code>
+        <para>The code sample below shows how to place two labels by specifying device-dependent units.</para>
+        <code lang="csharp lang-csharp"><![CDATA[
+    
+    AbsoluteLayout simpleLayout = new AbsoluteLayout
+    {
+    
+        BackgroundColor = Color.Blue.WithLuminosity(0.9),
+        VerticalOptions = LayoutOptions.FillAndExpand
+    };
+    
+    Label header = new Label
+    {
+        Text = "Device Units Demo",
+        TextColor = Color.Black,
+        FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label))
+    };
+    
+    topLeftText = new Label
+    {
+        Text = "Left",
+        TextColor = Color.Black
+    };
+    
+    AbsoluteLayout.SetLayoutFlags(topLeftText,
+        AbsoluteLayoutFlags.None);
+    
+    AbsoluteLayout.SetLayoutBounds(topLeftText,
+        new Rectangle(0f, 0f, 100f, 50f));
+    
+    middleText = new Label
+    {
+        Text = "Device-dependent location",
+        TextColor = Color.Black
+    };
+    
+    AbsoluteLayout.SetLayoutFlags(middleText,
+        AbsoluteLayoutFlags.None);
+    
+    AbsoluteLayout.SetLayoutBounds(middleText,
+        new Rectangle(100f, 200f, 200f, 50f));
+    
+    simpleLayout.Children.Add(topLeftText);
+    simpleLayout.Children.Add(middleText);
+    
+    }]]></code>
+      </example>
+      <example>
+        <para>XAML for Microsoft.Maui.Controls supports the following attached properties for the <see cref="T:Microsoft.Maui.Controls.AbsoluteLayout" /> class:</para>
+        <list type="table">
+          <listheader>
+            <term>Attached Property</term>
+            <description>Value</description>
+          </listheader>
+          <item>
+            <term>AbsoluteLayout.LayoutBounds</term>
+            <description>
+              <para>A comma-separated list—possibly with spaces—of four values that specify the bounding rectangle's position and dimensions. The first two values in the list must represent numbers. The latter two values may each either be numbers, or the string "AutoSize". The <c>AbsoluteLayout.LayoutFlags</c> attached property determines how the values in the list are interpreted to create the bounding rectangle.</para>
+            </description>
+          </item>
+          <item>
+            <term>AbsoluteLayout.LayoutFlags</term>
+            <description>
+              <para>
+                <see cref="T:Microsoft.Maui.Layouts.AbsoluteLayoutFlags" /> enumeration value names: <c>All</c>, <c>None</c>, <c>HeightProportional</c>, <c>WidthProportional</c>, <c>SizeProportional</c>, <c>XProportional</c>, <c>YProportional</c>, or <c>PositionProportional</c>. Application developers can combine any of these flags together by supplying a comma-separated list. </para>
+            </description>
+          </item>
+        </list>
+        <para>Application developers can use XAML to lay out elements with the <see cref="T:Microsoft.Maui.Controls.AbsoluteLayout" /> class. The example below places a blue <see cref="T:Microsoft.Maui.Controls.BoxView" /> inside an <see cref="T:Microsoft.Maui.Controls.AbsoluteLayout" />: </para>
+        <code lang="XAML"><![CDATA[<AbsoluteLayout VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand">
+        <BoxView    AbsoluteLayout.LayoutBounds="0.25, 0.25, 0.5, 0.5"
+                    Color="Blue"
+                    AbsoluteLayout.LayoutFlags="All" />
+    </AbsoluteLayout>
+    ]]></code>
+      </example>
+      <para>The <see cref="T:Microsoft.Maui.Controls.AbsoluteLayout" /> class can lay its child elements out in proportional units, device units, or a combination of both. Application developers should remember the following points when specifying a <see cref="T:Microsoft.Maui.Controls.Shapes.Rectangle" /> structure that will define the layout bounds of a child element:
+            <list type="bullet"><item><term>For elements whose height and width fit on the screen, proportional position dimensions in the range [0,1] represent elements that are completely on the screen, regardless of whether the height, width, or both are specified in device or proportional units.</term></item><item><term>The above point means that, to specify an element in the lower right hand corner of the screen and that is half as wide and half as all as the screen, with a  <see cref="T:Microsoft.Maui.Layouts.AbsoluteLayoutFlags" /> value of <c>All</c>, the application developer would specify "1.0, 1.0, 0.5, 0.5".</term></item><item><term>The app developer can inadvertently cause child elements for which one or both size dimensions were specified proportionally to be displayed partially off the screen, or hidden altogether, by specifying device-unit positions that do not leave enough room for the calculated size of the child.</term></item><item><term>Each part of the bounding <see cref="T:Microsoft.Maui.Controls.Shapes.Rectangle" /> structure is interpreted according to the <see cref="T:Microsoft.Maui.Layouts.AbsoluteLayoutFlags" /> value that controls it. A given rectangle might, for example, have an X-coordinate that is in device units, a Y-coordinate that is in proportional units, a height that is in proportional units, and a width that is in device units, or any other combination of device and proportional units. </term></item><item><term>Rectangles that, when interpreted by using the current <see cref="T:Microsoft.Maui.Layouts.AbsoluteLayoutFlags" /> set on the child, represent bounding boxes that are partially or wholly off-screen—for example, by having a width that is larger than the screen width—may give unexpected results.</term></item></list></para>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AbsoluteLayout ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.AbsoluteLayout.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AbsoluteLayout();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoSize">
+      <MemberSignature Language="C#" Value="public static double AutoSize;" />
+      <MemberSignature Language="ILAsm" Value=".field public static float64 AutoSize" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.AbsoluteLayout.AutoSize" />
+      <MemberSignature Language="VB.NET" Value="Public Shared AutoSize As Double " />
+      <MemberSignature Language="C++ CLI" Value="public: static double AutoSize;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AutoSize : double" Usage="Microsoft.Maui.Controls.AbsoluteLayout.AutoSize" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A value that indicates that the width or height of the child should be sized to that child's native size.</summary>
+        <returns />
+        <remarks>
+          <para>Application developers can set the width or height of the <see cref="P:Microsoft.Maui.Controls.VisualElement.Bounds" /> property to <see cref="P:Microsoft.Maui.Controls.AbsoluteLayout.AutoSize" /> on a visual element when adding to the layout to cause that element to be measured during the layout pass and sized appropriately.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateLayoutManager">
+      <MemberSignature Language="C#" Value="protected override Microsoft.Maui.Layouts.ILayoutManager CreateLayoutManager ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.Maui.Layouts.ILayoutManager CreateLayoutManager() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.AbsoluteLayout.CreateLayoutManager" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateLayoutManager () As ILayoutManager" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Microsoft::Maui::Layouts::ILayoutManager ^ CreateLayoutManager();" />
+      <MemberSignature Language="F#" Value="override this.CreateLayoutManager : unit -&gt; Microsoft.Maui.Layouts.ILayoutManager" Usage="absoluteLayout.CreateLayoutManager " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Layouts.ILayoutManager</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLayoutBounds">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Graphics.Rect GetLayoutBounds (Microsoft.Maui.Controls.BindableObject bindable);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Maui.Graphics.Rect GetLayoutBounds(class Microsoft.Maui.Controls.BindableObject bindable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.AbsoluteLayout.GetLayoutBounds(Microsoft.Maui.Controls.BindableObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetLayoutBounds (bindable As BindableObject) As Rect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Maui::Graphics::Rect GetLayoutBounds(Microsoft::Maui::Controls::BindableObject ^ bindable);" />
+      <MemberSignature Language="F#" Value="static member GetLayoutBounds : Microsoft.Maui.Controls.BindableObject -&gt; Microsoft.Maui.Graphics.Rect" Usage="Microsoft.Maui.Controls.AbsoluteLayout.GetLayoutBounds bindable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.TypeConverter(typeof(Microsoft.Maui.Controls.BoundsTypeConverter))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.TypeConverter(typeof(Microsoft.Maui.Controls.BoundsTypeConverter))&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Rect</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Microsoft.Maui.Controls.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">A visual element.</param>
+        <summary>Gets the layout bounds of <paramref name="bindable" />.</summary>
+        <returns>The layout bounds of the object.</returns>
+        <remarks>
+          <para>This method supports the <c>AbsoluteLayout.LayoutBounds</c> XAML attached property. In XAML, Application developers can specify a comma-separated list—possibly with spaces—of four values that specify the bounding rectangle's position and dimensions. The first two values in the list must represent numbers. The latter two values may each either be numbers, or the string "AutoSize". The <c>AbsoluteLayout.LayoutFlags</c> attached property determines how the values in the list are interpreted to create the bounding rectangle.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLayoutBounds">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.Rect GetLayoutBounds (Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.Maui.Graphics.Rect GetLayoutBounds(class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.AbsoluteLayout.GetLayoutBounds(Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLayoutBounds (view As IView) As Rect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Maui::Graphics::Rect GetLayoutBounds(Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="abstract member GetLayoutBounds : Microsoft.Maui.IView -&gt; Microsoft.Maui.Graphics.Rect&#xA;override this.GetLayoutBounds : Microsoft.Maui.IView -&gt; Microsoft.Maui.Graphics.Rect" Usage="absoluteLayout.GetLayoutBounds view" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.IAbsoluteLayout.GetLayoutBounds(Microsoft.Maui.IView)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Rect</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLayoutFlags">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Layouts.AbsoluteLayoutFlags GetLayoutFlags (Microsoft.Maui.Controls.BindableObject bindable);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Maui.Layouts.AbsoluteLayoutFlags GetLayoutFlags(class Microsoft.Maui.Controls.BindableObject bindable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.AbsoluteLayout.GetLayoutFlags(Microsoft.Maui.Controls.BindableObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetLayoutFlags (bindable As BindableObject) As AbsoluteLayoutFlags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Maui::Layouts::AbsoluteLayoutFlags GetLayoutFlags(Microsoft::Maui::Controls::BindableObject ^ bindable);" />
+      <MemberSignature Language="F#" Value="static member GetLayoutFlags : Microsoft.Maui.Controls.BindableObject -&gt; Microsoft.Maui.Layouts.AbsoluteLayoutFlags" Usage="Microsoft.Maui.Controls.AbsoluteLayout.GetLayoutFlags bindable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Layouts.AbsoluteLayoutFlags</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Microsoft.Maui.Controls.BindableObject" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">A visual element.</param>
+        <summary>Gets the layout flags that were specified when <paramref name="bindable" /> was added to an <see cref="T:Microsoft.Maui.Controls.AbsoluteLayout" />.</summary>
+        <returns>The layout flags of the object.</returns>
+        <remarks>
+          <para>This method supports the <c>AbsoluteLayout.LayoutFlags</c> XAML attached property. In XAML, Application developers can specify the following <see cref="T:Microsoft.Maui.Layouts.AbsoluteLayoutFlags" /> enumeration value names for the value of this property on the children of a <see cref="T:Microsoft.Maui.Controls.AbsoluteLayout" />:</para>
+          <list type="bullet">
+            <item>
+              <term>
+                <c>All</c>
+              </term>
+            </item>
+            <item>
+              <term>
+                <c>None</c>
+              </term>
+            </item>
+            <item>
+              <term>
+                <c>HeightProportional</c>
+              </term>
+            </item>
+            <item>
+              <term>
+                <c>WidthProportional</c>
+              </term>
+            </item>
+            <item>
+              <term>
+                <c>SizeProportional</c>
+              </term>
+            </item>
+            <item>
+              <term>
+                <c>XProportional</c>
+              </term>
+            </item>
+            <item>
+              <term>
+                <c>YProportional</c>
+              </term>
+            </item>
+            <item>
+              <term>
+                <c>PositionProportional</c>
+              </term>
+            </item>
+          </list>
+          <para>Application developers can combine any of the above values by supplying a comma-separated list.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLayoutFlags">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Layouts.AbsoluteLayoutFlags GetLayoutFlags (Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.Maui.Layouts.AbsoluteLayoutFlags GetLayoutFlags(class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.AbsoluteLayout.GetLayoutFlags(Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLayoutFlags (view As IView) As AbsoluteLayoutFlags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Maui::Layouts::AbsoluteLayoutFlags GetLayoutFlags(Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="abstract member GetLayoutFlags : Microsoft.Maui.IView -&gt; Microsoft.Maui.Layouts.AbsoluteLayoutFlags&#xA;override this.GetLayoutFlags : Microsoft.Maui.IView -&gt; Microsoft.Maui.Layouts.AbsoluteLayoutFlags" Usage="absoluteLayout.GetLayoutFlags view" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.IAbsoluteLayout.GetLayoutFlags(Microsoft.Maui.IView)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Layouts.AbsoluteLayoutFlags</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LayoutBoundsProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty LayoutBoundsProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty LayoutBoundsProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.AbsoluteLayout.LayoutBoundsProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LayoutBoundsProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ LayoutBoundsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable LayoutBoundsProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.AbsoluteLayout.LayoutBoundsProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for attached property <c>LayoutBounds</c>.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LayoutFlagsProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty LayoutFlagsProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty LayoutFlagsProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.AbsoluteLayout.LayoutFlagsProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LayoutFlagsProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ LayoutFlagsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable LayoutFlagsProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.AbsoluteLayout.LayoutFlagsProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for attached property <c>LayoutFlags</c>.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnAdd">
+      <MemberSignature Language="C#" Value="protected override void OnAdd (int index, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnAdd(int32 index, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.AbsoluteLayout.OnAdd(System.Int32,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnAdd (index As Integer, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnAdd(int index, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="override this.OnAdd : int * Microsoft.Maui.IView -&gt; unit" Usage="absoluteLayout.OnAdd (index, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnClear">
+      <MemberSignature Language="C#" Value="protected override void OnClear ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.AbsoluteLayout.OnClear" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClear ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClear();" />
+      <MemberSignature Language="F#" Value="override this.OnClear : unit -&gt; unit" Usage="absoluteLayout.OnClear " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInsert">
+      <MemberSignature Language="C#" Value="protected override void OnInsert (int index, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInsert(int32 index, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.AbsoluteLayout.OnInsert(System.Int32,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInsert (index As Integer, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInsert(int index, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="override this.OnInsert : int * Microsoft.Maui.IView -&gt; unit" Usage="absoluteLayout.OnInsert (index, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRemove">
+      <MemberSignature Language="C#" Value="protected override void OnRemove (int index, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRemove(int32 index, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.AbsoluteLayout.OnRemove(System.Int32,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRemove (index As Integer, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRemove(int index, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="override this.OnRemove : int * Microsoft.Maui.IView -&gt; unit" Usage="absoluteLayout.OnRemove (index, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnUpdate">
+      <MemberSignature Language="C#" Value="protected override void OnUpdate (int index, Microsoft.Maui.IView view, Microsoft.Maui.IView oldView);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnUpdate(int32 index, class Microsoft.Maui.IView view, class Microsoft.Maui.IView oldView) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.AbsoluteLayout.OnUpdate(System.Int32,Microsoft.Maui.IView,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnUpdate (index As Integer, view As IView, oldView As IView)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnUpdate(int index, Microsoft::Maui::IView ^ view, Microsoft::Maui::IView ^ oldView);" />
+      <MemberSignature Language="F#" Value="override this.OnUpdate : int * Microsoft.Maui.IView * Microsoft.Maui.IView -&gt; unit" Usage="absoluteLayout.OnUpdate (index, view, oldView)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+        <Parameter Name="oldView" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <param name="view">To be added.</param>
+        <param name="oldView">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetLayoutBounds">
+      <MemberSignature Language="C#" Value="public static void SetLayoutBounds (Microsoft.Maui.Controls.BindableObject bindable, Microsoft.Maui.Graphics.Rect bounds);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetLayoutBounds(class Microsoft.Maui.Controls.BindableObject bindable, valuetype Microsoft.Maui.Graphics.Rect bounds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.AbsoluteLayout.SetLayoutBounds(Microsoft.Maui.Controls.BindableObject,Microsoft.Maui.Graphics.Rect)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetLayoutBounds (bindable As BindableObject, bounds As Rect)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetLayoutBounds(Microsoft::Maui::Controls::BindableObject ^ bindable, Microsoft::Maui::Graphics::Rect bounds);" />
+      <MemberSignature Language="F#" Value="static member SetLayoutBounds : Microsoft.Maui.Controls.BindableObject * Microsoft.Maui.Graphics.Rect -&gt; unit" Usage="Microsoft.Maui.Controls.AbsoluteLayout.SetLayoutBounds (bindable, bounds)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Microsoft.Maui.Controls.BindableObject" />
+        <Parameter Name="bounds" Type="Microsoft.Maui.Graphics.Rect" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">The view to delimit by <paramref name="bounds" />.</param>
+        <param name="bounds">A rectangle that represents the desired size and shape of <paramref name="bindable" />.</param>
+        <summary>Sets the layout bounds of a view that will be used to size it when it is layed out.</summary>
+        <remarks>
+          <para>This method supports the <c>AbsoluteLayout.LayoutBounds</c> XAML attached property. In XAML, Application developers can specify a comma-separated list—possibly with spaces—of four values that specify the bounding rectangle's position and dimensions. The first two values in the list must represent numbers. The latter two values may each either be numbers, or the string "AutoSize". The <c>AbsoluteLayout.LayoutFlags</c> attached property determines how the values in the list are interpreted to create the bounding rectangle. Application developers can call this method to update the layout of a view after it is added.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetLayoutBounds">
+      <MemberSignature Language="C#" Value="public void SetLayoutBounds (Microsoft.Maui.IView view, Microsoft.Maui.Graphics.Rect bounds);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetLayoutBounds(class Microsoft.Maui.IView view, valuetype Microsoft.Maui.Graphics.Rect bounds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.AbsoluteLayout.SetLayoutBounds(Microsoft.Maui.IView,Microsoft.Maui.Graphics.Rect)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetLayoutBounds (view As IView, bounds As Rect)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetLayoutBounds(Microsoft::Maui::IView ^ view, Microsoft::Maui::Graphics::Rect bounds);" />
+      <MemberSignature Language="F#" Value="member this.SetLayoutBounds : Microsoft.Maui.IView * Microsoft.Maui.Graphics.Rect -&gt; unit" Usage="absoluteLayout.SetLayoutBounds (view, bounds)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+        <Parameter Name="bounds" Type="Microsoft.Maui.Graphics.Rect" />
+      </Parameters>
+      <Docs>
+        <param name="view">To be added.</param>
+        <param name="bounds">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetLayoutFlags">
+      <MemberSignature Language="C#" Value="public static void SetLayoutFlags (Microsoft.Maui.Controls.BindableObject bindable, Microsoft.Maui.Layouts.AbsoluteLayoutFlags flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetLayoutFlags(class Microsoft.Maui.Controls.BindableObject bindable, valuetype Microsoft.Maui.Layouts.AbsoluteLayoutFlags flags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.AbsoluteLayout.SetLayoutFlags(Microsoft.Maui.Controls.BindableObject,Microsoft.Maui.Layouts.AbsoluteLayoutFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetLayoutFlags (bindable As BindableObject, flags As AbsoluteLayoutFlags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetLayoutFlags(Microsoft::Maui::Controls::BindableObject ^ bindable, Microsoft::Maui::Layouts::AbsoluteLayoutFlags flags);" />
+      <MemberSignature Language="F#" Value="static member SetLayoutFlags : Microsoft.Maui.Controls.BindableObject * Microsoft.Maui.Layouts.AbsoluteLayoutFlags -&gt; unit" Usage="Microsoft.Maui.Controls.AbsoluteLayout.SetLayoutFlags (bindable, flags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindable" Type="Microsoft.Maui.Controls.BindableObject" />
+        <Parameter Name="flags" Type="Microsoft.Maui.Layouts.AbsoluteLayoutFlags" />
+      </Parameters>
+      <Docs>
+        <param name="bindable">The view on which to set the layout flags.</param>
+        <param name="flags">A <see cref="T:Microsoft.Maui.Layouts.AbsoluteLayoutFlags" /> that describes the how to interpret the layout bounds for <paramref name="bindable" />.</param>
+        <summary>Sets the layout flags of a view that will be used to interpret the layout bounds set on it when it is added to the layout.</summary>
+        <remarks>
+          <para>This method supports the <c>AbsoluteLayout.LayoutFlags</c> XAML attached property. In XAML, Application developers can specify the following <see cref="T:Microsoft.Maui.Layouts.AbsoluteLayoutFlags" /> enumeration value names for the value of this property on the children of a <see cref="T:Microsoft.Maui.Controls.AbsoluteLayout" />:</para>
+          <list type="bullet">
+            <item>
+              <term>
+                <c>All</c>
+              </term>
+            </item>
+            <item>
+              <term>
+                <c>None</c>
+              </term>
+            </item>
+            <item>
+              <term>
+                <c>HeightProportional</c>
+              </term>
+            </item>
+            <item>
+              <term>
+                <c>WidthProportional</c>
+              </term>
+            </item>
+            <item>
+              <term>
+                <c>SizeProportional</c>
+              </term>
+            </item>
+            <item>
+              <term>
+                <c>XProportional</c>
+              </term>
+            </item>
+            <item>
+              <term>
+                <c>YProportional</c>
+              </term>
+            </item>
+            <item>
+              <term>
+                <c>PositionProportional</c>
+              </term>
+            </item>
+          </list>
+          <para>Application developers can combine any of the above values by supplying a comma-separated list. Application developers can call this method to update the layout flags of a view after it is added.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetLayoutFlags">
+      <MemberSignature Language="C#" Value="public void SetLayoutFlags (Microsoft.Maui.IView view, Microsoft.Maui.Layouts.AbsoluteLayoutFlags flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetLayoutFlags(class Microsoft.Maui.IView view, valuetype Microsoft.Maui.Layouts.AbsoluteLayoutFlags flags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.AbsoluteLayout.SetLayoutFlags(Microsoft.Maui.IView,Microsoft.Maui.Layouts.AbsoluteLayoutFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetLayoutFlags (view As IView, flags As AbsoluteLayoutFlags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetLayoutFlags(Microsoft::Maui::IView ^ view, Microsoft::Maui::Layouts::AbsoluteLayoutFlags flags);" />
+      <MemberSignature Language="F#" Value="member this.SetLayoutFlags : Microsoft.Maui.IView * Microsoft.Maui.Layouts.AbsoluteLayoutFlags -&gt; unit" Usage="absoluteLayout.SetLayoutFlags (view, flags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+        <Parameter Name="flags" Type="Microsoft.Maui.Layouts.AbsoluteLayoutFlags" />
+      </Parameters>
+      <Docs>
+        <param name="view">To be added.</param>
+        <param name="flags">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

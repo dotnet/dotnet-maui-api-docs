@@ -1960,6 +1960,9 @@
     <Type Name="Microsoft.Maui.ApplicationModel.Permissions/PhotosAddOnly" Id="T:Microsoft.Maui.ApplicationModel.Permissions.PhotosAddOnly">
       <Member Id="M:Microsoft.Maui.ApplicationModel.Permissions.PhotosAddOnly.#ctor" />
     </Type>
+    <Type Name="Microsoft.Maui.ApplicationModel.Permissions/PostNotifications" Id="T:Microsoft.Maui.ApplicationModel.Permissions.PostNotifications">
+      <Member Id="M:Microsoft.Maui.ApplicationModel.Permissions.PostNotifications.#ctor" />
+    </Type>
     <Type Name="Microsoft.Maui.ApplicationModel.Permissions/Reminders" Id="T:Microsoft.Maui.ApplicationModel.Permissions.Reminders">
       <Member Id="M:Microsoft.Maui.ApplicationModel.Permissions.Reminders.#ctor" />
     </Type>
@@ -3872,6 +3875,7 @@
       <Member Id="M:Microsoft.Maui.Controls.GradientBrush.#ctor" />
       <Member Id="M:Microsoft.Maui.Controls.GradientBrush.OnBindingContextChanged" />
       <Member Id="P:Microsoft.Maui.Controls.GradientBrush.GradientStops" />
+      <Member Id="P:Microsoft.Maui.Controls.GradientBrush.IsEmpty" />
     </Type>
     <Type Name="Microsoft.Maui.Controls.GradientStop" Id="T:Microsoft.Maui.Controls.GradientStop">
       <Member Id="F:Microsoft.Maui.Controls.GradientStop.ColorProperty" />
@@ -7795,10 +7799,26 @@
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Maui.Controls.Design">
+    <Type Name="Microsoft.Maui.Controls.Design.BoundsDesignTypeConverter" Id="T:Microsoft.Maui.Controls.Design.BoundsDesignTypeConverter">
+      <Member Id="M:Microsoft.Maui.Controls.Design.BoundsDesignTypeConverter.#ctor" />
+      <Member Id="M:Microsoft.Maui.Controls.Design.BoundsDesignTypeConverter.IsValid(System.ComponentModel.ITypeDescriptorContext,System.Object)" />
+    </Type>
+    <Type Name="Microsoft.Maui.Controls.Design.ButtonContentDesignTypeConverter" Id="T:Microsoft.Maui.Controls.Design.ButtonContentDesignTypeConverter">
+      <Member Id="M:Microsoft.Maui.Controls.Design.ButtonContentDesignTypeConverter.#ctor" />
+      <Member Id="M:Microsoft.Maui.Controls.Design.ButtonContentDesignTypeConverter.IsValid(System.ComponentModel.ITypeDescriptorContext,System.Object)" />
+    </Type>
     <Type Name="Microsoft.Maui.Controls.Design.ColorDesignTypeConverter" Id="T:Microsoft.Maui.Controls.Design.ColorDesignTypeConverter">
       <Member Id="M:Microsoft.Maui.Controls.Design.ColorDesignTypeConverter.#ctor" />
       <Member Id="M:Microsoft.Maui.Controls.Design.ColorDesignTypeConverter.IsValid(System.ComponentModel.ITypeDescriptorContext,System.Object)" />
       <Member Id="P:Microsoft.Maui.Controls.Design.ColorDesignTypeConverter.KnownValues" />
+    </Type>
+    <Type Name="Microsoft.Maui.Controls.Design.ConstraintDesignTypeConverter" Id="T:Microsoft.Maui.Controls.Design.ConstraintDesignTypeConverter">
+      <Member Id="M:Microsoft.Maui.Controls.Design.ConstraintDesignTypeConverter.#ctor" />
+      <Member Id="M:Microsoft.Maui.Controls.Design.ConstraintDesignTypeConverter.IsValid(System.ComponentModel.ITypeDescriptorContext,System.Object)" />
+    </Type>
+    <Type Name="Microsoft.Maui.Controls.Design.CornerRadiusDesignTypeConverter" Id="T:Microsoft.Maui.Controls.Design.CornerRadiusDesignTypeConverter">
+      <Member Id="M:Microsoft.Maui.Controls.Design.CornerRadiusDesignTypeConverter.#ctor" />
+      <Member Id="M:Microsoft.Maui.Controls.Design.CornerRadiusDesignTypeConverter.IsValid(System.ComponentModel.ITypeDescriptorContext,System.Object)" />
     </Type>
     <Type Name="Microsoft.Maui.Controls.Design.EasingDesignTypeConverter" Id="T:Microsoft.Maui.Controls.Design.EasingDesignTypeConverter">
       <Member Id="M:Microsoft.Maui.Controls.Design.EasingDesignTypeConverter.#ctor" />
@@ -7860,6 +7880,10 @@
       <Member Id="M:Microsoft.Maui.Controls.Design.GridLengthDesignTypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
       <Member Id="M:Microsoft.Maui.Controls.Design.GridLengthDesignTypeConverter.IsValid(System.ComponentModel.ITypeDescriptorContext,System.Object)" />
     </Type>
+    <Type Name="Microsoft.Maui.Controls.Design.ImageSourceDesignTypeConverter" Id="T:Microsoft.Maui.Controls.Design.ImageSourceDesignTypeConverter">
+      <Member Id="M:Microsoft.Maui.Controls.Design.ImageSourceDesignTypeConverter.#ctor" />
+      <Member Id="M:Microsoft.Maui.Controls.Design.ImageSourceDesignTypeConverter.IsValid(System.ComponentModel.ITypeDescriptorContext,System.Object)" />
+    </Type>
     <Type Name="Microsoft.Maui.Controls.Design.ItemsLayoutDesignTypeConverter" Id="T:Microsoft.Maui.Controls.Design.ItemsLayoutDesignTypeConverter">
       <Member Id="M:Microsoft.Maui.Controls.Design.ItemsLayoutDesignTypeConverter.#ctor" />
       <Member Id="P:Microsoft.Maui.Controls.Design.ItemsLayoutDesignTypeConverter.KnownValues" />
@@ -7887,6 +7911,25 @@
     <Type Name="Microsoft.Maui.Controls.Design.LinearItemsLayoutDesignTypeConverter" Id="T:Microsoft.Maui.Controls.Design.LinearItemsLayoutDesignTypeConverter">
       <Member Id="M:Microsoft.Maui.Controls.Design.LinearItemsLayoutDesignTypeConverter.#ctor" />
       <Member Id="P:Microsoft.Maui.Controls.Design.LinearItemsLayoutDesignTypeConverter.KnownValues" />
+    </Type>
+    <Type Name="Microsoft.Maui.Controls.Design.PointTypeDesignConverter" Id="T:Microsoft.Maui.Controls.Design.PointTypeDesignConverter">
+      <Member Id="M:Microsoft.Maui.Controls.Design.PointTypeDesignConverter.#ctor" />
+      <Member Id="M:Microsoft.Maui.Controls.Design.PointTypeDesignConverter.IsValid(System.ComponentModel.ITypeDescriptorContext,System.Object)" />
+    </Type>
+    <Type Name="Microsoft.Maui.Controls.Design.RectTypeDesignConverter" Id="T:Microsoft.Maui.Controls.Design.RectTypeDesignConverter">
+      <Member Id="M:Microsoft.Maui.Controls.Design.RectTypeDesignConverter.#ctor" />
+      <Member Id="M:Microsoft.Maui.Controls.Design.RectTypeDesignConverter.IsValid(System.ComponentModel.ITypeDescriptorContext,System.Object)" />
+    </Type>
+    <Type Name="Microsoft.Maui.Controls.Design.ThicknessTypeDesignConverter" Id="T:Microsoft.Maui.Controls.Design.ThicknessTypeDesignConverter">
+      <Member Id="M:Microsoft.Maui.Controls.Design.ThicknessTypeDesignConverter.#ctor" />
+      <Member Id="M:Microsoft.Maui.Controls.Design.ThicknessTypeDesignConverter.IsValid(System.ComponentModel.ITypeDescriptorContext,System.Object)" />
+    </Type>
+    <Type Name="Microsoft.Maui.Controls.Design.VisibilityDesignTypeConverter" Id="T:Microsoft.Maui.Controls.Design.VisibilityDesignTypeConverter">
+      <Member Id="M:Microsoft.Maui.Controls.Design.VisibilityDesignTypeConverter.#ctor" />
+      <Member Id="M:Microsoft.Maui.Controls.Design.VisibilityDesignTypeConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" />
+      <Member Id="M:Microsoft.Maui.Controls.Design.VisibilityDesignTypeConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)" />
+      <Member Id="M:Microsoft.Maui.Controls.Design.VisibilityDesignTypeConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)" />
+      <Member Id="M:Microsoft.Maui.Controls.Design.VisibilityDesignTypeConverter.IsValid(System.ComponentModel.ITypeDescriptorContext,System.Object)" />
     </Type>
     <Type Name="Microsoft.Maui.Controls.Design.VisualDesignTypeConverter" Id="T:Microsoft.Maui.Controls.Design.VisualDesignTypeConverter">
       <Member Id="M:Microsoft.Maui.Controls.Design.VisualDesignTypeConverter.#ctor" />
