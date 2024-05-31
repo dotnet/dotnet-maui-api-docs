@@ -1,0 +1,1105 @@
+<Type Name="Application" FullName="Microsoft.Maui.Controls.Application">
+  <TypeSignature Language="C#" Value="public class Application : Microsoft.Maui.Controls.Element, Microsoft.Maui.Controls.IApplicationController, Microsoft.Maui.Controls.IElementConfiguration&lt;Microsoft.Maui.Controls.Application&gt;, Microsoft.Maui.IApplication, Microsoft.Maui.IVisualTreeElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Application extends Microsoft.Maui.Controls.Element implements class Microsoft.Maui.Controls.IApplicationController, class Microsoft.Maui.Controls.IElementConfiguration`1&lt;class Microsoft.Maui.Controls.Application&gt;, class Microsoft.Maui.IApplication, class Microsoft.Maui.IElement, class Microsoft.Maui.IVisualTreeElement" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Application" />
+  <TypeSignature Language="VB.NET" Value="Public Class Application&#xA;Inherits Element&#xA;Implements IApplication, IApplicationController, IElementConfiguration(Of Application), IVisualTreeElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Application : Microsoft::Maui::Controls::Element, Microsoft::Maui::Controls::IApplicationController, Microsoft::Maui::Controls::IElementConfiguration&lt;Microsoft::Maui::Controls::Application ^&gt;, Microsoft::Maui::IApplication, Microsoft::Maui::IVisualTreeElement" />
+  <TypeSignature Language="F#" Value="type Application = class&#xA;    inherit Element&#xA;    interface IApplicationController&#xA;    interface IElementConfiguration&lt;Application&gt;&#xA;    interface IVisualTreeElement&#xA;    interface IApplication&#xA;    interface IElement" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Maui.Controls.Element</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.Controls.IApplicationController</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.Controls.IElementConfiguration&lt;Microsoft.Maui.Controls.Application&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IApplication</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IElement</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IVisualTreeElement</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="net-maui-8.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-maui-8.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Class that represents a cross-platform mobile application.</summary>
+    <remarks>
+      <para>The <see cref="T:Microsoft.Maui.Controls.Application" /> class is the core of a Microsoft.Maui.Controls application. It sets the root page of the application, persists primitive type data across invocations of the application in the <see cref="P:Microsoft.Maui.Controls.Application.Properties" /> dictionary, and provides events to respond to pushing and popping of modal views. Visual studio creates this class for the developer in the appropriate project in a new Microsoft.Maui.Controls solution.</para>
+      <example>
+        <para>Both Visual Studio for Mac and Visual Studio create a XAML and a code-behind file for the application when the developer creates a new Microsoft.Maui.Controls solution. The following example shows a typical <c>Application</c> class, with an entry in its resource dictionary.</para>
+        <code lang="XAML"><![CDATA[
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.App">
+  <Application.Resources>
+     <Color x:Key="ButtonBackgroundColor">Red</Color>
+  </Application.Resources>
+</Application>]]></code>
+        <code lang="csharp lang-csharp"><![CDATA[
+public partial class App : Application
+{
+    public App()
+    {
+        InitializeComponent();
+
+        MainPage = new MainPage();
+    }
+
+    protected override void OnStart()
+    {
+        // Handle when your app starts
+    }
+
+    protected override void OnSleep()
+    {
+        // Handle when your app sleeps
+    }
+
+    protected override void OnResume()
+    {
+        // Handle when your app resumes
+    }
+}
+        ]]></code>
+      </example>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Application ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Application.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Application();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new <see cref="T:Microsoft.Maui.Controls.Application" /> instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AccentColor">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Graphics.Color? AccentColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Maui.Graphics.Color AccentColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Application.AccentColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property AccentColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::Maui::Graphics::Color ^ AccentColor { Microsoft::Maui::Graphics::Color ^ get(); void set(Microsoft::Maui::Graphics::Color ^ value); };" />
+      <MemberSignature Language="F#" Value="static member AccentColor : Microsoft.Maui.Graphics.Color with get, set" Usage="Microsoft.Maui.Controls.Application.AccentColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[set: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppLinks">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.IAppLinks AppLinks { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.IAppLinks AppLinks" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Application.AppLinks" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AppLinks As IAppLinks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::IAppLinks ^ AppLinks { Microsoft::Maui::Controls::IAppLinks ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AppLinks : Microsoft.Maui.Controls.IAppLinks" Usage="Microsoft.Maui.Controls.Application.AppLinks" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.IAppLinks</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object that developers use to register or unregister application links.</summary>
+        <value>The object that developers use to register or unregister application links.</value>
+        <remarks>It is not possible to unregister an app link on the Android platform.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CleanUp">
+      <MemberSignature Language="C#" Value="protected internal virtual void CleanUp ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void CleanUp() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Application.CleanUp" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub CleanUp ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void CleanUp();" />
+      <MemberSignature Language="F#" Value="abstract member CleanUp : unit -&gt; unit&#xA;override this.CleanUp : unit -&gt; unit" Usage="application.CleanUp " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloseWindow">
+      <MemberSignature Language="C#" Value="public virtual void CloseWindow (Microsoft.Maui.Controls.Window window);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CloseWindow(class Microsoft.Maui.Controls.Window window) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Application.CloseWindow(Microsoft.Maui.Controls.Window)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub CloseWindow (window As Window)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CloseWindow(Microsoft::Maui::Controls::Window ^ window);" />
+      <MemberSignature Language="F#" Value="abstract member CloseWindow : Microsoft.Maui.Controls.Window -&gt; unit&#xA;override this.CloseWindow : Microsoft.Maui.Controls.Window -&gt; unit" Usage="application.CloseWindow window" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="window" Type="Microsoft.Maui.Controls.Window" />
+      </Parameters>
+      <Docs>
+        <param name="window">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlsApplicationMapper">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.IPropertyMapper&lt;Microsoft.Maui.IApplication,Microsoft.Maui.Handlers.ApplicationHandler&gt; ControlsApplicationMapper;" />
+      <MemberSignature Language="ILAsm" Value=".field public static class Microsoft.Maui.IPropertyMapper`2&lt;class Microsoft.Maui.IApplication, class Microsoft.Maui.Handlers.ApplicationHandler&gt; ControlsApplicationMapper" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Application.ControlsApplicationMapper" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ControlsApplicationMapper As IPropertyMapper(Of IApplication, ApplicationHandler) " />
+      <MemberSignature Language="C++ CLI" Value="public: static Microsoft::Maui::IPropertyMapper&lt;Microsoft::Maui::IApplication ^, Microsoft::Maui::Handlers::ApplicationHandler ^&gt; ^ ControlsApplicationMapper;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ControlsApplicationMapper : Microsoft.Maui.IPropertyMapper&lt;Microsoft.Maui.IApplication, Microsoft.Maui.Handlers.ApplicationHandler&gt;" Usage="Microsoft.Maui.Controls.Application.ControlsApplicationMapper" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("Use ApplicationHandler.Mapper instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use ApplicationHandler.Mapper instead.")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.IPropertyMapper&lt;Microsoft.Maui.IApplication,Microsoft.Maui.Handlers.ApplicationHandler&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateWindow">
+      <MemberSignature Language="C#" Value="protected virtual Microsoft.Maui.Controls.Window CreateWindow (Microsoft.Maui.IActivationState? activationState);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Microsoft.Maui.Controls.Window CreateWindow(class Microsoft.Maui.IActivationState activationState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Application.CreateWindow(Microsoft.Maui.IActivationState)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateWindow (activationState As IActivationState) As Window" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual Microsoft::Maui::Controls::Window ^ CreateWindow(Microsoft::Maui::IActivationState ^ activationState);" />
+      <MemberSignature Language="F#" Value="abstract member CreateWindow : Microsoft.Maui.IActivationState -&gt; Microsoft.Maui.Controls.Window&#xA;override this.CreateWindow : Microsoft.Maui.IActivationState -&gt; Microsoft.Maui.Controls.Window" Usage="application.CreateWindow activationState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.Window</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activationState" Type="Microsoft.Maui.IActivationState">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-maui-8.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="activationState">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Controls.Application? Current { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Maui.Controls.Application Current" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Application.Current" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property Current As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::Maui::Controls::Application ^ Current { Microsoft::Maui::Controls::Application ^ get(); void set(Microsoft::Maui::Controls::Application ^ value); };" />
+      <MemberSignature Language="F#" Value="static member Current : Microsoft.Maui.Controls.Application with get, set" Usage="Microsoft.Maui.Controls.Application.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[set: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current application.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MainPage">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.Page? MainPage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.Page MainPage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Application.MainPage" />
+      <MemberSignature Language="VB.NET" Value="Public Property MainPage As Page" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::Page ^ MainPage { Microsoft::Maui::Controls::Page ^ get(); void set(Microsoft::Maui::Controls::Page ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MainPage : Microsoft.Maui.Controls.Page with get, set" Usage="Microsoft.Maui.Controls.Application.MainPage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[set: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.Page</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the root page of the application.</summary>
+        <value>The root page of the application.</value>
+        <remarks>This property throws an exception if the application developer attempts to set it to <see langword="null" />.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IApplication.CloseWindow">
+      <MemberSignature Language="C#" Value="void IApplication.CloseWindow (Microsoft.Maui.IWindow window);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.IApplication.CloseWindow(class Microsoft.Maui.IWindow window) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Application.Microsoft#Maui#IApplication#CloseWindow(Microsoft.Maui.IWindow)" />
+      <MemberSignature Language="VB.NET" Value="Sub CloseWindow (window As IWindow) Implements IApplication.CloseWindow" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.IApplication.CloseWindow(Microsoft::Maui::IWindow ^ window) = Microsoft::Maui::IApplication::CloseWindow;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.IApplication.CloseWindow : Microsoft.Maui.IWindow -&gt; unit&#xA;override this.Microsoft.Maui.IApplication.CloseWindow : Microsoft.Maui.IWindow -&gt; unit" Usage="application.Microsoft.Maui.IApplication.CloseWindow window" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.IApplication.CloseWindow(Microsoft.Maui.IWindow)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="window" Type="Microsoft.Maui.IWindow" />
+      </Parameters>
+      <Docs>
+        <param name="window">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IApplication.CreateWindow">
+      <MemberSignature Language="C#" Value="Microsoft.Maui.IWindow IApplication.CreateWindow (Microsoft.Maui.IActivationState? activationState);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.Maui.IWindow Microsoft.Maui.IApplication.CreateWindow(class Microsoft.Maui.IActivationState activationState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Application.Microsoft#Maui#IApplication#CreateWindow(Microsoft.Maui.IActivationState)" />
+      <MemberSignature Language="VB.NET" Value="Function CreateWindow (activationState As IActivationState) As IWindow Implements IApplication.CreateWindow" />
+      <MemberSignature Language="C++ CLI" Value=" virtual Microsoft::Maui::IWindow ^ Microsoft.Maui.IApplication.CreateWindow(Microsoft::Maui::IActivationState ^ activationState) = Microsoft::Maui::IApplication::CreateWindow;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.IApplication.CreateWindow : Microsoft.Maui.IActivationState -&gt; Microsoft.Maui.IWindow&#xA;override this.Microsoft.Maui.IApplication.CreateWindow : Microsoft.Maui.IActivationState -&gt; Microsoft.Maui.IWindow" Usage="application.Microsoft.Maui.IApplication.CreateWindow activationState" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.IApplication.CreateWindow(Microsoft.Maui.IActivationState)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.IWindow</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activationState" Type="Microsoft.Maui.IActivationState">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-maui-8.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="activationState">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IApplication.OpenWindow">
+      <MemberSignature Language="C#" Value="void IApplication.OpenWindow (Microsoft.Maui.IWindow window);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.IApplication.OpenWindow(class Microsoft.Maui.IWindow window) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Application.Microsoft#Maui#IApplication#OpenWindow(Microsoft.Maui.IWindow)" />
+      <MemberSignature Language="VB.NET" Value="Sub OpenWindow (window As IWindow) Implements IApplication.OpenWindow" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.IApplication.OpenWindow(Microsoft::Maui::IWindow ^ window) = Microsoft::Maui::IApplication::OpenWindow;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.IApplication.OpenWindow : Microsoft.Maui.IWindow -&gt; unit&#xA;override this.Microsoft.Maui.IApplication.OpenWindow : Microsoft.Maui.IWindow -&gt; unit" Usage="application.Microsoft.Maui.IApplication.OpenWindow window" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.IApplication.OpenWindow(Microsoft.Maui.IWindow)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="window" Type="Microsoft.Maui.IWindow" />
+      </Parameters>
+      <Docs>
+        <param name="window">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IApplication.ThemeChanged">
+      <MemberSignature Language="C#" Value="void IApplication.ThemeChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.IApplication.ThemeChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Application.Microsoft#Maui#IApplication#ThemeChanged" />
+      <MemberSignature Language="VB.NET" Value="Sub ThemeChanged () Implements IApplication.ThemeChanged" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.IApplication.ThemeChanged() = Microsoft::Maui::IApplication::ThemeChanged;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.IApplication.ThemeChanged : unit -&gt; unit&#xA;override this.Microsoft.Maui.IApplication.ThemeChanged : unit -&gt; unit" Usage="application.Microsoft.Maui.IApplication.ThemeChanged " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.IApplication.ThemeChanged</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IApplication.Windows">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IWindow&gt; Microsoft.Maui.IApplication.Windows { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Maui.IWindow&gt; Microsoft.Maui.IApplication.Windows" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Application.Microsoft#Maui#IApplication#Windows" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Windows As IReadOnlyList(Of IWindow) Implements IApplication.Windows" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::IReadOnlyList&lt;Microsoft::Maui::IWindow ^&gt; ^ Microsoft::Maui::IApplication::Windows { System::Collections::Generic::IReadOnlyList&lt;Microsoft::Maui::IWindow ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.IApplication.Windows : System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IWindow&gt;" Usage="Microsoft.Maui.IApplication.Windows" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IApplication.Windows</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IWindow&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IVisualTreeElement.GetVisualChildren">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IVisualTreeElement&gt; IVisualTreeElement.GetVisualChildren ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Maui.IVisualTreeElement&gt; Microsoft.Maui.IVisualTreeElement.GetVisualChildren() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Application.Microsoft#Maui#IVisualTreeElement#GetVisualChildren" />
+      <MemberSignature Language="VB.NET" Value="Function GetVisualChildren () As IReadOnlyList(Of IVisualTreeElement) Implements IVisualTreeElement.GetVisualChildren" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IReadOnlyList&lt;Microsoft::Maui::IVisualTreeElement ^&gt; ^ Microsoft.Maui.IVisualTreeElement.GetVisualChildren() = Microsoft::Maui::IVisualTreeElement::GetVisualChildren;" />
+      <MemberSignature Language="F#" Value="override this.Microsoft.Maui.IVisualTreeElement.GetVisualChildren : unit -&gt; System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IVisualTreeElement&gt;" Usage="application.Microsoft.Maui.IVisualTreeElement.GetVisualChildren " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.IVisualTreeElement.GetVisualChildren</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IVisualTreeElement&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModalPopped">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Controls.ModalPoppedEventArgs&gt;? ModalPopped;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.ModalPoppedEventArgs&gt; ModalPopped" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.Application.ModalPopped" />
+      <MemberSignature Language="VB.NET" Value="Public Event ModalPopped As EventHandler(Of ModalPoppedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Controls::ModalPoppedEventArgs ^&gt; ^ ModalPopped;" />
+      <MemberSignature Language="F#" Value="member this.ModalPopped : EventHandler&lt;Microsoft.Maui.Controls.ModalPoppedEventArgs&gt; " Usage="member this.ModalPopped : System.EventHandler&lt;Microsoft.Maui.Controls.ModalPoppedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.ModalPoppedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModalPopping">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Controls.ModalPoppingEventArgs&gt;? ModalPopping;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.ModalPoppingEventArgs&gt; ModalPopping" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.Application.ModalPopping" />
+      <MemberSignature Language="VB.NET" Value="Public Event ModalPopping As EventHandler(Of ModalPoppingEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Controls::ModalPoppingEventArgs ^&gt; ^ ModalPopping;" />
+      <MemberSignature Language="F#" Value="member this.ModalPopping : EventHandler&lt;Microsoft.Maui.Controls.ModalPoppingEventArgs&gt; " Usage="member this.ModalPopping : System.EventHandler&lt;Microsoft.Maui.Controls.ModalPoppingEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.ModalPoppingEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModalPushed">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Controls.ModalPushedEventArgs&gt;? ModalPushed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.ModalPushedEventArgs&gt; ModalPushed" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.Application.ModalPushed" />
+      <MemberSignature Language="VB.NET" Value="Public Event ModalPushed As EventHandler(Of ModalPushedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Controls::ModalPushedEventArgs ^&gt; ^ ModalPushed;" />
+      <MemberSignature Language="F#" Value="member this.ModalPushed : EventHandler&lt;Microsoft.Maui.Controls.ModalPushedEventArgs&gt; " Usage="member this.ModalPushed : System.EventHandler&lt;Microsoft.Maui.Controls.ModalPushedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.ModalPushedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModalPushing">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Controls.ModalPushingEventArgs&gt;? ModalPushing;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.ModalPushingEventArgs&gt; ModalPushing" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.Application.ModalPushing" />
+      <MemberSignature Language="VB.NET" Value="Public Event ModalPushing As EventHandler(Of ModalPushingEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Controls::ModalPushingEventArgs ^&gt; ^ ModalPushing;" />
+      <MemberSignature Language="F#" Value="member this.ModalPushing : EventHandler&lt;Microsoft.Maui.Controls.ModalPushingEventArgs&gt; " Usage="member this.ModalPushing : System.EventHandler&lt;Microsoft.Maui.Controls.ModalPushingEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.ModalPushingEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NavigationProxy">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.Internals.NavigationProxy? NavigationProxy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.Internals.NavigationProxy NavigationProxy" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Application.NavigationProxy" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NavigationProxy As NavigationProxy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::Internals::NavigationProxy ^ NavigationProxy { Microsoft::Maui::Controls::Internals::NavigationProxy ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NavigationProxy : Microsoft.Maui.Controls.Internals.NavigationProxy" Usage="Microsoft.Maui.Controls.Application.NavigationProxy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[set: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.Internals.NavigationProxy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="On&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;T,Microsoft.Maui.Controls.Application&gt; On&lt;T&gt; () where T : Microsoft.Maui.Controls.IConfigPlatform;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Maui.Controls.IPlatformElementConfiguration`2&lt;!!T, class Microsoft.Maui.Controls.Application&gt; On&lt;(class Microsoft.Maui.Controls.IConfigPlatform) T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Application.On``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function On(Of T As IConfigPlatform) () As IPlatformElementConfiguration(Of T, Application)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : Microsoft::Maui::Controls::IConfigPlatform virtual Microsoft::Maui::Controls::IPlatformElementConfiguration&lt;T, Microsoft::Maui::Controls::Application ^&gt; ^ On();" />
+      <MemberSignature Language="F#" Value="abstract member On : unit -&gt; Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;'T, Microsoft.Maui.Controls.Application (requires 'T :&gt; Microsoft.Maui.Controls.IConfigPlatform)&gt; (requires 'T :&gt; Microsoft.Maui.Controls.IConfigPlatform)&#xA;override this.On : unit -&gt; Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;'T, Microsoft.Maui.Controls.Application (requires 'T :&gt; Microsoft.Maui.Controls.IConfigPlatform)&gt; (requires 'T :&gt; Microsoft.Maui.Controls.IConfigPlatform)" Usage="application.On " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.IElementConfiguration`1.On``1</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;T,Microsoft.Maui.Controls.Application&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-maui-8.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+          <Constraints>
+            <InterfaceName>Microsoft.Maui.Controls.IConfigPlatform</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="OnAppLinkRequestReceived">
+      <MemberSignature Language="C#" Value="protected virtual void OnAppLinkRequestReceived (Uri uri);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAppLinkRequestReceived(class System.Uri uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Application.OnAppLinkRequestReceived(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAppLinkRequestReceived (uri As Uri)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAppLinkRequestReceived(Uri ^ uri);" />
+      <MemberSignature Language="F#" Value="abstract member OnAppLinkRequestReceived : Uri -&gt; unit&#xA;override this.OnAppLinkRequestReceived : Uri -&gt; unit" Usage="application.OnAppLinkRequestReceived uri" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="uri">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnParentSet">
+      <MemberSignature Language="C#" Value="protected override void OnParentSet ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnParentSet() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Application.OnParentSet" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnParentSet ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnParentSet();" />
+      <MemberSignature Language="F#" Value="override this.OnParentSet : unit -&gt; unit" Usage="application.OnParentSet " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnResume">
+      <MemberSignature Language="C#" Value="protected virtual void OnResume ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnResume() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Application.OnResume" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnResume ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnResume();" />
+      <MemberSignature Language="F#" Value="abstract member OnResume : unit -&gt; unit&#xA;override this.OnResume : unit -&gt; unit" Usage="application.OnResume " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSleep">
+      <MemberSignature Language="C#" Value="protected virtual void OnSleep ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSleep() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Application.OnSleep" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSleep ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSleep();" />
+      <MemberSignature Language="F#" Value="abstract member OnSleep : unit -&gt; unit&#xA;override this.OnSleep : unit -&gt; unit" Usage="application.OnSleep " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnStart">
+      <MemberSignature Language="C#" Value="protected virtual void OnStart ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnStart() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Application.OnStart" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnStart ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnStart();" />
+      <MemberSignature Language="F#" Value="abstract member OnStart : unit -&gt; unit&#xA;override this.OnStart : unit -&gt; unit" Usage="application.OnStart " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenWindow">
+      <MemberSignature Language="C#" Value="public virtual void OpenWindow (Microsoft.Maui.Controls.Window window);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OpenWindow(class Microsoft.Maui.Controls.Window window) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Application.OpenWindow(Microsoft.Maui.Controls.Window)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub OpenWindow (window As Window)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OpenWindow(Microsoft::Maui::Controls::Window ^ window);" />
+      <MemberSignature Language="F#" Value="abstract member OpenWindow : Microsoft.Maui.Controls.Window -&gt; unit&#xA;override this.OpenWindow : Microsoft.Maui.Controls.Window -&gt; unit" Usage="application.OpenWindow window" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="window" Type="Microsoft.Maui.Controls.Window" />
+      </Parameters>
+      <Docs>
+        <param name="window">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageAppearing">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Controls.Page&gt;? PageAppearing;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.Page&gt; PageAppearing" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.Application.PageAppearing" />
+      <MemberSignature Language="VB.NET" Value="Public Event PageAppearing As EventHandler(Of Page) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Controls::Page ^&gt; ^ PageAppearing;" />
+      <MemberSignature Language="F#" Value="member this.PageAppearing : EventHandler&lt;Microsoft.Maui.Controls.Page&gt; " Usage="member this.PageAppearing : System.EventHandler&lt;Microsoft.Maui.Controls.Page&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.Page&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageDisappearing">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Controls.Page&gt;? PageDisappearing;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.Page&gt; PageDisappearing" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.Application.PageDisappearing" />
+      <MemberSignature Language="VB.NET" Value="Public Event PageDisappearing As EventHandler(Of Page) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Controls::Page ^&gt; ^ PageDisappearing;" />
+      <MemberSignature Language="F#" Value="member this.PageDisappearing : EventHandler&lt;Microsoft.Maui.Controls.Page&gt; " Usage="member this.PageDisappearing : System.EventHandler&lt;Microsoft.Maui.Controls.Page&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.Page&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformAppTheme">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.ApplicationModel.AppTheme PlatformAppTheme { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.ApplicationModel.AppTheme PlatformAppTheme" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Application.PlatformAppTheme" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PlatformAppTheme As AppTheme" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::ApplicationModel::AppTheme PlatformAppTheme { Microsoft::Maui::ApplicationModel::AppTheme get(); };" />
+      <MemberSignature Language="F#" Value="member this.PlatformAppTheme : Microsoft.Maui.ApplicationModel.AppTheme" Usage="Microsoft.Maui.Controls.Application.PlatformAppTheme" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.ApplicationModel.AppTheme</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Quit">
+      <MemberSignature Language="C#" Value="public void Quit ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Quit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Application.Quit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Quit ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Quit();" />
+      <MemberSignature Language="F#" Value="member this.Quit : unit -&gt; unit" Usage="application.Quit " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Quits the application.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestedTheme">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.ApplicationModel.AppTheme RequestedTheme { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.ApplicationModel.AppTheme RequestedTheme" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Application.RequestedTheme" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestedTheme As AppTheme" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::ApplicationModel::AppTheme RequestedTheme { Microsoft::Maui::ApplicationModel::AppTheme get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequestedTheme : Microsoft.Maui.ApplicationModel.AppTheme" Usage="Microsoft.Maui.Controls.Application.RequestedTheme" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.ApplicationModel.AppTheme</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestedThemeChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Controls.AppThemeChangedEventArgs&gt; RequestedThemeChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.AppThemeChangedEventArgs&gt; RequestedThemeChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.Application.RequestedThemeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event RequestedThemeChanged As EventHandler(Of AppThemeChangedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Controls::AppThemeChangedEventArgs ^&gt; ^ RequestedThemeChanged;" />
+      <MemberSignature Language="F#" Value="member this.RequestedThemeChanged : EventHandler&lt;Microsoft.Maui.Controls.AppThemeChangedEventArgs&gt; " Usage="member this.RequestedThemeChanged : System.EventHandler&lt;Microsoft.Maui.Controls.AppThemeChangedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.AppThemeChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resources">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.ResourceDictionary Resources { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.ResourceDictionary Resources" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Application.Resources" />
+      <MemberSignature Language="VB.NET" Value="Public Property Resources As ResourceDictionary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::ResourceDictionary ^ Resources { Microsoft::Maui::Controls::ResourceDictionary ^ get(); void set(Microsoft::Maui::Controls::ResourceDictionary ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Resources : Microsoft.Maui.Controls.ResourceDictionary with get, set" Usage="Microsoft.Maui.Controls.Application.Resources" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.ResourceDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the resource dictionary for this <see cref="T:Microsoft.Maui.Controls.Application" /> object.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendOnAppLinkRequestReceived">
+      <MemberSignature Language="C#" Value="public void SendOnAppLinkRequestReceived (Uri uri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendOnAppLinkRequestReceived(class System.Uri uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Application.SendOnAppLinkRequestReceived(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SendOnAppLinkRequestReceived (uri As Uri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendOnAppLinkRequestReceived(Uri ^ uri);" />
+      <MemberSignature Language="F#" Value="member this.SendOnAppLinkRequestReceived : Uri -&gt; unit" Usage="application.SendOnAppLinkRequestReceived uri" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="uri">For internal use by the Microsoft.Maui.Controls platform.</param>
+        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAppIndexingProvider">
+      <MemberSignature Language="C#" Value="public void SetAppIndexingProvider (Microsoft.Maui.Controls.IAppIndexingProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetAppIndexingProvider(class Microsoft.Maui.Controls.IAppIndexingProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Application.SetAppIndexingProvider(Microsoft.Maui.Controls.IAppIndexingProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetAppIndexingProvider (provider As IAppIndexingProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetAppIndexingProvider(Microsoft::Maui::Controls::IAppIndexingProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="abstract member SetAppIndexingProvider : Microsoft.Maui.Controls.IAppIndexingProvider -&gt; unit&#xA;override this.SetAppIndexingProvider : Microsoft.Maui.Controls.IAppIndexingProvider -&gt; unit" Usage="application.SetAppIndexingProvider provider" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.IApplicationController.SetAppIndexingProvider(Microsoft.Maui.Controls.IAppIndexingProvider)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="Microsoft.Maui.Controls.IAppIndexingProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">For internal use by the Microsoft.Maui.Controls platform.</param>
+        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCurrentApplication">
+      <MemberSignature Language="C#" Value="public static void SetCurrentApplication (Microsoft.Maui.Controls.Application value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetCurrentApplication(class Microsoft.Maui.Controls.Application value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Application.SetCurrentApplication(Microsoft.Maui.Controls.Application)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetCurrentApplication (value As Application)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetCurrentApplication(Microsoft::Maui::Controls::Application ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetCurrentApplication : Microsoft.Maui.Controls.Application -&gt; unit" Usage="Microsoft.Maui.Controls.Application.SetCurrentApplication value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Microsoft.Maui.Controls.Application" />
+      </Parameters>
+      <Docs>
+        <param name="value">For internal use by the Microsoft.Maui.Controls platform.</param>
+        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserAppTheme">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.ApplicationModel.AppTheme UserAppTheme { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.ApplicationModel.AppTheme UserAppTheme" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Application.UserAppTheme" />
+      <MemberSignature Language="VB.NET" Value="Public Property UserAppTheme As AppTheme" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::ApplicationModel::AppTheme UserAppTheme { Microsoft::Maui::ApplicationModel::AppTheme get(); void set(Microsoft::Maui::ApplicationModel::AppTheme value); };" />
+      <MemberSignature Language="F#" Value="member this.UserAppTheme : Microsoft.Maui.ApplicationModel.AppTheme with get, set" Usage="Microsoft.Maui.Controls.Application.UserAppTheme" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.ApplicationModel.AppTheme</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Windows">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.Controls.Window&gt; Windows { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Maui.Controls.Window&gt; Windows" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Application.Windows" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Windows As IReadOnlyList(Of Window)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IReadOnlyList&lt;Microsoft::Maui::Controls::Window ^&gt; ^ Windows { System::Collections::Generic::IReadOnlyList&lt;Microsoft::Maui::Controls::Window ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Windows : System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.Controls.Window&gt;" Usage="Microsoft.Maui.Controls.Application.Windows" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.Controls.Window&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
