@@ -11,12 +11,24 @@
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TVirtualView">
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <Constraints>
         <ParameterAttribute>Covariant</ParameterAttribute>
         <InterfaceName>Microsoft.Maui.IElement</InterfaceName>
       </Constraints>
     </TypeParameter>
     <TypeParameter Name="TViewHandler">
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-8.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <Constraints>
         <ParameterAttribute>Covariant</ParameterAttribute>
         <InterfaceName>Microsoft.Maui.IElementHandler</InterfaceName>
@@ -28,6 +40,12 @@
       <InterfaceName>Microsoft.Maui.ICommandMapper</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="net-maui-8.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <typeparam name="TVirtualView">To be added.</typeparam>
     <typeparam name="TViewHandler">To be added.</typeparam>
@@ -52,7 +70,14 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="key" Type="System.String" />
-        <Parameter Name="action" Type="System.Action&lt;TViewHandler,TVirtualView,System.Object&gt;" />
+        <Parameter Name="action" Type="System.Action&lt;TViewHandler,TVirtualView,System.Object&gt;">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-maui-8.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 1, 1, 2 })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 1, 1, 2 })&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
       </Parameters>
       <Docs>
         <param name="key">To be added.</param>

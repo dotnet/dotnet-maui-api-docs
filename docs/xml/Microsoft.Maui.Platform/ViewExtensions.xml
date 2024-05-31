@@ -13,6 +13,16 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="net-maui-8.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-maui-8.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Extension methods for <see cref="T:Microsoft.Maui.Controls.View" />s, providing animatable scaling, rotation, and layout functions.</summary>
     <remarks>To be added.</remarks>
@@ -244,8 +254,22 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="platformView" Type="System.Object" RefType="this" />
-        <Parameter Name="imageSource" Type="Microsoft.Maui.IImageSource" />
-        <Parameter Name="provider" Type="Microsoft.Maui.IImageSourceServiceProvider" />
+        <Parameter Name="imageSource" Type="Microsoft.Maui.IImageSource">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-maui-8.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="provider" Type="Microsoft.Maui.IImageSourceServiceProvider">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-maui-8.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
       </Parameters>
       <Docs>
         <param name="platformView">To be added.</param>
