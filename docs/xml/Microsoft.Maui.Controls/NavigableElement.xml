@@ -8,6 +8,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Maui.Controls.Element</BaseTypeName>
@@ -18,8 +19,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>A <see cref="T:Microsoft.Maui.Controls.Element" /> that supports navigation.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an <see cref="T:Microsoft.Maui.Controls.Element" /> with base functionality for <see cref="T:Microsoft.Maui.Controls.Page" /> navigation. Does not necessarily render on screen.</summary>
+    <remarks>Not meant to be used directly. Instead, opt to use derived types, such as <see cref="T:Microsoft.Maui.Controls.View" />.</remarks>
   </Docs>
   <Members>
     <Member MemberName="class">
@@ -33,6 +34,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -44,9 +46,12 @@
         <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the style classes for the element.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>Equiavalent to <see cref="P:Microsoft.Maui.Controls.NavigableElement.StyleClass" />.</para>
+          <para>Style classes enable multiple styles to be applied to a control, without resorting to style inheritance.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Navigation">
@@ -60,14 +65,15 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.INavigation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the object responsible for handling stack-based navigation.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Binds to the <see cref="F:Microsoft.Maui.Controls.NavigableElement.NavigationProperty" /><see cref="T:Microsoft.Maui.Controls.BindableProperty" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NavigationProperty">
@@ -81,6 +87,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
@@ -104,6 +111,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -115,9 +123,12 @@
         <ReturnType>Microsoft.Maui.Controls.Internals.NavigationProxy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the cast of <see cref="P:Microsoft.Maui.Controls.NavigableElement.Navigation" /> to a <see cref="T:Microsoft.Maui.Controls.Internals.NavigationProxy" />.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>Determines whether the element will proxy navigation calls.</para>
+          <para>For internal use by .NET MAUI.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnParentSet">
@@ -131,14 +142,18 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Raises the (internal) <c>ParentSet</c> event.</summary>
+        <remarks>
+            Will set the <see cref="P:Microsoft.Maui.Controls.NavigableElement.NavigationProxy">NavigationProxy's</see> inner navigation object to closest topmost element capable of handling navigation calls.
+            </remarks>
+        <altmember cref="M:Microsoft.Maui.Controls.Element.OnParentSet" />
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -152,12 +167,13 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the unique <see cref="P:Microsoft.Maui.Controls.NavigableElement.Style" /> for this element.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -173,6 +189,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -184,9 +201,12 @@
         <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the style classes for the element.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>Equiavalent to <see cref="P:Microsoft.Maui.Controls.NavigableElement.class" />.</para>
+          <para>Style classes enable multiple styles to be applied to a control, without resorting to style inheritance.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StyleProperty">
@@ -200,6 +220,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>

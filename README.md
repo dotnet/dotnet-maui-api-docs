@@ -1,6 +1,6 @@
 # .NET Multi-platform App UI (.NET MAUI) API docs
 
-This repository contains the ECMA-XML reference documentation for .NET Multi-platform App UI (MAUI). It's published at the [.NET API browser](https://docs.microsoft.com/dotnet/api/). 
+This repository contains the ECMA-XML reference documentation for .NET Multi-platform App UI (.NET MAUI). It's published at the [.NET API browser](https://docs.microsoft.com/dotnet/api/). 
 
 The documentation for APIs is built from /// in the [dotnet/maui repository](https://github.com/dotnet/maui). Therefore, any API documentation updates should be made to the /// in that repo, not via PRs to the ECMA-XML stored in this repo. For .NET API documentation writing guidelines, see the [.NET API docs wiki](https://github.com/dotnet/dotnet-api-docs/wiki).
 

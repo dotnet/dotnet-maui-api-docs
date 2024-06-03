@@ -5,18 +5,14 @@
     <Assembly Name="Microsoft.AspNetCore.Components.WebView.WindowsForms" Version="1.0.0.0" />
     <Assembly Name="Microsoft.AspNetCore.Components.WebView.Wpf" Version="1.0.0.0" />
     <Assembly Name="Microsoft.Maui.Controls.Compatibility" Version="1.0.0.0" />
-    <Assembly Name="Microsoft.Maui.Controls.DesignTools" Version="1.0.0.0" />
     <Assembly Name="Microsoft.Maui.Controls" Version="1.0.0.0" />
     <Assembly Name="Microsoft.Maui.Controls.Foldable" Version="1.0.0.0" />
     <Assembly Name="Microsoft.Maui.Controls.Maps" Version="1.0.0.0" />
-    <Assembly Name="Microsoft.Maui.Controls.resources" Version="1.0.0.0" />
-    <Assembly Name="Microsoft.Maui.Controls.Xaml.DesignTools" Version="1.0.0.0" />
     <Assembly Name="Microsoft.Maui.Controls.Xaml" Version="1.0.0.0" />
     <Assembly Name="Microsoft.Maui" Version="1.0.0.0" />
     <Assembly Name="Microsoft.Maui.Essentials" Version="1.0.0.0" />
     <Assembly Name="Microsoft.Maui.Graphics" Version="1.0.0.0" />
     <Assembly Name="Microsoft.Maui.Graphics.Skia" Version="1.0.0.0" />
-    <Assembly Name="Microsoft.Maui.Graphics.Text.Markdig" Version="1.0.0.0" />
     <Assembly Name="Microsoft.Maui.Maps" Version="1.0.0.0" />
   </Assemblies>
   <Namespace Name="Microsoft.AspNetCore.Components.WebView">
@@ -1960,6 +1956,9 @@
     <Type Name="Microsoft.Maui.ApplicationModel.Permissions/PhotosAddOnly" Id="T:Microsoft.Maui.ApplicationModel.Permissions.PhotosAddOnly">
       <Member Id="M:Microsoft.Maui.ApplicationModel.Permissions.PhotosAddOnly.#ctor" />
     </Type>
+    <Type Name="Microsoft.Maui.ApplicationModel.Permissions/PostNotifications" Id="T:Microsoft.Maui.ApplicationModel.Permissions.PostNotifications">
+      <Member Id="M:Microsoft.Maui.ApplicationModel.Permissions.PostNotifications.#ctor" />
+    </Type>
     <Type Name="Microsoft.Maui.ApplicationModel.Permissions/Reminders" Id="T:Microsoft.Maui.ApplicationModel.Permissions.Reminders">
       <Member Id="M:Microsoft.Maui.ApplicationModel.Permissions.Reminders.#ctor" />
     </Type>
@@ -3872,6 +3871,7 @@
       <Member Id="M:Microsoft.Maui.Controls.GradientBrush.#ctor" />
       <Member Id="M:Microsoft.Maui.Controls.GradientBrush.OnBindingContextChanged" />
       <Member Id="P:Microsoft.Maui.Controls.GradientBrush.GradientStops" />
+      <Member Id="P:Microsoft.Maui.Controls.GradientBrush.IsEmpty" />
     </Type>
     <Type Name="Microsoft.Maui.Controls.GradientStop" Id="T:Microsoft.Maui.Controls.GradientStop">
       <Member Id="F:Microsoft.Maui.Controls.GradientStop.ColorProperty" />
@@ -7792,105 +7792,6 @@
       <Member Id="M:Microsoft.Maui.Controls.Compatibility.Hosting.MauiHandlersCollectionExtensions.AddCompatibilityRenderers(Microsoft.Maui.Hosting.IMauiHandlersCollection,System.Reflection.Assembly[])" />
       <Member Id="M:Microsoft.Maui.Controls.Compatibility.Hosting.MauiHandlersCollectionExtensions.AddCompatibilityServices(Microsoft.Maui.Hosting.IImageSourceServiceCollection,System.Reflection.Assembly[])" />
       <Member Id="M:Microsoft.Maui.Controls.Compatibility.Hosting.MauiHandlersCollectionExtensions.TryAddCompatibilityRenderer(Microsoft.Maui.Hosting.IMauiHandlersCollection,System.Type,System.Type)" />
-    </Type>
-  </Namespace>
-  <Namespace Name="Microsoft.Maui.Controls.Design">
-    <Type Name="Microsoft.Maui.Controls.Design.ColorDesignTypeConverter" Id="T:Microsoft.Maui.Controls.Design.ColorDesignTypeConverter">
-      <Member Id="M:Microsoft.Maui.Controls.Design.ColorDesignTypeConverter.#ctor" />
-      <Member Id="M:Microsoft.Maui.Controls.Design.ColorDesignTypeConverter.IsValid(System.ComponentModel.ITypeDescriptorContext,System.Object)" />
-      <Member Id="P:Microsoft.Maui.Controls.Design.ColorDesignTypeConverter.KnownValues" />
-    </Type>
-    <Type Name="Microsoft.Maui.Controls.Design.EasingDesignTypeConverter" Id="T:Microsoft.Maui.Controls.Design.EasingDesignTypeConverter">
-      <Member Id="M:Microsoft.Maui.Controls.Design.EasingDesignTypeConverter.#ctor" />
-      <Member Id="P:Microsoft.Maui.Controls.Design.EasingDesignTypeConverter.ExclusiveToKnownValues" />
-      <Member Id="P:Microsoft.Maui.Controls.Design.EasingDesignTypeConverter.KnownValues" />
-    </Type>
-    <Type Name="Microsoft.Maui.Controls.Design.FlexAlignContentDesignTypeConverter" Id="T:Microsoft.Maui.Controls.Design.FlexAlignContentDesignTypeConverter">
-      <Member Id="M:Microsoft.Maui.Controls.Design.FlexAlignContentDesignTypeConverter.#ctor" />
-      <Member Id="P:Microsoft.Maui.Controls.Design.FlexAlignContentDesignTypeConverter.ExclusiveToKnownValues" />
-      <Member Id="P:Microsoft.Maui.Controls.Design.FlexAlignContentDesignTypeConverter.KnownValues" />
-    </Type>
-    <Type Name="Microsoft.Maui.Controls.Design.FlexAlignItemsDesignTypeConverter" Id="T:Microsoft.Maui.Controls.Design.FlexAlignItemsDesignTypeConverter">
-      <Member Id="M:Microsoft.Maui.Controls.Design.FlexAlignItemsDesignTypeConverter.#ctor" />
-      <Member Id="P:Microsoft.Maui.Controls.Design.FlexAlignItemsDesignTypeConverter.ExclusiveToKnownValues" />
-      <Member Id="P:Microsoft.Maui.Controls.Design.FlexAlignItemsDesignTypeConverter.KnownValues" />
-    </Type>
-    <Type Name="Microsoft.Maui.Controls.Design.FlexAlignSelfDesignTypeConverter" Id="T:Microsoft.Maui.Controls.Design.FlexAlignSelfDesignTypeConverter">
-      <Member Id="M:Microsoft.Maui.Controls.Design.FlexAlignSelfDesignTypeConverter.#ctor" />
-      <Member Id="P:Microsoft.Maui.Controls.Design.FlexAlignSelfDesignTypeConverter.ExclusiveToKnownValues" />
-      <Member Id="P:Microsoft.Maui.Controls.Design.FlexAlignSelfDesignTypeConverter.KnownValues" />
-    </Type>
-    <Type Name="Microsoft.Maui.Controls.Design.FlexBasisDesignTypeConverter" Id="T:Microsoft.Maui.Controls.Design.FlexBasisDesignTypeConverter">
-      <Member Id="M:Microsoft.Maui.Controls.Design.FlexBasisDesignTypeConverter.#ctor" />
-      <Member Id="M:Microsoft.Maui.Controls.Design.FlexBasisDesignTypeConverter.IsValid(System.ComponentModel.ITypeDescriptorContext,System.Object)" />
-      <Member Id="P:Microsoft.Maui.Controls.Design.FlexBasisDesignTypeConverter.KnownValues" />
-    </Type>
-    <Type Name="Microsoft.Maui.Controls.Design.FlexDirectionDesignTypeConverter" Id="T:Microsoft.Maui.Controls.Design.FlexDirectionDesignTypeConverter">
-      <Member Id="M:Microsoft.Maui.Controls.Design.FlexDirectionDesignTypeConverter.#ctor" />
-      <Member Id="P:Microsoft.Maui.Controls.Design.FlexDirectionDesignTypeConverter.ExclusiveToKnownValues" />
-      <Member Id="P:Microsoft.Maui.Controls.Design.FlexDirectionDesignTypeConverter.KnownValues" />
-    </Type>
-    <Type Name="Microsoft.Maui.Controls.Design.FlexJustifyDesignTypeConverter" Id="T:Microsoft.Maui.Controls.Design.FlexJustifyDesignTypeConverter">
-      <Member Id="M:Microsoft.Maui.Controls.Design.FlexJustifyDesignTypeConverter.#ctor" />
-      <Member Id="P:Microsoft.Maui.Controls.Design.FlexJustifyDesignTypeConverter.ExclusiveToKnownValues" />
-      <Member Id="P:Microsoft.Maui.Controls.Design.FlexJustifyDesignTypeConverter.KnownValues" />
-    </Type>
-    <Type Name="Microsoft.Maui.Controls.Design.FlexWrapDesignTypeConverter" Id="T:Microsoft.Maui.Controls.Design.FlexWrapDesignTypeConverter">
-      <Member Id="M:Microsoft.Maui.Controls.Design.FlexWrapDesignTypeConverter.#ctor" />
-      <Member Id="P:Microsoft.Maui.Controls.Design.FlexWrapDesignTypeConverter.ExclusiveToKnownValues" />
-      <Member Id="P:Microsoft.Maui.Controls.Design.FlexWrapDesignTypeConverter.KnownValues" />
-    </Type>
-    <Type Name="Microsoft.Maui.Controls.Design.FlowDirectionDesignTypeConverter" Id="T:Microsoft.Maui.Controls.Design.FlowDirectionDesignTypeConverter">
-      <Member Id="M:Microsoft.Maui.Controls.Design.FlowDirectionDesignTypeConverter.#ctor" />
-      <Member Id="P:Microsoft.Maui.Controls.Design.FlowDirectionDesignTypeConverter.ExclusiveToKnownValues" />
-      <Member Id="P:Microsoft.Maui.Controls.Design.FlowDirectionDesignTypeConverter.KnownValues" />
-    </Type>
-    <Type Name="Microsoft.Maui.Controls.Design.FontSizeDesignTypeConverter" Id="T:Microsoft.Maui.Controls.Design.FontSizeDesignTypeConverter">
-      <Member Id="M:Microsoft.Maui.Controls.Design.FontSizeDesignTypeConverter.#ctor" />
-      <Member Id="M:Microsoft.Maui.Controls.Design.FontSizeDesignTypeConverter.IsValid(System.ComponentModel.ITypeDescriptorContext,System.Object)" />
-      <Member Id="P:Microsoft.Maui.Controls.Design.FontSizeDesignTypeConverter.KnownValues" />
-    </Type>
-    <Type Name="Microsoft.Maui.Controls.Design.GridLengthCollectionDesignTypeConverter" Id="T:Microsoft.Maui.Controls.Design.GridLengthCollectionDesignTypeConverter">
-      <Member Id="M:Microsoft.Maui.Controls.Design.GridLengthCollectionDesignTypeConverter.#ctor" />
-      <Member Id="M:Microsoft.Maui.Controls.Design.GridLengthCollectionDesignTypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
-      <Member Id="M:Microsoft.Maui.Controls.Design.GridLengthCollectionDesignTypeConverter.IsValid(System.ComponentModel.ITypeDescriptorContext,System.Object)" />
-    </Type>
-    <Type Name="Microsoft.Maui.Controls.Design.GridLengthDesignTypeConverter" Id="T:Microsoft.Maui.Controls.Design.GridLengthDesignTypeConverter">
-      <Member Id="M:Microsoft.Maui.Controls.Design.GridLengthDesignTypeConverter.#ctor" />
-      <Member Id="M:Microsoft.Maui.Controls.Design.GridLengthDesignTypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
-      <Member Id="M:Microsoft.Maui.Controls.Design.GridLengthDesignTypeConverter.IsValid(System.ComponentModel.ITypeDescriptorContext,System.Object)" />
-    </Type>
-    <Type Name="Microsoft.Maui.Controls.Design.ItemsLayoutDesignTypeConverter" Id="T:Microsoft.Maui.Controls.Design.ItemsLayoutDesignTypeConverter">
-      <Member Id="M:Microsoft.Maui.Controls.Design.ItemsLayoutDesignTypeConverter.#ctor" />
-      <Member Id="P:Microsoft.Maui.Controls.Design.ItemsLayoutDesignTypeConverter.KnownValues" />
-    </Type>
-    <Type Name="Microsoft.Maui.Controls.Design.KeyboardDesignTypeConverter" Id="T:Microsoft.Maui.Controls.Design.KeyboardDesignTypeConverter">
-      <Member Id="M:Microsoft.Maui.Controls.Design.KeyboardDesignTypeConverter.#ctor" />
-      <Member Id="P:Microsoft.Maui.Controls.Design.KeyboardDesignTypeConverter.ExclusiveToKnownValues" />
-      <Member Id="P:Microsoft.Maui.Controls.Design.KeyboardDesignTypeConverter.KnownValues" />
-    </Type>
-    <Type Name="Microsoft.Maui.Controls.Design.KnownValuesDesignTypeConverter" Id="T:Microsoft.Maui.Controls.Design.KnownValuesDesignTypeConverter">
-      <Member Id="M:Microsoft.Maui.Controls.Design.KnownValuesDesignTypeConverter.#ctor" />
-      <Member Id="M:Microsoft.Maui.Controls.Design.KnownValuesDesignTypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
-      <Member Id="M:Microsoft.Maui.Controls.Design.KnownValuesDesignTypeConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" />
-      <Member Id="M:Microsoft.Maui.Controls.Design.KnownValuesDesignTypeConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)" />
-      <Member Id="M:Microsoft.Maui.Controls.Design.KnownValuesDesignTypeConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)" />
-      <Member Id="M:Microsoft.Maui.Controls.Design.KnownValuesDesignTypeConverter.IsValid(System.ComponentModel.ITypeDescriptorContext,System.Object)" />
-      <Member Id="P:Microsoft.Maui.Controls.Design.KnownValuesDesignTypeConverter.ExclusiveToKnownValues" />
-      <Member Id="P:Microsoft.Maui.Controls.Design.KnownValuesDesignTypeConverter.KnownValues" />
-    </Type>
-    <Type Name="Microsoft.Maui.Controls.Design.LayoutOptionsDesignTypeConverter" Id="T:Microsoft.Maui.Controls.Design.LayoutOptionsDesignTypeConverter">
-      <Member Id="M:Microsoft.Maui.Controls.Design.LayoutOptionsDesignTypeConverter.#ctor" />
-      <Member Id="P:Microsoft.Maui.Controls.Design.LayoutOptionsDesignTypeConverter.ExclusiveToKnownValues" />
-      <Member Id="P:Microsoft.Maui.Controls.Design.LayoutOptionsDesignTypeConverter.KnownValues" />
-    </Type>
-    <Type Name="Microsoft.Maui.Controls.Design.LinearItemsLayoutDesignTypeConverter" Id="T:Microsoft.Maui.Controls.Design.LinearItemsLayoutDesignTypeConverter">
-      <Member Id="M:Microsoft.Maui.Controls.Design.LinearItemsLayoutDesignTypeConverter.#ctor" />
-      <Member Id="P:Microsoft.Maui.Controls.Design.LinearItemsLayoutDesignTypeConverter.KnownValues" />
-    </Type>
-    <Type Name="Microsoft.Maui.Controls.Design.VisualDesignTypeConverter" Id="T:Microsoft.Maui.Controls.Design.VisualDesignTypeConverter">
-      <Member Id="M:Microsoft.Maui.Controls.Design.VisualDesignTypeConverter.#ctor" />
-      <Member Id="P:Microsoft.Maui.Controls.Design.VisualDesignTypeConverter.KnownValues" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Maui.Controls.Foldable">
@@ -12582,10 +12483,6 @@
       <Member Id="P:Microsoft.Maui.Graphics.Text.IAttributedTextRun.Start" />
     </Type>
     <Type Name="Microsoft.Maui.Graphics.Text.ITextAttributes" Id="T:Microsoft.Maui.Graphics.Text.ITextAttributes" />
-    <Type Name="Microsoft.Maui.Graphics.Text.MarkdownAttributedTextReader" Id="T:Microsoft.Maui.Graphics.Text.MarkdownAttributedTextReader">
-      <Member Id="M:Microsoft.Maui.Graphics.Text.MarkdownAttributedTextReader.#ctor" />
-      <Member Id="M:Microsoft.Maui.Graphics.Text.MarkdownAttributedTextReader.Read(System.String)" />
-    </Type>
     <Type Name="Microsoft.Maui.Graphics.Text.MarkerType" Id="T:Microsoft.Maui.Graphics.Text.MarkerType">
       <Member Id="F:Microsoft.Maui.Graphics.Text.MarkerType.ClosedCircle" />
       <Member Id="F:Microsoft.Maui.Graphics.Text.MarkerType.Hyphen" />
@@ -12673,53 +12570,6 @@
       <Member Id="M:Microsoft.Maui.Graphics.Text.XmlAttributedTextWriter.#ctor" />
       <Member Id="M:Microsoft.Maui.Graphics.Text.XmlAttributedTextWriter.Write(Microsoft.Maui.Graphics.Text.IAttributedText)" />
       <Member Id="M:Microsoft.Maui.Graphics.Text.XmlAttributedTextWriter.Write(Microsoft.Maui.Graphics.Text.IAttributedText,System.IO.TextWriter)" />
-    </Type>
-  </Namespace>
-  <Namespace Name="Microsoft.Maui.Graphics.Text.Renderer">
-    <Type Name="Microsoft.Maui.Graphics.Text.Renderer.AttributedTextObjectRenderer`1" Id="T:Microsoft.Maui.Graphics.Text.Renderer.AttributedTextObjectRenderer`1">
-      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.AttributedTextObjectRenderer`1.#ctor" />
-    </Type>
-    <Type Name="Microsoft.Maui.Graphics.Text.Renderer.AttributedTextRenderer" Id="T:Microsoft.Maui.Graphics.Text.Renderer.AttributedTextRenderer">
-      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.AttributedTextRenderer.#ctor" />
-      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.AttributedTextRenderer.GetAttributedText" />
-      <Member Id="P:Microsoft.Maui.Graphics.Text.Renderer.AttributedTextRenderer.Count" />
-    </Type>
-    <Type Name="Microsoft.Maui.Graphics.Text.Renderer.EmphasisInlineRenderer" Id="T:Microsoft.Maui.Graphics.Text.Renderer.EmphasisInlineRenderer">
-      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.EmphasisInlineRenderer.#ctor" />
-      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.EmphasisInlineRenderer.IsBold(Markdig.Syntax.Inlines.EmphasisInline)" />
-      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.EmphasisInlineRenderer.IsItalic(Markdig.Syntax.Inlines.EmphasisInline)" />
-      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.EmphasisInlineRenderer.IsStrikethrough(Markdig.Syntax.Inlines.EmphasisInline)" />
-      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.EmphasisInlineRenderer.IsSubscript(Markdig.Syntax.Inlines.EmphasisInline)" />
-      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.EmphasisInlineRenderer.IsSuperscript(Markdig.Syntax.Inlines.EmphasisInline)" />
-      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.EmphasisInlineRenderer.IsUnderline(Markdig.Syntax.Inlines.EmphasisInline)" />
-      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.EmphasisInlineRenderer.Write(Microsoft.Maui.Graphics.Text.Renderer.AttributedTextRenderer,Markdig.Syntax.Inlines.EmphasisInline)" />
-    </Type>
-    <Type Name="Microsoft.Maui.Graphics.Text.Renderer.HtmlBlockRenderer" Id="T:Microsoft.Maui.Graphics.Text.Renderer.HtmlBlockRenderer">
-      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.HtmlBlockRenderer.#ctor" />
-      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.HtmlBlockRenderer.Write(Microsoft.Maui.Graphics.Text.Renderer.AttributedTextRenderer,Markdig.Syntax.HtmlBlock)" />
-    </Type>
-    <Type Name="Microsoft.Maui.Graphics.Text.Renderer.HtmlInlineRenderer" Id="T:Microsoft.Maui.Graphics.Text.Renderer.HtmlInlineRenderer">
-      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.HtmlInlineRenderer.#ctor" />
-      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.HtmlInlineRenderer.Write(Microsoft.Maui.Graphics.Text.Renderer.AttributedTextRenderer,Markdig.Syntax.Inlines.HtmlInline)" />
-    </Type>
-    <Type Name="Microsoft.Maui.Graphics.Text.Renderer.LineBreakInlineRenderer" Id="T:Microsoft.Maui.Graphics.Text.Renderer.LineBreakInlineRenderer">
-      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.LineBreakInlineRenderer.#ctor" />
-      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.LineBreakInlineRenderer.Write(Microsoft.Maui.Graphics.Text.Renderer.AttributedTextRenderer,Markdig.Syntax.Inlines.LineBreakInline)" />
-    </Type>
-    <Type Name="Microsoft.Maui.Graphics.Text.Renderer.ListRenderer" Id="T:Microsoft.Maui.Graphics.Text.Renderer.ListRenderer">
-      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.ListRenderer.#ctor" />
-      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.ListRenderer.Write(Microsoft.Maui.Graphics.Text.Renderer.AttributedTextRenderer,Markdig.Syntax.ListBlock)" />
-    </Type>
-    <Type Name="Microsoft.Maui.Graphics.Text.Renderer.LiteralInlineRenderer" Id="T:Microsoft.Maui.Graphics.Text.Renderer.LiteralInlineRenderer">
-      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.LiteralInlineRenderer.#ctor" />
-      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.LiteralInlineRenderer.Write(Microsoft.Maui.Graphics.Text.Renderer.AttributedTextRenderer,Markdig.Syntax.Inlines.LiteralInline)" />
-    </Type>
-    <Type Name="Microsoft.Maui.Graphics.Text.Renderer.ParagraphRenderer" Id="T:Microsoft.Maui.Graphics.Text.Renderer.ParagraphRenderer">
-      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.ParagraphRenderer.#ctor" />
-      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.ParagraphRenderer.Write(Microsoft.Maui.Graphics.Text.Renderer.AttributedTextRenderer,Markdig.Syntax.ParagraphBlock)" />
-    </Type>
-    <Type Name="Microsoft.Maui.Graphics.Text.Renderer.SimpleCssParser" Id="T:Microsoft.Maui.Graphics.Text.Renderer.SimpleCssParser">
-      <Member Id="M:Microsoft.Maui.Graphics.Text.Renderer.SimpleCssParser.Parse(System.String)" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Maui.Handlers">

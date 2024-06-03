@@ -8,6 +8,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Maui.Controls.View</BaseTypeName>
@@ -73,8 +74,8 @@
   </Attributes>
   <Docs>
     <summary>
-      <para>Provides the base class for all Layout elements. Use Layout elements to position and size child elements in Microsoft.Maui.Controls applications.</para>
-    </summary>
+            Base class for layouts that allow you to arrange and group UI controls in your application.
+            </summary>
     <remarks>
       <para>Subtypes of <see cref="T:Microsoft.Maui.Controls.Layout" /> include <see cref="T:Microsoft.Maui.Controls.ContentView" />, <see cref="T:Microsoft.Maui.Controls.ScrollView" />, and <see cref="T:Microsoft.Maui.Controls.Layout" />, as shown in the following diagram.</para>
       <para>The <see cref="P:Microsoft.Maui.Controls.Layout.Children" /> property of <see cref="T:Microsoft.Maui.Controls.Layout" /> contains a list of children of the parameterized type <c>T</c>, which must be a type of <see cref="T:Microsoft.Maui.Controls.View" />. Since <see cref="T:Microsoft.Maui.Controls.Layout" /> is itself a subclass of <see cref="T:Microsoft.Maui.Controls.View" />, this allows <see cref="T:Microsoft.Maui.Controls.Layout" />s to hold sub-layouts, scrolling regions, &amp; etc.</para>
@@ -94,6 +95,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -112,6 +114,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Layouts.ILayoutManager</ReturnType>
@@ -135,6 +138,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -143,8 +147,10 @@
         <Parameter Name="child" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="child">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="child">The child view to add.</param>
+        <summary>
+            Adds a child view to the end of this layout.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,13 +165,21 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets a value that controls whether child elements
+            inherit the input transparency of this layout when the tranparency is <see langword="true" />.
+            </summary>
+        <value>
+          <see langword="true" /> to cause child elements to inherit the input transparency of this layout,
+            when this layout's <see cref="P:Microsoft.Maui.Controls.VisualElement.InputTransparent" /> property is <see langword="true" />.
+            <see langword="false" /> to cause child elements to ignore the input tranparency of this layout.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,12 +194,13 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Layout.CascadeInputTransparent" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,12 +215,15 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.IView&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>
+            Gets the child objects contained in this layout.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -224,13 +242,16 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Clears all child views from this layout.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,6 +269,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -256,9 +278,12 @@
         <Parameter Name="item" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The child view for which to determine if it is contained in this layout.</param>
+        <summary>
+            Determines if the specified child view is contained in this layout.
+            </summary>
+        <returns>
+          <see langword="true" /> if <paramref name="item" /> exists in this layout, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -273,6 +298,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -284,7 +310,9 @@
         <ReturnType>Microsoft.Maui.IPropertyMapper&lt;Microsoft.Maui.IView,Microsoft.Maui.IViewHandler&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The associated property mapper for this layout.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -302,6 +330,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -311,9 +340,11 @@
         <Parameter Name="arrayIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="arrayIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The target array to copy the child views to.</param>
+        <param name="arrayIndex">The index at which the copying needs to start.</param>
+        <summary>
+            Copies the child views to the specified array.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -331,12 +362,15 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the child object count in this layout.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -352,14 +386,17 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Layouts.ILayoutManager</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Creates a manager object that can measure this layout and arrange its children.
+            </summary>
+        <returns>An object that implements <see cref="T:Microsoft.Maui.Layouts.ILayoutManager" /> that manages this layout.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -378,6 +415,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
@@ -407,6 +445,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
@@ -437,14 +476,17 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerator&lt;Microsoft.Maui.IView&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Returns an enumerator that lists all of the children in this layout.
+            </summary>
+        <returns>A <see cref="T:System.Collections.Generic.IEnumerator`1" /> of type <see cref="T:Microsoft.Maui.IView" /> with all the children in this layout.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -459,6 +501,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -467,6 +510,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="P:Microsoft.Maui.ISafeAreaView.IgnoreSafeArea" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -483,6 +527,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -491,9 +536,11 @@
         <Parameter Name="item" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The child view of which to determine the index.</param>
+        <summary>
+            Gets the index of a specified child view.
+            </summary>
+        <returns>The index of the specified view, if the view was not found this will return <c>-1</c>.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -511,6 +558,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -520,9 +568,11 @@
         <Parameter Name="child" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="child">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index at which to specify the child view.</param>
+        <param name="child">The child view to insert.</param>
+        <summary>
+            Inserts a child view at the specified index.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -537,6 +587,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -558,12 +609,16 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value which determines if the Layout should clip its children to its bounds.</summary>
+        <summary>
+            Gets or sets a value which determines if the layout should clip its children to its bounds.
+            The default value is <see langword="false" />.
+            </summary>
         <value>
           <see langword="true" /> if the Layout is clipped; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -580,6 +635,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
@@ -603,12 +659,15 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets whether this layout is readonly.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -627,6 +686,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.IView</ReturnType>
@@ -652,6 +712,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -667,9 +728,11 @@
         <Parameter Name="layout" Type="Microsoft.Maui.Controls.Layout" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="layout">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The associated handler.</param>
+        <param name="layout">The associated <see cref="T:Microsoft.Maui.Controls.Layout" /> instance.</param>
+        <summary>
+            Maps the abstract InputTransparent property to the platform-specific implementations.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -684,6 +747,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -699,9 +763,11 @@
         <Parameter Name="layout" Type="Microsoft.Maui.Controls.Layout" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="layout">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The associated handler.</param>
+        <param name="layout">The associated <see cref="T:Microsoft.Maui.Controls.Layout" /> instance.</param>
+        <summary>
+            Maps the abstract InputTransparent property to the platform-specific implementations.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -715,6 +781,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.SizeRequest</ReturnType>
@@ -747,6 +814,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IList</ReturnType>
@@ -771,6 +839,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -800,6 +869,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Thickness</ReturnType>
@@ -825,6 +895,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -846,6 +917,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -855,9 +927,11 @@
         <Parameter Name="view" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index at which the child view was inserted.</param>
+        <param name="view">The child view which was inserted.</param>
+        <summary>
+            Invoked when <see cref="M:Microsoft.Maui.Controls.Layout.Add(Microsoft.Maui.IView)" /> is called and notifies the handler associated to this layout.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -872,13 +946,16 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Invoked when <see cref="M:Microsoft.Maui.Controls.Layout.Clear" /> is called and notifies the handler associated to this layout.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -893,6 +970,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -902,9 +980,11 @@
         <Parameter Name="view" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index at which the child view was removed.</param>
+        <param name="view">The child view which was removed.</param>
+        <summary>
+            Invoked when <see cref="M:Microsoft.Maui.Controls.Layout.RemoveAt(System.Int32)" /> is called and notifies the handler associated to this layout.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -919,6 +999,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -928,9 +1009,11 @@
         <Parameter Name="view" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index at which the child view was inserted.</param>
+        <param name="view">The child view which was inserted.</param>
+        <summary>
+            Invoked when <see cref="M:Microsoft.Maui.Controls.Layout.Insert(System.Int32,Microsoft.Maui.IView)" /> is called and notifies the handler associated to this layout.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -945,6 +1028,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -955,10 +1039,12 @@
         <Parameter Name="oldView" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="view">To be added.</param>
-        <param name="oldView">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index at which the child view was updated.</param>
+        <param name="view">The new child view which was added at <paramref name="index" />.</param>
+        <param name="oldView">The previous child view which was at <paramref name="index" />.</param>
+        <summary>
+            Invoked when <see cref="P:Microsoft.Maui.Controls.Layout.Item(System.Int32)" /> is called and notifies the handler associated to this layout.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -973,32 +1059,18 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Thickness</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the inner padding of the Layout.</summary>
+        <summary>
+            Gets or sets the inner padding of the layout.
+            The default value is a <see cref="T:Microsoft.Maui.Thickness" /> with all values set to 0.
+            </summary>
         <value>The Thickness values for the layout. The default value is a Thickness with all values set to 0.</value>
-        <remarks>
-          <para>
-            The padding is the space between the bounds of a layout and the bounding region into which its children should be arranged into.
-          </para>
-          <para>
-              The following example shows setting the padding of a Layout to inset its children.
-              </para>
-          <example>
-            <code lang="csharp lang-csharp"><![CDATA[
-  var stackLayout = new StackLayout {
-    Padding = new Thickness (10, 10, 10, 20),
-    Children = {
-      new Label {Text = "Hello"},
-      new Label {Text = "World"}
-    }
-  }
-              ]]></code>
-          </example>
-        </remarks>
+        <remarks>The padding is the space between the bounds of a layout and the bounding region into which its children should be arranged into.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PaddingProperty">
@@ -1012,6 +1084,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
@@ -1035,6 +1108,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1043,9 +1117,12 @@
         <Parameter Name="child" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="child">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="child">The child view to remove.</param>
+        <summary>
+            Removes a child view.
+            </summary>
+        <returns>
+          <see langword="true" /> if the view was removed successfully, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1063,6 +1140,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1071,8 +1149,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index at which to remove the child view.</param>
+        <summary>
+            Removes a child view at the specified index.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1090,6 +1170,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
