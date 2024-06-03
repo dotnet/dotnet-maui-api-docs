@@ -8,10 +8,11 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="net-maui-8.0">
+    <Attribute>
       <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
       <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
     </Attribute>
@@ -34,6 +35,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Maui.Authentication.WebAuthenticatorResult&gt;</ReturnType>
@@ -48,6 +50,14 @@
             </summary>
         <returns>A <see cref="T:Microsoft.Maui.Authentication.WebAuthenticatorResult" /> object with the results of this operation.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Threading.Tasks.TaskCanceledException">Thrown when the user canceled the authentication flow.</exception>
+        <exception cref="T:System.Net.Http.HttpRequestException">Windows: Thrown when a HTTP Request error occured.</exception>
+        <exception cref="T:System.Exception">Windows: Thrown when a unexpected HTTP response was received.</exception>
+        <exception cref="T:Microsoft.Maui.ApplicationModel.FeatureNotSupportedException">iOS/macOS: Thrown when iOS version is less than 13 is used or macOS less than 13.1 is used.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <para>Windows: Thrown when the callback custom URL scheme is not registered in the AppxManifest.xml file.</para>
+          <para>Android: Thrown when the no IntentFilter has been created for the callback URL.</para>
+        </exception>
       </Docs>
     </Member>
   </Members>

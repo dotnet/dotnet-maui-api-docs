@@ -8,10 +8,11 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="net-maui-8.0">
+    <Attribute>
       <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
       <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
     </Attribute>
@@ -33,6 +34,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -45,7 +47,7 @@
       <Docs>
         <param name="destination">The destination <see cref="T:System.IO.Stream" /> to copy the screenshot file data to.</param>
         <param name="format">The image format used to copy this screenshot.</param>
-        <param name="quality">The quality used to copy this screenshot.</param>
+        <param name="quality">The quality used to copy this screenshot. Quality only applies when <see cref="F:Microsoft.Maui.Media.ScreenshotFormat.Jpeg" /> is used.</param>
         <summary />
         <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
@@ -62,6 +64,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -84,6 +87,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
@@ -94,7 +98,7 @@
       </Parameters>
       <Docs>
         <param name="format">The image format used to read this screenshot.</param>
-        <param name="quality">The quality used to read this screenshot.</param>
+        <param name="quality">The quality used to read this screenshot. Quality only applies when <see cref="F:Microsoft.Maui.Media.ScreenshotFormat.Jpeg" /> is used.</param>
         <summary>
             Opens a <see cref="T:System.IO.Stream" /> to the corresponding screenshot file on the filesystem.
             </summary>
@@ -113,6 +117,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

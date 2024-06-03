@@ -8,6 +8,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Maui.Controls.View</BaseTypeName>
@@ -33,17 +34,19 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="net-maui-8.0">
+    <Attribute>
       <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
       <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="net-maui-8.0">
+    <Attribute>
       <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
       <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            The Map control is a cross-platform view for displaying and annotating maps.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -57,10 +60,13 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.Maps.Map" /> class with a region.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,13 +81,16 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="region" Type="Microsoft.Maui.Maps.MapSpan" />
       </Parameters>
       <Docs>
-        <param name="region">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="region">The region that should be initially shown by the map.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.Maps.Map" /> class with a region.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,14 +108,17 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerator&lt;Microsoft.Maui.Maps.IMapPin&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Returns an enumarator of all the pins that are currently added to the map.
+            </summary>
+        <returns>An instance of <see cref="T:System.Collections.Generic.IEnumerator`1" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,12 +133,16 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets a value that indicates if scrolling by user input is enabled. Default value is <see langword="true" />.
+            This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -142,6 +158,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
@@ -162,14 +179,18 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets a value that indicates if the map shows an indicator of the current position of this device. Default value is <see langword="false" />
+            This is a bindable property.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Depending on the platform it is likely that runtime permission(s) need to be requested to determine the current location of the device.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsShowingUserProperty">
@@ -183,6 +204,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
@@ -203,12 +225,16 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets a value that indicates if the map shows current traffic information. Default value is <see langword="false" />.
+            This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -224,6 +250,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
@@ -244,12 +271,16 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets a value that indicates if zooming by user input is enabled. Default value is <see langword="true" />.
+            This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -265,6 +296,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
@@ -285,12 +317,16 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the object that represents the collection of pins that should be shown on the map.
+            This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -306,6 +342,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
@@ -326,12 +363,16 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the template that is to be applied to each object in <see cref="P:Microsoft.Maui.Controls.Maps.Map.ItemsSource" />.
+            This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -347,6 +388,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
@@ -367,12 +409,16 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.DataTemplateSelector</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the object that selects the template that is to be applied to each object in <see cref="P:Microsoft.Maui.Controls.Maps.Map.ItemsSource" />.
+            This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -388,6 +434,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
@@ -408,9 +455,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-maui-8.0">
+        <Attribute>
           <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
         </Attribute>
@@ -419,7 +467,9 @@
         <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.Maps.MapClickedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when the user clicks/taps on the map control.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -434,12 +484,15 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Controls.Maps.MapElement&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the elements (pins, polygons, polylines, etc.) currently added to this map.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -455,12 +508,16 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Maps.MapType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the style of the map. Default value is <see cref="F:Microsoft.Maui.Maps.MapType.Street" />. 
+            This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -476,6 +533,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
@@ -499,6 +557,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -526,6 +585,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Maps.IMapElement&gt;</ReturnType>
@@ -550,6 +610,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Maps.IMapPin&gt;</ReturnType>
@@ -574,17 +635,18 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-maui-8.0">
+        <Attribute>
           <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="net-maui-8.0">
+        <Attribute>
           <AttributeName Language="C#">[get: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
           <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="net-maui-8.0">
+        <Attribute>
           <AttributeName Language="C#">[set: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
           <AttributeName Language="F#">[&lt;set: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
         </Attribute>
@@ -612,6 +674,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -620,9 +683,12 @@
         <Parameter Name="mapSpan" Type="Microsoft.Maui.Maps.MapSpan" />
       </Parameters>
       <Docs>
-        <param name="mapSpan">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="mapSpan">A <see cref="T:Microsoft.Maui.Maps.MapSpan" /> object containing details on what region should be shown.</param>
+        <summary>
+            Adjusts the viewport of the map control to view the specified region.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="mapSpan" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="OnHandlerChanged">
@@ -636,13 +702,16 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Raised when the handler for this map control changed.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -657,12 +726,15 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Controls.Maps.Pin&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the pins currently added to this map.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -681,6 +753,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
@@ -703,13 +776,14 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-maui-8.0">
+        <Attribute>
           <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="net-maui-8.0">
+        <Attribute>
           <AttributeName Language="C#">[get: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
           <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
         </Attribute>
@@ -718,7 +792,9 @@
         <ReturnType>Microsoft.Maui.Maps.MapSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the currently visible region of the map.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

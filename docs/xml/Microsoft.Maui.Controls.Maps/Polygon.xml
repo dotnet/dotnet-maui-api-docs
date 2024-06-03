@@ -8,6 +8,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Maui.Controls.Maps.MapElement</BaseTypeName>
@@ -48,17 +49,19 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="net-maui-8.0">
+    <Attribute>
       <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
       <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="net-maui-8.0">
+    <Attribute>
       <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
       <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents a polygon drawn on the map control.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -72,10 +75,13 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.Maps.Polygon" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,6 +99,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -101,8 +108,10 @@
         <Parameter Name="item" Type="Microsoft.Maui.Devices.Sensors.Location" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="item">The location to add.</param>
+        <summary>
+            Adds a location to this polygon.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,13 +129,16 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Clears all locations that make up this polygon.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,6 +156,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -152,9 +165,12 @@
         <Parameter Name="item" Type="Microsoft.Maui.Devices.Sensors.Location" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The location object of which to determine if it is contained in the location collection of this polygon.</param>
+        <summary>
+            Returns whether the specified location is contained in this polygon.
+            </summary>
+        <returns>
+          <see langword="true" /> if <paramref name="item" /> is contained in the location collection of this polygon, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,6 +188,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -181,9 +198,11 @@
         <Parameter Name="arrayIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="arrayIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The target array to copy the child views to.</param>
+        <param name="arrayIndex">The index at which the copying needs to start.</param>
+        <summary>
+            Copies the child locations to the specified array.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -201,12 +220,15 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the location object count in this polygon.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -225,13 +247,14 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-maui-8.0">
+        <Attribute>
           <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="net-maui-8.0">
+        <Attribute>
           <AttributeName Language="C#">[get: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
           <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
         </Attribute>
@@ -243,6 +266,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="P:Microsoft.Maui.Maps.IFilledMapElement.Fill" />
       </Docs>
     </Member>
     <Member MemberName="FillColor">
@@ -256,12 +280,15 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the fill color. This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -277,6 +304,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
@@ -297,12 +325,15 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Devices.Sensors.Location&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a list of locations on the map which forms the outline of this polygon on the map.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -321,14 +352,17 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerator&lt;Microsoft.Maui.Devices.Sensors.Location&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Returns an enumerator that lists all of the location object in this polygon.
+            </summary>
+        <returns>A <see cref="T:System.Collections.Generic.IEnumerator`1" /> of type <see cref="T:Microsoft.Maui.Devices.Sensors.Location" /> with all the locations in this polygon.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -346,6 +380,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -354,9 +389,11 @@
         <Parameter Name="item" Type="Microsoft.Maui.Devices.Sensors.Location" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The location object of which to determine the index.</param>
+        <summary>
+            Gets the index of a specified location object.
+            </summary>
+        <returns>The index of the specified location, if the location was not found this will return <c>-1</c>.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -374,6 +411,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -383,9 +421,11 @@
         <Parameter Name="item" Type="Microsoft.Maui.Devices.Sensors.Location" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index at which to specify the location object.</param>
+        <param name="item">The location object to insert.</param>
+        <summary>
+            Inserts a location object at the specified index.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -403,14 +443,17 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets whether this polygon is read-only.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Always returns <see langword="false" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -427,6 +470,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Devices.Sensors.Location</ReturnType>
@@ -435,9 +479,11 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The index of the location object to return or set.</param>
+        <summary>
+            Gets or sets the location object at the specified index.
+            </summary>
+        <value>The location object at the specified index.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -455,6 +501,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -463,9 +510,12 @@
         <Parameter Name="item" Type="Microsoft.Maui.Devices.Sensors.Location" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The location object to remove.</param>
+        <summary>
+            Removes a location object from this polygon.
+            </summary>
+        <returns>
+          <see langword="true" /> if the location was removed successfully, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -483,6 +533,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -491,8 +542,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index at which to remove the location.</param>
+        <summary>
+            Removes a location object at the specified index.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -510,6 +563,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
