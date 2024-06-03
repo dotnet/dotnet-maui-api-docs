@@ -8,10 +8,13 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents a platform-agnostic canvas on which 2D graphics can be drawn using types from the <see cref="N:Microsoft.Maui.Graphics" /> namespace.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,12 +29,15 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Sets the opacity of am object.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -47,12 +53,15 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Sets a value that indicates whether to use anti-aliasing is enabled.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -68,12 +77,15 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Graphics.BlendMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Sets the blend mode, which determines what happens when an object is rendered on top of an existing object.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,6 +100,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -97,9 +110,11 @@
         <Parameter Name="windingMode" Type="Microsoft.Maui.Graphics.WindingMode" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <param name="windingMode">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="path">The path used to clip the object</param>
+        <param name="windingMode">Fill algorithm used for the path. Default is <see cref="F:Microsoft.Maui.Graphics.WindingMode.NonZero" />.</param>
+        <summary>
+            Clips an object so that only the area outside of a <see cref="T:Microsoft.Maui.Graphics.PathF" /> object will be visible.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,6 +129,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -125,11 +141,13 @@
         <Parameter Name="height" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <param name="width">To be added.</param>
-        <param name="height">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="x">Starting <c>x</c> coordinate of the rectangle.</param>
+        <param name="y">Starting <c>y</c> coordinate of the rectangle.</param>
+        <param name="width">Width of the rectangle.</param>
+        <param name="height">Height of the rectangle.</param>
+        <summary>
+            Clips an object so that only the area that's within the region of the rectangle will be visible.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,6 +162,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -152,8 +171,10 @@
         <Parameter Name="transform" Type="System.Numerics.Matrix3x2" />
       </Parameters>
       <Docs>
-        <param name="transform">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="transform">Affine transformation matrix.</param>
+        <summary>
+            Applies transformation specified by <paramref name="transform" /> to a graphical object.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,12 +189,15 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets a value that represents the scaling factor to scale the UI by. 
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -189,6 +213,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -204,15 +229,19 @@
         <Parameter Name="closed" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <param name="width">To be added.</param>
-        <param name="height">To be added.</param>
-        <param name="startAngle">To be added.</param>
-        <param name="endAngle">To be added.</param>
-        <param name="clockwise">To be added.</param>
-        <param name="closed">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="x">Starting <c>x</c> coordinate.</param>
+        <param name="y">Starting <c>y</c> coordinate.</param>
+        <param name="width">Width of the arc.</param>
+        <param name="height">Height of the arc.</param>
+        <param name="startAngle">The angle from the x-axis to the start point of the arc.</param>
+        <param name="endAngle">The angle from the x-axis to the end point of the arc.</param>
+        <param name="clockwise">
+          <see langword="true" /> to draw the arc in a clockwise direction; <see langword="false" /> to draw the arc counterclockwise.</param>
+        <param name="closed">
+          <see langword="true" /> to specify whether the end point of the arc will be connected to the start point; <see langword="false" /> otherwise.</param>
+        <summary>
+            Draws an arc onto the canvas.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -227,6 +256,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -238,11 +268,13 @@
         <Parameter Name="height" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <param name="width">To be added.</param>
-        <param name="height">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="x">Starting <c>x</c> coordinate.</param>
+        <param name="y">Starting <c>y</c> coordinate.</param>
+        <param name="width">Width of the ellipse.</param>
+        <param name="height">Height of the ellipse.</param>
+        <summary>
+            Draws an ellipse onto the canvas.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -257,6 +289,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -269,12 +302,14 @@
         <Parameter Name="height" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="image">To be added.</param>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <param name="width">To be added.</param>
-        <param name="height">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="image">Image to display</param>
+        <param name="x">Top left corner <c>x</c> coordinate.</param>
+        <param name="y">Top left corner <c>y</c> coordinate.</param>
+        <param name="width">Width of the image.</param>
+        <param name="height">Height of the image.</param>
+        <summary>
+            Draws an image onto the canvas.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -289,6 +324,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -300,11 +336,13 @@
         <Parameter Name="y2" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x1">To be added.</param>
-        <param name="y1">To be added.</param>
-        <param name="x2">To be added.</param>
-        <param name="y2">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="x1">Starting <c>x</c> coordinate.</param>
+        <param name="y1">Starting <c>y</c> coordinate.</param>
+        <param name="x2">Ending <c>x</c> coordinate.</param>
+        <param name="y2">Ending <c>x</c> coordinate.</param>
+        <summary>
+            Draws a line between two points onto the canvas.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -319,6 +357,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -327,8 +366,10 @@
         <Parameter Name="path" Type="Microsoft.Maui.Graphics.PathF" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="path">The path to be drawn.</param>
+        <summary>
+            Draws the specified <paramref name="path" /> onto the canvas.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -343,6 +384,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -354,11 +396,13 @@
         <Parameter Name="height" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <param name="width">To be added.</param>
-        <param name="height">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="x">Starting <c>x</c> coordinate.</param>
+        <param name="y">Starting <c>y</c> coordinate.</param>
+        <param name="width">Width of the rectangle.</param>
+        <param name="height">Height of the rectangle.</param>
+        <summary>
+            Draws a rectangle onto the canvas.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -373,6 +417,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -385,12 +430,14 @@
         <Parameter Name="cornerRadius" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <param name="width">To be added.</param>
-        <param name="height">To be added.</param>
-        <param name="cornerRadius">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="x">Starting <c>x</c> coordinate.</param>
+        <param name="y">Starting <c>y</c> coordinate.</param>
+        <param name="width">Width of the rectangle.</param>
+        <param name="height">Height of the rectangle.</param>
+        <param name="cornerRadius">The radius used to round the corners of the rectangle.</param>
+        <summary>
+            Draws a rectangle with rounded corners onto the canvas.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -405,6 +452,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -416,12 +464,14 @@
         <Parameter Name="horizontalAlignment" Type="Microsoft.Maui.Graphics.HorizontalAlignment" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <param name="horizontalAlignment">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">Text to be displayed.</param>
+        <param name="x">Starting <c>x</c> coordinate.</param>
+        <param name="y">Starting <c>y</c> coordinate.</param>
+        <param name="horizontalAlignment">Horizontal alignment options to align the string.</param>
+        <summary>
+            Draws a text string onto the canvas.
+            </summary>
+        <remarks>To draw attributed text, use <see cref="M:Microsoft.Maui.Graphics.ICanvas.DrawText(Microsoft.Maui.Graphics.Text.IAttributedText,System.Single,System.Single,System.Single,System.Single)" /> instead.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawString">
@@ -434,6 +484,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -450,16 +501,18 @@
         <Parameter Name="lineSpacingAdjustment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <param name="width">To be added.</param>
-        <param name="height">To be added.</param>
-        <param name="horizontalAlignment">To be added.</param>
-        <param name="verticalAlignment">To be added.</param>
-        <param name="textFlow">To be added.</param>
-        <param name="lineSpacingAdjustment">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">Text to be displayed.</param>
+        <param name="x">Starting <c>x</c> coordinate of the bounding box.</param>
+        <param name="y">Starting <c>y</c> coordinate of the bounding box.</param>
+        <param name="width">Width of the bounding box.</param>
+        <param name="height">Height of the bounding box.</param>
+        <param name="horizontalAlignment">Horizontal alignment options to align the string within the bounding box.</param>
+        <param name="verticalAlignment">Vertical alignment options to align the string within the bounding box.</param>
+        <param name="textFlow">Specifies whether text will be clipped in case it overflows the bounding box. Default is <see cref="F:Microsoft.Maui.Graphics.TextFlow.ClipBounds" />.</param>
+        <param name="lineSpacingAdjustment">Spacing adjustment between lines. Default is 0.</param>
+        <summary>
+            Draws a text string within a bounding box onto the canvas.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -474,6 +527,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -486,12 +540,14 @@
         <Parameter Name="height" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <param name="width">To be added.</param>
-        <param name="height">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">Attributed text to be displayed.</param>
+        <param name="x">Starting <c>x</c> coordinate of the bounding box.</param>
+        <param name="y">Starting <c>y</c> coordinate of the bounding box.</param>
+        <param name="width">Width of the bounding box.</param>
+        <param name="height">Height of the bounding box.</param>
+        <summary>
+            Draws attributed text within a bounding box onto the canvas.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -506,6 +562,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -520,14 +577,17 @@
         <Parameter Name="clockwise" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <param name="width">To be added.</param>
-        <param name="height">To be added.</param>
-        <param name="startAngle">To be added.</param>
-        <param name="endAngle">To be added.</param>
-        <param name="clockwise">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="x">Starting <c>x</c> coordinate.</param>
+        <param name="y">Starting <c>y</c> coordinate.</param>
+        <param name="width">Width of the arc.</param>
+        <param name="height">Height of the arc.</param>
+        <param name="startAngle">The angle from the x-axis to the start point of the arc.</param>
+        <param name="endAngle">The angle from the x-axis to the end point of the arc.</param>
+        <param name="clockwise">
+          <see langword="true" /> to draw the arc in a clockwise direction; <see langword="false" /> to draw the arc counterclockwise.</param>
+        <summary>
+            Draws a filled arc onto the canvas.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -542,12 +602,15 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Sets the color used to paint an object's interior.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -563,6 +626,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -574,11 +638,13 @@
         <Parameter Name="height" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <param name="width">To be added.</param>
-        <param name="height">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="x">Starting <c>x</c> coordinate.</param>
+        <param name="y">Starting <c>y</c> coordinate.</param>
+        <param name="width">Width of the ellipse.</param>
+        <param name="height">Height of the ellipse.</param>
+        <summary>
+            Draws a filled ellipse onto the canvas.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -593,6 +659,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -602,9 +669,11 @@
         <Parameter Name="windingMode" Type="Microsoft.Maui.Graphics.WindingMode" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <param name="windingMode">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="path">The path to be drawn.</param>
+        <param name="windingMode">The fill algorithm to be used.</param>
+        <summary>
+            Draws and fills the specified <paramref name="path" /> onto the canvas.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -619,6 +688,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -630,11 +700,13 @@
         <Parameter Name="height" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <param name="width">To be added.</param>
-        <param name="height">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="x">Starting <c>x</c> coordinate.</param>
+        <param name="y">Starting <c>y</c> coordinate.</param>
+        <param name="width">Width of the rectangle.</param>
+        <param name="height">Height of the rectangle.</param>
+        <summary>
+            Draws a filled rectangle onto the canvas.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -649,6 +721,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -661,12 +734,14 @@
         <Parameter Name="cornerRadius" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <param name="width">To be added.</param>
-        <param name="height">To be added.</param>
-        <param name="cornerRadius">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="x">Starting <c>x</c> coordinate.</param>
+        <param name="y">Starting <c>y</c> coordinate.</param>
+        <param name="width">Width of the rectangle.</param>
+        <param name="height">Height of the rectangle.</param>
+        <param name="cornerRadius">The radius used to round the corners of the rectangle.</param>
+        <summary>
+            Draws a filled rectangle with rounded corners onto the canvas.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -681,12 +756,15 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Graphics.IFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Sets the font used when drawing text.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -702,12 +780,15 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Sets the font color when drawing text.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -723,12 +804,15 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Sets the size of the font used when drawing text.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -744,6 +828,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Graphics.SizeF</ReturnType>
@@ -754,11 +839,13 @@
         <Parameter Name="fontSize" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="font">To be added.</param>
-        <param name="fontSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">String to calculate the size on.</param>
+        <param name="font">The string's font type.</param>
+        <param name="fontSize">The string's font size.</param>
+        <summary>
+            Calculates the area a string would occupy if drawn on the canvas.
+            </summary>
+        <returns>The area the string would occupy on the canvas.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -773,6 +860,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Graphics.SizeF</ReturnType>
@@ -785,13 +873,15 @@
         <Parameter Name="verticalAlignment" Type="Microsoft.Maui.Graphics.VerticalAlignment" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="font">To be added.</param>
-        <param name="fontSize">To be added.</param>
-        <param name="horizontalAlignment">To be added.</param>
-        <param name="verticalAlignment">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">String to calculate the size on.</param>
+        <param name="font">The string's font type.</param>
+        <param name="fontSize">The string's font size.</param>
+        <param name="horizontalAlignment">Horizontal alignment options for the string.</param>
+        <param name="verticalAlignment">Vertical alignment options for the string.</param>
+        <summary>
+            Calculates the area a string would occupy if drawn on the canvas.
+            </summary>
+        <returns>The area the string would occupy on the canvas.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -806,12 +896,15 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Sets the limit of the miter length of line joins in an object.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -827,13 +920,16 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Resets the graphics state to its default values.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -848,14 +944,18 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Restores the graphics state to the most recently saved state.
+            </summary>
+        <returns>
+          <see langword="true" /> if the restore was succesful, <see langword="false" /> otherwise.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -870,6 +970,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -879,8 +980,10 @@
       </Parameters>
       <Docs>
         <param name="degrees">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+            Rotates a graphical object around the upper-left corner of the canvas (0,0).
+            </summary>
+        <remarks>Rotation is clockwise for increasing angles. Negative angles and angles greater than 360 are allowed.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Rotate">
@@ -894,6 +997,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -904,11 +1008,15 @@
         <Parameter Name="y" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="degrees">To be added.</param>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="degrees">Rotation angle.</param>
+        <param name="x">
+          <c>x</c> coordinate of the rotation point.</param>
+        <param name="y">
+          <c>y</c> coordinate of the rotation point.</param>
+        <summary>
+            Rotates a graphical object around a point.
+            </summary>
+        <remarks>Rotation is clockwise for increasing angles. Negative angles and angles greater than 360 are allowed.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveState">
@@ -922,13 +1030,16 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Saves the current graphics state.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -943,6 +1054,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -952,10 +1064,12 @@
         <Parameter Name="sy" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="sx">To be added.</param>
-        <param name="sy">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sx">Value for horizontal scaling.</param>
+        <param name="sy">Value for vertical scaling.</param>
+        <summary>
+            Changes the size of a graphical object by scaling it.
+            </summary>
+        <remarks>Can cause starting coordinates to move when an object is made larger.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetFillPaint">
@@ -969,6 +1083,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -978,9 +1093,11 @@
         <Parameter Name="rectangle" Type="Microsoft.Maui.Graphics.RectF" />
       </Parameters>
       <Docs>
-        <param name="paint">To be added.</param>
-        <param name="rectangle">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="paint">Paint to set as fill</param>
+        <param name="rectangle">Rectangle to apply a gradient on if the <paramref name="paint" /> supports it.</param>
+        <summary>
+            Sets <paramref name="paint" /> as the fill of a graphical object.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -995,6 +1112,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1005,10 +1123,12 @@
         <Parameter Name="color" Type="Microsoft.Maui.Graphics.Color" />
       </Parameters>
       <Docs>
-        <param name="offset">To be added.</param>
-        <param name="blur">To be added.</param>
-        <param name="color">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="offset">Represents the position of a light source that creates the shadow.</param>
+        <param name="blur">Amount of blur to apply to the shadow.</param>
+        <param name="color">Color of the shadow.</param>
+        <summary>
+            Adds a shadow to a graphical object.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1023,12 +1143,15 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Sets the <see cref="T:Microsoft.Maui.Graphics.Color" /> used to paint an object's outline.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1044,12 +1167,15 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Sets the distance within the dash pattern where a dash begins.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1065,12 +1191,15 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Sets the pattern of dashes and gaps that are used to outline an object.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1086,12 +1215,15 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Graphics.LineCap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Sets the shape at the start and end of a line.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1107,12 +1239,15 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Graphics.LineJoin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Sets the type of join used at the vertices of a shape.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1128,12 +1263,15 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Sets the width of the stroke used to draw an object's outline.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1149,6 +1287,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1160,11 +1299,13 @@
         <Parameter Name="height" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <param name="width">To be added.</param>
-        <param name="height">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="x">Starting <c>x</c> coordinate of the rectangle.</param>
+        <param name="y">Starting <c>y</c> coordinate of the rectangle.</param>
+        <param name="width">Width of the rectangle.</param>
+        <param name="height">Height of the rectangle.</param>
+        <summary>
+            Clips an object so that only the area outside the of a rectangle will be visible.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1179,6 +1320,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1188,9 +1330,11 @@
         <Parameter Name="ty" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="tx">To be added.</param>
-        <param name="ty">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="tx">Horizontal shift. Negative values move the object to the left, while positive values move it to the right.</param>
+        <param name="ty">Vertical shift. Negative values move the object down, while positive values move it up.</param>
+        <summary>
+            Shifts a graphical object in horizontal and vertical directions.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

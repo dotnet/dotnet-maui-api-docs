@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Framework Name="net-maui-9.0">
   <Assemblies>
-    <Assembly Name="Microsoft.AspNetCore.Components.WebView.Maui" Version="1.0.0.0" />
-    <Assembly Name="Microsoft.AspNetCore.Components.WebView.WindowsForms" Version="1.0.0.0" />
-    <Assembly Name="Microsoft.AspNetCore.Components.WebView.Wpf" Version="1.0.0.0" />
-    <Assembly Name="Microsoft.Maui.Controls.Compatibility" Version="1.0.0.0" />
+    <Assembly Name="Microsoft.AspNetCore.Components.WebView.Maui" Version="9.0.0.0" />
+    <Assembly Name="Microsoft.AspNetCore.Components.WebView.WindowsForms" Version="9.0.0.0" />
+    <Assembly Name="Microsoft.AspNetCore.Components.WebView.Wpf" Version="9.0.0.0" />
+    <Assembly Name="Microsoft.Maui.Controls.Compatibility" Version="9.0.0.0" />
     <Assembly Name="Microsoft.Maui.Controls.DesignTools" Version="1.0.0.0" />
-    <Assembly Name="Microsoft.Maui.Controls" Version="1.0.0.0" />
-    <Assembly Name="Microsoft.Maui.Controls.Foldable" Version="1.0.0.0" />
-    <Assembly Name="Microsoft.Maui.Controls.Maps" Version="1.0.0.0" />
+    <Assembly Name="Microsoft.Maui.Controls" Version="9.0.0.0" />
+    <Assembly Name="Microsoft.Maui.Controls.Foldable" Version="9.0.0.0" />
+    <Assembly Name="Microsoft.Maui.Controls.Maps" Version="9.0.0.0" />
     <Assembly Name="Microsoft.Maui.Controls.resources" Version="1.0.0.0" />
     <Assembly Name="Microsoft.Maui.Controls.Xaml.DesignTools" Version="1.0.0.0" />
-    <Assembly Name="Microsoft.Maui.Controls.Xaml" Version="1.0.0.0" />
-    <Assembly Name="Microsoft.Maui" Version="1.0.0.0" />
-    <Assembly Name="Microsoft.Maui.Essentials" Version="1.0.0.0" />
-    <Assembly Name="Microsoft.Maui.Graphics" Version="1.0.0.0" />
-    <Assembly Name="Microsoft.Maui.Graphics.Skia" Version="1.0.0.0" />
+    <Assembly Name="Microsoft.Maui.Controls.Xaml" Version="9.0.0.0" />
+    <Assembly Name="Microsoft.Maui" Version="9.0.0.0" />
+    <Assembly Name="Microsoft.Maui.Essentials" Version="9.0.0.0" />
+    <Assembly Name="Microsoft.Maui.Graphics" Version="9.0.0.0" />
+    <Assembly Name="Microsoft.Maui.Graphics.Skia" Version="9.0.0.0" />
     <Assembly Name="Microsoft.Maui.Graphics.Text.Markdig" Version="1.0.0.0" />
-    <Assembly Name="Microsoft.Maui.Maps" Version="1.0.0.0" />
+    <Assembly Name="Microsoft.Maui.Maps" Version="9.0.0.0" />
   </Assemblies>
   <Namespace Name="Microsoft.AspNetCore.Components.WebView">
     <Type Name="Microsoft.AspNetCore.Components.WebView.BlazorWebViewInitializedEventArgs" Id="T:Microsoft.AspNetCore.Components.WebView.BlazorWebViewInitializedEventArgs">
@@ -270,6 +270,14 @@
       <Member Id="M:Microsoft.Maui.Easing.Ease(System.Double)" />
       <Member Id="M:Microsoft.Maui.Easing.op_Implicit(System.Func{System.Double,System.Double})~Microsoft.Maui.Easing" />
       <Member Id="P:Microsoft.Maui.Easing.Default" />
+    </Type>
+    <Type Name="Microsoft.Maui.ElementHandlerExtensions" Id="T:Microsoft.Maui.ElementHandlerExtensions">
+      <Member Id="M:Microsoft.Maui.ElementHandlerExtensions.GetRequiredService``1(Microsoft.Maui.IElementHandler)" />
+      <Member Id="M:Microsoft.Maui.ElementHandlerExtensions.GetRequiredService``1(Microsoft.Maui.IElementHandler,System.Type)" />
+      <Member Id="M:Microsoft.Maui.ElementHandlerExtensions.GetService``1(Microsoft.Maui.IElementHandler)" />
+      <Member Id="M:Microsoft.Maui.ElementHandlerExtensions.GetService``1(Microsoft.Maui.IElementHandler,System.Type)" />
+      <Member Id="M:Microsoft.Maui.ElementHandlerExtensions.GetServiceProvider(Microsoft.Maui.IElementHandler)" />
+      <Member Id="M:Microsoft.Maui.ElementHandlerExtensions.IsConnected(Microsoft.Maui.IElementHandler)" />
     </Type>
     <Type Name="Microsoft.Maui.EmbeddedFont" Id="T:Microsoft.Maui.EmbeddedFont">
       <Member Id="M:Microsoft.Maui.EmbeddedFont.#ctor" />
@@ -1060,12 +1068,15 @@
     <Type Name="Microsoft.Maui.Keyboard" Id="T:Microsoft.Maui.Keyboard">
       <Member Id="M:Microsoft.Maui.Keyboard.Create(Microsoft.Maui.KeyboardFlags)" />
       <Member Id="P:Microsoft.Maui.Keyboard.Chat" />
+      <Member Id="P:Microsoft.Maui.Keyboard.Date" />
       <Member Id="P:Microsoft.Maui.Keyboard.Default" />
       <Member Id="P:Microsoft.Maui.Keyboard.Email" />
       <Member Id="P:Microsoft.Maui.Keyboard.Numeric" />
+      <Member Id="P:Microsoft.Maui.Keyboard.Password" />
       <Member Id="P:Microsoft.Maui.Keyboard.Plain" />
       <Member Id="P:Microsoft.Maui.Keyboard.Telephone" />
       <Member Id="P:Microsoft.Maui.Keyboard.Text" />
+      <Member Id="P:Microsoft.Maui.Keyboard.Time" />
       <Member Id="P:Microsoft.Maui.Keyboard.Url" />
     </Type>
     <Type Name="Microsoft.Maui.KeyboardAcceleratorModifiers" Id="T:Microsoft.Maui.KeyboardAcceleratorModifiers">
@@ -3875,6 +3886,7 @@
       <Member Id="M:Microsoft.Maui.Controls.GradientBrush.#ctor" />
       <Member Id="M:Microsoft.Maui.Controls.GradientBrush.OnBindingContextChanged" />
       <Member Id="P:Microsoft.Maui.Controls.GradientBrush.GradientStops" />
+      <Member Id="P:Microsoft.Maui.Controls.GradientBrush.IsEmpty" />
     </Type>
     <Type Name="Microsoft.Maui.Controls.GradientStop" Id="T:Microsoft.Maui.Controls.GradientStop">
       <Member Id="F:Microsoft.Maui.Controls.GradientStop.ColorProperty" />
@@ -5759,7 +5771,7 @@
       <Member Id="M:Microsoft.Maui.Controls.ResourceDictionary.ContainsKey(System.String)" />
       <Member Id="M:Microsoft.Maui.Controls.ResourceDictionary.GetEnumerator" />
       <Member Id="M:Microsoft.Maui.Controls.ResourceDictionary.Remove(System.String)" />
-      <Member Id="M:Microsoft.Maui.Controls.ResourceDictionary.SetAndLoadSource(System.Uri,System.String,System.Reflection.Assembly,System.Xml.IXmlLineInfo)" />
+      <Member Id="M:Microsoft.Maui.Controls.ResourceDictionary.SetAndCreateSource``1(System.Uri)" />
       <Member Id="M:Microsoft.Maui.Controls.ResourceDictionary.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})" />
       <Member Id="M:Microsoft.Maui.Controls.ResourceDictionary.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#Contains(System.Collections.Generic.KeyValuePair{System.String,System.Object})" />
       <Member Id="M:Microsoft.Maui.Controls.ResourceDictionary.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32)" />
@@ -6948,7 +6960,13 @@
       <Member Id="M:Microsoft.Maui.Controls.TextDecorationConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
       <Member Id="M:Microsoft.Maui.Controls.TextDecorationConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
     </Type>
+    <Type Name="Microsoft.Maui.Controls.TimeChangedEventArgs" Id="T:Microsoft.Maui.Controls.TimeChangedEventArgs">
+      <Member Id="M:Microsoft.Maui.Controls.TimeChangedEventArgs.#ctor(System.TimeSpan,System.TimeSpan)" />
+      <Member Id="P:Microsoft.Maui.Controls.TimeChangedEventArgs.NewTime" />
+      <Member Id="P:Microsoft.Maui.Controls.TimeChangedEventArgs.OldTime" />
+    </Type>
     <Type Name="Microsoft.Maui.Controls.TimePicker" Id="T:Microsoft.Maui.Controls.TimePicker">
+      <Member Id="E:Microsoft.Maui.Controls.TimePicker.TimeSelected" />
       <Member Id="F:Microsoft.Maui.Controls.TimePicker.CharacterSpacingProperty" />
       <Member Id="F:Microsoft.Maui.Controls.TimePicker.ControlsTimePickerMapper" />
       <Member Id="F:Microsoft.Maui.Controls.TimePicker.FontAttributesProperty" />
@@ -10239,6 +10257,13 @@
       <Member Id="P:Microsoft.Maui.Controls.Xaml.RelativeSourceExtension.AncestorType" />
       <Member Id="P:Microsoft.Maui.Controls.Xaml.RelativeSourceExtension.Mode" />
     </Type>
+    <Type Name="Microsoft.Maui.Controls.Xaml.RequireServiceAttribute" Id="T:Microsoft.Maui.Controls.Xaml.RequireServiceAttribute">
+      <Member Id="M:Microsoft.Maui.Controls.Xaml.RequireServiceAttribute.#ctor(System.Type[])" />
+      <Member Id="P:Microsoft.Maui.Controls.Xaml.RequireServiceAttribute.ServiceTypes" />
+    </Type>
+    <Type Name="Microsoft.Maui.Controls.Xaml.ResourceDictionaryHelpers" Id="T:Microsoft.Maui.Controls.Xaml.ResourceDictionaryHelpers">
+      <Member Id="M:Microsoft.Maui.Controls.Xaml.ResourceDictionaryHelpers.LoadFromSource(Microsoft.Maui.Controls.ResourceDictionary,System.Uri,System.String,System.Reflection.Assembly,System.Xml.IXmlLineInfo)" />
+    </Type>
     <Type Name="Microsoft.Maui.Controls.Xaml.StaticExtension" Id="T:Microsoft.Maui.Controls.Xaml.StaticExtension">
       <Member Id="M:Microsoft.Maui.Controls.Xaml.StaticExtension.#ctor" />
       <Member Id="M:Microsoft.Maui.Controls.Xaml.StaticExtension.ProvideValue(System.IServiceProvider)" />
@@ -10264,6 +10289,7 @@
       <Member Id="P:Microsoft.Maui.Controls.Xaml.TemplateBindingExtension.Mode" />
       <Member Id="P:Microsoft.Maui.Controls.Xaml.TemplateBindingExtension.Path" />
       <Member Id="P:Microsoft.Maui.Controls.Xaml.TemplateBindingExtension.StringFormat" />
+      <Member Id="P:Microsoft.Maui.Controls.Xaml.TemplateBindingExtension.TypedBinding" />
     </Type>
     <Type Name="Microsoft.Maui.Controls.Xaml.TypeExtension" Id="T:Microsoft.Maui.Controls.Xaml.TypeExtension">
       <Member Id="M:Microsoft.Maui.Controls.Xaml.TypeExtension.#ctor" />
@@ -10338,6 +10364,11 @@
       <Member Id="M:Microsoft.Maui.Controls.Xaml.Internals.SimpleValueTargetProvider.FindByName(System.String)" />
       <Member Id="P:Microsoft.Maui.Controls.Xaml.Internals.SimpleValueTargetProvider.Microsoft#Maui#Controls#Xaml#IProvideValueTarget#TargetObject" />
       <Member Id="P:Microsoft.Maui.Controls.Xaml.Internals.SimpleValueTargetProvider.Microsoft#Maui#Controls#Xaml#IProvideValueTarget#TargetProperty" />
+    </Type>
+    <Type Name="Microsoft.Maui.Controls.Xaml.Internals.ValueTargetProvider" Id="T:Microsoft.Maui.Controls.Xaml.Internals.ValueTargetProvider">
+      <Member Id="M:Microsoft.Maui.Controls.Xaml.Internals.ValueTargetProvider.#ctor(System.Object,System.Object)" />
+      <Member Id="P:Microsoft.Maui.Controls.Xaml.Internals.ValueTargetProvider.Microsoft#Maui#Controls#Xaml#IProvideValueTarget#TargetObject" />
+      <Member Id="P:Microsoft.Maui.Controls.Xaml.Internals.ValueTargetProvider.Microsoft#Maui#Controls#Xaml#IProvideValueTarget#TargetProperty" />
     </Type>
     <Type Name="Microsoft.Maui.Controls.Xaml.Internals.XamlServiceProvider" Id="T:Microsoft.Maui.Controls.Xaml.Internals.XamlServiceProvider">
       <Member Id="M:Microsoft.Maui.Controls.Xaml.Internals.XamlServiceProvider.#ctor" />

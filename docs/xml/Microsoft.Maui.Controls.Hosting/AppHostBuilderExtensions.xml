@@ -8,21 +8,26 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            This class contains the Map's <see cref="T:Microsoft.Maui.Hosting.MauiAppBuilder" /> extensions.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,6 +42,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue />
       <Parameters>
@@ -60,16 +66,20 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue />
       <Parameters>
         <Parameter Name="handlersCollection" Type="Microsoft.Maui.Hosting.IMauiHandlersCollection" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="handlersCollection">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="handlersCollection">An instance of <see cref="T:Microsoft.Maui.Hosting.IMauiHandlersCollection" /> on which to register the map handlers.</param>
+        <summary>
+            Registers the .NET MAUI Maps handlers that are needed to render the map control.
+            </summary>
+        <returns>The provided <see cref="T:Microsoft.Maui.Hosting.IMauiHandlersCollection" /> object with the registered map handlers for subsequent registration calls.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Thrown on Windows because the maps control currently is not implemented for Windows.</exception>
       </Docs>
     </Member>
     <Member MemberName="ConfigureEffects">
@@ -83,6 +93,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Hosting.MauiAppBuilder</ReturnType>
@@ -110,6 +121,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue />
       <TypeParameters>
@@ -144,6 +156,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue />
       <TypeParameters>
@@ -180,6 +193,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue />
       <Parameters>
@@ -192,6 +206,7 @@
             </summary>
         <returns>The configured <see cref="T:Microsoft.Maui.Hosting.MauiAppBuilder" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Thrown on Windows because the maps control currently is not implemented for Windows.</exception>
       </Docs>
     </Member>
   </Members>
