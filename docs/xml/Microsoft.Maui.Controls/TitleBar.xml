@@ -1,0 +1,987 @@
+<Type Name="TitleBar" FullName="Microsoft.Maui.Controls.TitleBar">
+  <TypeSignature Language="C#" Value="public class TitleBar : Microsoft.Maui.Controls.TemplatedView, Microsoft.Maui.ISafeAreaView, Microsoft.Maui.ITitleBar" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TitleBar extends Microsoft.Maui.Controls.TemplatedView implements class Microsoft.Maui.IContentView, class Microsoft.Maui.ICrossPlatformLayout, class Microsoft.Maui.IElement, class Microsoft.Maui.IPadding, class Microsoft.Maui.ISafeAreaView, class Microsoft.Maui.ITitleBar, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.TitleBar" />
+  <TypeSignature Language="VB.NET" Value="Public Class TitleBar&#xA;Inherits TemplatedView&#xA;Implements ISafeAreaView, ITitleBar" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TitleBar : Microsoft::Maui::Controls::TemplatedView, Microsoft::Maui::ISafeAreaView, Microsoft::Maui::ITitleBar" />
+  <TypeSignature Language="F#" Value="type TitleBar = class&#xA;    inherit TemplatedView&#xA;    interface ITitleBar&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IContentView&#xA;    interface IPadding&#xA;    interface ICrossPlatformLayout&#xA;    interface ISafeAreaView" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Maui.Controls.TemplatedView</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IContentView</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.ICrossPlatformLayout</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IElement</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IPadding</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.ISafeAreaView</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.ITitleBar</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.ITransform</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IView</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            A <see cref="T:Microsoft.Maui.Controls.View" /> control that provides title bar functionality for a window.
+            <br /><br />
+            The standard title bar height is 32px, but can be set to a larger value.
+            <br /><br />
+            The title bar can also be hidden by setting the <see cref="T:Microsoft.Maui.Visibility" /> property, which
+            will cause the window content to be displayed in the title bar region.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TitleBar ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.TitleBar.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TitleBar();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Content">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.IView? Content { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.IView Content" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.TitleBar.Content" />
+      <MemberSignature Language="VB.NET" Value="Public Property Content As IView" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::IView ^ Content { Microsoft::Maui::IView ^ get(); void set(Microsoft::Maui::IView ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Content : Microsoft.Maui.IView with get, set" Usage="Microsoft.Maui.Controls.TitleBar.Content" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[set: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.IView</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a <see cref="T:Microsoft.Maui.Controls.View" /> control that represents the content.<br /><br />
+            This content is centered in the title bar, and is allocated the remaining space
+            between the leading and trailing content.<br /><br /><br />
+            Views set here will block all input to the title bar region and handle input directly.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentHiddenState">
+      <MemberSignature Language="C#" Value="public const string ContentHiddenState;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ContentHiddenState" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TitleBar.ContentHiddenState" />
+      <MemberSignature Language="VB.NET" Value="Public Const ContentHiddenState As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ ContentHiddenState;" />
+      <MemberSignature Language="F#" Value="val mutable ContentHiddenState : string" Usage="Microsoft.Maui.Controls.TitleBar.ContentHiddenState" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty ContentProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty ContentProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TitleBar.ContentProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContentProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ ContentProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ContentProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.TitleBar.ContentProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.TitleBar.Content" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentVisibleState">
+      <MemberSignature Language="C#" Value="public const string ContentVisibleState;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ContentVisibleState" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TitleBar.ContentVisibleState" />
+      <MemberSignature Language="VB.NET" Value="Public Const ContentVisibleState As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ ContentVisibleState;" />
+      <MemberSignature Language="F#" Value="val mutable ContentVisibleState : string" Usage="Microsoft.Maui.Controls.TitleBar.ContentVisibleState" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultTemplate">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Controls.ControlTemplate DefaultTemplate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Maui.Controls.ControlTemplate DefaultTemplate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.TitleBar.DefaultTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultTemplate As ControlTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::Maui::Controls::ControlTemplate ^ DefaultTemplate { Microsoft::Maui::Controls::ControlTemplate ^ get(); };" />
+      <MemberSignature Language="F#" Value="static member DefaultTemplate : Microsoft.Maui.Controls.ControlTemplate" Usage="Microsoft.Maui.Controls.TitleBar.DefaultTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.ControlTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the default template for the title bar
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForegroundColor">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.Color ForegroundColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Graphics.Color ForegroundColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.TitleBar.ForegroundColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ForegroundColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Graphics::Color ^ ForegroundColor { Microsoft::Maui::Graphics::Color ^ get(); void set(Microsoft::Maui::Graphics::Color ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ForegroundColor : Microsoft.Maui.Graphics.Color with get, set" Usage="Microsoft.Maui.Controls.TitleBar.ForegroundColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the foreground color of the title bar. This color is used for the 
+            title and subtitle text.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForegroundColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty ForegroundColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty ForegroundColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TitleBar.ForegroundColorProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ForegroundColorProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ ForegroundColorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ForegroundColorProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.TitleBar.ForegroundColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.TitleBar.ForegroundColor" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Icon">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.ImageSource Icon { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.ImageSource Icon" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.TitleBar.Icon" />
+      <MemberSignature Language="VB.NET" Value="Public Property Icon As ImageSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::ImageSource ^ Icon { Microsoft::Maui::Controls::ImageSource ^ get(); void set(Microsoft::Maui::Controls::ImageSource ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Icon : Microsoft.Maui.Controls.ImageSource with get, set" Usage="Microsoft.Maui.Controls.TitleBar.Icon" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.ImageSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets an optional icon image of the title bar. Icon images should be
+            16x16 pixels in size.
+            <br /><br />
+            Setting this property to an empty value will hide the icon.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IconHiddenState">
+      <MemberSignature Language="C#" Value="public const string IconHiddenState;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string IconHiddenState" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TitleBar.IconHiddenState" />
+      <MemberSignature Language="VB.NET" Value="Public Const IconHiddenState As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ IconHiddenState;" />
+      <MemberSignature Language="F#" Value="val mutable IconHiddenState : string" Usage="Microsoft.Maui.Controls.TitleBar.IconHiddenState" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IconProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty IconProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty IconProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TitleBar.IconProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IconProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ IconProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IconProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.TitleBar.IconProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.TitleBar.Icon" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IconVisibleState">
+      <MemberSignature Language="C#" Value="public const string IconVisibleState;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string IconVisibleState" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TitleBar.IconVisibleState" />
+      <MemberSignature Language="VB.NET" Value="Public Const IconVisibleState As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ IconVisibleState;" />
+      <MemberSignature Language="F#" Value="val mutable IconVisibleState : string" Usage="Microsoft.Maui.Controls.TitleBar.IconVisibleState" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LeadingContent">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.IView? LeadingContent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.IView LeadingContent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.TitleBar.LeadingContent" />
+      <MemberSignature Language="VB.NET" Value="Public Property LeadingContent As IView" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::IView ^ LeadingContent { Microsoft::Maui::IView ^ get(); void set(Microsoft::Maui::IView ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LeadingContent : Microsoft.Maui.IView with get, set" Usage="Microsoft.Maui.Controls.TitleBar.LeadingContent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[set: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.IView</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a <see cref="T:Microsoft.Maui.Controls.View" /> control that represents the leading content.<br /><br />
+            The leading content follows the optional <see cref="P:Microsoft.Maui.Controls.TitleBar.Icon" /> and is aligned to
+            the left or right of the title bar, depending on the <see cref="T:Microsoft.Maui.FlowDirection" />. Views
+            set here will be allocated as much space as they require.
+            <br /><br />
+            Views set here will block all input to the title bar region and handle input directly.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LeadingContentProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty LeadingContentProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty LeadingContentProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TitleBar.LeadingContentProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LeadingContentProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ LeadingContentProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable LeadingContentProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.TitleBar.LeadingContentProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.TitleBar.LeadingContent" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LeadingHiddenState">
+      <MemberSignature Language="C#" Value="public const string LeadingHiddenState;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string LeadingHiddenState" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TitleBar.LeadingHiddenState" />
+      <MemberSignature Language="VB.NET" Value="Public Const LeadingHiddenState As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ LeadingHiddenState;" />
+      <MemberSignature Language="F#" Value="val mutable LeadingHiddenState : string" Usage="Microsoft.Maui.Controls.TitleBar.LeadingHiddenState" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LeadingVisibleState">
+      <MemberSignature Language="C#" Value="public const string LeadingVisibleState;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string LeadingVisibleState" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TitleBar.LeadingVisibleState" />
+      <MemberSignature Language="VB.NET" Value="Public Const LeadingVisibleState As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ LeadingVisibleState;" />
+      <MemberSignature Language="F#" Value="val mutable LeadingVisibleState : string" Usage="Microsoft.Maui.Controls.TitleBar.LeadingVisibleState" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IContentView.PresentedContent">
+      <MemberSignature Language="C#" Value="Microsoft.Maui.IView Microsoft.Maui.IContentView.PresentedContent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.IView Microsoft.Maui.IContentView.PresentedContent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.TitleBar.Microsoft#Maui#IContentView#PresentedContent" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property PresentedContent As IView Implements IContentView.PresentedContent" />
+      <MemberSignature Language="C++ CLI" Value="property Microsoft::Maui::IView ^ Microsoft::Maui::IContentView::PresentedContent { Microsoft::Maui::IView ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.IContentView.PresentedContent : Microsoft.Maui.IView" Usage="Microsoft.Maui.IContentView.PresentedContent" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IContentView.PresentedContent</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.NullableContext(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.NullableContext(0)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.IView</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.ISafeAreaView.IgnoreSafeArea">
+      <MemberSignature Language="C#" Value="bool Microsoft.Maui.ISafeAreaView.IgnoreSafeArea { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Microsoft.Maui.ISafeAreaView.IgnoreSafeArea" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.TitleBar.Microsoft#Maui#ISafeAreaView#IgnoreSafeArea" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IgnoreSafeArea As Boolean Implements ISafeAreaView.IgnoreSafeArea" />
+      <MemberSignature Language="C++ CLI" Value="property bool Microsoft::Maui::ISafeAreaView::IgnoreSafeArea { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.ISafeAreaView.IgnoreSafeArea : bool" Usage="Microsoft.Maui.ISafeAreaView.IgnoreSafeArea" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.ISafeAreaView.IgnoreSafeArea</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnApplyTemplate">
+      <MemberSignature Language="C#" Value="protected override void OnApplyTemplate ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyTemplate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.TitleBar.OnApplyTemplate" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnApplyTemplate ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnApplyTemplate();" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="titleBar.OnApplyTemplate " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PassthroughElements">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Maui.IView&gt; PassthroughElements { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Maui.IView&gt; PassthroughElements" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.TitleBar.PassthroughElements" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PassthroughElements As IList(Of IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Maui::IView ^&gt; ^ PassthroughElements { System::Collections::Generic::IList&lt;Microsoft::Maui::IView ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PassthroughElements : System.Collections.Generic.IList&lt;Microsoft.Maui.IView&gt;" Usage="Microsoft.Maui.Controls.TitleBar.PassthroughElements" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.IView&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="Subtitle">
+      <MemberSignature Language="C#" Value="public string Subtitle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Subtitle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.TitleBar.Subtitle" />
+      <MemberSignature Language="VB.NET" Value="Public Property Subtitle As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Subtitle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Subtitle : string with get, set" Usage="Microsoft.Maui.Controls.TitleBar.Subtitle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the subtitle text of the title bar. The subtitle usually specifies
+            the secondary information about the application or window
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubtitleHiddenState">
+      <MemberSignature Language="C#" Value="public const string SubtitleHiddenState;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string SubtitleHiddenState" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TitleBar.SubtitleHiddenState" />
+      <MemberSignature Language="VB.NET" Value="Public Const SubtitleHiddenState As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ SubtitleHiddenState;" />
+      <MemberSignature Language="F#" Value="val mutable SubtitleHiddenState : string" Usage="Microsoft.Maui.Controls.TitleBar.SubtitleHiddenState" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubtitleProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty SubtitleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty SubtitleProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TitleBar.SubtitleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SubtitleProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ SubtitleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SubtitleProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.TitleBar.SubtitleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.TitleBar.Subtitle" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubtitleVisibleState">
+      <MemberSignature Language="C#" Value="public const string SubtitleVisibleState;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string SubtitleVisibleState" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TitleBar.SubtitleVisibleState" />
+      <MemberSignature Language="VB.NET" Value="Public Const SubtitleVisibleState As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ SubtitleVisibleState;" />
+      <MemberSignature Language="F#" Value="val mutable SubtitleVisibleState : string" Usage="Microsoft.Maui.Controls.TitleBar.SubtitleVisibleState" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateRootName">
+      <MemberSignature Language="C#" Value="public const string TemplateRootName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TemplateRootName" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TitleBar.TemplateRootName" />
+      <MemberSignature Language="VB.NET" Value="Public Const TemplateRootName As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ TemplateRootName;" />
+      <MemberSignature Language="F#" Value="val mutable TemplateRootName : string" Usage="Microsoft.Maui.Controls.TitleBar.TemplateRootName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public string Title { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.TitleBar.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="Microsoft.Maui.Controls.TitleBar.Title" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the title text of the title bar. The title usually specifies
+            the name of the application or indicates the purpose of the window
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleBarActiveState">
+      <MemberSignature Language="C#" Value="public const string TitleBarActiveState;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TitleBarActiveState" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TitleBar.TitleBarActiveState" />
+      <MemberSignature Language="VB.NET" Value="Public Const TitleBarActiveState As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ TitleBarActiveState;" />
+      <MemberSignature Language="F#" Value="val mutable TitleBarActiveState : string" Usage="Microsoft.Maui.Controls.TitleBar.TitleBarActiveState" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleBarContent">
+      <MemberSignature Language="C#" Value="public const string TitleBarContent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TitleBarContent" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TitleBar.TitleBarContent" />
+      <MemberSignature Language="VB.NET" Value="Public Const TitleBarContent As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ TitleBarContent;" />
+      <MemberSignature Language="F#" Value="val mutable TitleBarContent : string" Usage="Microsoft.Maui.Controls.TitleBar.TitleBarContent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleBarIcon">
+      <MemberSignature Language="C#" Value="public const string TitleBarIcon;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TitleBarIcon" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TitleBar.TitleBarIcon" />
+      <MemberSignature Language="VB.NET" Value="Public Const TitleBarIcon As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ TitleBarIcon;" />
+      <MemberSignature Language="F#" Value="val mutable TitleBarIcon : string" Usage="Microsoft.Maui.Controls.TitleBar.TitleBarIcon" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleBarInactiveState">
+      <MemberSignature Language="C#" Value="public const string TitleBarInactiveState;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TitleBarInactiveState" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TitleBar.TitleBarInactiveState" />
+      <MemberSignature Language="VB.NET" Value="Public Const TitleBarInactiveState As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ TitleBarInactiveState;" />
+      <MemberSignature Language="F#" Value="val mutable TitleBarInactiveState : string" Usage="Microsoft.Maui.Controls.TitleBar.TitleBarInactiveState" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleBarLeading">
+      <MemberSignature Language="C#" Value="public const string TitleBarLeading;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TitleBarLeading" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TitleBar.TitleBarLeading" />
+      <MemberSignature Language="VB.NET" Value="Public Const TitleBarLeading As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ TitleBarLeading;" />
+      <MemberSignature Language="F#" Value="val mutable TitleBarLeading : string" Usage="Microsoft.Maui.Controls.TitleBar.TitleBarLeading" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleBarSubtitle">
+      <MemberSignature Language="C#" Value="public const string TitleBarSubtitle;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TitleBarSubtitle" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TitleBar.TitleBarSubtitle" />
+      <MemberSignature Language="VB.NET" Value="Public Const TitleBarSubtitle As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ TitleBarSubtitle;" />
+      <MemberSignature Language="F#" Value="val mutable TitleBarSubtitle : string" Usage="Microsoft.Maui.Controls.TitleBar.TitleBarSubtitle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleBarTitle">
+      <MemberSignature Language="C#" Value="public const string TitleBarTitle;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TitleBarTitle" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TitleBar.TitleBarTitle" />
+      <MemberSignature Language="VB.NET" Value="Public Const TitleBarTitle As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ TitleBarTitle;" />
+      <MemberSignature Language="F#" Value="val mutable TitleBarTitle : string" Usage="Microsoft.Maui.Controls.TitleBar.TitleBarTitle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleBarTrailing">
+      <MemberSignature Language="C#" Value="public const string TitleBarTrailing;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TitleBarTrailing" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TitleBar.TitleBarTrailing" />
+      <MemberSignature Language="VB.NET" Value="Public Const TitleBarTrailing As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ TitleBarTrailing;" />
+      <MemberSignature Language="F#" Value="val mutable TitleBarTrailing : string" Usage="Microsoft.Maui.Controls.TitleBar.TitleBarTrailing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleHiddenState">
+      <MemberSignature Language="C#" Value="public const string TitleHiddenState;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TitleHiddenState" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TitleBar.TitleHiddenState" />
+      <MemberSignature Language="VB.NET" Value="Public Const TitleHiddenState As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ TitleHiddenState;" />
+      <MemberSignature Language="F#" Value="val mutable TitleHiddenState : string" Usage="Microsoft.Maui.Controls.TitleBar.TitleHiddenState" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty TitleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty TitleProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TitleBar.TitleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TitleProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ TitleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TitleProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.TitleBar.TitleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.TitleBar.Title" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleVisibleState">
+      <MemberSignature Language="C#" Value="public const string TitleVisibleState;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TitleVisibleState" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TitleBar.TitleVisibleState" />
+      <MemberSignature Language="VB.NET" Value="Public Const TitleVisibleState As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ TitleVisibleState;" />
+      <MemberSignature Language="F#" Value="val mutable TitleVisibleState : string" Usage="Microsoft.Maui.Controls.TitleBar.TitleVisibleState" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrailingContent">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.IView? TrailingContent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.IView TrailingContent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.TitleBar.TrailingContent" />
+      <MemberSignature Language="VB.NET" Value="Public Property TrailingContent As IView" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::IView ^ TrailingContent { Microsoft::Maui::IView ^ get(); void set(Microsoft::Maui::IView ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TrailingContent : Microsoft.Maui.IView with get, set" Usage="Microsoft.Maui.Controls.TitleBar.TrailingContent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[set: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.IView</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a <see cref="T:Microsoft.Maui.Controls.View" /> control that represents the trailing content.<br /><br />
+            The trailing content is aligned to the right or left of the title bar, depending 
+            on the <see cref="T:Microsoft.Maui.FlowDirection" />. Views set here will be allocated as much space 
+            as they require.
+            <br /><br />
+            Views set here will block all input to the title bar region and handle input directly.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrailingContentProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty TrailingContentProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty TrailingContentProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TitleBar.TrailingContentProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TrailingContentProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ TrailingContentProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TrailingContentProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.TitleBar.TrailingContentProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.TitleBar.TrailingContent" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrailingHiddenState">
+      <MemberSignature Language="C#" Value="public const string TrailingHiddenState;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TrailingHiddenState" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TitleBar.TrailingHiddenState" />
+      <MemberSignature Language="VB.NET" Value="Public Const TrailingHiddenState As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ TrailingHiddenState;" />
+      <MemberSignature Language="F#" Value="val mutable TrailingHiddenState : string" Usage="Microsoft.Maui.Controls.TitleBar.TrailingHiddenState" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrailingVisibleState">
+      <MemberSignature Language="C#" Value="public const string TrailingVisibleState;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TrailingVisibleState" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TitleBar.TrailingVisibleState" />
+      <MemberSignature Language="VB.NET" Value="Public Const TrailingVisibleState As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ TrailingVisibleState;" />
+      <MemberSignature Language="F#" Value="val mutable TrailingVisibleState : string" Usage="Microsoft.Maui.Controls.TitleBar.TrailingVisibleState" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

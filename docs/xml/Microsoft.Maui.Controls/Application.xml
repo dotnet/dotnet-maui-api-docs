@@ -94,7 +94,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -113,7 +112,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -138,6 +136,30 @@ public partial class App : Application
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ActivateWindow">
+      <MemberSignature Language="C#" Value="public virtual void ActivateWindow (Microsoft.Maui.Controls.Window window);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ActivateWindow(class Microsoft.Maui.Controls.Window window) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Application.ActivateWindow(Microsoft.Maui.Controls.Window)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ActivateWindow (window As Window)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ActivateWindow(Microsoft::Maui::Controls::Window ^ window);" />
+      <MemberSignature Language="F#" Value="abstract member ActivateWindow : Microsoft.Maui.Controls.Window -&gt; unit&#xA;override this.ActivateWindow : Microsoft.Maui.Controls.Window -&gt; unit" Usage="application.ActivateWindow window" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="window" Type="Microsoft.Maui.Controls.Window" Index="0" FrameworkAlternate="net-maui-9.0" />
+      </Parameters>
+      <Docs>
+        <param name="window">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="AppLinks">
       <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.IAppLinks AppLinks { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.IAppLinks AppLinks" />
@@ -149,7 +171,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.IAppLinks</ReturnType>
@@ -171,7 +192,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -193,7 +213,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -218,14 +237,13 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="net-maui-8.0">
           <AttributeName Language="C#">[System.Obsolete("Use ApplicationHandler.Mapper instead.")]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Obsolete("Use ApplicationHandler.Mapper instead.")&gt;]</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="net-maui-8.0">
           <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
         </Attribute>
@@ -249,7 +267,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.Window</ReturnType>
@@ -282,7 +299,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -318,7 +334,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -333,6 +348,14 @@ public partial class App : Application
           <AttributeName Language="C#">[set: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
           <AttributeName Language="F#">[&lt;set: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
         </Attribute>
+        <Attribute FrameworkAlternate="net-maui-9.0">
+          <AttributeName Language="C#">[get: System.Obsolete("This property has been deprecated. For single-window applications, use Windows[0].Page. For multi-window applications, identify and use the appropriate Window object to access the desired Page. Additionally, each element features a Window property, accessible when it's part of the current window.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Obsolete("This property has been deprecated. For single-window applications, use Windows[0].Page. For multi-window applications, identify and use the appropriate Window object to access the desired Page. Additionally, each element features a Window property, accessible when it's part of the current window.")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-9.0">
+          <AttributeName Language="C#">[set: System.Obsolete("This property is deprecated. Initialize your application by overriding Application.CreateWindow rather than setting MainPage. To modify the root page in an active application, use Windows[0].Page for applications with a single window. For applications with multiple windows, use Application.Windows to identify and update the root page on the correct window.  Additionally, each element features a Window property, accessible when it's part of the current window.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Obsolete("This property is deprecated. Initialize your application by overriding Application.CreateWindow rather than setting MainPage. To modify the root page in an active application, use Windows[0].Page for applications with a single window. For applications with multiple windows, use Application.Windows to identify and update the root page on the correct window.  Additionally, each element features a Window property, accessible when it's part of the current window.")&gt;]</AttributeName>
+        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.Page</ReturnType>
@@ -341,6 +364,33 @@ public partial class App : Application
         <summary>Gets or sets the root page of the application.</summary>
         <value>The root page of the application.</value>
         <remarks>This property throws an exception if the application developer attempts to set it to <see langword="null" />.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IApplication.ActivateWindow">
+      <MemberSignature Language="C#" Value="void IApplication.ActivateWindow (Microsoft.Maui.IWindow window);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.IApplication.ActivateWindow(class Microsoft.Maui.IWindow window) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Application.Microsoft#Maui#IApplication#ActivateWindow(Microsoft.Maui.IWindow)" />
+      <MemberSignature Language="VB.NET" Value="Sub ActivateWindow (window As IWindow) Implements IApplication.ActivateWindow" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.IApplication.ActivateWindow(Microsoft::Maui::IWindow ^ window) = Microsoft::Maui::IApplication::ActivateWindow;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.IApplication.ActivateWindow : Microsoft.Maui.IWindow -&gt; unit&#xA;override this.Microsoft.Maui.IApplication.ActivateWindow : Microsoft.Maui.IWindow -&gt; unit" Usage="application.Microsoft.Maui.IApplication.ActivateWindow window" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.IApplication.ActivateWindow(Microsoft.Maui.IWindow)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="window" Type="Microsoft.Maui.IWindow" Index="0" FrameworkAlternate="net-maui-9.0" />
+      </Parameters>
+      <Docs>
+        <param name="window">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.IApplication.CloseWindow">
@@ -357,7 +407,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -385,7 +434,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.IWindow</ReturnType>
@@ -421,7 +469,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -449,7 +496,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -474,7 +520,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IWindow&gt;</ReturnType>
@@ -499,7 +544,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.IVisualTreeElement&gt;</ReturnType>
@@ -522,7 +566,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -549,7 +592,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -576,7 +618,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -603,7 +644,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -630,7 +670,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -673,7 +712,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;T,Microsoft.Maui.Controls.Application&gt;</ReturnType>
@@ -711,7 +749,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -736,7 +773,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -758,7 +794,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -780,7 +815,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -802,7 +836,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -824,7 +857,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -849,7 +881,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -876,7 +907,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -903,7 +933,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.ApplicationModel.AppTheme</ReturnType>
@@ -925,7 +954,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -947,7 +975,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.ApplicationModel.AppTheme</ReturnType>
@@ -969,7 +996,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.AppThemeChangedEventArgs&gt;</ReturnType>
@@ -990,7 +1016,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.ResourceDictionary</ReturnType>
@@ -1012,7 +1037,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1046,7 +1070,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1077,7 +1100,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1108,7 +1130,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.ApplicationModel.AppTheme</ReturnType>
@@ -1130,7 +1151,6 @@ public partial class App : Application
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.Controls.Window&gt;</ReturnType>
