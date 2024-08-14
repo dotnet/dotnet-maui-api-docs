@@ -35,7 +35,6 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -53,7 +52,6 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="path" Type="System.String" />
@@ -125,7 +123,6 @@ Debug.WriteLine (person.Name); //prints "Foo". ReverseConverter.ConvertBack () i
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.IValueConverter</ReturnType>
@@ -147,7 +144,6 @@ Debug.WriteLine (person.Name); //prints "Foo". ReverseConverter.ConvertBack () i
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -156,6 +152,76 @@ Debug.WriteLine (person.Name); //prints "Foo". ReverseConverter.ConvertBack () i
         <summary>Gets or sets the parameter passed as argument to the converter.</summary>
         <value>An object, or <see langword="null" />.</value>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create&lt;TSource,TProperty&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Controls.BindingBase Create&lt;TSource,TProperty&gt; (Func&lt;TSource,TProperty&gt; getter, Microsoft.Maui.Controls.BindingMode mode = Microsoft.Maui.Controls.BindingMode.Default, Microsoft.Maui.Controls.IValueConverter? converter = default, object? converterParameter = default, string? stringFormat = default, object? source = default, object? fallbackValue = default, object? targetNullValue = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Maui.Controls.BindingBase Create&lt;TSource, TProperty&gt;(class System.Func`2&lt;!!TSource, !!TProperty&gt; getter, valuetype Microsoft.Maui.Controls.BindingMode mode, class Microsoft.Maui.Controls.IValueConverter converter, object converterParameter, string stringFormat, object source, object fallbackValue, object targetNullValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Binding.Create``2(System.Func{``0,``1},Microsoft.Maui.Controls.BindingMode,Microsoft.Maui.Controls.IValueConverter,System.Object,System.String,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create(Of TSource, TProperty) (getter As Func(Of TSource, TProperty), Optional mode As BindingMode = Microsoft.Maui.Controls.BindingMode.Default, Optional converter As IValueConverter = Nothing, Optional converterParameter As Object = Nothing, Optional stringFormat As String = Nothing, Optional source As Object = Nothing, Optional fallbackValue As Object = Nothing, Optional targetNullValue As Object = Nothing) As BindingBase" />
+      <MemberSignature Language="F#" Value="static member Create : Func&lt;'Source, 'Property&gt; * Microsoft.Maui.Controls.BindingMode * Microsoft.Maui.Controls.IValueConverter * obj * string * obj * obj * obj -&gt; Microsoft.Maui.Controls.BindingBase" Usage="Microsoft.Maui.Controls.Binding.Create (getter, mode, converter, converterParameter, stringFormat, source, fallbackValue, targetNullValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-9.0">
+          <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessage("ReflectionAnalysis", "IL2026:RequiresUnreferencedCodeMessage", Justification="The Binding.Create&lt;TSource, TProperty&gt;() method does not create an instance of Binding but an instance of TypedBinding&lt;TSource, TProperty&gt;.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessage("ReflectionAnalysis", "IL2026:RequiresUnreferencedCodeMessage", Justification="The Binding.Create&lt;TSource, TProperty&gt;() method does not create an instance of Binding but an instance of TypedBinding&lt;TSource, TProperty&gt;.")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindingBase</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TSource" />
+        <TypeParameter Name="TProperty" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="getter" Type="System.Func&lt;TSource,TProperty&gt;" Index="0" FrameworkAlternate="net-maui-9.0">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="mode" Type="Microsoft.Maui.Controls.BindingMode" Index="1" FrameworkAlternate="net-maui-9.0" />
+        <Parameter Name="converter" Type="Microsoft.Maui.Controls.IValueConverter" Index="2" FrameworkAlternate="net-maui-9.0" />
+        <Parameter Name="converterParameter" Type="System.Object" Index="3" FrameworkAlternate="net-maui-9.0" />
+        <Parameter Name="stringFormat" Type="System.String" Index="4" FrameworkAlternate="net-maui-9.0" />
+        <Parameter Name="source" Type="System.Object" Index="5" FrameworkAlternate="net-maui-9.0" />
+        <Parameter Name="fallbackValue" Type="System.Object" Index="6" FrameworkAlternate="net-maui-9.0" />
+        <Parameter Name="targetNullValue" Type="System.Object" Index="7" FrameworkAlternate="net-maui-9.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TSource">The source type.</typeparam>
+        <typeparam name="TProperty">The property type.</typeparam>
+        <param name="getter">An getter method used to retrieve the source property.</param>
+        <param name="mode">The binding mode. This property is optional. Default is <see cref="F:Microsoft.Maui.Controls.BindingMode.Default" />.</param>
+        <param name="converter">The converter. This parameter is optional. Default is <see langword="null" />.</param>
+        <param name="converterParameter">An user-defined parameter to pass to the converter. This parameter is optional. Default is <see langword="null" />.</param>
+        <param name="stringFormat">A String format. This parameter is optional. Default is <see langword="null" />.</param>
+        <param name="source">An object used as the source for this binding. This parameter is optional. Default is <see langword="null" />.</param>
+        <param name="fallbackValue">The value to use instead of the default value for the property, if no specified value exists.</param>
+        <param name="targetNullValue">The value to supply for a bound property when the target of the binding is <see langword="null" />.</param>
+        <summary>
+            This factory method was added to simplify creating TypedBindingBase instances from lambda getters.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="DoNothing">
@@ -169,7 +235,6 @@ Debug.WriteLine (person.Name); //prints "Foo". ReverseConverter.ConvertBack () i
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -190,7 +255,6 @@ Debug.WriteLine (person.Name); //prints "Foo". ReverseConverter.ConvertBack () i
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -212,7 +276,6 @@ Debug.WriteLine (person.Name); //prints "Foo". ReverseConverter.ConvertBack () i
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -233,7 +296,6 @@ Debug.WriteLine (person.Name); //prints "Foo". ReverseConverter.ConvertBack () i
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -255,7 +317,6 @@ Debug.WriteLine (person.Name); //prints "Foo". ReverseConverter.ConvertBack () i
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
