@@ -1,0 +1,141 @@
+<Type Name="IHybridWebView" FullName="Microsoft.Maui.IHybridWebView">
+  <TypeSignature Language="C#" Value="public interface IHybridWebView : Microsoft.Maui.IView" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IHybridWebView implements class Microsoft.Maui.IElement, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.IHybridWebView" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IHybridWebView&#xA;Implements IView" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IHybridWebView : Microsoft::Maui::IView" />
+  <TypeSignature Language="F#" Value="type IHybridWebView = interface&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IElement</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.ITransform</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IView</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DefaultFile">
+      <MemberSignature Language="C#" Value="public string? DefaultFile { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.IHybridWebView.DefaultFile" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultFile As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultFile { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultFile : string" Usage="Microsoft.Maui.IHybridWebView.DefaultFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HybridRoot">
+      <MemberSignature Language="C#" Value="public string? HybridRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HybridRoot" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.IHybridWebView.HybridRoot" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HybridRoot As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HybridRoot { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HybridRoot : string" Usage="Microsoft.Maui.IHybridWebView.HybridRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             The path within the app's "Raw" asset resources that contain the web app's contents. For example, if the
+             files are located in <c>[ProjectFolder]/Resources/Raw/hybrid_root</c>, then set this property to "hybrid_root".
+             The default value is <c>HybridRoot</c>, which maps to <c>[ProjectFolder]/Resources/Raw/HybridRoot</c>.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RawMessageReceived">
+      <MemberSignature Language="C#" Value="public void RawMessageReceived (string rawMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RawMessageReceived(string rawMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IHybridWebView.RawMessageReceived(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RawMessageReceived (rawMessage As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RawMessageReceived(System::String ^ rawMessage);" />
+      <MemberSignature Language="F#" Value="abstract member RawMessageReceived : string -&gt; unit" Usage="iHybridWebView.RawMessageReceived rawMessage" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rawMessage" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="rawMessage">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendRawMessage">
+      <MemberSignature Language="C#" Value="public void SendRawMessage (string rawMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendRawMessage(string rawMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IHybridWebView.SendRawMessage(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SendRawMessage (rawMessage As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendRawMessage(System::String ^ rawMessage);" />
+      <MemberSignature Language="F#" Value="abstract member SendRawMessage : string -&gt; unit" Usage="iHybridWebView.SendRawMessage rawMessage" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rawMessage" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="rawMessage">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

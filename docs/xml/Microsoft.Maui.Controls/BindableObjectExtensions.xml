@@ -30,7 +30,6 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -64,7 +63,6 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -99,7 +97,6 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -129,7 +126,6 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="net-maui-9.0">
@@ -181,6 +177,128 @@ Debug.WriteLine (label.Text); // prints "John Doe"
       ]]></code>
           </example>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBinding&lt;TSource,TProperty&gt;">
+      <MemberSignature Language="C#" Value="public static void SetBinding&lt;TSource,TProperty&gt; (this Microsoft.Maui.Controls.BindableObject self, Microsoft.Maui.Controls.BindableProperty targetProperty, Func&lt;TSource,TProperty&gt; getter, Microsoft.Maui.Controls.BindingMode mode = Microsoft.Maui.Controls.BindingMode.Default, Microsoft.Maui.Controls.IValueConverter? converter = default, object? converterParameter = default, string? stringFormat = default, object? source = default, object? fallbackValue = default, object? targetNullValue = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetBinding&lt;TSource, TProperty&gt;(class Microsoft.Maui.Controls.BindableObject self, class Microsoft.Maui.Controls.BindableProperty targetProperty, class System.Func`2&lt;!!TSource, !!TProperty&gt; getter, valuetype Microsoft.Maui.Controls.BindingMode mode, class Microsoft.Maui.Controls.IValueConverter converter, object converterParameter, string stringFormat, object source, object fallbackValue, object targetNullValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.BindableObjectExtensions.SetBinding``2(Microsoft.Maui.Controls.BindableObject,Microsoft.Maui.Controls.BindableProperty,System.Func{``0,``1},Microsoft.Maui.Controls.BindingMode,Microsoft.Maui.Controls.IValueConverter,System.Object,System.String,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub SetBinding(Of TSource, TProperty) (self As BindableObject, targetProperty As BindableProperty, getter As Func(Of TSource, TProperty), Optional mode As BindingMode = Microsoft.Maui.Controls.BindingMode.Default, Optional converter As IValueConverter = Nothing, Optional converterParameter As Object = Nothing, Optional stringFormat As String = Nothing, Optional source As Object = Nothing, Optional fallbackValue As Object = Nothing, Optional targetNullValue As Object = Nothing)" />
+      <MemberSignature Language="F#" Value="static member SetBinding : Microsoft.Maui.Controls.BindableObject * Microsoft.Maui.Controls.BindableProperty * Func&lt;'Source, 'Property&gt; * Microsoft.Maui.Controls.BindingMode * Microsoft.Maui.Controls.IValueConverter * obj * string * obj * obj * obj -&gt; unit" Usage="Microsoft.Maui.Controls.BindableObjectExtensions.SetBinding (self, targetProperty, getter, mode, converter, converterParameter, stringFormat, source, fallbackValue, targetNullValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TSource" />
+        <TypeParameter Name="TProperty" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="self" Type="Microsoft.Maui.Controls.BindableObject" Index="0" FrameworkAlternate="net-maui-9.0" RefType="this">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="targetProperty" Type="Microsoft.Maui.Controls.BindableProperty" Index="1" FrameworkAlternate="net-maui-9.0">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="getter" Type="System.Func&lt;TSource,TProperty&gt;" Index="2" FrameworkAlternate="net-maui-9.0">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="mode" Type="Microsoft.Maui.Controls.BindingMode" Index="3" FrameworkAlternate="net-maui-9.0" />
+        <Parameter Name="converter" Type="Microsoft.Maui.Controls.IValueConverter" Index="4" FrameworkAlternate="net-maui-9.0" />
+        <Parameter Name="converterParameter" Type="System.Object" Index="5" FrameworkAlternate="net-maui-9.0" />
+        <Parameter Name="stringFormat" Type="System.String" Index="6" FrameworkAlternate="net-maui-9.0" />
+        <Parameter Name="source" Type="System.Object" Index="7" FrameworkAlternate="net-maui-9.0" />
+        <Parameter Name="fallbackValue" Type="System.Object" Index="8" FrameworkAlternate="net-maui-9.0" />
+        <Parameter Name="targetNullValue" Type="System.Object" Index="9" FrameworkAlternate="net-maui-9.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TSource">The source type.</typeparam>
+        <typeparam name="TProperty">The property type.</typeparam>
+        <param name="self">The <see cref="T:Microsoft.Maui.Controls.BindableObject" />.</param>
+        <param name="targetProperty">The <see cref="T:Microsoft.Maui.Controls.BindableProperty" /> on which to set a binding.</param>
+        <param name="getter">An getter method used to retrieve the source property.</param>
+        <param name="mode">The binding mode. This property is optional. Default is <see cref="F:Microsoft.Maui.Controls.BindingMode.Default" />.</param>
+        <param name="converter">The converter. This parameter is optional. Default is <see langword="null" />.</param>
+        <param name="converterParameter">An user-defined parameter to pass to the converter. This parameter is optional. Default is <see langword="null" />.</param>
+        <param name="stringFormat">A String format. This parameter is optional. Default is <see langword="null" />.</param>
+        <param name="source">An object used as the source for this binding. This parameter is optional. Default is <see langword="null" />.</param>
+        <param name="fallbackValue">The value to use instead of the default value for the property, if no specified value exists.</param>
+        <param name="targetNullValue">The value to supply for a bound property when the target of the binding is <see langword="null" />.</param>
+        <summary>
+            Creates a binding between a property on the source object and a property on the target object.
+            </summary>
+        <remarks>
+          <para>The following example illustrates the setting of a binding using the extension method.</para>
+          <example>
+            <code lang="csharp lang-csharp"><![CDATA[
+                 public class PersonViewModel
+                 {
+                     public string Name { get; set; }
+                     public Address? Address { get; set; }
+                     // ...
+                 }
+                 
+                 var vm = new PersonViewModel { Name = "John Doe" };
+                 
+                 var label = new Label();
+                 label.SetBinding(Label.TextProperty, static (PersonViewModel vm) => vm.Name);
+                 label.BindingContext = vm;
+                 
+                 vm.Name = "Jane Doe";
+                 Debug.WriteLine(label.Text); // prints "Jane Doe"
+             ]]></code>
+          </example>
+          <para>Not all methods can be used to define a binding. The expression must be a simple property access expression. The following are examples of valid and invalid expressions:</para>
+          <example>
+            <code lang="csharp lang-csharp"><![CDATA[
+                 // Valid: Property access
+                 static (PersonViewModel vm) => vm.Name;
+                 static (PersonViewModel vm) => vm.Address?.Street;
+                 
+                 // Valid: Array and indexer access
+                 static (PersonViewModel vm) => vm.PhoneNumbers[0];
+                 static (PersonViewModel vm) => vm.Config["Font"];
+                 
+                 // Valid: Casts
+                 static (Label label) => (label.BindingContext as PersonViewModel).Name;
+                 static (Label label) => ((PersonViewModel)label.BindingContext).Name;
+                 
+                 // Invalid: Method calls
+                 static (PersonViewModel vm) => vm.GetAddress();
+                 static (PersonViewModel vm) => vm.Address?.ToString();
+                 
+                 // Invalid: Complex expressions
+                 static (PersonViewModel vm) => vm.Address?.Street + " " + vm.Address?.City;
+                 static (PersonViewModel vm) => $"Name: {vm.Name}";
+             ]]></code>
+          </example>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
   </Members>
