@@ -6,17 +6,17 @@ where:
 configuration:
   resourceManagementConfiguration:
     eventResponderTasks:
-    - description: Label publish PRs with auto-merge
-      triggerOnOwnActions: true
-      if:
-      - payloadType: Pull_Request
-      - isAction:
-          action: Opened
-      - isActivitySender:
-          user: dotnet-policy-service[bot]
-      - titleContains:
-          pattern: Merge main into live
-          isRegex: False
-      then:
-      - addLabel:
-          label: ':octocat: auto-merge'
+      - description: Label publish PRs from the dotnet-policy-service bot
+        triggerOnOwnActions: true
+        if:
+          - payloadType: Pull_Request
+          - isAction:
+              action: Opened
+          - isActivitySender:
+              user: dotnet-policy-service[bot]
+          - titleContains:
+              pattern: Merge main into live
+              isRegex: False
+        then:
+          - addLabel:
+              label: ":octocat: auto-merge"
