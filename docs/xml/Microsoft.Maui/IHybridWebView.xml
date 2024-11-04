@@ -20,12 +20,6 @@
       <InterfaceName>Microsoft.Maui.IView</InterfaceName>
     </Interface>
   </Interfaces>
-  <Attributes>
-    <Attribute>
-      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>To be added.</summary>
     <remarks>To be added.</remarks>
@@ -47,8 +41,44 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Specifies the file within the <see cref="P:Microsoft.Maui.IHybridWebView.HybridRoot" /> that should be served as the default file. The
+            default value is <c>index.html</c>.
+            </summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EvaluateJavaScriptAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string?&gt; EvaluateJavaScriptAsync (string script);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; EvaluateJavaScriptAsync(string script) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IHybridWebView.EvaluateJavaScriptAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EvaluateJavaScriptAsync (script As String) As Task(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::String ^&gt; ^ EvaluateJavaScriptAsync(System::String ^ script);" />
+      <MemberSignature Language="F#" Value="abstract member EvaluateJavaScriptAsync : string -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="iHybridWebView.EvaluateJavaScriptAsync script" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 2 })]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 2 })&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="script" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="script">The JavaScript code to run.</param>
+        <summary>
+            Runs the JavaScript code provided in the <paramref name="script" /> parameter and returns the result as a string.
+            </summary>
+        <returns>The return value (if any) of running the script.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,7 +101,116 @@
         <summary>
              The path within the app's "Raw" asset resources that contain the web app's contents. For example, if the
              files are located in <c>[ProjectFolder]/Resources/Raw/hybrid_root</c>, then set this property to "hybrid_root".
-             The default value is <c>HybridRoot</c>, which maps to <c>[ProjectFolder]/Resources/Raw/HybridRoot</c>.
+             The default value is <c>wwwroot</c>, which maps to <c>[ProjectFolder]/Resources/Raw/wwwroot</c>.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeJavaScriptAsync&lt;TReturnType&gt;">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TReturnType?&gt; InvokeJavaScriptAsync&lt;TReturnType&gt; (string methodName, System.Text.Json.Serialization.Metadata.JsonTypeInfo&lt;TReturnType&gt; returnTypeJsonTypeInfo, object?[]? paramValues = default, System.Text.Json.Serialization.Metadata.JsonTypeInfo?[]? paramJsonTypeInfos = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!!TReturnType&gt; InvokeJavaScriptAsync&lt;TReturnType&gt;(string methodName, class System.Text.Json.Serialization.Metadata.JsonTypeInfo`1&lt;!!TReturnType&gt; returnTypeJsonTypeInfo, object[] paramValues, class System.Text.Json.Serialization.Metadata.JsonTypeInfo[] paramJsonTypeInfos) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IHybridWebView.InvokeJavaScriptAsync``1(System.String,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Object[],System.Text.Json.Serialization.Metadata.JsonTypeInfo[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function InvokeJavaScriptAsync(Of TReturnType) (methodName As String, returnTypeJsonTypeInfo As JsonTypeInfo(Of TReturnType), Optional paramValues As Object() = Nothing, Optional paramJsonTypeInfos As JsonTypeInfo() = Nothing) As Task(Of TReturnType)" />
+      <MemberSignature Language="F#" Value="abstract member InvokeJavaScriptAsync : string * System.Text.Json.Serialization.Metadata.JsonTypeInfo&lt;'ReturnType&gt; * obj[] * System.Text.Json.Serialization.Metadata.JsonTypeInfo[] -&gt; System.Threading.Tasks.Task&lt;'ReturnType&gt;" Usage="iHybridWebView.InvokeJavaScriptAsync (methodName, returnTypeJsonTypeInfo, paramValues, paramJsonTypeInfos)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;TReturnType&gt;</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 2 })]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 2 })&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TReturnType" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="methodName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="returnTypeJsonTypeInfo" Type="System.Text.Json.Serialization.Metadata.JsonTypeInfo&lt;TReturnType&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="paramValues" Type="System.Object[]" />
+        <Parameter Name="paramJsonTypeInfos" Type="System.Text.Json.Serialization.Metadata.JsonTypeInfo[]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TReturnType">The type of the return value.</typeparam>
+        <param name="methodName">The name of the JavaScript method to invoke.</param>
+        <param name="returnTypeJsonTypeInfo">Metadata about deserializing the type of the return value specified by <typeparamref name="TReturnType" />.</param>
+        <param name="paramValues">Optional array of objects to be passed to the JavaScript method by JSON-encoding each one.</param>
+        <param name="paramJsonTypeInfos">Optional array of metadata about serializing the types of the parameters specified by <paramref name="paramValues" />.</param>
+        <summary>
+            Invokes a JavaScript method named <paramref name="methodName" /> and optionally passes in the parameter values specified
+            by <paramref name="paramValues" /> by JSON-encoding each one.
+            </summary>
+        <returns>An object of type <typeparamref name="TReturnType" /> containing the return value of the called method.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeJavaScriptTarget">
+      <MemberSignature Language="C#" Value="public object? InvokeJavaScriptTarget { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object InvokeJavaScriptTarget" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.IHybridWebView.InvokeJavaScriptTarget" />
+      <MemberSignature Language="VB.NET" Value="Public Property InvokeJavaScriptTarget As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ InvokeJavaScriptTarget { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InvokeJavaScriptTarget : obj with get, set" Usage="Microsoft.Maui.IHybridWebView.InvokeJavaScriptTarget" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            For internal use only.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeJavaScriptType">
+      <MemberSignature Language="C#" Value="public Type? InvokeJavaScriptType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type InvokeJavaScriptType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.IHybridWebView.InvokeJavaScriptType" />
+      <MemberSignature Language="VB.NET" Value="Public Property InvokeJavaScriptType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ InvokeJavaScriptType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InvokeJavaScriptType : Type with get, set" Usage="Microsoft.Maui.IHybridWebView.InvokeJavaScriptType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembers(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.All)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembers(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.All)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            For internal use only.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -89,12 +228,6 @@
         <AssemblyName>Microsoft.Maui</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
-          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -119,12 +252,6 @@
         <AssemblyName>Microsoft.Maui</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
-          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -134,6 +261,47 @@
       <Docs>
         <param name="rawMessage">To be added.</param>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetInvokeJavaScriptTarget&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public void SetInvokeJavaScriptTarget&lt;T&gt; (T target) where T : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetInvokeJavaScriptTarget&lt;class T&gt;(!!T target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IHybridWebView.SetInvokeJavaScriptTarget``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetInvokeJavaScriptTarget(Of T As Class) (target As T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class void SetInvokeJavaScriptTarget(T target);" />
+      <MemberSignature Language="F#" Value="abstract member SetInvokeJavaScriptTarget : 'T -&gt; unit (requires 'T : null)" Usage="iHybridWebView.SetInvokeJavaScriptTarget target" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembers(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.All)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembers(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.All)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="target" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type that contains methods callable from JavaScript.</typeparam>
+        <param name="target">An instance of type <typeparamref name="T" /> that will be used to call methods on.</param>
+        <summary>
+             Sets the object that will be the target of JavaScript calls from the web view. The public methods on this object
+             are callable from JavaScript using the <c>window.HybridWebView.InvokeDotNet</c> method.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -19,10 +19,6 @@
       <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
       <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
     </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
-    </Attribute>
   </Attributes>
   <Docs>
     <summary>
@@ -96,6 +92,38 @@
         <returns>A <see cref="T:System.Threading.Tasks.Task" /> containing a <see cref="T:System.Boolean" /> value which indicates whether the animation was canceled. <see langword="true" /> indicates that the animation was canceled. <see langword="false" /> indicates that the animation ran to completion.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="view" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidateMeasure">
+      <MemberSignature Language="C#" Value="public static void InvalidateMeasure (this Microsoft.Maui.Controls.VisualElement view);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void InvalidateMeasure(class Microsoft.Maui.Controls.VisualElement view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ViewExtensions.InvalidateMeasure(Microsoft.Maui.Controls.VisualElement)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub InvalidateMeasure (view As VisualElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void InvalidateMeasure(Microsoft::Maui::Controls::VisualElement ^ view);" />
+      <MemberSignature Language="F#" Value="static member InvalidateMeasure : Microsoft.Maui.Controls.VisualElement -&gt; unit" Usage="Microsoft.Maui.Controls.ViewExtensions.InvalidateMeasure view" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.Controls.VisualElement" Index="0" FrameworkAlternate="net-maui-9.0" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="view">The view on which this method operates.</param>
+        <summary>
+            Layout updates can be forced by app code rather than relying on the built-in layout system behavior. However, that is not generally recommended. 
+            Calling InvalidateArrange, InvalidateMeasure or UpdateLayout is usually unnecessary and can cause poor performance if overused. 
+            In many situations where app code might be changing layout properties, the layout system will probably already be processing updates asynchronously. 
+            The layout system also has optimizations for dealing with cascades of layout changes through parent-child relationships, 
+            and forcing layout with app code can work against such optimizations. Nevertheless, 
+            it's possible that layout situations exist in more complicated scenarios where forcing layout is the best option for resolving a timing issue or other issue with layout. 
+            Just use it deliberately and sparingly.
+            </summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LayoutTo">

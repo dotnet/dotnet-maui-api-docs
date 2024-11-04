@@ -868,14 +868,6 @@
           <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
-          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName Language="C#">[set: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
-          <AttributeName Language="F#">[&lt;set: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.IViewHandler</ReturnType>
@@ -1064,6 +1056,10 @@
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
+        <Attribute FrameworkAlternate="net-maui-9.0">
+          <AttributeName Language="C#">[System.Obsolete("Use InvalidateMeasure instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use InvalidateMeasure instead.")&gt;]</AttributeName>
+        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1097,9 +1093,7 @@
       <Parameters />
       <Docs>
         <summary>
-            Provides a way to allow subclasses (e.g., Layout) to override <see cref="M:Microsoft.Maui.Controls.VisualElement.InvalidateMeasure" /> even though
-            the interface has to be explicitly implemented to avoid conflict with the <see cref="M:Microsoft.Maui.Controls.VisualElement.InvalidateMeasure" /> method.
-            </summary>
+            Provides a way to allow subclasses (e.g., Layout) to override <see cref="M:Microsoft.Maui.Controls.VisualElement.InvalidateMeasure" /></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1454,14 +1448,6 @@
           <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName Language="C#">[add: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
-          <AttributeName Language="F#">[&lt;add: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName Language="C#">[remove: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
-          <AttributeName Language="F#">[&lt;remove: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
@@ -1809,14 +1795,6 @@
           <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
-          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName Language="C#">[set: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
-          <AttributeName Language="F#">[&lt;set: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.IElementHandler</ReturnType>
@@ -1877,10 +1855,6 @@
           <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
-          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Graphics.Paint</ReturnType>
@@ -1911,10 +1885,6 @@
         <Attribute>
           <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
-          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2253,10 +2223,6 @@
           <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
-          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Semantics</ReturnType>
@@ -2287,10 +2253,6 @@
         <Attribute>
           <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
-          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3065,14 +3027,6 @@
           <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
-          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName Language="C#">[set: System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
-          <AttributeName Language="F#">[&lt;set: System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.Shadow</ReturnType>
@@ -3179,6 +3133,7 @@
       <Docs>
         <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.NavigableElement.Style" />.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="TranslationX">
@@ -3374,14 +3329,6 @@
         <Attribute>
           <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName Language="C#">[add: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
-          <AttributeName Language="F#">[&lt;add: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName Language="C#">[remove: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
-          <AttributeName Language="F#">[&lt;remove: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
