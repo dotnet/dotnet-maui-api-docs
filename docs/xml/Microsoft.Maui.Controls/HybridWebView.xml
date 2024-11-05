@@ -31,14 +31,11 @@
       <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
       <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
     </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
-    </Attribute>
   </Attributes>
   <Docs>
     <summary>
-            A <see cref="T:Microsoft.Maui.Controls.View" /> that presents local HTML content in a web view and allows JavaScript and C# code to interop using messages.
+            A <see cref="T:Microsoft.Maui.Controls.View" /> that presents local HTML content in a web view and allows JavaScript and C# code to
+            communicate by using messages and by invoking methods.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -82,6 +79,7 @@
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="DefaultFileProperty">
@@ -110,6 +108,41 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="EvaluateJavaScriptAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string?&gt; EvaluateJavaScriptAsync (string script);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; EvaluateJavaScriptAsync(string script) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.HybridWebView.EvaluateJavaScriptAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EvaluateJavaScriptAsync (script As String) As Task(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;System::String ^&gt; ^ EvaluateJavaScriptAsync(System::String ^ script);" />
+      <MemberSignature Language="F#" Value="abstract member EvaluateJavaScriptAsync : string -&gt; System.Threading.Tasks.Task&lt;string&gt;&#xA;override this.EvaluateJavaScriptAsync : string -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="hybridWebView.EvaluateJavaScriptAsync script" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.IHybridWebView.EvaluateJavaScriptAsync(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 2 })]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 2 })&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="script" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="script">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
     <Member MemberName="HybridRoot">
       <MemberSignature Language="C#" Value="public string? HybridRoot { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HybridRoot" />
@@ -133,6 +166,7 @@
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="HybridRootProperty">
@@ -161,6 +195,120 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="InvokeJavaScriptAsync&lt;TReturnType&gt;">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TReturnType?&gt; InvokeJavaScriptAsync&lt;TReturnType&gt; (string methodName, System.Text.Json.Serialization.Metadata.JsonTypeInfo&lt;TReturnType&gt; returnTypeJsonTypeInfo, object?[]? paramValues = default, System.Text.Json.Serialization.Metadata.JsonTypeInfo?[]? paramJsonTypeInfos = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!!TReturnType&gt; InvokeJavaScriptAsync&lt;TReturnType&gt;(string methodName, class System.Text.Json.Serialization.Metadata.JsonTypeInfo`1&lt;!!TReturnType&gt; returnTypeJsonTypeInfo, object[] paramValues, class System.Text.Json.Serialization.Metadata.JsonTypeInfo[] paramJsonTypeInfos) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.HybridWebView.InvokeJavaScriptAsync``1(System.String,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Object[],System.Text.Json.Serialization.Metadata.JsonTypeInfo[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function InvokeJavaScriptAsync(Of TReturnType) (methodName As String, returnTypeJsonTypeInfo As JsonTypeInfo(Of TReturnType), Optional paramValues As Object() = Nothing, Optional paramJsonTypeInfos As JsonTypeInfo() = Nothing) As Task(Of TReturnType)" />
+      <MemberSignature Language="F#" Value="abstract member InvokeJavaScriptAsync : string * System.Text.Json.Serialization.Metadata.JsonTypeInfo&lt;'ReturnType&gt; * obj[] * System.Text.Json.Serialization.Metadata.JsonTypeInfo[] -&gt; System.Threading.Tasks.Task&lt;'ReturnType&gt;&#xA;override this.InvokeJavaScriptAsync : string * System.Text.Json.Serialization.Metadata.JsonTypeInfo&lt;'ReturnType&gt; * obj[] * System.Text.Json.Serialization.Metadata.JsonTypeInfo[] -&gt; System.Threading.Tasks.Task&lt;'ReturnType&gt;" Usage="hybridWebView.InvokeJavaScriptAsync (methodName, returnTypeJsonTypeInfo, paramValues, paramJsonTypeInfos)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.IHybridWebView.InvokeJavaScriptAsync``1(System.String,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Object[],System.Text.Json.Serialization.Metadata.JsonTypeInfo[])</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;TReturnType&gt;</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 2 })]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 2 })&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TReturnType" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="methodName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="returnTypeJsonTypeInfo" Type="System.Text.Json.Serialization.Metadata.JsonTypeInfo&lt;TReturnType&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="paramValues" Type="System.Object[]" />
+        <Parameter Name="paramJsonTypeInfos" Type="System.Text.Json.Serialization.Metadata.JsonTypeInfo[]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TReturnType">To be added.</typeparam>
+        <param name="methodName">To be added.</param>
+        <param name="returnTypeJsonTypeInfo">To be added.</param>
+        <param name="paramValues">To be added.</param>
+        <param name="paramJsonTypeInfos">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IHybridWebView.InvokeJavaScriptTarget">
+      <MemberSignature Language="C#" Value="object? Microsoft.Maui.IHybridWebView.InvokeJavaScriptTarget { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Microsoft.Maui.IHybridWebView.InvokeJavaScriptTarget" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.HybridWebView.Microsoft#Maui#IHybridWebView#InvokeJavaScriptTarget" />
+      <MemberSignature Language="VB.NET" Value=" Property InvokeJavaScriptTarget As Object Implements IHybridWebView.InvokeJavaScriptTarget" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ Microsoft::Maui::IHybridWebView::InvokeJavaScriptTarget { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.IHybridWebView.InvokeJavaScriptTarget : obj with get, set" Usage="Microsoft.Maui.IHybridWebView.InvokeJavaScriptTarget" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IHybridWebView.InvokeJavaScriptTarget</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.IHybridWebView.InvokeJavaScriptType">
+      <MemberSignature Language="C#" Value="Type? Microsoft.Maui.IHybridWebView.InvokeJavaScriptType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type Microsoft.Maui.IHybridWebView.InvokeJavaScriptType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.HybridWebView.Microsoft#Maui#IHybridWebView#InvokeJavaScriptType" />
+      <MemberSignature Language="VB.NET" Value=" Property InvokeJavaScriptType As Type Implements IHybridWebView.InvokeJavaScriptType" />
+      <MemberSignature Language="C++ CLI" Value="property Type ^ Microsoft::Maui::IHybridWebView::InvokeJavaScriptType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.IHybridWebView.InvokeJavaScriptType : Type with get, set" Usage="Microsoft.Maui.IHybridWebView.InvokeJavaScriptType" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IHybridWebView.InvokeJavaScriptType</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembers(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.All)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembers(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.All)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
     <Member MemberName="Microsoft.Maui.IHybridWebView.RawMessageReceived">
       <MemberSignature Language="C#" Value="void IHybridWebView.RawMessageReceived (string rawMessage);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.IHybridWebView.RawMessageReceived(string rawMessage) cil managed" />
@@ -176,12 +324,6 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
-          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -237,12 +379,6 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
-          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -250,9 +386,53 @@
         <Parameter Name="rawMessage" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="rawMessage">To be added.</param>
+        <param name="rawMessage" />
+        <summary>
+            Sends a raw message to the code running in the web view. Raw messages have no additional processing.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetInvokeJavaScriptTarget&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public void SetInvokeJavaScriptTarget&lt;T&gt; (T target) where T : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetInvokeJavaScriptTarget&lt;class T&gt;(!!T target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.HybridWebView.SetInvokeJavaScriptTarget``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetInvokeJavaScriptTarget(Of T As Class) (target As T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class virtual void SetInvokeJavaScriptTarget(T target);" />
+      <MemberSignature Language="F#" Value="abstract member SetInvokeJavaScriptTarget : 'T -&gt; unit (requires 'T : null)&#xA;override this.SetInvokeJavaScriptTarget : 'T -&gt; unit (requires 'T : null)" Usage="hybridWebView.SetInvokeJavaScriptTarget target" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.IHybridWebView.SetInvokeJavaScriptTarget``1(``0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembers(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.All)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembers(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.All)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="target" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="target">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
   </Members>
