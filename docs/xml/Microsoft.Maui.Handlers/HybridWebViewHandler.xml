@@ -29,12 +29,16 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 0, 1, 1 })]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 0, 1, 1 })&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.RequiresDynamicCode("HybridWebView uses dynamic System.Text.Json serialization features.")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.RequiresDynamicCode("HybridWebView uses dynamic System.Text.Json serialization features.")&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("HybridWebView uses dynamic System.Text.Json serialization features.")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("HybridWebView uses dynamic System.Text.Json serialization features.")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 0, 1, 1 })]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 0, 1, 1 })&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -70,12 +74,6 @@
         <AssemblyName>Microsoft.Maui</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
-          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="mapper" Type="Microsoft.Maui.IPropertyMapper" />
         <Parameter Name="commandMapper" Type="Microsoft.Maui.CommandMapper" />
@@ -126,6 +124,76 @@
       <Docs>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapEvaluateJavaScriptAsync">
+      <MemberSignature Language="C#" Value="public static void MapEvaluateJavaScriptAsync (Microsoft.Maui.Handlers.IHybridWebViewHandler handler, Microsoft.Maui.IHybridWebView hybridWebView, object? arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MapEvaluateJavaScriptAsync(class Microsoft.Maui.Handlers.IHybridWebViewHandler handler, class Microsoft.Maui.IHybridWebView hybridWebView, object arg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Handlers.HybridWebViewHandler.MapEvaluateJavaScriptAsync(Microsoft.Maui.Handlers.IHybridWebViewHandler,Microsoft.Maui.IHybridWebView,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub MapEvaluateJavaScriptAsync (handler As IHybridWebViewHandler, hybridWebView As IHybridWebView, arg As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MapEvaluateJavaScriptAsync(Microsoft::Maui::Handlers::IHybridWebViewHandler ^ handler, Microsoft::Maui::IHybridWebView ^ hybridWebView, System::Object ^ arg);" />
+      <MemberSignature Language="F#" Value="static member MapEvaluateJavaScriptAsync : Microsoft.Maui.Handlers.IHybridWebViewHandler * Microsoft.Maui.IHybridWebView * obj -&gt; unit" Usage="Microsoft.Maui.Handlers.HybridWebViewHandler.MapEvaluateJavaScriptAsync (handler, hybridWebView, arg)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="Microsoft.Maui.Handlers.IHybridWebViewHandler" />
+        <Parameter Name="hybridWebView" Type="Microsoft.Maui.IHybridWebView" />
+        <Parameter Name="arg" Type="System.Object">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <param name="hybridWebView">To be added.</param>
+        <param name="arg">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapInvokeJavaScriptAsync">
+      <MemberSignature Language="C#" Value="public static void MapInvokeJavaScriptAsync (Microsoft.Maui.Handlers.IHybridWebViewHandler handler, Microsoft.Maui.IHybridWebView hybridWebView, object? arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MapInvokeJavaScriptAsync(class Microsoft.Maui.Handlers.IHybridWebViewHandler handler, class Microsoft.Maui.IHybridWebView hybridWebView, object arg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Handlers.HybridWebViewHandler.MapInvokeJavaScriptAsync(Microsoft.Maui.Handlers.IHybridWebViewHandler,Microsoft.Maui.IHybridWebView,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub MapInvokeJavaScriptAsync (handler As IHybridWebViewHandler, hybridWebView As IHybridWebView, arg As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MapInvokeJavaScriptAsync(Microsoft::Maui::Handlers::IHybridWebViewHandler ^ handler, Microsoft::Maui::IHybridWebView ^ hybridWebView, System::Object ^ arg);" />
+      <MemberSignature Language="F#" Value="static member MapInvokeJavaScriptAsync : Microsoft.Maui.Handlers.IHybridWebViewHandler * Microsoft.Maui.IHybridWebView * obj -&gt; unit" Usage="Microsoft.Maui.Handlers.HybridWebViewHandler.MapInvokeJavaScriptAsync (handler, hybridWebView, arg)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="Microsoft.Maui.Handlers.IHybridWebViewHandler" />
+        <Parameter Name="hybridWebView" Type="Microsoft.Maui.IHybridWebView" />
+        <Parameter Name="arg" Type="System.Object">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <param name="hybridWebView">To be added.</param>
+        <param name="arg">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -300,6 +300,10 @@ MainPage = new ContentPage
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
+        <Attribute FrameworkAlternate="net-maui-9.0">
+          <AttributeName Language="C#">[System.Obsolete]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete&gt;]</AttributeName>
+        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Graphics.Rect</ReturnType>
@@ -322,6 +326,12 @@ MainPage = new ContentPage
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-9.0">
+          <AttributeName Language="C#">[System.Obsolete("Use ArrangeOverride instead")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use ArrangeOverride instead")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
