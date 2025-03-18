@@ -1,32 +1,43 @@
 <Type Name="FontImageExtension" FullName="Microsoft.Maui.Controls.Xaml.FontImageExtension">
-  <TypeSignature Language="C#" Value="public class FontImageExtension : Microsoft.Maui.Controls.Xaml.IMarkupExtension&lt;Microsoft.Maui.Controls.ImageSource&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FontImageExtension extends System.Object implements class Microsoft.Maui.Controls.Xaml.IMarkupExtension, class Microsoft.Maui.Controls.Xaml.IMarkupExtension`1&lt;class Microsoft.Maui.Controls.ImageSource&gt;" />
+  <TypeSignature Language="C#" Value="public class FontImageExtension : Microsoft.Maui.Controls.FontImageSource" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FontImageExtension extends Microsoft.Maui.Controls.FontImageSource" FrameworkAlternate="net-maui-10.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Xaml.FontImageExtension" />
-  <TypeSignature Language="VB.NET" Value="Public Class FontImageExtension&#xA;Implements IMarkupExtension(Of ImageSource)" />
-  <TypeSignature Language="C++ CLI" Value="public ref class FontImageExtension : Microsoft::Maui::Controls::Xaml::IMarkupExtension&lt;Microsoft::Maui::Controls::ImageSource ^&gt;" />
-  <TypeSignature Language="F#" Value="type FontImageExtension = class&#xA;    interface IMarkupExtension&lt;ImageSource&gt;&#xA;    interface IMarkupExtension" />
+  <TypeSignature Language="VB.NET" Value="Public Class FontImageExtension&#xA;Inherits FontImageSource" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FontImageExtension : Microsoft::Maui::Controls::FontImageSource" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="F#" Value="type FontImageExtension = class&#xA;    inherit FontImageSource" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="C#" Value="public class FontImageExtension : Microsoft.Maui.Controls.Xaml.IMarkupExtension&lt;Microsoft.Maui.Controls.ImageSource&gt;" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FontImageExtension extends System.Object implements class Microsoft.Maui.Controls.Xaml.IMarkupExtension, class Microsoft.Maui.Controls.Xaml.IMarkupExtension`1&lt;class Microsoft.Maui.Controls.ImageSource&gt;" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="VB.NET" Value="Public Class FontImageExtension&#xA;Implements IMarkupExtension(Of ImageSource)" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FontImageExtension : Microsoft::Maui::Controls::Xaml::IMarkupExtension&lt;Microsoft::Maui::Controls::ImageSource ^&gt;" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="F#" Value="type FontImageExtension = class&#xA;    interface IMarkupExtension&lt;ImageSource&gt;&#xA;    interface IMarkupExtension" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>System.Object</BaseTypeName>
+    <BaseTypeName>Microsoft.Maui.Controls.FontImageSource</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="net-maui-8.0;net-maui-9.0">System.Object</BaseTypeName>
   </Base>
   <Interfaces>
-    <Interface>
+    <Interface FrameworkAlternate="net-maui-8.0;net-maui-9.0">
       <InterfaceName>Microsoft.Maui.Controls.Xaml.IMarkupExtension</InterfaceName>
     </Interface>
-    <Interface>
+    <Interface FrameworkAlternate="net-maui-8.0;net-maui-9.0">
       <InterfaceName>Microsoft.Maui.Controls.Xaml.IMarkupExtension&lt;Microsoft.Maui.Controls.ImageSource&gt;</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="net-maui-10.0">
+      <AttributeName Language="C#">[System.Obsolete("Use FontImageSource")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("Use FontImageSource")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-maui-8.0;net-maui-9.0">
       <AttributeName Language="C#">[Microsoft.Maui.Controls.ContentProperty("Glyph")]</AttributeName>
       <AttributeName Language="F#">[&lt;Microsoft.Maui.Controls.ContentProperty("Glyph")&gt;]</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="net-maui-8.0;net-maui-9.0">
       <AttributeName Language="C#">[Microsoft.Maui.Controls.Xaml.AcceptEmptyServiceProvider]</AttributeName>
       <AttributeName Language="F#">[&lt;Microsoft.Maui.Controls.Xaml.AcceptEmptyServiceProvider&gt;]</AttributeName>
     </Attribute>
@@ -46,6 +57,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -135,7 +147,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" Index="0" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       </Parameters>
       <Docs>
         <param name="serviceProvider">To be added.</param>
@@ -163,7 +175,7 @@
         <ReturnType>Microsoft.Maui.Controls.ImageSource</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" Index="0" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       </Parameters>
       <Docs>
         <param name="serviceProvider">To be added.</param>
@@ -185,7 +197,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="net-maui-8.0;net-maui-9.0">
           <AttributeName Language="C#">[System.ComponentModel.TypeConverter(typeof(Microsoft.Maui.Controls.FontSizeConverter))]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.TypeConverter(typeof(Microsoft.Maui.Controls.FontSizeConverter))&gt;]</AttributeName>
         </Attribute>

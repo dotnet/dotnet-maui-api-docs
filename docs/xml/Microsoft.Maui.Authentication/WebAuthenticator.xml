@@ -9,6 +9,7 @@
     <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -41,9 +42,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-maui-9.0">
+        <Attribute FrameworkAlternate="net-maui-10.0;net-maui-9.0">
           <AttributeName Language="C#">[System.Runtime.Versioning.UnsupportedOSPlatform("windows")]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Runtime.Versioning.UnsupportedOSPlatform("windows")&gt;]</AttributeName>
         </Attribute>
@@ -62,6 +64,39 @@
       </Docs>
     </Member>
     <Member MemberName="AuthenticateAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Maui.Authentication.WebAuthenticatorResult&gt; AuthenticateAsync (Microsoft.Maui.Authentication.WebAuthenticatorOptions webAuthenticatorOptions, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Maui.Authentication.WebAuthenticatorResult&gt; AuthenticateAsync(class Microsoft.Maui.Authentication.WebAuthenticatorOptions webAuthenticatorOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Authentication.WebAuthenticator.AuthenticateAsync(Microsoft.Maui.Authentication.WebAuthenticatorOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AuthenticateAsync (webAuthenticatorOptions As WebAuthenticatorOptions, cancellationToken As CancellationToken) As Task(Of WebAuthenticatorResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;Microsoft::Maui::Authentication::WebAuthenticatorResult ^&gt; ^ AuthenticateAsync(Microsoft::Maui::Authentication::WebAuthenticatorOptions ^ webAuthenticatorOptions, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="static member AuthenticateAsync : Microsoft.Maui.Authentication.WebAuthenticatorOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Maui.Authentication.WebAuthenticatorResult&gt;" Usage="Microsoft.Maui.Authentication.WebAuthenticator.AuthenticateAsync (webAuthenticatorOptions, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.UnsupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.UnsupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Maui.Authentication.WebAuthenticatorResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webAuthenticatorOptions" Type="Microsoft.Maui.Authentication.WebAuthenticatorOptions" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="webAuthenticatorOptions">Options to configure the authentication request.</param>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> to monitor for cancellation requests.</param>
+        <summary>Begin an authentication flow by navigating to the specified url and waiting for a callback/redirect to the callbackUrl scheme.The start url and callbackUrl are specified in the webAuthenticatorOptions.</summary>
+        <returns>Returns a result parsed out from the callback url.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthenticateAsync">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Maui.Authentication.WebAuthenticatorResult&gt; AuthenticateAsync (Uri url, Uri callbackUrl);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Maui.Authentication.WebAuthenticatorResult&gt; AuthenticateAsync(class System.Uri url, class System.Uri callbackUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Authentication.WebAuthenticator.AuthenticateAsync(System.Uri,System.Uri)" />
@@ -72,9 +107,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-maui-9.0">
+        <Attribute FrameworkAlternate="net-maui-10.0;net-maui-9.0">
           <AttributeName Language="C#">[System.Runtime.Versioning.UnsupportedOSPlatform("windows")]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Runtime.Versioning.UnsupportedOSPlatform("windows")&gt;]</AttributeName>
         </Attribute>
@@ -94,6 +130,41 @@
         <remarks />
       </Docs>
     </Member>
+    <Member MemberName="AuthenticateAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Maui.Authentication.WebAuthenticatorResult&gt; AuthenticateAsync (Uri url, Uri callbackUrl, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Maui.Authentication.WebAuthenticatorResult&gt; AuthenticateAsync(class System.Uri url, class System.Uri callbackUrl, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Authentication.WebAuthenticator.AuthenticateAsync(System.Uri,System.Uri,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AuthenticateAsync (url As Uri, callbackUrl As Uri, cancellationToken As CancellationToken) As Task(Of WebAuthenticatorResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;Microsoft::Maui::Authentication::WebAuthenticatorResult ^&gt; ^ AuthenticateAsync(Uri ^ url, Uri ^ callbackUrl, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="static member AuthenticateAsync : Uri * Uri * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Maui.Authentication.WebAuthenticatorResult&gt;" Usage="Microsoft.Maui.Authentication.WebAuthenticator.AuthenticateAsync (url, callbackUrl, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.UnsupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.UnsupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Maui.Authentication.WebAuthenticatorResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.Uri" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="callbackUrl" Type="System.Uri" Index="1" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="url"> Url to navigate to, beginning the authentication flow.</param>
+        <param name="callbackUrl"> Expected callback url that the navigation flow will eventually redirect to.</param>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> to monitor for cancellation requests.</param>
+        <summary>Begin an authentication flow by navigating to the specified url and waiting for a callback/redirect to the callbackUrl scheme.</summary>
+        <returns>Returns a result parsed out from the callback url.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Default">
       <MemberSignature Language="C#" Value="public static Microsoft.Maui.Authentication.IWebAuthenticator Default { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class Microsoft.Maui.Authentication.IWebAuthenticator Default" />
@@ -105,6 +176,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Authentication.IWebAuthenticator</ReturnType>
