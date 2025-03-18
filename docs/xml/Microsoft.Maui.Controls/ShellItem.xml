@@ -9,6 +9,7 @@
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Maui.Controls.ShellGroupItem</BaseTypeName>
@@ -36,9 +37,13 @@
       <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="net-maui-9.0">
+    <Attribute FrameworkAlternate="net-maui-10.0;net-maui-9.0">
       <AttributeName Language="C#">[System.ComponentModel.TypeConverter(typeof(Microsoft.Maui.Controls.ShellItem+ShellItemConverter))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ComponentModel.TypeConverter(typeof(Microsoft.Maui.Controls.ShellItem+ShellItemConverter))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-maui-10.0">
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerTypeProxy(typeof(Microsoft.Maui.Controls.ShellItem+ShellItemDebugView))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerTypeProxy(typeof(Microsoft.Maui.Controls.ShellItem+ShellItemDebugView))&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -56,11 +61,14 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <!-- No matching elements were found for the following include tag -->
+        <include file="../../../docs/Microsoft.Maui.Controls/ShellItem.xml" path="//Member[@MemberName='.ctor']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="CurrentItem">
@@ -74,6 +82,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.ShellSection</ReturnType>
@@ -95,6 +104,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
@@ -115,6 +125,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Controls.ShellSection&gt;</ReturnType>
@@ -136,6 +147,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
@@ -159,6 +171,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Maui.Controls.ShellSection&gt;</ReturnType>
@@ -183,6 +196,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Specialized.NotifyCollectionChangedEventHandler</ReturnType>
@@ -206,6 +220,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -236,6 +251,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -260,6 +276,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;T,Microsoft.Maui.Controls.ShellItem&gt;</ReturnType>
@@ -291,6 +308,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -315,6 +333,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -341,6 +360,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -362,6 +382,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.ShellItem</ReturnType>
@@ -387,6 +408,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.ShellItem</ReturnType>
@@ -412,6 +434,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.ShellItem</ReturnType>
@@ -437,6 +460,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.ShellItem</ReturnType>

@@ -9,6 +9,7 @@
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Maui.Controls.View</BaseTypeName>
@@ -30,6 +31,12 @@
       <InterfaceName>Microsoft.Maui.IView</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="net-maui-10.0">
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerDisplay("{GetDebuggerDisplay(), nq}")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("{GetDebuggerDisplay(), nq}")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>A <see cref="T:Microsoft.Maui.Controls.View" /> control that provides a toggled value.</summary>
     <remarks>
@@ -106,6 +113,7 @@ namespace FormsGallery
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -124,6 +132,7 @@ namespace FormsGallery
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -145,6 +154,7 @@ namespace FormsGallery
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -166,6 +176,7 @@ namespace FormsGallery
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
@@ -189,6 +200,7 @@ namespace FormsGallery
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -213,6 +225,7 @@ namespace FormsGallery
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
@@ -220,6 +233,50 @@ namespace FormsGallery
       <Docs>
         <summary>To be added.</summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OffColor">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.Color OffColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Graphics.Color OffColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Switch.OffColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property OffColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Graphics::Color ^ OffColor { Microsoft::Maui::Graphics::Color ^ get(); void set(Microsoft::Maui::Graphics::Color ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OffColor : Microsoft.Maui.Graphics.Color with get, set" Usage="Microsoft.Maui.Controls.Switch.OffColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the color of the toggle switch's track when it is in the off state.
+            If not set, the default color will be used for the off-track appearance.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OffColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty OffColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty OffColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Switch.OffColorProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OffColorProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ OffColorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable OffColorProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Switch.OffColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Switch.OffColor" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,6 +294,7 @@ namespace FormsGallery
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;T,Microsoft.Maui.Controls.Switch&gt;</ReturnType>
@@ -268,6 +326,7 @@ namespace FormsGallery
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
@@ -289,6 +348,7 @@ namespace FormsGallery
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
@@ -308,6 +368,7 @@ namespace FormsGallery
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -339,6 +400,7 @@ namespace FormsGallery
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -346,6 +408,8 @@ namespace FormsGallery
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <!-- No matching elements were found for the following include tag -->
+        <include file="../../docs/Microsoft.Maui.Controls/Switch.xml" path="//Member[@MemberName='SwitchOffVisualState']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="SwitchOnVisualState">
@@ -359,6 +423,7 @@ namespace FormsGallery
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -366,6 +431,8 @@ namespace FormsGallery
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <!-- No matching elements were found for the following include tag -->
+        <include file="../../docs/Microsoft.Maui.Controls/Switch.xml" path="//Member[@MemberName='SwitchOnVisualState']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="ThumbColor">
@@ -379,6 +446,7 @@ namespace FormsGallery
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
@@ -387,6 +455,8 @@ namespace FormsGallery
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <!-- No matching elements were found for the following include tag -->
+        <include file="../../docs/Microsoft.Maui.Controls/Switch.xml" path="//Member[@MemberName='ThumbColor']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="ThumbColorProperty">
@@ -400,6 +470,7 @@ namespace FormsGallery
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
@@ -420,6 +491,7 @@ namespace FormsGallery
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.ToggledEventArgs&gt;</ReturnType>

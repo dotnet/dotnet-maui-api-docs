@@ -9,6 +9,7 @@
     <AssemblyName>Microsoft.Maui</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -31,11 +32,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.IImageSourceService</ReturnType>
         <Attributes>
-          <Attribute FrameworkAlternate="net-maui-8.0">
+          <Attribute FrameworkAlternate="net-maui-10.0">
             <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
             <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
           </Attribute>
@@ -52,31 +54,32 @@
       </Docs>
     </Member>
     <Member MemberName="GetImageSourceServiceType">
-      <MemberSignature Language="C#" Value="public Type GetImageSourceServiceType (Type imageSource);" FrameworkAlternate="net-maui-8.0" />
+      <MemberSignature Language="C#" Value="public virtual Type GetImageSourceServiceType (Type imageSource);" FrameworkAlternate="net-maui-10.0;net-maui-9.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetImageSourceServiceType(class System.Type imageSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IImageSourceServiceProvider.GetImageSourceServiceType(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetImageSourceServiceType (imageSource As Type) As Type" FrameworkAlternate="net-maui-10.0;net-maui-9.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetImageSourceServiceType(Type ^ imageSource);" FrameworkAlternate="net-maui-10.0;net-maui-9.0" />
+      <MemberSignature Language="F#" Value="abstract member GetImageSourceServiceType : Type -&gt; Type&#xA;override this.GetImageSourceServiceType : Type -&gt; Type" Usage="iImageSourceServiceProvider.GetImageSourceServiceType imageSource" FrameworkAlternate="net-maui-10.0;net-maui-9.0" />
+      <MemberSignature Language="C#" Value="public Type GetImageSourceServiceType (Type imageSource);" FrameworkAlternate="net-maui-8.0" />
       <MemberSignature Language="VB.NET" Value="Public Function GetImageSourceServiceType (imageSource As Type) As Type" FrameworkAlternate="net-maui-8.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetImageSourceServiceType(Type ^ imageSource);" FrameworkAlternate="net-maui-8.0" />
       <MemberSignature Language="F#" Value="abstract member GetImageSourceServiceType : Type -&gt; Type" Usage="iImageSourceServiceProvider.GetImageSourceServiceType imageSource" FrameworkAlternate="net-maui-8.0" />
-      <MemberSignature Language="C#" Value="public virtual Type GetImageSourceServiceType (Type imageSource);" FrameworkAlternate="net-maui-9.0" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetImageSourceServiceType (imageSource As Type) As Type" FrameworkAlternate="net-maui-9.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetImageSourceServiceType(Type ^ imageSource);" FrameworkAlternate="net-maui-9.0" />
-      <MemberSignature Language="F#" Value="abstract member GetImageSourceServiceType : Type -&gt; Type&#xA;override this.GetImageSourceServiceType : Type -&gt; Type" Usage="iImageSourceServiceProvider.GetImageSourceServiceType imageSource" FrameworkAlternate="net-maui-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-maui-9.0">
+        <Attribute FrameworkAlternate="net-maui-10.0;net-maui-9.0">
           <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.RequiresDynamicCode("The GetImageSourceServiceType method is not AOT compatible. Use GetImageSourceService instead.")]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.RequiresDynamicCode("The GetImageSourceServiceType method is not AOT compatible. Use GetImageSourceService instead.")&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="net-maui-9.0">
+        <Attribute FrameworkAlternate="net-maui-10.0;net-maui-9.0">
           <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("The GetImageSourceServiceType method is not trimming compatible. Use GetImageSourceService instead.")]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("The GetImageSourceServiceType method is not trimming compatible. Use GetImageSourceService instead.")&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="net-maui-9.0">
+        <Attribute FrameworkAlternate="net-maui-10.0;net-maui-9.0">
           <AttributeName Language="C#">[System.Obsolete("Use GetImageSourceService instead.")]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Obsolete("Use GetImageSourceService instead.")&gt;]</AttributeName>
         </Attribute>
@@ -95,27 +98,28 @@
       </Docs>
     </Member>
     <Member MemberName="GetImageSourceType">
-      <MemberSignature Language="C#" Value="public Type GetImageSourceType (Type imageSource);" FrameworkAlternate="net-maui-8.0" />
+      <MemberSignature Language="C#" Value="public virtual Type GetImageSourceType (Type imageSource);" FrameworkAlternate="net-maui-10.0;net-maui-9.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetImageSourceType(class System.Type imageSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IImageSourceServiceProvider.GetImageSourceType(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetImageSourceType (imageSource As Type) As Type" FrameworkAlternate="net-maui-10.0;net-maui-9.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetImageSourceType(Type ^ imageSource);" FrameworkAlternate="net-maui-10.0;net-maui-9.0" />
+      <MemberSignature Language="F#" Value="abstract member GetImageSourceType : Type -&gt; Type&#xA;override this.GetImageSourceType : Type -&gt; Type" Usage="iImageSourceServiceProvider.GetImageSourceType imageSource" FrameworkAlternate="net-maui-10.0;net-maui-9.0" />
+      <MemberSignature Language="C#" Value="public Type GetImageSourceType (Type imageSource);" FrameworkAlternate="net-maui-8.0" />
       <MemberSignature Language="VB.NET" Value="Public Function GetImageSourceType (imageSource As Type) As Type" FrameworkAlternate="net-maui-8.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetImageSourceType(Type ^ imageSource);" FrameworkAlternate="net-maui-8.0" />
       <MemberSignature Language="F#" Value="abstract member GetImageSourceType : Type -&gt; Type" Usage="iImageSourceServiceProvider.GetImageSourceType imageSource" FrameworkAlternate="net-maui-8.0" />
-      <MemberSignature Language="C#" Value="public virtual Type GetImageSourceType (Type imageSource);" FrameworkAlternate="net-maui-9.0" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetImageSourceType (imageSource As Type) As Type" FrameworkAlternate="net-maui-9.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetImageSourceType(Type ^ imageSource);" FrameworkAlternate="net-maui-9.0" />
-      <MemberSignature Language="F#" Value="abstract member GetImageSourceType : Type -&gt; Type&#xA;override this.GetImageSourceType : Type -&gt; Type" Usage="iImageSourceServiceProvider.GetImageSourceType imageSource" FrameworkAlternate="net-maui-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-maui-9.0">
+        <Attribute FrameworkAlternate="net-maui-10.0;net-maui-9.0">
           <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("The GetImageSourceType method is not trimming compatible. Use GetImageSourceService instead.")]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("The GetImageSourceType method is not trimming compatible. Use GetImageSourceService instead.")&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="net-maui-9.0">
+        <Attribute FrameworkAlternate="net-maui-10.0;net-maui-9.0">
           <AttributeName Language="C#">[System.Obsolete("Use GetImageSourceService instead.")]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Obsolete("Use GetImageSourceService instead.")&gt;]</AttributeName>
         </Attribute>
@@ -144,6 +148,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IServiceProvider</ReturnType>

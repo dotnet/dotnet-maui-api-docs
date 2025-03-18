@@ -9,6 +9,7 @@
     <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -34,13 +35,14 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-maui-9.0">
+        <Attribute FrameworkAlternate="net-maui-10.0;net-maui-9.0">
           <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.RequiresDynamicCode("Loading XAML at runtime might require types and members that cannot be statically analyzed. Make sure all of the required types and members are preserved.")]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.RequiresDynamicCode("Loading XAML at runtime might require types and members that cannot be statically analyzed. Make sure all of the required types and members are preserved.")&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="net-maui-9.0">
+        <Attribute FrameworkAlternate="net-maui-10.0;net-maui-9.0">
           <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("Loading XAML at runtime might require types and members that cannot be statically analyzed. Make sure all of the required types and members are preserved.")]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("Loading XAML at runtime might require types and members that cannot be statically analyzed. Make sure all of the required types and members are preserved.")&gt;]</AttributeName>
         </Attribute>
@@ -75,12 +77,44 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="qualifiedTypeName" Type="System.String" />
-        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+        <Parameter Name="qualifiedTypeName" Type="System.String" Index="0" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" Index="1" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       </Parameters>
       <Docs>
         <param name="qualifiedTypeName">To be added.</param>
         <param name="serviceProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Controls.Xaml.IXamlTypeResolver.Resolve">
+      <MemberSignature Language="C#" Value="Type IXamlTypeResolver.Resolve (string qualifiedTypeName, IServiceProvider serviceProvider, bool expandToExtension);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Type Microsoft.Maui.Controls.Xaml.IXamlTypeResolver.Resolve(string qualifiedTypeName, class System.IServiceProvider serviceProvider, bool expandToExtension) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Xaml.Internals.XamlTypeResolver.Microsoft#Maui#Controls#Xaml#IXamlTypeResolver#Resolve(System.String,System.IServiceProvider,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Function Resolve (qualifiedTypeName As String, serviceProvider As IServiceProvider, expandToExtension As Boolean) As Type Implements IXamlTypeResolver.Resolve" />
+      <MemberSignature Language="C++ CLI" Value=" virtual Type ^ Microsoft.Maui.Controls.Xaml.IXamlTypeResolver.Resolve(System::String ^ qualifiedTypeName, IServiceProvider ^ serviceProvider, bool expandToExtension) = Microsoft::Maui::Controls::Xaml::IXamlTypeResolver::Resolve;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Controls.Xaml.IXamlTypeResolver.Resolve : string * IServiceProvider * bool -&gt; Type&#xA;override this.Microsoft.Maui.Controls.Xaml.IXamlTypeResolver.Resolve : string * IServiceProvider * bool -&gt; Type" Usage="xamlTypeResolver.Microsoft.Maui.Controls.Xaml.IXamlTypeResolver.Resolve (qualifiedTypeName, serviceProvider, expandToExtension)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.Xaml.IXamlTypeResolver.Resolve(System.String,System.IServiceProvider,System.Boolean)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="qualifiedTypeName" Type="System.String" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" Index="1" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="expandToExtension" Type="System.Boolean" Index="2" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="qualifiedTypeName">To be added.</param>
+        <param name="serviceProvider">To be added.</param>
+        <param name="expandToExtension">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -100,6 +134,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
