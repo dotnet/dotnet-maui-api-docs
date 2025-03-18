@@ -2236,17 +2236,21 @@
     <Type Name="Microsoft.Maui.Authentication.IPlatformWebAuthenticatorCallback" Id="T:Microsoft.Maui.Authentication.IPlatformWebAuthenticatorCallback" />
     <Type Name="Microsoft.Maui.Authentication.IWebAuthenticator" Id="T:Microsoft.Maui.Authentication.IWebAuthenticator">
       <Member Id="M:Microsoft.Maui.Authentication.IWebAuthenticator.AuthenticateAsync(Microsoft.Maui.Authentication.WebAuthenticatorOptions)" />
+      <Member Id="M:Microsoft.Maui.Authentication.IWebAuthenticator.AuthenticateAsync(Microsoft.Maui.Authentication.WebAuthenticatorOptions,System.Threading.CancellationToken)" />
     </Type>
     <Type Name="Microsoft.Maui.Authentication.IWebAuthenticatorResponseDecoder" Id="T:Microsoft.Maui.Authentication.IWebAuthenticatorResponseDecoder">
       <Member Id="M:Microsoft.Maui.Authentication.IWebAuthenticatorResponseDecoder.DecodeResponse(System.Uri)" />
     </Type>
     <Type Name="Microsoft.Maui.Authentication.WebAuthenticator" Id="T:Microsoft.Maui.Authentication.WebAuthenticator">
       <Member Id="M:Microsoft.Maui.Authentication.WebAuthenticator.AuthenticateAsync(Microsoft.Maui.Authentication.WebAuthenticatorOptions)" />
+      <Member Id="M:Microsoft.Maui.Authentication.WebAuthenticator.AuthenticateAsync(Microsoft.Maui.Authentication.WebAuthenticatorOptions,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Maui.Authentication.WebAuthenticator.AuthenticateAsync(System.Uri,System.Uri)" />
+      <Member Id="M:Microsoft.Maui.Authentication.WebAuthenticator.AuthenticateAsync(System.Uri,System.Uri,System.Threading.CancellationToken)" />
       <Member Id="P:Microsoft.Maui.Authentication.WebAuthenticator.Default" />
     </Type>
     <Type Name="Microsoft.Maui.Authentication.WebAuthenticatorExtensions" Id="T:Microsoft.Maui.Authentication.WebAuthenticatorExtensions">
       <Member Id="M:Microsoft.Maui.Authentication.WebAuthenticatorExtensions.AuthenticateAsync(Microsoft.Maui.Authentication.IWebAuthenticator,System.Uri,System.Uri)" />
+      <Member Id="M:Microsoft.Maui.Authentication.WebAuthenticatorExtensions.AuthenticateAsync(Microsoft.Maui.Authentication.IWebAuthenticator,System.Uri,System.Uri,System.Threading.CancellationToken)" />
     </Type>
     <Type Name="Microsoft.Maui.Authentication.WebAuthenticatorOptions" Id="T:Microsoft.Maui.Authentication.WebAuthenticatorOptions">
       <Member Id="M:Microsoft.Maui.Authentication.WebAuthenticatorOptions.#ctor" />
@@ -10736,6 +10740,7 @@
       <Member Id="M:Microsoft.Maui.Devices.Sensors.Geolocation.StartListeningForegroundAsync(Microsoft.Maui.Devices.Sensors.GeolocationListeningRequest)" />
       <Member Id="M:Microsoft.Maui.Devices.Sensors.Geolocation.StopListeningForeground" />
       <Member Id="P:Microsoft.Maui.Devices.Sensors.Geolocation.Default" />
+      <Member Id="P:Microsoft.Maui.Devices.Sensors.Geolocation.IsEnabled" />
       <Member Id="P:Microsoft.Maui.Devices.Sensors.Geolocation.IsListeningForeground" />
     </Type>
     <Type Name="Microsoft.Maui.Devices.Sensors.GeolocationAccuracy" Id="T:Microsoft.Maui.Devices.Sensors.GeolocationAccuracy">
@@ -10835,6 +10840,7 @@
       <Member Id="M:Microsoft.Maui.Devices.Sensors.IGeolocation.GetLocationAsync(Microsoft.Maui.Devices.Sensors.GeolocationRequest,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Maui.Devices.Sensors.IGeolocation.StartListeningForegroundAsync(Microsoft.Maui.Devices.Sensors.GeolocationListeningRequest)" />
       <Member Id="M:Microsoft.Maui.Devices.Sensors.IGeolocation.StopListeningForeground" />
+      <Member Id="P:Microsoft.Maui.Devices.Sensors.IGeolocation.IsEnabled" />
       <Member Id="P:Microsoft.Maui.Devices.Sensors.IGeolocation.IsListeningForeground" />
     </Type>
     <Type Name="Microsoft.Maui.Devices.Sensors.IGyroscope" Id="T:Microsoft.Maui.Devices.Sensors.IGyroscope">
@@ -12398,6 +12404,9 @@
     <Type Name="Microsoft.Maui.Graphics.Skia.SKColorExtensions" Id="T:Microsoft.Maui.Graphics.Skia.SKColorExtensions">
       <Member Id="M:Microsoft.Maui.Graphics.Skia.SKColorExtensions.ToColor(Microsoft.Maui.Graphics.Color,System.Single)" />
     </Type>
+    <Type Name="Microsoft.Maui.Graphics.Skia.SKFontExtensions" Id="T:Microsoft.Maui.Graphics.Skia.SKFontExtensions">
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SKFontExtensions.CreateCopy(SkiaSharp.SKFont)" />
+    </Type>
     <Type Name="Microsoft.Maui.Graphics.Skia.SKGraphicsExtensions" Id="T:Microsoft.Maui.Graphics.Skia.SKGraphicsExtensions">
       <Member Id="M:Microsoft.Maui.Graphics.Skia.SKGraphicsExtensions.AsColor(SkiaSharp.SKColor)" />
       <Member Id="M:Microsoft.Maui.Graphics.Skia.SKGraphicsExtensions.AsMatrix(System.Numerics.Matrix3x2@)" />
@@ -12486,6 +12495,7 @@
       <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.Dispose" />
       <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.GetImagePaint(System.Single,System.Single)" />
       <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.GetShadowPaint(System.Single,System.Single)" />
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.Reset(SkiaSharp.SKPaint,SkiaSharp.SKFont,SkiaSharp.SKPaint,SkiaSharp.SKPaint)" />
       <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.Reset(SkiaSharp.SKPaint,SkiaSharp.SKPaint,SkiaSharp.SKPaint)" />
       <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.SetBlur(System.Single)" />
       <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.SetFillPaintFilterBitmap(System.Boolean)" />
@@ -12500,6 +12510,7 @@
       <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.FillPaintWithAlpha" />
       <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.Font" />
       <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.FontColor" />
+      <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.FontFont" />
       <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.FontPaint" />
       <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.FontSize" />
       <Member Id="P:Microsoft.Maui.Graphics.Skia.SkiaCanvasState.IsBlurred" />
@@ -12547,6 +12558,7 @@
       <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaStringSizeService.GetStringSize(System.String,Microsoft.Maui.Graphics.IFont,System.Single,Microsoft.Maui.Graphics.HorizontalAlignment,Microsoft.Maui.Graphics.VerticalAlignment)" />
     </Type>
     <Type Name="Microsoft.Maui.Graphics.Skia.SkiaTextLayout" Id="T:Microsoft.Maui.Graphics.Skia.SkiaTextLayout">
+      <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaTextLayout.#ctor(System.String,Microsoft.Maui.Graphics.RectF,Microsoft.Maui.Graphics.ITextAttributes,Microsoft.Maui.Graphics.LayoutLine,Microsoft.Maui.Graphics.TextFlow,SkiaSharp.SKFont)" />
       <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaTextLayout.#ctor(System.String,Microsoft.Maui.Graphics.RectF,Microsoft.Maui.Graphics.ITextAttributes,Microsoft.Maui.Graphics.LayoutLine,Microsoft.Maui.Graphics.TextFlow,SkiaSharp.SKPaint)" />
       <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaTextLayout.Dispose" />
       <Member Id="M:Microsoft.Maui.Graphics.Skia.SkiaTextLayout.LayoutText" />

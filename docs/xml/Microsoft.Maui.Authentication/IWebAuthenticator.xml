@@ -55,5 +55,40 @@
         </exception>
       </Docs>
     </Member>
+    <Member MemberName="AuthenticateAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Maui.Authentication.WebAuthenticatorResult&gt; AuthenticateAsync (Microsoft.Maui.Authentication.WebAuthenticatorOptions webAuthenticatorOptions, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Maui.Authentication.WebAuthenticatorResult&gt; AuthenticateAsync(class Microsoft.Maui.Authentication.WebAuthenticatorOptions webAuthenticatorOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Authentication.IWebAuthenticator.AuthenticateAsync(Microsoft.Maui.Authentication.WebAuthenticatorOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AuthenticateAsync (webAuthenticatorOptions As WebAuthenticatorOptions, cancellationToken As CancellationToken) As Task(Of WebAuthenticatorResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;Microsoft::Maui::Authentication::WebAuthenticatorResult ^&gt; ^ AuthenticateAsync(Microsoft::Maui::Authentication::WebAuthenticatorOptions ^ webAuthenticatorOptions, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="abstract member AuthenticateAsync : Microsoft.Maui.Authentication.WebAuthenticatorOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Maui.Authentication.WebAuthenticatorResult&gt;" Usage="iWebAuthenticator.AuthenticateAsync (webAuthenticatorOptions, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Maui.Authentication.WebAuthenticatorResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webAuthenticatorOptions" Type="Microsoft.Maui.Authentication.WebAuthenticatorOptions" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="webAuthenticatorOptions">A <see cref="T:Microsoft.Maui.Authentication.WebAuthenticatorOptions" /> instance containing additional configuration for this authentication call.</param>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> to monitor for cancellation requests.</param>
+        <summary>
+            Begin an authentication flow by navigating to the specified URL and waiting for a callback/redirect to the callback URL scheme, with cancellation support.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Maui.Authentication.WebAuthenticatorResult" /> object with the results of this operation.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Threading.Tasks.TaskCanceledException">Thrown when the user canceled the authentication flow.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">Windows: Thrown when called on Windows.</exception>
+        <exception cref="T:Microsoft.Maui.ApplicationModel.FeatureNotSupportedException">iOS/macOS: Thrown when iOS version is less than 13 is used or macOS less than 13.1 is used.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <para>Android: Thrown when the no IntentFilter has been created for the callback URL.</para>
+        </exception>
+      </Docs>
+    </Member>
   </Members>
 </Type>
