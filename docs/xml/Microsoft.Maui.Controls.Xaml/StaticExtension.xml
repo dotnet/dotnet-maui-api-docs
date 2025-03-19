@@ -9,6 +9,7 @@
     <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,7 +24,11 @@
       <AttributeName Language="C#">[Microsoft.Maui.Controls.ContentProperty("Member")]</AttributeName>
       <AttributeName Language="F#">[&lt;Microsoft.Maui.Controls.ContentProperty("Member")&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="net-maui-9.0">
+    <Attribute FrameworkAlternate="net-maui-10.0">
+      <AttributeName Language="C#">[Microsoft.Maui.Controls.Xaml.RequireService(new System.Type[] { typeof(Microsoft.Maui.Controls.Xaml.IXamlTypeResolver) })]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Maui.Controls.Xaml.RequireService(new System.Type[] { typeof(Microsoft.Maui.Controls.Xaml.IXamlTypeResolver) })&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-maui-10.0;net-maui-9.0">
       <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("Loading XAML at runtime might require types and members that cannot be statically analyzed. Make sure all of the required types and members are preserved.")]</AttributeName>
       <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("Loading XAML at runtime might require types and members that cannot be statically analyzed. Make sure all of the required types and members are preserved.")&gt;]</AttributeName>
     </Attribute>
@@ -43,6 +48,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -61,6 +67,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -85,6 +92,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
