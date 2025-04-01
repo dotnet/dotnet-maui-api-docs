@@ -68,6 +68,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Please use FadeToAsync instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Please use FadeToAsync instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
@@ -93,6 +99,48 @@
             Returns a task that performs the fade that is described by the <paramref name="opacity" />, <paramref name="length" />, and <paramref name="easing" /> parameters.
             </summary>
         <returns>A <see cref="T:System.Threading.Tasks.Task" /> containing a <see cref="T:System.Boolean" /> value which indicates whether the animation was canceled. <see langword="true" /> indicates that the animation was canceled. <see langword="false" /> indicates that the animation ran to completion.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="view" /> is <see langword="null" />.</exception>
+        <inheritdoc cref="M:Microsoft.Maui.Controls.ViewExtensions.FadeToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      </Docs>
+    </Member>
+    <Member MemberName="FadeToAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; FadeToAsync (this Microsoft.Maui.Controls.VisualElement view, double opacity, uint length = 250, Microsoft.Maui.Easing? easing = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; FadeToAsync(class Microsoft.Maui.Controls.VisualElement view, float64 opacity, unsigned int32 length, class Microsoft.Maui.Easing easing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ViewExtensions.FadeToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FadeToAsync (view As VisualElement, opacity As Double, Optional length As UInteger = 250, Optional easing As Easing = Nothing) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="static member FadeToAsync : Microsoft.Maui.Controls.VisualElement * double * uint32 * Microsoft.Maui.Easing -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="Microsoft.Maui.Controls.ViewExtensions.FadeToAsync (view, opacity, length, easing)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.Controls.VisualElement" Index="0" FrameworkAlternate="net-maui-10.0" RefType="this" />
+        <Parameter Name="opacity" Type="System.Double" Index="1" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="length" Type="System.UInt32" Index="2" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="easing" Type="Microsoft.Maui.Easing" Index="3" FrameworkAlternate="net-maui-10.0">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="view">The view on which this method operates.</param>
+        <param name="opacity">The opacity to fade to.</param>
+        <param name="length">The time, in milliseconds, over which to animate the transition. The default is 250.</param>
+        <param name="easing">The easing function to use for the animation.</param>
+        <summary>
+            Returns a task that performs the fade that is described by the <paramref name="opacity" />, <paramref name="length" />, and <paramref name="easing" /> parameters.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> containing a <see cref="T:System.Boolean" /> value which indicates whether the animation was canceled.
+            <see langword="true" /> indicates that the animation was canceled. <see langword="false" /> indicates that the animation ran to completion.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="view" /> is <see langword="null" />.</exception>
       </Docs>
@@ -142,6 +190,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Please use LayoutToAsync instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Please use LayoutToAsync instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
@@ -170,6 +224,49 @@
         <returns>A <see cref="T:System.Threading.Tasks.Task" /> containing a <see cref="T:System.Boolean" /> value which indicates whether the animation was canceled. <see langword="true" /> indicates that the animation was canceled. <see langword="false" /> indicates that the animation ran to completion.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="view" /> is <see langword="null" />.</exception>
+        <inheritdoc cref="M:Microsoft.Maui.Controls.ViewExtensions.LayoutToAsync(Microsoft.Maui.Controls.VisualElement,Microsoft.Maui.Graphics.Rect,System.UInt32,Microsoft.Maui.Easing)" />
+      </Docs>
+    </Member>
+    <Member MemberName="LayoutToAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; LayoutToAsync (this Microsoft.Maui.Controls.VisualElement view, Microsoft.Maui.Graphics.Rect bounds, uint length = 250, Microsoft.Maui.Easing? easing = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; LayoutToAsync(class Microsoft.Maui.Controls.VisualElement view, valuetype Microsoft.Maui.Graphics.Rect bounds, unsigned int32 length, class Microsoft.Maui.Easing easing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ViewExtensions.LayoutToAsync(Microsoft.Maui.Controls.VisualElement,Microsoft.Maui.Graphics.Rect,System.UInt32,Microsoft.Maui.Easing)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function LayoutToAsync (view As VisualElement, bounds As Rect, Optional length As UInteger = 250, Optional easing As Easing = Nothing) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="static member LayoutToAsync : Microsoft.Maui.Controls.VisualElement * Microsoft.Maui.Graphics.Rect * uint32 * Microsoft.Maui.Easing -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="Microsoft.Maui.Controls.ViewExtensions.LayoutToAsync (view, bounds, length, easing)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.Controls.VisualElement" Index="0" FrameworkAlternate="net-maui-10.0" RefType="this" />
+        <Parameter Name="bounds" Type="Microsoft.Maui.Graphics.Rect" Index="1" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="length" Type="System.UInt32" Index="2" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="easing" Type="Microsoft.Maui.Easing" Index="3" FrameworkAlternate="net-maui-10.0">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="view">The view on which this method operates.</param>
+        <param name="bounds">The layout bounds.</param>
+        <param name="length">The time, in milliseconds, over which to animate the transition. The default is 250.</param>
+        <param name="easing">The easing function to use for the animation.</param>
+        <summary>
+          <summary>Returns a task that eases the bounds of the <see cref="T:Microsoft.Maui.Controls.VisualElement" /> that is specified by the <paramref name="view" />
+            to the rectangle that is specified by the <paramref name="bounds" /> parameter.</summary>
+        </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> containing a <see cref="T:System.Boolean" /> value which indicates whether the animation was canceled.
+            <see langword="true" /> indicates that the animation was canceled. <see langword="false" /> indicates that the animation ran to completion.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="view" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="RelRotateTo">
@@ -184,6 +281,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Please use RelRotateToAsync instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Please use RelRotateToAsync instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
@@ -211,6 +314,48 @@
         <returns>A <see cref="T:System.Threading.Tasks.Task" /> containing a <see cref="T:System.Boolean" /> value which indicates whether the animation was canceled. <see langword="true" /> indicates that the animation was canceled. <see langword="false" /> indicates that the animation ran to completion.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="view" /> is <see langword="null" />.</exception>
+        <inheritdoc cref="M:Microsoft.Maui.Controls.ViewExtensions.RelRotateToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      </Docs>
+    </Member>
+    <Member MemberName="RelRotateToAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; RelRotateToAsync (this Microsoft.Maui.Controls.VisualElement view, double drotation, uint length = 250, Microsoft.Maui.Easing? easing = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; RelRotateToAsync(class Microsoft.Maui.Controls.VisualElement view, float64 drotation, unsigned int32 length, class Microsoft.Maui.Easing easing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ViewExtensions.RelRotateToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function RelRotateToAsync (view As VisualElement, drotation As Double, Optional length As UInteger = 250, Optional easing As Easing = Nothing) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="static member RelRotateToAsync : Microsoft.Maui.Controls.VisualElement * double * uint32 * Microsoft.Maui.Easing -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="Microsoft.Maui.Controls.ViewExtensions.RelRotateToAsync (view, drotation, length, easing)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.Controls.VisualElement" Index="0" FrameworkAlternate="net-maui-10.0" RefType="this" />
+        <Parameter Name="drotation" Type="System.Double" Index="1" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="length" Type="System.UInt32" Index="2" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="easing" Type="Microsoft.Maui.Easing" Index="3" FrameworkAlternate="net-maui-10.0">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="view">The view on which this method operates.</param>
+        <param name="drotation">The relative rotation.</param>
+        <param name="length">The time, in milliseconds, over which to animate the transition. The default is 250.</param>
+        <param name="easing">The easing function to use for the animation.</param>
+        <summary>
+            Rotates the <see cref="T:Microsoft.Maui.Controls.VisualElement" /> that is specified by <paramref name="view" /> from its current rotation by <paramref name="drotation" />.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> containing a <see cref="T:System.Boolean" /> value which indicates whether the animation was canceled.
+            <see langword="true" /> indicates that the animation was canceled. <see langword="false" /> indicates that the animation ran to completion.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="view" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="RelScaleTo">
@@ -225,6 +370,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Please use RelScaleToAsync instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Please use RelScaleToAsync instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
@@ -253,6 +404,49 @@
         <returns>A <see cref="T:System.Threading.Tasks.Task" /> containing a <see cref="T:System.Boolean" /> value which indicates whether the animation was canceled. <see langword="true" /> indicates that the animation was canceled. <see langword="false" /> indicates that the animation ran to completion.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="view" /> is <see langword="null" />.</exception>
+        <inheritdoc cref="M:Microsoft.Maui.Controls.ViewExtensions.RelScaleToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      </Docs>
+    </Member>
+    <Member MemberName="RelScaleToAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; RelScaleToAsync (this Microsoft.Maui.Controls.VisualElement view, double dscale, uint length = 250, Microsoft.Maui.Easing? easing = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; RelScaleToAsync(class Microsoft.Maui.Controls.VisualElement view, float64 dscale, unsigned int32 length, class Microsoft.Maui.Easing easing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ViewExtensions.RelScaleToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function RelScaleToAsync (view As VisualElement, dscale As Double, Optional length As UInteger = 250, Optional easing As Easing = Nothing) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="static member RelScaleToAsync : Microsoft.Maui.Controls.VisualElement * double * uint32 * Microsoft.Maui.Easing -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="Microsoft.Maui.Controls.ViewExtensions.RelScaleToAsync (view, dscale, length, easing)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.Controls.VisualElement" Index="0" FrameworkAlternate="net-maui-10.0" RefType="this" />
+        <Parameter Name="dscale" Type="System.Double" Index="1" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="length" Type="System.UInt32" Index="2" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="easing" Type="Microsoft.Maui.Easing" Index="3" FrameworkAlternate="net-maui-10.0">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="view">The view on which this method operates.</param>
+        <param name="dscale">The relative scale.</param>
+        <param name="length">The time, in milliseconds, over which to animate the transition. The default is 250.</param>
+        <param name="easing">The easing function to use for the animation.</param>
+        <summary>
+            Returns a task that scales the <see cref="T:Microsoft.Maui.Controls.VisualElement" /> that is specified by <paramref name="view" />
+            from its current scale to <paramref name="dscale" />.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> containing a <see cref="T:System.Boolean" /> value which indicates whether the animation was canceled.
+            <see langword="true" /> indicates that the animation was canceled. <see langword="false" /> indicates that the animation ran to completion.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="view" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="RotateTo">
@@ -267,6 +461,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Please use RotateToAsync instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Please use RotateToAsync instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
@@ -295,6 +495,49 @@
         <returns>A <see cref="T:System.Threading.Tasks.Task" /> containing a <see cref="T:System.Boolean" /> value which indicates whether the animation was canceled. <see langword="true" /> indicates that the animation was canceled. <see langword="false" /> indicates that the animation ran to completion.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="view" /> is <see langword="null" />.</exception>
+        <inheritdoc cref="M:Microsoft.Maui.Controls.ViewExtensions.RotateToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      </Docs>
+    </Member>
+    <Member MemberName="RotateToAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; RotateToAsync (this Microsoft.Maui.Controls.VisualElement view, double rotation, uint length = 250, Microsoft.Maui.Easing? easing = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; RotateToAsync(class Microsoft.Maui.Controls.VisualElement view, float64 rotation, unsigned int32 length, class Microsoft.Maui.Easing easing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ViewExtensions.RotateToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function RotateToAsync (view As VisualElement, rotation As Double, Optional length As UInteger = 250, Optional easing As Easing = Nothing) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="static member RotateToAsync : Microsoft.Maui.Controls.VisualElement * double * uint32 * Microsoft.Maui.Easing -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="Microsoft.Maui.Controls.ViewExtensions.RotateToAsync (view, rotation, length, easing)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.Controls.VisualElement" Index="0" FrameworkAlternate="net-maui-10.0" RefType="this" />
+        <Parameter Name="rotation" Type="System.Double" Index="1" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="length" Type="System.UInt32" Index="2" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="easing" Type="Microsoft.Maui.Easing" Index="3" FrameworkAlternate="net-maui-10.0">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="view">The view on which this method operates.</param>
+        <param name="rotation">The final rotation value.</param>
+        <param name="length">The time, in milliseconds, over which to animate the transition. The default is 250.</param>
+        <param name="easing">The easing function to use for the animation.</param>
+        <summary>
+            Returns a task that rotates the <see cref="T:Microsoft.Maui.Controls.VisualElement" /> that is specified by <paramref name="view" />
+            that is described by the <paramref name="rotation" />, <paramref name="length" />, and <paramref name="easing" /> parameters.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> containing a <see cref="T:System.Boolean" /> value which indicates whether the animation was canceled.
+            <see langword="true" /> indicates that the animation was canceled. <see langword="false" /> indicates that the animation ran to completion.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="view" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="RotateXTo">
@@ -309,6 +552,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Please use RotateXToAsync instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Please use RotateXToAsync instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
@@ -337,6 +586,49 @@
         <returns>A <see cref="T:System.Threading.Tasks.Task" /> containing a <see cref="T:System.Boolean" /> value which indicates whether the animation was canceled. <see langword="true" /> indicates that the animation was canceled. <see langword="false" /> indicates that the animation ran to completion.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="view" /> is <see langword="null" />.</exception>
+        <inheritdoc cref="M:Microsoft.Maui.Controls.ViewExtensions.RotateXToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      </Docs>
+    </Member>
+    <Member MemberName="RotateXToAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; RotateXToAsync (this Microsoft.Maui.Controls.VisualElement view, double rotation, uint length = 250, Microsoft.Maui.Easing? easing = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; RotateXToAsync(class Microsoft.Maui.Controls.VisualElement view, float64 rotation, unsigned int32 length, class Microsoft.Maui.Easing easing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ViewExtensions.RotateXToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function RotateXToAsync (view As VisualElement, rotation As Double, Optional length As UInteger = 250, Optional easing As Easing = Nothing) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="static member RotateXToAsync : Microsoft.Maui.Controls.VisualElement * double * uint32 * Microsoft.Maui.Easing -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="Microsoft.Maui.Controls.ViewExtensions.RotateXToAsync (view, rotation, length, easing)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.Controls.VisualElement" Index="0" FrameworkAlternate="net-maui-10.0" RefType="this" />
+        <Parameter Name="rotation" Type="System.Double" Index="1" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="length" Type="System.UInt32" Index="2" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="easing" Type="Microsoft.Maui.Easing" Index="3" FrameworkAlternate="net-maui-10.0">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="view">The view on which this method operates.</param>
+        <param name="rotation">The final rotation value.</param>
+        <param name="length">The time, in milliseconds, over which to animate the transition. The default is 250.</param>
+        <param name="easing">The easing function to use for the animation.</param>
+        <summary>
+            Returns a task that skews the X axis of the the <see cref="T:Microsoft.Maui.Controls.VisualElement" /> that is specified by <paramref name="view" />
+            by <paramref name="rotation" />, taking time <paramref name="length" /> and using <paramref name="easing" />.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> containing a <see cref="T:System.Boolean" /> value which indicates whether the animation was canceled. 
+            <see langword="true" /> indicates that the animation was canceled. <see langword="false" /> indicates that the animation ran to completion.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="view" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="RotateYTo">
@@ -351,6 +643,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Please use RotateYToAsync instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Please use RotateYToAsync instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
@@ -379,6 +677,49 @@
         <returns>A <see cref="T:System.Threading.Tasks.Task" /> containing a <see cref="T:System.Boolean" /> value which indicates whether the animation was canceled. <see langword="true" /> indicates that the animation was canceled. <see langword="false" /> indicates that the animation ran to completion.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="view" /> is <see langword="null" />.</exception>
+        <inheritdoc cref="M:Microsoft.Maui.Controls.ViewExtensions.RotateYToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      </Docs>
+    </Member>
+    <Member MemberName="RotateYToAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; RotateYToAsync (this Microsoft.Maui.Controls.VisualElement view, double rotation, uint length = 250, Microsoft.Maui.Easing? easing = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; RotateYToAsync(class Microsoft.Maui.Controls.VisualElement view, float64 rotation, unsigned int32 length, class Microsoft.Maui.Easing easing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ViewExtensions.RotateYToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function RotateYToAsync (view As VisualElement, rotation As Double, Optional length As UInteger = 250, Optional easing As Easing = Nothing) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="static member RotateYToAsync : Microsoft.Maui.Controls.VisualElement * double * uint32 * Microsoft.Maui.Easing -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="Microsoft.Maui.Controls.ViewExtensions.RotateYToAsync (view, rotation, length, easing)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.Controls.VisualElement" Index="0" FrameworkAlternate="net-maui-10.0" RefType="this" />
+        <Parameter Name="rotation" Type="System.Double" Index="1" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="length" Type="System.UInt32" Index="2" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="easing" Type="Microsoft.Maui.Easing" Index="3" FrameworkAlternate="net-maui-10.0">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="view">The view on which this method operates.</param>
+        <param name="rotation">The final rotation value.</param>
+        <param name="length">The time, in milliseconds, over which to animate the transition. The default is 250.</param>
+        <param name="easing">The easing function to use for the animation.</param>
+        <summary>
+            Returns a task that skews the Y axis of the the <see cref="T:Microsoft.Maui.Controls.VisualElement" /> that is specified by <paramref name="view" />
+            by <paramref name="rotation" />, taking time <paramref name="length" /> and using <paramref name="easing" />.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> containing a <see cref="T:System.Boolean" /> value which indicates whether the animation was canceled.
+            <see langword="true" /> indicates that the animation was canceled. <see langword="false" /> indicates that the animation ran to completion.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="view" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ScaleTo">
@@ -393,6 +734,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Please use ScaleToAsync instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Please use ScaleToAsync instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
@@ -420,6 +767,48 @@
         <returns>A <see cref="T:System.Threading.Tasks.Task" /> containing a <see cref="T:System.Boolean" /> value which indicates whether the animation was canceled. <see langword="true" /> indicates that the animation was canceled. <see langword="false" /> indicates that the animation ran to completion.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="view" /> is <see langword="null" />.</exception>
+        <inheritdoc cref="M:Microsoft.Maui.Controls.ViewExtensions.ScaleToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleToAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; ScaleToAsync (this Microsoft.Maui.Controls.VisualElement view, double scale, uint length = 250, Microsoft.Maui.Easing? easing = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; ScaleToAsync(class Microsoft.Maui.Controls.VisualElement view, float64 scale, unsigned int32 length, class Microsoft.Maui.Easing easing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ViewExtensions.ScaleToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ScaleToAsync (view As VisualElement, scale As Double, Optional length As UInteger = 250, Optional easing As Easing = Nothing) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="static member ScaleToAsync : Microsoft.Maui.Controls.VisualElement * double * uint32 * Microsoft.Maui.Easing -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="Microsoft.Maui.Controls.ViewExtensions.ScaleToAsync (view, scale, length, easing)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.Controls.VisualElement" Index="0" FrameworkAlternate="net-maui-10.0" RefType="this" />
+        <Parameter Name="scale" Type="System.Double" Index="1" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="length" Type="System.UInt32" Index="2" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="easing" Type="Microsoft.Maui.Easing" Index="3" FrameworkAlternate="net-maui-10.0">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="view">The view on which this method operates.</param>
+        <param name="scale">The final absolute scale.</param>
+        <param name="length">The time, in milliseconds, over which to animate the transition. The default is 250.</param>
+        <param name="easing">The easing function to use for the animation.</param>
+        <summary>
+            Returns a task that scales the <see cref="T:Microsoft.Maui.Controls.VisualElement" /> that is specified by <paramref name="view" /> to the absolute scale factor <paramref name="scale" />.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> containing a <see cref="T:System.Boolean" /> value which indicates whether the animation was canceled.
+            <see langword="true" /> indicates that the animation was canceled. <see langword="false" /> indicates that the animation ran to completion.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="view" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ScaleXTo">
@@ -434,6 +823,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Please use ScaleXToAsync instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Please use ScaleXToAsync instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
@@ -462,6 +857,49 @@
         <returns>A <see cref="T:System.Threading.Tasks.Task" /> containing a <see cref="T:System.Boolean" /> value which indicates whether the animation was canceled. <see langword="true" /> indicates that the animation was canceled. <see langword="false" /> indicates that the animation ran to completion.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="view" /> is <see langword="null" />.</exception>
+        <inheritdoc cref="M:Microsoft.Maui.Controls.ViewExtensions.ScaleXToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleXToAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; ScaleXToAsync (this Microsoft.Maui.Controls.VisualElement view, double scale, uint length = 250, Microsoft.Maui.Easing? easing = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; ScaleXToAsync(class Microsoft.Maui.Controls.VisualElement view, float64 scale, unsigned int32 length, class Microsoft.Maui.Easing easing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ViewExtensions.ScaleXToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ScaleXToAsync (view As VisualElement, scale As Double, Optional length As UInteger = 250, Optional easing As Easing = Nothing) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="static member ScaleXToAsync : Microsoft.Maui.Controls.VisualElement * double * uint32 * Microsoft.Maui.Easing -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="Microsoft.Maui.Controls.ViewExtensions.ScaleXToAsync (view, scale, length, easing)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.Controls.VisualElement" Index="0" FrameworkAlternate="net-maui-10.0" RefType="this" />
+        <Parameter Name="scale" Type="System.Double" Index="1" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="length" Type="System.UInt32" Index="2" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="easing" Type="Microsoft.Maui.Easing" Index="3" FrameworkAlternate="net-maui-10.0">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="view">The view on which this method operates.</param>
+        <param name="scale">The final absolute scale.</param>
+        <param name="length">The time, in milliseconds, over which to animate the transition. The default is 250.</param>
+        <param name="easing">The easing function to use for the animation.</param>
+        <summary>
+            Returns a task that scales the X axis of the the <see cref="T:Microsoft.Maui.Controls.VisualElement" /> that is specified by <paramref name="view" />
+            to the absolute scale factor <paramref name="scale" />.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> containing a <see cref="T:System.Boolean" /> value which indicates whether the animation was canceled.
+            <see langword="true" /> indicates that the animation was canceled. <see langword="false" /> indicates that the animation ran to completion.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="view" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ScaleYTo">
@@ -476,6 +914,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Please use ScaleYToAsync instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Please use ScaleYToAsync instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
@@ -504,6 +948,49 @@
         <returns>A <see cref="T:System.Threading.Tasks.Task" /> containing a <see cref="T:System.Boolean" /> value which indicates whether the animation was canceled. <see langword="true" /> indicates that the animation was canceled. <see langword="false" /> indicates that the animation ran to completion.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="view" /> is <see langword="null" />.</exception>
+        <inheritdoc cref="M:Microsoft.Maui.Controls.ViewExtensions.ScaleYToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleYToAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; ScaleYToAsync (this Microsoft.Maui.Controls.VisualElement view, double scale, uint length = 250, Microsoft.Maui.Easing? easing = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; ScaleYToAsync(class Microsoft.Maui.Controls.VisualElement view, float64 scale, unsigned int32 length, class Microsoft.Maui.Easing easing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ViewExtensions.ScaleYToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ScaleYToAsync (view As VisualElement, scale As Double, Optional length As UInteger = 250, Optional easing As Easing = Nothing) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="static member ScaleYToAsync : Microsoft.Maui.Controls.VisualElement * double * uint32 * Microsoft.Maui.Easing -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="Microsoft.Maui.Controls.ViewExtensions.ScaleYToAsync (view, scale, length, easing)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.Controls.VisualElement" Index="0" FrameworkAlternate="net-maui-10.0" RefType="this" />
+        <Parameter Name="scale" Type="System.Double" Index="1" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="length" Type="System.UInt32" Index="2" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="easing" Type="Microsoft.Maui.Easing" Index="3" FrameworkAlternate="net-maui-10.0">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="view">The view on which this method operates.</param>
+        <param name="scale">The final absolute scale.</param>
+        <param name="length">The time, in milliseconds, over which to animate the transition. The default is 250.</param>
+        <param name="easing">The easing function to use for the animation.</param>
+        <summary>
+            Returns a task that scales the Y axis of the the <see cref="T:Microsoft.Maui.Controls.VisualElement" /> that is specified by <paramref name="view" />
+            to the absolute scale factor <paramref name="scale" />.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> containing a <see cref="T:System.Boolean" /> value which indicates whether the animation was canceled.
+            <see langword="true" /> indicates that the animation was canceled. <see langword="false" /> indicates that the animation ran to completion.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="view" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="TranslateTo">
@@ -518,6 +1005,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Please use TranslateToAsync instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Please use TranslateToAsync instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
@@ -546,6 +1039,51 @@
             from their current values to the new values. This ensures that the input layout is in the same position as the visual layout.
             </summary>
         <returns>A <see cref="T:System.Threading.Tasks.Task" /> containing a <see cref="T:System.Boolean" /> value which indicates whether the animation was canceled. <see langword="true" /> indicates that the animation was canceled. <see langword="false" /> indicates that the animation ran to completion.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="view" /> is <see langword="null" />.</exception>
+        <inheritdoc cref="M:Microsoft.Maui.Controls.ViewExtensions.TranslateToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      </Docs>
+    </Member>
+    <Member MemberName="TranslateToAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; TranslateToAsync (this Microsoft.Maui.Controls.VisualElement view, double x, double y, uint length = 250, Microsoft.Maui.Easing? easing = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; TranslateToAsync(class Microsoft.Maui.Controls.VisualElement view, float64 x, float64 y, unsigned int32 length, class Microsoft.Maui.Easing easing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ViewExtensions.TranslateToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TranslateToAsync (view As VisualElement, x As Double, y As Double, Optional length As UInteger = 250, Optional easing As Easing = Nothing) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="static member TranslateToAsync : Microsoft.Maui.Controls.VisualElement * double * double * uint32 * Microsoft.Maui.Easing -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="Microsoft.Maui.Controls.ViewExtensions.TranslateToAsync (view, x, y, length, easing)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.Controls.VisualElement" Index="0" FrameworkAlternate="net-maui-10.0" RefType="this" />
+        <Parameter Name="x" Type="System.Double" Index="1" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="y" Type="System.Double" Index="2" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="length" Type="System.UInt32" Index="3" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="easing" Type="Microsoft.Maui.Easing" Index="4" FrameworkAlternate="net-maui-10.0">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="view">The view on which this method operates.</param>
+        <param name="x">The x component of the final translation vector.</param>
+        <param name="y">The y component of the final translation vector.</param>
+        <param name="length">The time, in milliseconds, over which to animate the transition. The default is 250.</param>
+        <param name="easing">The easing function to use for the animation.</param>
+        <summary>
+            Animates an elements <see cref="P:Microsoft.Maui.Controls.VisualElement.TranslationX" /> and <see cref="P:Microsoft.Maui.Controls.VisualElement.TranslationY" /> properties
+            from their current values to the new values. This ensures that the input layout is in the same position as the visual layout.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> containing a <see cref="T:System.Boolean" /> value which indicates whether the animation was canceled.
+            <see langword="true" /> indicates that the animation was canceled. <see langword="false" /> indicates that the animation ran to completion.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="view" /> is <see langword="null" />.</exception>
       </Docs>

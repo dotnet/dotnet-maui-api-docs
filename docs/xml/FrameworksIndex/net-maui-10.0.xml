@@ -814,6 +814,7 @@
     <Type Name="Microsoft.Maui.ISearchBar" Id="T:Microsoft.Maui.ISearchBar">
       <Member Id="M:Microsoft.Maui.ISearchBar.SearchButtonPressed" />
       <Member Id="P:Microsoft.Maui.ISearchBar.CancelButtonColor" />
+      <Member Id="P:Microsoft.Maui.ISearchBar.ReturnType" />
       <Member Id="P:Microsoft.Maui.ISearchBar.SearchIconColor" />
     </Type>
     <Type Name="Microsoft.Maui.IShadow" Id="T:Microsoft.Maui.IShadow">
@@ -5409,10 +5410,16 @@
       <Member Id="M:Microsoft.Maui.Controls.Page.#ctor" />
       <Member Id="M:Microsoft.Maui.Controls.Page.DisplayActionSheet(System.String,System.String,System.String,Microsoft.Maui.FlowDirection,System.String[])" />
       <Member Id="M:Microsoft.Maui.Controls.Page.DisplayActionSheet(System.String,System.String,System.String,System.String[])" />
+      <Member Id="M:Microsoft.Maui.Controls.Page.DisplayActionSheetAsync(System.String,System.String,System.String,Microsoft.Maui.FlowDirection,System.String[])" />
+      <Member Id="M:Microsoft.Maui.Controls.Page.DisplayActionSheetAsync(System.String,System.String,System.String,System.String[])" />
       <Member Id="M:Microsoft.Maui.Controls.Page.DisplayAlert(System.String,System.String,System.String)" />
       <Member Id="M:Microsoft.Maui.Controls.Page.DisplayAlert(System.String,System.String,System.String,Microsoft.Maui.FlowDirection)" />
       <Member Id="M:Microsoft.Maui.Controls.Page.DisplayAlert(System.String,System.String,System.String,System.String)" />
       <Member Id="M:Microsoft.Maui.Controls.Page.DisplayAlert(System.String,System.String,System.String,System.String,Microsoft.Maui.FlowDirection)" />
+      <Member Id="M:Microsoft.Maui.Controls.Page.DisplayAlertAsync(System.String,System.String,System.String)" />
+      <Member Id="M:Microsoft.Maui.Controls.Page.DisplayAlertAsync(System.String,System.String,System.String,Microsoft.Maui.FlowDirection)" />
+      <Member Id="M:Microsoft.Maui.Controls.Page.DisplayAlertAsync(System.String,System.String,System.String,System.String)" />
+      <Member Id="M:Microsoft.Maui.Controls.Page.DisplayAlertAsync(System.String,System.String,System.String,System.String,Microsoft.Maui.FlowDirection)" />
       <Member Id="M:Microsoft.Maui.Controls.Page.DisplayPromptAsync(System.String,System.String,System.String,System.String,System.String,System.Int32,Microsoft.Maui.Keyboard,System.String)" />
       <Member Id="M:Microsoft.Maui.Controls.Page.ForceLayout" />
       <Member Id="M:Microsoft.Maui.Controls.Page.GetParentWindow" />
@@ -5963,6 +5970,7 @@
       <Member Id="F:Microsoft.Maui.Controls.SearchBar.IsTextPredictionEnabledProperty" />
       <Member Id="F:Microsoft.Maui.Controls.SearchBar.PlaceholderColorProperty" />
       <Member Id="F:Microsoft.Maui.Controls.SearchBar.PlaceholderProperty" />
+      <Member Id="F:Microsoft.Maui.Controls.SearchBar.ReturnTypeProperty" />
       <Member Id="F:Microsoft.Maui.Controls.SearchBar.SearchCommandParameterProperty" />
       <Member Id="F:Microsoft.Maui.Controls.SearchBar.SearchCommandProperty" />
       <Member Id="F:Microsoft.Maui.Controls.SearchBar.SearchIconColorProperty" />
@@ -5980,6 +5988,7 @@
       <Member Id="P:Microsoft.Maui.Controls.SearchBar.HorizontalTextAlignment" />
       <Member Id="P:Microsoft.Maui.Controls.SearchBar.IsEnabledCore" />
       <Member Id="P:Microsoft.Maui.Controls.SearchBar.Microsoft#Maui#ITextInput#IsTextPredictionEnabled" />
+      <Member Id="P:Microsoft.Maui.Controls.SearchBar.ReturnType" />
       <Member Id="P:Microsoft.Maui.Controls.SearchBar.SearchCommand" />
       <Member Id="P:Microsoft.Maui.Controls.SearchBar.SearchCommandParameter" />
       <Member Id="P:Microsoft.Maui.Controls.SearchBar.SearchIconColor" />
@@ -7238,17 +7247,28 @@
     <Type Name="Microsoft.Maui.Controls.ViewExtensions" Id="T:Microsoft.Maui.Controls.ViewExtensions">
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.CancelAnimations(Microsoft.Maui.Controls.VisualElement)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.FadeTo(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.FadeToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.InvalidateMeasure(Microsoft.Maui.Controls.VisualElement)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.LayoutTo(Microsoft.Maui.Controls.VisualElement,Microsoft.Maui.Graphics.Rect,System.UInt32,Microsoft.Maui.Easing)" />
+      <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.LayoutToAsync(Microsoft.Maui.Controls.VisualElement,Microsoft.Maui.Graphics.Rect,System.UInt32,Microsoft.Maui.Easing)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.RelRotateTo(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.RelRotateToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.RelScaleTo(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.RelScaleToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.RotateTo(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.RotateToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.RotateXTo(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.RotateXToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.RotateYTo(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.RotateYToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.ScaleTo(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.ScaleToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.ScaleXTo(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.ScaleXToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.ScaleYTo(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.ScaleYToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.TranslateTo(Microsoft.Maui.Controls.VisualElement,System.Double,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.TranslateToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
     </Type>
     <Type Name="Microsoft.Maui.Controls.ViewState" Id="T:Microsoft.Maui.Controls.ViewState">
       <Member Id="F:Microsoft.Maui.Controls.ViewState.Default" />
@@ -7339,6 +7359,7 @@
       <Member Id="M:Microsoft.Maui.Controls.VisualElement.OnSizeAllocated(System.Double,System.Double)" />
       <Member Id="M:Microsoft.Maui.Controls.VisualElement.PlatformSizeChanged" />
       <Member Id="M:Microsoft.Maui.Controls.VisualElement.RefreshIsEnabledProperty" />
+      <Member Id="M:Microsoft.Maui.Controls.VisualElement.RefreshIsVisibleProperty" />
       <Member Id="M:Microsoft.Maui.Controls.VisualElement.SizeAllocated(System.Double,System.Double)" />
       <Member Id="M:Microsoft.Maui.Controls.VisualElement.Unfocus" />
       <Member Id="P:Microsoft.Maui.Controls.VisualElement.AnchorX" />
@@ -7365,6 +7386,7 @@
       <Member Id="P:Microsoft.Maui.Controls.VisualElement.IsPlatformEnabled" />
       <Member Id="P:Microsoft.Maui.Controls.VisualElement.IsPlatformStateConsistent" />
       <Member Id="P:Microsoft.Maui.Controls.VisualElement.IsVisible" />
+      <Member Id="P:Microsoft.Maui.Controls.VisualElement.IsVisibleCore" />
       <Member Id="P:Microsoft.Maui.Controls.VisualElement.MaximumHeightRequest" />
       <Member Id="P:Microsoft.Maui.Controls.VisualElement.MaximumWidthRequest" />
       <Member Id="P:Microsoft.Maui.Controls.VisualElement.Microsoft#Maui#Controls#IVisualElementController#EffectiveFlowDirection" />
@@ -8585,9 +8607,9 @@
       <Member Id="P:Microsoft.Maui.Controls.Internals.TemplatedItemsList`2.System#Collections#IList#IsReadOnly" />
       <Member Id="P:Microsoft.Maui.Controls.Internals.TemplatedItemsList`2.System#Collections#IList#Item(System.Int32)" />
     </Type>
-    <Type Name="Microsoft.Maui.Controls.Internals.TextTransformUtilites" Id="T:Microsoft.Maui.Controls.Internals.TextTransformUtilites">
-      <Member Id="M:Microsoft.Maui.Controls.Internals.TextTransformUtilites.GetTransformedText(System.String,Microsoft.Maui.TextTransform)" />
-      <Member Id="M:Microsoft.Maui.Controls.Internals.TextTransformUtilites.SetPlainText(Microsoft.Maui.Controls.InputView,System.String)" />
+    <Type Name="Microsoft.Maui.Controls.Internals.TextTransformUtilities" Id="T:Microsoft.Maui.Controls.Internals.TextTransformUtilities">
+      <Member Id="M:Microsoft.Maui.Controls.Internals.TextTransformUtilities.GetTransformedText(System.String,Microsoft.Maui.TextTransform)" />
+      <Member Id="M:Microsoft.Maui.Controls.Internals.TextTransformUtilities.SetPlainText(Microsoft.Maui.Controls.InputView,System.String)" />
     </Type>
     <Type Name="Microsoft.Maui.Controls.Internals.TypedBinding`2" Id="T:Microsoft.Maui.Controls.Internals.TypedBinding`2">
       <Member Id="M:Microsoft.Maui.Controls.Internals.TypedBinding`2.#ctor(System.Func{`0,System.ValueTuple{`1,System.Boolean}},System.Action{`0,`1},System.Tuple{System.Func{`0,System.Object},System.String}[])" />
@@ -12831,6 +12853,10 @@
       <Member Id="P:Microsoft.Maui.Handlers.ContextFlyoutItemHandlerUpdate.Index" />
       <Member Id="P:Microsoft.Maui.Handlers.ContextFlyoutItemHandlerUpdate.MenuElement" />
     </Type>
+    <Type Name="Microsoft.Maui.Handlers.DataFlowDirection" Id="T:Microsoft.Maui.Handlers.DataFlowDirection">
+      <Member Id="F:Microsoft.Maui.Handlers.DataFlowDirection.FromPlatform" />
+      <Member Id="F:Microsoft.Maui.Handlers.DataFlowDirection.ToPlatform" />
+    </Type>
     <Type Name="Microsoft.Maui.Handlers.DatePickerHandler" Id="T:Microsoft.Maui.Handlers.DatePickerHandler">
       <Member Id="F:Microsoft.Maui.Handlers.DatePickerHandler.CommandMapper" />
       <Member Id="F:Microsoft.Maui.Handlers.DatePickerHandler.Mapper" />
@@ -13521,6 +13547,7 @@
       <Member Id="M:Microsoft.Maui.Handlers.SearchBarHandler.MapMaxLength(Microsoft.Maui.IViewHandler,Microsoft.Maui.ISearchBar)" />
       <Member Id="M:Microsoft.Maui.Handlers.SearchBarHandler.MapPlaceholder(Microsoft.Maui.IViewHandler,Microsoft.Maui.ISearchBar)" />
       <Member Id="M:Microsoft.Maui.Handlers.SearchBarHandler.MapPlaceholderColor(Microsoft.Maui.IViewHandler,Microsoft.Maui.ISearchBar)" />
+      <Member Id="M:Microsoft.Maui.Handlers.SearchBarHandler.MapReturnType(Microsoft.Maui.IViewHandler,Microsoft.Maui.ISearchBar)" />
       <Member Id="M:Microsoft.Maui.Handlers.SearchBarHandler.MapText(Microsoft.Maui.IViewHandler,Microsoft.Maui.ISearchBar)" />
       <Member Id="M:Microsoft.Maui.Handlers.SearchBarHandler.MapTextColor(Microsoft.Maui.IViewHandler,Microsoft.Maui.ISearchBar)" />
       <Member Id="M:Microsoft.Maui.Handlers.SearchBarHandler.MapVerticalTextAlignment(Microsoft.Maui.IViewHandler,Microsoft.Maui.ISearchBar)" />
@@ -13780,6 +13807,7 @@
     <Type Name="Microsoft.Maui.Hosting.AppHostBuilderExtensions" Id="T:Microsoft.Maui.Hosting.AppHostBuilderExtensions">
       <Member Id="M:Microsoft.Maui.Hosting.AppHostBuilderExtensions.ConfigureAnimations(Microsoft.Maui.Hosting.MauiAppBuilder)" />
       <Member Id="M:Microsoft.Maui.Hosting.AppHostBuilderExtensions.ConfigureDispatching(Microsoft.Maui.Hosting.MauiAppBuilder)" />
+      <Member Id="M:Microsoft.Maui.Hosting.AppHostBuilderExtensions.ConfigureEnvironmentVariables(Microsoft.Maui.Hosting.MauiAppBuilder)" />
     </Type>
     <Type Name="Microsoft.Maui.Hosting.EssentialsExtensions" Id="T:Microsoft.Maui.Hosting.EssentialsExtensions">
       <Member Id="M:Microsoft.Maui.Hosting.EssentialsExtensions.AddAppAction(Microsoft.Maui.Hosting.IEssentialsBuilder,System.String,System.String,System.String,System.String)" />
@@ -13843,7 +13871,13 @@
       <Member Id="M:Microsoft.Maui.Hosting.MauiAppBuilder.Build" />
       <Member Id="M:Microsoft.Maui.Hosting.MauiAppBuilder.ConfigureContainer``1(Microsoft.Extensions.DependencyInjection.IServiceProviderFactory{``0},System.Action{``0})" />
       <Member Id="P:Microsoft.Maui.Hosting.MauiAppBuilder.Configuration" />
+      <Member Id="P:Microsoft.Maui.Hosting.MauiAppBuilder.Environment" />
       <Member Id="P:Microsoft.Maui.Hosting.MauiAppBuilder.Logging" />
+      <Member Id="P:Microsoft.Maui.Hosting.MauiAppBuilder.Microsoft#Extensions#Hosting#IHostApplicationBuilder#Configuration" />
+      <Member Id="P:Microsoft.Maui.Hosting.MauiAppBuilder.Microsoft#Extensions#Hosting#IHostApplicationBuilder#Environment" />
+      <Member Id="P:Microsoft.Maui.Hosting.MauiAppBuilder.Microsoft#Extensions#Hosting#IHostApplicationBuilder#Metrics" />
+      <Member Id="P:Microsoft.Maui.Hosting.MauiAppBuilder.Microsoft#Extensions#Hosting#IHostApplicationBuilder#Properties" />
+      <Member Id="P:Microsoft.Maui.Hosting.MauiAppBuilder.Properties" />
       <Member Id="P:Microsoft.Maui.Hosting.MauiAppBuilder.Services" />
     </Type>
     <Type Name="Microsoft.Maui.Hosting.MauiHandlersCollectionExtensions" Id="T:Microsoft.Maui.Hosting.MauiHandlersCollectionExtensions">
@@ -13853,6 +13887,13 @@
       <Member Id="M:Microsoft.Maui.Hosting.MauiHandlersCollectionExtensions.TryAddHandler(Microsoft.Maui.Hosting.IMauiHandlersCollection,System.Type,System.Type)" />
       <Member Id="M:Microsoft.Maui.Hosting.MauiHandlersCollectionExtensions.TryAddHandler``1(Microsoft.Maui.Hosting.IMauiHandlersCollection,System.Func{System.IServiceProvider,Microsoft.Maui.IElementHandler})" />
       <Member Id="M:Microsoft.Maui.Hosting.MauiHandlersCollectionExtensions.TryAddHandler``2(Microsoft.Maui.Hosting.IMauiHandlersCollection)" />
+    </Type>
+    <Type Name="Microsoft.Maui.Hosting.MauiHostEnvironment" Id="T:Microsoft.Maui.Hosting.MauiHostEnvironment">
+      <Member Id="M:Microsoft.Maui.Hosting.MauiHostEnvironment.#ctor" />
+      <Member Id="P:Microsoft.Maui.Hosting.MauiHostEnvironment.ApplicationName" />
+      <Member Id="P:Microsoft.Maui.Hosting.MauiHostEnvironment.ContentRootFileProvider" />
+      <Member Id="P:Microsoft.Maui.Hosting.MauiHostEnvironment.ContentRootPath" />
+      <Member Id="P:Microsoft.Maui.Hosting.MauiHostEnvironment.EnvironmentName" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Maui.HotReload">
