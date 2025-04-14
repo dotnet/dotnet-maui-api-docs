@@ -1442,6 +1442,31 @@
         <remarks>When an element has <see cref="P:Microsoft.Maui.Controls.VisualElement.IsVisible" /> set to <see langword="false" /> it will no longer take up space in layouts or be eligible to receive any kind of input event.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsVisibleCore">
+      <MemberSignature Language="C#" Value="protected bool IsVisibleCore { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsVisibleCore" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.VisualElement.IsVisibleCore" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsVisibleCore As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsVisibleCore { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsVisibleCore : bool" Usage="Microsoft.Maui.Controls.VisualElement.IsVisibleCore" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            This value represents the cumulative IsVisible value.
+            All types that override this property need to also invoke
+            the RefreshIsVisibleProperty() method if the value will change.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IsVisibleProperty">
       <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty IsVisibleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty IsVisibleProperty" />
@@ -2825,6 +2850,30 @@
         <summary>
             This method must always be called if some event occurs and the value of
             the <see cref="P:Microsoft.Maui.Controls.VisualElement.IsEnabledCore" /> property will change.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshIsVisibleProperty">
+      <MemberSignature Language="C#" Value="protected void RefreshIsVisibleProperty ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RefreshIsVisibleProperty() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.VisualElement.RefreshIsVisibleProperty" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RefreshIsVisibleProperty ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RefreshIsVisibleProperty();" />
+      <MemberSignature Language="F#" Value="member this.RefreshIsVisibleProperty : unit -&gt; unit" Usage="visualElement.RefreshIsVisibleProperty " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            This method must always be called if some event occurs and the value of
+            the <see cref="P:Microsoft.Maui.Controls.VisualElement.IsVisibleCore" /> property will change.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
