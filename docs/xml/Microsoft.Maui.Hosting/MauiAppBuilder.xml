@@ -1,10 +1,15 @@
 <Type Name="MauiAppBuilder" FullName="Microsoft.Maui.Hosting.MauiAppBuilder">
-  <TypeSignature Language="C#" Value="public sealed class MauiAppBuilder" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MauiAppBuilder extends System.Object" />
+  <TypeSignature Language="C#" Value="public sealed class MauiAppBuilder : Microsoft.Extensions.Hosting.IHostApplicationBuilder" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MauiAppBuilder extends System.Object implements class Microsoft.Extensions.Hosting.IHostApplicationBuilder" FrameworkAlternate="net-maui-10.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Hosting.MauiAppBuilder" />
-  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MauiAppBuilder" />
-  <TypeSignature Language="C++ CLI" Value="public ref class MauiAppBuilder sealed" />
-  <TypeSignature Language="F#" Value="type MauiAppBuilder = class" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MauiAppBuilder&#xA;Implements IHostApplicationBuilder" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MauiAppBuilder sealed : Microsoft::Extensions::Hosting::IHostApplicationBuilder" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="F#" Value="type MauiAppBuilder = class&#xA;    interface IHostApplicationBuilder" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="C#" Value="public sealed class MauiAppBuilder" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MauiAppBuilder extends System.Object" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MauiAppBuilder" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MauiAppBuilder sealed" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="F#" Value="type MauiAppBuilder = class" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -14,7 +19,11 @@
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
-  <Interfaces />
+  <Interfaces>
+    <Interface FrameworkAlternate="net-maui-10.0">
+      <InterfaceName>Microsoft.Extensions.Hosting.IHostApplicationBuilder</InterfaceName>
+    </Interface>
+  </Interfaces>
   <Attributes>
     <Attribute>
       <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
@@ -79,11 +88,16 @@
     </Member>
     <Member MemberName="ConfigureContainer&lt;TBuilder&gt;">
       <MemberSignature Language="C#" Value="public void ConfigureContainer&lt;TBuilder&gt; (Microsoft.Extensions.DependencyInjection.IServiceProviderFactory&lt;TBuilder&gt; factory, Action&lt;TBuilder&gt;? configure = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ConfigureContainer&lt;TBuilder&gt;(class Microsoft.Extensions.DependencyInjection.IServiceProviderFactory`1&lt;!!TBuilder&gt; factory, class System.Action`1&lt;!!TBuilder&gt; configure) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ConfigureContainer&lt;TBuilder&gt;(class Microsoft.Extensions.DependencyInjection.IServiceProviderFactory`1&lt;!!TBuilder&gt; factory, class System.Action`1&lt;!!TBuilder&gt; configure) cil managed" FrameworkAlternate="net-maui-10.0" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Hosting.MauiAppBuilder.ConfigureContainer``1(Microsoft.Extensions.DependencyInjection.IServiceProviderFactory{``0},System.Action{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub ConfigureContainer(Of TBuilder) (factory As IServiceProviderFactory(Of TBuilder), Optional configure As Action(Of TBuilder) = Nothing)" />
-      <MemberSignature Language="F#" Value="member this.ConfigureContainer : Microsoft.Extensions.DependencyInjection.IServiceProviderFactory&lt;'Builder&gt; * Action&lt;'Builder&gt; -&gt; unit" Usage="mauiAppBuilder.ConfigureContainer (factory, configure)" />
+      <MemberSignature Language="F#" Value="abstract member ConfigureContainer : Microsoft.Extensions.DependencyInjection.IServiceProviderFactory&lt;'Builder&gt; * Action&lt;'Builder&gt; -&gt; unit&#xA;override this.ConfigureContainer : Microsoft.Extensions.DependencyInjection.IServiceProviderFactory&lt;'Builder&gt; * Action&lt;'Builder&gt; -&gt; unit" Usage="mauiAppBuilder.ConfigureContainer (factory, configure)" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ConfigureContainer&lt;TBuilder&gt;(class Microsoft.Extensions.DependencyInjection.IServiceProviderFactory`1&lt;!!TBuilder&gt; factory, class System.Action`1&lt;!!TBuilder&gt; configure) cil managed" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="F#" Value="member this.ConfigureContainer : Microsoft.Extensions.DependencyInjection.IServiceProviderFactory&lt;'Builder&gt; * Action&lt;'Builder&gt; -&gt; unit" Usage="mauiAppBuilder.ConfigureContainer (factory, configure)" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember FrameworkAlternate="net-maui-10.0">M:Microsoft.Extensions.Hosting.IHostApplicationBuilder.ConfigureContainer``1(Microsoft.Extensions.DependencyInjection.IServiceProviderFactory{``0},System.Action{``0})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -128,6 +142,29 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="Environment">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Hosting.MauiHostEnvironment Environment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Hosting.MauiHostEnvironment Environment" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Hosting.MauiAppBuilder.Environment" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Environment As MauiHostEnvironment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Hosting::MauiHostEnvironment ^ Environment { Microsoft::Maui::Hosting::MauiHostEnvironment ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Environment : Microsoft.Maui.Hosting.MauiHostEnvironment" Usage="Microsoft.Maui.Hosting.MauiAppBuilder.Environment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Hosting.MauiHostEnvironment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Information about the environment an application is running in.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Logging">
       <MemberSignature Language="C#" Value="public Microsoft.Extensions.Logging.ILoggingBuilder Logging { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Extensions.Logging.ILoggingBuilder Logging" />
@@ -136,6 +173,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Extensions::Logging::ILoggingBuilder ^ Logging { Microsoft::Extensions::Logging::ILoggingBuilder ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Logging : Microsoft.Extensions.Logging.ILoggingBuilder" Usage="Microsoft.Maui.Hosting.MauiAppBuilder.Logging" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember FrameworkAlternate="net-maui-10.0">P:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Logging</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -152,6 +192,125 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Microsoft.Extensions.Hosting.IHostApplicationBuilder.Configuration">
+      <MemberSignature Language="C#" Value="Microsoft.Extensions.Configuration.IConfigurationManager Microsoft.Extensions.Hosting.IHostApplicationBuilder.Configuration { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Extensions.Configuration.IConfigurationManager Microsoft.Extensions.Hosting.IHostApplicationBuilder.Configuration" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Hosting.MauiAppBuilder.Microsoft#Extensions#Hosting#IHostApplicationBuilder#Configuration" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Configuration As IConfigurationManager Implements IHostApplicationBuilder.Configuration" />
+      <MemberSignature Language="C++ CLI" Value="property Microsoft::Extensions::Configuration::IConfigurationManager ^ Microsoft::Extensions::Hosting::IHostApplicationBuilder::Configuration { Microsoft::Extensions::Configuration::IConfigurationManager ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Extensions.Hosting.IHostApplicationBuilder.Configuration : Microsoft.Extensions.Configuration.IConfigurationManager" Usage="Microsoft.Extensions.Hosting.IHostApplicationBuilder.Configuration" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Configuration</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Extensions.Configuration.IConfigurationManager</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Extensions.Hosting.IHostApplicationBuilder.Environment">
+      <MemberSignature Language="C#" Value="Microsoft.Extensions.Hosting.IHostEnvironment Microsoft.Extensions.Hosting.IHostApplicationBuilder.Environment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Extensions.Hosting.IHostEnvironment Microsoft.Extensions.Hosting.IHostApplicationBuilder.Environment" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Hosting.MauiAppBuilder.Microsoft#Extensions#Hosting#IHostApplicationBuilder#Environment" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Environment As IHostEnvironment Implements IHostApplicationBuilder.Environment" />
+      <MemberSignature Language="C++ CLI" Value="property Microsoft::Extensions::Hosting::IHostEnvironment ^ Microsoft::Extensions::Hosting::IHostApplicationBuilder::Environment { Microsoft::Extensions::Hosting::IHostEnvironment ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Extensions.Hosting.IHostApplicationBuilder.Environment : Microsoft.Extensions.Hosting.IHostEnvironment" Usage="Microsoft.Extensions.Hosting.IHostApplicationBuilder.Environment" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Environment</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Extensions.Hosting.IHostEnvironment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Extensions.Hosting.IHostApplicationBuilder.Metrics">
+      <MemberSignature Language="C#" Value="Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder Microsoft.Extensions.Hosting.IHostApplicationBuilder.Metrics { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder Microsoft.Extensions.Hosting.IHostApplicationBuilder.Metrics" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Hosting.MauiAppBuilder.Microsoft#Extensions#Hosting#IHostApplicationBuilder#Metrics" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Metrics As IMetricsBuilder Implements IHostApplicationBuilder.Metrics" />
+      <MemberSignature Language="C++ CLI" Value="property Microsoft::Extensions::Diagnostics::Metrics::IMetricsBuilder ^ Microsoft::Extensions::Hosting::IHostApplicationBuilder::Metrics { Microsoft::Extensions::Diagnostics::Metrics::IMetricsBuilder ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Extensions.Hosting.IHostApplicationBuilder.Metrics : Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder" Usage="Microsoft.Extensions.Hosting.IHostApplicationBuilder.Metrics" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Metrics</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Extensions.Hosting.IHostApplicationBuilder.Properties">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IDictionary&lt;object,object&gt; Microsoft.Extensions.Hosting.IHostApplicationBuilder.Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;object, object&gt; Microsoft.Extensions.Hosting.IHostApplicationBuilder.Properties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Hosting.MauiAppBuilder.Microsoft#Extensions#Hosting#IHostApplicationBuilder#Properties" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Properties As IDictionary(Of Object, Object) Implements IHostApplicationBuilder.Properties" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::IDictionary&lt;System::Object ^, System::Object ^&gt; ^ Microsoft::Extensions::Hosting::IHostApplicationBuilder::Properties { System::Collections::Generic::IDictionary&lt;System::Object ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Extensions.Hosting.IHostApplicationBuilder.Properties : System.Collections.Generic.IDictionary&lt;obj, obj&gt;" Usage="Microsoft.Extensions.Hosting.IHostApplicationBuilder.Properties" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Properties</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.Object,System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;object,object&gt; Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;object, object&gt; Properties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Hosting.MauiAppBuilder.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As IDictionary(Of Object, Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::Object ^, System::Object ^&gt; ^ Properties { System::Collections::Generic::IDictionary&lt;System::Object ^, System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Collections.Generic.IDictionary&lt;obj, obj&gt;" Usage="Microsoft.Maui.Hosting.MauiAppBuilder.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.Object,System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a central location for sharing state between components during the host building process.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Services">
       <MemberSignature Language="C#" Value="public Microsoft.Extensions.DependencyInjection.IServiceCollection Services { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Extensions.DependencyInjection.IServiceCollection Services" />
@@ -160,6 +319,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Extensions::DependencyInjection::IServiceCollection ^ Services { Microsoft::Extensions::DependencyInjection::IServiceCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Services : Microsoft.Extensions.DependencyInjection.IServiceCollection" Usage="Microsoft.Maui.Hosting.MauiAppBuilder.Services" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember FrameworkAlternate="net-maui-10.0">P:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Services</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>

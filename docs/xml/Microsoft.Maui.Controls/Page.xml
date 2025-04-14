@@ -293,6 +293,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Use DisplayActionSheetAsync instead")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use DisplayActionSheetAsync instead")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
       </ReturnValue>
@@ -317,7 +323,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <inheritdoc cref="M:Microsoft.Maui.Controls.Page.DisplayActionSheet(System.String,System.String,System.String,Microsoft.Maui.FlowDirection,System.String[])" />
+        <inheritdoc cref="M:Microsoft.Maui.Controls.Page.DisplayActionSheetAsync(System.String,System.String,System.String,Microsoft.Maui.FlowDirection,System.String[])" />
       </Docs>
     </Member>
     <Member MemberName="DisplayActionSheet">
@@ -333,6 +339,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Use DisplayActionSheetAsync instead")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use DisplayActionSheetAsync instead")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
       </ReturnValue>
@@ -342,6 +354,88 @@
         <Parameter Name="destruction" Type="System.String" />
         <Parameter Name="flowDirection" Type="Microsoft.Maui.FlowDirection" />
         <Parameter Name="buttons" Type="System.String[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="title">Title of the displayed action sheet. Can be <see langword="null" /> to hide the title.</param>
+        <param name="cancel">Text to be displayed in the 'Cancel' button. Can be null to hide the cancel action.</param>
+        <param name="destruction">Text to be displayed in the 'Destruct' button. Can be <see langword="null" /> to hide the destructive option.</param>
+        <param name="flowDirection">The flow direction to be used by the action sheet.</param>
+        <param name="buttons">Text labels for additional buttons.</param>
+        <summary>
+            Displays a platform action sheet, allowing the application user to choose from several buttons.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> that displays an action sheet and returns the string caption of the button pressed by the user.</returns>
+        <remarks>Developers should be aware that Windows line endings, CR-LF, only work on Windows systems, and are incompatible with iOS and Android. A particular consequence of this is that characters that appear after a CR-LF, (For example, in the title) may not be displayed on non-Windows platforms. Developers must use the correct line endings for each of the targeted systems.</remarks>
+        <inheritdoc cref="M:Microsoft.Maui.Controls.Page.DisplayActionSheetAsync(System.String,System.String,System.String,Microsoft.Maui.FlowDirection,System.String[])" />
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayActionSheetAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; DisplayActionSheetAsync (string title, string cancel, string destruction, params string[] buttons);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;string&gt; DisplayActionSheetAsync(string title, string cancel, string destruction, string[] buttons) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Page.DisplayActionSheetAsync(System.String,System.String,System.String,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function DisplayActionSheetAsync (title As String, cancel As String, destruction As String, ParamArray buttons As String()) As Task(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::String ^&gt; ^ DisplayActionSheetAsync(System::String ^ title, System::String ^ cancel, System::String ^ destruction, ... cli::array &lt;System::String ^&gt; ^ buttons);" />
+      <MemberSignature Language="F#" Value="member this.DisplayActionSheetAsync : string * string * string * string[] -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="page.DisplayActionSheetAsync (title, cancel, destruction, buttons)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="title" Type="System.String" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="cancel" Type="System.String" Index="1" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="destruction" Type="System.String" Index="2" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="buttons" Type="System.String[]" Index="3" FrameworkAlternate="net-maui-10.0">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="title">To be added.</param>
+        <param name="cancel">To be added.</param>
+        <param name="destruction">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc cref="M:Microsoft.Maui.Controls.Page.DisplayActionSheetAsync(System.String,System.String,System.String,Microsoft.Maui.FlowDirection,System.String[])" />
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayActionSheetAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; DisplayActionSheetAsync (string title, string cancel, string destruction, Microsoft.Maui.FlowDirection flowDirection, params string[] buttons);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;string&gt; DisplayActionSheetAsync(string title, string cancel, string destruction, valuetype Microsoft.Maui.FlowDirection flowDirection, string[] buttons) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Page.DisplayActionSheetAsync(System.String,System.String,System.String,Microsoft.Maui.FlowDirection,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function DisplayActionSheetAsync (title As String, cancel As String, destruction As String, flowDirection As FlowDirection, ParamArray buttons As String()) As Task(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::String ^&gt; ^ DisplayActionSheetAsync(System::String ^ title, System::String ^ cancel, System::String ^ destruction, Microsoft::Maui::FlowDirection flowDirection, ... cli::array &lt;System::String ^&gt; ^ buttons);" />
+      <MemberSignature Language="F#" Value="member this.DisplayActionSheetAsync : string * string * string * Microsoft.Maui.FlowDirection * string[] -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="page.DisplayActionSheetAsync (title, cancel, destruction, flowDirection, buttons)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="title" Type="System.String" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="cancel" Type="System.String" Index="1" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="destruction" Type="System.String" Index="2" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="flowDirection" Type="Microsoft.Maui.FlowDirection" Index="3" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="buttons" Type="System.String[]" Index="4" FrameworkAlternate="net-maui-10.0">
           <Attributes>
             <Attribute>
               <AttributeName Language="C#">[System.ParamArray]</AttributeName>
@@ -376,6 +470,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Use DisplayAlertAsync instead")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use DisplayAlertAsync instead")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -391,7 +491,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <inheritdoc cref="M:Microsoft.Maui.Controls.Page.DisplayAlert(System.String,System.String,System.String,System.String,Microsoft.Maui.FlowDirection)" />
+        <inheritdoc cref="M:Microsoft.Maui.Controls.Page.DisplayAlertAsync(System.String,System.String,System.String,System.String,Microsoft.Maui.FlowDirection)" />
       </Docs>
     </Member>
     <Member MemberName="DisplayAlert">
@@ -407,6 +507,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Use DisplayAlertAsync instead")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use DisplayAlertAsync instead")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -424,7 +530,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <inheritdoc cref="M:Microsoft.Maui.Controls.Page.DisplayAlert(System.String,System.String,System.String,System.String,Microsoft.Maui.FlowDirection)" />
+        <inheritdoc cref="M:Microsoft.Maui.Controls.Page.DisplayAlertAsync(System.String,System.String,System.String,System.String,Microsoft.Maui.FlowDirection)" />
       </Docs>
     </Member>
     <Member MemberName="DisplayAlert">
@@ -440,6 +546,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Use DisplayAlertAsync instead")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use DisplayAlertAsync instead")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
@@ -457,7 +569,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <inheritdoc cref="M:Microsoft.Maui.Controls.Page.DisplayAlert(System.String,System.String,System.String,System.String,Microsoft.Maui.FlowDirection)" />
+        <inheritdoc cref="M:Microsoft.Maui.Controls.Page.DisplayAlertAsync(System.String,System.String,System.String,System.String,Microsoft.Maui.FlowDirection)" />
       </Docs>
     </Member>
     <Member MemberName="DisplayAlert">
@@ -473,6 +585,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Use DisplayAlertAsync instead")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use DisplayAlertAsync instead")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
@@ -482,6 +600,137 @@
         <Parameter Name="accept" Type="System.String" />
         <Parameter Name="cancel" Type="System.String" />
         <Parameter Name="flowDirection" Type="Microsoft.Maui.FlowDirection" />
+      </Parameters>
+      <Docs>
+        <param name="title">The title of the alert dialog. Can be <see langword="null" /> to hide the title.</param>
+        <param name="message">The body text of the alert dialog.</param>
+        <param name="accept">Text to be displayed on the 'Accept' button. Can be <see langword="null" /> to hide this button.</param>
+        <param name="cancel">Text to be displayed on the 'Cancel' button.</param>
+        <param name="flowDirection">The flow direction to be used by the alert.</param>
+        <summary>
+            Displays an alert dialog to the application user with a single cancel button.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> that contains the user's choice as a <see cref="T:System.Boolean" /> value. <see langword="true" /> indicates that the user accepted the alert. <see langword="false" /> indicates that the user cancelled the alert.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="cancel" /> is <see langword="null" /> or empty.</exception>
+        <inheritdoc cref="M:Microsoft.Maui.Controls.Page.DisplayAlertAsync(System.String,System.String,System.String,System.String,Microsoft.Maui.FlowDirection)" />
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayAlertAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DisplayAlertAsync (string title, string message, string cancel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task DisplayAlertAsync(string title, string message, string cancel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Page.DisplayAlertAsync(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DisplayAlertAsync (title As String, message As String, cancel As String) As Task" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ DisplayAlertAsync(System::String ^ title, System::String ^ message, System::String ^ cancel);" />
+      <MemberSignature Language="F#" Value="member this.DisplayAlertAsync : string * string * string -&gt; System.Threading.Tasks.Task" Usage="page.DisplayAlertAsync (title, message, cancel)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="title" Type="System.String" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="message" Type="System.String" Index="1" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="cancel" Type="System.String" Index="2" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="title">To be added.</param>
+        <param name="message">To be added.</param>
+        <param name="cancel">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc cref="M:Microsoft.Maui.Controls.Page.DisplayAlertAsync(System.String,System.String,System.String,System.String,Microsoft.Maui.FlowDirection)" />
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayAlertAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DisplayAlertAsync (string title, string message, string cancel, Microsoft.Maui.FlowDirection flowDirection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task DisplayAlertAsync(string title, string message, string cancel, valuetype Microsoft.Maui.FlowDirection flowDirection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Page.DisplayAlertAsync(System.String,System.String,System.String,Microsoft.Maui.FlowDirection)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DisplayAlertAsync (title As String, message As String, cancel As String, flowDirection As FlowDirection) As Task" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ DisplayAlertAsync(System::String ^ title, System::String ^ message, System::String ^ cancel, Microsoft::Maui::FlowDirection flowDirection);" />
+      <MemberSignature Language="F#" Value="member this.DisplayAlertAsync : string * string * string * Microsoft.Maui.FlowDirection -&gt; System.Threading.Tasks.Task" Usage="page.DisplayAlertAsync (title, message, cancel, flowDirection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="title" Type="System.String" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="message" Type="System.String" Index="1" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="cancel" Type="System.String" Index="2" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="flowDirection" Type="Microsoft.Maui.FlowDirection" Index="3" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="title">To be added.</param>
+        <param name="message">To be added.</param>
+        <param name="cancel">To be added.</param>
+        <param name="flowDirection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc cref="M:Microsoft.Maui.Controls.Page.DisplayAlertAsync(System.String,System.String,System.String,System.String,Microsoft.Maui.FlowDirection)" />
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayAlertAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; DisplayAlertAsync (string title, string message, string accept, string cancel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;bool&gt; DisplayAlertAsync(string title, string message, string accept, string cancel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Page.DisplayAlertAsync(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DisplayAlertAsync (title As String, message As String, accept As String, cancel As String) As Task(Of Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;bool&gt; ^ DisplayAlertAsync(System::String ^ title, System::String ^ message, System::String ^ accept, System::String ^ cancel);" />
+      <MemberSignature Language="F#" Value="member this.DisplayAlertAsync : string * string * string * string -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="page.DisplayAlertAsync (title, message, accept, cancel)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="title" Type="System.String" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="message" Type="System.String" Index="1" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="accept" Type="System.String" Index="2" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="cancel" Type="System.String" Index="3" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="title">To be added.</param>
+        <param name="message">To be added.</param>
+        <param name="accept">To be added.</param>
+        <param name="cancel">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc cref="M:Microsoft.Maui.Controls.Page.DisplayAlertAsync(System.String,System.String,System.String,System.String,Microsoft.Maui.FlowDirection)" />
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayAlertAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; DisplayAlertAsync (string title, string message, string accept, string cancel, Microsoft.Maui.FlowDirection flowDirection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;bool&gt; DisplayAlertAsync(string title, string message, string accept, string cancel, valuetype Microsoft.Maui.FlowDirection flowDirection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Page.DisplayAlertAsync(System.String,System.String,System.String,System.String,Microsoft.Maui.FlowDirection)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DisplayAlertAsync (title As String, message As String, accept As String, cancel As String, flowDirection As FlowDirection) As Task(Of Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;bool&gt; ^ DisplayAlertAsync(System::String ^ title, System::String ^ message, System::String ^ accept, System::String ^ cancel, Microsoft::Maui::FlowDirection flowDirection);" />
+      <MemberSignature Language="F#" Value="member this.DisplayAlertAsync : string * string * string * string * Microsoft.Maui.FlowDirection -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="page.DisplayAlertAsync (title, message, accept, cancel, flowDirection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="title" Type="System.String" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="message" Type="System.String" Index="1" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="accept" Type="System.String" Index="2" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="cancel" Type="System.String" Index="3" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="flowDirection" Type="Microsoft.Maui.FlowDirection" Index="4" FrameworkAlternate="net-maui-10.0" />
       </Parameters>
       <Docs>
         <param name="title">The title of the alert dialog. Can be <see langword="null" /> to hide the title.</param>

@@ -41,6 +41,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Storage.IFilePicker</ReturnType>
       </ReturnValue>
@@ -92,11 +98,12 @@
       </Docs>
     </Member>
     <Member MemberName="PickMultipleAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.Storage.FileResult&gt;&gt; PickMultipleAsync (Microsoft.Maui.Storage.PickOptions? options = default);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.Storage.FileResult?&gt;&gt; PickMultipleAsync (Microsoft.Maui.Storage.PickOptions? options = default);" FrameworkAlternate="net-maui-10.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Maui.Storage.FileResult&gt;&gt; PickMultipleAsync(class Microsoft.Maui.Storage.PickOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Storage.FilePicker.PickMultipleAsync(Microsoft.Maui.Storage.PickOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function PickMultipleAsync (Optional options As PickOptions = Nothing) As Task(Of IEnumerable(Of FileResult))" />
       <MemberSignature Language="F#" Value="static member PickMultipleAsync : Microsoft.Maui.Storage.PickOptions -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.Maui.Storage.FileResult&gt;&gt;" Usage="Microsoft.Maui.Storage.FilePicker.PickMultipleAsync options" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.Storage.FileResult&gt;&gt; PickMultipleAsync (Microsoft.Maui.Storage.PickOptions? options = default);" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
@@ -105,11 +112,17 @@
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.Storage.FileResult&gt;&gt;</ReturnType>
+        <Attributes>
+          <Attribute FrameworkAlternate="net-maui-10.0">
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 1, 2 })]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 1, 2 })&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
       </ReturnValue>
       <Parameters>
         <Parameter Name="options" Type="Microsoft.Maui.Storage.PickOptions">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="net-maui-8.0;net-maui-9.0">
               <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
               <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
             </Attribute>
