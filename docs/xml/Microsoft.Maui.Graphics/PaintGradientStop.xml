@@ -20,7 +20,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents a color stop in a gradient paint.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,9 +43,12 @@
         <Parameter Name="source" Type="Microsoft.Maui.Graphics.PaintGradientStop" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="source">The gradient stop to copy.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Graphics.PaintGradientStop" /> class by copying another gradient stop.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="source" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -64,9 +69,11 @@
         <Parameter Name="color" Type="Microsoft.Maui.Graphics.Color" />
       </Parameters>
       <Docs>
-        <param name="offset">To be added.</param>
-        <param name="color">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="offset">The position of the color stop along the gradient, typically between 0.0 and 1.0.</param>
+        <param name="color">The color at this stop position.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Graphics.PaintGradientStop" /> class with the specified offset and color.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,7 +94,9 @@
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the color at this gradient stop.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -115,9 +124,14 @@
         <Parameter Name="obj" Type="Microsoft.Maui.Graphics.PaintGradientStop" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The gradient stop to compare with this instance.</param>
+        <summary>
+            Compares the current gradient stop with another gradient stop based on their offset values.
+            </summary>
+        <returns>
+            A value less than zero if this instance's offset is less than the other instance's offset;
+            zero if they are equal; a value greater than zero if this instance's offset is greater.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,9 +152,13 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the position of this gradient stop along the gradient.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Typically between 0.0 (start of gradient) and 1.0 (end of gradient).
+            </remarks>
       </Docs>
     </Member>
   </Members>

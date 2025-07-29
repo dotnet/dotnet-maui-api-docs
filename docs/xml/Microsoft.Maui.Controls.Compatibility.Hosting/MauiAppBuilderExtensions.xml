@@ -39,6 +39,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("The compatibility functionality is deprecated. This will be removed in the future, please make sure to migrate to handlers. You might already not be using any of the compatibility functionality anymore, in that case please remove this call, and the reference to the Compatibility NuGet package, as it will introduce unnecessary overhead that negatively impacts performance. Learn how to transition off of the Compatibility packages on Microsoft Learn: https://aka.ms/maui/renderer-to-handler")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("The compatibility functionality is deprecated. This will be removed in the future, please make sure to migrate to handlers. You might already not be using any of the compatibility functionality anymore, in that case please remove this call, and the reference to the Compatibility NuGet package, as it will introduce unnecessary overhead that negatively impacts performance. Learn how to transition off of the Compatibility packages on Microsoft Learn: https://aka.ms/maui/renderer-to-handler")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Hosting.MauiAppBuilder</ReturnType>
       </ReturnValue>

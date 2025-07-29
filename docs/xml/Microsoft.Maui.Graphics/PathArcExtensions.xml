@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Provides extension methods for adding SVG-compatible arcs to a <see cref="T:Microsoft.Maui.Graphics.PathF" />.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -88,17 +90,19 @@
         <Parameter Name="lastPointY" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="aTarget">To be added.</param>
-        <param name="rx">To be added.</param>
-        <param name="ry">To be added.</param>
-        <param name="angle">To be added.</param>
-        <param name="largeArcFlag">To be added.</param>
-        <param name="sweepFlag">To be added.</param>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <param name="lastPointX">To be added.</param>
-        <param name="lastPointY">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="aTarget">The path to which the arc segment is added.</param>
+        <param name="rx">The x-radius of the ellipse.</param>
+        <param name="ry">The y-radius of the ellipse.</param>
+        <param name="angle">The rotation angle of the ellipse in degrees.</param>
+        <param name="largeArcFlag">Determines whether the arc should be greater than or less than 180 degrees.</param>
+        <param name="sweepFlag">Determines whether the arc should be swept in a positive or negative angle direction.</param>
+        <param name="x">The x-coordinate of the end point of the arc.</param>
+        <param name="y">The y-coordinate of the end point of the arc.</param>
+        <param name="lastPointX">The x-coordinate of the start point of the arc (the current point in the path).</param>
+        <param name="lastPointY">The y-coordinate of the start point of the arc (the current point in the path).</param>
+        <summary>
+            Adds an SVG arc segment to the path.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1580,6 +1580,34 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetNavBarVisibilityAnimationEnabled">
+      <MemberSignature Language="C#" Value="public static bool GetNavBarVisibilityAnimationEnabled (Microsoft.Maui.Controls.BindableObject obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetNavBarVisibilityAnimationEnabled(class Microsoft.Maui.Controls.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Shell.GetNavBarVisibilityAnimationEnabled(Microsoft.Maui.Controls.BindableObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetNavBarVisibilityAnimationEnabled (obj As BindableObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetNavBarVisibilityAnimationEnabled(Microsoft::Maui::Controls::BindableObject ^ obj);" />
+      <MemberSignature Language="F#" Value="static member GetNavBarVisibilityAnimationEnabled : Microsoft.Maui.Controls.BindableObject -&gt; bool" Usage="Microsoft.Maui.Controls.Shell.GetNavBarVisibilityAnimationEnabled obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Microsoft.Maui.Controls.BindableObject" Index="0" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object that retrieves the animation setting.</param>
+        <summary>
+            Gets a value indicating whether the navigation bar visibility change is animated for the given <paramref name="obj" />.
+            </summary>
+        <returns>
+          <see langword="true" /> if the animation is enabled; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetPresentationMode">
       <MemberSignature Language="C#" Value="public static Microsoft.Maui.Controls.PresentationMode GetPresentationMode (Microsoft.Maui.Controls.BindableObject obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Maui.Controls.PresentationMode GetPresentationMode(class Microsoft.Maui.Controls.BindableObject obj) cil managed" />
@@ -2953,6 +2981,28 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="NavBarVisibilityAnimationEnabledProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty NavBarVisibilityAnimationEnabledProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty NavBarVisibilityAnimationEnabledProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Shell.NavBarVisibilityAnimationEnabledProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NavBarVisibilityAnimationEnabledProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ NavBarVisibilityAnimationEnabledProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable NavBarVisibilityAnimationEnabledProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Shell.NavBarVisibilityAnimationEnabledProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Determines if the navigation bar visibility change should be animated.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Navigated">
       <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Controls.ShellNavigatedEventArgs&gt; Navigated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.ShellNavigatedEventArgs&gt; Navigated" />
@@ -3560,6 +3610,36 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <summary>
             Controls if the navigation bar is visible when the given <paramref name="obj" /> is presented. 
             By default the value of the property is <see langword="true" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetNavBarVisibilityAnimationEnabled">
+      <MemberSignature Language="C#" Value="public static void SetNavBarVisibilityAnimationEnabled (Microsoft.Maui.Controls.BindableObject obj, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetNavBarVisibilityAnimationEnabled(class Microsoft.Maui.Controls.BindableObject obj, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Shell.SetNavBarVisibilityAnimationEnabled(Microsoft.Maui.Controls.BindableObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetNavBarVisibilityAnimationEnabled (obj As BindableObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetNavBarVisibilityAnimationEnabled(Microsoft::Maui::Controls::BindableObject ^ obj, bool value);" />
+      <MemberSignature Language="F#" Value="static member SetNavBarVisibilityAnimationEnabled : Microsoft.Maui.Controls.BindableObject * bool -&gt; unit" Usage="Microsoft.Maui.Controls.Shell.SetNavBarVisibilityAnimationEnabled (obj, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Microsoft.Maui.Controls.BindableObject" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="value" Type="System.Boolean" Index="1" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object that modifies the animation setting.</param>
+        <param name="value">
+          <see langword="true" /> to enable animation; otherwise, <see langword="false" />.</param>
+        <summary>
+            Sets whether the navigation bar visibility change should be animated for the given <paramref name="obj" />.
+            By default, the value of the property is <see langword="true" />.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>

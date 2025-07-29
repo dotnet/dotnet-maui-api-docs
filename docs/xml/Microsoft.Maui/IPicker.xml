@@ -38,6 +38,34 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="IsOpen">
+      <MemberSignature Language="C#" Value="public virtual bool IsOpen { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsOpen" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.IPicker.IsOpen" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property IsOpen As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsOpen { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsOpen : bool with get, set" Usage="Microsoft.Maui.IPicker.IsOpen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether the dropdown is currently open.
+            </summary>
+        <value>
+          <c>true</c> if the dropdown is currently open and visible; otherwise, <c>false</c>.
+            </value>
+        <remarks>
+            Setting this property programmatically will open or close the dropdown.
+            Controls may also update this property when the dropdown is opened or closed through user interaction.
+            </remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Items">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; Items { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; Items" />

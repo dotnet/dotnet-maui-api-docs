@@ -1,10 +1,15 @@
 <Type Name="Entry" FullName="Microsoft.Maui.Controls.Entry">
-  <TypeSignature Language="C#" Value="public class Entry : Microsoft.Maui.Controls.InputView, Microsoft.Maui.Controls.IElementConfiguration&lt;Microsoft.Maui.Controls.Entry&gt;, Microsoft.Maui.Controls.IEntryController, Microsoft.Maui.IEntry" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Entry extends Microsoft.Maui.Controls.InputView implements class Microsoft.Maui.Controls.IElementConfiguration`1&lt;class Microsoft.Maui.Controls.Entry&gt;, class Microsoft.Maui.Controls.IEntryController, class Microsoft.Maui.IElement, class Microsoft.Maui.IEntry, class Microsoft.Maui.IPlaceholder, class Microsoft.Maui.IText, class Microsoft.Maui.ITextAlignment, class Microsoft.Maui.ITextInput, class Microsoft.Maui.ITextStyle, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" />
+  <TypeSignature Language="C#" Value="public class Entry : Microsoft.Maui.Controls.InputView, Microsoft.Maui.Controls.IElementConfiguration&lt;Microsoft.Maui.Controls.Entry&gt;, Microsoft.Maui.Controls.IEntryController, Microsoft.Maui.Controls.ITextAlignmentElement, Microsoft.Maui.IEntry" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Entry extends Microsoft.Maui.Controls.InputView implements class Microsoft.Maui.Controls.IElementConfiguration`1&lt;class Microsoft.Maui.Controls.Entry&gt;, class Microsoft.Maui.Controls.IEntryController, class Microsoft.Maui.Controls.ITextAlignmentElement, class Microsoft.Maui.IElement, class Microsoft.Maui.IEntry, class Microsoft.Maui.IPlaceholder, class Microsoft.Maui.IText, class Microsoft.Maui.ITextAlignment, class Microsoft.Maui.ITextInput, class Microsoft.Maui.ITextStyle, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" FrameworkAlternate="net-maui-10.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Entry" />
-  <TypeSignature Language="VB.NET" Value="Public Class Entry&#xA;Inherits InputView&#xA;Implements IElementConfiguration(Of Entry), IEntry, IEntryController" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Entry : Microsoft::Maui::Controls::InputView, Microsoft::Maui::Controls::IElementConfiguration&lt;Microsoft::Maui::Controls::Entry ^&gt;, Microsoft::Maui::Controls::IEntryController, Microsoft::Maui::IEntry" />
-  <TypeSignature Language="F#" Value="type Entry = class&#xA;    inherit InputView&#xA;    interface IEntryController&#xA;    interface IElementConfiguration&lt;Entry&gt;&#xA;    interface IEntry&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface ITextInput&#xA;    interface IText&#xA;    interface ITextStyle&#xA;    interface IPlaceholder&#xA;    interface ITextAlignment" />
+  <TypeSignature Language="VB.NET" Value="Public Class Entry&#xA;Inherits InputView&#xA;Implements IElementConfiguration(Of Entry), IEntry, IEntryController, ITextAlignmentElement" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Entry : Microsoft::Maui::Controls::InputView, Microsoft::Maui::Controls::IElementConfiguration&lt;Microsoft::Maui::Controls::Entry ^&gt;, Microsoft::Maui::Controls::IEntryController, Microsoft::Maui::Controls::ITextAlignmentElement, Microsoft::Maui::IEntry" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="F#" Value="type Entry = class&#xA;    inherit InputView&#xA;    interface ITextAlignmentElement&#xA;    interface IEntryController&#xA;    interface IElementConfiguration&lt;Entry&gt;&#xA;    interface IEntry&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface ITextInput&#xA;    interface IText&#xA;    interface ITextStyle&#xA;    interface IPlaceholder&#xA;    interface ITextAlignment" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="C#" Value="public class Entry : Microsoft.Maui.Controls.InputView, Microsoft.Maui.Controls.IElementConfiguration&lt;Microsoft.Maui.Controls.Entry&gt;, Microsoft.Maui.Controls.IEntryController, Microsoft.Maui.IEntry" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Entry extends Microsoft.Maui.Controls.InputView implements class Microsoft.Maui.Controls.IElementConfiguration`1&lt;class Microsoft.Maui.Controls.Entry&gt;, class Microsoft.Maui.Controls.IEntryController, class Microsoft.Maui.IElement, class Microsoft.Maui.IEntry, class Microsoft.Maui.IPlaceholder, class Microsoft.Maui.IText, class Microsoft.Maui.ITextAlignment, class Microsoft.Maui.ITextInput, class Microsoft.Maui.ITextStyle, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="VB.NET" Value="Public Class Entry&#xA;Inherits InputView&#xA;Implements IElementConfiguration(Of Entry), IEntry, IEntryController" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Entry : Microsoft::Maui::Controls::InputView, Microsoft::Maui::Controls::IElementConfiguration&lt;Microsoft::Maui::Controls::Entry ^&gt;, Microsoft::Maui::Controls::IEntryController, Microsoft::Maui::IEntry" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="F#" Value="type Entry = class&#xA;    inherit InputView&#xA;    interface IEntryController&#xA;    interface IElementConfiguration&lt;Entry&gt;&#xA;    interface IEntry&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface ITextInput&#xA;    interface IText&#xA;    interface ITextStyle&#xA;    interface IPlaceholder&#xA;    interface ITextAlignment" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -20,6 +25,9 @@
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Maui.Controls.IEntryController</InterfaceName>
+    </Interface>
+    <Interface FrameworkAlternate="net-maui-10.0">
+      <InterfaceName>Microsoft.Maui.Controls.ITextAlignmentElement</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Maui.IElement</InterfaceName>
@@ -494,6 +502,35 @@
       <Docs>
         <param name="handler">To be added.</param>
         <param name="entry">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Controls.ITextAlignmentElement.OnHorizontalTextAlignmentPropertyChanged">
+      <MemberSignature Language="C#" Value="void ITextAlignmentElement.OnHorizontalTextAlignmentPropertyChanged (Microsoft.Maui.TextAlignment oldValue, Microsoft.Maui.TextAlignment newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.Controls.ITextAlignmentElement.OnHorizontalTextAlignmentPropertyChanged(valuetype Microsoft.Maui.TextAlignment oldValue, valuetype Microsoft.Maui.TextAlignment newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Entry.Microsoft#Maui#Controls#ITextAlignmentElement#OnHorizontalTextAlignmentPropertyChanged(Microsoft.Maui.TextAlignment,Microsoft.Maui.TextAlignment)" />
+      <MemberSignature Language="VB.NET" Value="Sub OnHorizontalTextAlignmentPropertyChanged (oldValue As TextAlignment, newValue As TextAlignment) Implements ITextAlignmentElement.OnHorizontalTextAlignmentPropertyChanged" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.Controls.ITextAlignmentElement.OnHorizontalTextAlignmentPropertyChanged(Microsoft::Maui::TextAlignment oldValue, Microsoft::Maui::TextAlignment newValue) = Microsoft::Maui::Controls::ITextAlignmentElement::OnHorizontalTextAlignmentPropertyChanged;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Controls.ITextAlignmentElement.OnHorizontalTextAlignmentPropertyChanged : Microsoft.Maui.TextAlignment * Microsoft.Maui.TextAlignment -&gt; unit&#xA;override this.Microsoft.Maui.Controls.ITextAlignmentElement.OnHorizontalTextAlignmentPropertyChanged : Microsoft.Maui.TextAlignment * Microsoft.Maui.TextAlignment -&gt; unit" Usage="entry.Microsoft.Maui.Controls.ITextAlignmentElement.OnHorizontalTextAlignmentPropertyChanged (oldValue, newValue)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.ITextAlignmentElement.OnHorizontalTextAlignmentPropertyChanged(Microsoft.Maui.TextAlignment,Microsoft.Maui.TextAlignment)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldValue" Type="Microsoft.Maui.TextAlignment" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="newValue" Type="Microsoft.Maui.TextAlignment" Index="1" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>

@@ -23,7 +23,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents a font with a name, weight, and style.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,10 +47,12 @@
         <Parameter Name="styleType" Type="Microsoft.Maui.Graphics.FontStyleType" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="weight">To be added.</param>
-        <param name="styleType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The font name or family.</param>
+        <param name="weight">The font weight (default is Normal).</param>
+        <param name="styleType">The font style type (default is Normal).</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Graphics.Font" /> struct with the specified name, weight, and style.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,7 +73,9 @@
         <ReturnType>Microsoft.Maui.Graphics.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the default font.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,7 +97,9 @@
         <ReturnType>Microsoft.Maui.Graphics.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the default bold font.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,9 +127,12 @@
         <Parameter Name="other" Type="Microsoft.Maui.Graphics.IFont" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The font to compare with the current font.</param>
+        <summary>
+            Determines whether the specified font is equal to the current font.
+            </summary>
+        <returns>
+          <c>true</c> if the specified font is equal to the current font; otherwise, <c>false</c>.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,9 +156,12 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to compare with the current font.</param>
+        <summary>
+            Determines whether the specified object is equal to the current font.
+            </summary>
+        <returns>
+          <c>true</c> if the specified object is equal to the current font; otherwise, <c>false</c>.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,8 +183,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Returns a hash code for this font.
+            </summary>
+        <returns>A hash code for the current font.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,7 +207,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a value indicating whether this font is a default font (has no specified name).
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -219,7 +237,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the font name or family.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -245,10 +265,13 @@
         <Parameter Name="right" Type="Microsoft.Maui.Graphics.Font" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first font to compare.</param>
+        <param name="right">The second font to compare.</param>
+        <summary>
+            Determines whether two specified fonts have the same value.
+            </summary>
+        <returns>
+          <c>true</c> if the value of <paramref name="left" /> is the same as the value of <paramref name="right" />; otherwise, <c>false</c>.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -273,10 +296,13 @@
         <Parameter Name="right" Type="Microsoft.Maui.Graphics.Font" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first font to compare.</param>
+        <param name="right">The second font to compare.</param>
+        <summary>
+            Determines whether two specified fonts have different values.
+            </summary>
+        <returns>
+          <c>true</c> if the value of <paramref name="left" /> is different from the value of <paramref name="right" />; otherwise, <c>false</c>.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -303,7 +329,9 @@
         <ReturnType>Microsoft.Maui.Graphics.FontStyleType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the font style type.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -331,7 +359,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the font weight.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,0 +1,431 @@
+<Type Name="WebViewWebResourceRequestedEventArgs" FullName="Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs">
+  <TypeSignature Language="C#" Value="public class WebViewWebResourceRequestedEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebViewWebResourceRequestedEventArgs extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebViewWebResourceRequestedEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebViewWebResourceRequestedEventArgs" />
+  <TypeSignature Language="F#" Value="type WebViewWebResourceRequestedEventArgs = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Event arguments for the <see cref="E:Microsoft.Maui.Controls.HybridWebView.WebResourceRequested" /> event.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebViewWebResourceRequestedEventArgs (Microsoft.Maui.Controls.PlatformWebViewWebResourceRequestedEventArgs platformArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Maui.Controls.PlatformWebViewWebResourceRequestedEventArgs platformArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs.#ctor(Microsoft.Maui.Controls.PlatformWebViewWebResourceRequestedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (platformArgs As PlatformWebViewWebResourceRequestedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebViewWebResourceRequestedEventArgs(Microsoft::Maui::Controls::PlatformWebViewWebResourceRequestedEventArgs ^ platformArgs);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs : Microsoft.Maui.Controls.PlatformWebViewWebResourceRequestedEventArgs -&gt; Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs" Usage="new Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs platformArgs" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="platformArgs" Type="Microsoft.Maui.Controls.PlatformWebViewWebResourceRequestedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="platformArgs">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebViewWebResourceRequestedEventArgs (Uri uri, string method);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri uri, string method) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs.#ctor(System.Uri,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (uri As Uri, method As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebViewWebResourceRequestedEventArgs(Uri ^ uri, System::String ^ method);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs : Uri * string -&gt; Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs" Usage="new Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs (uri, method)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+        <Parameter Name="method" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="uri">To be added.</param>
+        <param name="method">To be added.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs" /> class
+            with the specified URI and method.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Handled">
+      <MemberSignature Language="C#" Value="public bool Handled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Handled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs.Handled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Handled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Handled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Handled : bool with get, set" Usage="Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs.Handled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether the request has been handled.
+            
+            If set to true, the web view will not process the request further and a response
+            must be provided using the 
+            <see cref="M:Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs.SetResponse(System.Int32,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.IO.Stream)" /> 
+            or <see cref="M:Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs.SetResponse(System.Int32,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.Threading.Tasks.Task{System.IO.Stream})" /> method.
+            If set to false, the web view will continue processing the request as normal.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Headers">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; Headers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; Headers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs.Headers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Headers As IReadOnlyDictionary(Of String, String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IReadOnlyDictionary&lt;System::String ^, System::String ^&gt; ^ Headers { System::Collections::Generic::IReadOnlyDictionary&lt;System::String ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt;" Usage="Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs.Headers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the headers associated with the request.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Method">
+      <MemberSignature Language="C#" Value="public string Method { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Method" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs.Method" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Method As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Method { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Method : string" Usage="Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs.Method" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the HTTP method used for the request (e.g., GET, POST).
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformArgs">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.PlatformWebViewWebResourceRequestedEventArgs? PlatformArgs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.PlatformWebViewWebResourceRequestedEventArgs PlatformArgs" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs.PlatformArgs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PlatformArgs As PlatformWebViewWebResourceRequestedEventArgs" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::PlatformWebViewWebResourceRequestedEventArgs ^ PlatformArgs { Microsoft::Maui::Controls::PlatformWebViewWebResourceRequestedEventArgs ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PlatformArgs : Microsoft.Maui.Controls.PlatformWebViewWebResourceRequestedEventArgs" Usage="Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs.PlatformArgs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.PlatformWebViewWebResourceRequestedEventArgs</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the platform-specific event arguments.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryParameters">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; QueryParameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; QueryParameters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs.QueryParameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueryParameters As IReadOnlyDictionary(Of String, String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IReadOnlyDictionary&lt;System::String ^, System::String ^&gt; ^ QueryParameters { System::Collections::Generic::IReadOnlyDictionary&lt;System::String ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.QueryParameters : System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt;" Usage="Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs.QueryParameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the query parameters from the URI.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetResponse">
+      <MemberSignature Language="C#" Value="public void SetResponse (int code, string reason);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetResponse(int32 code, string reason) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs.SetResponse(System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetResponse (code As Integer, reason As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetResponse(int code, System::String ^ reason);" />
+      <MemberSignature Language="F#" Value="member this.SetResponse : int * string -&gt; unit" Usage="webViewWebResourceRequestedEventArgs.SetResponse (code, reason)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="code" Type="System.Int32" />
+        <Parameter Name="reason" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="code">The HTTP status code for the response.</param>
+        <param name="reason">The reason phrase for the response.</param>
+        <summary>
+            Sets the response for the web resource request with a status code and reason.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetResponse">
+      <MemberSignature Language="C#" Value="public void SetResponse (int code, string reason, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt;? headers, System.IO.Stream? content);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetResponse(int32 code, string reason, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; headers, class System.IO.Stream content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs.SetResponse(System.Int32,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetResponse (code As Integer, reason As String, headers As IReadOnlyDictionary(Of String, String), content As Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetResponse(int code, System::String ^ reason, System::Collections::Generic::IReadOnlyDictionary&lt;System::String ^, System::String ^&gt; ^ headers, System::IO::Stream ^ content);" />
+      <MemberSignature Language="F#" Value="member this.SetResponse : int * string * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; * System.IO.Stream -&gt; unit" Usage="webViewWebResourceRequestedEventArgs.SetResponse (code, reason, headers, content)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="code" Type="System.Int32" />
+        <Parameter Name="reason" Type="System.String" />
+        <Parameter Name="headers" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1, 1 })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1, 1 })&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="content" Type="System.IO.Stream">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="code">The HTTP status code for the response.</param>
+        <param name="reason">The reason phrase for the response.</param>
+        <param name="headers">The headers to include in the response.</param>
+        <param name="content">The content of the response as a stream.</param>
+        <summary>
+            Sets the response for the web resource request. 
+            
+            This method must be called if the <see cref="P:Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs.Handled" /> property is set to true.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetResponse">
+      <MemberSignature Language="C#" Value="public void SetResponse (int code, string reason, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt;? headers, System.Threading.Tasks.Task&lt;System.IO.Stream?&gt; contentTask);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetResponse(int32 code, string reason, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; headers, class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; contentTask) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs.SetResponse(System.Int32,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.Threading.Tasks.Task{System.IO.Stream})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetResponse (code As Integer, reason As String, headers As IReadOnlyDictionary(Of String, String), contentTask As Task(Of Stream))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetResponse(int code, System::String ^ reason, System::Collections::Generic::IReadOnlyDictionary&lt;System::String ^, System::String ^&gt; ^ headers, System::Threading::Tasks::Task&lt;System::IO::Stream ^&gt; ^ contentTask);" />
+      <MemberSignature Language="F#" Value="member this.SetResponse : int * string * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; * System.Threading.Tasks.Task&lt;System.IO.Stream&gt; -&gt; unit" Usage="webViewWebResourceRequestedEventArgs.SetResponse (code, reason, headers, contentTask)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="code" Type="System.Int32" />
+        <Parameter Name="reason" Type="System.String" />
+        <Parameter Name="headers" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1, 1 })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1, 1 })&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="contentTask" Type="System.Threading.Tasks.Task&lt;System.IO.Stream&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 2 })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 2 })&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="code">The HTTP status code for the response.</param>
+        <param name="reason">The reason phrase for the response.</param>
+        <param name="headers">The headers to include in the response.</param>
+        <param name="contentTask">A task that represents the asynchronous operation of getting the response content.</param>
+        <summary>
+            Sets the asynchronous response for the web resource request.
+            
+            This method must be called if the <see cref="P:Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs.Handled" /> property is set to true.
+            </summary>
+        <remarks>
+            This method is not asynchronous and will return immediately. The actual response will be sent when the content task completes.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetResponse">
+      <MemberSignature Language="C#" Value="public void SetResponse (int code, string reason, string contentType, System.IO.Stream? content);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetResponse(int32 code, string reason, string contentType, class System.IO.Stream content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs.SetResponse(System.Int32,System.String,System.String,System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetResponse (code As Integer, reason As String, contentType As String, content As Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetResponse(int code, System::String ^ reason, System::String ^ contentType, System::IO::Stream ^ content);" />
+      <MemberSignature Language="F#" Value="member this.SetResponse : int * string * string * System.IO.Stream -&gt; unit" Usage="webViewWebResourceRequestedEventArgs.SetResponse (code, reason, contentType, content)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="code" Type="System.Int32" />
+        <Parameter Name="reason" Type="System.String" />
+        <Parameter Name="contentType" Type="System.String" />
+        <Parameter Name="content" Type="System.IO.Stream">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="code">The HTTP status code for the response.</param>
+        <param name="reason">The reason phrase for the response.</param>
+        <param name="contentType">The content type of the response.</param>
+        <param name="content">The content of the response as a stream.</param>
+        <summary>
+            Sets the response for the web resource request with a status code, reason, and content type.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetResponse">
+      <MemberSignature Language="C#" Value="public void SetResponse (int code, string reason, string contentType, System.Threading.Tasks.Task&lt;System.IO.Stream?&gt; contentTask);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetResponse(int32 code, string reason, string contentType, class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; contentTask) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs.SetResponse(System.Int32,System.String,System.String,System.Threading.Tasks.Task{System.IO.Stream})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetResponse (code As Integer, reason As String, contentType As String, contentTask As Task(Of Stream))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetResponse(int code, System::String ^ reason, System::String ^ contentType, System::Threading::Tasks::Task&lt;System::IO::Stream ^&gt; ^ contentTask);" />
+      <MemberSignature Language="F#" Value="member this.SetResponse : int * string * string * System.Threading.Tasks.Task&lt;System.IO.Stream&gt; -&gt; unit" Usage="webViewWebResourceRequestedEventArgs.SetResponse (code, reason, contentType, contentTask)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="code" Type="System.Int32" />
+        <Parameter Name="reason" Type="System.String" />
+        <Parameter Name="contentType" Type="System.String" />
+        <Parameter Name="contentTask" Type="System.Threading.Tasks.Task&lt;System.IO.Stream&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 2 })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 2 })&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="code">The HTTP status code for the response.</param>
+        <param name="reason">The reason phrase for the response.</param>
+        <param name="contentType">The content type of the response.</param>
+        <param name="contentTask">A task that represents the asynchronous operation of getting the response content.</param>
+        <summary>
+            Sets the response for the web resource request with a status code, reason, and content type.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Uri">
+      <MemberSignature Language="C#" Value="public Uri Uri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Uri" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs.Uri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Uri As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Uri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Uri : Uri" Usage="Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs.Uri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the URI of the requested resource.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

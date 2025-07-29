@@ -20,8 +20,10 @@
   </TypeParameters>
   <Interfaces />
   <Docs>
-    <typeparam name="TState">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TState">The type of canvas state managed by this service, which must derive from <see cref="T:Microsoft.Maui.Graphics.CanvasState" />.</typeparam>
+    <summary>
+            Defines a service for creating and managing canvas state objects.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,9 +47,11 @@
         <Parameter Name="prototype" Type="TState" />
       </Parameters>
       <Docs>
-        <param name="prototype">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="prototype">The canvas state to copy.</param>
+        <summary>
+            Creates a copy of an existing canvas state.
+            </summary>
+        <returns>A new canvas state instance that is a copy of the prototype.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,9 +75,11 @@
         <Parameter Name="context" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">The platform-specific context for the canvas state.</param>
+        <summary>
+            Creates a new canvas state with the specified context.
+            </summary>
+        <returns>A new canvas state instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

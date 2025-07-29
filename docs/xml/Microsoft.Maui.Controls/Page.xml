@@ -4,7 +4,8 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Page" />
   <TypeSignature Language="VB.NET" Value="Public Class Page&#xA;Inherits VisualElement&#xA;Implements IElementConfiguration(Of Page), ILayout, IPaddingElement, IPageController, ISafeAreaView, ITitledElement, IToolbarElement, IView" />
   <TypeSignature Language="C++ CLI" Value="public ref class Page : Microsoft::Maui::Controls::VisualElement, Microsoft::Maui::Controls::IElementConfiguration&lt;Microsoft::Maui::Controls::Page ^&gt;, Microsoft::Maui::Controls::ILayout, Microsoft::Maui::Controls::IPaddingElement, Microsoft::Maui::Controls::IPageController, Microsoft::Maui::ISafeAreaView, Microsoft::Maui::ITitledElement, Microsoft::Maui::IToolbarElement, Microsoft::Maui::IView" />
-  <TypeSignature Language="F#" Value="type Page = class&#xA;    inherit VisualElement&#xA;    interface ILayout&#xA;    interface IPageController&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IElementConfiguration&lt;Page&gt;&#xA;    interface IPaddingElement&#xA;    interface ISafeAreaView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface ITitledElement&#xA;    interface IToolbarElement" />
+  <TypeSignature Language="F#" Value="type Page = class&#xA;    inherit VisualElement&#xA;    interface ILayout&#xA;    interface IPageController&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IElementConfiguration&lt;Page&gt;&#xA;    interface IPaddingElement&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface ITitledElement&#xA;    interface IToolbarElement&#xA;    interface ISafeAreaView" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="F#" Value="type Page = class&#xA;    inherit VisualElement&#xA;    interface ILayout&#xA;    interface IPageController&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IElementConfiguration&lt;Page&gt;&#xA;    interface IPaddingElement&#xA;    interface ISafeAreaView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface ITitledElement&#xA;    interface IToolbarElement" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -244,6 +245,10 @@
         <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("This property is obsolete and will be removed in a future version. Use Bounds instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This property is obsolete and will be removed in a future version. Use Bounds instead.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -960,6 +965,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Page.IsBusy has been deprecated and will be removed in .NET 11")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Page.IsBusy has been deprecated and will be removed in .NET 11")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -987,6 +998,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Page.IsBusy has been deprecated and will be removed in .NET 11")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Page.IsBusy has been deprecated and will be removed in .NET 11")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
@@ -1011,6 +1028,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Use SizeChanged.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use SizeChanged.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
@@ -1371,7 +1394,6 @@
         <remarks>
           <para>Application developers can override this method to provide behavior when the back button is pressed. 
             When overridden to handle or cancel the navigation yourself, this method should return <see langword="true" />.</para>
-          <para>This only works on Android and UWP for the hardware back button. On iOS, this method will never be called because there is no hardware back button.</para>
         </remarks>
       </Docs>
     </Member>
@@ -1405,7 +1427,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Page.OnChildMeasureInvalidated(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnChildMeasureInvalidated (sender As Object, e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnChildMeasureInvalidated(System::Object ^ sender, EventArgs ^ e);" />
-      <MemberSignature Language="F#" Value="abstract member OnChildMeasureInvalidated : obj * EventArgs -&gt; unit&#xA;override this.OnChildMeasureInvalidated : obj * EventArgs -&gt; unit" Usage="page.OnChildMeasureInvalidated (sender, e)" />
+      <MemberSignature Language="F#" Value="override this.OnChildMeasureInvalidated : obj * EventArgs -&gt; unit" Usage="page.OnChildMeasureInvalidated (sender, e)" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="F#" Value="abstract member OnChildMeasureInvalidated : obj * EventArgs -&gt; unit&#xA;override this.OnChildMeasureInvalidated : obj * EventArgs -&gt; unit" Usage="page.OnChildMeasureInvalidated (sender, e)" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>

@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Extension methods for <see cref="T:Microsoft.Maui.Controls.View" />s, providing animatable scaling, rotation, and layout functions.</summary>
+    <summary>
+            Extension methods for <see cref="T:Microsoft.Maui.IView" />s, providing animatable scaling, rotation, and layout functions.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -101,10 +103,12 @@
         <Parameter Name="context" Type="Microsoft.Maui.IMauiContext" />
       </Parameters>
       <Docs>
-        <param name="view">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="view">The view to get the handler for.</param>
+        <param name="context">The Maui context used to create the handler.</param>
+        <summary>
+            Gets the platform-specific view handler for the specified view.
+            </summary>
+        <returns>The platform-specific view handler.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

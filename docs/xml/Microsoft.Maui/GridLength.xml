@@ -34,11 +34,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Used to define the size (width/height) of Grid ColumnDefinition and RowDefinition.</summary>
+    <summary>
+            Used to define the size (width/height) of Grid ColumnDefinition and RowDefinition.
+            </summary>
     <remarks>
-      <para>GridLength of type GridUnitType.Absolute represents exact size. The ones of type GridUnitType.Auto adapts for fitting the size of the elements in the grid column/row. GridLength of type GridUnitType.Star are used to split the available size in proportional buckets.</para>
-      <para>This valuetype is readonly.</para>
-    </remarks>
+            GridLength of type <see cref="F:Microsoft.Maui.GridUnitType.Absolute" /> represents exact size.
+            GridLength of type <see cref="F:Microsoft.Maui.GridUnitType.Auto" /> adapts to fit content size.
+            GridLength of type <see cref="F:Microsoft.Maui.GridUnitType.Star" /> distributes remaining space proportionally.
+            This value type is readonly.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,9 +62,10 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">The value of the new grid length.</param>
-        <summary>Initializes a new Absolute GridLength.</summary>
-        <remarks>This is striclty equivalent to new GridLength (value, GridUnitType.Absolute).</remarks>
+        <param name="value">The absolute size.</param>
+        <summary>Initializes a new <see cref="T:Microsoft.Maui.GridLength" /> instance that represents an absolute length.</summary>
+        <remarks>Equivalent to new GridLength(value, GridUnitType.Absolute).</remarks>
+        <exception cref="T:System.ArgumentException">Thrown if <paramref name="value" /> is less than zero or not a number.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -81,10 +86,11 @@
         <Parameter Name="type" Type="Microsoft.Maui.GridUnitType" />
       </Parameters>
       <Docs>
-        <param name="value">The size of the GridLength.</param>
-        <param name="type">The GridUnitType (Auto, Star, Absolute) of the GridLength.</param>
-        <summary>Initializes a new GridLength.</summary>
+        <param name="value">The size or weight.</param>
+        <param name="type">The unit type (Absolute, Star, or Auto).</param>
+        <summary>Initializes a new <see cref="T:Microsoft.Maui.GridLength" /> instance with the specified value and unit type.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">Thrown if <paramref name="type" /> is not a valid <see cref="P:Microsoft.Maui.GridLength.GridUnitType" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Auto">
@@ -104,7 +110,7 @@
         <ReturnType>Microsoft.Maui.GridLength</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A ready to reuse GridLength of GridUnitType.Auto.</summary>
+        <summary>A ready-to-use GridLength of <see cref="F:Microsoft.Maui.GridUnitType.Auto" />. Value is ignored.</summary>
         <returns />
         <remarks>Value has no meaning for GridLength of type GridUnitType.Auto.</remarks>
       </Docs>
@@ -129,9 +135,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">A GridLength to compare to.</param>
-        <summary>Test the equality of this GridLength and another one.</summary>
-        <returns>true is the GridLength are equal. False otherwise.</returns>
+        <param name="obj">The object to compare with this GridLength.</param>
+        <summary>Determines whether the specified object is equal to the current GridLength.</summary>
+        <returns>
+          <see langword="true" /> if the specified object is a GridLength equal to this instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,8 +160,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a value that is used for efficient storage of this object in collections.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this GridLength.</summary>
+        <returns>A hash code for the current GridLength.</returns>
         <remarks>Overridden.</remarks>
       </Docs>
     </Member>
@@ -175,7 +182,7 @@
         <ReturnType>Microsoft.Maui.GridUnitType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the GridUnitType of the GridLength</summary>
+        <summary>Gets the unit type that indicates how the GridLength is interpreted.</summary>
         <value>The GridUnitType of the GridLength</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -197,7 +204,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets whether or not the GridUnitType of the GridLength is GridUnitType.Absolute.</summary>
+        <summary>Gets a value indicating whether this GridLength uses Absolute units.</summary>
         <value>true if the GridUnitType of the GridLength is GridUnitType.Absolute</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -219,7 +226,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets whether or not the GridUnitType of the GridLength is GridUnitType.Auto.</summary>
+        <summary>Gets a value indicating whether this GridLength uses Auto sizing.</summary>
         <value>true if the GridUnitType of the GridLength is GridUnitType.Auto</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -241,7 +248,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the GridUnitType of the GridLength is GridUnitType.Star.</summary>
+        <summary>Gets a value indicating whether this GridLength uses Star (proportional) sizing.</summary>
         <value>true if the GridUnitType of the GridLength is GridUnitType.Star</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -267,10 +274,11 @@
         <Parameter Name="right" Type="Microsoft.Maui.GridLength" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first GridLength to compare.</param>
+        <param name="right">The second GridLength to compare.</param>
+        <summary>Indicates whether two GridLength instances are equal.</summary>
+        <returns>
+          <see langword="true" /> if the two GridLengths are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -294,9 +302,9 @@
         <Parameter Name="absoluteValue" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="absoluteValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="absoluteValue">The absolute size.</param>
+        <summary>Converts a double to a GridLength using Absolute units.</summary>
+        <returns>A GridLength instance representing an absolute length.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -321,10 +329,11 @@
         <Parameter Name="right" Type="Microsoft.Maui.GridLength" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first GridLength to compare.</param>
+        <param name="right">The second GridLength to compare.</param>
+        <summary>Indicates whether two GridLength instances are not equal.</summary>
+        <returns>
+          <see langword="true" /> if the two GridLengths differ; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -345,7 +354,7 @@
         <ReturnType>Microsoft.Maui.GridLength</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A ready to reuse GridLength of GridUnitType.Star with a Value of 1.</summary>
+        <summary>A ready-to-use GridLength of <see cref="F:Microsoft.Maui.GridUnitType.Star" />. Distributes available space proportionally.</summary>
         <returns />
         <remarks>If a Value other than 1 is needed with GridUnitType.Star, then use the constructor GridLength (value, GridUnitType.Star).</remarks>
       </Docs>
@@ -368,8 +377,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the value and the grid unit type, separated by a ".".</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a string that represents this GridLength.</summary>
+        <returns>A string representation in the format "{Value}.{GridUnitType}".</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -390,7 +399,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Value of the GridLength.</summary>
+        <summary>Gets the numeric value of the GridLength. Represents an absolute size or weight; ignored for Auto.</summary>
         <value>The value in GridUnitType of the GridLength.</value>
         <remarks>To be added.</remarks>
       </Docs>

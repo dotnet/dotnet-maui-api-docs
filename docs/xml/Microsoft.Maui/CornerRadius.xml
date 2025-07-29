@@ -26,7 +26,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Contains methods and properties for specifying corner radiuses.</summary>
+    <summary>
+            Contains methods and properties for specifying corner radiuses.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,7 +50,9 @@
       </Parameters>
       <Docs>
         <param name="uniformRadius">The radius for all four corners.</param>
-        <summary>Creates a new <see cref="T:Microsoft.Maui.CornerRadius" /> such that all four of its corners have the same radius.</summary>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Maui.CornerRadius" /> such that all four of its corners have the same radius.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,7 +80,9 @@
         <param name="topRight">The radius of the top right corner.</param>
         <param name="bottomLeft">The radius of the bottom left corner.</param>
         <param name="bottomRight">The radius of the bottom right corner.</param>
-        <summary>Creates a new <see cref="T:Microsoft.Maui.CornerRadius" /> such that each of four of its corners have the specified radiuses.</summary>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Maui.CornerRadius" /> such that each of its corners have the specified radiuses.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,8 +109,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the radius of the top left corner.</summary>
-        <value>The radius of the top left corner.</value>
+        <summary>
+            Gets the radius of the bottom left corner.
+            </summary>
+        <value>The radius of the bottom left corner.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,7 +139,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the radius of the bottom right corner.</summary>
+        <summary>
+            Gets the radius of the bottom right corner.
+            </summary>
         <value>The radius of the bottom right corner.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -159,11 +169,13 @@
         <Parameter Name="bottomRight" Type="System.Double" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="topLeft">To be added.</param>
-        <param name="topRight">To be added.</param>
-        <param name="bottomLeft">To be added.</param>
-        <param name="bottomRight">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="topLeft">The radius of the top left corner.</param>
+        <param name="topRight">The radius of the top right corner.</param>
+        <param name="bottomLeft">The radius of the bottom left corner.</param>
+        <param name="bottomRight">The radius of the bottom right corner.</param>
+        <summary>
+            Deconstructs the <see cref="T:Microsoft.Maui.CornerRadius" /> into its component corner values.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,9 +200,11 @@
       </Parameters>
       <Docs>
         <param name="obj">The object against which to compare.</param>
-        <summary>Compares this corner radius to another.</summary>
+        <summary>
+            Compares this corner radius to another object.
+            </summary>
         <returns>
-          <see langword="true" /> if <paramref name="obj" /> has the same effective corner radius values. Otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if <paramref name="obj" /> has the same effective corner radius values; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,7 +226,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the hashcode for the corner radius.</summary>
+        <summary>
+            Gets the hashcode for the corner radius.
+            </summary>
         <returns>The hashcode for the corner radius.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -238,10 +254,13 @@
         <Parameter Name="right" Type="Microsoft.Maui.CornerRadius" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first corner radius to compare.</param>
+        <param name="right">The second corner radius to compare.</param>
+        <summary>
+            Compares two <see cref="T:Microsoft.Maui.CornerRadius" /> values for equality.
+            </summary>
+        <returns>
+          <see langword="true" /> if <paramref name="left" /> and <paramref name="right" /> have the same corner values; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,9 +284,11 @@
         <Parameter Name="uniformRadius" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="uniformRadius">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="uniformRadius">The uniform radius to apply to all corners.</param>
+        <summary>
+            Converts a uniform radius value to a <see cref="T:Microsoft.Maui.CornerRadius" />.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Maui.CornerRadius" /> with all corners set to <paramref name="uniformRadius" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,10 +313,13 @@
         <Parameter Name="right" Type="Microsoft.Maui.CornerRadius" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first corner radius to compare.</param>
+        <param name="right">The second corner radius to compare.</param>
+        <summary>
+            Compares two <see cref="T:Microsoft.Maui.CornerRadius" /> values for inequality.
+            </summary>
+        <returns>
+          <see langword="true" /> if <paramref name="left" /> and <paramref name="right" /> have different corner values; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -322,7 +346,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the radius of the top left corner.</summary>
+        <summary>
+            Gets the radius of the top left corner.
+            </summary>
         <value>The radius of the top left corner.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -350,7 +376,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the radius of the top right corner.</summary>
+        <summary>
+            Gets the radius of the top right corner.
+            </summary>
         <value>The radius of the top right corner.</value>
         <remarks>To be added.</remarks>
       </Docs>

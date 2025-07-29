@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Provides data for changes in the visual tree, such as when a child is added or removed.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -53,11 +55,13 @@
         <Parameter Name="changeType" Type="Microsoft.Maui.VisualTreeChangeType" />
       </Parameters>
       <Docs>
-        <param name="parent">To be added.</param>
-        <param name="child">To be added.</param>
-        <param name="childIndex">To be added.</param>
-        <param name="changeType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parent">The parent visual element, or null for the root.</param>
+        <param name="child">The child visual element involved in the change.</param>
+        <param name="childIndex">The logical index of the child within its parent at the time of change.</param>
+        <param name="changeType">The type of change that occurred.</param>
+        <summary>
+            Initializes a new instance of <see cref="T:Microsoft.Maui.VisualTreeChangeEventArgs" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,11 +82,11 @@
         <ReturnType>Microsoft.Maui.VisualTreeChangeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the type of visual tree change that occurred (Add or Remove).
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui/VisualTreeChangeEventArgs.xml" path="//Member[@MemberName='ChangeType']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="Child">
@@ -102,7 +106,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the child visual element involved in the change.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -124,11 +130,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the logical index of the child within its parent at the time of change.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui/VisualTreeChangeEventArgs.xml" path="//Member[@MemberName='ChildIndex']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -154,7 +160,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the parent visual element involved in the change, or null if this is the root.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

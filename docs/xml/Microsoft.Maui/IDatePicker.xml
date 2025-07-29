@@ -27,18 +27,23 @@
   </Interfaces>
   <Docs>
     <summary>
-            Represents a View that allows the user to select a date.
+            Represents a <see cref="T:Microsoft.Maui.IView" /> that allows the user to select a date.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Date">
-      <MemberSignature Language="C#" Value="public DateTime Date { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime Date" />
+      <MemberSignature Language="C#" Value="public DateTime? Date { get; set; }" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; Date" FrameworkAlternate="net-maui-10.0" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Maui.IDatePicker.Date" />
-      <MemberSignature Language="VB.NET" Value="Public Property Date As DateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Date { DateTime get(); void set(DateTime value); };" />
-      <MemberSignature Language="F#" Value="member this.Date : DateTime with get, set" Usage="Microsoft.Maui.IDatePicker.Date" />
+      <MemberSignature Language="VB.NET" Value="Public Property Date As Nullable(Of DateTime)" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; Date { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="F#" Value="member this.Date : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.Maui.IDatePicker.Date" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="C#" Value="public DateTime Date { get; set; }" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime Date" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="VB.NET" Value="Public Property Date As DateTime" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Date { DateTime get(); void set(DateTime value); };" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="F#" Value="member this.Date : DateTime with get, set" Usage="Microsoft.Maui.IDatePicker.Date" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>
@@ -46,7 +51,8 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.DateTime</ReturnType>
+        <ReturnType FrameworkAlternate="net-maui-10.0">System.Nullable&lt;System.DateTime&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="net-maui-8.0;net-maui-9.0">System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -86,13 +92,46 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsOpen">
+      <MemberSignature Language="C#" Value="public virtual bool IsOpen { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsOpen" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.IDatePicker.IsOpen" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property IsOpen As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsOpen { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsOpen : bool with get, set" Usage="Microsoft.Maui.IDatePicker.IsOpen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether the dropdown is currently open.
+            </summary>
+        <value>
+          <c>true</c> if the dropdown is currently open and visible; otherwise, <c>false</c>.
+            </value>
+        <remarks>
+            Setting this property programmatically will open or close the dropdown.
+            Controls may also update this property when the dropdown is opened or closed through user interaction.
+            </remarks>
+      </Docs>
+    </Member>
     <Member MemberName="MaximumDate">
-      <MemberSignature Language="C#" Value="public DateTime MaximumDate { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime MaximumDate" />
+      <MemberSignature Language="C#" Value="public DateTime? MaximumDate { get; }" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; MaximumDate" FrameworkAlternate="net-maui-10.0" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Maui.IDatePicker.MaximumDate" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaximumDate As DateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime MaximumDate { DateTime get(); };" />
-      <MemberSignature Language="F#" Value="member this.MaximumDate : DateTime" Usage="Microsoft.Maui.IDatePicker.MaximumDate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaximumDate As Nullable(Of DateTime)" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; MaximumDate { Nullable&lt;DateTime&gt; get(); };" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="F#" Value="member this.MaximumDate : Nullable&lt;DateTime&gt;" Usage="Microsoft.Maui.IDatePicker.MaximumDate" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="C#" Value="public DateTime MaximumDate { get; }" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime MaximumDate" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaximumDate As DateTime" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime MaximumDate { DateTime get(); };" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="F#" Value="member this.MaximumDate : DateTime" Usage="Microsoft.Maui.IDatePicker.MaximumDate" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>
@@ -100,23 +139,29 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.DateTime</ReturnType>
+        <ReturnType FrameworkAlternate="net-maui-10.0">System.Nullable&lt;System.DateTime&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="net-maui-8.0;net-maui-9.0">System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets the maximum DateTime selectable.
+            Gets the maximum selectable <see cref="T:System.DateTime" />.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MinimumDate">
-      <MemberSignature Language="C#" Value="public DateTime MinimumDate { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime MinimumDate" />
+      <MemberSignature Language="C#" Value="public DateTime? MinimumDate { get; }" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; MinimumDate" FrameworkAlternate="net-maui-10.0" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Maui.IDatePicker.MinimumDate" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinimumDate As DateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime MinimumDate { DateTime get(); };" />
-      <MemberSignature Language="F#" Value="member this.MinimumDate : DateTime" Usage="Microsoft.Maui.IDatePicker.MinimumDate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinimumDate As Nullable(Of DateTime)" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; MinimumDate { Nullable&lt;DateTime&gt; get(); };" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="F#" Value="member this.MinimumDate : Nullable&lt;DateTime&gt;" Usage="Microsoft.Maui.IDatePicker.MinimumDate" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="C#" Value="public DateTime MinimumDate { get; }" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime MinimumDate" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinimumDate As DateTime" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime MinimumDate { DateTime get(); };" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="F#" Value="member this.MinimumDate : DateTime" Usage="Microsoft.Maui.IDatePicker.MinimumDate" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>
@@ -124,11 +169,12 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.DateTime</ReturnType>
+        <ReturnType FrameworkAlternate="net-maui-10.0">System.Nullable&lt;System.DateTime&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="net-maui-8.0;net-maui-9.0">System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets the minimum DateTime selectable.
+            Gets the minimum selectable <see cref="T:System.DateTime" />.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

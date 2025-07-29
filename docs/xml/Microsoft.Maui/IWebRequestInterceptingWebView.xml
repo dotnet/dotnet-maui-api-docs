@@ -1,0 +1,57 @@
+<Type Name="IWebRequestInterceptingWebView" FullName="Microsoft.Maui.IWebRequestInterceptingWebView">
+  <TypeSignature Language="C#" Value="public interface IWebRequestInterceptingWebView : Microsoft.Maui.IView" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IWebRequestInterceptingWebView implements class Microsoft.Maui.IElement, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.IWebRequestInterceptingWebView" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IWebRequestInterceptingWebView&#xA;Implements IView" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IWebRequestInterceptingWebView : Microsoft::Maui::IView" />
+  <TypeSignature Language="F#" Value="type IWebRequestInterceptingWebView = interface&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IElement</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.ITransform</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IView</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="WebResourceRequested">
+      <MemberSignature Language="C#" Value="public virtual bool WebResourceRequested (Microsoft.Maui.WebResourceRequestedEventArgs args);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool WebResourceRequested(class Microsoft.Maui.WebResourceRequestedEventArgs args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IWebRequestInterceptingWebView.WebResourceRequested(Microsoft.Maui.WebResourceRequestedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WebResourceRequested (args As WebResourceRequestedEventArgs) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool WebResourceRequested(Microsoft::Maui::WebResourceRequestedEventArgs ^ args);" />
+      <MemberSignature Language="F#" Value="abstract member WebResourceRequested : Microsoft.Maui.WebResourceRequestedEventArgs -&gt; bool&#xA;override this.WebResourceRequested : Microsoft.Maui.WebResourceRequestedEventArgs -&gt; bool" Usage="iWebRequestInterceptingWebView.WebResourceRequested args" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="Microsoft.Maui.WebResourceRequestedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="args">The event arguments containing the request details.</param>
+        <summary>
+            Invoked when a web resource is requested. This event can be used to intercept requests and provide custom responses.
+            </summary>
+        <returns>
+          <c>true</c> if the request was handled; otherwise, <c>false</c>.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

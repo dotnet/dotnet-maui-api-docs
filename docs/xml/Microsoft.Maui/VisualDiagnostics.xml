@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Provides APIs for capturing source information, monitoring visual tree changes, and capturing screenshots for XAML and UI diagnostics.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -52,10 +54,12 @@
         <Parameter Name="quality" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="view">To be added.</param>
-        <param name="quality">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="view">The view to capture.</param>
+        <param name="quality">The JPEG quality (0-100).</param>
+        <summary>
+            Captures the given view as a JPEG image asynchronously with specified quality.
+            </summary>
+        <returns>A byte array containing the JPEG image, or null if capture failed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,10 +89,12 @@
         <Parameter Name="quality" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="window">To be added.</param>
-        <param name="quality">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="window">The window to capture.</param>
+        <param name="quality">The JPEG quality (0-100).</param>
+        <summary>
+            Captures the given window as a JPEG image asynchronously with specified quality.
+            </summary>
+        <returns>A byte array containing the JPEG image, or null if capture failed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,9 +124,11 @@
         <Parameter Name="view" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="view">The view to capture.</param>
+        <summary>
+            Captures the given view as a PNG image asynchronously.
+            </summary>
+        <returns>A byte array containing the PNG image, or null if capture failed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,9 +158,11 @@
         <Parameter Name="window" Type="Microsoft.Maui.IWindow" />
       </Parameters>
       <Docs>
-        <param name="window">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="window">The window to capture.</param>
+        <summary>
+            Captures the given window as a PNG image asynchronously.
+            </summary>
+        <returns>A byte array containing the PNG image, or null if capture failed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,9 +198,13 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object whose source information is requested.</param>
+        <summary>
+            Gets the previously registered source information for a specified object.
+            </summary>
+        <returns>
+            A <see cref="T:Microsoft.Maui.SourceInfo" /> instance containing the URI, line number, and position, or <c>null</c> if no information is available.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,9 +229,11 @@
         <Parameter Name="child" Type="Microsoft.Maui.IVisualTreeElement" />
       </Parameters>
       <Docs>
-        <param name="parent">To be added.</param>
-        <param name="child">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parent">The parent visual element.</param>
+        <param name="child">The child visual element that was added.</param>
+        <summary>
+            Called when a child element is added to the visual tree; raises <see cref="E:Microsoft.Maui.VisualDiagnostics.VisualTreeChanged" /> event.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -250,10 +266,12 @@
         <Parameter Name="newLogicalIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="parent">To be added.</param>
-        <param name="child">To be added.</param>
-        <param name="newLogicalIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parent">The parent visual element, or null for root.</param>
+        <param name="child">The child visual element that was added.</param>
+        <param name="newLogicalIndex">The logical index at which the child was inserted.</param>
+        <summary>
+            Called when a child element is added to the visual tree at a specified logical index; raises <see cref="E:Microsoft.Maui.VisualDiagnostics.VisualTreeChanged" /> event.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -279,10 +297,12 @@
         <Parameter Name="oldLogicalIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="parent">To be added.</param>
-        <param name="child">To be added.</param>
-        <param name="oldLogicalIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parent">The parent visual element.</param>
+        <param name="child">The child visual element that was removed.</param>
+        <param name="oldLogicalIndex">The previous logical index of the child.</param>
+        <summary>
+            Called when a child element is removed from the visual tree; raises <see cref="E:Microsoft.Maui.VisualDiagnostics.VisualTreeChanged" /> event.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -315,11 +335,13 @@
         <Parameter Name="linePosition" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="uri">To be added.</param>
-        <param name="lineNumber">To be added.</param>
-        <param name="linePosition">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="target">The object to associate with source information.</param>
+        <param name="uri">The URI of the XAML file where the object was defined.</param>
+        <param name="lineNumber">The line number in the XAML file.</param>
+        <param name="linePosition">The position within the line in the XAML file.</param>
+        <summary>
+            Registers source file information (URI, line number, and position) for the specified target object when XAML diagnostics are enabled.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -346,8 +368,10 @@
         <ReturnType>System.EventHandler&lt;Microsoft.Maui.VisualTreeChangeEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+            Event fired when the visual tree changes (child added or removed).
+            </summary>
+        <remarks>Subscribers receive <see cref="T:Microsoft.Maui.VisualTreeChangeEventArgs" /> with change details.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -20,7 +20,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents the state of a canvas, including transformation and stroke properties.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,7 +40,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Graphics.CanvasState" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,9 +63,12 @@
         <Parameter Name="prototype" Type="Microsoft.Maui.Graphics.CanvasState" />
       </Parameters>
       <Docs>
-        <param name="prototype">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="prototype">The canvas state to copy properties from.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Graphics.CanvasState" /> class with properties from another canvas state.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="prototype" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -85,7 +92,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Releases resources used by the canvas state.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,9 +118,11 @@
         <Parameter Name="matrix" Type="System.Numerics.Matrix3x2" />
       </Parameters>
       <Docs>
-        <param name="matrix">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="matrix">The transformation matrix.</param>
+        <summary>
+            Gets the scale factor for lengths based on the provided transformation matrix.
+            </summary>
+        <returns>A scale factor for lengths.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,7 +143,9 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the uniform scale factor derived from the transformation matrix.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,7 +167,9 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the horizontal scale factor derived from the transformation matrix.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -176,7 +191,9 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the vertical scale factor derived from the transformation matrix.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -198,7 +215,9 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the distance into the dash pattern to start the dash.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -220,7 +239,9 @@
         <ReturnType>System.Single[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the pattern of dashes and gaps used to stroke paths.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -242,7 +263,9 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the width of the stroke used to draw an object's outline.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -264,7 +287,9 @@
         <ReturnType>System.Numerics.Matrix3x2</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the transformation matrix for the canvas.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -287,7 +312,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Called when the transformation matrix changes.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

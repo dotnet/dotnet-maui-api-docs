@@ -1,10 +1,11 @@
 <Type Name="VisualElement" FullName="Microsoft.Maui.Controls.VisualElement">
   <TypeSignature Language="C#" Value="public class VisualElement : Microsoft.Maui.Controls.NavigableElement, Microsoft.Maui.Controls.IAnimatable, Microsoft.Maui.Controls.IVisualElementController, Microsoft.Maui.IView" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VisualElement extends Microsoft.Maui.Controls.NavigableElement implements class Microsoft.Maui.Controls.IAnimatable, class Microsoft.Maui.Controls.IElementController, class Microsoft.Maui.Controls.IVisualElementController, class Microsoft.Maui.IElement, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi VisualElement extends Microsoft.Maui.Controls.NavigableElement implements class Microsoft.Maui.Controls.IAnimatable, class Microsoft.Maui.Controls.IElementController, class Microsoft.Maui.Controls.IVisualElementController, class Microsoft.Maui.IElement, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" FrameworkAlternate="net-maui-10.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.VisualElement" />
   <TypeSignature Language="VB.NET" Value="Public Class VisualElement&#xA;Inherits NavigableElement&#xA;Implements IAnimatable, IView, IVisualElementController" />
   <TypeSignature Language="C++ CLI" Value="public ref class VisualElement : Microsoft::Maui::Controls::NavigableElement, Microsoft::Maui::Controls::IAnimatable, Microsoft::Maui::Controls::IVisualElementController, Microsoft::Maui::IView" />
   <TypeSignature Language="F#" Value="type VisualElement = class&#xA;    inherit NavigableElement&#xA;    interface IAnimatable&#xA;    interface IVisualElementController&#xA;    interface IElementController&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VisualElement extends Microsoft.Maui.Controls.NavigableElement implements class Microsoft.Maui.Controls.IAnimatable, class Microsoft.Maui.Controls.IElementController, class Microsoft.Maui.Controls.IVisualElementController, class Microsoft.Maui.IElement, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -607,6 +608,30 @@
       </ReturnValue>
       <Docs>
         <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.VisualElement.Clip" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ComputeConstraintForView">
+      <MemberSignature Language="C#" Value="protected virtual void ComputeConstraintForView (Microsoft.Maui.Controls.View view);" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ComputeConstraintForView(class Microsoft.Maui.Controls.View view) cil managed" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.VisualElement.ComputeConstraintForView(Microsoft.Maui.Controls.View)" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ComputeConstraintForView (view As View)" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ComputeConstraintForView(Microsoft::Maui::Controls::View ^ view);" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="F#" Value="abstract member ComputeConstraintForView : Microsoft.Maui.Controls.View -&gt; unit&#xA;override this.ComputeConstraintForView : Microsoft.Maui.Controls.View -&gt; unit" Usage="visualElement.ComputeConstraintForView view" FrameworkAlternate="net-maui-10.0" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType FrameworkAlternate="net-maui-10.0">System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.Controls.View" Index="0" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="view">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1442,31 +1467,6 @@
         <remarks>When an element has <see cref="P:Microsoft.Maui.Controls.VisualElement.IsVisible" /> set to <see langword="false" /> it will no longer take up space in layouts or be eligible to receive any kind of input event.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="IsVisibleCore">
-      <MemberSignature Language="C#" Value="protected bool IsVisibleCore { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool IsVisibleCore" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.VisualElement.IsVisibleCore" />
-      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsVisibleCore As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsVisibleCore { bool get(); };" />
-      <MemberSignature Language="F#" Value="member this.IsVisibleCore : bool" Usage="Microsoft.Maui.Controls.VisualElement.IsVisibleCore" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            This value represents the cumulative IsVisible value.
-            All types that override this property need to also invoke
-            the RefreshIsVisibleProperty() method if the value will change.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="IsVisibleProperty">
       <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty IsVisibleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty IsVisibleProperty" />
@@ -1501,6 +1501,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Use ArrangeOverride instead. This method will be removed in a future version.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use ArrangeOverride instead. This method will be removed in a future version.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2850,30 +2856,6 @@
         <summary>
             This method must always be called if some event occurs and the value of
             the <see cref="P:Microsoft.Maui.Controls.VisualElement.IsEnabledCore" /> property will change.
-            </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="RefreshIsVisibleProperty">
-      <MemberSignature Language="C#" Value="protected void RefreshIsVisibleProperty ();" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RefreshIsVisibleProperty() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.VisualElement.RefreshIsVisibleProperty" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub RefreshIsVisibleProperty ()" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RefreshIsVisibleProperty();" />
-      <MemberSignature Language="F#" Value="member this.RefreshIsVisibleProperty : unit -&gt; unit" Usage="visualElement.RefreshIsVisibleProperty " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>
-            This method must always be called if some event occurs and the value of
-            the <see cref="P:Microsoft.Maui.Controls.VisualElement.IsVisibleCore" /> property will change.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>

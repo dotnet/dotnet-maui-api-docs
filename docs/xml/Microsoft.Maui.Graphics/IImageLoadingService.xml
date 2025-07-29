@@ -13,7 +13,9 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Defines a service for loading images from streams.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,11 +39,15 @@
         <Parameter Name="format" Type="Microsoft.Maui.Graphics.ImageFormat" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="format">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="stream">The stream containing the image data.</param>
+        <param name="format">The format of the image data (default is PNG).</param>
+        <summary>
+            Creates an image from the specified stream.
+            </summary>
+        <returns>An <see cref="T:Microsoft.Maui.Graphics.IImage" /> created from the stream.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="stream" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">Thrown when the image data in the stream is invalid or cannot be decoded.</exception>
       </Docs>
     </Member>
   </Members>

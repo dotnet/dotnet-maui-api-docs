@@ -20,7 +20,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents the state of a <see cref="T:Microsoft.Maui.Graphics.Skia.SkiaCanvas" />, maintaining properties like colors, fonts, and transformations.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,7 +40,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Graphics.Skia.SkiaCanvasState" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,8 +63,10 @@
         <Parameter Name="prototype" Type="Microsoft.Maui.Graphics.Skia.SkiaCanvasState" />
       </Parameters>
       <Docs>
-        <param name="prototype">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="prototype">The state to copy from.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Graphics.Skia.SkiaCanvasState" /> class with properties copied from another state.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,9 +174,13 @@
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the fill color.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Setting this property resets any shader that might have been set.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="FillPaint">
@@ -256,7 +266,9 @@
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the font color.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -421,8 +433,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Sets the miter limit for stroked lines with miter joins.
+            </summary>
+        <value>The miter limit value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -759,10 +773,12 @@
         <Parameter Name="strokeSize" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="pattern">To be added.</param>
-        <param name="strokeDashOffset">To be added.</param>
-        <param name="strokeSize">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="pattern">An array of values that specify the lengths of alternating dashes and gaps.</param>
+        <param name="strokeDashOffset">The distance into the dash pattern to start the dash.</param>
+        <param name="strokeSize">The stroke width to scale the pattern by.</param>
+        <summary>
+            Sets the stroke dash pattern.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -783,7 +799,9 @@
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the stroke color.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -805,8 +823,10 @@
         <ReturnType>Microsoft.Maui.Graphics.LineCap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Sets the stroke line cap style.
+            </summary>
+        <value>The line cap style to apply to the ends of stroked lines.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -827,8 +847,10 @@
         <ReturnType>Microsoft.Maui.Graphics.LineJoin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Sets the stroke line join style.
+            </summary>
+        <value>The line join style to apply at the corners of stroked lines.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

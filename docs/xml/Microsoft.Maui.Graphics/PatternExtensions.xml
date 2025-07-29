@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Provides extension methods for the <see cref="T:Microsoft.Maui.Graphics.IPattern" /> interface.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,9 +42,11 @@
         <Parameter Name="target" Type="Microsoft.Maui.Graphics.IPattern" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The pattern to convert.</param>
+        <summary>
+            Converts a pattern to a paint using black as the foreground color.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Maui.Graphics.Paint" /> configured with the pattern and black foreground color, or null if the pattern is null.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,10 +71,12 @@
         <Parameter Name="foregroundColor" Type="Microsoft.Maui.Graphics.Color" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="foregroundColor">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The pattern to convert.</param>
+        <param name="foregroundColor">The foreground color to use for the pattern.</param>
+        <summary>
+            Converts a pattern to a paint using the specified foreground color.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Maui.Graphics.Paint" /> configured with the pattern and specified foreground color, or null if the pattern is null.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

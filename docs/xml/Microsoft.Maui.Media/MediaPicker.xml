@@ -160,6 +160,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Switch to PickPhotosAsync which also allows multiple selections.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Switch to PickPhotosAsync which also allows multiple selections.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Maui.Storage.FileResult&gt;</ReturnType>
         <Attributes>
@@ -178,7 +184,39 @@
             Opens the media browser to select a photo.
             </summary>
         <returns>A <see cref="T:Microsoft.Maui.Storage.FileResult" /> object containing details of the picked photo. When the operation was cancelled by the user, this will return <see langword="null" />.</returns>
+        <remarks>When using <see cref="P:Microsoft.Maui.Media.MediaPickerOptions.SelectionLimit" /> on this overload, it will <b>not</b> have effect.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PickPhotosAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Maui.Storage.FileResult&gt;&gt; PickPhotosAsync (Microsoft.Maui.Media.MediaPickerOptions? options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.Maui.Storage.FileResult&gt;&gt; PickPhotosAsync(class Microsoft.Maui.Media.MediaPickerOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Media.MediaPicker.PickPhotosAsync(Microsoft.Maui.Media.MediaPickerOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PickPhotosAsync (Optional options As MediaPickerOptions = Nothing) As Task(Of List(Of FileResult))" />
+      <MemberSignature Language="F#" Value="static member PickPhotosAsync : Microsoft.Maui.Media.MediaPickerOptions -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Maui.Storage.FileResult&gt;&gt;" Usage="Microsoft.Maui.Media.MediaPicker.PickPhotosAsync options" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Maui.Storage.FileResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="Microsoft.Maui.Media.MediaPickerOptions" Index="0" FrameworkAlternate="net-maui-10.0">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:Microsoft.Maui.Media.IMediaPicker.PickPhotosAsync(Microsoft.Maui.Media.MediaPickerOptions)" />
       </Docs>
     </Member>
     <Member MemberName="PickVideoAsync">
@@ -193,6 +231,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Switch to PickVideosAsync which also allows multiple selections.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Switch to PickVideosAsync which also allows multiple selections.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Maui.Storage.FileResult&gt;</ReturnType>
         <Attributes>
@@ -211,7 +255,39 @@
             Opens the media browser to select a video.
             </summary>
         <returns>A <see cref="T:Microsoft.Maui.Storage.FileResult" /> object containing details of the picked video. When the operation was cancelled by the user, this will return <see langword="null" />.</returns>
+        <remarks>When using <see cref="P:Microsoft.Maui.Media.MediaPickerOptions.SelectionLimit" /> on this overload, it will <b>not</b> have effect.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PickVideosAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Maui.Storage.FileResult&gt;&gt; PickVideosAsync (Microsoft.Maui.Media.MediaPickerOptions? options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.Maui.Storage.FileResult&gt;&gt; PickVideosAsync(class Microsoft.Maui.Media.MediaPickerOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Media.MediaPicker.PickVideosAsync(Microsoft.Maui.Media.MediaPickerOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PickVideosAsync (Optional options As MediaPickerOptions = Nothing) As Task(Of List(Of FileResult))" />
+      <MemberSignature Language="F#" Value="static member PickVideosAsync : Microsoft.Maui.Media.MediaPickerOptions -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Maui.Storage.FileResult&gt;&gt;" Usage="Microsoft.Maui.Media.MediaPicker.PickVideosAsync options" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Maui.Storage.FileResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="Microsoft.Maui.Media.MediaPickerOptions" Index="0" FrameworkAlternate="net-maui-10.0">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:Microsoft.Maui.Media.IMediaPicker.PickVideosAsync(Microsoft.Maui.Media.MediaPickerOptions)" />
       </Docs>
     </Member>
   </Members>

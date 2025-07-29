@@ -172,6 +172,172 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DispatchIfRequired">
+      <MemberSignature Language="C#" Value="public static void DispatchIfRequired (this Microsoft.Maui.Dispatching.IDispatcher dispatcher, Action action);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DispatchIfRequired(class Microsoft.Maui.Dispatching.IDispatcher dispatcher, class System.Action action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Dispatching.DispatcherExtensions.DispatchIfRequired(Microsoft.Maui.Dispatching.IDispatcher,System.Action)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub DispatchIfRequired (dispatcher As IDispatcher, action As Action)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void DispatchIfRequired(Microsoft::Maui::Dispatching::IDispatcher ^ dispatcher, Action ^ action);" />
+      <MemberSignature Language="F#" Value="static member DispatchIfRequired : Microsoft.Maui.Dispatching.IDispatcher * Action -&gt; unit" Usage="Microsoft.Maui.Dispatching.DispatcherExtensions.DispatchIfRequired (dispatcher, action)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dispatcher" Type="Microsoft.Maui.Dispatching.IDispatcher" Index="0" FrameworkAlternate="net-maui-10.0" RefType="this" />
+        <Parameter Name="action" Type="System.Action" Index="1" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="dispatcher">The <see cref="T:Microsoft.Maui.Dispatching.IDispatcher" /> instance this method is called on.</param>
+        <param name="action">The <see cref="T:System.Action" /> to be scheduled for processing on the UI thread.</param>
+        <summary>
+            Schedules the provided action on the UI thread from a worker thread if the current thread is not the UI thread. If the current thread is the UI thread, then the action is executed immediately.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DispatchIfRequiredAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task DispatchIfRequiredAsync (this Microsoft.Maui.Dispatching.IDispatcher dispatcher, Action action);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task DispatchIfRequiredAsync(class Microsoft.Maui.Dispatching.IDispatcher dispatcher, class System.Action action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Dispatching.DispatcherExtensions.DispatchIfRequiredAsync(Microsoft.Maui.Dispatching.IDispatcher,System.Action)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DispatchIfRequiredAsync (dispatcher As IDispatcher, action As Action) As Task" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Threading::Tasks::Task ^ DispatchIfRequiredAsync(Microsoft::Maui::Dispatching::IDispatcher ^ dispatcher, Action ^ action);" />
+      <MemberSignature Language="F#" Value="static member DispatchIfRequiredAsync : Microsoft.Maui.Dispatching.IDispatcher * Action -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Maui.Dispatching.DispatcherExtensions.DispatchIfRequiredAsync (dispatcher, action)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dispatcher" Type="Microsoft.Maui.Dispatching.IDispatcher" Index="0" FrameworkAlternate="net-maui-10.0" RefType="this" />
+        <Parameter Name="action" Type="System.Action" Index="1" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="dispatcher" />
+        <param name="action" />
+        <summary>
+            Checks if a dispatch is required. If a dispatch is required, the provided action will be executed on the UI thread.
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DispatchIfRequiredAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task DispatchIfRequiredAsync (this Microsoft.Maui.Dispatching.IDispatcher dispatcher, Func&lt;System.Threading.Tasks.Task&gt; action);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task DispatchIfRequiredAsync(class Microsoft.Maui.Dispatching.IDispatcher dispatcher, class System.Func`1&lt;class System.Threading.Tasks.Task&gt; action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Dispatching.DispatcherExtensions.DispatchIfRequiredAsync(Microsoft.Maui.Dispatching.IDispatcher,System.Func{System.Threading.Tasks.Task})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DispatchIfRequiredAsync (dispatcher As IDispatcher, action As Func(Of Task)) As Task" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Threading::Tasks::Task ^ DispatchIfRequiredAsync(Microsoft::Maui::Dispatching::IDispatcher ^ dispatcher, Func&lt;System::Threading::Tasks::Task ^&gt; ^ action);" />
+      <MemberSignature Language="F#" Value="static member DispatchIfRequiredAsync : Microsoft.Maui.Dispatching.IDispatcher * Func&lt;System.Threading.Tasks.Task&gt; -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Maui.Dispatching.DispatcherExtensions.DispatchIfRequiredAsync (dispatcher, action)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dispatcher" Type="Microsoft.Maui.Dispatching.IDispatcher" Index="0" FrameworkAlternate="net-maui-10.0" RefType="this" />
+        <Parameter Name="action" Type="System.Func&lt;System.Threading.Tasks.Task&gt;" Index="1" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="dispatcher" />
+        <param name="action" />
+        <summary>
+            Checks if a dispatch is required. If a dispatch is required, the provided function will be executed on the UI thread.
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DispatchIfRequiredAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;T&gt; DispatchIfRequiredAsync&lt;T&gt; (this Microsoft.Maui.Dispatching.IDispatcher dispatcher, Func&lt;System.Threading.Tasks.Task&lt;T&gt;&gt; funcTask);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;!!T&gt; DispatchIfRequiredAsync&lt;T&gt;(class Microsoft.Maui.Dispatching.IDispatcher dispatcher, class System.Func`1&lt;class System.Threading.Tasks.Task`1&lt;!!T&gt;&gt; funcTask) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Dispatching.DispatcherExtensions.DispatchIfRequiredAsync``1(Microsoft.Maui.Dispatching.IDispatcher,System.Func{System.Threading.Tasks.Task{``0}})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DispatchIfRequiredAsync(Of T) (dispatcher As IDispatcher, funcTask As Func(Of Task(Of T))) As Task(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Threading::Tasks::Task&lt;T&gt; ^ DispatchIfRequiredAsync(Microsoft::Maui::Dispatching::IDispatcher ^ dispatcher, Func&lt;System::Threading::Tasks::Task&lt;T&gt; ^&gt; ^ funcTask);" />
+      <MemberSignature Language="F#" Value="static member DispatchIfRequiredAsync : Microsoft.Maui.Dispatching.IDispatcher * Func&lt;System.Threading.Tasks.Task&lt;'T&gt;&gt; -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="Microsoft.Maui.Dispatching.DispatcherExtensions.DispatchIfRequiredAsync (dispatcher, funcTask)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="dispatcher" Type="Microsoft.Maui.Dispatching.IDispatcher" Index="0" FrameworkAlternate="net-maui-10.0" RefType="this" />
+        <Parameter Name="funcTask" Type="System.Func&lt;System.Threading.Tasks.Task&lt;T&gt;&gt;" Index="1" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type returned from the function.</typeparam>
+        <param name="dispatcher">The <see cref="T:Microsoft.Maui.Dispatching.IDispatcher" /> instance this method is called on.</param>
+        <param name="funcTask">The function to be executed by the dispatcher.</param>
+        <summary>
+            Checks if a dispatch is required. If a dispatch is required, the provided function will be executed on the UI thread.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> object containing the result of the function.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DispatchIfRequiredAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;T&gt; DispatchIfRequiredAsync&lt;T&gt; (this Microsoft.Maui.Dispatching.IDispatcher dispatcher, Func&lt;T&gt; func);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;!!T&gt; DispatchIfRequiredAsync&lt;T&gt;(class Microsoft.Maui.Dispatching.IDispatcher dispatcher, class System.Func`1&lt;!!T&gt; func) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Dispatching.DispatcherExtensions.DispatchIfRequiredAsync``1(Microsoft.Maui.Dispatching.IDispatcher,System.Func{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DispatchIfRequiredAsync(Of T) (dispatcher As IDispatcher, func As Func(Of T)) As Task(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Threading::Tasks::Task&lt;T&gt; ^ DispatchIfRequiredAsync(Microsoft::Maui::Dispatching::IDispatcher ^ dispatcher, Func&lt;T&gt; ^ func);" />
+      <MemberSignature Language="F#" Value="static member DispatchIfRequiredAsync : Microsoft.Maui.Dispatching.IDispatcher * Func&lt;'T&gt; -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="Microsoft.Maui.Dispatching.DispatcherExtensions.DispatchIfRequiredAsync (dispatcher, func)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="dispatcher" Type="Microsoft.Maui.Dispatching.IDispatcher" Index="0" FrameworkAlternate="net-maui-10.0" RefType="this" />
+        <Parameter Name="func" Type="System.Func&lt;T&gt;" Index="1" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type returned from the function.</typeparam>
+        <param name="dispatcher">The <see cref="T:Microsoft.Maui.Dispatching.IDispatcher" /> instance this method is called on.</param>
+        <param name="func">The function to be executed by the dispatcher.</param>
+        <summary>
+            Checks if a dispatch is required. If a dispatch is required, the provided function will be executed on the UI thread.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> object containing the result of the function.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetSynchronizationContextAsync">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Threading.SynchronizationContext&gt; GetSynchronizationContextAsync (this Microsoft.Maui.Dispatching.IDispatcher dispatcher);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Threading.SynchronizationContext&gt; GetSynchronizationContextAsync(class Microsoft.Maui.Dispatching.IDispatcher dispatcher) cil managed" />

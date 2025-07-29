@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents a linear gradient paint that transitions colors along a line defined by start and end points.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,7 +36,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Graphics.LinearGradientPaint" /> class with default start point (0,0) and end point (1,1).
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,8 +59,10 @@
         <Parameter Name="gradientPaint" Type="Microsoft.Maui.Graphics.GradientPaint" />
       </Parameters>
       <Docs>
-        <param name="gradientPaint">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="gradientPaint">The gradient paint to copy properties from.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Graphics.LinearGradientPaint" /> class with properties from another gradient paint.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,9 +83,12 @@
         <Parameter Name="gradientStops" Type="Microsoft.Maui.Graphics.PaintGradientStop[]" />
       </Parameters>
       <Docs>
-        <param name="gradientStops">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="gradientStops">The array of gradient stops that define color transitions.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Graphics.LinearGradientPaint" /> class with the specified gradient stops.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="gradientStops" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -100,9 +109,11 @@
         <Parameter Name="endPoint" Type="Microsoft.Maui.Graphics.Point" />
       </Parameters>
       <Docs>
-        <param name="startPoint">To be added.</param>
-        <param name="endPoint">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="startPoint">The start point of the gradient.</param>
+        <param name="endPoint">The end point of the gradient.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Graphics.LinearGradientPaint" /> class with the specified start and end points.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,11 +136,14 @@
         <Parameter Name="endPoint" Type="Microsoft.Maui.Graphics.Point" />
       </Parameters>
       <Docs>
-        <param name="gradientStops">To be added.</param>
-        <param name="startPoint">To be added.</param>
-        <param name="endPoint">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="gradientStops">The array of gradient stops that define color transitions.</param>
+        <param name="startPoint">The start point of the gradient.</param>
+        <param name="endPoint">The end point of the gradient.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Graphics.LinearGradientPaint" /> class with the specified gradient stops, start point, and end point.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="gradientStops" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="EndPoint">
@@ -149,9 +163,13 @@
         <ReturnType>Microsoft.Maui.Graphics.Point</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the end point of the gradient.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            The end point is typically expressed in relative coordinates from (0,0) to (1,1).
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="StartPoint">
@@ -171,9 +189,13 @@
         <ReturnType>Microsoft.Maui.Graphics.Point</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the start point of the gradient.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            The start point is typically expressed in relative coordinates from (0,0) to (1,1).
+            </remarks>
       </Docs>
     </Member>
   </Members>

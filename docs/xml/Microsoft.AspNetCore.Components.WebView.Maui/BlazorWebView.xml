@@ -1,10 +1,15 @@
 <Type Name="BlazorWebView" FullName="Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView">
-  <TypeSignature Language="C#" Value="public class BlazorWebView : Microsoft.Maui.Controls.View, Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BlazorWebView extends Microsoft.Maui.Controls.View implements class Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView, class Microsoft.Maui.IElement, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" />
+  <TypeSignature Language="C#" Value="public class BlazorWebView : Microsoft.Maui.Controls.View, Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView, Microsoft.Maui.IWebRequestInterceptingWebView" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BlazorWebView extends Microsoft.Maui.Controls.View implements class Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView, class Microsoft.Maui.IElement, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView, class Microsoft.Maui.IWebRequestInterceptingWebView" FrameworkAlternate="net-maui-10.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView" />
-  <TypeSignature Language="VB.NET" Value="Public Class BlazorWebView&#xA;Inherits View&#xA;Implements IBlazorWebView" />
-  <TypeSignature Language="C++ CLI" Value="public ref class BlazorWebView : Microsoft::Maui::Controls::View, Microsoft::AspNetCore::Components::WebView::Maui::IBlazorWebView" />
-  <TypeSignature Language="F#" Value="type BlazorWebView = class&#xA;    inherit View&#xA;    interface IBlazorWebView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform" />
+  <TypeSignature Language="VB.NET" Value="Public Class BlazorWebView&#xA;Inherits View&#xA;Implements IBlazorWebView, IWebRequestInterceptingWebView" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BlazorWebView : Microsoft::Maui::Controls::View, Microsoft::AspNetCore::Components::WebView::Maui::IBlazorWebView, Microsoft::Maui::IWebRequestInterceptingWebView" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="F#" Value="type BlazorWebView = class&#xA;    inherit View&#xA;    interface IBlazorWebView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IWebRequestInterceptingWebView" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="C#" Value="public class BlazorWebView : Microsoft.Maui.Controls.View, Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BlazorWebView extends Microsoft.Maui.Controls.View implements class Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView, class Microsoft.Maui.IElement, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="VB.NET" Value="Public Class BlazorWebView&#xA;Inherits View&#xA;Implements IBlazorWebView" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BlazorWebView : Microsoft::Maui::Controls::View, Microsoft::AspNetCore::Components::WebView::Maui::IBlazorWebView" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="F#" Value="type BlazorWebView = class&#xA;    inherit View&#xA;    interface IBlazorWebView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.AspNetCore.Components.WebView.Maui</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -26,6 +31,9 @@
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Maui.IView</InterfaceName>
+    </Interface>
+    <Interface FrameworkAlternate="net-maui-10.0">
+      <InterfaceName>Microsoft.Maui.IWebRequestInterceptingWebView</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
@@ -292,6 +300,35 @@
         <inheritdoc />
       </Docs>
     </Member>
+    <Member MemberName="Microsoft.Maui.IWebRequestInterceptingWebView.WebResourceRequested">
+      <MemberSignature Language="C#" Value="bool IWebRequestInterceptingWebView.WebResourceRequested (Microsoft.Maui.WebResourceRequestedEventArgs args);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Maui.IWebRequestInterceptingWebView.WebResourceRequested(class Microsoft.Maui.WebResourceRequestedEventArgs args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView.Microsoft#Maui#IWebRequestInterceptingWebView#WebResourceRequested(Microsoft.Maui.WebResourceRequestedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Function WebResourceRequested (args As WebResourceRequestedEventArgs) As Boolean Implements IWebRequestInterceptingWebView.WebResourceRequested" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool Microsoft.Maui.IWebRequestInterceptingWebView.WebResourceRequested(Microsoft::Maui::WebResourceRequestedEventArgs ^ args) = Microsoft::Maui::IWebRequestInterceptingWebView::WebResourceRequested;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.IWebRequestInterceptingWebView.WebResourceRequested : Microsoft.Maui.WebResourceRequestedEventArgs -&gt; bool&#xA;override this.Microsoft.Maui.IWebRequestInterceptingWebView.WebResourceRequested : Microsoft.Maui.WebResourceRequestedEventArgs -&gt; bool" Usage="blazorWebView.Microsoft.Maui.IWebRequestInterceptingWebView.WebResourceRequested args" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.IWebRequestInterceptingWebView.WebResourceRequested(Microsoft.Maui.WebResourceRequestedEventArgs)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.AspNetCore.Components.WebView.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="Microsoft.Maui.WebResourceRequestedEventArgs" Index="0" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
     <Member MemberName="RootComponents">
       <MemberSignature Language="C#" Value="public Microsoft.AspNetCore.Components.WebView.Maui.RootComponentsCollection RootComponents { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.AspNetCore.Components.WebView.Maui.RootComponentsCollection RootComponents" />
@@ -423,6 +460,41 @@
         <summary>
             Allows customizing how links are opened.
             By default, opens internal links in the webview and external links in an external app.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebResourceRequested">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs&gt;? WebResourceRequested;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs&gt; WebResourceRequested" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView.WebResourceRequested" />
+      <MemberSignature Language="VB.NET" Value="Public Event WebResourceRequested As EventHandler(Of WebViewWebResourceRequestedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Controls::WebViewWebResourceRequestedEventArgs ^&gt; ^ WebResourceRequested;" />
+      <MemberSignature Language="F#" Value="member this.WebResourceRequested : EventHandler&lt;Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs&gt; " Usage="member this.WebResourceRequested : System.EventHandler&lt;Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.AspNetCore.Components.WebView.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Raised when a web resource is requested. This event allows the application to intercept the request and provide a
+            custom response.
+            The event handler can set the <see cref="P:Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs.Handled" /> property to true
+            to indicate that the request has been handled and no further processing is needed. If the event handler does set this
+            property to true, it must also call the
+            <see cref="M:Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs.SetResponse(System.Int32,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.IO.Stream)" />
+            or <see cref="M:Microsoft.Maui.Controls.WebViewWebResourceRequestedEventArgs.SetResponse(System.Int32,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.Threading.Tasks.Task{System.IO.Stream})" />
+            method to provide a response to the request.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>

@@ -26,7 +26,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Struct defining thickness around the edges of a <see cref="T:Microsoft.Maui.Controls.Shapes.Rectangle" /> using doubles.</summary>
+    <summary>
+            Struct defining thickness for each edge of a rectangle.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -47,8 +49,10 @@
         <Parameter Name="uniformSize" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="uniformSize">The uniform size of all edges in the new thickness.</param>
-        <summary>Creates a new <see cref="T:Microsoft.Maui.Thickness" /> object that represents a uniform thickness of size <paramref name="uniformSize" />.</summary>
+        <param name="uniformSize">The uniform thickness for all edges.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Maui.Thickness" /> with the same uniform size on all edges.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,9 +74,11 @@
         <Parameter Name="verticalSize" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="horizontalSize">The width of the left and right thicknesses.</param>
-        <param name="verticalSize">The height of the top and bottom thicknesses.</param>
-        <summary>Creates a new <see cref="T:Microsoft.Maui.Thickness" /> object that has a horizontal thickness of <paramref name="horizontalSize" /> and a vertical thickness of <paramref name="verticalSize" />.</summary>
+        <param name="horizontalSize">Thickness for left and right edges.</param>
+        <param name="verticalSize">Thickness for top and bottom edges.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Maui.Thickness" /> with specified horizontal and vertical sizes.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,11 +102,13 @@
         <Parameter Name="bottom" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="left">The width of the left thickness.</param>
-        <param name="top">The height of the top thickness.</param>
-        <param name="right">The width of the right thickness.</param>
-        <param name="bottom">The height of the bottom thickness.</param>
-        <summary>Creates a new <see cref="T:Microsoft.Maui.Thickness" /> object with thicknesses defined by <paramref name="left" />, <paramref name="top" />, <paramref name="right" />, and <paramref name="bottom" />.</summary>
+        <param name="left">Thickness of the left edge.</param>
+        <param name="top">Thickness of the top edge.</param>
+        <param name="right">Thickness of the right edge.</param>
+        <param name="bottom">Thickness of the bottom edge.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Maui.Thickness" /> with individual edge thicknesses.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,7 +135,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The thickness of the bottom of a rectangle.</summary>
+        <summary>
+            Gets or sets the thickness of the bottom edge.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -155,11 +165,13 @@
         <Parameter Name="bottom" Type="System.Double" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="top">To be added.</param>
-        <param name="right">To be added.</param>
-        <param name="bottom">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="left">When this method returns, contains the left thickness value.</param>
+        <param name="top">When this method returns, contains the top thickness value.</param>
+        <param name="right">When this method returns, contains the right thickness value.</param>
+        <param name="bottom">When this method returns, contains the bottom thickness value.</param>
+        <summary>
+            Deconstructs the thickness into individual edge values.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,10 +195,12 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">A <see cref="T:Microsoft.Maui.Thickness" /> to be compared.</param>
-        <summary>Whether the <paramref name="obj" /> is a <see cref="T:Microsoft.Maui.Thickness" /> with equivalent values.</summary>
+        <param name="obj">The object to compare with this instance.</param>
+        <summary>
+            Determines whether this instance and a specified object have the same values.
+            </summary>
         <returns>
-          <see langword="true" /> if <paramref name="obj" /> is a <see cref="T:Microsoft.Maui.Thickness" /> and has equivalent values.</returns>
+          <see langword="true" /> if <paramref name="obj" /> is a <see cref="T:Microsoft.Maui.Thickness" /> equal to this instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,8 +222,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>A has value for this <see cref="T:Microsoft.Maui.Thickness" />.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Returns the hash code for this <see cref="T:Microsoft.Maui.Thickness" />.
+            </summary>
+        <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,7 +246,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The sum of <see cref="P:Microsoft.Maui.Thickness.Left" /> and <see cref="P:Microsoft.Maui.Thickness.Right" />.</summary>
+        <summary>
+            Gets the total horizontal thickness (Left + Right).
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -252,11 +270,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a value indicating whether all edges have zero thickness.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui/Thickness.xml" path="//Member[@MemberName='IsEmpty']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="IsNaN">
@@ -276,7 +294,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a value indicating whether any edge thickness is not a number (NaN).
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -304,7 +324,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The thickness of the left side of a rectangle.</summary>
+        <summary>
+            Gets or sets the thickness of the left edge.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -330,10 +352,12 @@
         <Parameter Name="right" Type="Microsoft.Maui.Thickness" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first thickness.</param>
+        <param name="right">The second thickness.</param>
+        <summary>
+            Adds two thickness instances by summing their corresponding edges.
+            </summary>
+        <returns>A new thickness with summed edges.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -358,10 +382,12 @@
         <Parameter Name="addend" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="addend">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The original thickness.</param>
+        <param name="addend">The value to add to each edge.</param>
+        <summary>
+            Adds a uniform value to all edges of the thickness.
+            </summary>
+        <returns>A new thickness with adjusted edges.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -386,10 +412,13 @@
         <Parameter Name="right" Type="Microsoft.Maui.Thickness" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first thickness to compare.</param>
+        <param name="right">The second thickness to compare.</param>
+        <summary>
+            Determines whether two <see cref="T:Microsoft.Maui.Thickness" /> instances have the same values.
+            </summary>
+        <returns>
+          <see langword="true" /> if both thicknesses are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -413,8 +442,10 @@
         <Parameter Name="size" Type="Microsoft.Maui.Graphics.Size" />
       </Parameters>
       <Docs>
-        <param name="size">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="size">The size whose width and height become edge thicknesses.</param>
+        <summary>
+            Implicitly converts a <see cref="T:Microsoft.Maui.Graphics.Size" /> to a uniform <see cref="T:Microsoft.Maui.Thickness" />.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -439,8 +470,10 @@
         <Parameter Name="uniformSize" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="uniformSize">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="uniformSize">The uniform thickness value.</param>
+        <summary>
+            Implicitly converts a <see cref="T:System.Double" /> to a uniform <see cref="T:Microsoft.Maui.Thickness" />.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -466,10 +499,13 @@
         <Parameter Name="right" Type="Microsoft.Maui.Thickness" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first thickness to compare.</param>
+        <param name="right">The second thickness to compare.</param>
+        <summary>
+            Determines whether two <see cref="T:Microsoft.Maui.Thickness" /> instances have different values.
+            </summary>
+        <returns>
+          <see langword="true" /> if the thicknesses differ; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -494,10 +530,12 @@
         <Parameter Name="addend" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="addend">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The original thickness.</param>
+        <param name="addend">The value to subtract from each edge.</param>
+        <summary>
+            Subtracts a uniform value from all edges of the thickness.
+            </summary>
+        <returns>A new thickness with adjusted edges.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -524,7 +562,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The thickness of the right side of a rectangle.</summary>
+        <summary>
+            Gets or sets the thickness of the right edge.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -552,7 +592,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The thickness of the top of a rectangle.</summary>
+        <summary>
+            Gets or sets the thickness of the top edge.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -574,7 +616,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The sum of <see cref="P:Microsoft.Maui.Thickness.Top" /> and <see cref="P:Microsoft.Maui.Thickness.Bottom" />.</summary>
+        <summary>
+            Gets the total vertical thickness (Top + Bottom).
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -596,7 +640,9 @@
         <ReturnType>Microsoft.Maui.Thickness</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            A thickness with all edges set to zero.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

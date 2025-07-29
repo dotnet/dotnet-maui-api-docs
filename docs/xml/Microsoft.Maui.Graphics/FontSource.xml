@@ -20,7 +20,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents a font source with name, weight, and style information.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,11 +44,14 @@
         <Parameter Name="fontStyleType" Type="Microsoft.Maui.Graphics.FontStyleType" />
       </Parameters>
       <Docs>
-        <param name="filename">To be added.</param>
-        <param name="weight">To be added.</param>
-        <param name="fontStyleType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="filename">The font file name or font family name.</param>
+        <param name="weight">The font weight (default is Normal).</param>
+        <param name="fontStyleType">The font style type (default is Normal).</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Graphics.FontSource" /> struct.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="filename" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -72,9 +77,12 @@
         <Parameter Name="other" Type="Microsoft.Maui.Graphics.FontSource" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The font source to compare with the current font source.</param>
+        <summary>
+            Determines whether the specified font source is equal to the current font source.
+            </summary>
+        <returns>
+          <c>true</c> if the specified font source is equal to the current font source; otherwise, <c>false</c>.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,9 +106,12 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to compare with the current font source.</param>
+        <summary>
+            Determines whether the specified object is equal to the current font source.
+            </summary>
+        <returns>
+          <c>true</c> if the specified object is equal to the current font source; otherwise, <c>false</c>.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,7 +132,9 @@
         <ReturnType>Microsoft.Maui.Graphics.FontStyleType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the font style type.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,8 +156,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Returns the hash code for this font source.
+            </summary>
+        <returns>A hash code for the current font source.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,7 +186,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the font file name or font family name.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -196,10 +213,13 @@
         <Parameter Name="right" Type="Microsoft.Maui.Graphics.FontSource" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first font source to compare.</param>
+        <param name="right">The second font source to compare.</param>
+        <summary>
+            Determines whether two specified font sources have the same value.
+            </summary>
+        <returns>
+          <c>true</c> if the value of <paramref name="left" /> is the same as the value of <paramref name="right" />; otherwise, <c>false</c>.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,10 +244,13 @@
         <Parameter Name="right" Type="Microsoft.Maui.Graphics.FontSource" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first font source to compare.</param>
+        <param name="right">The second font source to compare.</param>
+        <summary>
+            Determines whether two specified font sources have different values.
+            </summary>
+        <returns>
+          <c>true</c> if the value of <paramref name="left" /> is different from the value of <paramref name="right" />; otherwise, <c>false</c>.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,7 +271,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the font weight.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -22,10 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Manages weak event subscriptions, preventing memory leaks by maintaining weak references to handlers.
+            </summary>
     <remarks>To be added.</remarks>
-    <!-- No matching elements were found for the following include tag -->
-    <include file="../docs/Microsoft.Maui/WeakEventManager.xml" path="Type[@FullName='Microsoft.Maui.WeakEventManager']/Docs/*" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -80,10 +80,13 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="eventName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The event handler to add.</param>
+        <param name="eventName">The name of the event.</param>
+        <summary>
+            Adds an event handler for the specified event, storing a weak reference to the handler's target.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="handler" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddEventHandler&lt;TEventArgs&gt;">
@@ -126,11 +129,14 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <typeparam name="TEventArgs">To be added.</typeparam>
-        <param name="handler">To be added.</param>
-        <param name="eventName">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="TEventArgs">The type of the event arguments.</typeparam>
+        <param name="handler">The event handler to add.</param>
+        <param name="eventName">The name of the event.</param>
+        <summary>
+            Adds an event handler for the specified event, storing a weak reference to the handler's target.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="handler" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="HandleEvent">
@@ -162,10 +168,12 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="sender">To be added.</param>
-        <param name="args">To be added.</param>
-        <param name="eventName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sender">The source of the event.</param>
+        <param name="args">The event arguments.</param>
+        <param name="eventName">The name of the event to raise.</param>
+        <summary>
+            Invokes the handlers registered for the specified event. Removes handlers whose targets have been garbage collected.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,10 +211,13 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="eventName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The event handler to remove.</param>
+        <param name="eventName">The name of the event.</param>
+        <summary>
+            Removes a previously added event handler for the specified event.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="handler" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveEventHandler&lt;TEventArgs&gt;">
@@ -249,11 +260,14 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <typeparam name="TEventArgs">To be added.</typeparam>
-        <param name="handler">To be added.</param>
-        <param name="eventName">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="TEventArgs">The type of the event arguments.</typeparam>
+        <param name="handler">The event handler to remove.</param>
+        <param name="eventName">The name of the event.</param>
+        <summary>
+            Removes a previously added event handler for the specified event.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="handler" /> is null.</exception>
       </Docs>
     </Member>
   </Members>

@@ -13,7 +13,9 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Defines an interface for reading picture data from a byte array.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,10 +39,13 @@
         <Parameter Name="data" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="data">The picture data as a byte array.</param>
+        <summary>
+            Reads picture data from a byte array.
+            </summary>
+        <returns>An <see cref="T:Microsoft.Maui.Graphics.IPicture" /> object representing the read picture.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="data" /> is null.</exception>
       </Docs>
     </Member>
   </Members>
