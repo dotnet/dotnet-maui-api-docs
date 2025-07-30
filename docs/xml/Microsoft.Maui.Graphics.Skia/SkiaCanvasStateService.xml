@@ -23,7 +23,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Provides services for creating and managing <see cref="T:Microsoft.Maui.Graphics.Skia.SkiaCanvasState" /> instances.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -68,9 +70,11 @@
         <Parameter Name="prototype" Type="Microsoft.Maui.Graphics.Skia.SkiaCanvasState" />
       </Parameters>
       <Docs>
-        <param name="prototype">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="prototype">The canvas state to copy.</param>
+        <summary>
+            Creates a copy of the specified canvas state.
+            </summary>
+        <returns>A new <see cref="T:Microsoft.Maui.Graphics.Skia.SkiaCanvasState" /> instance with properties copied from the prototype.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,9 +101,11 @@
         <Parameter Name="context" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">An optional context object.</param>
+        <summary>
+            Creates a new canvas state instance.
+            </summary>
+        <returns>A new <see cref="T:Microsoft.Maui.Graphics.Skia.SkiaCanvasState" /> instance with default properties.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,7 +130,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Releases all resources used by this canvas state service.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,8 +156,10 @@
         <Parameter Name="currentState" Type="Microsoft.Maui.Graphics.Skia.SkiaCanvasState" />
       </Parameters>
       <Docs>
-        <param name="currentState">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="currentState">The canvas state to reset.</param>
+        <summary>
+            Resets the specified canvas state to default values.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

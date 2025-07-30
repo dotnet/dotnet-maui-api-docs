@@ -1,10 +1,15 @@
 <Type Name="SearchHandler" FullName="Microsoft.Maui.Controls.SearchHandler">
-  <TypeSignature Language="C#" Value="public class SearchHandler : Microsoft.Maui.Controls.BindableObject, Microsoft.Maui.Controls.Internals.IFontElement, Microsoft.Maui.Controls.ISearchHandlerController" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SearchHandler extends Microsoft.Maui.Controls.BindableObject implements class Microsoft.Maui.Controls.Internals.IFontElement, class Microsoft.Maui.Controls.ISearchHandlerController" />
+  <TypeSignature Language="C#" Value="public class SearchHandler : Microsoft.Maui.Controls.BindableObject, Microsoft.Maui.Controls.Internals.IFontElement, Microsoft.Maui.Controls.ISearchHandlerController, Microsoft.Maui.Controls.ITextAlignmentElement, Microsoft.Maui.Controls.ITextElement" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SearchHandler extends Microsoft.Maui.Controls.BindableObject implements class Microsoft.Maui.Controls.Internals.IFontElement, class Microsoft.Maui.Controls.ISearchHandlerController, class Microsoft.Maui.Controls.ITextAlignmentElement, class Microsoft.Maui.Controls.ITextElement" FrameworkAlternate="net-maui-10.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.SearchHandler" />
-  <TypeSignature Language="VB.NET" Value="Public Class SearchHandler&#xA;Inherits BindableObject&#xA;Implements IFontElement, ISearchHandlerController" />
-  <TypeSignature Language="C++ CLI" Value="public ref class SearchHandler : Microsoft::Maui::Controls::BindableObject, Microsoft::Maui::Controls::Internals::IFontElement, Microsoft::Maui::Controls::ISearchHandlerController" />
-  <TypeSignature Language="F#" Value="type SearchHandler = class&#xA;    inherit BindableObject&#xA;    interface ISearchHandlerController&#xA;    interface IFontElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class SearchHandler&#xA;Inherits BindableObject&#xA;Implements IFontElement, ISearchHandlerController, ITextAlignmentElement, ITextElement" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SearchHandler : Microsoft::Maui::Controls::BindableObject, Microsoft::Maui::Controls::Internals::IFontElement, Microsoft::Maui::Controls::ISearchHandlerController, Microsoft::Maui::Controls::ITextAlignmentElement, Microsoft::Maui::Controls::ITextElement" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="F#" Value="type SearchHandler = class&#xA;    inherit BindableObject&#xA;    interface ISearchHandlerController&#xA;    interface IFontElement&#xA;    interface ITextElement&#xA;    interface ITextAlignmentElement" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="C#" Value="public class SearchHandler : Microsoft.Maui.Controls.BindableObject, Microsoft.Maui.Controls.Internals.IFontElement, Microsoft.Maui.Controls.ISearchHandlerController" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SearchHandler extends Microsoft.Maui.Controls.BindableObject implements class Microsoft.Maui.Controls.Internals.IFontElement, class Microsoft.Maui.Controls.ISearchHandlerController" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="VB.NET" Value="Public Class SearchHandler&#xA;Inherits BindableObject&#xA;Implements IFontElement, ISearchHandlerController" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SearchHandler : Microsoft::Maui::Controls::BindableObject, Microsoft::Maui::Controls::Internals::IFontElement, Microsoft::Maui::Controls::ISearchHandlerController" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="F#" Value="type SearchHandler = class&#xA;    inherit BindableObject&#xA;    interface ISearchHandlerController&#xA;    interface IFontElement" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -20,6 +25,12 @@
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Maui.Controls.ISearchHandlerController</InterfaceName>
+    </Interface>
+    <Interface FrameworkAlternate="net-maui-10.0">
+      <InterfaceName>Microsoft.Maui.Controls.ITextAlignmentElement</InterfaceName>
+    </Interface>
+    <Interface FrameworkAlternate="net-maui-10.0">
+      <InterfaceName>Microsoft.Maui.Controls.ITextElement</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>
@@ -1002,6 +1013,27 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="HideSoftInputAsync">
+      <MemberSignature Language="C#" Value="public void HideSoftInputAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void HideSoftInputAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.SearchHandler.HideSoftInputAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Sub HideSoftInputAsync ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void HideSoftInputAsync();" />
+      <MemberSignature Language="F#" Value="member this.HideSoftInputAsync : unit -&gt; unit" Usage="searchHandler.HideSoftInputAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="HorizontalTextAlignment">
       <MemberSignature Language="C#" Value="public Microsoft.Maui.TextAlignment HorizontalTextAlignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.TextAlignment HorizontalTextAlignment" />
@@ -1620,6 +1652,122 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Microsoft.Maui.Controls.ITextAlignmentElement.OnHorizontalTextAlignmentPropertyChanged">
+      <MemberSignature Language="C#" Value="void ITextAlignmentElement.OnHorizontalTextAlignmentPropertyChanged (Microsoft.Maui.TextAlignment oldValue, Microsoft.Maui.TextAlignment newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.Controls.ITextAlignmentElement.OnHorizontalTextAlignmentPropertyChanged(valuetype Microsoft.Maui.TextAlignment oldValue, valuetype Microsoft.Maui.TextAlignment newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.SearchHandler.Microsoft#Maui#Controls#ITextAlignmentElement#OnHorizontalTextAlignmentPropertyChanged(Microsoft.Maui.TextAlignment,Microsoft.Maui.TextAlignment)" />
+      <MemberSignature Language="VB.NET" Value="Sub OnHorizontalTextAlignmentPropertyChanged (oldValue As TextAlignment, newValue As TextAlignment) Implements ITextAlignmentElement.OnHorizontalTextAlignmentPropertyChanged" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.Controls.ITextAlignmentElement.OnHorizontalTextAlignmentPropertyChanged(Microsoft::Maui::TextAlignment oldValue, Microsoft::Maui::TextAlignment newValue) = Microsoft::Maui::Controls::ITextAlignmentElement::OnHorizontalTextAlignmentPropertyChanged;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Controls.ITextAlignmentElement.OnHorizontalTextAlignmentPropertyChanged : Microsoft.Maui.TextAlignment * Microsoft.Maui.TextAlignment -&gt; unit&#xA;override this.Microsoft.Maui.Controls.ITextAlignmentElement.OnHorizontalTextAlignmentPropertyChanged : Microsoft.Maui.TextAlignment * Microsoft.Maui.TextAlignment -&gt; unit" Usage="searchHandler.Microsoft.Maui.Controls.ITextAlignmentElement.OnHorizontalTextAlignmentPropertyChanged (oldValue, newValue)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.ITextAlignmentElement.OnHorizontalTextAlignmentPropertyChanged(Microsoft.Maui.TextAlignment,Microsoft.Maui.TextAlignment)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldValue" Type="Microsoft.Maui.TextAlignment" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="newValue" Type="Microsoft.Maui.TextAlignment" Index="1" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Controls.ITextElement.OnCharacterSpacingPropertyChanged">
+      <MemberSignature Language="C#" Value="void ITextElement.OnCharacterSpacingPropertyChanged (double oldValue, double newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.Controls.ITextElement.OnCharacterSpacingPropertyChanged(float64 oldValue, float64 newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.SearchHandler.Microsoft#Maui#Controls#ITextElement#OnCharacterSpacingPropertyChanged(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Sub OnCharacterSpacingPropertyChanged (oldValue As Double, newValue As Double) Implements ITextElement.OnCharacterSpacingPropertyChanged" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.Controls.ITextElement.OnCharacterSpacingPropertyChanged(double oldValue, double newValue) = Microsoft::Maui::Controls::ITextElement::OnCharacterSpacingPropertyChanged;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Controls.ITextElement.OnCharacterSpacingPropertyChanged : double * double -&gt; unit&#xA;override this.Microsoft.Maui.Controls.ITextElement.OnCharacterSpacingPropertyChanged : double * double -&gt; unit" Usage="searchHandler.Microsoft.Maui.Controls.ITextElement.OnCharacterSpacingPropertyChanged (oldValue, newValue)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.ITextElement.OnCharacterSpacingPropertyChanged(System.Double,System.Double)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldValue" Type="System.Double" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="newValue" Type="System.Double" Index="1" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Controls.ITextElement.OnTextColorPropertyChanged">
+      <MemberSignature Language="C#" Value="void ITextElement.OnTextColorPropertyChanged (Microsoft.Maui.Graphics.Color oldValue, Microsoft.Maui.Graphics.Color newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.Controls.ITextElement.OnTextColorPropertyChanged(class Microsoft.Maui.Graphics.Color oldValue, class Microsoft.Maui.Graphics.Color newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.SearchHandler.Microsoft#Maui#Controls#ITextElement#OnTextColorPropertyChanged(Microsoft.Maui.Graphics.Color,Microsoft.Maui.Graphics.Color)" />
+      <MemberSignature Language="VB.NET" Value="Sub OnTextColorPropertyChanged (oldValue As Color, newValue As Color) Implements ITextElement.OnTextColorPropertyChanged" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.Controls.ITextElement.OnTextColorPropertyChanged(Microsoft::Maui::Graphics::Color ^ oldValue, Microsoft::Maui::Graphics::Color ^ newValue) = Microsoft::Maui::Controls::ITextElement::OnTextColorPropertyChanged;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Controls.ITextElement.OnTextColorPropertyChanged : Microsoft.Maui.Graphics.Color * Microsoft.Maui.Graphics.Color -&gt; unit&#xA;override this.Microsoft.Maui.Controls.ITextElement.OnTextColorPropertyChanged : Microsoft.Maui.Graphics.Color * Microsoft.Maui.Graphics.Color -&gt; unit" Usage="searchHandler.Microsoft.Maui.Controls.ITextElement.OnTextColorPropertyChanged (oldValue, newValue)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.ITextElement.OnTextColorPropertyChanged(Microsoft.Maui.Graphics.Color,Microsoft.Maui.Graphics.Color)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldValue" Type="Microsoft.Maui.Graphics.Color" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="newValue" Type="Microsoft.Maui.Graphics.Color" Index="1" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Controls.ITextElement.OnTextTransformChanged">
+      <MemberSignature Language="C#" Value="void ITextElement.OnTextTransformChanged (Microsoft.Maui.TextTransform oldValue, Microsoft.Maui.TextTransform newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.Controls.ITextElement.OnTextTransformChanged(valuetype Microsoft.Maui.TextTransform oldValue, valuetype Microsoft.Maui.TextTransform newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.SearchHandler.Microsoft#Maui#Controls#ITextElement#OnTextTransformChanged(Microsoft.Maui.TextTransform,Microsoft.Maui.TextTransform)" />
+      <MemberSignature Language="VB.NET" Value="Sub OnTextTransformChanged (oldValue As TextTransform, newValue As TextTransform) Implements ITextElement.OnTextTransformChanged" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.Controls.ITextElement.OnTextTransformChanged(Microsoft::Maui::TextTransform oldValue, Microsoft::Maui::TextTransform newValue) = Microsoft::Maui::Controls::ITextElement::OnTextTransformChanged;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Controls.ITextElement.OnTextTransformChanged : Microsoft.Maui.TextTransform * Microsoft.Maui.TextTransform -&gt; unit&#xA;override this.Microsoft.Maui.Controls.ITextElement.OnTextTransformChanged : Microsoft.Maui.TextTransform * Microsoft.Maui.TextTransform -&gt; unit" Usage="searchHandler.Microsoft.Maui.Controls.ITextElement.OnTextTransformChanged (oldValue, newValue)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.ITextElement.OnTextTransformChanged(Microsoft.Maui.TextTransform,Microsoft.Maui.TextTransform)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldValue" Type="Microsoft.Maui.TextTransform" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="newValue" Type="Microsoft.Maui.TextTransform" Index="1" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="OnClearPlaceholderClicked">
       <MemberSignature Language="C#" Value="protected virtual void OnClearPlaceholderClicked ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnClearPlaceholderClicked() cil managed" />
@@ -2139,6 +2287,27 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ShowSoftInputAsync">
+      <MemberSignature Language="C#" Value="public void ShowSoftInputAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ShowSoftInputAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.SearchHandler.ShowSoftInputAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ShowSoftInputAsync ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowSoftInputAsync();" />
+      <MemberSignature Language="F#" Value="member this.ShowSoftInputAsync : unit -&gt; unit" Usage="searchHandler.ShowSoftInputAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ShowsResults">
       <MemberSignature Language="C#" Value="public bool ShowsResults { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowsResults" />
@@ -2235,6 +2404,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::TextTransform TextTransform { Microsoft::Maui::TextTransform get(); void set(Microsoft::Maui::TextTransform value); };" />
       <MemberSignature Language="F#" Value="member this.TextTransform : Microsoft.Maui.TextTransform with get, set" Usage="Microsoft.Maui.Controls.SearchHandler.TextTransform" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember FrameworkAlternate="net-maui-10.0">P:Microsoft.Maui.Controls.ITextElement.TextTransform</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -2325,6 +2497,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ UpdateFormsText(System::String ^ source, Microsoft::Maui::TextTransform textTransform);" />
       <MemberSignature Language="F#" Value="abstract member UpdateFormsText : string * Microsoft.Maui.TextTransform -&gt; string&#xA;override this.UpdateFormsText : string * Microsoft.Maui.TextTransform -&gt; string" Usage="searchHandler.UpdateFormsText (source, textTransform)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember FrameworkAlternate="net-maui-10.0">M:Microsoft.Maui.Controls.ITextElement.UpdateFormsText(System.String,Microsoft.Maui.TextTransform)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>

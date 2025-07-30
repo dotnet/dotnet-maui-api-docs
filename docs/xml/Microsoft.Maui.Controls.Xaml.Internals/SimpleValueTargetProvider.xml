@@ -1,10 +1,15 @@
 <Type Name="SimpleValueTargetProvider" FullName="Microsoft.Maui.Controls.Xaml.Internals.SimpleValueTargetProvider">
-  <TypeSignature Language="C#" Value="public class SimpleValueTargetProvider : Microsoft.Maui.Controls.Xaml.IReferenceProvider" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SimpleValueTargetProvider extends System.Object implements class Microsoft.Maui.Controls.Xaml.IProvideValueTarget, class Microsoft.Maui.Controls.Xaml.IReferenceProvider" />
+  <TypeSignature Language="C#" Value="public class SimpleValueTargetProvider : Microsoft.Maui.Controls.Xaml.IReferenceProvider, Microsoft.Maui.Controls.Xaml.IRootObjectProvider" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SimpleValueTargetProvider extends System.Object implements class Microsoft.Maui.Controls.Xaml.IProvideValueTarget, class Microsoft.Maui.Controls.Xaml.IReferenceProvider, class Microsoft.Maui.Controls.Xaml.IRootObjectProvider" FrameworkAlternate="net-maui-10.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Xaml.Internals.SimpleValueTargetProvider" />
-  <TypeSignature Language="VB.NET" Value="Public Class SimpleValueTargetProvider&#xA;Implements IReferenceProvider" />
-  <TypeSignature Language="C++ CLI" Value="public ref class SimpleValueTargetProvider : Microsoft::Maui::Controls::Xaml::IReferenceProvider" />
-  <TypeSignature Language="F#" Value="type SimpleValueTargetProvider = class&#xA;    interface IProvideValueTarget&#xA;    interface IReferenceProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Class SimpleValueTargetProvider&#xA;Implements IReferenceProvider, IRootObjectProvider" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SimpleValueTargetProvider : Microsoft::Maui::Controls::Xaml::IReferenceProvider, Microsoft::Maui::Controls::Xaml::IRootObjectProvider" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="F#" Value="type SimpleValueTargetProvider = class&#xA;    interface IProvideValueTarget&#xA;    interface IReferenceProvider&#xA;    interface IRootObjectProvider" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="C#" Value="public class SimpleValueTargetProvider : Microsoft.Maui.Controls.Xaml.IReferenceProvider" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SimpleValueTargetProvider extends System.Object implements class Microsoft.Maui.Controls.Xaml.IProvideValueTarget, class Microsoft.Maui.Controls.Xaml.IReferenceProvider" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="VB.NET" Value="Public Class SimpleValueTargetProvider&#xA;Implements IReferenceProvider" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SimpleValueTargetProvider : Microsoft::Maui::Controls::Xaml::IReferenceProvider" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="F#" Value="type SimpleValueTargetProvider = class&#xA;    interface IProvideValueTarget&#xA;    interface IReferenceProvider" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -20,6 +25,9 @@
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Maui.Controls.Xaml.IReferenceProvider</InterfaceName>
+    </Interface>
+    <Interface FrameworkAlternate="net-maui-10.0">
+      <InterfaceName>Microsoft.Maui.Controls.Xaml.IRootObjectProvider</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>
@@ -72,6 +80,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Use the other ctor")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use the other ctor")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="objectAndParents" Type="System.Object[]" />
         <Parameter Name="targetProperty" Type="System.Object" />
@@ -83,6 +97,33 @@
         <param name="targetProperty">To be added.</param>
         <param name="scopes">To be added.</param>
         <param name="notused">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SimpleValueTargetProvider (object[] objectAndParents, object targetProperty, Microsoft.Maui.Controls.Internals.INameScope[] scopes, object rootObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object[] objectAndParents, object targetProperty, class Microsoft.Maui.Controls.Internals.INameScope[] scopes, object rootObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Xaml.Internals.SimpleValueTargetProvider.#ctor(System.Object[],System.Object,Microsoft.Maui.Controls.Internals.INameScope[],System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (objectAndParents As Object(), targetProperty As Object, scopes As INameScope(), rootObject As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SimpleValueTargetProvider(cli::array &lt;System::Object ^&gt; ^ objectAndParents, System::Object ^ targetProperty, cli::array &lt;Microsoft::Maui::Controls::Internals::INameScope ^&gt; ^ scopes, System::Object ^ rootObject);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.Controls.Xaml.Internals.SimpleValueTargetProvider : obj[] * obj * Microsoft.Maui.Controls.Internals.INameScope[] * obj -&gt; Microsoft.Maui.Controls.Xaml.Internals.SimpleValueTargetProvider" Usage="new Microsoft.Maui.Controls.Xaml.Internals.SimpleValueTargetProvider (objectAndParents, targetProperty, scopes, rootObject)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="objectAndParents" Type="System.Object[]" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="targetProperty" Type="System.Object" Index="1" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="scopes" Type="Microsoft.Maui.Controls.Internals.INameScope[]" Index="2" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="rootObject" Type="System.Object" Index="3" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="objectAndParents">To be added.</param>
+        <param name="targetProperty">To be added.</param>
+        <param name="scopes">To be added.</param>
+        <param name="rootObject">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -155,6 +196,30 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootObject">
+      <MemberSignature Language="C#" Value="public object RootObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object RootObject" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Xaml.Internals.SimpleValueTargetProvider.RootObject" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RootObject As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ RootObject { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RootObject : obj" Usage="Microsoft.Maui.Controls.Xaml.Internals.SimpleValueTargetProvider.RootObject" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.Controls.Xaml.IRootObjectProvider.RootObject</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

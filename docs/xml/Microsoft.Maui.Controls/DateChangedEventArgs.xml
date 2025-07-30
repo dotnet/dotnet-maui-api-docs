@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Event arguments for <see cref="E:Microsoft.Maui.Controls.DatePicker.DateSelected" /> event.</summary>
+    <summary>
+            Event arguments for <see cref="E:Microsoft.Maui.Controls.DatePicker.DateSelected" /> event.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,11 +33,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="oldDate" Type="System.DateTime" />
-        <Parameter Name="newDate" Type="System.DateTime" />
+        <Parameter Name="oldDate" Type="System.DateTime" Index="0" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+        <Parameter Name="newDate" Type="System.DateTime" Index="1" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       </Parameters>
       <Docs>
         <param name="oldDate">The old date.</param>
@@ -44,13 +45,42 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DateChangedEventArgs (DateTime? oldDate, DateTime? newDate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; oldDate, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; newDate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.DateChangedEventArgs.#ctor(System.Nullable{System.DateTime},System.Nullable{System.DateTime})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (oldDate As Nullable(Of DateTime), newDate As Nullable(Of DateTime))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DateChangedEventArgs(Nullable&lt;DateTime&gt; oldDate, Nullable&lt;DateTime&gt; newDate);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.Controls.DateChangedEventArgs : Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; -&gt; Microsoft.Maui.Controls.DateChangedEventArgs" Usage="new Microsoft.Maui.Controls.DateChangedEventArgs (oldDate, newDate)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="oldDate" Type="System.Nullable&lt;System.DateTime&gt;" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="newDate" Type="System.Nullable&lt;System.DateTime&gt;" Index="1" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="oldDate">The old date value.</param>
+        <param name="newDate">The new date value.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Maui.Controls.DateChangedEventArgs" /> object that represents a change from <paramref name="oldDate" /> to <paramref name="newDate" /></summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="NewDate">
-      <MemberSignature Language="C#" Value="public DateTime NewDate { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime NewDate" />
+      <MemberSignature Language="C#" Value="public DateTime? NewDate { get; }" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; NewDate" FrameworkAlternate="net-maui-10.0" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.DateChangedEventArgs.NewDate" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewDate As DateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime NewDate { DateTime get(); };" />
-      <MemberSignature Language="F#" Value="member this.NewDate : DateTime" Usage="Microsoft.Maui.Controls.DateChangedEventArgs.NewDate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewDate As Nullable(Of DateTime)" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; NewDate { Nullable&lt;DateTime&gt; get(); };" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="F#" Value="member this.NewDate : Nullable&lt;DateTime&gt;" Usage="Microsoft.Maui.Controls.DateChangedEventArgs.NewDate" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="C#" Value="public DateTime NewDate { get; }" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime NewDate" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewDate As DateTime" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime NewDate { DateTime get(); };" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="F#" Value="member this.NewDate : DateTime" Usage="Microsoft.Maui.Controls.DateChangedEventArgs.NewDate" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -58,21 +88,29 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.DateTime</ReturnType>
+        <ReturnType FrameworkAlternate="net-maui-10.0">System.Nullable&lt;System.DateTime&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="net-maui-8.0;net-maui-9.0">System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The date that the user entered.</summary>
+        <summary>
+            The date that the user entered.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OldDate">
-      <MemberSignature Language="C#" Value="public DateTime OldDate { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime OldDate" />
+      <MemberSignature Language="C#" Value="public DateTime? OldDate { get; }" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; OldDate" FrameworkAlternate="net-maui-10.0" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.DateChangedEventArgs.OldDate" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldDate As DateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime OldDate { DateTime get(); };" />
-      <MemberSignature Language="F#" Value="member this.OldDate : DateTime" Usage="Microsoft.Maui.Controls.DateChangedEventArgs.OldDate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldDate As Nullable(Of DateTime)" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; OldDate { Nullable&lt;DateTime&gt; get(); };" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="F#" Value="member this.OldDate : Nullable&lt;DateTime&gt;" Usage="Microsoft.Maui.Controls.DateChangedEventArgs.OldDate" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="C#" Value="public DateTime OldDate { get; }" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime OldDate" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldDate As DateTime" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime OldDate { DateTime get(); };" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="F#" Value="member this.OldDate : DateTime" Usage="Microsoft.Maui.Controls.DateChangedEventArgs.OldDate" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -80,10 +118,13 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.DateTime</ReturnType>
+        <ReturnType FrameworkAlternate="net-maui-10.0">System.Nullable&lt;System.DateTime&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="net-maui-8.0;net-maui-9.0">System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The date that was on the element at the time that the user selected it.</summary>
+        <summary>
+            The date that was on the element at the time that the user selected it.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Provides extension methods for converting between .NET MAUI Graphics font types and SkiaSharp font types.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,10 +42,15 @@
         <Parameter Name="font" Type="Microsoft.Maui.Graphics.IFont" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="font">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="font">The font to convert.</param>
+        <summary>
+            Converts a .NET MAUI Graphics font to a SkiaSharp typeface.
+            </summary>
+        <returns>A SkiaSharp typeface that corresponds to the specified font.</returns>
+        <remarks>
+            If the font name is not found as a family name, this method will attempt to load it as a file.
+            If the font is null or has an empty name, the default typeface will be returned.
+            </remarks>
       </Docs>
     </Member>
   </Members>

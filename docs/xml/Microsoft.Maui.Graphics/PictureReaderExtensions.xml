@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Provides extension methods for the <see cref="T:Microsoft.Maui.Graphics.IPictureReader" /> interface.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,12 +43,15 @@
         <Parameter Name="hash" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="stream">To be added.</param>
-        <param name="hash">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The picture reader.</param>
+        <param name="stream">The stream containing the picture data.</param>
+        <param name="hash">Optional hash value for the picture data.</param>
+        <summary>
+            Reads a picture from a stream.
+            </summary>
+        <returns>An <see cref="T:Microsoft.Maui.Graphics.IPicture" /> object read from the stream.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="target" /> or <paramref name="stream" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadAsync">
@@ -70,12 +75,15 @@
         <Parameter Name="hash" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="stream">To be added.</param>
-        <param name="hash">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The picture reader.</param>
+        <param name="stream">The stream containing the picture data.</param>
+        <param name="hash">Optional hash value for the picture data.</param>
+        <summary>
+            Asynchronously reads a picture from a stream.
+            </summary>
+        <returns>A task that represents the asynchronous read operation. The result contains an <see cref="T:Microsoft.Maui.Graphics.IPicture" /> object read from the stream.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="target" /> or <paramref name="stream" /> is null.</exception>
       </Docs>
     </Member>
   </Members>

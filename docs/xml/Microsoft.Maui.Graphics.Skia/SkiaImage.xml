@@ -26,7 +26,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents an image implementation using SkiaSharp.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -47,8 +49,10 @@
         <Parameter Name="image" Type="SkiaSharp.SKBitmap" />
       </Parameters>
       <Docs>
-        <param name="image">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="image">The SkiaSharp bitmap to wrap.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Graphics.Skia.SkiaImage" /> class with the specified SkiaSharp bitmap.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,7 +77,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Releases all resources used by this image.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,10 +106,12 @@
         <Parameter Name="disposeOriginal" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="maxWidthOrHeight">To be added.</param>
-        <param name="disposeOriginal">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="maxWidthOrHeight">The maximum width or height the resulting image should have.</param>
+        <param name="disposeOriginal">Whether to dispose the original image after downsizing.</param>
+        <summary>
+            Creates a new image by downsizing this image to fit within the specified maximum dimension.
+            </summary>
+        <returns>A new image instance with the downsized dimensions.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,11 +139,13 @@
         <Parameter Name="disposeOriginal" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="maxWidth">To be added.</param>
-        <param name="maxHeight">To be added.</param>
-        <param name="disposeOriginal">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="maxWidth">The maximum width the resulting image should have.</param>
+        <param name="maxHeight">The maximum height the resulting image should have.</param>
+        <param name="disposeOriginal">Whether to dispose the original image after downsizing.</param>
+        <summary>
+            Creates a new image by downsizing this image to fit within the specified maximum dimensions.
+            </summary>
+        <returns>A new image instance with the downsized dimensions.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,9 +173,11 @@
         <Parameter Name="dirtyRect" Type="Microsoft.Maui.Graphics.RectF" />
       </Parameters>
       <Docs>
-        <param name="canvas">To be added.</param>
-        <param name="dirtyRect">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="canvas">The canvas to draw on.</param>
+        <param name="dirtyRect">The rectangle in which to draw the image.</param>
+        <summary>
+            Draws this image on the specified canvas within the specified rectangle.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -189,11 +201,14 @@
         <Parameter Name="formatHint" Type="Microsoft.Maui.Graphics.ImageFormat" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="formatHint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="stream">The stream containing image data.</param>
+        <param name="formatHint">Optional hint about the image format.</param>
+        <summary>
+            Creates a new image from a stream.
+            </summary>
+        <returns>A new <see cref="T:Microsoft.Maui.Graphics.IImage" /> instance containing the image from the stream.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">Thrown when the stream cannot be decoded as an image.</exception>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -216,7 +231,9 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the height of the image in pixels.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -238,7 +255,9 @@
         <ReturnType>SkiaSharp.SKBitmap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the underlying SkiaSharp bitmap that this image wraps.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -268,12 +287,14 @@
         <Parameter Name="disposeOriginal" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="width">To be added.</param>
-        <param name="height">To be added.</param>
-        <param name="resizeMode">To be added.</param>
-        <param name="disposeOriginal">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="width">The width of the resulting image.</param>
+        <param name="height">The height of the resulting image.</param>
+        <param name="resizeMode">The mode to use when resizing the image.</param>
+        <param name="disposeOriginal">Whether to dispose the original image after resizing.</param>
+        <summary>
+            Creates a new image by resizing this image to the specified dimensions.
+            </summary>
+        <returns>A new image instance with the specified dimensions.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -301,11 +322,15 @@
         <Parameter Name="quality" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="format">To be added.</param>
-        <param name="quality">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="stream">The stream to save the image to.</param>
+        <param name="format">The format to save the image in.</param>
+        <param name="quality">The quality level to use when saving the image (0.0 to 1.0).</param>
+        <summary>
+            Saves the image to a stream in the specified format.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown when quality is outside the range of 0.0 to 1.0 or when format is not supported.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">Thrown when the specified format is not supported by Skia.</exception>
       </Docs>
     </Member>
     <Member MemberName="SaveAsync">
@@ -332,12 +357,16 @@
         <Parameter Name="quality" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="format">To be added.</param>
-        <param name="quality">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="stream">The stream to save the image to.</param>
+        <param name="format">The format to save the image in.</param>
+        <param name="quality">The quality level to use when saving the image (0.0 to 1.0).</param>
+        <summary>
+            Asynchronously saves the image to a stream in the specified format.
+            </summary>
+        <returns>A task that represents the asynchronous save operation.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown when quality is outside the range of 0.0 to 1.0 or when format is not supported.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">Thrown when the specified format is not supported by Skia.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToPlatformImage">
@@ -361,9 +390,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Creates a platform-specific image from this image.
+            </summary>
+        <returns>A platform-specific image representation.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">This operation is not supported in the Skia implementation.</exception>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -386,7 +418,9 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the width of the image in pixels.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

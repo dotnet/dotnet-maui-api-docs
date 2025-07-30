@@ -20,7 +20,11 @@
       <AttributeName Language="C#">[System.AttributeUsage(System.AttributeTargets.Assembly, AllowMultiple=true)]</AttributeName>
       <AttributeName Language="F#">[&lt;System.AttributeUsage(System.AttributeTargets.Assembly, AllowMultiple=true)&gt;]</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="net-maui-10.0">
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerDisplay("{XmlNamespace}, {Target}, {AssemblyName}")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("{XmlNamespace}, {Target}, {AssemblyName}")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-maui-8.0;net-maui-9.0">
       <AttributeName Language="C#">[System.Diagnostics.DebuggerDisplay("{XmlNamespace}, {ClrNamespace}, {AssemblyName}")]</AttributeName>
       <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("{XmlNamespace}, {ClrNamespace}, {AssemblyName}")&gt;]</AttributeName>
     </Attribute>
@@ -31,12 +35,17 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public XmlnsDefinitionAttribute (string xmlNamespace, string clrNamespace);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string xmlNamespace, string clrNamespace) cil managed" />
+      <MemberSignature Language="C#" Value="public XmlnsDefinitionAttribute (string xmlNamespace, string target);" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string xmlNamespace, string target) cil managed" FrameworkAlternate="net-maui-10.0" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.XmlnsDefinitionAttribute.#ctor(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (xmlNamespace As String, clrNamespace As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlnsDefinitionAttribute(System::String ^ xmlNamespace, System::String ^ clrNamespace);" />
-      <MemberSignature Language="F#" Value="new Microsoft.Maui.Controls.XmlnsDefinitionAttribute : string * string -&gt; Microsoft.Maui.Controls.XmlnsDefinitionAttribute" Usage="new Microsoft.Maui.Controls.XmlnsDefinitionAttribute (xmlNamespace, clrNamespace)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (xmlNamespace As String, target As String)" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlnsDefinitionAttribute(System::String ^ xmlNamespace, System::String ^ target);" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.Controls.XmlnsDefinitionAttribute : string * string -&gt; Microsoft.Maui.Controls.XmlnsDefinitionAttribute" Usage="new Microsoft.Maui.Controls.XmlnsDefinitionAttribute (xmlNamespace, target)" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="C#" Value="public XmlnsDefinitionAttribute (string xmlNamespace, string clrNamespace);" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string xmlNamespace, string clrNamespace) cil managed" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (xmlNamespace As String, clrNamespace As String)" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlnsDefinitionAttribute(System::String ^ xmlNamespace, System::String ^ clrNamespace);" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.Controls.XmlnsDefinitionAttribute : string * string -&gt; Microsoft.Maui.Controls.XmlnsDefinitionAttribute" Usage="new Microsoft.Maui.Controls.XmlnsDefinitionAttribute (xmlNamespace, clrNamespace)" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -44,11 +53,13 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="xmlNamespace" Type="System.String" />
-        <Parameter Name="clrNamespace" Type="System.String" />
+        <Parameter Name="xmlNamespace" Type="System.String" Index="0" />
+        <Parameter Name="target" Type="System.String" Index="1" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="clrNamespace" Type="System.String" Index="1" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       </Parameters>
       <Docs>
         <param name="xmlNamespace">To be added.</param>
+        <param name="target">To be added.</param>
         <param name="clrNamespace">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -91,6 +102,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Use Target for ClrNamespace or other xmlns")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use Target for ClrNamespace or other xmlns")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -100,6 +117,29 @@
         <remarks>To be added.</remarks>
         <!-- No matching elements were found for the following include tag -->
         <include file="../../docs/Microsoft.Maui.Controls/XmlnsDefinitionAttribute.xml" path="//Member[@MemberName='ClrNamespace']/Docs/*" />
+      </Docs>
+    </Member>
+    <Member MemberName="Target">
+      <MemberSignature Language="C#" Value="public string Target { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Target" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.XmlnsDefinitionAttribute.Target" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Target As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Target { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Target : string" Usage="Microsoft.Maui.Controls.XmlnsDefinitionAttribute.Target" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+        <!-- No matching elements were found for the following include tag -->
+        <include file="../../docs/Microsoft.Maui.Controls/XmlnsDefinitionAttribute.xml" path="//Member[@MemberName='Target']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="XmlNamespace">

@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Provides extension methods for the <see cref="T:Microsoft.Maui.Graphics.IPdfPage" /> interface.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -66,9 +68,11 @@
         <Parameter Name="target" Type="Microsoft.Maui.Graphics.IPdfPage" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The PDF page to convert.</param>
+        <summary>
+            Converts a PDF page to a byte array.
+            </summary>
+        <returns>A byte array containing the PDF data, or null if the target is null.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,9 +122,11 @@
         <Parameter Name="target" Type="Microsoft.Maui.Graphics.IPdfPage" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The PDF page to convert.</param>
+        <summary>
+            Converts a PDF page to a memory stream.
+            </summary>
+        <returns>A memory stream containing the PDF data, with position set to the beginning, or null if the target is null.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

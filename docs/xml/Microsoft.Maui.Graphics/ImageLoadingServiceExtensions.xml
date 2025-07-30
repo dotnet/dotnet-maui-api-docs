@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Provides extension methods for the <see cref="T:Microsoft.Maui.Graphics.IImageLoadingService" /> interface.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,11 +43,15 @@
         <Parameter Name="bytes" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="bytes">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The image loading service.</param>
+        <param name="bytes">The byte array containing the image data.</param>
+        <summary>
+            Creates an image from a byte array.
+            </summary>
+        <returns>An <see cref="T:Microsoft.Maui.Graphics.IImage" /> created from the byte array.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="bytes" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">Thrown when the image data is invalid or cannot be decoded.</exception>
       </Docs>
     </Member>
   </Members>

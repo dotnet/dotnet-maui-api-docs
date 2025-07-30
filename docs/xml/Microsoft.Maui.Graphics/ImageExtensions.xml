@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Provides extension methods for the <see cref="T:Microsoft.Maui.Graphics.IImage" /> interface.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -70,11 +72,13 @@
         <Parameter Name="quality" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="format">To be added.</param>
-        <param name="quality">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The image to convert.</param>
+        <param name="format">The format to encode the image in (default is PNG).</param>
+        <param name="quality">The quality setting for lossy formats like JPEG, ranging from 0 to 1 (default is 1 for maximum quality).</param>
+        <summary>
+            Converts an image to a byte array in the specified format.
+            </summary>
+        <returns>A byte array containing the encoded image data, or null if the target image is null.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,11 +158,13 @@
         <Parameter Name="quality" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="format">To be added.</param>
-        <param name="quality">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The image to convert.</param>
+        <param name="format">The format to encode the image in (default is PNG).</param>
+        <param name="quality">The quality setting for lossy formats like JPEG, ranging from 0 to 1 (default is 1 for maximum quality).</param>
+        <summary>
+            Converts an image to a stream in the specified format.
+            </summary>
+        <returns>A memory stream containing the encoded image data, or null if the target image is null.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -20,7 +20,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Provides functionality for laying out text using SkiaSharp.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -44,13 +46,15 @@
         <Parameter Name="font" Type="SkiaSharp.SKFont" Index="5" FrameworkAlternate="net-maui-10.0" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="rect">To be added.</param>
-        <param name="textAttributes">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="textFlow">To be added.</param>
-        <param name="font">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The text to layout.</param>
+        <param name="rect">The rectangle in which to layout the text.</param>
+        <param name="textAttributes">The text attributes to apply.</param>
+        <param name="callback">The callback to invoke for each line of text.</param>
+        <param name="textFlow">The text flow behavior.</param>
+        <param name="font">The SkiaSharp font object to use.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Graphics.Skia.SkiaTextLayout" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,13 +85,15 @@
         <Parameter Name="paint" Type="SkiaSharp.SKPaint" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="rect">To be added.</param>
-        <param name="textAttributes">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="textFlow">To be added.</param>
-        <param name="paint">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The text to layout.</param>
+        <param name="rect">The rectangle in which to layout the text.</param>
+        <param name="textAttributes">The text attributes to apply.</param>
+        <param name="callback">The callback to invoke for each line of text.</param>
+        <param name="textFlow">The text flow behavior.</param>
+        <param name="paint">The SkiaSharp paint object to use. This method is obsolete.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Graphics.Skia.SkiaTextLayout" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,7 +118,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Releases all resources used by this text layout.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,7 +142,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Performs layout of text within the specified rectangle.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,7 +165,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets a value indicating whether text should wrap to the next line when it exceeds the layout width.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -20,7 +20,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Provides image loading functionality using SkiaSharp.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -65,10 +67,12 @@
         <Parameter Name="formatHint" Type="Microsoft.Maui.Graphics.ImageFormat" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="formatHint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="stream">The stream containing the image data.</param>
+        <param name="formatHint">Optional hint about the image format.</param>
+        <summary>
+            Creates a new image from a stream.
+            </summary>
+        <returns>A new <see cref="T:Microsoft.Maui.Graphics.IImage" /> instance containing the image from the stream.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

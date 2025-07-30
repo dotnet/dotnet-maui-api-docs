@@ -18,12 +18,13 @@
   </Docs>
   <Members>
     <Member MemberName="ConvertFromInvariantString">
-      <MemberSignature Language="C#" Value="public object ConvertFromInvariantString (string value, IServiceProvider serviceProvider);" />
+      <MemberSignature Language="C#" Value="public object? ConvertFromInvariantString (string value, IServiceProvider serviceProvider);" FrameworkAlternate="net-maui-10.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ConvertFromInvariantString(string value, class System.IServiceProvider serviceProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.IExtendedTypeConverter.ConvertFromInvariantString(System.String,System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ConvertFromInvariantString (value As String, serviceProvider As IServiceProvider) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ConvertFromInvariantString(System::String ^ value, IServiceProvider ^ serviceProvider);" />
       <MemberSignature Language="F#" Value="abstract member ConvertFromInvariantString : string * IServiceProvider -&gt; obj" Usage="iExtendedTypeConverter.ConvertFromInvariantString (value, serviceProvider)" />
+      <MemberSignature Language="C#" Value="public object ConvertFromInvariantString (string value, IServiceProvider serviceProvider);" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -32,6 +33,12 @@
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
+        <Attributes>
+          <Attribute FrameworkAlternate="net-maui-10.0">
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
       </ReturnValue>
       <Parameters>
         <Parameter Name="value" Type="System.String" />

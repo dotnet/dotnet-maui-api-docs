@@ -1,10 +1,11 @@
 <Type Name="Element" FullName="Microsoft.Maui.Controls.Element">
   <TypeSignature Language="C#" Value="public abstract class Element : Microsoft.Maui.Controls.BindableObject, Microsoft.Maui.Controls.IEffectControlProvider, Microsoft.Maui.Controls.IElementController, Microsoft.Maui.Controls.Internals.INameScope, Microsoft.Maui.IContextFlyoutElement, Microsoft.Maui.IElement, Microsoft.Maui.IToolTipElement, Microsoft.Maui.IVisualTreeElement" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Element extends Microsoft.Maui.Controls.BindableObject implements class Microsoft.Maui.Controls.IEffectControlProvider, class Microsoft.Maui.Controls.IElementController, class Microsoft.Maui.Controls.Internals.INameScope, class Microsoft.Maui.IContextFlyoutElement, class Microsoft.Maui.IElement, class Microsoft.Maui.IToolTipElement, class Microsoft.Maui.IVisualTreeElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract Element extends Microsoft.Maui.Controls.BindableObject implements class Microsoft.Maui.Controls.IEffectControlProvider, class Microsoft.Maui.Controls.IElementController, class Microsoft.Maui.Controls.Internals.INameScope, class Microsoft.Maui.IContextFlyoutElement, class Microsoft.Maui.IElement, class Microsoft.Maui.IToolTipElement, class Microsoft.Maui.IVisualTreeElement" FrameworkAlternate="net-maui-10.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Element" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Element&#xA;Inherits BindableObject&#xA;Implements IContextFlyoutElement, IEffectControlProvider, IElement, IElementController, INameScope, IToolTipElement, IVisualTreeElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class Element abstract : Microsoft::Maui::Controls::BindableObject, Microsoft::Maui::Controls::IEffectControlProvider, Microsoft::Maui::Controls::IElementController, Microsoft::Maui::Controls::Internals::INameScope, Microsoft::Maui::IContextFlyoutElement, Microsoft::Maui::IElement, Microsoft::Maui::IToolTipElement, Microsoft::Maui::IVisualTreeElement" />
   <TypeSignature Language="F#" Value="type Element = class&#xA;    inherit BindableObject&#xA;    interface INameScope&#xA;    interface IElementController&#xA;    interface IVisualTreeElement&#xA;    interface IElement&#xA;    interface IEffectControlProvider&#xA;    interface IToolTipElement&#xA;    interface IContextFlyoutElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Element extends Microsoft.Maui.Controls.BindableObject implements class Microsoft.Maui.Controls.IEffectControlProvider, class Microsoft.Maui.Controls.IElementController, class Microsoft.Maui.Controls.Internals.INameScope, class Microsoft.Maui.IContextFlyoutElement, class Microsoft.Maui.IElement, class Microsoft.Maui.IToolTipElement, class Microsoft.Maui.IVisualTreeElement" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -101,11 +102,14 @@
     </Member>
     <Member MemberName="AddLogicalChild">
       <MemberSignature Language="C#" Value="public void AddLogicalChild (Microsoft.Maui.Controls.Element element);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddLogicalChild(class Microsoft.Maui.Controls.Element element) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddLogicalChild(class Microsoft.Maui.Controls.Element element) cil managed" FrameworkAlternate="net-maui-10.0" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Element.AddLogicalChild(Microsoft.Maui.Controls.Element)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddLogicalChild (element As Element)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddLogicalChild(Microsoft::Maui::Controls::Element ^ element);" />
-      <MemberSignature Language="F#" Value="member this.AddLogicalChild : Microsoft.Maui.Controls.Element -&gt; unit" Usage="element.AddLogicalChild element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddLogicalChild(Microsoft::Maui::Controls::Element ^ element);" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="F#" Value="abstract member AddLogicalChild : Microsoft.Maui.Controls.Element -&gt; unit&#xA;override this.AddLogicalChild : Microsoft.Maui.Controls.Element -&gt; unit" Usage="element.AddLogicalChild element" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddLogicalChild(class Microsoft.Maui.Controls.Element element) cil managed" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddLogicalChild(Microsoft::Maui::Controls::Element ^ element);" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="F#" Value="member this.AddLogicalChild : Microsoft.Maui.Controls.Element -&gt; unit" Usage="element.AddLogicalChild element" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -1323,11 +1327,14 @@
     </Member>
     <Member MemberName="RemoveLogicalChild">
       <MemberSignature Language="C#" Value="public bool RemoveLogicalChild (Microsoft.Maui.Controls.Element element);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveLogicalChild(class Microsoft.Maui.Controls.Element element) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool RemoveLogicalChild(class Microsoft.Maui.Controls.Element element) cil managed" FrameworkAlternate="net-maui-10.0" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Element.RemoveLogicalChild(Microsoft.Maui.Controls.Element)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveLogicalChild (element As Element) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveLogicalChild(Microsoft::Maui::Controls::Element ^ element);" />
-      <MemberSignature Language="F#" Value="member this.RemoveLogicalChild : Microsoft.Maui.Controls.Element -&gt; bool" Usage="element.RemoveLogicalChild element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool RemoveLogicalChild(Microsoft::Maui::Controls::Element ^ element);" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="F#" Value="abstract member RemoveLogicalChild : Microsoft.Maui.Controls.Element -&gt; bool&#xA;override this.RemoveLogicalChild : Microsoft.Maui.Controls.Element -&gt; bool" Usage="element.RemoveLogicalChild element" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveLogicalChild(class Microsoft.Maui.Controls.Element element) cil managed" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveLogicalChild(Microsoft::Maui::Controls::Element ^ element);" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="F#" Value="member this.RemoveLogicalChild : Microsoft.Maui.Controls.Element -&gt; bool" Usage="element.RemoveLogicalChild element" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>

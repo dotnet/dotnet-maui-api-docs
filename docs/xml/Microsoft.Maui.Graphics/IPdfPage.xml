@@ -20,7 +20,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents a PDF page that can be drawn upon and saved to a stream.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,7 +43,9 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the height of the PDF page.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -63,7 +67,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the page number within the PDF document.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,9 +94,13 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="stream">The stream to which the page will be saved.</param>
+        <summary>
+            Saves the PDF page to the specified stream.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="stream" /> is null.</exception>
+        <exception cref="T:System.IO.IOException">Thrown when an I/O error occurs.</exception>
       </Docs>
     </Member>
     <Member MemberName="SaveAsync">
@@ -113,10 +123,14 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="stream">The stream to which the page will be saved.</param>
+        <summary>
+            Asynchronously saves the PDF page to the specified stream.
+            </summary>
+        <returns>A task representing the asynchronous save operation.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="stream" /> is null.</exception>
+        <exception cref="T:System.IO.IOException">Thrown when an I/O error occurs.</exception>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -136,7 +150,9 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the width of the PDF page.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

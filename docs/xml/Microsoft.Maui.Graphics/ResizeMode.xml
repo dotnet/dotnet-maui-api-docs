@@ -15,7 +15,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Specifies how an image should be resized to fit a target area.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,7 +39,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Preserves aspect ratio and fills the target dimensions, potentially cropping the image.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Fit">
@@ -58,7 +62,10 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Preserves aspect ratio and ensures the image fits within the target dimensions.
+            May leave empty space if the aspect ratios don't match.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Stretch">
@@ -79,7 +86,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Ignores aspect ratio and stretches the image to exactly fit the target dimensions.
+            </summary>
       </Docs>
     </Member>
   </Members>
