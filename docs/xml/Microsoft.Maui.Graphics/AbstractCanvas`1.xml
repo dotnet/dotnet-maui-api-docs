@@ -30,9 +30,14 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="TState">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TState">The type of state managed by this canvas, which must derive from <see cref="T:Microsoft.Maui.Graphics.CanvasState" />.</typeparam>
+    <summary>
+            Provides an abstract base implementation of the <see cref="T:Microsoft.Maui.Graphics.ICanvas" /> interface.
+            </summary>
+    <remarks>
+            This class handles state management, coordinate transformation, and common drawing operations,
+            while delegating platform-specific rendering to derived classes.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

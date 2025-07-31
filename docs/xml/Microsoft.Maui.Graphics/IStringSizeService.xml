@@ -13,7 +13,9 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Defines a service for calculating the size of text strings with different fonts and alignments.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,11 +41,13 @@
         <Parameter Name="fontSize" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="font">To be added.</param>
-        <param name="fontSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The string to measure.</param>
+        <param name="font">The font to use for measurement.</param>
+        <param name="fontSize">The font size in points.</param>
+        <summary>
+            Gets the size of a string when rendered with the specified font and font size.
+            </summary>
+        <returns>The size of the string in device-independent units.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,13 +75,15 @@
         <Parameter Name="verticalAlignment" Type="Microsoft.Maui.Graphics.VerticalAlignment" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="font">To be added.</param>
-        <param name="fontSize">To be added.</param>
-        <param name="horizontalAlignment">To be added.</param>
-        <param name="verticalAlignment">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The string to measure.</param>
+        <param name="font">The font to use for measurement.</param>
+        <param name="fontSize">The font size in points.</param>
+        <param name="horizontalAlignment">The horizontal alignment of the text.</param>
+        <param name="verticalAlignment">The vertical alignment of the text.</param>
+        <summary>
+            Gets the size of a string when rendered with the specified font, font size, and alignments.
+            </summary>
+        <returns>The size of the string in device-independent units.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

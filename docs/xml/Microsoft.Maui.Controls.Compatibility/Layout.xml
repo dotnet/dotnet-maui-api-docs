@@ -1,10 +1,15 @@
 <Type Name="Layout" FullName="Microsoft.Maui.Controls.Compatibility.Layout">
-  <TypeSignature Language="C#" Value="public abstract class Layout : Microsoft.Maui.Controls.View, Microsoft.Maui.Controls.ILayout, Microsoft.Maui.Controls.ILayoutController, Microsoft.Maui.Controls.IPaddingElement, Microsoft.Maui.IVisualTreeElement" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Layout extends Microsoft.Maui.Controls.View implements class Microsoft.Maui.Controls.ILayout, class Microsoft.Maui.Controls.ILayoutController, class Microsoft.Maui.Controls.IPaddingElement, class Microsoft.Maui.IElement, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView, class Microsoft.Maui.IVisualTreeElement" />
+  <TypeSignature Language="C#" Value="public abstract class Layout : Microsoft.Maui.Controls.View, Microsoft.Maui.Controls.ILayout, Microsoft.Maui.Controls.ILayoutController, Microsoft.Maui.Controls.IPaddingElement, Microsoft.Maui.ICrossPlatformLayout, Microsoft.Maui.IVisualTreeElement" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Layout extends Microsoft.Maui.Controls.View implements class Microsoft.Maui.Controls.ILayout, class Microsoft.Maui.Controls.ILayoutController, class Microsoft.Maui.Controls.IPaddingElement, class Microsoft.Maui.ICrossPlatformLayout, class Microsoft.Maui.IElement, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView, class Microsoft.Maui.IVisualTreeElement" FrameworkAlternate="net-maui-10.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Compatibility.Layout" />
-  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Layout&#xA;Inherits View&#xA;Implements ILayout, ILayoutController, IPaddingElement, IVisualTreeElement" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Layout abstract : Microsoft::Maui::Controls::View, Microsoft::Maui::Controls::ILayout, Microsoft::Maui::Controls::ILayoutController, Microsoft::Maui::Controls::IPaddingElement, Microsoft::Maui::IVisualTreeElement" />
-  <TypeSignature Language="F#" Value="type Layout = class&#xA;    inherit View&#xA;    interface ILayout&#xA;    interface ILayoutController&#xA;    interface IPaddingElement&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IVisualTreeElement" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Layout&#xA;Inherits View&#xA;Implements ICrossPlatformLayout, ILayout, ILayoutController, IPaddingElement, IVisualTreeElement" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Layout abstract : Microsoft::Maui::Controls::View, Microsoft::Maui::Controls::ILayout, Microsoft::Maui::Controls::ILayoutController, Microsoft::Maui::Controls::IPaddingElement, Microsoft::Maui::ICrossPlatformLayout, Microsoft::Maui::IVisualTreeElement" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="F#" Value="type Layout = class&#xA;    inherit View&#xA;    interface ILayout&#xA;    interface ILayoutController&#xA;    interface IPaddingElement&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IVisualTreeElement&#xA;    interface ICrossPlatformLayout" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="C#" Value="public abstract class Layout : Microsoft.Maui.Controls.View, Microsoft.Maui.Controls.ILayout, Microsoft.Maui.Controls.ILayoutController, Microsoft.Maui.Controls.IPaddingElement, Microsoft.Maui.IVisualTreeElement" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Layout extends Microsoft.Maui.Controls.View implements class Microsoft.Maui.Controls.ILayout, class Microsoft.Maui.Controls.ILayoutController, class Microsoft.Maui.Controls.IPaddingElement, class Microsoft.Maui.IElement, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView, class Microsoft.Maui.IVisualTreeElement" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Layout&#xA;Inherits View&#xA;Implements ILayout, ILayoutController, IPaddingElement, IVisualTreeElement" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Layout abstract : Microsoft::Maui::Controls::View, Microsoft::Maui::Controls::ILayout, Microsoft::Maui::Controls::ILayoutController, Microsoft::Maui::Controls::IPaddingElement, Microsoft::Maui::IVisualTreeElement" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="F#" Value="type Layout = class&#xA;    inherit View&#xA;    interface ILayout&#xA;    interface ILayoutController&#xA;    interface IPaddingElement&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IVisualTreeElement" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -23,6 +28,9 @@
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Maui.Controls.IPaddingElement</InterfaceName>
+    </Interface>
+    <Interface FrameworkAlternate="net-maui-10.0">
+      <InterfaceName>Microsoft.Maui.ICrossPlatformLayout</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Maui.IElement</InterfaceName>
@@ -188,6 +196,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Use ArrangeOverride.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use ArrangeOverride.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
       </ReturnValue>
@@ -215,6 +229,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Use MeasureOverride.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use MeasureOverride.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
       </ReturnValue>
@@ -302,7 +322,6 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -481,7 +500,11 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-maui-10.0;net-maui-9.0">
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Use the ZIndex Property instead. This property no longer works on .NET 10 and later.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use the ZIndex Property instead. This property no longer works on .NET 10 and later.")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-9.0">
           <AttributeName Language="C#">[System.Obsolete("Use the ZIndex Property instead")]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Obsolete("Use the ZIndex Property instead")&gt;]</AttributeName>
         </Attribute>
@@ -513,6 +536,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Use Measure with no flags.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use Measure with no flags.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.SizeRequest</ReturnType>
       </ReturnValue>
@@ -614,6 +643,64 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Microsoft.Maui.ICrossPlatformLayout.CrossPlatformArrange">
+      <MemberSignature Language="C#" Value="Microsoft.Maui.Graphics.Size ICrossPlatformLayout.CrossPlatformArrange (Microsoft.Maui.Graphics.Rect bounds);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype Microsoft.Maui.Graphics.Size Microsoft.Maui.ICrossPlatformLayout.CrossPlatformArrange(valuetype Microsoft.Maui.Graphics.Rect bounds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Compatibility.Layout.Microsoft#Maui#ICrossPlatformLayout#CrossPlatformArrange(Microsoft.Maui.Graphics.Rect)" />
+      <MemberSignature Language="VB.NET" Value="Function CrossPlatformArrange (bounds As Rect) As Size Implements ICrossPlatformLayout.CrossPlatformArrange" />
+      <MemberSignature Language="C++ CLI" Value=" virtual Microsoft::Maui::Graphics::Size Microsoft.Maui.ICrossPlatformLayout.CrossPlatformArrange(Microsoft::Maui::Graphics::Rect bounds) = Microsoft::Maui::ICrossPlatformLayout::CrossPlatformArrange;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.ICrossPlatformLayout.CrossPlatformArrange : Microsoft.Maui.Graphics.Rect -&gt; Microsoft.Maui.Graphics.Size&#xA;override this.Microsoft.Maui.ICrossPlatformLayout.CrossPlatformArrange : Microsoft.Maui.Graphics.Rect -&gt; Microsoft.Maui.Graphics.Size" Usage="layout.Microsoft.Maui.ICrossPlatformLayout.CrossPlatformArrange bounds" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.ICrossPlatformLayout.CrossPlatformArrange(Microsoft.Maui.Graphics.Rect)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bounds" Type="Microsoft.Maui.Graphics.Rect" Index="0" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="bounds">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.ICrossPlatformLayout.CrossPlatformMeasure">
+      <MemberSignature Language="C#" Value="Microsoft.Maui.Graphics.Size ICrossPlatformLayout.CrossPlatformMeasure (double widthConstraint, double heightConstraint);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype Microsoft.Maui.Graphics.Size Microsoft.Maui.ICrossPlatformLayout.CrossPlatformMeasure(float64 widthConstraint, float64 heightConstraint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Compatibility.Layout.Microsoft#Maui#ICrossPlatformLayout#CrossPlatformMeasure(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Function CrossPlatformMeasure (widthConstraint As Double, heightConstraint As Double) As Size Implements ICrossPlatformLayout.CrossPlatformMeasure" />
+      <MemberSignature Language="C++ CLI" Value=" virtual Microsoft::Maui::Graphics::Size Microsoft.Maui.ICrossPlatformLayout.CrossPlatformMeasure(double widthConstraint, double heightConstraint) = Microsoft::Maui::ICrossPlatformLayout::CrossPlatformMeasure;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.ICrossPlatformLayout.CrossPlatformMeasure : double * double -&gt; Microsoft.Maui.Graphics.Size&#xA;override this.Microsoft.Maui.ICrossPlatformLayout.CrossPlatformMeasure : double * double -&gt; Microsoft.Maui.Graphics.Size" Usage="layout.Microsoft.Maui.ICrossPlatformLayout.CrossPlatformMeasure (widthConstraint, heightConstraint)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.ICrossPlatformLayout.CrossPlatformMeasure(System.Double,System.Double)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="widthConstraint" Type="System.Double" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="heightConstraint" Type="System.Double" Index="1" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="widthConstraint">To be added.</param>
+        <param name="heightConstraint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Microsoft.Maui.IView.Measure">
       <MemberSignature Language="C#" Value="Microsoft.Maui.Graphics.Size IView.Measure (double widthConstraint, double heightConstraint);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype Microsoft.Maui.Graphics.Size Microsoft.Maui.IView.Measure(float64 widthConstraint, float64 heightConstraint) cil managed" />
@@ -671,13 +758,38 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="OnChildAdded">
+      <MemberSignature Language="C#" Value="protected override void OnChildAdded (Microsoft.Maui.Controls.Element child);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnChildAdded(class Microsoft.Maui.Controls.Element child) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Compatibility.Layout.OnChildAdded(Microsoft.Maui.Controls.Element)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnChildAdded (child As Element)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnChildAdded(Microsoft::Maui::Controls::Element ^ child);" />
+      <MemberSignature Language="F#" Value="override this.OnChildAdded : Microsoft.Maui.Controls.Element -&gt; unit" Usage="layout.OnChildAdded child" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="child" Type="Microsoft.Maui.Controls.Element" Index="0" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="child">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="OnChildMeasureInvalidated">
       <MemberSignature Language="C#" Value="protected virtual void OnChildMeasureInvalidated ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnChildMeasureInvalidated() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Compatibility.Layout.OnChildMeasureInvalidated" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnChildMeasureInvalidated ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnChildMeasureInvalidated();" />
-      <MemberSignature Language="F#" Value="abstract member OnChildMeasureInvalidated : unit -&gt; unit&#xA;override this.OnChildMeasureInvalidated : unit -&gt; unit" Usage="layout.OnChildMeasureInvalidated " />
+      <MemberSignature Language="F#" Value="override this.OnChildMeasureInvalidated : unit -&gt; unit" Usage="layout.OnChildMeasureInvalidated " FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="F#" Value="abstract member OnChildMeasureInvalidated : unit -&gt; unit&#xA;override this.OnChildMeasureInvalidated : unit -&gt; unit" Usage="layout.OnChildMeasureInvalidated " FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -708,7 +820,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Compatibility.Layout.OnChildMeasureInvalidated(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub OnChildMeasureInvalidated (sender As Object, e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnChildMeasureInvalidated(System::Object ^ sender, EventArgs ^ e);" />
-      <MemberSignature Language="F#" Value="member this.OnChildMeasureInvalidated : obj * EventArgs -&gt; unit" Usage="layout.OnChildMeasureInvalidated (sender, e)" />
+      <MemberSignature Language="F#" Value="override this.OnChildMeasureInvalidated : obj * EventArgs -&gt; unit" Usage="layout.OnChildMeasureInvalidated (sender, e)" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="F#" Value="member this.OnChildMeasureInvalidated : obj * EventArgs -&gt; unit" Usage="layout.OnChildMeasureInvalidated (sender, e)" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -730,6 +843,32 @@
             Implement this method to add class handling for this event.
             </summary>
         <remarks>This method has a default implementation and application developers must call the base implementation.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnChildRemoved">
+      <MemberSignature Language="C#" Value="protected override void OnChildRemoved (Microsoft.Maui.Controls.Element child, int oldLogicalIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnChildRemoved(class Microsoft.Maui.Controls.Element child, int32 oldLogicalIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Compatibility.Layout.OnChildRemoved(Microsoft.Maui.Controls.Element,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnChildRemoved (child As Element, oldLogicalIndex As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnChildRemoved(Microsoft::Maui::Controls::Element ^ child, int oldLogicalIndex);" />
+      <MemberSignature Language="F#" Value="override this.OnChildRemoved : Microsoft.Maui.Controls.Element * int -&gt; unit" Usage="layout.OnChildRemoved (child, oldLogicalIndex)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="child" Type="Microsoft.Maui.Controls.Element" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="oldLogicalIndex" Type="System.Int32" Index="1" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="child">To be added.</param>
+        <param name="oldLogicalIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnSizeAllocated">
@@ -819,7 +958,11 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-maui-10.0;net-maui-9.0">
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Use the ZIndex Property instead. This property no longer works on .NET 10 and later.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use the ZIndex Property instead. This property no longer works on .NET 10 and later.")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-9.0">
           <AttributeName Language="C#">[System.Obsolete("Use the ZIndex Property instead")]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Obsolete("Use the ZIndex Property instead")&gt;]</AttributeName>
         </Attribute>
@@ -853,7 +996,11 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-maui-10.0;net-maui-9.0">
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("If you want to influence invalidation override InvalidateMeasureOverride. This method will no longer work on .NET 10 and later.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("If you want to influence invalidation override InvalidateMeasureOverride. This method will no longer work on .NET 10 and later.")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-9.0">
           <AttributeName Language="C#">[System.Obsolete("If you want to influence invalidation override InvalidateMeasureOverride")]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Obsolete("If you want to influence invalidation override InvalidateMeasureOverride")&gt;]</AttributeName>
         </Attribute>
@@ -889,7 +1036,11 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-maui-10.0;net-maui-9.0">
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("If you want to influence invalidation override InvalidateMeasureOverride. This method will no longer work on .NET 10 and later.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("If you want to influence invalidation override InvalidateMeasureOverride. This method will no longer work on .NET 10 and later.")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-9.0">
           <AttributeName Language="C#">[System.Obsolete("If you want to influence invalidation override InvalidateMeasureOverride")]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Obsolete("If you want to influence invalidation override InvalidateMeasureOverride")&gt;]</AttributeName>
         </Attribute>
@@ -925,7 +1076,11 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-maui-10.0;net-maui-9.0">
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Use InvalidateMeasure depending on your scenario. This method will no longer work on .NET 10 and later.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use InvalidateMeasure depending on your scenario. This method will no longer work on .NET 10 and later.")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-9.0">
           <AttributeName Language="C#">[System.Obsolete("Use InvalidateMeasure depending on your scenario")]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Obsolete("Use InvalidateMeasure depending on your scenario")&gt;]</AttributeName>
         </Attribute>

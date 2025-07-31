@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Provides functionality for constructing path objects from string definitions.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -58,10 +60,12 @@
         <Parameter Name="definition" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="definition">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="definition">The string definition of the path using SVG-like path commands.</param>
+        <summary>
+            Builds a path from a string definition.
+            </summary>
+        <returns>A new <see cref="T:Microsoft.Maui.Graphics.PathF" /> object representing the defined path.</returns>
+        <remarks>Returns an empty path if the definition is null or empty.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BuildPath">
@@ -84,10 +88,13 @@
         <Parameter Name="pathAsString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="pathAsString">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="pathAsString">The string definition of the path using SVG-like path commands.</param>
+        <summary>
+            Builds a path from a string definition.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Maui.Graphics.PathF" /> object representing the defined path.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Exception">Thrown when there's an error parsing the path commands.</exception>
       </Docs>
     </Member>
     <Member MemberName="ParseFloat">
@@ -110,10 +117,13 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The string representation of a number.</param>
+        <summary>
+            Parses a string value as a float using invariant culture.
+            </summary>
+        <returns>The float value parsed from the string.</returns>
+        <remarks>Handles special cases like Illustrator's malformed number formats (e.g., "5.96.88").</remarks>
+        <exception cref="T:System.Exception">Thrown when the string cannot be parsed as a float.</exception>
       </Docs>
     </Member>
   </Members>

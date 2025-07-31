@@ -16,10 +16,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>An item in a toolbar or displayed on a <see cref="T:Microsoft.Maui.Controls.Page" />.</summary>
-    <remarks>
-      <para>Any changes made to the properties of the toolbar item after it has been added will be ignored.</para>
-    </remarks>
+    <summary>
+            An item in a toolbar or displayed on a Page.
+            </summary>
+    <remarks>Any changes made to the properties of the toolbar item after it has been added will be ignored.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,7 +36,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Constructs and initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.ToolbarItem" /> class.</summary>
+        <summary>
+            Constructs and initializes a new instance of the ToolbarItem class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,13 +62,16 @@
         <Parameter Name="priority" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="icon">The icon for the toolbar item.</param>
-        <param name="activated">The action to perform when the toolbar item is activated.</param>
-        <param name="order">The order for the toolbar item.</param>
-        <param name="priority">The toolbar item priority.</param>
-        <summary>Constructs and initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.ToolbarItem" /> class.</summary>
+        <param name="name">The name to use for this toolbar item.</param>
+        <param name="icon">The icon to use for this toolbar item.</param>
+        <param name="activated">The action to invoke when this toolbar item is activated.</param>
+        <param name="order">Determines if this toolbar item is visible on the <see cref="T:Microsoft.Maui.Controls.Toolbar" /> directly or in a collapsed menu.</param>
+        <param name="priority">Determines the order of this toolbar item.</param>
+        <summary>
+            Constructs and initializes a new instance of the ToolbarItem class.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="activated" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Order">
@@ -86,7 +91,10 @@
         <ReturnType>Microsoft.Maui.Controls.ToolbarItemOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates on which of the primary, secondary, or default toolbar surfaces to display this <see cref="T:Microsoft.Maui.Controls.ToolbarItem" /> element.</summary>
+        <summary>
+            Gets or sets a value that indicates on which of the primary, secondary, or default toolbar surfaces to display this ToolbarItem element.
+            This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -108,7 +116,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the priority of this <see cref="T:Microsoft.Maui.Controls.ToolbarItem" /> element.</summary>
+        <summary>
+            Gets or sets the priority of this ToolbarItem element. This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

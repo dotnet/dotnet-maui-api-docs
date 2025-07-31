@@ -15,10 +15,10 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Specifies the format type of text content.
+            </summary>
     <remarks>To be added.</remarks>
-    <!-- No matching elements were found for the following include tag -->
-    <include file="../../docs/Microsoft.Maui/TextType.xml" path="Type[@FullName='Microsoft.Maui.TextType']/Docs/*" />
   </Docs>
   <Members>
     <Member MemberName="Html">
@@ -39,9 +39,13 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui/TextType.xml" path="//Member[@MemberName='Html']/Docs/*" />
+        <summary>
+            HTML-formatted text content that may include markup.
+            </summary>
+        <remarks>
+            The subset of supported HTML tags varies by platform. Each platform's native text rendering engine
+            determines which HTML tags and attributes are supported.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -62,9 +66,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui/TextType.xml" path="//Member[@MemberName='Text']/Docs/*" />
+        <summary>
+            Plain text content without markup.
+            </summary>
       </Docs>
     </Member>
   </Members>

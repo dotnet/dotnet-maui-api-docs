@@ -20,7 +20,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents a pattern that applies a paint to a wrapped pattern for filling shapes.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,8 +43,10 @@
         <Parameter Name="pattern" Type="Microsoft.Maui.Graphics.IPattern" />
       </Parameters>
       <Docs>
-        <param name="pattern">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="pattern">The pattern to wrap and apply a paint to.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Graphics.PaintPattern" /> class with the specified wrapped pattern.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +73,10 @@
         <Parameter Name="canvas" Type="Microsoft.Maui.Graphics.ICanvas" />
       </Parameters>
       <Docs>
-        <param name="canvas">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="canvas">The canvas to draw the pattern onto.</param>
+        <summary>
+            Draws the pattern onto the specified canvas with the current paint.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,7 +100,9 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the height of the pattern, which is the height of the wrapped pattern or 0 if there is no wrapped pattern.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -116,7 +124,9 @@
         <ReturnType>Microsoft.Maui.Graphics.Paint</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the paint to apply to the wrapped pattern.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -141,7 +151,9 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the horizontal step size for repeating the pattern, which is the step X of the wrapped pattern or 0 if there is no wrapped pattern.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -166,7 +178,9 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the vertical step size for repeating the pattern, which is the step Y of the wrapped pattern or 0 if there is no wrapped pattern.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -191,7 +205,9 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the width of the pattern, which is the width of the wrapped pattern or 0 if there is no wrapped pattern.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -213,7 +229,9 @@
         <ReturnType>Microsoft.Maui.Graphics.IPattern</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the wrapped pattern that this pattern applies a paint to.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

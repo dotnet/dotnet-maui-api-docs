@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Provides extension methods for working with SkiaSharp graphics objects.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,9 +42,11 @@
         <Parameter Name="target" Type="SkiaSharp.SKColor" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The SkiaSharp color to convert.</param>
+        <summary>
+            Converts a SkiaSharp color to a .NET MAUI Graphics color.
+            </summary>
+        <returns>A .NET MAUI Graphics color that corresponds to the specified SkiaSharp color.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,9 +77,11 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="transform">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="transform">The Matrix3x2 to convert.</param>
+        <summary>
+            Converts a Matrix3x2 to a SkiaSharp SKMatrix.
+            </summary>
+        <returns>A SkiaSharp SKMatrix that corresponds to the specified Matrix3x2.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,9 +105,11 @@
         <Parameter Name="target" Type="SkiaSharp.SKPoint" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The SKPoint to convert.</param>
+        <summary>
+            Converts a SkiaSharp SKPoint to a .NET MAUI Graphics PointF.
+            </summary>
+        <returns>A .NET MAUI Graphics PointF that corresponds to the specified SKPoint.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,9 +133,11 @@
         <Parameter Name="target" Type="SkiaSharp.SKRect" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The SKRect to convert.</param>
+        <summary>
+            Converts a SkiaSharp SKRect to a RectF.
+            </summary>
+        <returns>A RectF that corresponds to the specified SKRect.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,13 +165,15 @@
         <Parameter Name="angle" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="center">To be added.</param>
-        <param name="ppu">To be added.</param>
-        <param name="zoom">To be added.</param>
-        <param name="angle">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The PathF to convert.</param>
+        <param name="center">The center point around which to rotate the path.</param>
+        <param name="ppu">The pixels-per-unit value.</param>
+        <param name="zoom">The zoom level.</param>
+        <param name="angle">The rotation angle in degrees.</param>
+        <summary>
+            Converts a PathF to a SkiaSharp SKPath with a specified pixels-per-unit value, zoom level, and rotation angle.
+            </summary>
+        <returns>A SkiaSharp SKPath that corresponds to the specified PathF, scaled by the specified pixels-per-unit value and zoom level, and rotated around the specified center point.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,9 +197,11 @@
         <Parameter Name="target" Type="SkiaSharp.SKSize" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The SKSize to convert.</param>
+        <summary>
+            Converts a SkiaSharp SKSize to a .NET MAUI Graphics SizeF.
+            </summary>
+        <returns>A .NET MAUI Graphics SizeF that corresponds to the specified SKSize.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,9 +225,11 @@
         <Parameter Name="target" Type="Microsoft.Maui.Graphics.SizeF" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The SizeF to convert.</param>
+        <summary>
+            Converts a .NET MAUI Graphics SizeF to a SkiaSharp SKSize.
+            </summary>
+        <returns>A SkiaSharp SKSize that corresponds to the specified SizeF.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,9 +253,11 @@
         <Parameter Name="target" Type="Microsoft.Maui.Graphics.Color" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The color to convert.</param>
+        <summary>
+            Converts a .NET MAUI Graphics color to a SkiaSharp color.
+            </summary>
+        <returns>A SkiaSharp color that corresponds to the specified color.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,10 +282,12 @@
         <Parameter Name="alpha" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="alpha">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The color to convert.</param>
+        <param name="alpha">The alpha multiplier to apply (0-1).</param>
+        <summary>
+            Converts a .NET MAUI Graphics color to a SkiaSharp color with a multiplied alpha value.
+            </summary>
+        <returns>A SkiaSharp color with the alpha value multiplied by the specified factor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -291,9 +311,11 @@
         <Parameter Name="target" Type="Microsoft.Maui.Graphics.PathF" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The PathF to convert.</param>
+        <summary>
+            Converts a PathF to a SkiaSharp SKPath.
+            </summary>
+        <returns>A SkiaSharp SKPath that corresponds to the specified PathF.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -318,10 +340,12 @@
         <Parameter Name="ppu" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <param name="ppu">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="path">The PathF to convert.</param>
+        <param name="ppu">The pixels-per-unit value.</param>
+        <summary>
+            Converts a PathF to a SkiaSharp SKPath with a specified pixels-per-unit value.
+            </summary>
+        <returns>A SkiaSharp SKPath that corresponds to the specified PathF, scaled by the specified pixels-per-unit value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -347,11 +371,13 @@
         <Parameter Name="zoom" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <param name="ppu">To be added.</param>
-        <param name="zoom">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="path">The PathF to convert.</param>
+        <param name="ppu">The pixels-per-unit value.</param>
+        <param name="zoom">The zoom level.</param>
+        <summary>
+            Converts a PathF to a SkiaSharp SKPath with a specified pixels-per-unit value and zoom level.
+            </summary>
+        <returns>A SkiaSharp SKPath that corresponds to the specified PathF, scaled by the specified pixels-per-unit value and zoom level.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -380,14 +406,16 @@
         <Parameter Name="fy" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <param name="ppu">To be added.</param>
-        <param name="ox">To be added.</param>
-        <param name="oy">To be added.</param>
-        <param name="fx">To be added.</param>
-        <param name="fy">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="path">The PathF to convert.</param>
+        <param name="ppu">The pixels-per-unit value.</param>
+        <param name="ox">The x-offset.</param>
+        <param name="oy">The y-offset.</param>
+        <param name="fx">The x-scale factor.</param>
+        <param name="fy">The y-scale factor.</param>
+        <summary>
+            Converts a PathF to a SkiaSharp SKPath with specified transformation parameters.
+            </summary>
+        <returns>A SkiaSharp SKPath that corresponds to the specified PathF, transformed according to the specified parameters.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -414,12 +442,14 @@
         <Parameter Name="zoom" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="segmentIndex">To be added.</param>
-        <param name="ppu">To be added.</param>
-        <param name="zoom">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The PathF containing the segment to convert.</param>
+        <param name="segmentIndex">The index of the segment to convert.</param>
+        <param name="ppu">The pixels-per-unit value.</param>
+        <param name="zoom">The zoom level.</param>
+        <summary>
+            Converts a segment of a PathF to a SkiaSharp SKPath with a specified pixels-per-unit value and zoom level.
+            </summary>
+        <returns>A SkiaSharp SKPath that corresponds to the specified segment of the PathF, scaled by the specified pixels-per-unit value and zoom level.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -443,9 +473,11 @@
         <Parameter Name="target" Type="Microsoft.Maui.Graphics.RectF" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The RectF to convert.</param>
+        <summary>
+            Converts a RectF to a SkiaSharp SKRect.
+            </summary>
+        <returns>A SkiaSharp SKRect that corresponds to the specified RectF.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -469,10 +501,12 @@
         <Parameter Name="scale" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="patternPaint">To be added.</param>
-        <param name="scale">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="patternPaint">The PatternPaint object.</param>
+        <param name="scale">The scale factor for the bitmap.</param>
+        <summary>
+            Retrieves the bitmap pattern from a PatternPaint object.
+            </summary>
+        <returns>The bitmap pattern.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -499,12 +533,14 @@
         <Parameter Name="currentFigure" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="patternPaint">To be added.</param>
-        <param name="scaleX">To be added.</param>
-        <param name="scaleY">To be added.</param>
-        <param name="currentFigure">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="patternPaint">The PatternPaint object.</param>
+        <param name="scaleX">The scale factor for the X dimension.</param>
+        <param name="scaleY">The scale factor for the Y dimension.</param>
+        <param name="currentFigure">The current figure (optional).</param>
+        <summary>
+            Retrieves the bitmap pattern from a PatternPaint object with specified scale factors.
+            </summary>
+        <returns>The bitmap pattern.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -528,9 +564,11 @@
         <Parameter Name="target" Type="Microsoft.Maui.Graphics.Color" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The color to convert.</param>
+        <summary>
+            Converts a .NET MAUI Graphics color to an ARGB integer representation.
+            </summary>
+        <returns>The color as a 32-bit ARGB integer.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -555,10 +593,12 @@
         <Parameter Name="alpha" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="alpha">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The color to convert.</param>
+        <param name="alpha">The alpha multiplier to apply (0-1).</param>
+        <summary>
+            Converts a .NET MAUI Graphics color to an ARGB integer representation with a modified alpha value.
+            </summary>
+        <returns>The color as a 32-bit ARGB integer with the modified alpha value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -582,9 +622,11 @@
         <Parameter Name="target" Type="Microsoft.Maui.Graphics.PointF" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The PointF to convert.</param>
+        <summary>
+            Converts a PointF to a SkiaSharp SKPoint.
+            </summary>
+        <returns>A SkiaSharp SKPoint that corresponds to the specified PointF.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

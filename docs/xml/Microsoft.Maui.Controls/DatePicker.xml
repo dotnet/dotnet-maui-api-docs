@@ -1,10 +1,15 @@
 <Type Name="DatePicker" FullName="Microsoft.Maui.Controls.DatePicker">
-  <TypeSignature Language="C#" Value="public class DatePicker : Microsoft.Maui.Controls.View, Microsoft.Maui.Controls.IElementConfiguration&lt;Microsoft.Maui.Controls.DatePicker&gt;, Microsoft.Maui.Controls.Internals.IFontElement, Microsoft.Maui.IDatePicker" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DatePicker extends Microsoft.Maui.Controls.View implements class Microsoft.Maui.Controls.IElementConfiguration`1&lt;class Microsoft.Maui.Controls.DatePicker&gt;, class Microsoft.Maui.Controls.Internals.IFontElement, class Microsoft.Maui.IDatePicker, class Microsoft.Maui.IElement, class Microsoft.Maui.ITextStyle, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" />
+  <TypeSignature Language="C#" Value="public class DatePicker : Microsoft.Maui.Controls.View, Microsoft.Maui.Controls.IElementConfiguration&lt;Microsoft.Maui.Controls.DatePicker&gt;, Microsoft.Maui.Controls.Internals.IFontElement, Microsoft.Maui.Controls.ITextElement, Microsoft.Maui.IDatePicker" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DatePicker extends Microsoft.Maui.Controls.View implements class Microsoft.Maui.Controls.IElementConfiguration`1&lt;class Microsoft.Maui.Controls.DatePicker&gt;, class Microsoft.Maui.Controls.Internals.IFontElement, class Microsoft.Maui.Controls.ITextElement, class Microsoft.Maui.IDatePicker, class Microsoft.Maui.IElement, class Microsoft.Maui.ITextStyle, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" FrameworkAlternate="net-maui-10.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.DatePicker" />
-  <TypeSignature Language="VB.NET" Value="Public Class DatePicker&#xA;Inherits View&#xA;Implements IDatePicker, IElementConfiguration(Of DatePicker), IFontElement" />
-  <TypeSignature Language="C++ CLI" Value="public ref class DatePicker : Microsoft::Maui::Controls::View, Microsoft::Maui::Controls::IElementConfiguration&lt;Microsoft::Maui::Controls::DatePicker ^&gt;, Microsoft::Maui::Controls::Internals::IFontElement, Microsoft::Maui::IDatePicker" />
-  <TypeSignature Language="F#" Value="type DatePicker = class&#xA;    inherit View&#xA;    interface IFontElement&#xA;    interface IElementConfiguration&lt;DatePicker&gt;&#xA;    interface IDatePicker&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface ITextStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Class DatePicker&#xA;Inherits View&#xA;Implements IDatePicker, IElementConfiguration(Of DatePicker), IFontElement, ITextElement" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DatePicker : Microsoft::Maui::Controls::View, Microsoft::Maui::Controls::IElementConfiguration&lt;Microsoft::Maui::Controls::DatePicker ^&gt;, Microsoft::Maui::Controls::Internals::IFontElement, Microsoft::Maui::Controls::ITextElement, Microsoft::Maui::IDatePicker" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="F#" Value="type DatePicker = class&#xA;    inherit View&#xA;    interface IFontElement&#xA;    interface ITextElement&#xA;    interface IElementConfiguration&lt;DatePicker&gt;&#xA;    interface IDatePicker&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface ITextStyle" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="C#" Value="public class DatePicker : Microsoft.Maui.Controls.View, Microsoft.Maui.Controls.IElementConfiguration&lt;Microsoft.Maui.Controls.DatePicker&gt;, Microsoft.Maui.Controls.Internals.IFontElement, Microsoft.Maui.IDatePicker" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DatePicker extends Microsoft.Maui.Controls.View implements class Microsoft.Maui.Controls.IElementConfiguration`1&lt;class Microsoft.Maui.Controls.DatePicker&gt;, class Microsoft.Maui.Controls.Internals.IFontElement, class Microsoft.Maui.IDatePicker, class Microsoft.Maui.IElement, class Microsoft.Maui.ITextStyle, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="VB.NET" Value="Public Class DatePicker&#xA;Inherits View&#xA;Implements IDatePicker, IElementConfiguration(Of DatePicker), IFontElement" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DatePicker : Microsoft::Maui::Controls::View, Microsoft::Maui::Controls::IElementConfiguration&lt;Microsoft::Maui::Controls::DatePicker ^&gt;, Microsoft::Maui::Controls::Internals::IFontElement, Microsoft::Maui::IDatePicker" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="F#" Value="type DatePicker = class&#xA;    inherit View&#xA;    interface IFontElement&#xA;    interface IElementConfiguration&lt;DatePicker&gt;&#xA;    interface IDatePicker&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface ITextStyle" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -20,6 +25,9 @@
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Maui.Controls.Internals.IFontElement</InterfaceName>
+    </Interface>
+    <Interface FrameworkAlternate="net-maui-10.0">
+      <InterfaceName>Microsoft.Maui.Controls.ITextElement</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Maui.IDatePicker</InterfaceName>
@@ -138,6 +146,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Closed">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Controls.DatePickerClosedEventArgs&gt; Closed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.DatePickerClosedEventArgs&gt; Closed" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.DatePicker.Closed" />
+      <MemberSignature Language="VB.NET" Value="Public Event Closed As EventHandler(Of DatePickerClosedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Controls::DatePickerClosedEventArgs ^&gt; ^ Closed;" />
+      <MemberSignature Language="F#" Value="member this.Closed : EventHandler&lt;Microsoft.Maui.Controls.DatePickerClosedEventArgs&gt; " Usage="member this.Closed : System.EventHandler&lt;Microsoft.Maui.Controls.DatePickerClosedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.DatePickerClosedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ControlsDatePickerMapper">
       <MemberSignature Language="C#" Value="public static Microsoft.Maui.IPropertyMapper&lt;Microsoft.Maui.IDatePicker,Microsoft.Maui.Handlers.DatePickerHandler&gt; ControlsDatePickerMapper;" />
       <MemberSignature Language="ILAsm" Value=".field public static class Microsoft.Maui.IPropertyMapper`2&lt;class Microsoft.Maui.IDatePicker, class Microsoft.Maui.Handlers.DatePickerHandler&gt; ControlsDatePickerMapper" />
@@ -165,12 +193,17 @@
       </Docs>
     </Member>
     <Member MemberName="Date">
-      <MemberSignature Language="C#" Value="public DateTime Date { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime Date" />
+      <MemberSignature Language="C#" Value="public DateTime? Date { get; set; }" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; Date" FrameworkAlternate="net-maui-10.0" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.DatePicker.Date" />
-      <MemberSignature Language="VB.NET" Value="Public Property Date As DateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Date { DateTime get(); void set(DateTime value); };" />
-      <MemberSignature Language="F#" Value="member this.Date : DateTime with get, set" Usage="Microsoft.Maui.Controls.DatePicker.Date" />
+      <MemberSignature Language="VB.NET" Value="Public Property Date As Nullable(Of DateTime)" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; Date { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="F#" Value="member this.Date : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.Maui.Controls.DatePicker.Date" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="C#" Value="public DateTime Date { get; set; }" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime Date" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="VB.NET" Value="Public Property Date As DateTime" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Date { DateTime get(); void set(DateTime value); };" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="F#" Value="member this.Date : DateTime with get, set" Usage="Microsoft.Maui.Controls.DatePicker.Date" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -178,7 +211,8 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.DateTime</ReturnType>
+        <ReturnType FrameworkAlternate="net-maui-10.0">System.Nullable&lt;System.DateTime&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="net-maui-8.0;net-maui-9.0">System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the displayed date. This is a bindable property.</summary>
@@ -288,7 +322,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets whether the font size is automatically scaled based on the operating system's accessibility settings.
+            This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -449,13 +486,62 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsOpen">
+      <MemberSignature Language="C#" Value="public bool IsOpen { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsOpen" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.DatePicker.IsOpen" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsOpen As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOpen { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsOpen : bool with get, set" Usage="Microsoft.Maui.Controls.DatePicker.IsOpen" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IDatePicker.IsOpen</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOpenProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty IsOpenProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty IsOpenProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.DatePicker.IsOpenProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsOpenProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ IsOpenProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsOpenProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.DatePicker.IsOpenProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.DatePicker.IsOpen" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="MaximumDate">
-      <MemberSignature Language="C#" Value="public DateTime MaximumDate { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime MaximumDate" />
+      <MemberSignature Language="C#" Value="public DateTime? MaximumDate { get; set; }" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; MaximumDate" FrameworkAlternate="net-maui-10.0" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.DatePicker.MaximumDate" />
-      <MemberSignature Language="VB.NET" Value="Public Property MaximumDate As DateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime MaximumDate { DateTime get(); void set(DateTime value); };" />
-      <MemberSignature Language="F#" Value="member this.MaximumDate : DateTime with get, set" Usage="Microsoft.Maui.Controls.DatePicker.MaximumDate" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaximumDate As Nullable(Of DateTime)" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; MaximumDate { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="F#" Value="member this.MaximumDate : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.Maui.Controls.DatePicker.MaximumDate" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="C#" Value="public DateTime MaximumDate { get; set; }" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime MaximumDate" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaximumDate As DateTime" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime MaximumDate { DateTime get(); void set(DateTime value); };" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="F#" Value="member this.MaximumDate : DateTime with get, set" Usage="Microsoft.Maui.Controls.DatePicker.MaximumDate" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -463,7 +549,8 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.DateTime</ReturnType>
+        <ReturnType FrameworkAlternate="net-maui-10.0">System.Nullable&lt;System.DateTime&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="net-maui-8.0;net-maui-9.0">System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>The highest date selectable for this DatePicker. This is a bindable property.</summary>
@@ -638,13 +725,129 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Microsoft.Maui.Controls.ITextElement.OnCharacterSpacingPropertyChanged">
+      <MemberSignature Language="C#" Value="void ITextElement.OnCharacterSpacingPropertyChanged (double oldValue, double newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.Controls.ITextElement.OnCharacterSpacingPropertyChanged(float64 oldValue, float64 newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.DatePicker.Microsoft#Maui#Controls#ITextElement#OnCharacterSpacingPropertyChanged(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Sub OnCharacterSpacingPropertyChanged (oldValue As Double, newValue As Double) Implements ITextElement.OnCharacterSpacingPropertyChanged" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.Controls.ITextElement.OnCharacterSpacingPropertyChanged(double oldValue, double newValue) = Microsoft::Maui::Controls::ITextElement::OnCharacterSpacingPropertyChanged;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Controls.ITextElement.OnCharacterSpacingPropertyChanged : double * double -&gt; unit&#xA;override this.Microsoft.Maui.Controls.ITextElement.OnCharacterSpacingPropertyChanged : double * double -&gt; unit" Usage="datePicker.Microsoft.Maui.Controls.ITextElement.OnCharacterSpacingPropertyChanged (oldValue, newValue)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.ITextElement.OnCharacterSpacingPropertyChanged(System.Double,System.Double)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldValue" Type="System.Double" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="newValue" Type="System.Double" Index="1" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Controls.ITextElement.OnTextColorPropertyChanged">
+      <MemberSignature Language="C#" Value="void ITextElement.OnTextColorPropertyChanged (Microsoft.Maui.Graphics.Color oldValue, Microsoft.Maui.Graphics.Color newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.Controls.ITextElement.OnTextColorPropertyChanged(class Microsoft.Maui.Graphics.Color oldValue, class Microsoft.Maui.Graphics.Color newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.DatePicker.Microsoft#Maui#Controls#ITextElement#OnTextColorPropertyChanged(Microsoft.Maui.Graphics.Color,Microsoft.Maui.Graphics.Color)" />
+      <MemberSignature Language="VB.NET" Value="Sub OnTextColorPropertyChanged (oldValue As Color, newValue As Color) Implements ITextElement.OnTextColorPropertyChanged" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.Controls.ITextElement.OnTextColorPropertyChanged(Microsoft::Maui::Graphics::Color ^ oldValue, Microsoft::Maui::Graphics::Color ^ newValue) = Microsoft::Maui::Controls::ITextElement::OnTextColorPropertyChanged;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Controls.ITextElement.OnTextColorPropertyChanged : Microsoft.Maui.Graphics.Color * Microsoft.Maui.Graphics.Color -&gt; unit&#xA;override this.Microsoft.Maui.Controls.ITextElement.OnTextColorPropertyChanged : Microsoft.Maui.Graphics.Color * Microsoft.Maui.Graphics.Color -&gt; unit" Usage="datePicker.Microsoft.Maui.Controls.ITextElement.OnTextColorPropertyChanged (oldValue, newValue)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.ITextElement.OnTextColorPropertyChanged(Microsoft.Maui.Graphics.Color,Microsoft.Maui.Graphics.Color)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldValue" Type="Microsoft.Maui.Graphics.Color" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="newValue" Type="Microsoft.Maui.Graphics.Color" Index="1" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Controls.ITextElement.OnTextTransformChanged">
+      <MemberSignature Language="C#" Value="void ITextElement.OnTextTransformChanged (Microsoft.Maui.TextTransform oldValue, Microsoft.Maui.TextTransform newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.Controls.ITextElement.OnTextTransformChanged(valuetype Microsoft.Maui.TextTransform oldValue, valuetype Microsoft.Maui.TextTransform newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.DatePicker.Microsoft#Maui#Controls#ITextElement#OnTextTransformChanged(Microsoft.Maui.TextTransform,Microsoft.Maui.TextTransform)" />
+      <MemberSignature Language="VB.NET" Value="Sub OnTextTransformChanged (oldValue As TextTransform, newValue As TextTransform) Implements ITextElement.OnTextTransformChanged" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.Controls.ITextElement.OnTextTransformChanged(Microsoft::Maui::TextTransform oldValue, Microsoft::Maui::TextTransform newValue) = Microsoft::Maui::Controls::ITextElement::OnTextTransformChanged;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Controls.ITextElement.OnTextTransformChanged : Microsoft.Maui.TextTransform * Microsoft.Maui.TextTransform -&gt; unit&#xA;override this.Microsoft.Maui.Controls.ITextElement.OnTextTransformChanged : Microsoft.Maui.TextTransform * Microsoft.Maui.TextTransform -&gt; unit" Usage="datePicker.Microsoft.Maui.Controls.ITextElement.OnTextTransformChanged (oldValue, newValue)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.ITextElement.OnTextTransformChanged(Microsoft.Maui.TextTransform,Microsoft.Maui.TextTransform)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldValue" Type="Microsoft.Maui.TextTransform" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="newValue" Type="Microsoft.Maui.TextTransform" Index="1" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Controls.ITextElement.TextTransform">
+      <MemberSignature Language="C#" Value="Microsoft.Maui.TextTransform Microsoft.Maui.Controls.ITextElement.TextTransform { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.TextTransform Microsoft.Maui.Controls.ITextElement.TextTransform" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.DatePicker.Microsoft#Maui#Controls#ITextElement#TextTransform" />
+      <MemberSignature Language="VB.NET" Value=" Property TextTransform As TextTransform Implements ITextElement.TextTransform" />
+      <MemberSignature Language="C++ CLI" Value="property Microsoft::Maui::TextTransform Microsoft::Maui::Controls::ITextElement::TextTransform { Microsoft::Maui::TextTransform get(); void set(Microsoft::Maui::TextTransform value); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.Controls.ITextElement.TextTransform : Microsoft.Maui.TextTransform with get, set" Usage="Microsoft.Maui.Controls.ITextElement.TextTransform" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.Controls.ITextElement.TextTransform</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.TextTransform</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Microsoft.Maui.IDatePicker.Date">
-      <MemberSignature Language="C#" Value="DateTime Microsoft.Maui.IDatePicker.Date { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime Microsoft.Maui.IDatePicker.Date" />
+      <MemberSignature Language="C#" Value="DateTime? Microsoft.Maui.IDatePicker.Date { get; set; }" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; Microsoft.Maui.IDatePicker.Date" FrameworkAlternate="net-maui-10.0" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.DatePicker.Microsoft#Maui#IDatePicker#Date" />
-      <MemberSignature Language="VB.NET" Value=" Property Date As DateTime Implements IDatePicker.Date" />
-      <MemberSignature Language="C++ CLI" Value="property DateTime Microsoft::Maui::IDatePicker::Date { DateTime get(); void set(DateTime value); };" />
-      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.IDatePicker.Date : DateTime with get, set" Usage="Microsoft.Maui.IDatePicker.Date" />
+      <MemberSignature Language="VB.NET" Value=" Property Date As Nullable(Of DateTime) Implements IDatePicker.Date" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="C++ CLI" Value="property Nullable&lt;DateTime&gt; Microsoft::Maui::IDatePicker::Date { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.IDatePicker.Date : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.Maui.IDatePicker.Date" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="C#" Value="DateTime Microsoft.Maui.IDatePicker.Date { get; set; }" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime Microsoft.Maui.IDatePicker.Date" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="VB.NET" Value=" Property Date As DateTime Implements IDatePicker.Date" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="C++ CLI" Value="property DateTime Microsoft::Maui::IDatePicker::Date { DateTime get(); void set(DateTime value); };" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.IDatePicker.Date : DateTime with get, set" Usage="Microsoft.Maui.IDatePicker.Date" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Maui.IDatePicker.Date</InterfaceMember>
@@ -655,7 +858,8 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.DateTime</ReturnType>
+        <ReturnType FrameworkAlternate="net-maui-10.0">System.Nullable&lt;System.DateTime&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="net-maui-8.0;net-maui-9.0">System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
@@ -714,12 +918,17 @@
       </Docs>
     </Member>
     <Member MemberName="MinimumDate">
-      <MemberSignature Language="C#" Value="public DateTime MinimumDate { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime MinimumDate" />
+      <MemberSignature Language="C#" Value="public DateTime? MinimumDate { get; set; }" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; MinimumDate" FrameworkAlternate="net-maui-10.0" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.DatePicker.MinimumDate" />
-      <MemberSignature Language="VB.NET" Value="Public Property MinimumDate As DateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime MinimumDate { DateTime get(); void set(DateTime value); };" />
-      <MemberSignature Language="F#" Value="member this.MinimumDate : DateTime with get, set" Usage="Microsoft.Maui.Controls.DatePicker.MinimumDate" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinimumDate As Nullable(Of DateTime)" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; MinimumDate { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="F#" Value="member this.MinimumDate : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.Maui.Controls.DatePicker.MinimumDate" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="C#" Value="public DateTime MinimumDate { get; set; }" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime MinimumDate" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinimumDate As DateTime" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime MinimumDate { DateTime get(); void set(DateTime value); };" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="F#" Value="member this.MinimumDate : DateTime with get, set" Usage="Microsoft.Maui.Controls.DatePicker.MinimumDate" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -727,7 +936,8 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.DateTime</ReturnType>
+        <ReturnType FrameworkAlternate="net-maui-10.0">System.Nullable&lt;System.DateTime&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="net-maui-8.0;net-maui-9.0">System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>The lowest date selectable for this DatePicker. This is a bindable property.</summary>
@@ -791,6 +1001,47 @@
         <inheritdoc />
       </Docs>
     </Member>
+    <Member MemberName="OnHandlerChanged">
+      <MemberSignature Language="C#" Value="protected override void OnHandlerChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandlerChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.DatePicker.OnHandlerChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandlerChanged ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandlerChanged();" />
+      <MemberSignature Language="F#" Value="override this.OnHandlerChanged : unit -&gt; unit" Usage="datePicker.OnHandlerChanged " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Opened">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Controls.DatePickerOpenedEventArgs&gt; Opened;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.DatePickerOpenedEventArgs&gt; Opened" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.DatePicker.Opened" />
+      <MemberSignature Language="VB.NET" Value="Public Event Opened As EventHandler(Of DatePickerOpenedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Controls::DatePickerOpenedEventArgs ^&gt; ^ Opened;" />
+      <MemberSignature Language="F#" Value="member this.Opened : EventHandler&lt;Microsoft.Maui.Controls.DatePickerOpenedEventArgs&gt; " Usage="member this.Opened : System.EventHandler&lt;Microsoft.Maui.Controls.DatePickerOpenedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.DatePickerOpenedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="TextColor">
       <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.Color TextColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Graphics.Color TextColor" />
@@ -842,6 +1093,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ UpdateFormsText(System::String ^ source, Microsoft::Maui::TextTransform textTransform);" />
       <MemberSignature Language="F#" Value="abstract member UpdateFormsText : string * Microsoft.Maui.TextTransform -&gt; string&#xA;override this.UpdateFormsText : string * Microsoft.Maui.TextTransform -&gt; string" Usage="datePicker.UpdateFormsText (source, textTransform)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember FrameworkAlternate="net-maui-10.0">M:Microsoft.Maui.Controls.ITextElement.UpdateFormsText(System.String,Microsoft.Maui.TextTransform)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>

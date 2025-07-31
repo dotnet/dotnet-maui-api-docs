@@ -46,6 +46,182 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CompressionQuality">
+      <MemberSignature Language="C#" Value="public int CompressionQuality { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CompressionQuality" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Media.MediaPickerOptions.CompressionQuality" />
+      <MemberSignature Language="VB.NET" Value="Public Property CompressionQuality As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CompressionQuality { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.CompressionQuality : int with get, set" Usage="Microsoft.Maui.Media.MediaPickerOptions.CompressionQuality" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the compression quality for picked media.
+            The value should be between 0 and 100, where 0 is the lowest quality (most compression) and 100 is the highest quality (least compression).
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Please note that performance might be affected by the compression quality, especially on lower-end devices.</para>
+          <para>For JPEG images, this controls the lossy compression quality directly.</para>
+          <para>For PNG images, values below 90 will convert to JPEG format for better compression. Values 90-99 will scale down the PNG image. Value 100 preserves original PNG format and quality.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumHeight">
+      <MemberSignature Language="C#" Value="public int? MaximumHeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; MaximumHeight" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Media.MediaPickerOptions.MaximumHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaximumHeight As Nullable(Of Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; MaximumHeight { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumHeight : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Maui.Media.MediaPickerOptions.MaximumHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the maximum height for image resizing.
+            When set, images will be resized to fit within this height while preserving aspect ratio.
+            A value of 0 or null means no height constraint.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>This property only applies to images. It has no effect on video files.</para>
+          <para>The image will be resized to fit within the specified maximum dimensions while maintaining aspect ratio.
+            If both MaximumWidth and MaximumHeight are specified, the image will be scaled to fit within both constraints.
+            This resizing is applied before any compression quality settings.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumWidth">
+      <MemberSignature Language="C#" Value="public int? MaximumWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; MaximumWidth" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Media.MediaPickerOptions.MaximumWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaximumWidth As Nullable(Of Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; MaximumWidth { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumWidth : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Maui.Media.MediaPickerOptions.MaximumWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the maximum width for image resizing.
+            When set, images will be resized to fit within this width while preserving aspect ratio.
+            A value of 0 or null means no width constraint.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>This property only applies to images. It has no effect on video files.</para>
+          <para>The image will be resized to fit within the specified maximum dimensions while maintaining aspect ratio.
+            If both MaximumWidth and MaximumHeight are specified, the image will be scaled to fit within both constraints.
+            This resizing is applied before any compression quality settings.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreserveMetaData">
+      <MemberSignature Language="C#" Value="public bool PreserveMetaData { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PreserveMetaData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Media.MediaPickerOptions.PreserveMetaData" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreserveMetaData As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PreserveMetaData { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PreserveMetaData : bool with get, set" Usage="Microsoft.Maui.Media.MediaPickerOptions.PreserveMetaData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets whether to preserve metadata (including EXIF data) when processing images.
+            When true, metadata from the original image will be preserved in the processed image.
+            Default value is true.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>This property only applies to images. It has no effect on video files.</para>
+          <para>When enabled, metadata such as EXIF data, GPS information, camera settings, and timestamps
+            will be copied from the original image to the processed image during operations like resizing,
+            compression, or rotation.</para>
+          <para>Setting this to false may result in smaller file sizes but will lose the image's metadata.</para>
+          <para>Currently not supported on Windows.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RotateImage">
+      <MemberSignature Language="C#" Value="public bool RotateImage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RotateImage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Media.MediaPickerOptions.RotateImage" />
+      <MemberSignature Language="VB.NET" Value="Public Property RotateImage As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RotateImage { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RotateImage : bool with get, set" Usage="Microsoft.Maui.Media.MediaPickerOptions.RotateImage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets whether to automatically rotate the image based on EXIF orientation data.
+            When true, the image will be rotated to the correct orientation.
+            Default value is false.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>This property only applies to images. It has no effect on video files.</para>
+          <para>When enabled, the EXIF orientation data will be applied to correctly orient the image,
+            and the orientation flag will be reset to avoid duplicate rotations in image viewers.</para>
+          <para>This rotation happens before any resizing or compression is applied.</para>
+          <para>Please note that performance might be affected by the rotation operation, especially on lower-end devices.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectionLimit">
+      <MemberSignature Language="C#" Value="public int SelectionLimit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SelectionLimit" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Media.MediaPickerOptions.SelectionLimit" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectionLimit As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SelectionLimit { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectionLimit : int with get, set" Usage="Microsoft.Maui.Media.MediaPickerOptions.SelectionLimit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the maximum number of items that can be selected. Default value is 1.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            A value of 0 means no limit.
+            </remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Title">
       <MemberSignature Language="C#" Value="public string? Title { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Title" />

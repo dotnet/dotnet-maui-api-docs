@@ -34,7 +34,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Struct that defines minimum and maximum <see cref="T:Microsoft.Maui.Graphics.Size" />s.</summary>
+    <summary>
+            Struct that defines a preferred and minimum <see cref="T:Microsoft.Maui.Graphics.Size" /> for layout measurement.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -55,8 +57,10 @@
         <Parameter Name="request" Type="Microsoft.Maui.Graphics.Size" />
       </Parameters>
       <Docs>
-        <param name="request">The size of the request.</param>
-        <summary>Creates a new <see cref="T:Microsoft.Maui.SizeRequest" /> with the specified <paramref name="request" /> size.</summary>
+        <param name="request">The size to use for both Request and Minimum.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Maui.SizeRequest" /> where preferred and minimum sizes are the same.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,9 +82,11 @@
         <Parameter Name="minimum" Type="Microsoft.Maui.Graphics.Size" />
       </Parameters>
       <Docs>
-        <param name="request">The size of the request.</param>
-        <param name="minimum">The minimum size for the request.</param>
-        <summary>Creates a new <see cref="T:Microsoft.Maui.SizeRequest" /> object that requests at least the size <paramref name="minimum" />, but preferably the size <paramref name="request" />.</summary>
+        <param name="request">The preferred size.</param>
+        <param name="minimum">The minimum acceptable size.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Maui.SizeRequest" /> with the specified preferred and minimum sizes.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,9 +113,12 @@
         <Parameter Name="other" Type="Microsoft.Maui.SizeRequest" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The other SizeRequest to compare.</param>
+        <summary>
+            Determines whether this SizeRequest is equal to another.
+            </summary>
+        <returns>
+          <see langword="true" /> if both Request and Minimum are equal; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,9 +142,12 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to compare with this instance.</param>
+        <summary>
+            Determines whether this instance and a specified object are equal.
+            </summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> is a SizeRequest equal to this instance; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,8 +169,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Returns a hash code for this SizeRequest.
+            </summary>
+        <returns>A 32-bit signed hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,7 +199,9 @@
         <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The minimum acceptable size.</summary>
+        <summary>
+            Gets or sets the minimum acceptable size.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -211,10 +227,13 @@
         <Parameter Name="right" Type="Microsoft.Maui.SizeRequest" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first SizeRequest to compare.</param>
+        <param name="right">The second SizeRequest to compare.</param>
+        <summary>
+            Indicates whether two SizeRequest instances are equal.
+            </summary>
+        <returns>
+          <see langword="true" /> if both are equal; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,8 +257,10 @@
         <Parameter Name="size" Type="Microsoft.Maui.Graphics.Size" />
       </Parameters>
       <Docs>
-        <param name="size">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="size">The size to convert.</param>
+        <summary>
+            Implicitly converts a <see cref="T:Microsoft.Maui.Graphics.Size" /> to a <see cref="T:Microsoft.Maui.SizeRequest" />, using the size for both Request and Minimum.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -264,8 +285,10 @@
         <Parameter Name="size" Type="Microsoft.Maui.SizeRequest" />
       </Parameters>
       <Docs>
-        <param name="size">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="size">The SizeRequest to convert.</param>
+        <summary>
+            Implicitly converts this <see cref="T:Microsoft.Maui.SizeRequest" /> to its <see cref="P:Microsoft.Maui.SizeRequest.Request" /><see cref="T:Microsoft.Maui.Graphics.Size" />.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -291,10 +314,13 @@
         <Parameter Name="right" Type="Microsoft.Maui.SizeRequest" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first SizeRequest to compare.</param>
+        <param name="right">The second SizeRequest to compare.</param>
+        <summary>
+            Indicates whether two SizeRequest instances are not equal.
+            </summary>
+        <returns>
+          <see langword="true" /> if they differ; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -321,7 +347,9 @@
         <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The requested size.</summary>
+        <summary>
+            Gets or sets the size that is preferred.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -344,8 +372,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string representation of the size request.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Returns a string representation of this <see cref="T:Microsoft.Maui.SizeRequest" />.
+            </summary>
+        <returns>A string in the format "{Request} Minimum={Minimum}".</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

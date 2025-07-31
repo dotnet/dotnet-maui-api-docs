@@ -1,10 +1,15 @@
 <Type Name="Span" FullName="Microsoft.Maui.Controls.Span">
-  <TypeSignature Language="C#" Value="public class Span : Microsoft.Maui.Controls.GestureElement, Microsoft.Maui.Controls.IDecorableTextElement, Microsoft.Maui.Controls.Internals.IFontElement" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Span extends Microsoft.Maui.Controls.GestureElement implements class Microsoft.Maui.Controls.IDecorableTextElement, class Microsoft.Maui.Controls.Internals.IFontElement" />
+  <TypeSignature Language="C#" Value="public class Span : Microsoft.Maui.Controls.GestureElement, Microsoft.Maui.Controls.IDecorableTextElement, Microsoft.Maui.Controls.ILineHeightElement, Microsoft.Maui.Controls.Internals.IFontElement, Microsoft.Maui.Controls.ITextElement" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Span extends Microsoft.Maui.Controls.GestureElement implements class Microsoft.Maui.Controls.IDecorableTextElement, class Microsoft.Maui.Controls.ILineHeightElement, class Microsoft.Maui.Controls.Internals.IFontElement, class Microsoft.Maui.Controls.ITextElement" FrameworkAlternate="net-maui-10.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Span" />
-  <TypeSignature Language="VB.NET" Value="Public Class Span&#xA;Inherits GestureElement&#xA;Implements IDecorableTextElement, IFontElement" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Span : Microsoft::Maui::Controls::GestureElement, Microsoft::Maui::Controls::IDecorableTextElement, Microsoft::Maui::Controls::Internals::IFontElement" />
-  <TypeSignature Language="F#" Value="type Span = class&#xA;    inherit GestureElement&#xA;    interface IFontElement&#xA;    interface IDecorableTextElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class Span&#xA;Inherits GestureElement&#xA;Implements IDecorableTextElement, IFontElement, ILineHeightElement, ITextElement" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Span : Microsoft::Maui::Controls::GestureElement, Microsoft::Maui::Controls::IDecorableTextElement, Microsoft::Maui::Controls::ILineHeightElement, Microsoft::Maui::Controls::Internals::IFontElement, Microsoft::Maui::Controls::ITextElement" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="F#" Value="type Span = class&#xA;    inherit GestureElement&#xA;    interface IFontElement&#xA;    interface ITextElement&#xA;    interface ILineHeightElement&#xA;    interface IDecorableTextElement" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="C#" Value="public class Span : Microsoft.Maui.Controls.GestureElement, Microsoft.Maui.Controls.IDecorableTextElement, Microsoft.Maui.Controls.Internals.IFontElement" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Span extends Microsoft.Maui.Controls.GestureElement implements class Microsoft.Maui.Controls.IDecorableTextElement, class Microsoft.Maui.Controls.Internals.IFontElement" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="VB.NET" Value="Public Class Span&#xA;Inherits GestureElement&#xA;Implements IDecorableTextElement, IFontElement" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Span : Microsoft::Maui::Controls::GestureElement, Microsoft::Maui::Controls::IDecorableTextElement, Microsoft::Maui::Controls::Internals::IFontElement" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="F#" Value="type Span = class&#xA;    inherit GestureElement&#xA;    interface IFontElement&#xA;    interface IDecorableTextElement" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -18,8 +23,14 @@
     <Interface>
       <InterfaceName>Microsoft.Maui.Controls.IDecorableTextElement</InterfaceName>
     </Interface>
+    <Interface FrameworkAlternate="net-maui-10.0">
+      <InterfaceName>Microsoft.Maui.Controls.ILineHeightElement</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Maui.Controls.Internals.IFontElement</InterfaceName>
+    </Interface>
+    <Interface FrameworkAlternate="net-maui-10.0">
+      <InterfaceName>Microsoft.Maui.Controls.ITextElement</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
@@ -362,6 +373,35 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Microsoft.Maui.Controls.ILineHeightElement.OnLineHeightChanged">
+      <MemberSignature Language="C#" Value="void ILineHeightElement.OnLineHeightChanged (double oldValue, double newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.Controls.ILineHeightElement.OnLineHeightChanged(float64 oldValue, float64 newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Span.Microsoft#Maui#Controls#ILineHeightElement#OnLineHeightChanged(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Sub OnLineHeightChanged (oldValue As Double, newValue As Double) Implements ILineHeightElement.OnLineHeightChanged" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.Controls.ILineHeightElement.OnLineHeightChanged(double oldValue, double newValue) = Microsoft::Maui::Controls::ILineHeightElement::OnLineHeightChanged;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Controls.ILineHeightElement.OnLineHeightChanged : double * double -&gt; unit&#xA;override this.Microsoft.Maui.Controls.ILineHeightElement.OnLineHeightChanged : double * double -&gt; unit" Usage="span.Microsoft.Maui.Controls.ILineHeightElement.OnLineHeightChanged (oldValue, newValue)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.ILineHeightElement.OnLineHeightChanged(System.Double,System.Double)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldValue" Type="System.Double" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="newValue" Type="System.Double" Index="1" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Microsoft.Maui.Controls.Internals.IFontElement.FontSizeDefaultValueCreator">
       <MemberSignature Language="C#" Value="double IFontElement.FontSizeDefaultValueCreator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance float64 Microsoft.Maui.Controls.Internals.IFontElement.FontSizeDefaultValueCreator() cil managed" />
@@ -500,6 +540,93 @@
       <Parameters>
         <Parameter Name="oldValue" Type="System.Double" />
         <Parameter Name="newValue" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Controls.ITextElement.OnCharacterSpacingPropertyChanged">
+      <MemberSignature Language="C#" Value="void ITextElement.OnCharacterSpacingPropertyChanged (double oldValue, double newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.Controls.ITextElement.OnCharacterSpacingPropertyChanged(float64 oldValue, float64 newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Span.Microsoft#Maui#Controls#ITextElement#OnCharacterSpacingPropertyChanged(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Sub OnCharacterSpacingPropertyChanged (oldValue As Double, newValue As Double) Implements ITextElement.OnCharacterSpacingPropertyChanged" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.Controls.ITextElement.OnCharacterSpacingPropertyChanged(double oldValue, double newValue) = Microsoft::Maui::Controls::ITextElement::OnCharacterSpacingPropertyChanged;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Controls.ITextElement.OnCharacterSpacingPropertyChanged : double * double -&gt; unit&#xA;override this.Microsoft.Maui.Controls.ITextElement.OnCharacterSpacingPropertyChanged : double * double -&gt; unit" Usage="span.Microsoft.Maui.Controls.ITextElement.OnCharacterSpacingPropertyChanged (oldValue, newValue)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.ITextElement.OnCharacterSpacingPropertyChanged(System.Double,System.Double)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldValue" Type="System.Double" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="newValue" Type="System.Double" Index="1" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Controls.ITextElement.OnTextColorPropertyChanged">
+      <MemberSignature Language="C#" Value="void ITextElement.OnTextColorPropertyChanged (Microsoft.Maui.Graphics.Color oldValue, Microsoft.Maui.Graphics.Color newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.Controls.ITextElement.OnTextColorPropertyChanged(class Microsoft.Maui.Graphics.Color oldValue, class Microsoft.Maui.Graphics.Color newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Span.Microsoft#Maui#Controls#ITextElement#OnTextColorPropertyChanged(Microsoft.Maui.Graphics.Color,Microsoft.Maui.Graphics.Color)" />
+      <MemberSignature Language="VB.NET" Value="Sub OnTextColorPropertyChanged (oldValue As Color, newValue As Color) Implements ITextElement.OnTextColorPropertyChanged" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.Controls.ITextElement.OnTextColorPropertyChanged(Microsoft::Maui::Graphics::Color ^ oldValue, Microsoft::Maui::Graphics::Color ^ newValue) = Microsoft::Maui::Controls::ITextElement::OnTextColorPropertyChanged;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Controls.ITextElement.OnTextColorPropertyChanged : Microsoft.Maui.Graphics.Color * Microsoft.Maui.Graphics.Color -&gt; unit&#xA;override this.Microsoft.Maui.Controls.ITextElement.OnTextColorPropertyChanged : Microsoft.Maui.Graphics.Color * Microsoft.Maui.Graphics.Color -&gt; unit" Usage="span.Microsoft.Maui.Controls.ITextElement.OnTextColorPropertyChanged (oldValue, newValue)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.ITextElement.OnTextColorPropertyChanged(Microsoft.Maui.Graphics.Color,Microsoft.Maui.Graphics.Color)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldValue" Type="Microsoft.Maui.Graphics.Color" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="newValue" Type="Microsoft.Maui.Graphics.Color" Index="1" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Controls.ITextElement.OnTextTransformChanged">
+      <MemberSignature Language="C#" Value="void ITextElement.OnTextTransformChanged (Microsoft.Maui.TextTransform oldValue, Microsoft.Maui.TextTransform newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.Controls.ITextElement.OnTextTransformChanged(valuetype Microsoft.Maui.TextTransform oldValue, valuetype Microsoft.Maui.TextTransform newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Span.Microsoft#Maui#Controls#ITextElement#OnTextTransformChanged(Microsoft.Maui.TextTransform,Microsoft.Maui.TextTransform)" />
+      <MemberSignature Language="VB.NET" Value="Sub OnTextTransformChanged (oldValue As TextTransform, newValue As TextTransform) Implements ITextElement.OnTextTransformChanged" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.Controls.ITextElement.OnTextTransformChanged(Microsoft::Maui::TextTransform oldValue, Microsoft::Maui::TextTransform newValue) = Microsoft::Maui::Controls::ITextElement::OnTextTransformChanged;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Controls.ITextElement.OnTextTransformChanged : Microsoft.Maui.TextTransform * Microsoft.Maui.TextTransform -&gt; unit&#xA;override this.Microsoft.Maui.Controls.ITextElement.OnTextTransformChanged : Microsoft.Maui.TextTransform * Microsoft.Maui.TextTransform -&gt; unit" Usage="span.Microsoft.Maui.Controls.ITextElement.OnTextTransformChanged (oldValue, newValue)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.ITextElement.OnTextTransformChanged(Microsoft.Maui.TextTransform,Microsoft.Maui.TextTransform)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldValue" Type="Microsoft.Maui.TextTransform" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="newValue" Type="Microsoft.Maui.TextTransform" Index="1" FrameworkAlternate="net-maui-10.0" />
       </Parameters>
       <Docs>
         <param name="oldValue">To be added.</param>
@@ -713,6 +840,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::TextTransform TextTransform { Microsoft::Maui::TextTransform get(); void set(Microsoft::Maui::TextTransform value); };" />
       <MemberSignature Language="F#" Value="member this.TextTransform : Microsoft.Maui.TextTransform with get, set" Usage="Microsoft.Maui.Controls.Span.TextTransform" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember FrameworkAlternate="net-maui-10.0">P:Microsoft.Maui.Controls.ITextElement.TextTransform</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -758,6 +888,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ UpdateFormsText(System::String ^ source, Microsoft::Maui::TextTransform textTransform);" />
       <MemberSignature Language="F#" Value="abstract member UpdateFormsText : string * Microsoft.Maui.TextTransform -&gt; string&#xA;override this.UpdateFormsText : string * Microsoft.Maui.TextTransform -&gt; string" Usage="span.UpdateFormsText (source, textTransform)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember FrameworkAlternate="net-maui-10.0">M:Microsoft.Maui.Controls.ITextElement.UpdateFormsText(System.String,Microsoft.Maui.TextTransform)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>

@@ -30,8 +30,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>The font used to display text.</summary>
-    <remarks>The available fonts, and the matching between <see cref="T:Microsoft.Maui.Font" /> and real displayed fonts is device-dependent.</remarks>
+    <summary>
+            Represents a font, including family, size, weight, slant, and auto-scaling settings.
+            </summary>
+    <remarks>
+            The font used to display text. Supported fonts and their rendering depend on the platform.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName="AutoScalingEnabled">
@@ -51,7 +55,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a value indicating whether auto-scaling is enabled for this font.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -73,7 +79,9 @@
         <ReturnType>Microsoft.Maui.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default font for the device.</summary>
+        <summary>
+            Gets the default font for the platform.
+            </summary>
         <value>The default font for the device.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -98,10 +106,11 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">The <see cref="T:System.Object" /> value to compare this font to.</param>
-        <summary>Determine if the provided <see cref="T:System.Object" /> is equivalent to the current Font.</summary>
-        <returns>
-          <see langword="true" /> if the provided object is an equivalent font. <see langword="false" /> otherwise.</returns>
+        <param name="obj">The object to compare.</param>
+        <summary>
+            Determines whether the specified object is equal to this font.
+            </summary>
+        <returns>True if equal; otherwise, false.</returns>
         <remarks>Overridden.</remarks>
       </Docs>
     </Member>
@@ -122,7 +131,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the font family to which this font belongs.</summary>
+        <summary>
+            Gets the font family name, or null for the default system font.
+            </summary>
         <value>The font family to which this <see cref="T:Microsoft.Maui.Font" /> structure belongs.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -145,8 +156,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Get the Hashcode for this <see cref="T:System.Object" />.</summary>
-        <returns>A signed 32-bit hash code.</returns>
+        <summary>
+            Returns the hash code for this font.
+            </summary>
+        <returns>A 32-bit signed hash code.</returns>
         <remarks>Overridden.</remarks>
       </Docs>
     </Member>
@@ -167,7 +180,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that tells whether this font has no attributes, belongs to the default family, and has no attributes set.</summary>
+        <summary>
+            Gets a value indicating whether this font is the default font (no family, non-positive size, default slant, and regular weight).
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -195,13 +210,15 @@
         <Parameter Name="enableScaling" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the targeted system font.</param>
+        <param name="name">The font family name or system font alias.</param>
         <param name="size">The desired font size.</param>
-        <param name="weight">To be added.</param>
-        <param name="fontSlant">To be added.</param>
-        <param name="enableScaling">To be added.</param>
-        <summary>Returns a <see cref="T:Microsoft.Maui.Font" /> structure with the requested font and size.</summary>
-        <returns>A <see cref="T:Microsoft.Maui.Font" /> instance.</returns>
+        <param name="weight">The font weight.</param>
+        <param name="fontSlant">The font slant.</param>
+        <param name="enableScaling">Whether auto-scaling is enabled.</param>
+        <summary>
+            Creates a font with the specified family, size, weight, slant, and auto-scaling.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Maui.Font" /> instance with the specified settings.</returns>
         <remarks>Font availability is platform- and device-dependent.</remarks>
       </Docs>
     </Member>
@@ -226,10 +243,12 @@
         <Parameter Name="right" Type="Microsoft.Maui.Font" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first font to compare.</param>
+        <param name="right">The second font to compare.</param>
+        <summary>
+            Determines whether two fonts are equal.
+            </summary>
+        <returns>True if equal; otherwise, false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -254,10 +273,12 @@
         <Parameter Name="right" Type="Microsoft.Maui.Font" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first font to compare.</param>
+        <param name="right">The second font to compare.</param>
+        <summary>
+            Determines whether two fonts are not equal.
+            </summary>
+        <returns>True if not equal; otherwise, false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,7 +299,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the size of the font.</summary>
+        <summary>
+            Gets the size of the font.
+            </summary>
         <value>A <see langword="double" /> that indicates the size of the font.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -300,7 +323,9 @@
         <ReturnType>Microsoft.Maui.FontSlant</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the slant (style) of the font (e.g., default or italic).
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -357,11 +382,13 @@
       </Parameters>
       <Docs>
         <param name="size">The desired font size.</param>
-        <param name="weight">To be added.</param>
-        <param name="fontSlant">To be added.</param>
-        <param name="enableScaling">To be added.</param>
-        <summary>Returns an usable font instance representing the default font, in the requested size, for the device and platform.</summary>
-        <returns>The requested <see cref="T:Microsoft.Maui.Font" />.</returns>
+        <param name="weight">The font weight.</param>
+        <param name="fontSlant">The font slant.</param>
+        <param name="enableScaling">Whether auto-scaling is enabled.</param>
+        <summary>
+            Returns a system font of the specified size, weight, slant, and auto-scaling.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Maui.Font" /> instance of the system font.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -386,11 +413,13 @@
         <Parameter Name="enableScaling" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="weight">To be added.</param>
-        <param name="fontSlant">To be added.</param>
-        <param name="enableScaling">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="weight">The font weight.</param>
+        <param name="fontSlant">The font slant.</param>
+        <param name="enableScaling">Whether auto-scaling is enabled.</param>
+        <summary>
+            Returns a font instance with the specified weight, slant, and auto-scaling with a default size.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Maui.Font" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -412,8 +441,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string representation of this font structure.</summary>
-        <returns>A string representation of this <see cref="T:Microsoft.Maui.Font" /> structure.</returns>
+        <summary>
+            Returns a string that represents this font.
+            </summary>
+        <returns>A string describing the font's properties.</returns>
         <remarks>The <see cref="M:Microsoft.Maui.Font.ToString" /> method returns a string that contains a labeled, comma-separated list of the <see cref="P:Microsoft.Maui.Font.Family" />, <see cref="P:Microsoft.Maui.Font.Size" />, and <see cref="P:Microsoft.Maui.Controls.FontAttributes" /> properties.</remarks>
       </Docs>
     </Member>
@@ -434,8 +465,10 @@
         <ReturnType>Microsoft.Maui.FontWeight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the weight of the font, defaulting to <see cref="F:Microsoft.Maui.FontWeight.Regular" /> if unspecified.
+            </summary>
+        <value>The font weight (e.g., Bold, Regular).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -459,9 +492,11 @@
         <Parameter Name="enabled" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="enabled">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="enabled">If true, auto-scaling is enabled.</param>
+        <summary>
+            Returns a new <see cref="T:Microsoft.Maui.Font" /> with auto-scaling enabled or disabled.
+            </summary>
+        <returns>A new font instance with the specified auto-scaling setting.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -485,9 +520,11 @@
         <Parameter Name="size" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="size">The requested font size.</param>
-        <summary>Returns a new font structure with the size that was specified with <paramref name="size" />.</summary>
-        <returns>To be added.</returns>
+        <param name="size">The desired font size.</param>
+        <summary>
+            Returns a new <see cref="T:Microsoft.Maui.Font" /> with the specified size.
+            </summary>
+        <returns>A new font instance with the specified size.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -511,9 +548,11 @@
         <Parameter Name="fontSlant" Type="Microsoft.Maui.FontSlant" />
       </Parameters>
       <Docs>
-        <param name="fontSlant">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="fontSlant">The slant (e.g., italic) to apply.</param>
+        <summary>
+            Returns a new <see cref="T:Microsoft.Maui.Font" /> with the specified slant (style).
+            </summary>
+        <returns>A new font instance with the specified slant.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -537,9 +576,11 @@
         <Parameter Name="weight" Type="Microsoft.Maui.FontWeight" />
       </Parameters>
       <Docs>
-        <param name="weight">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="weight">The weight to apply (e.g., Bold, Regular).</param>
+        <summary>
+            Returns a new <see cref="T:Microsoft.Maui.Font" /> with the specified weight.
+            </summary>
+        <returns>A new font instance with the specified weight.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -564,10 +605,12 @@
         <Parameter Name="fontSlant" Type="Microsoft.Maui.FontSlant" />
       </Parameters>
       <Docs>
-        <param name="weight">To be added.</param>
-        <param name="fontSlant">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="weight">The weight to apply.</param>
+        <param name="fontSlant">The slant to apply.</param>
+        <summary>
+            Returns a new <see cref="T:Microsoft.Maui.Font" /> with the specified weight and slant.
+            </summary>
+        <returns>A new font instance with the specified weight and slant.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

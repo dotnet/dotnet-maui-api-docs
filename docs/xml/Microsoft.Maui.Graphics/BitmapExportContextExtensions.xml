@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Provides extension methods for the <see cref="T:Microsoft.Maui.Graphics.BitmapExportContext" /> class.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,10 +43,14 @@
         <Parameter Name="filename" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="exportContext">To be added.</param>
-        <param name="filename">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="exportContext">The bitmap export context containing the image data.</param>
+        <param name="filename">The path to the file where the image should be saved.</param>
+        <summary>
+            Writes the bitmap data from the export context to a file.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="exportContext" /> or <paramref name="filename" /> is null.</exception>
+        <exception cref="T:System.IO.IOException">Thrown when an I/O error occurs while writing to the file.</exception>
       </Docs>
     </Member>
   </Members>

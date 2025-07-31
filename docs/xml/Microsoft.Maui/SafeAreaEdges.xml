@@ -1,0 +1,427 @@
+<Type Name="SafeAreaEdges" FullName="Microsoft.Maui.SafeAreaEdges">
+  <TypeSignature Language="C#" Value="public readonly struct SafeAreaEdges : IEquatable&lt;Microsoft.Maui.SafeAreaEdges&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit SafeAreaEdges extends System.ValueType implements class System.IEquatable`1&lt;valuetype Microsoft.Maui.SafeAreaEdges&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.SafeAreaEdges" />
+  <TypeSignature Language="VB.NET" Value="Public Structure SafeAreaEdges&#xA;Implements IEquatable(Of SafeAreaEdges)" />
+  <TypeSignature Language="C++ CLI" Value="public value class SafeAreaEdges : IEquatable&lt;Microsoft::Maui::SafeAreaEdges&gt;" />
+  <TypeSignature Language="F#" Value="type SafeAreaEdges = struct" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;Microsoft.Maui.SafeAreaEdges&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.ComponentModel.TypeConverter(typeof(Microsoft.Maui.Converters.SafeAreaEdgesTypeConverter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.TypeConverter(typeof(Microsoft.Maui.Converters.SafeAreaEdgesTypeConverter))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Represents safe area settings for each edge of a layout or visual element.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SafeAreaEdges (Microsoft.Maui.SafeAreaRegions uniformValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Maui.SafeAreaRegions uniformValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.SafeAreaEdges.#ctor(Microsoft.Maui.SafeAreaRegions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (uniformValue As SafeAreaRegions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SafeAreaEdges(Microsoft::Maui::SafeAreaRegions uniformValue);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.SafeAreaEdges : Microsoft.Maui.SafeAreaRegions -&gt; Microsoft.Maui.SafeAreaEdges" Usage="new Microsoft.Maui.SafeAreaEdges uniformValue" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="uniformValue" Type="Microsoft.Maui.SafeAreaRegions" />
+      </Parameters>
+      <Docs>
+        <param name="uniformValue">The value to apply to all edges.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.SafeAreaEdges" /> struct with the same value for all edges.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SafeAreaEdges (Microsoft.Maui.SafeAreaRegions horizontal, Microsoft.Maui.SafeAreaRegions vertical);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Maui.SafeAreaRegions horizontal, valuetype Microsoft.Maui.SafeAreaRegions vertical) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.SafeAreaEdges.#ctor(Microsoft.Maui.SafeAreaRegions,Microsoft.Maui.SafeAreaRegions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (horizontal As SafeAreaRegions, vertical As SafeAreaRegions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SafeAreaEdges(Microsoft::Maui::SafeAreaRegions horizontal, Microsoft::Maui::SafeAreaRegions vertical);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.SafeAreaEdges : Microsoft.Maui.SafeAreaRegions * Microsoft.Maui.SafeAreaRegions -&gt; Microsoft.Maui.SafeAreaEdges" Usage="new Microsoft.Maui.SafeAreaEdges (horizontal, vertical)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="horizontal" Type="Microsoft.Maui.SafeAreaRegions" />
+        <Parameter Name="vertical" Type="Microsoft.Maui.SafeAreaRegions" />
+      </Parameters>
+      <Docs>
+        <param name="horizontal">The value to apply to left and right edges.</param>
+        <param name="vertical">The value to apply to top and bottom edges.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.SafeAreaEdges" /> struct with horizontal and vertical values.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SafeAreaEdges (Microsoft.Maui.SafeAreaRegions left, Microsoft.Maui.SafeAreaRegions top, Microsoft.Maui.SafeAreaRegions right, Microsoft.Maui.SafeAreaRegions bottom);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Maui.SafeAreaRegions left, valuetype Microsoft.Maui.SafeAreaRegions top, valuetype Microsoft.Maui.SafeAreaRegions right, valuetype Microsoft.Maui.SafeAreaRegions bottom) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.SafeAreaEdges.#ctor(Microsoft.Maui.SafeAreaRegions,Microsoft.Maui.SafeAreaRegions,Microsoft.Maui.SafeAreaRegions,Microsoft.Maui.SafeAreaRegions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (left As SafeAreaRegions, top As SafeAreaRegions, right As SafeAreaRegions, bottom As SafeAreaRegions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SafeAreaEdges(Microsoft::Maui::SafeAreaRegions left, Microsoft::Maui::SafeAreaRegions top, Microsoft::Maui::SafeAreaRegions right, Microsoft::Maui::SafeAreaRegions bottom);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.SafeAreaEdges : Microsoft.Maui.SafeAreaRegions * Microsoft.Maui.SafeAreaRegions * Microsoft.Maui.SafeAreaRegions * Microsoft.Maui.SafeAreaRegions -&gt; Microsoft.Maui.SafeAreaEdges" Usage="new Microsoft.Maui.SafeAreaEdges (left, top, right, bottom)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="left" Type="Microsoft.Maui.SafeAreaRegions" />
+        <Parameter Name="top" Type="Microsoft.Maui.SafeAreaRegions" />
+        <Parameter Name="right" Type="Microsoft.Maui.SafeAreaRegions" />
+        <Parameter Name="bottom" Type="Microsoft.Maui.SafeAreaRegions" />
+      </Parameters>
+      <Docs>
+        <param name="left">The value for the left edge.</param>
+        <param name="top">The value for the top edge.</param>
+        <param name="right">The value for the right edge.</param>
+        <param name="bottom">The value for the bottom edge.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.SafeAreaEdges" /> struct with individual values for each edge.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.SafeAreaEdges All { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Microsoft.Maui.SafeAreaEdges All" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.SafeAreaEdges.All" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property All As SafeAreaEdges" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::Maui::SafeAreaEdges All { Microsoft::Maui::SafeAreaEdges get(); };" />
+      <MemberSignature Language="F#" Value="static member All : Microsoft.Maui.SafeAreaEdges" Usage="Microsoft.Maui.SafeAreaEdges.All" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.SafeAreaEdges</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A <see cref="T:Microsoft.Maui.SafeAreaEdges" /> with all edges set to <see cref="F:Microsoft.Maui.SafeAreaRegions.All" />.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bottom">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.SafeAreaRegions Bottom { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.SafeAreaRegions Bottom" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.SafeAreaEdges.Bottom" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bottom As SafeAreaRegions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::SafeAreaRegions Bottom { Microsoft::Maui::SafeAreaRegions get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bottom : Microsoft.Maui.SafeAreaRegions" Usage="Microsoft.Maui.SafeAreaEdges.Bottom" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.SafeAreaRegions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the safe area behavior for the bottom edge.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.SafeAreaEdges Default { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Microsoft.Maui.SafeAreaEdges Default" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.SafeAreaEdges.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As SafeAreaEdges" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::Maui::SafeAreaEdges Default { Microsoft::Maui::SafeAreaEdges get(); };" />
+      <MemberSignature Language="F#" Value="static member Default : Microsoft.Maui.SafeAreaEdges" Usage="Microsoft.Maui.SafeAreaEdges.Default" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.SafeAreaEdges</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A <see cref="T:Microsoft.Maui.SafeAreaEdges" /> with all edges set to <see cref="F:Microsoft.Maui.SafeAreaRegions.None" />.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (Microsoft.Maui.SafeAreaEdges other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype Microsoft.Maui.SafeAreaEdges other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.SafeAreaEdges.Equals(Microsoft.Maui.SafeAreaEdges)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As SafeAreaEdges) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(Microsoft::Maui::SafeAreaEdges other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : Microsoft.Maui.SafeAreaEdges -&gt; bool" Usage="safeAreaEdges.Equals other" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="Microsoft.Maui.SafeAreaEdges" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object? obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.SafeAreaEdges.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="safeAreaEdges.Equals obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.SafeAreaEdges.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="safeAreaEdges.GetHashCode " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.SafeAreaRegions Left { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.SafeAreaRegions Left" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.SafeAreaEdges.Left" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Left As SafeAreaRegions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::SafeAreaRegions Left { Microsoft::Maui::SafeAreaRegions get(); };" />
+      <MemberSignature Language="F#" Value="member this.Left : Microsoft.Maui.SafeAreaRegions" Usage="Microsoft.Maui.SafeAreaEdges.Left" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.SafeAreaRegions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the safe area behavior for the left edge.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.SafeAreaEdges None { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Microsoft.Maui.SafeAreaEdges None" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.SafeAreaEdges.None" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property None As SafeAreaEdges" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::Maui::SafeAreaEdges None { Microsoft::Maui::SafeAreaEdges get(); };" />
+      <MemberSignature Language="F#" Value="static member None : Microsoft.Maui.SafeAreaEdges" Usage="Microsoft.Maui.SafeAreaEdges.None" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.SafeAreaEdges</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A <see cref="T:Microsoft.Maui.SafeAreaEdges" /> with all edges set to <see cref="F:Microsoft.Maui.SafeAreaRegions.None" />.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool operator == (Microsoft.Maui.SafeAreaEdges left, Microsoft.Maui.SafeAreaEdges right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype Microsoft.Maui.SafeAreaEdges left, valuetype Microsoft.Maui.SafeAreaEdges right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.SafeAreaEdges.op_Equality(Microsoft.Maui.SafeAreaEdges,Microsoft.Maui.SafeAreaEdges)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As SafeAreaEdges, right As SafeAreaEdges) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(Microsoft::Maui::SafeAreaEdges left, Microsoft::Maui::SafeAreaEdges right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : Microsoft.Maui.SafeAreaEdges * Microsoft.Maui.SafeAreaEdges -&gt; bool" Usage="left = right" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="Microsoft.Maui.SafeAreaEdges" />
+        <Parameter Name="right" Type="Microsoft.Maui.SafeAreaEdges" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool operator != (Microsoft.Maui.SafeAreaEdges left, Microsoft.Maui.SafeAreaEdges right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype Microsoft.Maui.SafeAreaEdges left, valuetype Microsoft.Maui.SafeAreaEdges right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.SafeAreaEdges.op_Inequality(Microsoft.Maui.SafeAreaEdges,Microsoft.Maui.SafeAreaEdges)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As SafeAreaEdges, right As SafeAreaEdges) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(Microsoft::Maui::SafeAreaEdges left, Microsoft::Maui::SafeAreaEdges right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : Microsoft.Maui.SafeAreaEdges * Microsoft.Maui.SafeAreaEdges -&gt; bool" Usage="Microsoft.Maui.SafeAreaEdges.op_Inequality (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="Microsoft.Maui.SafeAreaEdges" />
+        <Parameter Name="right" Type="Microsoft.Maui.SafeAreaEdges" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.SafeAreaRegions Right { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.SafeAreaRegions Right" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.SafeAreaEdges.Right" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Right As SafeAreaRegions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::SafeAreaRegions Right { Microsoft::Maui::SafeAreaRegions get(); };" />
+      <MemberSignature Language="F#" Value="member this.Right : Microsoft.Maui.SafeAreaRegions" Usage="Microsoft.Maui.SafeAreaEdges.Right" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.SafeAreaRegions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the safe area behavior for the right edge.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.SafeAreaRegions Top { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.SafeAreaRegions Top" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.SafeAreaEdges.Top" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Top As SafeAreaRegions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::SafeAreaRegions Top { Microsoft::Maui::SafeAreaRegions get(); };" />
+      <MemberSignature Language="F#" Value="member this.Top : Microsoft.Maui.SafeAreaRegions" Usage="Microsoft.Maui.SafeAreaEdges.Top" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.SafeAreaRegions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the safe area behavior for the top edge.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.SafeAreaEdges.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="safeAreaEdges.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

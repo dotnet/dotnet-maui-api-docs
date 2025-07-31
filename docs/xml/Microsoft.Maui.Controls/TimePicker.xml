@@ -1,10 +1,15 @@
 <Type Name="TimePicker" FullName="Microsoft.Maui.Controls.TimePicker">
-  <TypeSignature Language="C#" Value="public class TimePicker : Microsoft.Maui.Controls.View, Microsoft.Maui.Controls.IElementConfiguration&lt;Microsoft.Maui.Controls.TimePicker&gt;, Microsoft.Maui.Controls.Internals.IFontElement, Microsoft.Maui.ITimePicker" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TimePicker extends Microsoft.Maui.Controls.View implements class Microsoft.Maui.Controls.IElementConfiguration`1&lt;class Microsoft.Maui.Controls.TimePicker&gt;, class Microsoft.Maui.Controls.Internals.IFontElement, class Microsoft.Maui.IElement, class Microsoft.Maui.ITextStyle, class Microsoft.Maui.ITimePicker, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" />
+  <TypeSignature Language="C#" Value="public class TimePicker : Microsoft.Maui.Controls.View, Microsoft.Maui.Controls.IElementConfiguration&lt;Microsoft.Maui.Controls.TimePicker&gt;, Microsoft.Maui.Controls.Internals.IFontElement, Microsoft.Maui.Controls.ITextElement, Microsoft.Maui.ITimePicker" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TimePicker extends Microsoft.Maui.Controls.View implements class Microsoft.Maui.Controls.IElementConfiguration`1&lt;class Microsoft.Maui.Controls.TimePicker&gt;, class Microsoft.Maui.Controls.Internals.IFontElement, class Microsoft.Maui.Controls.ITextElement, class Microsoft.Maui.IElement, class Microsoft.Maui.ITextStyle, class Microsoft.Maui.ITimePicker, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" FrameworkAlternate="net-maui-10.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.TimePicker" />
-  <TypeSignature Language="VB.NET" Value="Public Class TimePicker&#xA;Inherits View&#xA;Implements IElementConfiguration(Of TimePicker), IFontElement, ITimePicker" />
-  <TypeSignature Language="C++ CLI" Value="public ref class TimePicker : Microsoft::Maui::Controls::View, Microsoft::Maui::Controls::IElementConfiguration&lt;Microsoft::Maui::Controls::TimePicker ^&gt;, Microsoft::Maui::Controls::Internals::IFontElement, Microsoft::Maui::ITimePicker" />
-  <TypeSignature Language="F#" Value="type TimePicker = class&#xA;    inherit View&#xA;    interface IFontElement&#xA;    interface IElementConfiguration&lt;TimePicker&gt;&#xA;    interface ITimePicker&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface ITextStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Class TimePicker&#xA;Inherits View&#xA;Implements IElementConfiguration(Of TimePicker), IFontElement, ITextElement, ITimePicker" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TimePicker : Microsoft::Maui::Controls::View, Microsoft::Maui::Controls::IElementConfiguration&lt;Microsoft::Maui::Controls::TimePicker ^&gt;, Microsoft::Maui::Controls::Internals::IFontElement, Microsoft::Maui::Controls::ITextElement, Microsoft::Maui::ITimePicker" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="F#" Value="type TimePicker = class&#xA;    inherit View&#xA;    interface IFontElement&#xA;    interface ITextElement&#xA;    interface IElementConfiguration&lt;TimePicker&gt;&#xA;    interface ITimePicker&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface ITextStyle" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="C#" Value="public class TimePicker : Microsoft.Maui.Controls.View, Microsoft.Maui.Controls.IElementConfiguration&lt;Microsoft.Maui.Controls.TimePicker&gt;, Microsoft.Maui.Controls.Internals.IFontElement, Microsoft.Maui.ITimePicker" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TimePicker extends Microsoft.Maui.Controls.View implements class Microsoft.Maui.Controls.IElementConfiguration`1&lt;class Microsoft.Maui.Controls.TimePicker&gt;, class Microsoft.Maui.Controls.Internals.IFontElement, class Microsoft.Maui.IElement, class Microsoft.Maui.ITextStyle, class Microsoft.Maui.ITimePicker, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="VB.NET" Value="Public Class TimePicker&#xA;Inherits View&#xA;Implements IElementConfiguration(Of TimePicker), IFontElement, ITimePicker" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TimePicker : Microsoft::Maui::Controls::View, Microsoft::Maui::Controls::IElementConfiguration&lt;Microsoft::Maui::Controls::TimePicker ^&gt;, Microsoft::Maui::Controls::Internals::IFontElement, Microsoft::Maui::ITimePicker" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="F#" Value="type TimePicker = class&#xA;    inherit View&#xA;    interface IFontElement&#xA;    interface IElementConfiguration&lt;TimePicker&gt;&#xA;    interface ITimePicker&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface ITextStyle" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -20,6 +25,9 @@
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Maui.Controls.Internals.IFontElement</InterfaceName>
+    </Interface>
+    <Interface FrameworkAlternate="net-maui-10.0">
+      <InterfaceName>Microsoft.Maui.Controls.ITextElement</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Maui.IElement</InterfaceName>
@@ -121,6 +129,26 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
       </ReturnValue>
       <Docs>
         <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.TimePicker.CharacterSpacing" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Closed">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Controls.TimePickerClosedEventArgs&gt; Closed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.TimePickerClosedEventArgs&gt; Closed" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.TimePicker.Closed" />
+      <MemberSignature Language="VB.NET" Value="Public Event Closed As EventHandler(Of TimePickerClosedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Controls::TimePickerClosedEventArgs ^&gt; ^ Closed;" />
+      <MemberSignature Language="F#" Value="member this.Closed : EventHandler&lt;Microsoft.Maui.Controls.TimePickerClosedEventArgs&gt; " Usage="member this.Closed : System.EventHandler&lt;Microsoft.Maui.Controls.TimePickerClosedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.TimePickerClosedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -371,6 +399,50 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsOpen">
+      <MemberSignature Language="C#" Value="public bool IsOpen { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsOpen" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.TimePicker.IsOpen" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsOpen As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOpen { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsOpen : bool with get, set" Usage="Microsoft.Maui.Controls.TimePicker.IsOpen" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.ITimePicker.IsOpen</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOpenProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty IsOpenProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty IsOpenProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.TimePicker.IsOpenProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsOpenProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ IsOpenProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsOpenProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.TimePicker.IsOpenProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.TimePicker.IsOpen" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Microsoft.Maui.Controls.Internals.IFontElement.FontSizeDefaultValueCreator">
       <MemberSignature Language="C#" Value="double IFontElement.FontSizeDefaultValueCreator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance float64 Microsoft.Maui.Controls.Internals.IFontElement.FontSizeDefaultValueCreator() cil managed" />
@@ -517,6 +589,117 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Microsoft.Maui.Controls.ITextElement.OnCharacterSpacingPropertyChanged">
+      <MemberSignature Language="C#" Value="void ITextElement.OnCharacterSpacingPropertyChanged (double oldValue, double newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.Controls.ITextElement.OnCharacterSpacingPropertyChanged(float64 oldValue, float64 newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.TimePicker.Microsoft#Maui#Controls#ITextElement#OnCharacterSpacingPropertyChanged(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Sub OnCharacterSpacingPropertyChanged (oldValue As Double, newValue As Double) Implements ITextElement.OnCharacterSpacingPropertyChanged" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.Controls.ITextElement.OnCharacterSpacingPropertyChanged(double oldValue, double newValue) = Microsoft::Maui::Controls::ITextElement::OnCharacterSpacingPropertyChanged;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Controls.ITextElement.OnCharacterSpacingPropertyChanged : double * double -&gt; unit&#xA;override this.Microsoft.Maui.Controls.ITextElement.OnCharacterSpacingPropertyChanged : double * double -&gt; unit" Usage="timePicker.Microsoft.Maui.Controls.ITextElement.OnCharacterSpacingPropertyChanged (oldValue, newValue)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.ITextElement.OnCharacterSpacingPropertyChanged(System.Double,System.Double)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldValue" Type="System.Double" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="newValue" Type="System.Double" Index="1" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Controls.ITextElement.OnTextColorPropertyChanged">
+      <MemberSignature Language="C#" Value="void ITextElement.OnTextColorPropertyChanged (Microsoft.Maui.Graphics.Color oldValue, Microsoft.Maui.Graphics.Color newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.Controls.ITextElement.OnTextColorPropertyChanged(class Microsoft.Maui.Graphics.Color oldValue, class Microsoft.Maui.Graphics.Color newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.TimePicker.Microsoft#Maui#Controls#ITextElement#OnTextColorPropertyChanged(Microsoft.Maui.Graphics.Color,Microsoft.Maui.Graphics.Color)" />
+      <MemberSignature Language="VB.NET" Value="Sub OnTextColorPropertyChanged (oldValue As Color, newValue As Color) Implements ITextElement.OnTextColorPropertyChanged" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.Controls.ITextElement.OnTextColorPropertyChanged(Microsoft::Maui::Graphics::Color ^ oldValue, Microsoft::Maui::Graphics::Color ^ newValue) = Microsoft::Maui::Controls::ITextElement::OnTextColorPropertyChanged;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Controls.ITextElement.OnTextColorPropertyChanged : Microsoft.Maui.Graphics.Color * Microsoft.Maui.Graphics.Color -&gt; unit&#xA;override this.Microsoft.Maui.Controls.ITextElement.OnTextColorPropertyChanged : Microsoft.Maui.Graphics.Color * Microsoft.Maui.Graphics.Color -&gt; unit" Usage="timePicker.Microsoft.Maui.Controls.ITextElement.OnTextColorPropertyChanged (oldValue, newValue)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.ITextElement.OnTextColorPropertyChanged(Microsoft.Maui.Graphics.Color,Microsoft.Maui.Graphics.Color)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldValue" Type="Microsoft.Maui.Graphics.Color" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="newValue" Type="Microsoft.Maui.Graphics.Color" Index="1" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Controls.ITextElement.OnTextTransformChanged">
+      <MemberSignature Language="C#" Value="void ITextElement.OnTextTransformChanged (Microsoft.Maui.TextTransform oldValue, Microsoft.Maui.TextTransform newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.Controls.ITextElement.OnTextTransformChanged(valuetype Microsoft.Maui.TextTransform oldValue, valuetype Microsoft.Maui.TextTransform newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.TimePicker.Microsoft#Maui#Controls#ITextElement#OnTextTransformChanged(Microsoft.Maui.TextTransform,Microsoft.Maui.TextTransform)" />
+      <MemberSignature Language="VB.NET" Value="Sub OnTextTransformChanged (oldValue As TextTransform, newValue As TextTransform) Implements ITextElement.OnTextTransformChanged" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.Controls.ITextElement.OnTextTransformChanged(Microsoft::Maui::TextTransform oldValue, Microsoft::Maui::TextTransform newValue) = Microsoft::Maui::Controls::ITextElement::OnTextTransformChanged;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Controls.ITextElement.OnTextTransformChanged : Microsoft.Maui.TextTransform * Microsoft.Maui.TextTransform -&gt; unit&#xA;override this.Microsoft.Maui.Controls.ITextElement.OnTextTransformChanged : Microsoft.Maui.TextTransform * Microsoft.Maui.TextTransform -&gt; unit" Usage="timePicker.Microsoft.Maui.Controls.ITextElement.OnTextTransformChanged (oldValue, newValue)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Controls.ITextElement.OnTextTransformChanged(Microsoft.Maui.TextTransform,Microsoft.Maui.TextTransform)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldValue" Type="Microsoft.Maui.TextTransform" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="newValue" Type="Microsoft.Maui.TextTransform" Index="1" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Controls.ITextElement.TextTransform">
+      <MemberSignature Language="C#" Value="Microsoft.Maui.TextTransform Microsoft.Maui.Controls.ITextElement.TextTransform { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.TextTransform Microsoft.Maui.Controls.ITextElement.TextTransform" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.TimePicker.Microsoft#Maui#Controls#ITextElement#TextTransform" />
+      <MemberSignature Language="VB.NET" Value=" Property TextTransform As TextTransform Implements ITextElement.TextTransform" />
+      <MemberSignature Language="C++ CLI" Value="property Microsoft::Maui::TextTransform Microsoft::Maui::Controls::ITextElement::TextTransform { Microsoft::Maui::TextTransform get(); void set(Microsoft::Maui::TextTransform value); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.Controls.ITextElement.TextTransform : Microsoft.Maui.TextTransform with get, set" Usage="Microsoft.Maui.Controls.ITextElement.TextTransform" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.Controls.ITextElement.TextTransform</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.TextTransform</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Microsoft.Maui.ITextStyle.Font">
       <MemberSignature Language="C#" Value="Microsoft.Maui.Font Microsoft.Maui.ITextStyle.Font { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.Font Microsoft.Maui.ITextStyle.Font" />
@@ -543,12 +726,17 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.ITimePicker.Time">
-      <MemberSignature Language="C#" Value="TimeSpan Microsoft.Maui.ITimePicker.Time { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Microsoft.Maui.ITimePicker.Time" />
+      <MemberSignature Language="C#" Value="TimeSpan? Microsoft.Maui.ITimePicker.Time { get; set; }" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; Microsoft.Maui.ITimePicker.Time" FrameworkAlternate="net-maui-10.0" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.TimePicker.Microsoft#Maui#ITimePicker#Time" />
-      <MemberSignature Language="VB.NET" Value=" Property Time As TimeSpan Implements ITimePicker.Time" />
-      <MemberSignature Language="C++ CLI" Value="property TimeSpan Microsoft::Maui::ITimePicker::Time { TimeSpan get(); void set(TimeSpan value); };" />
-      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.ITimePicker.Time : TimeSpan with get, set" Usage="Microsoft.Maui.ITimePicker.Time" />
+      <MemberSignature Language="VB.NET" Value=" Property Time As Nullable(Of TimeSpan) Implements ITimePicker.Time" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="C++ CLI" Value="property Nullable&lt;TimeSpan&gt; Microsoft::Maui::ITimePicker::Time { Nullable&lt;TimeSpan&gt; get(); void set(Nullable&lt;TimeSpan&gt; value); };" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.ITimePicker.Time : Nullable&lt;TimeSpan&gt; with get, set" Usage="Microsoft.Maui.ITimePicker.Time" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="C#" Value="TimeSpan Microsoft.Maui.ITimePicker.Time { get; set; }" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Microsoft.Maui.ITimePicker.Time" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="VB.NET" Value=" Property Time As TimeSpan Implements ITimePicker.Time" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="C++ CLI" Value="property TimeSpan Microsoft::Maui::ITimePicker::Time { TimeSpan get(); void set(TimeSpan value); };" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.ITimePicker.Time : TimeSpan with get, set" Usage="Microsoft.Maui.ITimePicker.Time" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Maui.ITimePicker.Time</InterfaceMember>
@@ -559,7 +747,8 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.TimeSpan</ReturnType>
+        <ReturnType FrameworkAlternate="net-maui-10.0">System.Nullable&lt;System.TimeSpan&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="net-maui-8.0;net-maui-9.0">System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
@@ -600,6 +789,47 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="OnHandlerChanged">
+      <MemberSignature Language="C#" Value="protected override void OnHandlerChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandlerChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.TimePicker.OnHandlerChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandlerChanged ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandlerChanged();" />
+      <MemberSignature Language="F#" Value="override this.OnHandlerChanged : unit -&gt; unit" Usage="timePicker.OnHandlerChanged " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Opened">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Controls.TimePickerOpenedEventArgs&gt; Opened;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.TimePickerOpenedEventArgs&gt; Opened" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.TimePicker.Opened" />
+      <MemberSignature Language="VB.NET" Value="Public Event Opened As EventHandler(Of TimePickerOpenedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Controls::TimePickerOpenedEventArgs ^&gt; ^ Opened;" />
+      <MemberSignature Language="F#" Value="member this.Opened : EventHandler&lt;Microsoft.Maui.Controls.TimePickerOpenedEventArgs&gt; " Usage="member this.Opened : System.EventHandler&lt;Microsoft.Maui.Controls.TimePickerOpenedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.TimePickerOpenedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextColor">
@@ -646,12 +876,17 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
       </Docs>
     </Member>
     <Member MemberName="Time">
-      <MemberSignature Language="C#" Value="public TimeSpan Time { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Time" />
+      <MemberSignature Language="C#" Value="public TimeSpan? Time { get; set; }" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; Time" FrameworkAlternate="net-maui-10.0" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.TimePicker.Time" />
-      <MemberSignature Language="VB.NET" Value="Public Property Time As TimeSpan" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan Time { TimeSpan get(); void set(TimeSpan value); };" />
-      <MemberSignature Language="F#" Value="member this.Time : TimeSpan with get, set" Usage="Microsoft.Maui.Controls.TimePicker.Time" />
+      <MemberSignature Language="VB.NET" Value="Public Property Time As Nullable(Of TimeSpan)" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;TimeSpan&gt; Time { Nullable&lt;TimeSpan&gt; get(); void set(Nullable&lt;TimeSpan&gt; value); };" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="F#" Value="member this.Time : Nullable&lt;TimeSpan&gt; with get, set" Usage="Microsoft.Maui.Controls.TimePicker.Time" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="C#" Value="public TimeSpan Time { get; set; }" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Time" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="VB.NET" Value="Public Property Time As TimeSpan" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan Time { TimeSpan get(); void set(TimeSpan value); };" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="F#" Value="member this.Time : TimeSpan with get, set" Usage="Microsoft.Maui.Controls.TimePicker.Time" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
@@ -659,7 +894,8 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.TimeSpan</ReturnType>
+        <ReturnType FrameworkAlternate="net-maui-10.0">System.Nullable&lt;System.TimeSpan&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="net-maui-8.0;net-maui-9.0">System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the displayed time. This is a bindable property.</summary>
@@ -717,6 +953,9 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ UpdateFormsText(System::String ^ source, Microsoft::Maui::TextTransform textTransform);" />
       <MemberSignature Language="F#" Value="abstract member UpdateFormsText : string * Microsoft.Maui.TextTransform -&gt; string&#xA;override this.UpdateFormsText : string * Microsoft.Maui.TextTransform -&gt; string" Usage="timePicker.UpdateFormsText (source, textTransform)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember FrameworkAlternate="net-maui-10.0">M:Microsoft.Maui.Controls.ITextElement.UpdateFormsText(System.String,Microsoft.Maui.TextTransform)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>

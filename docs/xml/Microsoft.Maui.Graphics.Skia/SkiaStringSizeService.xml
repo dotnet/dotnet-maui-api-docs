@@ -20,7 +20,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Provides functionality for measuring string dimensions using SkiaSharp.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -67,11 +69,13 @@
         <Parameter Name="fontSize" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="font">To be added.</param>
-        <param name="fontSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The string to measure.</param>
+        <param name="font">The font to use when measuring the string.</param>
+        <param name="fontSize">The font size to use when measuring the string.</param>
+        <summary>
+            Gets the size of a string when rendered with the specified font and font size.
+            </summary>
+        <returns>The size of the string in device-independent units.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,13 +106,15 @@
         <Parameter Name="verticalAlignment" Type="Microsoft.Maui.Graphics.VerticalAlignment" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="font">To be added.</param>
-        <param name="fontSize">To be added.</param>
-        <param name="horizontalAlignment">To be added.</param>
-        <param name="verticalAlignment">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The string to measure.</param>
+        <param name="font">The font to use when measuring the string.</param>
+        <param name="fontSize">The font size to use when measuring the string.</param>
+        <param name="horizontalAlignment">The horizontal alignment to use.</param>
+        <param name="verticalAlignment">The vertical alignment to use.</param>
+        <summary>
+            Gets the size of a string when rendered with the specified font, font size, and alignment.
+            </summary>
+        <returns>The size of the string in device-independent units.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

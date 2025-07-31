@@ -15,7 +15,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Specifies the algorithm used to determine which regions are inside or outside a path for filling.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,7 +39,10 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Uses the even-odd rule, which fills regions based on alternating crossings.
+            A point is inside the shape if a ray from that point to infinity crosses an odd number of path segments.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="NonZero">
@@ -58,7 +63,10 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Uses the non-zero winding rule, which fills any region with a non-zero winding number.
+            A point is inside the shape if a ray from that point to infinity crosses path segments with a non-zero net number of clockwise versus counter-clockwise crossings.
+            </summary>
       </Docs>
     </Member>
   </Members>

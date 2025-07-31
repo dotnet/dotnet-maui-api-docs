@@ -168,6 +168,33 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetJavaScriptEnabled">
+      <MemberSignature Language="C#" Value="public static bool GetJavaScriptEnabled (Microsoft.Maui.Controls.WebView element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetJavaScriptEnabled(class Microsoft.Maui.Controls.WebView element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific.WebView.GetJavaScriptEnabled(Microsoft.Maui.Controls.WebView)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetJavaScriptEnabled (element As WebView) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetJavaScriptEnabled(Microsoft::Maui::Controls::WebView ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetJavaScriptEnabled : Microsoft.Maui.Controls.WebView -&gt; bool" Usage="Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific.WebView.GetJavaScriptEnabled element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.Maui.Controls.WebView" Index="0" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="element">The WebView from which to read the property value.</param>
+        <summary>
+            Gets the value of the JavaScriptEnabled property for the specified WebView.
+            </summary>
+        <returns>A boolean value indicating whether JavaScript is enabled.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetMixedContentMode">
       <MemberSignature Language="C#" Value="public static Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific.MixedContentHandling GetMixedContentMode (Microsoft.Maui.Controls.BindableObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific.MixedContentHandling GetMixedContentMode(class Microsoft.Maui.Controls.BindableObject element) cil managed" />
@@ -191,6 +218,83 @@
         <param name="element">The Android web view for which to get the loading behavior for content that is a mix of secure and insecure content.</param>
         <summary>Returns the mixed content mode for the web view.</summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsJavaScriptEnabled">
+      <MemberSignature Language="C#" Value="public static bool IsJavaScriptEnabled (this Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.Android,Microsoft.Maui.Controls.WebView&gt; config);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsJavaScriptEnabled(class Microsoft.Maui.Controls.IPlatformElementConfiguration`2&lt;class Microsoft.Maui.Controls.PlatformConfiguration.Android, class Microsoft.Maui.Controls.WebView&gt; config) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific.WebView.IsJavaScriptEnabled(Microsoft.Maui.Controls.IPlatformElementConfiguration{Microsoft.Maui.Controls.PlatformConfiguration.Android,Microsoft.Maui.Controls.WebView})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsJavaScriptEnabled (config As IPlatformElementConfiguration(Of Android, WebView)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool IsJavaScriptEnabled(Microsoft::Maui::Controls::IPlatformElementConfiguration&lt;Microsoft::Maui::Controls::PlatformConfiguration::Android ^, Microsoft::Maui::Controls::WebView ^&gt; ^ config);" />
+      <MemberSignature Language="F#" Value="static member IsJavaScriptEnabled : Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.Android, Microsoft.Maui.Controls.WebView&gt; -&gt; bool" Usage="Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific.WebView.IsJavaScriptEnabled config" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.Android,Microsoft.Maui.Controls.WebView&gt;" Index="0" FrameworkAlternate="net-maui-10.0" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="config">The platform configuration to check.</param>
+        <summary>
+            Determines whether JavaScript is enabled for the specified Android platform configuration.
+            </summary>
+        <returns>A boolean value indicating whether JavaScript is enabled.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JavaScriptEnabled">
+      <MemberSignature Language="C#" Value="public static void JavaScriptEnabled (this Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.Android,Microsoft.Maui.Controls.WebView&gt; config, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void JavaScriptEnabled(class Microsoft.Maui.Controls.IPlatformElementConfiguration`2&lt;class Microsoft.Maui.Controls.PlatformConfiguration.Android, class Microsoft.Maui.Controls.WebView&gt; config, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific.WebView.JavaScriptEnabled(Microsoft.Maui.Controls.IPlatformElementConfiguration{Microsoft.Maui.Controls.PlatformConfiguration.Android,Microsoft.Maui.Controls.WebView},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub JavaScriptEnabled (config As IPlatformElementConfiguration(Of Android, WebView), value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void JavaScriptEnabled(Microsoft::Maui::Controls::IPlatformElementConfiguration&lt;Microsoft::Maui::Controls::PlatformConfiguration::Android ^, Microsoft::Maui::Controls::WebView ^&gt; ^ config, bool value);" />
+      <MemberSignature Language="F#" Value="static member JavaScriptEnabled : Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.Android, Microsoft.Maui.Controls.WebView&gt; * bool -&gt; unit" Usage="Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific.WebView.JavaScriptEnabled (config, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.Android,Microsoft.Maui.Controls.WebView&gt;" Index="0" FrameworkAlternate="net-maui-10.0" RefType="this" />
+        <Parameter Name="value" Type="System.Boolean" Index="1" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="config">The platform configuration to which this method applies.</param>
+        <param name="value">The boolean value indicating whether JavaScript should be enabled.</param>
+        <summary>
+            Sets whether JavaScript is enabled for the specified Android platform configuration.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JavaScriptEnabledProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty JavaScriptEnabledProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty JavaScriptEnabledProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific.WebView.JavaScriptEnabledProperty" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly JavaScriptEnabledProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ JavaScriptEnabledProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable JavaScriptEnabledProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific.WebView.JavaScriptEnabledProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Bindable property for controlling whether JavaScript is enabled in a Element.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -348,6 +452,63 @@
         <param name="element">The element on which to perform the operation.</param>
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetJavaScriptEnabled">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.Android,Microsoft.Maui.Controls.WebView&gt; SetJavaScriptEnabled (this Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.Android,Microsoft.Maui.Controls.WebView&gt; config, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Maui.Controls.IPlatformElementConfiguration`2&lt;class Microsoft.Maui.Controls.PlatformConfiguration.Android, class Microsoft.Maui.Controls.WebView&gt; SetJavaScriptEnabled(class Microsoft.Maui.Controls.IPlatformElementConfiguration`2&lt;class Microsoft.Maui.Controls.PlatformConfiguration.Android, class Microsoft.Maui.Controls.WebView&gt; config, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific.WebView.SetJavaScriptEnabled(Microsoft.Maui.Controls.IPlatformElementConfiguration{Microsoft.Maui.Controls.PlatformConfiguration.Android,Microsoft.Maui.Controls.WebView},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SetJavaScriptEnabled (config As IPlatformElementConfiguration(Of Android, WebView), value As Boolean) As IPlatformElementConfiguration(Of Android, WebView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::Maui::Controls::IPlatformElementConfiguration&lt;Microsoft::Maui::Controls::PlatformConfiguration::Android ^, Microsoft::Maui::Controls::WebView ^&gt; ^ SetJavaScriptEnabled(Microsoft::Maui::Controls::IPlatformElementConfiguration&lt;Microsoft::Maui::Controls::PlatformConfiguration::Android ^, Microsoft::Maui::Controls::WebView ^&gt; ^ config, bool value);" />
+      <MemberSignature Language="F#" Value="static member SetJavaScriptEnabled : Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.Android, Microsoft.Maui.Controls.WebView&gt; * bool -&gt; Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.Android, Microsoft.Maui.Controls.WebView&gt;" Usage="Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific.WebView.SetJavaScriptEnabled (config, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.Android,Microsoft.Maui.Controls.WebView&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.Android,Microsoft.Maui.Controls.WebView&gt;" Index="0" FrameworkAlternate="net-maui-10.0" RefType="this" />
+        <Parameter Name="value" Type="System.Boolean" Index="1" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="config">The platform configuration to which this method applies.</param>
+        <param name="value">The boolean value indicating whether JavaScript should be enabled.</param>
+        <summary>
+            Sets whether JavaScript is enabled for the specified Android platform configuration and returns the configuration.
+            </summary>
+        <returns>The platform configuration to support fluent API.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetJavaScriptEnabled">
+      <MemberSignature Language="C#" Value="public static void SetJavaScriptEnabled (Microsoft.Maui.Controls.WebView element, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetJavaScriptEnabled(class Microsoft.Maui.Controls.WebView element, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific.WebView.SetJavaScriptEnabled(Microsoft.Maui.Controls.WebView,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetJavaScriptEnabled (element As WebView, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetJavaScriptEnabled(Microsoft::Maui::Controls::WebView ^ element, bool value);" />
+      <MemberSignature Language="F#" Value="static member SetJavaScriptEnabled : Microsoft.Maui.Controls.WebView * bool -&gt; unit" Usage="Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific.WebView.SetJavaScriptEnabled (element, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.Maui.Controls.WebView" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="value" Type="System.Boolean" Index="1" FrameworkAlternate="net-maui-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="element">The WebView on which to set the property value.</param>
+        <param name="value">The boolean value indicating whether JavaScript should be enabled.</param>
+        <summary>
+            Sets the value of the JavaScriptEnabled property for the specified WebView.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -507,13 +507,21 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("Use SafeAreaElement.IgnoreSafeArea attached property instead for per-edge safe area control.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use SafeAreaElement.IgnoreSafeArea attached property instead for per-edge safe area control.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            This property is deprecated. Use SafeAreaElement.IgnoreSafeArea attached property instead for per-edge safe area control.
+            </remarks>
         <inheritdoc cref="P:Microsoft.Maui.ISafeAreaView.IgnoreSafeArea" />
       </Docs>
     </Member>
@@ -1156,6 +1164,54 @@
         <summary>
             Removes a child view at the specified index.
             </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SafeAreaEdges">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.SafeAreaEdges SafeAreaEdges { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.SafeAreaEdges SafeAreaEdges" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Layout.SafeAreaEdges" />
+      <MemberSignature Language="VB.NET" Value="Public Property SafeAreaEdges As SafeAreaEdges" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::SafeAreaEdges SafeAreaEdges { Microsoft::Maui::SafeAreaEdges get(); void set(Microsoft::Maui::SafeAreaEdges value); };" />
+      <MemberSignature Language="F#" Value="member this.SafeAreaEdges : Microsoft.Maui.SafeAreaEdges with get, set" Usage="Microsoft.Maui.Controls.Layout.SafeAreaEdges" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.SafeAreaEdges</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the safe area edges to obey for this layout.
+            The default value is SafeAreaEdges.Default (None - edge to edge).
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            This property controls which edges of the layout should obey safe area insets.
+            Use SafeAreaRegions.None for edge-to-edge content, SafeAreaRegions.All to obey all safe area insets, 
+            SafeAreaRegions.Container for content that flows under keyboard but stays out of bars/notch, or SafeAreaRegions.SoftInput for keyboard-aware behavior.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SafeAreaEdgesProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty SafeAreaEdgesProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty SafeAreaEdgesProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Layout.SafeAreaEdgesProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SafeAreaEdgesProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ SafeAreaEdgesProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SafeAreaEdgesProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Layout.SafeAreaEdgesProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Layout.SafeAreaEdges" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

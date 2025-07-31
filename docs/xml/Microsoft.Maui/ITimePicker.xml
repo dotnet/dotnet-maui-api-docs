@@ -27,7 +27,7 @@
   </Interfaces>
   <Docs>
     <summary>
-            Represents a View that allows the user to select a time.
+            Represents a <see cref="T:Microsoft.Maui.IView" /> that allows the user to select a time.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -62,13 +62,46 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsOpen">
+      <MemberSignature Language="C#" Value="public virtual bool IsOpen { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsOpen" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.ITimePicker.IsOpen" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property IsOpen As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsOpen { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsOpen : bool with get, set" Usage="Microsoft.Maui.ITimePicker.IsOpen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether the dropdown is currently open.
+            </summary>
+        <value>
+          <c>true</c> if the dropdown is currently open and visible; otherwise, <c>false</c>.
+            </value>
+        <remarks>
+            Setting this property programmatically will open or close the dropdown.
+            Controls may also update this property when the dropdown is opened or closed through user interaction.
+            </remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Time">
-      <MemberSignature Language="C#" Value="public TimeSpan Time { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Time" />
+      <MemberSignature Language="C#" Value="public TimeSpan? Time { get; set; }" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; Time" FrameworkAlternate="net-maui-10.0" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Maui.ITimePicker.Time" />
-      <MemberSignature Language="VB.NET" Value="Public Property Time As TimeSpan" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan Time { TimeSpan get(); void set(TimeSpan value); };" />
-      <MemberSignature Language="F#" Value="member this.Time : TimeSpan with get, set" Usage="Microsoft.Maui.ITimePicker.Time" />
+      <MemberSignature Language="VB.NET" Value="Public Property Time As Nullable(Of TimeSpan)" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;TimeSpan&gt; Time { Nullable&lt;TimeSpan&gt; get(); void set(Nullable&lt;TimeSpan&gt; value); };" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="F#" Value="member this.Time : Nullable&lt;TimeSpan&gt; with get, set" Usage="Microsoft.Maui.ITimePicker.Time" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="C#" Value="public TimeSpan Time { get; set; }" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Time" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="VB.NET" Value="Public Property Time As TimeSpan" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan Time { TimeSpan get(); void set(TimeSpan value); };" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="F#" Value="member this.Time : TimeSpan with get, set" Usage="Microsoft.Maui.ITimePicker.Time" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>
@@ -76,11 +109,12 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.TimeSpan</ReturnType>
+        <ReturnType FrameworkAlternate="net-maui-10.0">System.Nullable&lt;System.TimeSpan&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="net-maui-8.0;net-maui-9.0">System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets the displayed time.
+            Gets or sets the selected time.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
