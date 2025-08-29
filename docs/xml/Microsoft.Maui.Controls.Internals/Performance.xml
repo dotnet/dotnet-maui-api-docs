@@ -20,10 +20,14 @@
       <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
+    <Attribute FrameworkAlternate="net-maui-10.0">
+      <AttributeName Language="C#">[System.Obsolete("This type is obsolete and will be removed in a future version.", true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("This type is obsolete and will be removed in a future version.", true)&gt;]</AttributeName>
+    </Attribute>
   </Attributes>
   <Docs>
-    <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Internal API for Microsoft.Maui.Controls platform use.</summary>
+    <remarks>For internal use only. This API can be changed or removed without notice at any time.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,9 +65,9 @@
         <ReturnType>Microsoft.Maui.Controls.Internals.IPerformanceProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>Internal API for Microsoft.Maui.Controls platform use.</summary>
         <value>For internal use by the Microsoft.Maui.Controls platform.</value>
-        <remarks>To be added.</remarks>
+        <remarks>For internal use only. This API can be changed or removed without notice at any time.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetProvider">
@@ -86,9 +90,9 @@
         <Parameter Name="instance" Type="Microsoft.Maui.Controls.Internals.IPerformanceProvider" />
       </Parameters>
       <Docs>
-        <param name="instance">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
-        <remarks>To be added.</remarks>
+        <param name="instance">Internal parameter for platform use.</param>
+        <summary>Internal API for Microsoft.Maui.Controls platform use.</summary>
+        <remarks>For internal use only. This API can be changed or removed without notice at any time.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -215,12 +219,12 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="reference">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <param name="tag">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <param name="path">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <param name="member">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
-        <remarks>To be added.</remarks>
+        <param name="reference">Internal parameter for platform use.</param>
+        <param name="tag">Internal parameter for platform use.</param>
+        <param name="path">Internal parameter for platform use.</param>
+        <param name="member">Internal parameter for platform use.</param>
+        <summary>Internal API for Microsoft.Maui.Controls platform use.</summary>
+        <remarks>For internal use only. This API can be changed or removed without notice at any time.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -79,19 +79,9 @@
         <Parameter Name="action" Type="System.Action" />
       </Parameters>
       <Docs>
-        <param name="action">The Action to invoke </param>
+        <param name="action">The Action to invoke</param>
         <summary>Invokes an Action on the device main (UI) thread.</summary>
-        <remarks>
-          <para>This example shows how to set the Text of Label on the main thread, e.g. in response to an async event.
-          </para>
-          <example>
-            <code lang="csharp lang-csharp"><![CDATA[
-Device.BeginInvokeOnMainThread (() => {
-  label.Text = "Async operation completed";
-});
-          ]]></code>
-          </example>
-        </remarks>
+        <remarks>This example shows how to set the Text of Label on the main thread, e.g. in response to an async event.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultRendererAssembly">
@@ -151,11 +141,9 @@ Device.BeginInvokeOnMainThread (() => {
       <Docs>
         <summary>Gets the flow direction on the device.</summary>
         <value>The flow direction on the device. See Remarks.</value>
-        <remarks>
-          <para>The following contains a few important points about flow direction from <format type="text/html"><a href="https://learn.microsoft.com/dotnet/maui/fundamentals/localization#right-to-left-localization">Right-to-Left Localization</a></format>. Developers should consult that document for more information about limitations of right-to-left support, and for requirements to implement right-to-left support on various target platforms.</para>
-          <para>The default value of <see cref="T:Microsoft.Maui.FlowDirection" /> for a visual element that has no parent is <see cref="F:Microsoft.Maui.FlowDirection.LeftToRight" />, even on platforms where <see cref="P:Microsoft.Maui.Controls.Device.FlowDirection" /> is <see cref="F:Microsoft.Maui.FlowDirection.RightToLeft" />. Therefore, developers must deliberately opt in to right-to-left layout. Developers can choose right-to-left layout by setting the <see cref="P:Microsoft.Maui.Controls.VisualElement.FlowDirection" /> property of the root element to <see cref="F:Microsoft.Maui.FlowDirection.RightToLeft" /> to chosse right-to-left layout, or to <see cref="F:Microsoft.Maui.FlowDirection.MatchParent" /> to match the device layout.</para>
-          <para>All <see cref="T:Microsoft.Maui.Controls.VisualElement" />s that have a parent default to <see cref="F:Microsoft.Maui.FlowDirection.MatchParent" />.</para>
-        </remarks>
+        <remarks>The following contains a few important points about flow direction from
+            The default value of
+            All</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMainThreadSynchronizationContextAsync">
@@ -509,9 +497,9 @@ Device.BeginInvokeOnMainThread (() => {
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>Internal API for Microsoft.Maui.Controls platform use.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>For internal use only. This API can be changed or removed without notice at any time.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MacCatalyst">
@@ -599,23 +587,8 @@ Device.BeginInvokeOnMainThread (() => {
         <param name="interval">The interval between invocations of the callback.</param>
         <param name="callback">The action to run when the timer elapses.</param>
         <summary>Starts a recurring timer using the device clock capabilities.</summary>
-        <remarks>
-          <para>While the callback returns <see langword="true" />, the timer will keep recurring.</para>
-          <para>If you want the code inside the timer to interact on the UI thread (e.g. setting text of a Label or showing an alert), it should be done within a <see langword="BeginInvokeOnMainThread" /> expression, which will be nested inside the timer (see below).</para>
-          <example>
-            <code lang="csharp lang-csharp"><![CDATA[
-Device.StartTimer (new TimeSpan (0, 0, 60), () =>
-{
-    // do something every 60 seconds
-    Device.BeginInvokeOnMainThread (() => 
-    {
-      // interact with UI elements
-    });
-    return true; // runs again, or false to stop
-});
-          ]]></code>
-          </example>
-        </remarks>
+        <remarks>While the callback returns
+            If you want the code inside the timer to interact on the UI thread (e.g. setting text of a Label or showing an alert), it should be done within a</remarks>
       </Docs>
     </Member>
     <Member MemberName="Tizen">

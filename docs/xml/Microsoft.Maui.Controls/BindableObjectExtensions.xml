@@ -112,10 +112,10 @@
         <Parameter Name="dark" Type="Microsoft.Maui.Graphics.Color" />
       </Parameters>
       <Docs>
-        <param name="self">To be added.</param>
-        <param name="targetProperty">To be added.</param>
-        <param name="light">To be added.</param>
-        <param name="dark">To be added.</param>
+        <param name="self">The object instance.</param>
+        <param name="targetProperty">The targetProperty parameter.</param>
+        <param name="light">The light parameter.</param>
+        <param name="dark">The dark parameter.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -157,31 +157,7 @@
         <param name="converter">An <see cref="T:Microsoft.Maui.Controls.IValueConverter" /> for the binding. This parameter is optional. Default is <see langword="null" />.</param>
         <param name="stringFormat">A string used as stringFormat for the binding. This parameter is optional. Default is <see langword="null" />.</param>
         <summary>Creates and applies a binding to a property.</summary>
-        <remarks>
-          <para>The following example shows how to use the extension method to set a binding.</para>
-          <example>
-            <code lang="csharp lang-csharp"><![CDATA[
-public class PersonViewModel
-{
-    public string Name { get; set; }
-    public string Company { get; set; }
-}
-
-// ...
-
-var vm = new PersonViewModel {
-    Name = "John Doe", 
-    Company = "Xamarin"
-}
-
-var label = new Label ();
-label.SetBinding (Label.TextProperty, "Name"); // "Name" is the property on the view model
-label.BindingContext = vm;
-
-Debug.WriteLine (label.Text); // prints "John Doe"
-      ]]></code>
-          </example>
-        </remarks>
+        <remarks>The following example shows how to use the extension method to set a binding.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetBinding&lt;TSource,TProperty&gt;">

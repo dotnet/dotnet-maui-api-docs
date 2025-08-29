@@ -271,7 +271,7 @@
         <param name="velocity">The amount that the animation progresses in each animation step. For example, a velocity of <c>1</c> progresses at the default speed.</param>
         <param name="drag">The amount that the progression speed is reduced per frame. Can be negative.</param>
         <param name="finished">An action to call when the animation is finished.</param>
-        <param name="animationManager">To be added.</param>
+        <param name="animationManager">The animation manager to use for this animation. If null, the default animation manager for the target object will be used.</param>
         <summary>Sets the specified parameters and starts the kinetic animation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -324,7 +324,7 @@
         <Parameter Name="self" Type="Microsoft.Maui.Controls.IAnimatable" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="self">To be added.</param>
+        <param name="self">The object instance.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -385,7 +385,7 @@
         <param name="reverseVal">The inverse scale factor to use if <paramref name="reverse" /> is <see langword="true" />.</param>
         <param name="reverse">Whether to use the inverse scale factor in <paramref name="reverseVal" /> to deinterpolate.</param>
         <summary>Returns a function that performs a linear interpolation between <paramref name="start" /> and <paramref name="end" />.</summary>
-        <returns>A function that performs a linear interpolation between <paramref name="start" /> and <paramref name="end" />. Application developers can pass values between 0.0f and 1.0f to this function in order to recieve a value that is offset from <paramref name="start" /> or <paramref name="end" />, depending on the value of <paramref name="reverse" />, by the passed value times the distance between <paramref name="start" /> and <paramref name="end" />.</returns>
+        <returns>A function that performs a linear interpolation between <paramref name="start" /> and <paramref name="end" />. Application developers can pass values between 0.0f and 1.0f to this function in order to receive a value that is offset from <paramref name="start" /> or <paramref name="end" />, depending on the value of <paramref name="reverse" />, by the passed value times the distance between <paramref name="start" /> and <paramref name="end" />.</returns>
         <remarks>If <paramref name="reverse" /> is <see langword="true" />, then the interpolation happens between <paramref name="start" /> and <paramref name="reverseVal" />.</remarks>
       </Docs>
     </Member>
