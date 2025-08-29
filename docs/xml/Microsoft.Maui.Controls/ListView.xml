@@ -39,8 +39,8 @@
   </Interfaces>
   <Attributes>
     <Attribute FrameworkAlternate="net-maui-10.0">
-      <AttributeName Language="C#">[System.Obsolete("Please use CollectionView instead.")]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.Obsolete("Please use CollectionView instead.")&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.Obsolete("ListView is deprecated. Please use CollectionView instead.")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("ListView is deprecated. Please use CollectionView instead.")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -249,9 +249,9 @@ class ListViewDemoPage : ContentPage
         <ReturnType>Microsoft.Maui.Controls.ListViewCachingStrategy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>Internal API for Microsoft.Maui.Controls platform use.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>For internal use only. This API can be changed or removed without notice at any time.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateDefault">
@@ -309,10 +309,10 @@ class ListViewDemoPage : ContentPage
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <param name="item">Internal parameter for platform use.</param>
+        <summary>Internal API for Microsoft.Maui.Controls platform use.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>For internal use only. This API can be changed or removed without notice at any time.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EndRefresh">
@@ -354,7 +354,7 @@ class ListViewDemoPage : ContentPage
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the string, binding, or view that will be displayed at the bottom of the list view.</summary>
+        <summary>Gets or sets the string, binding, or view that will be displayed at the bottom of the list view. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -385,9 +385,9 @@ class ListViewDemoPage : ContentPage
         <ReturnType>Microsoft.Maui.Controls.Element</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>Internal API for Microsoft.Maui.Controls platform use.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>For internal use only. This API can be changed or removed without notice at any time.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FooterProperty">
@@ -428,7 +428,7 @@ class ListViewDemoPage : ContentPage
         <ReturnType>Microsoft.Maui.Controls.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a data template to use to format a data object for display at the bottom of the list view.</summary>
+        <summary>Gets or sets a data template to use to format a data object for display at the bottom of the list view. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -483,10 +483,10 @@ class ListViewDemoPage : ContentPage
         <Parameter Name="cell" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="cell">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <param name="cell">Internal parameter for platform use.</param>
+        <summary>Internal API for Microsoft.Maui.Controls platform use.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>For internal use only. This API can be changed or removed without notice at any time.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GroupDisplayBinding">
@@ -508,16 +508,9 @@ class ListViewDemoPage : ContentPage
       <Docs>
         <summary>Gets or sets the binding to use for displaying the group header.</summary>
         <value>The <see cref="T:Microsoft.Maui.Controls.BindingBase" /> instance to apply to grouped lists, or <see langword="null" />.</value>
-        <remarks>
-          <para>
-                        This binding can be used to simply set a the text of the group headers without defining a full template and uses the default visuals
-                        of the platform to display it. The binding is applied to the <see cref="T:System.Collections.IEnumerable" /> of the group.
-                    </para>
-          <para>
-                        This property is mutually exclusive with <see cref="P:Microsoft.Maui.Controls.ListView.GroupHeaderTemplate" /> property. Setting it will set
-                        <see cref="P:Microsoft.Maui.Controls.ListView.GroupHeaderTemplate" /> to <see langword="null" />.
-                    </para>
-        </remarks>
+        <remarks>This binding can be used to simply set a the text of the group headers without defining a full template and uses the default visuals
+            of the platform to display it. The binding is applied to the
+            This property is mutually exclusive with</remarks>
         <example>
           <para>This example shows an alphabetized list of people, grouped by first initial with the display binding set.</para>
           <code lang="csharp lang-csharp"><![CDATA[
@@ -599,18 +592,9 @@ class ListViewDemoPage : ContentPage
       <Docs>
         <summary>Gets or sets a <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> for group headers.</summary>
         <value>The <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> for group headers, or <see langword="null" />.</value>
-        <remarks>
-          <para>
-            Use this property to define a template for a <see cref="T:Microsoft.Maui.Controls.Cell" /> that will be used as the header for groups in this
-            <see cref="T:Microsoft.Maui.Controls.ListView" />. The <see cref="P:Microsoft.Maui.Controls.BindableObject.BindingContext" /> will be the <see cref="T:System.Collections.IEnumerable" />
-            for each group.
-          </para>
-          <para>
-            GroupHeaderTemplate is mutually exclusive with <see cref="P:Microsoft.Maui.Controls.ListView.GroupDisplayBinding" />. Setting this property
-            will set <see cref="P:Microsoft.Maui.Controls.ListView.GroupDisplayBinding" /> to <see langword="null" />.
-          </para>
-          <para>Empty groups will still display a group header.</para>
-        </remarks>
+        <remarks>Use this property to define a template for a
+            GroupHeaderTemplate is mutually exclusive with
+            Empty groups will still display a group header.</remarks>
         <altmember cref="P:Microsoft.Maui.Controls.ItemsView`1.ItemsSource" />
         <altmember cref="P:Microsoft.Maui.Controls.ListView.GroupDisplayBinding" />
         <altmember cref="P:Microsoft.Maui.Controls.ListView.IsGroupingEnabled" />
@@ -656,17 +640,8 @@ class ListViewDemoPage : ContentPage
       <Docs>
         <summary>Gets or sets a binding for the name to display in grouped jump lists.</summary>
         <value>The <see cref="T:Microsoft.Maui.Controls.BindingBase" /> instance to apply to grouped lists, or <see langword="null" />.</value>
-        <remarks>
-          <para>
-            When grouping items in a <see cref="T:Microsoft.Maui.Controls.ListView" />, it is often useful to have jump lists to jump to specific
-            sections in the list. For example, in an alphabetically grouped lists, the jump list would be the the letter of each group.
-            This binding is applied against the <see cref="T:System.Collections.IEnumerable" /> of each group to select the short name to display
-            in the jump list.
-          </para>
-          <para>
-            Note: On Android, there is no displayed jump list.
-          </para>
-        </remarks>
+        <remarks>When grouping items in a
+            Note: On Android, there is no displayed jump list.</remarks>
         <example>
           <para>This example shows an alphabetized list of people, grouped by first initial with the short name binding set.</para>
           <code lang="csharp lang-csharp"><![CDATA[
@@ -797,7 +772,7 @@ ListView CreateListView()
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the string, binding, or view that will be displayed at the top of the list view.</summary>
+        <summary>Gets or sets the string, binding, or view that will be displayed at the top of the list view. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -828,9 +803,9 @@ ListView CreateListView()
         <ReturnType>Microsoft.Maui.Controls.Element</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>Internal API for Microsoft.Maui.Controls platform use.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>For internal use only. This API can be changed or removed without notice at any time.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderProperty">
@@ -871,7 +846,7 @@ ListView CreateListView()
         <ReturnType>Microsoft.Maui.Controls.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a data template to use to format a data object for display at the top of the list view.</summary>
+        <summary>Gets or sets a data template to use to format a data object for display at the top of the list view. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1006,7 +981,7 @@ ListView CreateListView()
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that tells whether the user can swipe down to cause the application to refresh.</summary>
+        <summary>Gets or sets a value that tells whether the user can swipe down to cause the application to refresh. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1049,7 +1024,7 @@ ListView CreateListView()
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that tells whether the list view is currently refreshing.</summary>
+        <summary>Gets or sets a value that tells whether the list view is currently refreshing. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1449,9 +1424,9 @@ ListView CreateListView()
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>Internal API for Microsoft.Maui.Controls platform use.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>For internal use only. This API can be changed or removed without notice at any time.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshCommand">
@@ -1471,7 +1446,7 @@ ListView CreateListView()
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the command that is run when the list view enters the refreshing state.</summary>
+        <summary>Gets or sets the command that is run when the list view enters the refreshing state. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1580,7 +1555,7 @@ ListView CreateListView()
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that represents the height of a row.</summary>
+        <summary>Gets or sets a value that represents the height of a row. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1788,7 +1763,7 @@ ListView CreateListView()
         <ReturnType>Microsoft.Maui.Controls.ListViewSelectionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that controls whether and how many items can be selected.</summary>
+        <summary>Gets or sets a value that controls whether and how many items can be selected. This is a bindable property.</summary>
         <value>
           <see cref="F:Microsoft.Maui.Controls.ListViewSelectionMode.None" /> if no selections can be made. <see cref="F:Microsoft.Maui.Controls.ListViewSelectionMode.Single" /> if one selection can be made.</value>
         <remarks>If an item is selected, changing <see cref="P:Microsoft.Maui.Controls.ListView.SelectionMode" /> to <see cref="F:Microsoft.Maui.Controls.ListViewSelectionMode.None" /> will cause the item to be deselected, and <see cref="E:Microsoft.Maui.Controls.ListView.ItemSelected" /> to be raised with a <see langword="null" /> item value.</remarks>
@@ -1844,9 +1819,9 @@ ListView CreateListView()
         <Parameter Name="cell" Type="Microsoft.Maui.Controls.Cell" />
       </Parameters>
       <Docs>
-        <param name="cell">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
-        <remarks>To be added.</remarks>
+        <param name="cell">Internal parameter for platform use.</param>
+        <summary>Internal API for Microsoft.Maui.Controls platform use.</summary>
+        <remarks>For internal use only. This API can be changed or removed without notice at any time.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SendCellDisappearing">
@@ -1878,9 +1853,9 @@ ListView CreateListView()
         <Parameter Name="cell" Type="Microsoft.Maui.Controls.Cell" />
       </Parameters>
       <Docs>
-        <param name="cell">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
-        <remarks>To be added.</remarks>
+        <param name="cell">Internal parameter for platform use.</param>
+        <summary>Internal API for Microsoft.Maui.Controls platform use.</summary>
+        <remarks>For internal use only. This API can be changed or removed without notice at any time.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SendRefreshing">
@@ -1910,8 +1885,8 @@ ListView CreateListView()
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Internal API for Microsoft.Maui.Controls platform use.</summary>
+        <remarks>For internal use only. This API can be changed or removed without notice at any time.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SendScrolled">
@@ -1940,7 +1915,7 @@ ListView CreateListView()
         <Parameter Name="args" Type="Microsoft.Maui.Controls.ScrolledEventArgs" />
       </Parameters>
       <Docs>
-        <param name="args">To be added.</param>
+        <param name="args">The event arguments.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2005,7 +1980,7 @@ ListView CreateListView()
         <ReturnType>Microsoft.Maui.Controls.SeparatorVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that tells whether separators are visible between items.</summary>
+        <summary>Gets or sets a value that tells whether separators are visible between items. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -2030,10 +2030,10 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <Parameter Name="parameters" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="state">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="state">The shell navigation state to navigate to.</param>
+        <param name="parameters">Optional parameters to pass to the destination page.</param>
+        <summary>Asynchronously navigates to the specified state with optional parameters.</summary>
+        <returns>A task that represents the asynchronous navigation operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2091,11 +2091,11 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <Parameter Name="parameters" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="state">To be added.</param>
-        <param name="animate">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <summary>Asynchronously navigates to <paramref name="state" />, optionally animating.</summary>
-        <returns>To be added.</returns>
+        <param name="state">The shell navigation state to navigate to.</param>
+        <param name="animate">Whether to animate the navigation transition.</param>
+        <param name="parameters">Optional parameters to pass to the destination page.</param>
+        <summary>Asynchronously navigates to the specified state with animation control and optional parameters.</summary>
+        <returns>A task that represents the asynchronous navigation operation.</returns>
         <remarks>
           <para>Note that <see cref="T:Microsoft.Maui.Controls.ShellNavigationState" /> has implicit conversions from <see langword="string" /> and <see cref="T:System.Uri" />, so developers may write code such as the following, with no explicit instantiation of the <see cref="T:Microsoft.Maui.Controls.ShellNavigationState" />:</para>
           <example>

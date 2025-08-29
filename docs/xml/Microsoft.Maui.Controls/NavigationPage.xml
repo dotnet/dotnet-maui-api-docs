@@ -153,7 +153,7 @@
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the background color for the bar at the top of the NavigationPage.</summary>
+        <summary>Gets or sets the background color for the bar at the top of the NavigationPage. This is a bindable property.</summary>
         <value />
         <remarks />
       </Docs>
@@ -217,7 +217,7 @@
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text that appears on the bar at the top of the NavigationPage.</summary>
+        <summary>Gets or sets the text that appears on the bar at the top of the NavigationPage. This is a bindable property.</summary>
         <value />
         <remarks />
       </Docs>
@@ -358,7 +358,7 @@
         <Parameter Name="page" Type="Microsoft.Maui.Controls.Page" />
       </Parameters>
       <Docs>
-        <param name="page">To be added.</param>
+        <param name="page">The page parameter.</param>
         <summary>Returns a value that indicates whether <paramref name="page" /> has a back button.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -411,7 +411,7 @@
         <Parameter Name="bindable" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="bindable">To be added.</param>
+        <param name="bindable">The bindable parameter.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -437,7 +437,7 @@
         <Parameter Name="bindable" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="bindable">To be added.</param>
+        <param name="bindable">The bindable parameter.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -966,10 +966,10 @@
         <Parameter Name="depth" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="depth">To be added.</param>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <param name="depth">The depth parameter.</param>
+        <summary>Internal API for Microsoft.Maui.Controls platform use.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>For internal use only. This API can be changed or removed without notice at any time.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PopAsync">
@@ -1204,9 +1204,7 @@
         <ReturnType>Microsoft.Maui.Controls.Page</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          The <see cref="T:Microsoft.Maui.Controls.Page" /> that is the root of the navigation stack.
-        </summary>
+        <summary>The <see cref="T:Microsoft.Maui.Controls.Page" /> that is the root of the navigation stack.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1253,8 +1251,8 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="page">To be added.</param>
-        <param name="value">To be added.</param>
+        <param name="page">The page parameter.</param>
+        <param name="value">The value to set.</param>
         <summary>Sets the title that appears on the back button for <paramref name="page" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1280,8 +1278,8 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="page">To be added.</param>
-        <param name="value">To be added.</param>
+        <param name="page">The page parameter.</param>
+        <param name="value">The value to set.</param>
         <summary>Adds or removes a back button to <paramref name="page" />, with optional animation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1307,8 +1305,8 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="page">To be added.</param>
-        <param name="value">To be added.</param>
+        <param name="page">The page parameter.</param>
+        <param name="value">The value to set.</param>
         <summary>Sets a value that indicates whether or not this <see cref="T:Microsoft.Maui.Controls.NavigationPage" /> element has a navigation bar.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1334,8 +1332,8 @@
         <Parameter Name="value" Type="Microsoft.Maui.Graphics.Color" />
       </Parameters>
       <Docs>
-        <param name="bindable">To be added.</param>
-        <param name="value">To be added.</param>
+        <param name="bindable">The bindable parameter.</param>
+        <param name="value">The value to set.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1361,8 +1359,8 @@
         <Parameter Name="value" Type="Microsoft.Maui.Controls.ImageSource" />
       </Parameters>
       <Docs>
-        <param name="bindable">To be added.</param>
-        <param name="value">To be added.</param>
+        <param name="bindable">The bindable parameter.</param>
+        <param name="value">The value to set.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>

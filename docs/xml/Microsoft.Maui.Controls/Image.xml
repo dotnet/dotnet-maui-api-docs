@@ -84,15 +84,7 @@ var image = new Image { Source = "picture.png" };]]></code>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the Image class.</summary>
-        <remarks>
-          <para>
-              The following example creates a new image from a file
-              </para>
-          <example>
-            <code lang="csharp lang-csharp"><![CDATA[
-  var image = new Image { Source = "picture.png" };]]></code>
-          </example>
-        </remarks>
+        <remarks>The following example creates a new image from a file</remarks>
       </Docs>
     </Member>
     <Member MemberName="Aspect">
@@ -202,25 +194,7 @@ var image = new Image { Source = "picture.png" };]]></code>
       <Docs>
         <summary>Gets the loading status of the image. This is a bindable property.</summary>
         <value>A <see cref="T:System.Boolean" /> indicating if the image is loading. Default is false.</value>
-        <remarks>
-          <para>
-              The following example illustrates running a  <see cref="T:Microsoft.Maui.Controls.ActivityIndicator" /> to indicate that the image is loading:</para>
-          <example>
-            <code lang="csharp lang-csharp"><![CDATA[
-var image = new Image { 
-  Source = new ImageLoader {
-    Uri = new Uri ("http://eoimages.gsfc.nasa.gov/images/imagerecords/57000/57723/globe_west_2048.jpg"),
-    CachingEnabled = false,
-  },
-  WidthRequest = 200,
-  HeightRequest = 200,
-};
-    
-var indicator = new ActivityIndicator {Color = new Color (.5),};
-indicator.SetBinding (ActivityIndicator.IsRunningProperty, "IsLoading");
-indicator.BindingContext = image;]]></code>
-          </example>
-        </remarks>
+        <remarks>The following example illustrates running a</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsLoadingProperty">
@@ -263,10 +237,8 @@ indicator.BindingContext = image;]]></code>
       <Docs>
         <summary>Gets or sets a Boolean value that, if <see langword="true" /> hints to the rendering engine that it may safely omit drawing visual elements behind the image.</summary>
         <value>The value of the opacity rendering hint.</value>
-        <remarks>
-          <para>When this property is <see langword="true" />, and if the <see cref="P:Microsoft.Maui.Controls.VisualElement.Opacity" /> property is set to its default value of <c>1.0</c>, and if the source image is not transparent, then the rendering engine on the target platform can safely ignore those portions of visual elements that appear behind this image when drawing the screen. This can improve performance. However, developers should not set this property to <see langword="true" /> if the alpha channel of the image indicates transparency, if the <see cref="P:Microsoft.Maui.Controls.VisualElement.Opacity" /> property is less than <c>1.0</c>, or if the source image itself is transparent. Doing any of these when this property is <see langword="true" /> may result in visual artifacts or other (undefined) behavior. Conversely, developers should ensure that this property is set to <see langword="false" /> if they suspect or know that any of the previously mentioned conditions may indicate that the image will be transparent or partially transparent.</para>
-          <para>Setting this property does not change the opacity of the image. Instead, it indicates whether the rendering engine may treat the image as opaque while rendering.</para>
-        </remarks>
+        <remarks>When this property is
+            Setting this property does not change the opacity of the image. Instead, it indicates whether the rendering engine may treat the image as opaque while rendering.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsOpaqueProperty">

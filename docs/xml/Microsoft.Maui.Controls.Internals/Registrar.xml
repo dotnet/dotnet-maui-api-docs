@@ -74,10 +74,10 @@
         <Parameter Name="fontRegistrar" Type="Microsoft.Maui.IFontRegistrar" />
       </Parameters>
       <Docs>
-        <param name="attrTypes">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <param name="fontRegistrar">To be added.</param>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
-        <remarks>To be added.</remarks>
+        <param name="attrTypes">Array of attribute types to register.</param>
+        <param name="fontRegistrar">Optional font registrar for handling font registration during the process.</param>
+        <summary>Registers all specified attribute types with an optional font registrar.</summary>
+        <remarks>For internal use only. This API can be changed or removed without notice at any time.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RegisterAll">
@@ -107,11 +107,11 @@
         <Parameter Name="fontRegistrar" Type="Microsoft.Maui.IFontRegistrar" />
       </Parameters>
       <Docs>
-        <param name="attrTypes">To be added.</param>
-        <param name="flags">To be added.</param>
-        <param name="fontRegistrar">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="attrTypes">Array of attribute types to register.</param>
+        <param name="flags">Initialization flags to control the registration process.</param>
+        <param name="fontRegistrar">Optional font registrar for handling font registration during the process.</param>
+        <summary>Registers all specified attribute types with initialization flags and an optional font registrar.</summary>
+        <remarks>For internal use only. This API can be changed or removed without notice at any time.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Registered">
