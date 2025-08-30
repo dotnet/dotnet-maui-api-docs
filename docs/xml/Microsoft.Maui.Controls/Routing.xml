@@ -94,10 +94,10 @@
         <Parameter Name="services" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="route">To be added.</param>
-        <param name="services">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="route">The route string to get or create content for.</param>
+        <param name="services">Optional service provider for dependency injection when creating new content instances.</param>
+        <summary>Gets or creates content for the specified route using dependency injection services.</summary>
+        <returns>The Element associated with the route, or null if not found and cannot be created.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

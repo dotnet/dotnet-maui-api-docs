@@ -1,0 +1,81 @@
+<Type Name="IInitializationAwareWebView" FullName="Microsoft.Maui.IInitializationAwareWebView">
+  <TypeSignature Language="C#" Value="public interface IInitializationAwareWebView : Microsoft.Maui.IView" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IInitializationAwareWebView implements class Microsoft.Maui.IElement, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.IInitializationAwareWebView" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IInitializationAwareWebView&#xA;Implements IView" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IInitializationAwareWebView : Microsoft::Maui::IView" />
+  <TypeSignature Language="F#" Value="type IInitializationAwareWebView = interface&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IElement</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.ITransform</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IView</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="WebViewInitializationCompleted">
+      <MemberSignature Language="C#" Value="public virtual void WebViewInitializationCompleted (Microsoft.Maui.WebViewInitializationCompletedEventArgs args);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WebViewInitializationCompleted(class Microsoft.Maui.WebViewInitializationCompletedEventArgs args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IInitializationAwareWebView.WebViewInitializationCompleted(Microsoft.Maui.WebViewInitializationCompletedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WebViewInitializationCompleted (args As WebViewInitializationCompletedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WebViewInitializationCompleted(Microsoft::Maui::WebViewInitializationCompletedEventArgs ^ args);" />
+      <MemberSignature Language="F#" Value="abstract member WebViewInitializationCompleted : Microsoft.Maui.WebViewInitializationCompletedEventArgs -&gt; unit&#xA;override this.WebViewInitializationCompleted : Microsoft.Maui.WebViewInitializationCompletedEventArgs -&gt; unit" Usage="iInitializationAwareWebView.WebViewInitializationCompleted args" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="Microsoft.Maui.WebViewInitializationCompletedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="args">To be added.</param>
+        <summary>
+            Invoked when the web view has been initialized.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebViewInitializationStarted">
+      <MemberSignature Language="C#" Value="public virtual void WebViewInitializationStarted (Microsoft.Maui.WebViewInitializationStartedEventArgs args);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WebViewInitializationStarted(class Microsoft.Maui.WebViewInitializationStartedEventArgs args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IInitializationAwareWebView.WebViewInitializationStarted(Microsoft.Maui.WebViewInitializationStartedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WebViewInitializationStarted (args As WebViewInitializationStartedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WebViewInitializationStarted(Microsoft::Maui::WebViewInitializationStartedEventArgs ^ args);" />
+      <MemberSignature Language="F#" Value="abstract member WebViewInitializationStarted : Microsoft.Maui.WebViewInitializationStartedEventArgs -&gt; unit&#xA;override this.WebViewInitializationStarted : Microsoft.Maui.WebViewInitializationStartedEventArgs -&gt; unit" Usage="iInitializationAwareWebView.WebViewInitializationStarted args" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="Microsoft.Maui.WebViewInitializationStartedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="args">To be added.</param>
+        <summary>
+            Invoked when web view initialization is starting. This event allows the application to perform additional configuration.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

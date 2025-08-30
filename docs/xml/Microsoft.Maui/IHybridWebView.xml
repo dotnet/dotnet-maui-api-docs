@@ -1,10 +1,10 @@
 <Type Name="IHybridWebView" FullName="Microsoft.Maui.IHybridWebView">
-  <TypeSignature Language="C#" Value="public interface IHybridWebView : Microsoft.Maui.IWebRequestInterceptingWebView" FrameworkAlternate="net-maui-10.0" />
-  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IHybridWebView implements class Microsoft.Maui.IElement, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView, class Microsoft.Maui.IWebRequestInterceptingWebView" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="C#" Value="public interface IHybridWebView : Microsoft.Maui.IInitializationAwareWebView, Microsoft.Maui.IWebRequestInterceptingWebView" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IHybridWebView implements class Microsoft.Maui.IElement, class Microsoft.Maui.IInitializationAwareWebView, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView, class Microsoft.Maui.IWebRequestInterceptingWebView" FrameworkAlternate="net-maui-10.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.IHybridWebView" />
-  <TypeSignature Language="VB.NET" Value="Public Interface IHybridWebView&#xA;Implements IWebRequestInterceptingWebView" FrameworkAlternate="net-maui-10.0" />
-  <TypeSignature Language="C++ CLI" Value="public interface class IHybridWebView : Microsoft::Maui::IWebRequestInterceptingWebView" FrameworkAlternate="net-maui-10.0" />
-  <TypeSignature Language="F#" Value="type IHybridWebView = interface&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IWebRequestInterceptingWebView" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IHybridWebView&#xA;Implements IInitializationAwareWebView, IWebRequestInterceptingWebView" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IHybridWebView : Microsoft::Maui::IInitializationAwareWebView, Microsoft::Maui::IWebRequestInterceptingWebView" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="F#" Value="type IHybridWebView = interface&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IWebRequestInterceptingWebView&#xA;    interface IInitializationAwareWebView" FrameworkAlternate="net-maui-10.0" />
   <TypeSignature Language="C#" Value="public interface IHybridWebView : Microsoft.Maui.IView" FrameworkAlternate="net-maui-9.0" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IHybridWebView implements class Microsoft.Maui.IElement, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" FrameworkAlternate="net-maui-9.0" />
   <TypeSignature Language="VB.NET" Value="Public Interface IHybridWebView&#xA;Implements IView" FrameworkAlternate="net-maui-9.0" />
@@ -18,6 +18,9 @@
   <Interfaces>
     <Interface>
       <InterfaceName>Microsoft.Maui.IElement</InterfaceName>
+    </Interface>
+    <Interface FrameworkAlternate="net-maui-10.0">
+      <InterfaceName>Microsoft.Maui.IInitializationAwareWebView</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Maui.ITransform</InterfaceName>

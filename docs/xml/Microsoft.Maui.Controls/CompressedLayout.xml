@@ -15,6 +15,12 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="net-maui-10.0">
+      <AttributeName Language="C#">[System.Obsolete("CompressedLayout does not provide meaningful functionality and may be removed in a future release. Please remove usage of this API.")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("CompressedLayout does not provide meaningful functionality and may be removed in a future release. Please remove usage of this API.")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Contains attached properties for omitting redundant renderers.</summary>
     <remarks>To be added.</remarks>
@@ -38,6 +44,10 @@
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("CompressedLayout does not provide meaningful functionality and may be removed in a future release. Please remove usage of this API.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("CompressedLayout does not provide meaningful functionality and may be removed in a future release. Please remove usage of this API.")&gt;]</AttributeName>
+        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Graphics.Point</ReturnType>
@@ -48,7 +58,7 @@
       <Docs>
         <param name="bindable">For internal use by the Microsoft.Maui.Controls platform.</param>
         <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
-        <returns>To be added.</returns>
+        <returns>For internal use by the Microsoft.Maui.Controls platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,6 +75,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("CompressedLayout does not provide meaningful functionality and may be removed in a future release. Please remove usage of this API.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("CompressedLayout does not provide meaningful functionality and may be removed in a future release. Please remove usage of this API.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -73,7 +89,7 @@
       </Parameters>
       <Docs>
         <param name="bindable">The <see cref="T:Microsoft.Maui.Controls.BindableObject" /> whose status to check.</param>
-        <summary>Gets a Boolean value that tells whether layout compression is enabled for <paramref name="bindable" />.</summary>
+        <summary>Gets a Boolean value that tells whether layout compression is enabled for the specified bindable object.</summary>
         <returns>
           <see langword="true" /> if layout compression is enabled for <paramref name="bindable" />. Otherwise, returns <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -97,6 +113,10 @@
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("CompressedLayout does not provide meaningful functionality and may be removed in a future release. Please remove usage of this API.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("CompressedLayout does not provide meaningful functionality and may be removed in a future release. Please remove usage of this API.")&gt;]</AttributeName>
+        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
@@ -119,6 +139,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("CompressedLayout does not provide meaningful functionality and may be removed in a future release. Please remove usage of this API.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("CompressedLayout does not provide meaningful functionality and may be removed in a future release. Please remove usage of this API.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
@@ -140,6 +166,12 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.Obsolete("CompressedLayout does not provide meaningful functionality and may be removed in a future release. Please remove usage of this API.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("CompressedLayout does not provide meaningful functionality and may be removed in a future release. Please remove usage of this API.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -150,7 +182,7 @@
       <Docs>
         <param name="bindable">The <see cref="T:Microsoft.Maui.Controls.BindableObject" /> on which to enable or disable layout compression</param>
         <param name="value">The new layout compression value. <see langword="true" /> to enable layout compression</param>
-        <summary>Turns layout compression on or off for <see langword="bindable" />.</summary>
+        <summary>Turns layout compression on or off for the specified bindable object.</summary>
         <remarks>
           <para>It is an invalid operation to change this value after the view is rendered on the platform.</para>
         </remarks>

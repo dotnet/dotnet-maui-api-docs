@@ -169,10 +169,8 @@ var button = new Button {
         <summary>Returns a <see cref="T:System.Boolean" /> indicating if the Command can be exectued with the given parameter.</summary>
         <returns>
           <see langword="true" /> if the Command can be executed, <see langword="false" /> otherwise.</returns>
-        <remarks>
-          <para>If no canExecute parameter was passed to the Command constructor, this method always returns <see langword="true" />.</para>
-          <para>If the Command was created with non-generic execute parameter, the parameter of this method is ignored.</para>
-        </remarks>
+        <remarks>If no canExecute parameter was passed to the Command constructor, this method always returns
+            If the Command was created with non-generic execute parameter, the parameter of this method is ignored.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanExecuteChanged">
@@ -246,9 +244,7 @@ var button = new Button {
       <Docs>
         <param name="parameter">An <see cref="T:System.Object" /> used as parameter for the execute Action.</param>
         <summary>Invokes the execute Action</summary>
-        <remarks>
-          <para>If the Command was created with non-generic execute parameter, the parameter of this method is ignored.</para>
-        </remarks>
+        <remarks>If the Command was created with non-generic execute parameter, the parameter of this method is ignored.</remarks>
       </Docs>
     </Member>
   </Members>
