@@ -1020,10 +1020,19 @@
         <Parameter Name="path" Type="Microsoft.Maui.Graphics.PathF" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="target">The canvas to draw on.</param>
+        <param name="path">The path to fill.</param>
+        <summary>
+            Fills the specified path using the current fill color and the non-zero winding rule.
+            </summary>
+        <remarks>
+            For best results with fill operations, ensure the path represents a closed shape by calling
+            <see cref="M:Microsoft.Maui.Graphics.PathF.Close" /> or manually connecting the end point back to the start point.
+            Unclosed paths may produce unexpected results or exceptions depending on the graphics backend.
+            </remarks>
+        <exception cref="T:System.ArgumentException">
+            Thrown when the path is invalid for fill operations. This can occur when:
+            <list type="bullet"><item><description>The path is empty or contains no drawable segments</description></item><item><description>The path contains invalid coordinates or operations</description></item><item><description>The path is not properly formed for the underlying graphics implementation</description></item></list></exception>
       </Docs>
     </Member>
     <Member MemberName="FillPath">
@@ -1048,11 +1057,20 @@
         <Parameter Name="windingMode" Type="Microsoft.Maui.Graphics.WindingMode" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="path">To be added.</param>
-        <param name="windingMode">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="target">The canvas to draw on.</param>
+        <param name="path">The path to fill.</param>
+        <param name="windingMode">The winding rule to use for determining which areas are inside the path.</param>
+        <summary>
+            Fills the specified path using the current fill color and the specified winding rule.
+            </summary>
+        <remarks>
+            For best results with fill operations, ensure the path represents a closed shape by calling
+            <see cref="M:Microsoft.Maui.Graphics.PathF.Close" /> or manually connecting the end point back to the start point.
+            Unclosed paths may produce unexpected results or exceptions depending on the graphics backend.
+            </remarks>
+        <exception cref="T:System.ArgumentException">
+            Thrown when the path is invalid for fill operations. This can occur when:
+            <list type="bullet"><item><description>The path is empty or contains no drawable segments</description></item><item><description>The path contains invalid coordinates or operations</description></item><item><description>The path is not properly formed for the underlying graphics implementation</description></item></list></exception>
       </Docs>
     </Member>
     <Member MemberName="FillRectangle">

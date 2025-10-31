@@ -219,9 +219,12 @@ namespace FormsGallery
         <Parameter Name="gridColumnDefinition" Type="Microsoft.Maui.Controls.ColumnDefinition" />
       </Parameters>
       <Docs>
-        <param name="gridColumnDefinition">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="gridColumnDefinition">The column definition to add.</param>
+        <summary>
+            Adds a <see cref="T:Microsoft.Maui.Controls.ColumnDefinition" /> to the <see cref="P:Microsoft.Maui.Controls.Grid.ColumnDefinitions" /> collection.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="gridColumnDefinition" /> is <c>null</c>.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddRowDefinition">
@@ -244,9 +247,12 @@ namespace FormsGallery
         <Parameter Name="gridRowDefinition" Type="Microsoft.Maui.Controls.RowDefinition" />
       </Parameters>
       <Docs>
-        <param name="gridRowDefinition">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="gridRowDefinition">The row definition to add.</param>
+        <summary>
+            Adds a <see cref="T:Microsoft.Maui.Controls.RowDefinition" /> to the <see cref="P:Microsoft.Maui.Controls.Grid.RowDefinitions" /> collection.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="gridRowDefinition" /> is <c>null</c>.</exception>
       </Docs>
     </Member>
     <Member MemberName="ColumnDefinitions">
@@ -498,10 +504,13 @@ namespace FormsGallery
         <Parameter Name="view" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="view">The child view whose column index to retrieve. Can be a <see cref="T:Microsoft.Maui.Controls.BindableObject" /> or a virtual (non-bindable) view.</param>
+        <summary>
+            Gets the zero-based column index for the provided <paramref name="view" />.
+            </summary>
+        <returns>The zero-based column index; defaults to 0 for views that have not been positioned explicitly.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Collections.Generic.KeyNotFoundException">Thrown if <paramref name="view" /> is a non-bindable view that has not been added to the grid.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetColumnSpan">
@@ -526,7 +535,7 @@ namespace FormsGallery
       <Docs>
         <param name="bindable">An element that belongs to the Grid layout.</param>
         <summary>Gets the column span of the <paramref name="bindable" /> child element.</summary>
-        <returns>The column that the child element is in.</returns>
+        <returns>The number of columns spanned by the element; defaults to 1.</returns>
         <remarks>
           <para>The <see cref="M:Microsoft.Maui.Controls.Grid.GetColumnSpan(Microsoft.Maui.Controls.BindableObject)" /> method corresponds to the value that is set by the following XAML attached property.</para>
           <list type="table">
@@ -568,10 +577,13 @@ namespace FormsGallery
         <Parameter Name="view" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="view">The child view whose column span to retrieve.</param>
+        <summary>
+            Gets the number of columns spanned by the provided <paramref name="view" />.
+            </summary>
+        <returns>The column span; defaults to 1.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Collections.Generic.KeyNotFoundException">Thrown if <paramref name="view" /> is a non-bindable view that has not been added to the grid.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetRow">
@@ -638,10 +650,13 @@ namespace FormsGallery
         <Parameter Name="view" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="view">The child view whose row index to retrieve.</param>
+        <summary>
+            Gets the zero-based row index for the provided <paramref name="view" />.
+            </summary>
+        <returns>The zero-based row index; defaults to 0.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Collections.Generic.KeyNotFoundException">Thrown if <paramref name="view" /> is a non-bindable view that has not been added to the grid.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetRowSpan">
@@ -666,7 +681,7 @@ namespace FormsGallery
       <Docs>
         <param name="bindable">An element that belongs to the Grid layout.</param>
         <summary>Gets the row span of the <paramref name="bindable" /> child element.</summary>
-        <returns>The row that the child element is in.</returns>
+        <returns>The row span value of the given element.</returns>
         <remarks>
           <para>The <see cref="M:Microsoft.Maui.Controls.Grid.GetRowSpan(Microsoft.Maui.Controls.BindableObject)" /> method corresponds to the following XAML attached properties:</para>
           <list type="table">
@@ -706,10 +721,13 @@ namespace FormsGallery
         <Parameter Name="view" Type="Microsoft.Maui.IView" />
       </Parameters>
       <Docs>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="view">The child view whose row span to retrieve.</param>
+        <summary>
+            Gets the number of rows spanned by the provided <paramref name="view" />.
+            </summary>
+        <returns>The row span; defaults to 1.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Collections.Generic.KeyNotFoundException">Thrown if <paramref name="view" /> is a non-bindable view that has not been added to the grid.</exception>
       </Docs>
     </Member>
     <Member MemberName="InvalidateMeasure">
@@ -966,7 +984,9 @@ namespace FormsGallery
       <Docs>
         <summary>Provides the interface for the bound property that gets or sets the collection of RowDefinition objects that control the heights of each row.</summary>
         <value>A RowDefinitionCollection for the Grid instance.</value>
-        <remarks>RowDefinitions is an ordered set of</remarks>
+        <remarks>
+          <see cref="P:Microsoft.Maui.Controls.RowDefinition.Height" /> is set to <see cref="F:Microsoft.Maui.GridLength.Star" />.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="RowDefinitionsProperty">
@@ -1137,10 +1157,14 @@ namespace FormsGallery
         <Parameter Name="col" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="view">To be added.</param>
-        <param name="col">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="view">The child view to position.</param>
+        <param name="col">The zero-based column index (must be &gt;= 0).</param>
+        <summary>
+            Sets the zero-based column index for the specified <paramref name="view" />.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown if <paramref name="col" /> is negative.</exception>
+        <exception cref="T:System.Collections.Generic.KeyNotFoundException">Thrown if <paramref name="view" /> is a non-bindable view that has not been added to the grid.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetColumnSpan">
@@ -1205,10 +1229,14 @@ namespace FormsGallery
         <Parameter Name="span" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="view">To be added.</param>
-        <param name="span">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="view">The child view to modify.</param>
+        <param name="span">The span (must be &gt;= 1).</param>
+        <summary>
+            Sets the number of columns spanned by the specified <paramref name="view" />.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown if <paramref name="span" /> is less than 1.</exception>
+        <exception cref="T:System.Collections.Generic.KeyNotFoundException">Thrown if <paramref name="view" /> is a non-bindable view that has not been added to the grid.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetRow">
@@ -1273,10 +1301,14 @@ namespace FormsGallery
         <Parameter Name="row" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="view">To be added.</param>
-        <param name="row">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="view">The child view to position.</param>
+        <param name="row">The zero-based row index (must be &gt;= 0).</param>
+        <summary>
+            Sets the zero-based row index for the specified <paramref name="view" />.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown if <paramref name="row" /> is negative.</exception>
+        <exception cref="T:System.Collections.Generic.KeyNotFoundException">Thrown if <paramref name="view" /> is a non-bindable view that has not been added to the grid.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetRowSpan">
@@ -1339,10 +1371,14 @@ namespace FormsGallery
         <Parameter Name="span" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="view">To be added.</param>
-        <param name="span">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="view">The child view to modify.</param>
+        <param name="span">The span (must be &gt;= 1).</param>
+        <summary>
+            Sets the number of rows spanned by the specified <paramref name="view" />.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown if <paramref name="span" /> is less than 1.</exception>
+        <exception cref="T:System.Collections.Generic.KeyNotFoundException">Thrown if <paramref name="view" /> is a non-bindable view that has not been added to the grid.</exception>
       </Docs>
     </Member>
   </Members>

@@ -21,10 +21,16 @@
     <ReturnType>System.Boolean</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="bindable">To be added.</param>
-    <param name="value">To be added.</param>
-    <summary>To be added.</summary>
-    <returns>To be added.</returns>
-    <remarks>To be added.</remarks>
+    <param name="bindable">The <see cref="T:Microsoft.Maui.Controls.BindableObject" /> instance that owns the property.</param>
+    <param name="value">The value to validate.</param>
+    <summary>
+            Represents a delegate that validates whether a value is acceptable for a bindable property.
+            </summary>
+    <returns>
+      <see langword="true" /> if the value is valid; otherwise, <see langword="false" />.</returns>
+    <remarks>
+            If this delegate returns <see langword="false" />, an <see cref="T:System.ArgumentException" /> will be thrown
+            when attempting to set the property to the invalid value.
+            </remarks>
   </Docs>
 </Type>

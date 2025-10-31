@@ -50,55 +50,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>A <see cref="T:Microsoft.Maui.Controls.View" /> that presents HTML content.</summary>
+    <summary>
+            A <see cref="T:Microsoft.Maui.Controls.View" /> that presents HTML content.
+            </summary>
     <remarks>
-      <para>The following example shows a basic use.</para>
-      <example>
-        <code lang="csharp lang-csharp"><![CDATA[using System;
-using Microsoft.Maui.Controls;
-    
-namespace FormsGallery
-{
-    class WebViewDemoPage : ContentPage
-    {
-        public WebViewDemoPage()
-        {
-            Label header = new Label
-            {
-                Text = "WebView",
-                FontSize = Device.GetNamedSize (NamedSize.Large, typeof(Label)),
-                HorizontalOptions = LayoutOptions.Center
-            };
-    
-            WebView webView = new WebView
-            {
-                Source = new UrlWebViewSource
-                {
-                    Url = "https://blog.xamarin.com/",
-                },
-                VerticalOptions = LayoutOptions.FillAndExpand
-            };
-    
-            // Accomodate iPhone status bar.
-            this.Padding = new Thickness(10, Device.OnPlatform(20, 0, 0), 10, 5);
-    
-            // Build the page.
-            this.Content = new StackLayout
-            {
-                Children =
-                {
-                    header,
-                    webView
-                }
-            };
-        }
-    }
-}]]></code>
-      </example>
-      <para>
-        <img href="~/xml/Microsoft.Maui.Controls/_images/WebView.TripleScreenShot.png" />
-      </para>
-    </remarks>
+            The WebView control provides a way to display web content within your .NET MAUI application.
+            You can load web pages from URLs, display HTML strings, or load local HTML files.
+            The WebView supports navigation events and JavaScript evaluation.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -115,7 +74,9 @@ namespace FormsGallery
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new <see cref="T:Microsoft.Maui.Controls.WebView" /> element with default values.</summary>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Maui.Controls.WebView" /> element with default values.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,7 +97,9 @@ namespace FormsGallery
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the user can navigate to previous pages.</summary>
+        <summary>
+            Gets a value that indicates whether the user can navigate to previous pages.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -179,7 +142,9 @@ namespace FormsGallery
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the user can navigate forward.</summary>
+        <summary>
+            Gets a value that indicates whether the user can navigate forward.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -248,7 +213,9 @@ namespace FormsGallery
         <ReturnType>System.Net.CookieContainer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When set this will act as a sync for cookies.</summary>
+        <summary>
+            When set this will act as a sync for cookies.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -298,7 +265,9 @@ namespace FormsGallery
       </Parameters>
       <Docs>
         <param name="script">A script to evaluate.</param>
-        <summary>Evaluates the script that is specified by <paramref name="script" />.</summary>
+        <summary>
+            Evaluates the script that is specified by <paramref name="script" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -326,7 +295,9 @@ namespace FormsGallery
       </Parameters>
       <Docs>
         <param name="script">The script to evaluate.</param>
-        <summary>On platforms that support JavaScript evaluation, evaluates <paramref name="script" />.</summary>
+        <summary>
+            On platforms that support JavaScript evaluation, evaluates <paramref name="script" />.
+            </summary>
         <returns>A task that contains the result of the evaluation as a string.</returns>
         <remarks>Native JavaScript evaluation is supported neither on Tizen nor GTK (Linux).</remarks>
       </Docs>
@@ -352,7 +323,9 @@ namespace FormsGallery
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Navigates to the previous page.</summary>
+        <summary>
+            Navigates to the previous page.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -377,7 +350,9 @@ namespace FormsGallery
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Navigates to the next page in the list of visited pages.</summary>
+        <summary>
+            Navigates to the next page in the list of visited pages.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -986,10 +961,10 @@ namespace FormsGallery
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Reloads the current page.
+            </summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/WebView.xml" path="//Member[@MemberName='Reload']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="Source">
@@ -1015,7 +990,9 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.WebViewSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:Microsoft.Maui.Controls.WebViewSource" /> object that represents the location that this <see cref="T:Microsoft.Maui.Controls.WebView" /> object displays.</summary>
+        <summary>
+            Gets or sets the <see cref="T:Microsoft.Maui.Controls.WebViewSource" /> object that represents the location that this <see cref="T:Microsoft.Maui.Controls.WebView" /> object displays.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1061,12 +1038,14 @@ namespace FormsGallery
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the user agent string that this <see cref="T:Microsoft.Maui.Controls.WebView" /> object uses.</summary>
+        <summary>
+            Gets or sets the user agent string that this <see cref="T:Microsoft.Maui.Controls.WebView" /> object uses.
+            </summary>
         <value>To be added.</value>
         <remarks>
-          The default value is the default User Agent of the underlying platform browser, or <see langword="null" /> if it cannot be determined.
-          If the parameter is <see langword="null" /> the User Agent will not be updated and the current User Agent will remain.
-        </remarks>
+            The default value is the default User Agent of the underlying platform browser, or <see langword="null" /> if it cannot be determined.
+            If the parameter is <see langword="null" /> the User Agent will not be updated and the current User Agent will remain.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="UserAgentProperty">

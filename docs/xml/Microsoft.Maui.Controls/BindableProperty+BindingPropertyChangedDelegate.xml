@@ -22,10 +22,16 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="bindable">To be added.</param>
-    <param name="oldValue">To be added.</param>
-    <param name="newValue">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="bindable">The <see cref="T:Microsoft.Maui.Controls.BindableObject" /> instance that owns the property.</param>
+    <param name="oldValue">The previous value of the property.</param>
+    <param name="newValue">The new value of the property.</param>
+    <summary>
+            Represents a delegate that is called when a bindable property value has changed.
+            </summary>
+    <remarks>
+            This delegate does not provide information about which specific <see cref="T:Microsoft.Maui.Controls.BindableProperty" /> 
+            triggered the change. If multiple properties share the same callback and need to be distinguished,
+            consider using separate callbacks or the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" /> event.
+            </remarks>
   </Docs>
 </Type>
