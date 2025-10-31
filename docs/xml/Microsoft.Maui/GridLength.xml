@@ -16,9 +16,9 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="net-maui-10.0;net-maui-9.0">
-      <AttributeName Language="C#">[System.ComponentModel.TypeConverter(typeof(Microsoft.Maui.GridLength+GridLengthTypeConverter))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ComponentModel.TypeConverter(typeof(Microsoft.Maui.GridLength+GridLengthTypeConverter))&gt;]</AttributeName>
+    <Attribute FrameworkAlternate="net-maui-10.0">
+      <AttributeName Language="C#">[System.ComponentModel.TypeConverter(typeof(Microsoft.Maui.Converters.GridLengthTypeConverter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.TypeConverter(typeof(Microsoft.Maui.Converters.GridLengthTypeConverter))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.Diagnostics.DebuggerDisplay("{Value}.{GridUnitType}")]</AttributeName>
@@ -28,7 +28,11 @@
       <AttributeName Language="C#">[System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
       <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="net-maui-10.0;net-maui-9.0">
+    <Attribute FrameworkAlternate="net-maui-9.0">
+      <AttributeName Language="C#">[System.ComponentModel.TypeConverter(typeof(Microsoft.Maui.GridLength+GridLengthTypeConverter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.TypeConverter(typeof(Microsoft.Maui.GridLength+GridLengthTypeConverter))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-maui-9.0">
       <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
       <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
     </Attribute>

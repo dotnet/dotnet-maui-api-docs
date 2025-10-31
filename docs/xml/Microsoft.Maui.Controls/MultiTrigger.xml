@@ -22,45 +22,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Class that represents a list of property and binding conditions, and a list of setters that are applied when all of the conditions in the list are met.</summary>
+    <summary>
+            Class that represents a list of property and binding conditions, and a list of setters that are applied when all of the conditions in the list are met.
+            </summary>
     <remarks>
-      <para>Developers can use a <see cref="T:Microsoft.Maui.Controls.MultiTrigger" /> to compare against property values on the control that contains it by using <see cref="T:Microsoft.Maui.Controls.Trigger" /> objects, or on any bound property (including those on the enclosing control) by using <see cref="T:Microsoft.Maui.Controls.BindingCondition" /> objects. These can be mixed in the same <see cref="P:Microsoft.Maui.Controls.MultiTrigger.Conditions" /> list.</para>
-      <example>
-        <para>The XML example below, when added to a Microsoft.Maui.Controls app with the correct project namespace, creates a UI that suggests that the user type in a secret and toggle a switch to check if the secret is correct. If the user enters "The text color is green", and toggles the <see cref="T:Microsoft.Maui.Controls.Switch" /> to its <c>On</c> position, then the text that the user typed into the <see cref="T:Microsoft.Maui.Controls.Entry" /> turns green. If either the text is altered to something other than the secret or the Switch is toggled to its <c>Off</c> position, the text returns to the default color</para>
-        <code lang="XML"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:PropertyConditionDemo"
-             x:Class="PropertyConditionDemo.PropertyConditionDemoPage">
-    <StackLayout VerticalOptions="Center">
-        <Label Text="Do you know the secret?"
-               VerticalOptions="Center"
-               HorizontalOptions="Center" />
-        <Entry Placeholder="Type the secret!"
-               VerticalOptions="Center"
-               HorizontalOptions="Center">
-            <Entry.Triggers>
-                <MultiTrigger TargetType="Entry" >
-                    <MultiTrigger.Conditions>
-                        <PropertyCondition Property="Text" Value="The text color is green" />
-                        <BindingCondition Binding="{Binding Source={x:Reference checkSecret},
-                                                            Path=IsToggled}"
-                                          Value="true" />
-                    </MultiTrigger.Conditions>
-                    <Setter Property="TextColor"
-                        Value="Color.Green" />
-                </MultiTrigger>
-            </Entry.Triggers>
-        </Entry>
-        <Label Text="Check the secret?"
-               VerticalOptions="Center"
-               HorizontalOptions="Center" />
-        <Switch x:Name="checkSecret"
-                VerticalOptions="Center"
-                HorizontalOptions="Center" />
-    </StackLayout>
-</ContentPage>]]></code>
-      </example>
+      <para>
+            Developers can use a <see cref="T:Microsoft.Maui.Controls.MultiTrigger" /> to compare against property values on the control that contains it by using <see cref="T:Microsoft.Maui.Controls.Trigger" /> objects, or on any bound property (including those on the enclosing control) by using <see cref="T:Microsoft.Maui.Controls.BindingCondition" /> objects. These can be mixed in the same <see cref="P:Microsoft.Maui.Controls.MultiTrigger.Conditions" /> list.
+            </para>
+      <seealso cref="T:Microsoft.Maui.Controls.PropertyCondition" />
+      <seealso cref="T:Microsoft.Maui.Controls.BindingCondition" />
     </remarks>
     <altmember cref="T:Microsoft.Maui.Controls.PropertyCondition" />
     <altmember cref="T:Microsoft.Maui.Controls.BindingCondition" />
@@ -91,7 +61,9 @@
       </Parameters>
       <Docs>
         <param name="targetType">The type of the trigger target.</param>
-        <summary>Initializes a new <see cref="T:Microsoft.Maui.Controls.MultiTrigger" /> instance.</summary>
+        <summary>
+            Initializes a new <see cref="T:Microsoft.Maui.Controls.MultiTrigger" /> instance.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,7 +84,9 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Controls.Condition&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the list of conditions that must be satisfied in ordeer for the setters in the <see cref="P:Microsoft.Maui.Controls.MultiTrigger.Setters" /> list to be invoked.</summary>
+        <summary>
+            Gets the list of conditions that must be satisfied in order for the setters in the <see cref="P:Microsoft.Maui.Controls.MultiTrigger.Setters" /> list to be invoked.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -134,7 +108,9 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Controls.Setter&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the list of <see cref="T:Microsoft.Maui.Controls.Setter" /> objects that will be applied when the list of conditions in the <see cref="P:Microsoft.Maui.Controls.MultiTrigger.Conditions" /> property are all met.</summary>
+        <summary>
+            Gets the list of <see cref="T:Microsoft.Maui.Controls.Setter" /> objects that will be applied when the list of conditions in the <see cref="P:Microsoft.Maui.Controls.MultiTrigger.Conditions" /> property are all met.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

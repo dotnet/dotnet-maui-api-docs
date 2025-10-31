@@ -16,8 +16,13 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>An abstract class that provides a <see cref="T:Microsoft.Maui.Controls.BindingMode" /> and a formatting option.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+            An abstract base class for all bindings providing <see cref="T:Microsoft.Maui.Controls.BindingMode" /> selection, fallback/target null values, and formatting support.
+            </summary>
+    <remarks>
+            This class underlies concrete binding implementations (e.g., <see cref="T:Microsoft.Maui.Controls.Binding" />, <see cref="T:Microsoft.Maui.Controls.MultiBinding" />) and supplies common features such as
+            binding mode control, string formatting and thread-safe collection synchronization helpers.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName="Create&lt;TSource,TProperty&gt;">
@@ -101,9 +106,9 @@
         <Parameter Name="collection" Type="System.Collections.IEnumerable" />
       </Parameters>
       <Docs>
-        <param name="collection">The collection on which to stop synchronization.</param>
-        <summary>Stops synchronization on the <paramref name="collection" />.</summary>
-        <remarks>See <see cref="M:Microsoft.Maui.Controls.BindingBase.EnableCollectionSynchronization(System.Collections.IEnumerable,System.Object,Microsoft.Maui.Controls.CollectionSynchronizationCallback)" /> for more information on enabling and disabling synchronization of collections in multithreaded environments.</remarks>
+        <param name="collection">The collection on which to disable synchronization.</param>
+        <summary>Stops collection synchronization previously enabled for <paramref name="collection" />.</summary>
+        <remarks>See <see cref="M:Microsoft.Maui.Controls.BindingBase.EnableCollectionSynchronization(System.Collections.IEnumerable,System.Object,Microsoft.Maui.Controls.CollectionSynchronizationCallback)" /> for details on thread-safe collection access.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableCollectionSynchronization">
@@ -128,14 +133,14 @@
         <Parameter Name="callback" Type="Microsoft.Maui.Controls.CollectionSynchronizationCallback" />
       </Parameters>
       <Docs>
-        <param name="collection">The collection that will be read or updated.</param>
-        <param name="context">The context or lock object that will be passed to <paramref name="callback" />. May be <see langword="null" />.</param>
-        <param name="callback">The synchronization callback.</param>
-        <summary>Starts synchronization on the <paramref name="collection" /> by using <paramref name="callback" /> and <paramref name="context" />.</summary>
+        <param name="collection">The collection that will be read or updated from multiple threads.</param>
+        <param name="context">A context object (optionally a lock object) passed to <paramref name="callback" />; may be <see langword="null" />.</param>
+        <param name="callback">Delegate invoked by the framework to perform collection access under synchronization.</param>
+        <summary>Enables synchronized (thread-safe) access to <paramref name="collection" /> using the supplied callback.</summary>
         <remarks>
-          <para>Application developers implement <paramref name="callback" /> and pass it to the <see cref="M:Microsoft.Maui.Controls.BindingBase.EnableCollectionSynchronization(System.Collections.IEnumerable,System.Object,Microsoft.Maui.Controls.CollectionSynchronizationCallback)" /> method to enable correct multithreaded access to <paramref name="collection" />. After synchronization is enabled, the Microsoft.Maui.Controls framework passes an access method, <paramref name="context" />, and a <see langword="bool" /> that indicates whether write access is needed, to the application developer's implementation of <see cref="T:Microsoft.Maui.Controls.CollectionSynchronizationCallback" /> each time that the framework needs to modify the collection in a multithreaded environment. The application developer's implementation should decide, based on the <paramref name="context" /> object (which may be merely a locking object or the object on which the collection lives) and the value of the <paramref name="writeAccess" /><see langword="bool" /> parameter, whether or not to <c>lock</c> while calling <paramref name="accessMethod" />.</para>
-          <para>Because Microsoft.Maui.Controls maintains a weak reference to <paramref name="collection" />, application developers do not need to call <see cref="M:Microsoft.Maui.Controls.BindingBase.DisableCollectionSynchronization(System.Collections.IEnumerable)" /> to aid in garbage collection.</para>
-        </remarks>
+            The framework holds only a weak reference to the collection. The callback receives parameters indicating whether write access is required;
+            implementers should perform appropriate locking (often on <paramref name="context" />) before invoking the supplied access delegate.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="FallbackValue">
@@ -155,9 +160,14 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value to use instead of the default value for the property, if no specified value exists.</summary>
-        <value>The value to use instead of the default value for the property, if no specified value exists</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the value used when the binding cannot produce a source value (e.g. path not found, conversion failure).</summary>
+        <value>The fallback value used instead of the target property's default value when source resolution fails entirely.</value>
+        <remarks>
+          <para>
+            <c>FallbackValue</c> is applied when the binding engine fails to obtain a value (e.g., missing source, unresolved path, or type conversion failure within the binding engine itself).
+            It is not used for errors that occur inside value converters; such errors may be handled by the converter or use different fallback mechanisms. If the source resolves to <see langword="null" />, <see cref="P:Microsoft.Maui.Controls.BindingBase.TargetNullValue" /> is applied if set.</para>
+          <para>Together with <see cref="P:Microsoft.Maui.Controls.BindingBase.TargetNullValue" /> this allows differentiating between a legitimate <see langword="null" /> value and an unresolved binding.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -199,31 +209,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the string format for this binding.</summary>
-        <value>
-          A string specifying the format for the value of this binding.
-        </value>
+        <summary>Gets or sets the string format applied to the bound value.</summary>
+        <value>A standard <see cref="M:System.String.Format(System.String,System.Object)" /> composite format string. For single-value bindings use one placeholder (e.g., <c>{0:C2}</c>).</value>
         <remarks>
-          <para>
-            Used for providing a display format for the binding value or compositing the value with other
-            text. Implementors of <see cref="T:Microsoft.Maui.Controls.BindingBase" /> decide how the string format is utilized, but
-            all support standard <see cref="M:System.String.Format*" /> conventions.
-          </para>
-          <para>
-            <see cref="T:Microsoft.Maui.Controls.Binding" /> allows for one argument for its singular value.
-          </para>
-          <example>
-            <para>
-              A simple example showing compositing text and determining the display format for the value with a
-              <see cref="T:Microsoft.Maui.Controls.Binding" /></para>
-            <code language="C#"><![CDATA[
-Label label = new Label();
-label.AddBinding (new Binding (Label.TextProperty, "Price") {
-  StringFormat = "Price: {0:C2}"
-});
-]]></code>
-          </example>
-        </remarks>
+            Used to format or composite the resulting bound value for display. Implementations follow standard <see cref="M:System.String.Format(System.String,System.Object)" /> semantics.
+            </remarks>
         <altmember cref="M:System.String.Format*" />
       </Docs>
     </Member>
@@ -244,9 +234,17 @@ label.AddBinding (new Binding (Label.TextProperty, "Price") {
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value to supply for a bound property when the target of the binding is <see langword="null" />.</summary>
-        <value>The value to supply for a bound property when the target of the binding is <see langword="null" />.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+            Gets or sets the value to use when the binding successfully resolves the source path and the resulting source value is
+            <see langword="null" />.
+            </summary>
+        <value>The value that will replace a resolved <see langword="null" /> source value when updating the target.</value>
+        <remarks>
+          <para>
+            <c>TargetNullValue</c> acts like a null-coalescing value for the binding source result: if the binding path resolves and the value is
+            <see langword="null" />, the target receives <c>TargetNullValue</c> instead. It is <em>not</em> used when the binding cannot resolve (e.g. missing
+            property, conversion error) — in those cases <see cref="P:Microsoft.Maui.Controls.BindingBase.FallbackValue" /> is considered.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ThrowIfApplied">
@@ -267,8 +265,9 @@ label.AddBinding (new Binding (Label.TextProperty, "Price") {
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Throws <see cref="T:System.InvalidOperationException" /> if the binding has already been applied.</summary>
+        <remarks>Used by property setters to prevent mutation after the binding has been attached to a target.</remarks>
+        <exception cref="T:System.InvalidOperationException">The binding has already been applied.</exception>
       </Docs>
     </Member>
   </Members>

@@ -29,11 +29,16 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <typeparam name="TPropertyType">To be added.</typeparam>
-    <param name="bindable">To be added.</param>
-    <param name="oldValue">To be added.</param>
-    <param name="newValue">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TPropertyType">The type of the property value.</typeparam>
+    <param name="bindable">The <see cref="T:Microsoft.Maui.Controls.BindableObject" /> instance that owns the property.</param>
+    <param name="oldValue">The previous value of the property.</param>
+    <param name="newValue">The new value of the property.</param>
+    <summary>
+            Represents a strongly-typed delegate that is called when a bindable property value has changed.
+            </summary>
+    <remarks>
+            This delegate does not provide information about which specific <see cref="T:Microsoft.Maui.Controls.BindableProperty" /> 
+            triggered the change. See <see cref="T:Microsoft.Maui.Controls.BindableProperty.BindingPropertyChangedDelegate" /> for workaround strategies.
+            </remarks>
   </Docs>
 </Type>
