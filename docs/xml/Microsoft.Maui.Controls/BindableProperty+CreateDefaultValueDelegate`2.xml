@@ -32,11 +32,16 @@
     <ReturnType>TPropertyType</ReturnType>
   </ReturnValue>
   <Docs>
-    <typeparam name="TDeclarer">To be added.</typeparam>
-    <typeparam name="TPropertyType">To be added.</typeparam>
-    <param name="bindable">To be added.</param>
-    <summary>To be added.</summary>
-    <returns>To be added.</returns>
-    <remarks>To be added.</remarks>
+    <typeparam name="TDeclarer">The type of the declaring object.</typeparam>
+    <typeparam name="TPropertyType">The type of the property value.</typeparam>
+    <param name="bindable">The declaring object instance that owns the property.</param>
+    <summary>
+            Represents a strongly-typed delegate that creates a default value for a bindable property.
+            </summary>
+    <returns>The default value for the property.</returns>
+    <remarks>
+            This strongly-typed delegate is useful for creating unique default instances for reference types,
+            avoiding shared references between different bindable object instances.
+            </remarks>
   </Docs>
 </Type>

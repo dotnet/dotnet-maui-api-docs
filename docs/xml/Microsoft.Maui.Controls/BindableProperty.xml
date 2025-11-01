@@ -85,7 +85,15 @@
         <param name="defaultValueCreator">A Func used to initialize default value for reference types.</param>
         <summary>Creates a new instance of the BindableProperty class.</summary>
         <returns>A newly created BindableProperty.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>
+            When using the <paramref name="propertyChanged" /> callback, note that if multiple <see cref="T:Microsoft.Maui.Controls.BindableProperty" /> 
+            instances share the same <see cref="T:Microsoft.Maui.Controls.BindableProperty.BindingPropertyChangedDelegate" />, the callback cannot determine which 
+            specific property triggered the change. Consider using separate callback methods for properties that require 
+            different handling, or use alternative approaches such as monitoring the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" /> 
+            event which includes the property name.
+            </para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateAttached">
@@ -142,7 +150,14 @@
         <param name="defaultValueCreator">A Func used to initialize default value for reference types.</param>
         <summary>Creates a new instance of the BindableProperty class for an attached property.</summary>
         <returns>A newly created attached BindableProperty.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>
+            When using the <paramref name="propertyChanged" /> callback, note that if multiple attached <see cref="T:Microsoft.Maui.Controls.BindableProperty" /> 
+            instances share the same <see cref="T:Microsoft.Maui.Controls.BindableProperty.BindingPropertyChangedDelegate" />, the callback cannot determine which 
+            specific property triggered the change. Consider using separate callback methods for properties that require 
+            different handling.
+            </para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateAttachedReadOnly">
@@ -199,7 +214,15 @@
         <param name="defaultValueCreator">A Func used to initialize default value for reference types.</param>
         <summary>Creates a new instance of the BindableProperty class for attached read-only properties.</summary>
         <returns>A newly created attached read-only BindableProperty.</returns>
-        <remarks>Attached properties are bindable properties that are bound to an object other than their parent. Often, they are used for child items in tables and grids, where data about the location of an item is maintained by its parent, but must be accessed from the child item itself.</remarks>
+        <remarks>
+          <para>Attached properties are bindable properties that are bound to an object other than their parent. Often, they are used for child items in tables and grids, where data about the location of an item is maintained by its parent, but must be accessed from the child item itself.</para>
+          <para>
+            When using the <paramref name="propertyChanged" /> callback, note that if multiple attached <see cref="T:Microsoft.Maui.Controls.BindableProperty" /> 
+            instances share the same <see cref="T:Microsoft.Maui.Controls.BindableProperty.BindingPropertyChangedDelegate" />, the callback cannot determine which 
+            specific property triggered the change. Consider using separate callback methods for properties that require 
+            different handling.
+            </para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateReadOnly">
@@ -256,7 +279,14 @@
         <param name="defaultValueCreator">A Func used to initialize default value for reference types.</param>
         <summary>Creates a new instance of the BindablePropertyKey class.</summary>
         <returns />
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>
+            When using the <paramref name="propertyChanged" /> callback, note that if multiple <see cref="T:Microsoft.Maui.Controls.BindableProperty" /> 
+            instances share the same <see cref="T:Microsoft.Maui.Controls.BindableProperty.BindingPropertyChangedDelegate" />, the callback cannot determine which 
+            specific property triggered the change. Consider using separate callback methods for properties that require 
+            different handling.
+            </para>
+        </remarks>
         <para>Attached properties are bindable properties that are bound to an object other than their parent. Often, they are used for child items in tables and grids, where data about the location of an item is maintained by its parent, but must be accessed from the child item itself.</para>
       </Docs>
     </Member>
