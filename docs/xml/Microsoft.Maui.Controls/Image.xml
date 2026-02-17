@@ -57,16 +57,12 @@
   </Attributes>
   <Docs>
     <summary>
-      <see cref="T:Microsoft.Maui.Controls.View" /> that holds an image.</summary>
+            A view control that displays an image.
+            </summary>
     <remarks>
-      <para>
-            The following example creates a new image from a file
-            </para>
-      <example>
-        <code lang="csharp lang-csharp"><![CDATA[
-var image = new Image { Source = "picture.png" };]]></code>
-      </example>
-    </remarks>
+            The Image control supports various image sources including files, URIs, streams, and embedded resources.
+            Use the <see cref="P:Microsoft.Maui.Controls.Image.Source" /> property to specify the image, and the <see cref="P:Microsoft.Maui.Controls.Image.Aspect" /> property to control how the image is scaled.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -105,7 +101,7 @@ var image = new Image { Source = "picture.png" };]]></code>
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the scaling mode for the image. This is a bindable property.</summary>
-        <value>A <see cref="T:Microsoft.Maui.Aspect" /> representing the scaling mode of the image. Default is <see cref="F:Microsoft.Maui.Aspect.AspectFit" />.</value>
+        <value>An <see cref="T:Microsoft.Maui.Aspect" /> value that determines how the image is scaled. The default is <see cref="F:Microsoft.Maui.Aspect.AspectFit" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,11 +143,9 @@ var image = new Image { Source = "picture.png" };]]></code>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether animated images should play. This is a bindable property.</summary>
+        <value>A <see cref="T:System.Boolean" /> that indicates whether animated images (such as GIFs) should play. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/Image.xml" path="//Member[@MemberName='IsAnimationPlaying']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="IsAnimationPlayingProperty">
@@ -193,8 +187,8 @@ var image = new Image { Source = "picture.png" };]]></code>
       </ReturnValue>
       <Docs>
         <summary>Gets the loading status of the image. This is a bindable property.</summary>
-        <value>A <see cref="T:System.Boolean" /> indicating if the image is loading. Default is false.</value>
-        <remarks>The following example illustrates running a</remarks>
+        <value>A <see cref="T:System.Boolean" /> indicating whether the image is currently loading. The default is <see langword="false" />.</value>
+        <remarks>This property can be used to show loading indicators while images are being loaded from remote sources.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsLoadingProperty">
@@ -235,10 +229,9 @@ var image = new Image { Source = "picture.png" };]]></code>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Boolean value that, if <see langword="true" /> hints to the rendering engine that it may safely omit drawing visual elements behind the image.</summary>
-        <value>The value of the opacity rendering hint.</value>
-        <remarks>When this property is
-            Setting this property does not change the opacity of the image. Instead, it indicates whether the rendering engine may treat the image as opaque while rendering.</remarks>
+        <summary>Gets or sets a Boolean value that hints to the rendering engine that it may safely omit drawing visual elements behind the image. This is a bindable property.</summary>
+        <value>A <see cref="T:System.Boolean" /> that indicates whether the image is opaque. The default is <see langword="false" />.</value>
+        <remarks>Setting this property does not change the visual opacity of the image. Instead, it provides a hint to the rendering engine that may improve performance by skipping the rendering of elements behind the image.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsOpaqueProperty">

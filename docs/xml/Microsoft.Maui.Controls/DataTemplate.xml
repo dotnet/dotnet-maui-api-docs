@@ -20,7 +20,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>A template for multiple bindings, commonly used by <see cref="T:Microsoft.Maui.Controls.ListView" />s and <see cref="T:Microsoft.Maui.Controls.MultiPage`1" />s.</summary>
+    <summary>
+            Defines the visual structure for templated items. Used to display data objects with a consistent appearance.
+            </summary>
     <remarks>In XAML, application developers can nest markup inside a <c>DataTemplate</c> tag to create a <see cref="T:Microsoft.Maui.Controls.View" /> whose members are bound to the properties of data objects that are contained in a <see cref="P:Microsoft.Maui.Controls.MultiPage`1.ItemsSource" /> list.</remarks>
   </Docs>
   <Members>
@@ -38,7 +40,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>For internal use only.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,8 +61,8 @@
         <Parameter Name="loadTemplate" Type="System.Func&lt;System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="loadTemplate">A custom content generator to be called </param>
-        <summary>Creates and initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> class.</summary>
+        <param name="loadTemplate">A factory function that returns the template content.</param>
+        <summary>Initializes a new instance with a factory function that creates template content.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,8 +94,8 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="type">The type of control for which to create a template.</param>
-        <summary>Creates a new <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> for type <paramref name="type" />.</summary>
+        <param name="type">The type of object to be created by the template.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> class with the specified type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,7 +116,7 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;Microsoft.Maui.Controls.BindableProperty,Microsoft.Maui.Controls.BindingBase&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a dictionary of bindings, indexed by the bound properties.</summary>
+        <summary>Gets the dictionary of bindings to apply to templated items.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -190,9 +192,9 @@
         <Parameter Name="binding" Type="Microsoft.Maui.Controls.BindingBase" />
       </Parameters>
       <Docs>
-        <param name="property">The property to which to bind.</param>
-        <param name="binding">The binding to use.</param>
-        <summary>Sets the binding for <paramref name="property" />.</summary>
+        <param name="property">The property to bind.</param>
+        <param name="binding">The binding to apply.</param>
+        <summary>Sets a binding for a property on templated items.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,8 +220,8 @@
       </Parameters>
       <Docs>
         <param name="property">The property to set.</param>
-        <param name="value">The new value.</param>
-        <summary>Sets the value of <paramref name="property" />.</summary>
+        <param name="value">The value to apply.</param>
+        <summary>Sets a static value for a property on templated items.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,7 +242,7 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;Microsoft.Maui.Controls.BindableProperty,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a dictionary of property values for this <see cref="T:Microsoft.Maui.Controls.DataTemplate" />, indexed by property.</summary>
+        <summary>Gets the dictionary of property values to apply to templated items.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

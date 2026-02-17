@@ -23,10 +23,13 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
-    <!-- No matching elements were found for the following include tag -->
-    <include file="../../../docs/Microsoft.Maui.Controls/MarshalingObservableCollection.xml" path="Type[@FullName='Microsoft.Maui.Controls.MarshalingObservableCollection']/Docs/*" />
+    <summary>
+            A thread-safe observable collection that marshals all collection changes to the main thread.
+            </summary>
+    <remarks>
+            This collection wraps an <see cref="T:System.Collections.Specialized.INotifyCollectionChanged" /> collection and ensures that all collection change notifications
+            are processed on the main UI thread, making it safe to bind to UI controls even when the underlying collection is modified from background threads.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

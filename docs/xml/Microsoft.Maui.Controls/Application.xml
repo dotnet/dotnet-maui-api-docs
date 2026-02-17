@@ -38,7 +38,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Class that represents a cross-platform mobile application.</summary>
+    <summary>
+            Represents the main application class that provides lifecycle management, resources, and theming.
+            </summary>
     <remarks>
       <para>The <see cref="T:Microsoft.Maui.Controls.Application" /> class is the core of a .NET MAUI application. It sets the root page of the application, and provides events to respond to pushing and popping of modal views. Visual Studio creates this class for the developer in the appropriate project in a new .NET MAUI solution.</para>
     </remarks>
@@ -58,7 +60,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new <see cref="T:Microsoft.Maui.Controls.Application" /> instance.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.Application" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,7 +136,9 @@
         <ReturnType>Microsoft.Maui.Controls.IAppLinks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the object that developers use to register or unregister application links.</summary>
+        <summary>
+            Gets the <see cref="T:Microsoft.Maui.Controls.IAppLinks" /> for deep linking and app indexing.
+            </summary>
         <value>The object that developers use to register or unregister application links.</value>
         <remarks>It is not possible to unregister an app link on the Android platform.</remarks>
       </Docs>
@@ -270,7 +276,9 @@
         <ReturnType>Microsoft.Maui.Controls.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current application.</summary>
+        <summary>
+            Gets or sets the current application instance.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -306,7 +314,9 @@
         <ReturnType>Microsoft.Maui.Controls.Page</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the root page of the application.</summary>
+        <summary>
+            Gets or sets the root page of the application.
+            </summary>
         <value>The root page of the application.</value>
         <remarks>This property throws an exception if the application developer attempts to set it to <see langword="null" />.</remarks>
       </Docs>
@@ -642,7 +652,9 @@
         <ReturnType>Microsoft.Maui.Controls.Internals.NavigationProxy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>
+            Gets the navigation proxy for this application.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -920,7 +932,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Quits the application.</summary>
+        <summary>
+            Terminates the application.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -941,11 +955,11 @@
         <ReturnType>Microsoft.Maui.ApplicationModel.AppTheme</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the current theme, returning <see cref="P:Microsoft.Maui.Controls.Application.UserAppTheme" /> if set, otherwise <see cref="P:Microsoft.Maui.Controls.Application.PlatformAppTheme" />.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/Application.xml" path="//Member[@MemberName='RequestedTheme']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="RequestedThemeChanged">
@@ -986,7 +1000,9 @@
         <ReturnType>Microsoft.Maui.Controls.ResourceDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the resource dictionary for this <see cref="T:Microsoft.Maui.Controls.Application" /> object.</summary>
+        <summary>
+            Gets or sets the resource dictionary for this application.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1018,7 +1034,9 @@
       </Parameters>
       <Docs>
         <param name="uri">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>
+            Sends the app link request to <see cref="M:Microsoft.Maui.Controls.Application.OnAppLinkRequestReceived(System.Uri)" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1052,7 +1070,9 @@
       </Parameters>
       <Docs>
         <param name="provider">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>
+            Sets the provider for app indexing and deep linking.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1083,7 +1103,9 @@
       </Parameters>
       <Docs>
         <param name="value">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>
+            Sets the current application instance.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1104,11 +1126,11 @@
         <ReturnType>Microsoft.Maui.ApplicationModel.AppTheme</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the user's preferred app theme, overriding the platform theme.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/Application.xml" path="//Member[@MemberName='UserAppTheme']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="Windows">

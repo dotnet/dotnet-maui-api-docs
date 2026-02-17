@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The navigation page instance that Microsoft.Maui.Controls created on the macOS platform.</summary>
+    <summary>Provides macOS-specific platform configuration for <see cref="T:Microsoft.Maui.Controls.NavigationPage" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,9 +40,9 @@
         <Parameter Name="element" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">The platform specific element on which to perform the operation.</param>
-        <summary>Returns the NavigationTransitionStyle value that tells what transition is used when a page is popped from the navigation stack.</summary>
-        <returns>The NavigationTransitionStyle value that tells the current transition when a page is popped from the navigation stack.</returns>
+        <param name="element">The element whose transition style to get.</param>
+        <summary>Gets the navigation transition style used when popping pages from the navigation stack.</summary>
+        <returns>The navigation transition pop style for the element.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,9 +66,9 @@
         <Parameter Name="config" Type="Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.macOS,Microsoft.Maui.Controls.NavigationPage&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
-        <summary>Returns the NavigationTransitionStyle value that tells what transition is used when a page is popped from the navigation stack.</summary>
-        <returns>The NavigationTransitionStyle value that tells the current transition when a page is popped from the navigation stack.</returns>
+        <param name="config">The platform configuration.</param>
+        <summary>Gets the navigation transition style used when popping pages from the navigation stack.</summary>
+        <returns>The navigation transition pop style for the element.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,9 +92,9 @@
         <Parameter Name="element" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">The platform specific element on which to perform the operation.</param>
-        <summary>Returns the NavigationTransitionStyle value that tells what transition is used when a page is push on the navigation stack.</summary>
-        <returns>The NavigationTransitionStyle value that tells the current transition when a page is pushed on the navigation stack.</returns>
+        <param name="element">The element whose transition style to get.</param>
+        <summary>Gets the navigation transition style used when pushing pages onto the navigation stack.</summary>
+        <returns>The navigation transition push style for the element.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,9 +118,9 @@
         <Parameter Name="config" Type="Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.macOS,Microsoft.Maui.Controls.NavigationPage&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
-        <summary>Returns the NavigationTransitionStyle value that tells what transition is used when a page is pushed on the navigation stack.</summary>
-        <returns>The NavigationTransitionStyle value that tells the current transition when a page is pushed on the navigation stack.</returns>
+        <param name="config">The platform configuration.</param>
+        <summary>Gets the navigation transition style used when pushing pages onto the navigation stack.</summary>
+        <returns>The navigation transition push style for the element.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,9 +187,9 @@
         <Parameter Name="value" Type="Microsoft.Maui.Controls.PlatformConfiguration.macOSSpecific.NavigationTransitionStyle" />
       </Parameters>
       <Docs>
-        <param name="element">The platform specific element on which to perform the operation.</param>
-        <param name="value">The new transition style.</param>
-        <summary>Sets the transition style which is used, when popping from the navigation stack.</summary>
+        <param name="element">The element whose transition style to set.</param>
+        <param name="value">The navigation transition style to use for pop operations.</param>
+        <summary>Sets the navigation transition style used when popping pages from the navigation stack.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,9 +214,9 @@
         <Parameter Name="value" Type="Microsoft.Maui.Controls.PlatformConfiguration.macOSSpecific.NavigationTransitionStyle" />
       </Parameters>
       <Docs>
-        <param name="element">The platform specific element on which to perform the operation.</param>
-        <param name="value">The new transition style.</param>
-        <summary>Sets the transition style which is used, when pushing pages on the navigation stack.</summary>
+        <param name="element">The element whose transition style to set.</param>
+        <param name="value">The navigation transition style to use for push operations.</param>
+        <summary>Sets the navigation transition style used when pushing pages onto the navigation stack.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,10 +242,10 @@
         <Parameter Name="popStyle" Type="Microsoft.Maui.Controls.PlatformConfiguration.macOSSpecific.NavigationTransitionStyle" />
       </Parameters>
       <Docs>
-        <param name="element">The platform specific element on which to perform the operation.</param>
-        <param name="pushStyle">The new transition style when a page is pushed on the navigation stack.</param>
-        <param name="popStyle">The new transition style when a page is popped from the navigation stack.</param>
-        <summary>Sets the transition style which is used, when popping and pushing pages on the navigation stack.</summary>
+        <param name="element">The element whose transition styles to set.</param>
+        <param name="pushStyle">The navigation transition style for push operations.</param>
+        <param name="popStyle">The navigation transition style for pop operations.</param>
+        <summary>Sets both the push and pop navigation transition styles.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -271,11 +271,11 @@
         <Parameter Name="popStyle" Type="Microsoft.Maui.Controls.PlatformConfiguration.macOSSpecific.NavigationTransitionStyle" />
       </Parameters>
       <Docs>
-        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
-        <param name="pushStyle">The new transition style when a page is pushed on the navigation stack.</param>
-        <param name="popStyle">The new transition style when a page is popped from the navigation stack.</param>
-        <summary>Sets the transition style which is used, when popping and pushing pages on the navigation stack.</summary>
-        <returns>The updated configuration object on which developers can make successive method calls.</returns>
+        <param name="config">The platform configuration.</param>
+        <param name="pushStyle">The navigation transition style for push operations.</param>
+        <param name="popStyle">The navigation transition style for pop operations.</param>
+        <summary>Sets both the push and pop navigation transition styles.</summary>
+        <returns>The platform configuration for fluent chaining.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

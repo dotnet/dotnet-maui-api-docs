@@ -38,27 +38,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>A <see cref="T:Microsoft.Maui.Controls.View" /> control that displays progress.</summary>
+    <summary>
+            A view control that displays progress as a partially filled bar.
+            </summary>
     <remarks>
-      <para>The following example shows the usage of a ProgressBar.</para>
-      <example>
-        <code lang="csharp lang-csharp"><![CDATA[
-    
-//initial progress is 20%
-var progressBar = new ProgressBar {
-  Progress = .2,
-};
-    
-// animate the progression to 80%, in 250ms
-await progressBar.ProgressTo (.8, 250, Easing.Linear);
-    
-Debug.WriteLine ("Animation completed");
-]]></code>
-      </example>
-      <para>
-        <img href="~/xml/Microsoft.Maui.Controls/_images/ProgressBar.TripleScreenShot.png" />
-      </para>
-    </remarks>
+            The ProgressBar displays progress as a horizontal bar that is filled to a percentage represented by the <see cref="P:Microsoft.Maui.Controls.ProgressBar.Progress" /> property.
+            Use the <see cref="M:Microsoft.Maui.Controls.ProgressBar.ProgressTo(System.Double,System.UInt32,Microsoft.Maui.Easing)" /> method to animate the progress bar.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -75,7 +61,9 @@ Debug.WriteLine ("Animation completed");
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the ProgressBar class</summary>
+        <summary>
+            Initializes a new instance of the ProgressBar class.
+            </summary>
         <remarks />
       </Docs>
     </Member>
@@ -131,8 +119,10 @@ Debug.WriteLine ("Animation completed");
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the progress value.</summary>
-        <value>Gets or sets a value that specifies the fraction of the bar that is colored.</value>
+        <summary>
+            Gets or sets the progress value. This is a bindable property.
+            </summary>
+        <value>A value between 0.0 and 1.0 that specifies the fraction of the bar that is filled. Values outside this range will be clamped.</value>
         <remarks>Values less than 0 or larger than 1 will be clamped to the range [0-1].</remarks>
       </Docs>
     </Member>
@@ -153,7 +143,9 @@ Debug.WriteLine ("Animation completed");
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Get or sets the color of the progress bar.</summary>
+        <summary>
+            Gets or sets the color of the progress bar. This is a bindable property.
+            </summary>
         <value>The color of the progress bar.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -222,11 +214,13 @@ Debug.WriteLine ("Animation completed");
         <Parameter Name="easing" Type="Microsoft.Maui.Easing" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="length">To be added.</param>
-        <param name="easing">To be added.</param>
-        <summary>Animate the Progress property to value.</summary>
-        <returns>A Task&lt;bool&gt; you can await on.</returns>
+        <param name="value">The target progress value (0.0 to 1.0).</param>
+        <param name="length">The length of the animation in milliseconds.</param>
+        <param name="easing">The easing function to use for the animation.</param>
+        <summary>
+            Animates the <see cref="P:Microsoft.Maui.Controls.ProgressBar.Progress" /> property from its current value to the specified value.
+            </summary>
+        <returns>A task that completes when the animation finishes, with a result indicating whether the animation completed successfully.</returns>
         <remarks />
       </Docs>
     </Member>

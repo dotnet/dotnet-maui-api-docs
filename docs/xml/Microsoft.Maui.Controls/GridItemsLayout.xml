@@ -16,10 +16,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
-    <!-- No matching elements were found for the following include tag -->
-    <include file="../../../docs/Microsoft.Maui.Controls/GridItemsLayout.xml" path="Type[@FullName='Microsoft.Maui.Controls.GridItemsLayout']/Docs/*" />
+    <summary>
+            An items layout that arranges items in a grid with configurable columns or rows.
+            </summary>
+    <remarks>
+      <see cref="T:Microsoft.Maui.Controls.GridItemsLayout" /> displays items in a grid format, with the number of columns (for vertical scrolling) 
+            or rows (for horizontal scrolling) determined by the <see cref="P:Microsoft.Maui.Controls.GridItemsLayout.Span" /> property.
+            Use <see cref="P:Microsoft.Maui.Controls.GridItemsLayout.HorizontalItemSpacing" /> and <see cref="P:Microsoft.Maui.Controls.GridItemsLayout.VerticalItemSpacing" /> to control the spacing between items.
+            This layout is commonly used in <see cref="T:Microsoft.Maui.Controls.CollectionView" /> for displaying items in a multi-column or multi-row format.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,8 +44,10 @@
         <Parameter Name="orientation" Type="Microsoft.Maui.Controls.ItemsLayoutOrientation" />
       </Parameters>
       <Docs>
-        <param name="orientation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="orientation">The scroll orientation of the grid.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.GridItemsLayout" /> class with the specified orientation.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,9 +69,11 @@
         <Parameter Name="orientation" Type="Microsoft.Maui.Controls.ItemsLayoutOrientation" />
       </Parameters>
       <Docs>
-        <param name="span">To be added.</param>
-        <param name="orientation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="span">The number of columns (for vertical orientation) or rows (for horizontal orientation).</param>
+        <param name="orientation">The scroll orientation of the grid.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.GridItemsLayout" /> class with the specified span and orientation.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,11 +94,11 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the horizontal spacing between items in the grid.
+            </summary>
+        <value>The horizontal spacing in platform-specific units. Must be 0 or greater. The default is 0.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/GridItemsLayout.xml" path="//Member[@MemberName='HorizontalItemSpacing']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalItemSpacingProperty">
@@ -130,11 +139,14 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/GridItemsLayout.xml" path="//Member[@MemberName='Span']/Docs/*" />
+        <summary>
+            Gets or sets the number of columns (for vertical orientation) or rows (for horizontal orientation) in the grid.
+            </summary>
+        <value>The number of columns or rows. Must be 1 or greater. The default is 1.</value>
+        <remarks>
+            For vertical scrolling grids, <see cref="P:Microsoft.Maui.Controls.GridItemsLayout.Span" /> determines the number of columns.
+            For horizontal scrolling grids, <see cref="P:Microsoft.Maui.Controls.GridItemsLayout.Span" /> determines the number of rows.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="SpanProperty">
@@ -175,11 +187,11 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the vertical spacing between items in the grid.
+            </summary>
+        <value>The vertical spacing in platform-specific units. Must be 0 or greater. The default is 0.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/GridItemsLayout.xml" path="//Member[@MemberName='VerticalItemSpacing']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="VerticalItemSpacingProperty">

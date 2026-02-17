@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Class for loading style sheets from strings, assembly resources, and text readers.</summary>
+    <summary>
+            Represents a CSS-like stylesheet for styling visual elements.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,7 +43,7 @@
       </Parameters>
       <Docs>
         <param name="reader">The text reader from which to read the style sheet data.</param>
-        <summary>Returns a style sheet by reading style data from the <paramref name="reader" />.</summary>
+        <summary>Creates a <see cref="T:Microsoft.Maui.Controls.StyleSheets.StyleSheet" /> from a <see cref="T:System.IO.TextReader" />.</summary>
         <returns>A style sheet created from the data in the reader.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -76,7 +78,7 @@
         <param name="resourcePath">For internal use by the Microsoft.Maui.Controls platform.</param>
         <param name="assembly">For internal use by the Microsoft.Maui.Controls platform.</param>
         <param name="lineInfo">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>Creates a <see cref="T:Microsoft.Maui.Controls.StyleSheets.StyleSheet" /> from an embedded resource.</summary>
         <returns>For internal use by the Microsoft.Maui.Controls platform.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -108,7 +110,7 @@
       </Parameters>
       <Docs>
         <param name="stylesheet">The style sheet, as a string.</param>
-        <summary>Creates and returns a style sheet from a string that contains a text representation of a style sheet.</summary>
+        <summary>Creates a <see cref="T:Microsoft.Maui.Controls.StyleSheets.StyleSheet" /> from a CSS string.</summary>
         <returns>The style sheet for the data.</returns>
         <remarks>To be added.</remarks>
       </Docs>

@@ -16,10 +16,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Provides attached properties for managing groups of <see cref="T:Microsoft.Maui.Controls.RadioButton" /> controls.
+            </summary>
     <remarks>To be added.</remarks>
-    <!-- No matching elements were found for the following include tag -->
-    <include file="../../docs/Microsoft.Maui.Controls/RadioButtonGroup.xml" path="Type[@FullName='Microsoft.Maui.Controls.RadioButtonGroup']/Docs/*" />
   </Docs>
   <Members>
     <Member MemberName="GetGroupName">
@@ -42,9 +42,11 @@
         <Parameter Name="b" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="b">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="b">The bindable object to query.</param>
+        <summary>
+            Gets the group name for the specified layout, used to logically group radio buttons.
+            </summary>
+        <returns>The group name assigned to the layout.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,9 +70,11 @@
         <Parameter Name="bindableObject" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="bindableObject">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bindableObject">The bindable object to query.</param>
+        <summary>
+            Gets the currently selected value from the radio button group.
+            </summary>
+        <returns>The value of the selected radio button in the group.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,9 +141,11 @@
         <Parameter Name="groupName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="bindable">To be added.</param>
-        <param name="groupName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="bindable">The bindable object to update.</param>
+        <param name="groupName">The group name to assign.</param>
+        <summary>
+            Sets the group name for the specified layout, used to logically group radio buttons.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -164,9 +170,11 @@
         <Parameter Name="selectedValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="bindable">To be added.</param>
-        <param name="selectedValue">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="bindable">The bindable object to update.</param>
+        <param name="selectedValue">The value to select.</param>
+        <summary>
+            Sets the selected value for the radio button group.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

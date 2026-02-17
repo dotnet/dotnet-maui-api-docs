@@ -16,10 +16,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Android-specific shadow effects for ImageButton controls.</summary>
     <remarks>To be added.</remarks>
-    <!-- No matching elements were found for the following include tag -->
-    <include file="../../../../docs/Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific/ImageButton.xml" path="Type[@FullName='Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific.ImageButton']/Docs/*" />
   </Docs>
   <Members>
     <Member MemberName="GetIsShadowEnabled">
@@ -42,9 +40,10 @@
         <Parameter Name="element" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The image button element.</param>
+        <summary>Gets whether the shadow effect is enabled on Android.</summary>
+        <returns>
+          <see langword="true" /> if shadow is enabled; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,9 +67,10 @@
         <Parameter Name="config" Type="Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.Android,Microsoft.Maui.Controls.ImageButton&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration.</param>
+        <summary>Gets whether the shadow effect is enabled on Android.</summary>
+        <returns>
+          <see langword="true" /> if shadow is enabled; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,9 +144,9 @@
         <Parameter Name="element" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The image button element.</param>
+        <summary>Gets the shadow color on Android.</summary>
+        <returns>The shadow color.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,9 +170,9 @@
         <Parameter Name="config" Type="Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.Android,Microsoft.Maui.Controls.ImageButton&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration.</param>
+        <summary>Gets the shadow color on Android.</summary>
+        <returns>The shadow color.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -196,9 +196,9 @@
         <Parameter Name="element" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The image button element.</param>
+        <summary>Gets the shadow offset on Android.</summary>
+        <returns>The shadow offset as a Size.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -222,9 +222,9 @@
         <Parameter Name="config" Type="Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.Android,Microsoft.Maui.Controls.ImageButton&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration.</param>
+        <summary>Gets the shadow offset on Android.</summary>
+        <returns>The shadow offset as a Size.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,9 +248,9 @@
         <Parameter Name="element" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The image button element.</param>
+        <summary>Gets the shadow blur radius on Android.</summary>
+        <returns>The shadow radius.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -274,9 +274,9 @@
         <Parameter Name="config" Type="Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.Android,Microsoft.Maui.Controls.ImageButton&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration.</param>
+        <summary>Gets the shadow blur radius on Android.</summary>
+        <returns>The shadow radius.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -342,9 +342,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The image button element.</param>
+        <param name="value">
+          <see langword="true" /> to enable shadow; otherwise, <see langword="false" />.</param>
+        <summary>Sets whether the shadow effect is enabled on Android.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -369,10 +370,11 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration.</param>
+        <param name="value">
+          <see langword="true" /> to enable shadow; otherwise, <see langword="false" />.</param>
+        <summary>Sets whether the shadow effect is enabled on Android.</summary>
+        <returns>The platform configuration for fluent API chaining.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -450,9 +452,9 @@
         <Parameter Name="value" Type="Microsoft.Maui.Graphics.Color" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The image button element.</param>
+        <param name="value">The shadow color.</param>
+        <summary>Sets the shadow color on Android.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -477,10 +479,10 @@
         <Parameter Name="value" Type="Microsoft.Maui.Graphics.Color" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration.</param>
+        <param name="value">The shadow color.</param>
+        <summary>Sets the shadow color on Android.</summary>
+        <returns>The platform configuration for fluent API chaining.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -505,9 +507,9 @@
         <Parameter Name="value" Type="Microsoft.Maui.Graphics.Size" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The image button element.</param>
+        <param name="value">The shadow offset as a Size.</param>
+        <summary>Sets the shadow offset on Android.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -532,10 +534,10 @@
         <Parameter Name="value" Type="Microsoft.Maui.Graphics.Size" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration.</param>
+        <param name="value">The shadow offset as a Size.</param>
+        <summary>Sets the shadow offset on Android.</summary>
+        <returns>The platform configuration for fluent API chaining.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -560,9 +562,9 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The image button element.</param>
+        <param name="value">The shadow radius.</param>
+        <summary>Sets the shadow blur radius on Android.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -587,10 +589,10 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration.</param>
+        <param name="value">The shadow radius.</param>
+        <summary>Sets the shadow blur radius on Android.</summary>
+        <returns>The platform configuration for fluent API chaining.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

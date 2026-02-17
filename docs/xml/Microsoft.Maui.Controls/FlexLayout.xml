@@ -340,9 +340,9 @@
         <Parameter Name="bindable" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="bindable">The object for which to retrieve the property value.</param>
-        <summary>Returns the value that optionally overrides the item alignment for this child within its row or column in the parent.</summary>
-        <returns>The value that optionally overrides the item alignment for this child within its row or column in the parent.</returns>
+        <param name="bindable">The element to get the alignment for.</param>
+        <summary>Gets the self-alignment override for the element within the flex layout.</summary>
+        <returns>The self-alignment value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -395,9 +395,9 @@
         <Parameter Name="bindable" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="bindable">The object for which to retrieve the property value.</param>
-        <summary>Returns the value that describes this element's relative or absolute basis length.</summary>
-        <returns>The value that describes this element's relative or absolute basis length.</returns>
+        <param name="bindable">The element to get the basis for.</param>
+        <summary>Gets the flex basis (initial size) for the element along the main axis.</summary>
+        <returns>The flex basis value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -479,9 +479,9 @@
         <Parameter Name="bindable" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="bindable">The object for which to retrieve the property value.</param>
-        <summary>Returns the value that determines the proportional growth that this element will accept to acccommodate the layout in the row or column.</summary>
-        <returns>The value that determines the proportional growth that this element will accept to acccommodate the layout in the row or column.</returns>
+        <param name="bindable">The element to get the grow factor for.</param>
+        <summary>Gets the flex grow factor for the element.</summary>
+        <returns>The grow factor value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -534,9 +534,9 @@
         <Parameter Name="bindable" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="bindable">The object for which to retrieve the property value.</param>
-        <summary>Returns the visual order of the element among its siblings.</summary>
-        <returns>The visual order of the element among its siblings.</returns>
+        <param name="bindable">The element to get the order for.</param>
+        <summary>Gets the order that this element appears in the flex layout.</summary>
+        <returns>The order value for the element.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -589,9 +589,9 @@
         <Parameter Name="bindable" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="bindable">The object for which to retrieve the property value.</param>
-        <summary>Returns the value that determines the proportional reduction in size that this element will accept to acccommodate the layout in the row or column.</summary>
-        <returns>The proportional reduction in size that this element will accept to acccommodate the layout in the row or column.</returns>
+        <param name="bindable">The element to get the shrink factor for.</param>
+        <summary>Gets the flex shrink factor for the element.</summary>
+        <returns>The shrink factor value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -957,9 +957,9 @@
         <Parameter Name="value" Type="Microsoft.Maui.Layouts.FlexAlignSelf" />
       </Parameters>
       <Docs>
-        <param name="bindable">The object for which to retrieve the property value.</param>
-        <param name="value">The new self-alignment value.</param>
-        <summary>Sets a value that optionally overrides the parent element's item aliginment for this child element.</summary>
+        <param name="bindable">The element to set the alignment for.</param>
+        <param name="value">The self-alignment value to set.</param>
+        <summary>Sets the self-alignment override for the element within the flex layout.</summary>
         <remarks>
           <para>The following image shows the effect of <c>FlexLayout.SetAlignSelf(c, FlexAlignSelf.Start);</c> on a layout with<see cref="P:Microsoft.Maui.Controls.FlexLayout.AlignItems" /> value of <see cref="F:Microsoft.Maui.Layouts.FlexAlignItems.Stretch" />: </para>
           <para>
@@ -1016,9 +1016,9 @@
         <Parameter Name="value" Type="Microsoft.Maui.Layouts.FlexBasis" />
       </Parameters>
       <Docs>
-        <param name="bindable">The object for which to retrieve the property value.</param>
-        <param name="value">The new flex basis value.</param>
-        <summary>Sets the value that describes this element's relative or absolute basis length.</summary>
+        <param name="bindable">The element to set the basis for.</param>
+        <param name="value">The flex basis value to set.</param>
+        <summary>Sets the flex basis (initial size) for the element along the main axis.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1070,9 +1070,9 @@
         <Parameter Name="value" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="bindable">The object for which to retrieve the property value.</param>
-        <param name="value">The new flex growth value.</param>
-        <summary>Sets the value that determines the proportional growth that this element will accept to acccommodate the layout in the row or column.</summary>
+        <param name="bindable">The element to set the grow factor for.</param>
+        <param name="value">The grow factor value to set.</param>
+        <summary>Sets the flex grow factor for the element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1124,9 +1124,9 @@
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="bindable">The object for which to retrieve the property value.</param>
-        <param name="value">The new flex order value.</param>
-        <summary>Sets the visual order priority of the element among its siblings.</summary>
+        <param name="bindable">The element to set the order for.</param>
+        <param name="value">The order value to set.</param>
+        <summary>Sets the order that this element appears in the flex layout.</summary>
         <remarks>
           <para>Multiple elements may have the same ordering priority, in which case they will appear in the order in which they occur in the <see cref="P:Microsoft.Maui.Controls.Layout.Children" /> list. By default, the value of <see cref="M:Microsoft.Maui.Controls.FlexLayout.GetOrder(Microsoft.Maui.Controls.BindableObject)" /> is 0.</para>
           <para>For instance, if 3 children <c>a</c>, <c>b</c>, and <c>c</c> are added in order, and the developer wishes <c>c</c> to appear in the middle, the proper code is <c>FlexLayout.SetOrder(b, 1)</c>. (A developer mistaking order priority for an index might wrongly expect <c>FlexLayout.SetOrder(c, 1)</c> to work, but as <c>a</c> and <c>b</c> will still have order priority <c>0</c>, the elements in that case would still layout in the sequence <c>a, b, c</c>.</para>
@@ -1184,9 +1184,9 @@
         <Parameter Name="value" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="bindable">The object for which to retrieve the property value.</param>
-        <param name="value">The new flex shrink value.</param>
-        <summary>Sets the value that determines the proportional reduction in size that this element will accept to acccommodate the layout in the row or column.</summary>
+        <param name="bindable">The element to set the shrink factor for.</param>
+        <param name="value">The shrink factor value to set.</param>
+        <summary>Sets the flex shrink factor for the element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

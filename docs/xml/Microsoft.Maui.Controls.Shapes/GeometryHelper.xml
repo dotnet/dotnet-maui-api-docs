@@ -16,10 +16,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Provides helper methods for geometry operations such as flattening curves into polylines.
+            </summary>
     <remarks>To be added.</remarks>
-    <!-- No matching elements were found for the following include tag -->
-    <include file="../../../docs/Microsoft.Maui.Controls.Shapes/GeometryHelper.xml" path="Type[@FullName='Microsoft.Maui.Controls.Shapes.GeometryHelper']/Docs/*" />
   </Docs>
   <Members>
     <Member MemberName="FlattenArc">
@@ -50,17 +50,19 @@
         <Parameter Name="tolerance" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="points">To be added.</param>
-        <param name="pt1">To be added.</param>
-        <param name="pt2">To be added.</param>
-        <param name="radiusX">To be added.</param>
-        <param name="radiusY">To be added.</param>
-        <param name="angleRotation">To be added.</param>
-        <param name="isLargeArc">To be added.</param>
-        <param name="isCounterclockwise">To be added.</param>
-        <param name="tolerance">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="points">The list to add the resulting points to.</param>
+        <param name="pt1">The start point of the arc.</param>
+        <param name="pt2">The end point of the arc.</param>
+        <param name="radiusX">The x-radius of the ellipse.</param>
+        <param name="radiusY">The y-radius of the ellipse.</param>
+        <param name="angleRotation">The rotation angle of the ellipse in degrees.</param>
+        <param name="isLargeArc">Whether to use the larger of the two possible arcs.</param>
+        <param name="isCounterclockwise">Whether the arc sweeps counterclockwise.</param>
+        <param name="tolerance">The maximum distance between the arc and the polyline approximation.</param>
+        <summary>
+            Flattens an elliptical arc into a series of line segments.
+            </summary>
+        <remarks>See http://www.charlespetzold.com/blog/2008/01/Mathematics-of-ArcSegment.html for more information.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FlattenCubicBezier">
@@ -88,13 +90,15 @@
         <Parameter Name="tolerance" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="points">To be added.</param>
-        <param name="ptStart">To be added.</param>
-        <param name="ptCtrl1">To be added.</param>
-        <param name="ptCtrl2">To be added.</param>
-        <param name="ptEnd">To be added.</param>
-        <param name="tolerance">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="points">The list to add the resulting points to.</param>
+        <param name="ptStart">The start point of the curve.</param>
+        <param name="ptCtrl1">The first control point.</param>
+        <param name="ptCtrl2">The second control point.</param>
+        <param name="ptEnd">The end point of the curve.</param>
+        <param name="tolerance">The maximum distance between the curve and the polyline approximation.</param>
+        <summary>
+            Flattens a cubic Bezier curve into a series of line segments.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,10 +123,12 @@
         <Parameter Name="tolerance" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="geoSrc">To be added.</param>
-        <param name="tolerance">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geoSrc">The source geometry to flatten.</param>
+        <param name="tolerance">The maximum distance between the curve and the polyline approximation.</param>
+        <summary>
+            Flattens a <see cref="T:Microsoft.Maui.Controls.Shapes.Geometry" /> into a <see cref="T:Microsoft.Maui.Controls.Shapes.PathGeometry" /> containing only polyline segments.
+            </summary>
+        <returns>A new <see cref="T:Microsoft.Maui.Controls.Shapes.PathGeometry" /> with all curves converted to line segments.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,11 +155,13 @@
         <Parameter Name="matxPrevious" Type="Microsoft.Maui.Controls.Shapes.Matrix" />
       </Parameters>
       <Docs>
-        <param name="pathGeoDst">To be added.</param>
-        <param name="geoSrc">To be added.</param>
-        <param name="tolerance">To be added.</param>
-        <param name="matxPrevious">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="pathGeoDst">The destination path geometry to add flattened figures to.</param>
+        <param name="geoSrc">The source geometry to flatten.</param>
+        <param name="tolerance">The maximum distance between the curve and the polyline approximation.</param>
+        <param name="matxPrevious">The transformation matrix to apply to all points.</param>
+        <summary>
+            Flattens a <see cref="T:Microsoft.Maui.Controls.Shapes.Geometry" /> into an existing <see cref="T:Microsoft.Maui.Controls.Shapes.PathGeometry" />, applying a transformation matrix.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,12 +189,14 @@
         <Parameter Name="tolerance" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="points">To be added.</param>
-        <param name="ptStart">To be added.</param>
-        <param name="ptCtrl">To be added.</param>
-        <param name="ptEnd">To be added.</param>
-        <param name="tolerance">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="points">The list to add the resulting points to.</param>
+        <param name="ptStart">The start point of the curve.</param>
+        <param name="ptCtrl">The control point.</param>
+        <param name="ptEnd">The end point of the curve.</param>
+        <param name="tolerance">The maximum distance between the curve and the polyline approximation.</param>
+        <summary>
+            Flattens a quadratic Bezier curve into a series of line segments.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

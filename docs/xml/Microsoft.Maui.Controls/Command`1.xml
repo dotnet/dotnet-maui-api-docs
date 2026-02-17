@@ -19,8 +19,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The type of the command parameter.</typeparam>
+    <summary>A generic implementation of <see cref="T:System.Windows.Input.ICommand" /> with strongly-typed parameter.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,8 +41,8 @@
         <Parameter Name="execute" Type="System.Action&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="execute">An Action to execute when the Command is executed.</param>
-        <summary>Initializes a new instance of the Command class.</summary>
+        <param name="execute">The action to execute when the command is invoked.</param>
+        <summary>Creates a new command with the specified execute action.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,9 +64,9 @@
         <Parameter Name="canExecute" Type="System.Func&lt;T,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <param name="execute">An Action&lt;object&gt; to execute when the Command is executed.</param>
-        <param name="canExecute">A <see cref="T:System.Func`2" /> indicating if the Command can be executed.</param>
-        <summary>Initializes a new instance of the Command class.</summary>
+        <param name="execute">The action to execute when the command is invoked.</param>
+        <param name="canExecute">A function that determines if the command can execute.</param>
+        <summary>Creates a new command with the specified execute and canExecute delegates.</summary>
         <remarks>Whenever the value returned by canExecute has changed, a call to <see cref="M:Microsoft.Maui.Controls.Command.ChangeCanExecute" /> is required to trigger <see cref="E:System.Windows.Input.ICommand.CanExecuteChanged" />.</remarks>
       </Docs>
     </Member>

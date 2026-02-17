@@ -71,10 +71,13 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
-    <!-- No matching elements were found for the following include tag -->
-    <include file="../../docs/Microsoft.Maui.Controls/ImageButton.xml" path="Type[@FullName='Microsoft.Maui.Controls.ImageButton']/Docs/*" />
+    <summary>
+            Represents a button that displays an image and reacts to touch events.
+            </summary>
+    <remarks>
+      <see cref="T:Microsoft.Maui.Controls.ImageButton" /> is similar to <see cref="T:Microsoft.Maui.Controls.Button" /> but displays an image instead of text.
+            It supports all standard button features including commands, events, borders, and visual states.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -91,10 +94,10 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.ImageButton" /> class.
+            </summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/ImageButton.xml" path="//Member[@MemberName='.ctor']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="Aspect">
@@ -114,11 +117,12 @@
         <ReturnType>Microsoft.Maui.Aspect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the scaling mode for the image.
+            This is a bindable property.
+            </summary>
+        <value>An <see cref="T:Microsoft.Maui.Aspect" /> value that determines how the image is scaled. The default is <see cref="F:Microsoft.Maui.Aspect.AspectFit" />.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/ImageButton.xml" path="//Member[@MemberName='Aspect']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="AspectProperty">
@@ -138,7 +142,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.Aspect" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.Aspect" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,11 +163,12 @@
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the color of the border around the image button.
+            This is a bindable property.
+            </summary>
+        <value>The color of the border. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/ImageButton.xml" path="//Member[@MemberName='BorderColor']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="BorderColorProperty">
@@ -183,7 +188,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.BorderColor" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.BorderColor" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,11 +209,12 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the width of the border around the image button, in device-independent units.
+            This is a bindable property.
+            </summary>
+        <value>The width of the border. The default is 0.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/ImageButton.xml" path="//Member[@MemberName='BorderWidth']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="BorderWidthProperty">
@@ -228,7 +234,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.BorderWidth" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.BorderWidth" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -271,7 +277,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when the <see cref="T:Microsoft.Maui.Controls.ImageButton" /> is clicked or tapped.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,11 +300,15 @@
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/ImageButton.xml" path="//Member[@MemberName='Command']/Docs/*" />
+        <summary>
+            Gets or sets the command to invoke when the image button is clicked.
+            This is a bindable property.
+            </summary>
+        <value>An <see cref="T:System.Windows.Input.ICommand" /> to execute when the button is clicked. The default is <see langword="null" />.</value>
+        <remarks>
+            This property is typically used in MVVM patterns to bind the button to a command in the view model.
+            The button's <see cref="P:Microsoft.Maui.Controls.VisualElement.IsEnabled" /> property is controlled by <see cref="M:System.Windows.Input.ICommand.CanExecute(System.Object)" />.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandParameter">
@@ -316,11 +328,12 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the parameter to pass to the <see cref="P:Microsoft.Maui.Controls.ImageButton.Command" /> when it is executed.
+            This is a bindable property.
+            </summary>
+        <value>The parameter object. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/ImageButton.xml" path="//Member[@MemberName='CommandParameter']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="CommandParameterProperty">
@@ -340,7 +353,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.CommandParameter" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.CommandParameter" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -361,7 +374,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.Command" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.Command" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -382,11 +395,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the corner radius for the image button border, in device-independent units.
+            This is a bindable property.
+            </summary>
+        <value>The corner radius of the border. The default is -1, which indicates the platform default.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/ImageButton.xml" path="//Member[@MemberName='CornerRadius']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="CornerRadiusProperty">
@@ -406,7 +420,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.CornerRadius" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.CornerRadius" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -452,11 +466,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets a value indicating whether the image is currently being loaded.
+            This is a bindable property.
+            </summary>
+        <value>
+          <see langword="true" /> if the image is loading; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/ImageButton.xml" path="//Member[@MemberName='IsLoading']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="IsLoadingProperty">
@@ -476,7 +492,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.IsLoading" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.IsLoading" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -497,11 +513,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets a value indicating whether the image should be rendered as opaque.
+            This is a bindable property.
+            </summary>
+        <value>
+          <see langword="true" /> if the image should be opaque; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/ImageButton.xml" path="//Member[@MemberName='IsOpaque']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="IsOpaqueProperty">
@@ -521,7 +539,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.IsOpaque" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.IsOpaque" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -542,11 +560,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets a value indicating whether the image button is currently pressed.
+            This is a bindable property.
+            </summary>
+        <value>
+          <see langword="true" /> if the button is pressed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/ImageButton.xml" path="//Member[@MemberName='IsPressed']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="IsPressedProperty">
@@ -566,7 +586,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.IsPressed" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.IsPressed" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1303,11 +1323,12 @@
         <ReturnType>Microsoft.Maui.Thickness</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the padding inside the image button.
+            This is a bindable property.
+            </summary>
+        <value>The padding around the image. The default is a <see cref="T:Microsoft.Maui.Thickness" /> with all values set to 0.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/ImageButton.xml" path="//Member[@MemberName='Padding']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="PaddingProperty">
@@ -1327,7 +1348,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.Padding" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.Padding" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1348,7 +1369,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when the <see cref="T:Microsoft.Maui.Controls.ImageButton" /> is pressed.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1365,15 +1388,21 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            For internal use by the .NET MAUI platform. Propagates the clicked event up the visual tree.
+            </summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/ImageButton.xml" path="//Member[@MemberName='PropagateUpClicked']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="PropagateUpPressed">
@@ -1389,15 +1418,21 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            For internal use by the .NET MAUI platform. Propagates the pressed event up the visual tree.
+            </summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/ImageButton.xml" path="//Member[@MemberName='PropagateUpPressed']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="PropagateUpReleased">
@@ -1413,15 +1448,21 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            For internal use by the .NET MAUI platform. Propagates the released event up the visual tree.
+            </summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/ImageButton.xml" path="//Member[@MemberName='PropagateUpReleased']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="RaiseImageSourcePropertyChanged">
@@ -1440,15 +1481,21 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-10.0">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            For internal use by the .NET MAUI platform. Raises the property changed event for the image source.
+            </summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/ImageButton.xml" path="//Member[@MemberName='RaiseImageSourcePropertyChanged']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="Released">
@@ -1468,7 +1515,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when the <see cref="T:Microsoft.Maui.Controls.ImageButton" /> is released.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1499,10 +1548,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            For internal use by the .NET MAUI platform. Triggers the <see cref="E:Microsoft.Maui.Controls.ImageButton.Clicked" /> event.
+            </summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/ImageButton.xml" path="//Member[@MemberName='SendClicked']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="SendPressed">
@@ -1532,10 +1581,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            For internal use by the .NET MAUI platform. Triggers the <see cref="E:Microsoft.Maui.Controls.ImageButton.Pressed" /> event.
+            </summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/ImageButton.xml" path="//Member[@MemberName='SendPressed']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="SendReleased">
@@ -1565,10 +1614,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            For internal use by the .NET MAUI platform. Triggers the <see cref="E:Microsoft.Maui.Controls.ImageButton.Released" /> event.
+            </summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/ImageButton.xml" path="//Member[@MemberName='SendReleased']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="SetIsLoading">
@@ -1600,8 +1649,10 @@
         <Parameter Name="isLoading" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="isLoading">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="isLoading">The loading state to set.</param>
+        <summary>
+            For internal use by the .NET MAUI platform. Sets the <see cref="P:Microsoft.Maui.Controls.ImageButton.IsLoading" /> property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1631,8 +1682,10 @@
         <Parameter Name="isPressed" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="isPressed">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="isPressed">The pressed state to set.</param>
+        <summary>
+            For internal use by the .NET MAUI platform. Sets the <see cref="P:Microsoft.Maui.Controls.ImageButton.IsPressed" /> property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1659,11 +1712,12 @@
         <ReturnType>Microsoft.Maui.Controls.ImageSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the source of the image to display on the button.
+            This is a bindable property.
+            </summary>
+        <value>An <see cref="T:Microsoft.Maui.Controls.ImageSource" /> that represents the image. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/ImageButton.xml" path="//Member[@MemberName='Source']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="SourceProperty">
@@ -1683,7 +1737,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.Source" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ImageButton.Source" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

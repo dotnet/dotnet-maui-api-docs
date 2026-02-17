@@ -16,8 +16,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>A <see cref="T:Microsoft.Maui.Controls.ItemsView" /> whose scrollable child views 'snap' into place.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+            A view that presents a scrollable collection of items where each item 'snaps' into place after scrolling.
+            </summary>
+    <remarks>
+      <see cref="T:Microsoft.Maui.Controls.CarouselView" /> is useful for displaying a horizontal or vertical carousel of items,
+            where the user can swipe through items and each item snaps into view. Unlike <see cref="T:Microsoft.Maui.Controls.CollectionView" />,
+            <see cref="T:Microsoft.Maui.Controls.CarouselView" /> enforces single-item snap points and provides additional features like looping
+            and position tracking.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,10 +41,10 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.CarouselView" /> class.
+            </summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/CarouselView.xml" path="//Member[@MemberName='.ctor']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="AnimateCurrentItemChanges">
@@ -63,11 +70,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets a value indicating whether current item changes should be animated. For internal use by platform renderers.
+            </summary>
+        <value>
+          <see langword="true" /> if current item changes should be animated; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/CarouselView.xml" path="//Member[@MemberName='AnimateCurrentItemChanges']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="AnimatePositionChanges">
@@ -93,11 +101,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets a value indicating whether position changes should be animated. For internal use by platform renderers.
+            </summary>
+        <value>
+          <see langword="true" /> if position changes should be animated; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/CarouselView.xml" path="//Member[@MemberName='AnimatePositionChanges']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="CurrentItem">
@@ -117,11 +126,14 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/CarouselView.xml" path="//Member[@MemberName='CurrentItem']/Docs/*" />
+        <summary>
+            Gets or sets the currently displayed item in the carousel.
+            </summary>
+        <value>The data item currently centered in the carousel, or <see langword="null" /> if no item is selected.</value>
+        <remarks>
+            This property is bindable and supports two-way binding. Setting this property programmatically
+            will scroll the carousel to display the specified item.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentItemChanged">
@@ -141,7 +153,9 @@
         <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.CurrentItemChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when the <see cref="P:Microsoft.Maui.Controls.CarouselView.CurrentItem" /> changes.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,11 +176,11 @@
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the command to execute when the current item changes.
+            </summary>
+        <value>An <see cref="T:System.Windows.Input.ICommand" /> to execute when the current item changes.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/CarouselView.xml" path="//Member[@MemberName='CurrentItemChangedCommand']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="CurrentItemChangedCommandParameter">
@@ -186,11 +200,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the parameter to pass to <see cref="P:Microsoft.Maui.Controls.CarouselView.CurrentItemChangedCommand" />.
+            </summary>
+        <value>The parameter object to pass to the command.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/CarouselView.xml" path="//Member[@MemberName='CurrentItemChangedCommandParameter']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="CurrentItemChangedCommandParameterProperty">
@@ -273,10 +287,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Visual state name for the current item in the carousel.
+            </summary>
+        <returns>The string "CurrentItem".</returns>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/CarouselView.xml" path="//Member[@MemberName='CurrentItemVisualState']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="DefaultItemVisualState">
@@ -296,10 +311,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Visual state name for items that are neither current, next, nor previous.
+            </summary>
+        <returns>The string "DefaultItem".</returns>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/CarouselView.xml" path="//Member[@MemberName='DefaultItemVisualState']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="IndicatorView">
@@ -325,11 +341,14 @@
         <ReturnType>Microsoft.Maui.Controls.IndicatorView</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/CarouselView.xml" path="//Member[@MemberName='IndicatorView']/Docs/*" />
+        <summary>
+            Sets the <see cref="P:Microsoft.Maui.Controls.CarouselView.IndicatorView" /> to synchronize with this carousel's position and items.
+            </summary>
+        <value>The <see cref="P:Microsoft.Maui.Controls.CarouselView.IndicatorView" /> to link to this carousel.</value>
+        <remarks>
+            Setting this property automatically binds the indicator view's <see cref="P:Microsoft.Maui.Controls.IndicatorView.Position" /> and
+            <see cref="P:Microsoft.Maui.Controls.IndicatorView.ItemsSource" /> to this carousel's corresponding properties.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsBounceEnabled">
@@ -349,11 +368,15 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/CarouselView.xml" path="//Member[@MemberName='IsBounceEnabled']/Docs/*" />
+        <summary>
+            Gets or sets a value indicating whether bounce effects are enabled when scrolling reaches the end of the carousel.
+            </summary>
+        <value>
+          <see langword="true" /> to enable bounce effects; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+            On iOS, this controls whether the carousel bounces when reaching the first or last item.
+            The effect may vary by platform.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsBounceEnabledProperty">
@@ -394,11 +417,15 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/CarouselView.xml" path="//Member[@MemberName='IsDragging']/Docs/*" />
+        <summary>
+            Gets a value indicating whether the user is currently dragging the carousel.
+            </summary>
+        <value>
+          <see langword="true" /> if the user is actively dragging; otherwise, <see langword="false" />.</value>
+        <remarks>
+            This property is set to <see langword="true" /> when the user begins a drag gesture and returns to <see langword="false" />
+            when the gesture completes or is cancelled.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDraggingProperty">
@@ -439,11 +466,15 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/CarouselView.xml" path="//Member[@MemberName='IsScrollAnimated']/Docs/*" />
+        <summary>
+            Gets or sets a value indicating whether scrolling between items is animated.
+            </summary>
+        <value>
+          <see langword="true" /> to animate scrolling; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+            When <see langword="true" />, programmatic changes to <see cref="P:Microsoft.Maui.Controls.CarouselView.Position" /> or <see cref="P:Microsoft.Maui.Controls.CarouselView.CurrentItem" />
+            will animate the transition. When <see langword="false" />, the carousel jumps instantly to the new position.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsScrollAnimatedProperty">
@@ -490,11 +521,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets a value indicating whether the carousel is currently scrolling.
+            </summary>
+        <value>
+          <see langword="true" /> if scrolling is in progress; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/CarouselView.xml" path="//Member[@MemberName='IsScrolling']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="IsSwipeEnabled">
@@ -514,11 +546,15 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/CarouselView.xml" path="//Member[@MemberName='IsSwipeEnabled']/Docs/*" />
+        <summary>
+            Gets or sets a value indicating whether swipe gestures are enabled for navigation.
+            </summary>
+        <value>
+          <see langword="true" /> to enable swipe gestures; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+            When disabled, users cannot navigate between items using swipe gestures.
+            Programmatic navigation using <see cref="P:Microsoft.Maui.Controls.CarouselView.Position" /> or <see cref="P:Microsoft.Maui.Controls.CarouselView.CurrentItem" /> still works when this is disabled.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSwipeEnabledProperty">
@@ -565,11 +601,14 @@
         <ReturnType>Microsoft.Maui.Controls.LinearItemsLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/CarouselView.xml" path="//Member[@MemberName='ItemsLayout']/Docs/*" />
+        <summary>
+            Gets or sets the layout used to arrange items in the carousel.
+            </summary>
+        <value>A <see cref="T:Microsoft.Maui.Controls.LinearItemsLayout" /> that defines the layout direction and snap behavior. The default is a horizontal layout with mandatory single snap points.</value>
+        <remarks>
+            The items layout determines whether items are arranged horizontally or vertically,
+            and controls snap behavior through <see cref="P:Microsoft.Maui.Controls.ItemsLayout.SnapPointsType" /> and <see cref="P:Microsoft.Maui.Controls.ItemsLayout.SnapPointsAlignment" />.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemsLayoutProperty">
@@ -610,11 +649,14 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/CarouselView.xml" path="//Member[@MemberName='Loop']/Docs/*" />
+        <summary>
+            Gets or sets a value indicating whether the carousel loops back to the first item after reaching the last item.
+            </summary>
+        <value>
+          <see langword="true" /> if the carousel should loop continuously; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+            When enabled, scrolling past the last item returns to the first item, and scrolling before the first item goes to the last item.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="LoopProperty">
@@ -655,10 +697,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Visual state name for the next item in the carousel.
+            </summary>
+        <returns>The string "NextItem".</returns>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/CarouselView.xml" path="//Member[@MemberName='NextItemVisualState']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="OnCurrentItemChanged">
@@ -681,8 +724,10 @@
         <Parameter Name="args" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="args">Event arguments containing the previous and new current items.</param>
+        <summary>
+            Called when the current item changes. Override this method to add custom logic when the current item changes.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -706,8 +751,10 @@
         <Parameter Name="args" Type="Microsoft.Maui.Controls.PositionChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="args">Event arguments containing the previous and new position values.</param>
+        <summary>
+            Called when the position changes. Override this method to add custom logic when the carousel position changes.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -728,11 +775,14 @@
         <ReturnType>Microsoft.Maui.Thickness</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/CarouselView.xml" path="//Member[@MemberName='PeekAreaInsets']/Docs/*" />
+        <summary>
+            Gets or sets the amount of space to reserve on each side of the current item to show a peek of adjacent items.
+            </summary>
+        <value>A <see cref="T:Microsoft.Maui.Thickness" /> value defining the peek area insets. The default is 0 on all sides.</value>
+        <remarks>
+            Use this property to show a preview of adjacent items on either side of the current item.
+            This helps users understand that more items are available by swiping.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="PeekAreaInsetsProperty">
@@ -773,11 +823,14 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/CarouselView.xml" path="//Member[@MemberName='Position']/Docs/*" />
+        <summary>
+            Gets or sets the index of the currently displayed item in the carousel.
+            </summary>
+        <value>The zero-based index of the current item. The default is 0.</value>
+        <remarks>
+            This property is bindable and supports two-way binding. Setting this property programmatically
+            will scroll the carousel to display the item at the specified index.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="PositionChanged">
@@ -797,7 +850,9 @@
         <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.PositionChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when the <see cref="P:Microsoft.Maui.Controls.CarouselView.Position" /> changes.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -818,11 +873,11 @@
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the command to execute when the carousel position changes.
+            </summary>
+        <value>An <see cref="T:System.Windows.Input.ICommand" /> to execute when the position changes.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/CarouselView.xml" path="//Member[@MemberName='PositionChangedCommand']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="PositionChangedCommandParameter">
@@ -842,11 +897,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the parameter to pass to <see cref="P:Microsoft.Maui.Controls.CarouselView.PositionChangedCommand" />.
+            </summary>
+        <value>The parameter object to pass to the command.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/CarouselView.xml" path="//Member[@MemberName='PositionChangedCommandParameter']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="PositionChangedCommandParameterProperty">
@@ -929,10 +984,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Visual state name for the previous item in the carousel.
+            </summary>
+        <returns>The string "PreviousItem".</returns>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/CarouselView.xml" path="//Member[@MemberName='PreviousItemVisualState']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="SetIsDragging">
@@ -962,7 +1018,9 @@
       </Parameters>
       <Docs>
         <param name="value">The value to set.</param>
-        <summary>To be added.</summary>
+        <summary>
+            Sets the dragging state of the carousel. For internal use by platform renderers.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -983,11 +1041,14 @@
         <ReturnType>System.Collections.ObjectModel.ObservableCollection&lt;Microsoft.Maui.Controls.View&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/CarouselView.xml" path="//Member[@MemberName='VisibleViews']/Docs/*" />
+        <summary>
+            Gets the collection of views currently visible in the carousel.
+            </summary>
+        <value>An <see cref="T:System.Collections.ObjectModel.ObservableCollection`1" /> of <see cref="T:Microsoft.Maui.Controls.View" /> objects that are currently visible.</value>
+        <remarks>
+            This collection is automatically updated as the user scrolls through the carousel.
+            It includes the current item and any partially visible adjacent items based on <see cref="P:Microsoft.Maui.Controls.CarouselView.PeekAreaInsets" />.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="VisibleViewsProperty">

@@ -67,9 +67,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">The platform specific element on which to perform the operation.</param>
-        <param name="value">The new property value to assign.</param>
-        <summary>Sets a Boolean value that tells whether iOS will wait to determine if a touch is intended as a scroll, or scroll immediately.</summary>
+        <param name="element">The element to set the value on.</param>
+        <param name="value">
+          <see langword="true" /> to delay; <see langword="false" /> for immediate touch response.</param>
+        <summary>Sets whether iOS delays touch events to determine scroll intent.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,10 +95,11 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
-        <param name="value">The new property value to assign.</param>
-        <summary>Sets a Boolean value that tells whether iOS will wait to determine if a touch is intended as a scroll, or scroll immediately.</summary>
-        <returns>The updated configuration object, on which more methods may be called.</returns>
+        <param name="config">The platform configuration.</param>
+        <param name="value">
+          <see langword="true" /> to delay; <see langword="false" /> for immediate touch response.</param>
+        <summary>Sets whether iOS delays touch events to determine scroll intent.</summary>
+        <returns>The updated platform configuration.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

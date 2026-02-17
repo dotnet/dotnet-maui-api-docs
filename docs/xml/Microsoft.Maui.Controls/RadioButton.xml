@@ -67,11 +67,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
-    <!-- No matching elements were found for the following include tag -->
-    <include file="../../docs/Microsoft.Maui.Controls/RadioButton.xml" path="Type[@FullName='Microsoft.Maui.Controls.RadioButton']/Docs/*" />
-    <include file="../../../docs/Microsoft.Maui.Controls/RadioButton.xml" path="Type[@FullName='Microsoft.Maui.Controls.RadioButton']/Docs/*" />
+    <summary>
+            Represents a button that can be selected from a group of radio buttons, where only one button can be selected at a time.
+            </summary>
+    <remarks>
+      <see cref="T:Microsoft.Maui.Controls.RadioButton" /> controls are typically used in groups where users need to select one option from multiple choices.
+            Radio buttons in the same group are mutually exclusive - selecting one will automatically deselect the others.
+            Use the <see cref="P:Microsoft.Maui.Controls.RadioButton.GroupName" /> property or <see cref="T:Microsoft.Maui.Controls.RadioButtonGroup" /> to group radio buttons together.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -88,10 +91,10 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.RadioButton" /> class.
+            </summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/RadioButton.xml" path="//Member[@MemberName='.ctor']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="BorderColor">
@@ -111,11 +114,12 @@
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the color of the border around the radio button.
+            This is a bindable property.
+            </summary>
+        <value>The border <see cref="T:Microsoft.Maui.Graphics.Color" />. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/RadioButton.xml" path="//Member[@MemberName='BorderColor']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="BorderColorProperty">
@@ -135,7 +139,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RadioButton.BorderColor" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RadioButton.BorderColor" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,11 +160,12 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the width of the border around the radio button.
+            This is a bindable property.
+            </summary>
+        <value>The border width in device-independent units. The default is 0.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/RadioButton.xml" path="//Member[@MemberName='BorderWidth']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="BorderWidthProperty">
@@ -180,7 +185,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RadioButton.BorderWidth" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RadioButton.BorderWidth" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -223,11 +228,12 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the spacing between characters in the text.
+            This is a bindable property.
+            </summary>
+        <value>The character spacing value. The default is 0.0.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/RadioButton.xml" path="//Member[@MemberName='CharacterSpacing']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="CharacterSpacingProperty">
@@ -247,7 +253,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RadioButton.CharacterSpacing" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RadioButton.CharacterSpacing" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,7 +274,9 @@
         <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.CheckedChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when the <see cref="P:Microsoft.Maui.Controls.RadioButton.IsChecked" /> property changes.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -289,10 +297,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The name of the checked indicator element in the control template.
+            </summary>
+        <returns>The string "CheckedIndicator".</returns>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/RadioButton.xml" path="//Member[@MemberName='CheckedIndicator']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="CheckedVisualState">
@@ -312,10 +321,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The visual state name for when the radio button is checked.
+            </summary>
+        <returns>The string "Checked".</returns>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/RadioButton.xml" path="//Member[@MemberName='CheckedVisualState']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="Content">
@@ -335,11 +345,12 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the content to display within the radio button.
+            This is a bindable property.
+            </summary>
+        <value>The content object. Can be a string, <see cref="T:Microsoft.Maui.Controls.View" />, or any object. For non-View types, the <c>ToString()</c> representation is displayed.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/RadioButton.xml" path="//Member[@MemberName='Content']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="ContentAsString">
@@ -360,11 +371,13 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/RadioButton.xml" path="//Member[@MemberName='ContentAsString']/Docs/*" />
+        <summary>
+            Converts the <see cref="P:Microsoft.Maui.Controls.RadioButton.Content" /> to a string representation.
+            </summary>
+        <returns>The string representation of the content, or the result of <c>ToString()</c> if content is not a string.</returns>
+        <remarks>
+            If <see cref="P:Microsoft.Maui.Controls.RadioButton.Content" /> is a <see cref="T:Microsoft.Maui.Controls.View" />, a warning is logged and the <c>ToString()</c> representation is used instead.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentProperty">
@@ -384,7 +397,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RadioButton.Content" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RadioButton.Content" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -431,11 +444,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the corner radius of the radio button border.
+            This is a bindable property.
+            </summary>
+        <value>The corner radius in device-independent units. The default is -1, which indicates the platform default.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/RadioButton.xml" path="//Member[@MemberName='CornerRadius']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="CornerRadiusProperty">
@@ -455,7 +469,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RadioButton.CornerRadius" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RadioButton.CornerRadius" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -476,11 +490,11 @@
         <ReturnType>Microsoft.Maui.Controls.ControlTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the default control template for the <see cref="T:Microsoft.Maui.Controls.RadioButton" />.
+            </summary>
+        <value>The default <see cref="T:Microsoft.Maui.Controls.ControlTemplate" /> that defines the visual structure of a radio button.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/RadioButton.xml" path="//Member[@MemberName='DefaultTemplate']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="FontAttributes">
@@ -500,11 +514,12 @@
         <ReturnType>Microsoft.Maui.Controls.FontAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the font attributes (bold, italic) for the text.
+            This is a bindable property.
+            </summary>
+        <value>A <see cref="T:Microsoft.Maui.Controls.FontAttributes" /> value. The default is <see cref="F:Microsoft.Maui.Controls.FontAttributes.None" />.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/RadioButton.xml" path="//Member[@MemberName='FontAttributes']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="FontAttributesProperty">
@@ -524,7 +539,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RadioButton.FontAttributes" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RadioButton.FontAttributes" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -545,8 +560,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets a value indicating whether the font size should scale automatically based on user accessibility settings.
+            This is a bindable property.
+            </summary>
+        <value>
+          <see langword="true" /> if font auto-scaling is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -567,7 +586,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RadioButton.FontAutoScalingEnabled" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RadioButton.FontAutoScalingEnabled" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -588,11 +607,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the font family for the text.
+            This is a bindable property.
+            </summary>
+        <value>The font family name. The default is <see langword="null" />, which uses the platform default font.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/RadioButton.xml" path="//Member[@MemberName='FontFamily']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="FontFamilyProperty">
@@ -612,7 +632,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RadioButton.FontFamily" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RadioButton.FontFamily" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -639,11 +659,12 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the size of the font.
+            This is a bindable property.
+            </summary>
+        <value>The font size. The default is the platform default font size.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/RadioButton.xml" path="//Member[@MemberName='FontSize']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="FontSizeProperty">
@@ -663,7 +684,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RadioButton.FontSize" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RadioButton.FontSize" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -684,11 +705,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the name that identifies which radio buttons are mutually exclusive.
+            This is a bindable property.
+            </summary>
+        <value>The group name. Radio buttons with the same group name are mutually exclusive. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/RadioButton.xml" path="//Member[@MemberName='GroupName']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="GroupNameProperty">
@@ -708,7 +730,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RadioButton.GroupName" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RadioButton.GroupName" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -729,11 +751,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets a value indicating whether the radio button is checked.
+            This is a bindable property.
+            </summary>
+        <value>
+          <see langword="true" /> if the radio button is checked; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/RadioButton.xml" path="//Member[@MemberName='IsChecked']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="IsCheckedProperty">
@@ -753,7 +777,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RadioButton.IsChecked" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RadioButton.IsChecked" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1537,10 +1561,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The name of the template root element in the control template.
+            </summary>
+        <returns>The string "Root".</returns>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/RadioButton.xml" path="//Member[@MemberName='TemplateRootName']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="TextColor">
@@ -1560,11 +1585,12 @@
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the color of the text displayed in the radio button.
+            This is a bindable property.
+            </summary>
+        <value>The text <see cref="T:Microsoft.Maui.Graphics.Color" />. The default is <see langword="null" />, which uses the platform default.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/RadioButton.xml" path="//Member[@MemberName='TextColor']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="TextColorProperty">
@@ -1584,7 +1610,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RadioButton.TextColor" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RadioButton.TextColor" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1608,11 +1634,12 @@
         <ReturnType>Microsoft.Maui.TextTransform</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the text transformation to apply to the text.
+            This is a bindable property.
+            </summary>
+        <value>A <see cref="T:Microsoft.Maui.TextTransform" /> value. The default is <see cref="F:Microsoft.Maui.TextTransform.None" />.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/RadioButton.xml" path="//Member[@MemberName='TextTransform']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="TextTransformProperty">
@@ -1632,7 +1659,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RadioButton.TextTransform" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RadioButton.TextTransform" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1653,10 +1680,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The name of the unchecked button element in the control template.
+            </summary>
+        <returns>The string "Button".</returns>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/RadioButton.xml" path="//Member[@MemberName='UncheckedButton']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="UncheckedVisualState">
@@ -1676,10 +1704,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The visual state name for when the radio button is unchecked.
+            </summary>
+        <returns>The string "Unchecked".</returns>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/RadioButton.xml" path="//Member[@MemberName='UncheckedVisualState']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="UpdateFormsText">
@@ -1706,10 +1735,12 @@
         <Parameter Name="textTransform" Type="Microsoft.Maui.TextTransform" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="textTransform">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="source">The source text to transform.</param>
+        <param name="textTransform">The text transformation to apply.</param>
+        <summary>
+            Applies the specified text transformation to the source text.
+            </summary>
+        <returns>The transformed text.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1730,11 +1761,12 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the value associated with this radio button.
+            This is a bindable property.
+            </summary>
+        <value>The value object. This is typically used to identify which option was selected in a group of radio buttons.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/RadioButton.xml" path="//Member[@MemberName='Value']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="ValueProperty">
@@ -1754,7 +1786,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RadioButton.Value" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.RadioButton.Value" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

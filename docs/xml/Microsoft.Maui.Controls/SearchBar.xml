@@ -1,6 +1,6 @@
 <Type Name="SearchBar" FullName="Microsoft.Maui.Controls.SearchBar">
   <TypeSignature Language="C#" Value="public class SearchBar : Microsoft.Maui.Controls.InputView, Microsoft.Maui.Controls.IElementConfiguration&lt;Microsoft.Maui.Controls.SearchBar&gt;, Microsoft.Maui.Controls.ISearchBarController, Microsoft.Maui.Controls.ITextAlignmentElement, Microsoft.Maui.ISearchBar" FrameworkAlternate="net-maui-10.0" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SearchBar extends Microsoft.Maui.Controls.InputView implements class Microsoft.Maui.Controls.IElementConfiguration`1&lt;class Microsoft.Maui.Controls.SearchBar&gt;, class Microsoft.Maui.Controls.ISearchBarController, class Microsoft.Maui.Controls.ITextAlignmentElement, class Microsoft.Maui.IElement, class Microsoft.Maui.IPlaceholder, class Microsoft.Maui.ISearchBar, class Microsoft.Maui.IText, class Microsoft.Maui.ITextAlignment, class Microsoft.Maui.ITextInput, class Microsoft.Maui.ITextStyle, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi SearchBar extends Microsoft.Maui.Controls.InputView implements class Microsoft.Maui.Controls.IElementConfiguration`1&lt;class Microsoft.Maui.Controls.SearchBar&gt;, class Microsoft.Maui.Controls.ISearchBarController, class Microsoft.Maui.Controls.ITextAlignmentElement, class Microsoft.Maui.IElement, class Microsoft.Maui.IPlaceholder, class Microsoft.Maui.ISearchBar, class Microsoft.Maui.IText, class Microsoft.Maui.ITextAlignment, class Microsoft.Maui.ITextInput, class Microsoft.Maui.ITextStyle, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" FrameworkAlternate="net-maui-10.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.SearchBar" />
   <TypeSignature Language="VB.NET" Value="Public Class SearchBar&#xA;Inherits InputView&#xA;Implements IElementConfiguration(Of SearchBar), ISearchBar, ISearchBarController, ITextAlignmentElement" FrameworkAlternate="net-maui-10.0" />
   <TypeSignature Language="C++ CLI" Value="public ref class SearchBar : Microsoft::Maui::Controls::InputView, Microsoft::Maui::Controls::IElementConfiguration&lt;Microsoft::Maui::Controls::SearchBar ^&gt;, Microsoft::Maui::Controls::ISearchBarController, Microsoft::Maui::Controls::ITextAlignmentElement, Microsoft::Maui::ISearchBar" FrameworkAlternate="net-maui-10.0" />
@@ -64,57 +64,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>A <see cref="T:Microsoft.Maui.Controls.View" /> control that provides a search box.</summary>
+    <summary>
+            Represents a specialized input control for entering search text with a built-in search button and cancel button.
+            </summary>
     <remarks>
-      <para>The following example shows a basic use.</para>
-      <example>
-        <code lang="csharp lang-csharp"><![CDATA[
-public class App : Application
-{
-    Label resultsLabel;
-    SearchBar searchBar;
-    public App ()
-    {
-        resultsLabel = new Label {
-            Text = "Result will appear here.",
-            VerticalOptions = LayoutOptions.FillAndExpand,
-            FontSize = 25
-        };
-        
-        searchBar = new SearchBar {
-            Placeholder = "Enter search term",
-            SearchCommand = new Command(() => {resultsLabel.Text = "Result: " + searchBar.Text + " is what you asked for.";})
-        };
-                
-        MainPage = new ContentPage {
-            Content = new StackLayout {
-                VerticalOptions = LayoutOptions.Start,
-                Children = {
-                    new Label {
-                        HorizontalTextAlignment = TextAlignment.Center,
-                        Text = "SearchBar",
-                        FontSize = 50
-                    },
-                    searchBar,
-                    new ScrollView
-                    {
-                        Content = resultsLabel,
-                        VerticalOptions = LayoutOptions.FillAndExpand
-                    }
-                },
-                Padding = new Thickness(10, Device.OnPlatform(20, 0, 0), 10, 5)
-            }
-        };
-    }
-    
-    // OnStart, OnSleep, and OnResume implementations, & etc.
-    
-}]]></code>
-      </example>
-      <para>
-        <img href="~/xml/Microsoft.Maui.Controls/_images/SearchBar.TripleScreenShot.png" />
-      </para>
-    </remarks>
+            The <see cref="T:Microsoft.Maui.Controls.SearchBar" /> provides a user interface optimized for text searches, including a search icon, 
+            placeholder text, and optionally a cancel button. Use the <see cref="P:Microsoft.Maui.Controls.SearchBar.SearchCommand" /> to respond to search requests.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -131,7 +87,9 @@ public class App : Application
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new <see cref="T:Microsoft.Maui.Controls.SearchBar" />.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.SearchBar" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,8 +110,11 @@ public class App : Application
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the color of the cancel button.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the color of the cancel button.
+            This is a bindable property.
+            </summary>
+        <value>The <see cref="T:Microsoft.Maui.Graphics.Color" /> of the cancel button. The default is <see langword="null" />, which uses the platform default.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,7 +135,7 @@ public class App : Application
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.SearchBar.CancelButtonColor" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.SearchBar.CancelButtonColor" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,10 +156,11 @@ public class App : Application
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Bindable property for the spacing between characters in the text.
+            This is a bindable property.
+            </summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/SearchBar.xml" path="//Member[@MemberName='CharacterSpacingProperty']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="ControlsSearchBarMapper">
@@ -354,8 +316,11 @@ public class App : Application
         <ReturnType>Microsoft.Maui.TextAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the horizontal text alignment.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the horizontal alignment of the text within the search bar.
+            This is a bindable property.
+            </summary>
+        <value>A <see cref="T:Microsoft.Maui.TextAlignment" /> value. The default is <see cref="F:Microsoft.Maui.TextAlignment.Start" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -376,7 +341,7 @@ public class App : Application
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.SearchBar.HorizontalTextAlignment" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.SearchBar.HorizontalTextAlignment" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -620,7 +585,9 @@ public class App : Application
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>
+            For internal use by the .NET MAUI platform. Raises the <see cref="E:Microsoft.Maui.Controls.SearchBar.SearchButtonPressed" /> event and executes the <see cref="P:Microsoft.Maui.Controls.SearchBar.SearchCommand" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -641,7 +608,10 @@ public class App : Application
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.InputView.PlaceholderColor" /> property.</summary>
+        <summary>
+            Bindable property for the color of the placeholder text.
+            This is a bindable property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -662,7 +632,10 @@ public class App : Application
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.InputView.Placeholder" /> property.</summary>
+        <summary>
+            Bindable property for the placeholder text displayed when the search bar is empty.
+            This is a bindable property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -705,7 +678,7 @@ public class App : Application
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.SearchBar.ReturnType" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.SearchBar.ReturnType" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -726,7 +699,9 @@ public class App : Application
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when the user finalizes the search text by pressing the search/return button on the keyboard.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -747,9 +722,15 @@ public class App : Application
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the command that is run when the user presses Search button.</summary>
-        <value>The command that is run when the user presses Search button.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+            Gets or sets the command to execute when the user performs a search.
+            This is a bindable property.
+            </summary>
+        <value>An <see cref="T:System.Windows.Input.ICommand" /> to execute. The default is <see langword="null" />.</value>
+        <remarks>
+            This command is executed when the user presses the search button on the keyboard or when <see cref="M:Microsoft.Maui.Controls.SearchBar.OnSearchButtonPressed" /> is called.
+            The <see cref="P:Microsoft.Maui.Controls.SearchBar.SearchCommandParameter" /> is passed as the command parameter.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="SearchCommandParameter">
@@ -769,8 +750,11 @@ public class App : Application
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the parameter that is sent to the <see cref="P:Microsoft.Maui.Controls.SearchBar.SearchCommand" />.</summary>
-        <value>The parameter that is sent to the <see cref="P:Microsoft.Maui.Controls.SearchBar.SearchCommand" />.</value>
+        <summary>
+            Gets or sets the parameter to pass to the <see cref="P:Microsoft.Maui.Controls.SearchBar.SearchCommand" />.
+            This is a bindable property.
+            </summary>
+        <value>The parameter object. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -791,7 +775,7 @@ public class App : Application
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.SearchBar.SearchCommandParameter" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.SearchBar.SearchCommandParameter" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -812,7 +796,7 @@ public class App : Application
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.SearchBar.SearchCommand" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.SearchBar.SearchCommand" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -834,8 +818,9 @@ public class App : Application
       <Docs>
         <summary>
             Gets or sets the color of the search icon in the <see cref="T:Microsoft.Maui.Controls.SearchBar" />.
+            This is a bindable property.
             </summary>
-        <value>To be added.</value>
+        <value>The <see cref="T:Microsoft.Maui.Graphics.Color" /> of the search icon. The default is <see langword="null" />, which uses the platform default.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -855,7 +840,7 @@ public class App : Application
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.SearchBar.SearchIconColor" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.SearchBar.SearchIconColor" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -898,7 +883,10 @@ public class App : Application
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.InputView.TextColor" /> property.</summary>
+        <summary>
+            Bindable property for the color of the search text.
+            This is a bindable property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -919,7 +907,10 @@ public class App : Application
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Backing store for the <see cref="P:Microsoft.Maui.Controls.InputView.Text" /> property.</summary>
+        <summary>
+            Bindable property for the text displayed in the search bar.
+            This is a bindable property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -940,11 +931,12 @@ public class App : Application
         <ReturnType>Microsoft.Maui.TextAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the vertical alignment of the text within the search bar.
+            This is a bindable property.
+            </summary>
+        <value>A <see cref="T:Microsoft.Maui.TextAlignment" /> value. The default is <see cref="F:Microsoft.Maui.TextAlignment.Start" />.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/SearchBar.xml" path="//Member[@MemberName='VerticalTextAlignment']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="VerticalTextAlignmentProperty">
@@ -964,7 +956,7 @@ public class App : Application
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.SearchBar.VerticalTextAlignment" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.SearchBar.VerticalTextAlignment" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

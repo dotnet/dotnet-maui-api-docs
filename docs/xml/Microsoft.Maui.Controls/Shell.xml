@@ -54,7 +54,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>A <see cref="T:Microsoft.Maui.Controls.Page" /> that provides fundamental UI features that most applications require, leaving you to focus on the application's core workload.</summary>
+    <summary>
+            The main navigation container for .NET MAUI apps, providing flyout and tab-based navigation.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -72,7 +74,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new <see cref="T:Microsoft.Maui.Controls.Shell" /> element with default values.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.Shell" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,7 +142,9 @@
         <ReturnType>Microsoft.Maui.Controls.Shell</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Static property providing access to the current <see cref="T:Microsoft.Maui.Controls.Shell" />.</summary>
+        <summary>
+            Gets the current <see cref="T:Microsoft.Maui.Controls.Shell" /> instance from the active application window.
+            </summary>
         <value>To be added.</value>
         <remarks>
           <para>This is a typecast alias for <c>Microsoft.Maui.Controls.Application.Current.MainPage</c>.</para>
@@ -238,7 +242,7 @@
         <ReturnType>Microsoft.Maui.Controls.ShellNavigationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The current navigation state of the <see cref="T:Microsoft.Maui.Controls.Shell" />.</summary>
+        <summary>Gets the current navigation state of the Shell. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1236,12 +1240,12 @@
         <Parameter Name="obj" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>Gets the value of the <see cref="M:Microsoft.Maui.Controls.Shell.BackButtonBehaviorProperty" /> of the <paramref name="obj" />.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object from which to get the back button behavior.</param>
+        <summary>
+            Gets the <see cref="T:Microsoft.Maui.Controls.BackButtonBehavior" /> for the specified <paramref name="obj" />.
+            </summary>
+        <returns>The back button behavior for the object.</returns>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/Shell.xml" path="//Member[@MemberName='GetBackButtonBehavior']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="GetBackgroundColor">
@@ -1938,9 +1942,9 @@
         <Parameter Name="state" Type="Microsoft.Maui.Controls.ShellNavigationState" />
       </Parameters>
       <Docs>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="state">The shell navigation state to navigate to.</param>
+        <summary>Asynchronously navigates to the specified <paramref name="state" />.</summary>
+        <returns>A task that represents the asynchronous navigation operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1995,10 +1999,10 @@
         <Parameter Name="animate" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="state">To be added.</param>
-        <param name="animate">To be added.</param>
-        <summary>Asynchronously navigates to <paramref name="state" />, optionally animating.</summary>
-        <returns>To be added.</returns>
+        <param name="state">The shell navigation state to navigate to.</param>
+        <param name="animate">Whether to animate the navigation transition.</param>
+        <summary>Asynchronously navigates to the specified <paramref name="state" /> with animation control.</summary>
+        <returns>A task that represents the asynchronous navigation operation.</returns>
         <remarks>
           <para>Note that <see cref="T:Microsoft.Maui.Controls.ShellNavigationState" /> has implicit conversions from <see langword="string" /> and <see cref="T:System.Uri" />, so developers may write code such as the following, with no explicit instantiation of the <see cref="T:Microsoft.Maui.Controls.ShellNavigationState" />:</para>
           <example>
@@ -2123,7 +2127,7 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Controls.ShellItem&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The collection of <see cref="T:Microsoft.Maui.Controls.ShellItem" /> objects managed by <c>this</c><see cref="T:Microsoft.Maui.Controls.Shell" />.</summary>
+        <summary>Gets the collection of <see cref="T:Microsoft.Maui.Controls.ShellItem" /> objects in the Shell. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -52,35 +52,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>A <see cref="T:Microsoft.Maui.Controls.View" /> that allows date picking.</summary>
+    <summary>
+            A view control that allows date selection.
+            </summary>
     <remarks>
-      <para>The visual representation of a DatePicker is very similar to the one of <see cref="T:Microsoft.Maui.Controls.Entry" />, except that a special control for picking a date appears in place of a keyboard.</para>
-      <para>
-        <img href="~/xml/Microsoft.Maui.Controls/_images/DatePicker.TripleScreenShot.png" />
-      </para>
-      <example>
-        <para>The example below creates a working <see cref="T:Microsoft.Maui.Controls.DatePicker" /> that displays the current date and allows the user to select a date between the specified ranges. The value for the <see cref="P:Microsoft.Maui.Controls.DatePicker.Date" /> property is specified with the <c>x:Static</c> markup extension, and the <see cref="P:Microsoft.Maui.Controls.DatePicker.MinimumDate" /> and <see cref="P:Microsoft.Maui.Controls.DatePicker.MaximumDate" /> properties are specified by calling the <see cref="M:System.DateTime.Parse*" /> method with the <c>x:FactoryMethod</c> and `x:Arguments` tags. Note: the example below requires a namespace declaration in the root <c>ContentPage</c> or <c>ContentView</c> tags. In particular, <c>xmlns:sys="clr-namespace:System;assembly=mscorlib"</c> must appear in the attribute list for the root element, so that the XAML parser can resolve the name, <c>sys:DateTime</c>.</para>
-        <code lang="XAML"><![CDATA[<StackLayout>
-      <DatePicker VerticalOptions="CenterAndExpand" Date="{x:Static sys:DateTime.Now}">
-         <DatePicker.Format>yyyy-MM-dd</DatePicker.Format>
-         <DatePicker.MinimumDate>
-            <sys:DateTime x:FactoryMethod="Parse">
-               <x:Arguments>
-                  <x:String>Jan 1 2000</x:String>
-               </x:Arguments>
-            </sys:DateTime>
-         </DatePicker.MinimumDate>
-         <DatePicker.MaximumDate>
-            <sys:DateTime x:FactoryMethod="Parse">
-               <x:Arguments>
-                  <x:String>Dec 31 2050</x:String>
-               </x:Arguments>
-            </sys:DateTime>
-         </DatePicker.MaximumDate>
-      </DatePicker>
-   </StackLayout>]]></code>
-      </example>
-    </remarks>
+            The DatePicker displays a date selection interface. Users can select a date within the range 
+            specified by <see cref="P:Microsoft.Maui.Controls.DatePicker.MinimumDate" /> and <see cref="P:Microsoft.Maui.Controls.DatePicker.MaximumDate" />. The selected date is stored in the <see cref="P:Microsoft.Maui.Controls.DatePicker.Date" /> property.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -118,11 +96,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the character spacing for the date picker text. This is a bindable property.</summary>
+        <value>A <see cref="T:System.Double" /> representing the spacing between characters.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/DatePicker.xml" path="//Member[@MemberName='CharacterSpacing']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="CharacterSpacingProperty">
@@ -417,8 +393,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the size of the font for the text in the picker.</summary>
-        <value>A <see langword="double" /> that indicates the size of the font.</value>
+        <summary>Gets or sets the size of the font for the text in the picker. This is a bindable property.</summary>
+        <value>A <see cref="T:System.Double" /> representing the font size.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -505,8 +481,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether the date picker is open. This is a bindable property.</summary>
+        <value>
+          <see langword="true" /> if the date picker is open; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -34,7 +34,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Default implementation of <see cref="T:Microsoft.Maui.Controls.ISearchHandlerController" />.</summary>
+    <summary>
+            Provides search functionality in a <see cref="T:Microsoft.Maui.Controls.Shell" /> application.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -116,11 +118,9 @@
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the background color of the search box. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/SearchHandler.xml" path="//Member[@MemberName='BackgroundColor']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="BackgroundColorProperty">
@@ -161,11 +161,9 @@
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the color of the cancel button. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/SearchHandler.xml" path="//Member[@MemberName='CancelButtonColor']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="CancelButtonColorProperty">
@@ -206,11 +204,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the character spacing for the search text. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/SearchHandler.xml" path="//Member[@MemberName='CharacterSpacing']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="CharacterSpacingProperty">
@@ -251,7 +247,7 @@
         <ReturnType>Microsoft.Maui.Controls.ImageSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The icon displayed to clear the contents of the search box.</summary>
+        <summary>Gets or sets the icon displayed for the clear button. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -273,7 +269,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The accessible help text for the clear icon.</summary>
+        <summary>Gets or sets the accessibility help text for the clear icon. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -316,7 +312,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The name of the clear icon for use with screen readers.</summary>
+        <summary>Gets or sets the accessibility name for the clear icon. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -380,7 +376,7 @@
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ICommand executed when the <see cref="P:Microsoft.Maui.Controls.SearchHandler.ClearPlaceholderIcon" /> is tapped.</summary>
+        <summary>Gets or sets the command invoked when the clear placeholder button is pressed. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -402,7 +398,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The parameter passed to the <see cref="P:Microsoft.Maui.Controls.SearchHandler.ClearPlaceholderCommand" />.</summary>
+        <summary>Gets or sets the parameter passed to <see cref="P:Microsoft.Maui.Controls.SearchHandler.ClearPlaceholderCommand" />. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -466,7 +462,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Whether the <see cref="P:Microsoft.Maui.Controls.SearchHandler.ClearPlaceholderCommand" /> can be executed.</summary>
+        <summary>Gets or sets a value indicating whether the clear placeholder button is enabled. This is a bindable property.</summary>
         <value>The default value is `true`.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -509,7 +505,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The accessible help text for the <see cref="P:Microsoft.Maui.Controls.SearchHandler.ClearPlaceholderIcon" />.</summary>
+        <summary>Gets or sets the accessibility help text for the clear placeholder icon. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -552,7 +548,7 @@
         <ReturnType>Microsoft.Maui.Controls.ImageSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The clear placeholder icon displayed when the search box is empty.</summary>
+        <summary>Gets or sets the icon displayed for the clear placeholder button. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -595,7 +591,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The name of the clear placeholder icon for use with screen readers.</summary>
+        <summary>Gets or sets the accessibility name for the clear placeholder icon. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -638,7 +634,7 @@
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the ICommand executed when the search query is confirmed.</summary>
+        <summary>Gets or sets the command invoked when the search query is confirmed. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -660,7 +656,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the parameter of the <see cref="P:Microsoft.Maui.Controls.SearchHandler.Command" />, which is executed when the search query is confirmed.</summary>
+        <summary>Gets or sets the parameter passed to <see cref="P:Microsoft.Maui.Controls.SearchHandler.Command" />. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -730,7 +726,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The name or path of the property that is displayed for each item of data in the <see cref="P:Microsoft.Maui.Controls.SearchHandler.ItemsSource" /> collection.</summary>
+        <summary>Gets or sets the name of the property to display for search results. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -774,11 +770,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Sets focus to the search handler, causing the input field to become the current focus.</summary>
+        <returns>
+          <see langword="true" /> if the search handler gained focus; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/SearchHandler.xml" path="//Member[@MemberName='Focus']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="FocusChangeRequested">
@@ -846,11 +841,9 @@
         <ReturnType>Microsoft.Maui.Controls.FontAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the font attributes for the search text. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/SearchHandler.xml" path="//Member[@MemberName='FontAttributes']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="FontAttributesProperty">
@@ -934,11 +927,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the font family for the search text. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/SearchHandler.xml" path="//Member[@MemberName='FontFamily']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="FontFamilyProperty">
@@ -985,11 +976,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the font size for the search text. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/SearchHandler.xml" path="//Member[@MemberName='FontSize']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="FontSizeProperty">
@@ -1051,11 +1040,9 @@
         <ReturnType>Microsoft.Maui.TextAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the horizontal alignment of the search text. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/SearchHandler.xml" path="//Member[@MemberName='HorizontalTextAlignment']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalTextAlignmentProperty">
@@ -1096,11 +1083,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a value indicating whether this search handler currently has focus. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/SearchHandler.xml" path="//Member[@MemberName='IsFocused']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="IsFocusedProperty">
@@ -1147,10 +1132,8 @@
         <ReturnType>Microsoft.Maui.Controls.BindablePropertyKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property key for <see cref="P:Microsoft.Maui.Controls.SearchHandler.IsFocused" />.</summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/SearchHandler.xml" path="//Member[@MemberName='IsFocusedPropertyKey']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="IsSearchEnabled">
@@ -1170,7 +1153,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether the search box is enabled.</summary>
+        <summary>Gets or sets a value indicating whether search is enabled. This is a bindable property.</summary>
         <value>The default value is `true`.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1213,7 +1196,7 @@
         <ReturnType>System.Collections.IEnumerable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The collection of items to be displayed in the suggestion area. Default is <see langword="null" />.</summary>
+        <summary>Gets or sets the collection of items to display as search suggestions. This is a bindable property.</summary>
         <value>The default value is `null`.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1256,7 +1239,7 @@
         <ReturnType>Microsoft.Maui.Controls.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> to apply to each item in <see cref="P:Microsoft.Maui.Controls.SearchHandler.ItemsSource" />.</summary>
+        <summary>Gets or sets the template for displaying search result items. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>
           <para>For example, to create the style shown here: <img src="~/xml/Microsoft.Maui.Controls/_images/search-results-template.png" />, developers could use either the following XAML or C#:</para>
@@ -1352,11 +1335,9 @@
         <ReturnType>Microsoft.Maui.Keyboard</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the keyboard type for the search input. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/SearchHandler.xml" path="//Member[@MemberName='Keyboard']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="KeyboardProperty">
@@ -1925,7 +1906,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text to display when the search box is empty.</summary>
+        <summary>Gets or sets the text displayed when the search box is empty. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1947,11 +1928,9 @@
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the color of the placeholder text. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/SearchHandler.xml" path="//Member[@MemberName='PlaceholderColor']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="PlaceholderColorProperty">
@@ -2013,7 +1992,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text of the search box.</summary>
+        <summary>Gets or sets the current search query text. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2035,7 +2014,7 @@
         <ReturnType>Microsoft.Maui.Controls.ImageSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The icon used to indicate that search is available.</summary>
+        <summary>Gets or sets the icon displayed for the search query. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2057,7 +2036,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The accessible help text for the <see cref="P:Microsoft.Maui.Controls.SearchHandler.QueryIcon" />.</summary>
+        <summary>Gets or sets the accessibility help text for the query icon. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2100,7 +2079,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The name of the <see cref="P:Microsoft.Maui.Controls.SearchHandler.QueryIcon" /> for use with screen readers.</summary>
+        <summary>Gets or sets the accessibility name for the query icon. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2185,7 +2164,7 @@
         <ReturnType>Microsoft.Maui.Controls.SearchBoxVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether the search box is visible.</summary>
+        <summary>Gets or sets the visibility mode of the search box. This is a bindable property.</summary>
         <value>The default is <see cref="F:Microsoft.Maui.Controls.SearchBoxVisibility.Expanded" /> (visible and expanded).</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2228,11 +2207,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the currently selected search result item. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/SearchHandler.xml" path="//Member[@MemberName='SelectedItem']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="SelectedItemProperty">
@@ -2252,7 +2229,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The backing store for the <see cref="P:Microsoft.Maui.Controls.SearchHandler.SelectedItem" /> field.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.SearchHandler.SelectedItem" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2283,7 +2260,7 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets the value of the <see cref="P:Microsoft.Maui.Controls.SearchHandler.IsFocused" /> property. For internal use by platform renderers.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2325,7 +2302,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether search results should be expected in the suggestion area on text entry.</summary>
+        <summary>Gets or sets a value indicating whether search results are displayed. This is a bindable property.</summary>
         <value>The default value is `false`.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2368,11 +2345,9 @@
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the color of the search text. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/SearchHandler.xml" path="//Member[@MemberName='TextColor']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="TextColorProperty">
@@ -2416,11 +2391,9 @@
         <ReturnType>Microsoft.Maui.TextTransform</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the text transformation applied to the search text. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/SearchHandler.xml" path="//Member[@MemberName='TextTransform']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="TextTransformProperty">
@@ -2462,10 +2435,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes focus from the search handler.</summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/SearchHandler.xml" path="//Member[@MemberName='Unfocus']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="Unfocused">
@@ -2515,7 +2486,7 @@
       <Docs>
         <param name="source">To be added.</param>
         <param name="textTransform">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Returns the transformed text using the specified <see cref="P:Microsoft.Maui.Controls.SearchHandler.TextTransform" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2537,11 +2508,9 @@
         <ReturnType>Microsoft.Maui.TextAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the vertical alignment of the search text. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/SearchHandler.xml" path="//Member[@MemberName='VerticalTextAlignment']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="VerticalTextAlignmentProperty">

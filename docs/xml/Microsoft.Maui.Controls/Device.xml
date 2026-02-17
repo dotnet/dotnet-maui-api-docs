@@ -202,10 +202,10 @@
         <Parameter Name="targetElement" Type="Microsoft.Maui.Controls.Element" />
       </Parameters>
       <Docs>
-        <param name="size">The named size for which to get the numeric size.</param>
-        <param name="targetElement">The element for which to calculate the numeric size.</param>
-        <summary>Returns a double that represents a font size that corresponds to <paramref name="size" /> on <paramref name="targetElement" />.</summary>
-        <returns>A double that represents a font size that corresponds to <paramref name="size" /> on <paramref name="targetElement" />.</returns>
+        <param name="size">The named size to retrieve.</param>
+        <param name="targetElement">The element to get the named size for.</param>
+        <summary>Returns the named font size for the specified element type.</summary>
+        <returns>The font size value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -236,10 +236,10 @@
         <Parameter Name="targetElementType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="size">The named size for which to get the numeric size.</param>
-        <param name="targetElementType">The element type for which to calculate the numeric size.</param>
-        <summary>Returns a double that represents the named size for the font that is used on the element on the native platform.</summary>
-        <returns>The named size for the font that is used on the element on the native platform.</returns>
+        <param name="size">The named size to retrieve.</param>
+        <param name="targetElementType">The element type to get the named size for.</param>
+        <summary>Returns the named font size for the specified element type.</summary>
+        <returns>The font size value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -275,11 +275,11 @@
         <Parameter Name="useOldSizes" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="size">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <param name="targetElementType">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <param name="useOldSizes">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
-        <returns>For internal use by the Microsoft.Maui.Controls platform.</returns>
+        <param name="size">The named size to retrieve.</param>
+        <param name="targetElementType">The element type to get the named size for.</param>
+        <param name="useOldSizes">Whether to use legacy font sizes.</param>
+        <summary>Returns the named font size for the specified element type.</summary>
+        <returns>The font size value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -337,9 +337,9 @@
         <Parameter Name="action" Type="System.Action" />
       </Parameters>
       <Docs>
-        <param name="action">The Action to invoke</param>
-        <summary>Invokes an Action on the device main (UI) thread.</summary>
-        <returns>To be added.</returns>
+        <param name="action">The action to invoke.</param>
+        <summary>Invokes an action on the main thread asynchronously.</summary>
+        <returns>A task representing the async operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -369,9 +369,9 @@
         <Parameter Name="funcTask" Type="System.Func&lt;System.Threading.Tasks.Task&gt;" />
       </Parameters>
       <Docs>
-        <param name="funcTask">The Func to invoke.</param>
-        <summary>Invokes a Func on the device main (UI) thread.</summary>
-        <returns>To be added.</returns>
+        <param name="funcTask">The async function to invoke.</param>
+        <summary>Invokes an async task-returning function on the main thread.</summary>
+        <returns>A task representing the async operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -404,10 +404,10 @@
         <Parameter Name="funcTask" Type="System.Func&lt;System.Threading.Tasks.Task&lt;T&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The return type of the Func.</typeparam>
-        <param name="funcTask">The Func to invoke.</param>
-        <summary>Invokes a Func on the device main (UI) thread.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The return type of the task.</typeparam>
+        <param name="funcTask">The async function to invoke.</param>
+        <summary>Invokes an async task-returning function on the main thread and returns the result.</summary>
+        <returns>A task containing the result of the async function.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -440,10 +440,10 @@
         <Parameter Name="func" Type="System.Func&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The return type of the Func.</typeparam>
-        <param name="func">The Func to invoke.</param>
-        <summary>Invokes a Func on the device main (UI) thread.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The return type of the function.</typeparam>
+        <param name="func">The function to invoke.</param>
+        <summary>Invokes an async function on the main thread and returns the result.</summary>
+        <returns>A task containing the result of the function.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

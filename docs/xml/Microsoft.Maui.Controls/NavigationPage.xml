@@ -65,7 +65,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new <see cref="T:Microsoft.Maui.Controls.NavigationPage" /> object.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.NavigationPage" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,8 +86,8 @@
         <Parameter Name="root" Type="Microsoft.Maui.Controls.Page" />
       </Parameters>
       <Docs>
-        <param name="root">To be added.</param>
-        <summary>Creates a new <see cref="T:Microsoft.Maui.Controls.NavigationPage" /> element with <paramref name="root" /> as its root element.</summary>
+        <param name="root">The root page of the navigation stack.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.NavigationPage" /> class with the specified root page.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,11 +129,9 @@
         <ReturnType>Microsoft.Maui.Controls.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the brush used to paint the navigation bar background. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/NavigationPage.xml" path="//Member[@MemberName='BarBackground']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="BarBackgroundColor">
@@ -990,8 +988,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Asynchronously removes the top <see cref="T:Microsoft.Maui.Controls.Page" /> from the navigation stack.</summary>
-        <returns>The <see cref="T:Microsoft.Maui.Controls.Page" /> that had been at the top of the navigation stack.</returns>
+        <summary>Asynchronously removes the top page from the navigation stack.</summary>
+        <returns>A task that represents the asynchronous pop operation and contains the popped page.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1015,9 +1013,9 @@
         <Parameter Name="animated" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="animated">To be added.</param>
-        <summary>Asynchronously removes the top <see cref="T:Microsoft.Maui.Controls.Page" /> from the navigation stack, with optional animation.</summary>
-        <returns>To be added.</returns>
+        <param name="animated">Whether to animate the transition.</param>
+        <summary>Asynchronously removes the top page from the navigation stack, with optional animation.</summary>
+        <returns>A task that represents the asynchronous pop operation and contains the popped page.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1081,8 +1079,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Pops all but the root <see cref="T:Microsoft.Maui.Controls.Page" /> off the navigation stack.</summary>
-        <returns>A task that represents the asynchronous dismiss operation.</returns>
+        <summary>Asynchronously pops all pages from the navigation stack except the root page.</summary>
+        <returns>A task that represents the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1106,9 +1104,9 @@
         <Parameter Name="animated" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="animated">To be added.</param>
-        <summary>A task for asynchronously popping all pages off of the navigation stack.</summary>
-        <returns>To be added.</returns>
+        <param name="animated">Whether to animate the transition.</param>
+        <summary>Asynchronously pops all pages from the navigation stack except the root page, with optional animation.</summary>
+        <returns>A task that represents the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1132,9 +1130,9 @@
         <Parameter Name="page" Type="Microsoft.Maui.Controls.Page" />
       </Parameters>
       <Docs>
-        <param name="page">The <see cref="T:Microsoft.Maui.Controls.Page" /> to present.</param>
-        <summary>Presents a <see cref="T:Microsoft.Maui.Controls.Page" /> by asynchronously pushing it onto the navigation stack.</summary>
-        <returns>An awaitable Task, indicating the Push completion.</returns>
+        <param name="page">The page to push onto the navigation stack.</param>
+        <summary>Asynchronously pushes a page onto the navigation stack.</summary>
+        <returns>A task that represents the asynchronous push operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1159,10 +1157,10 @@
         <Parameter Name="animated" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="page">To be added.</param>
-        <param name="animated">To be added.</param>
-        <summary>A task for asynchronously pushing a page onto the navigation stack, with optional animation.</summary>
-        <returns>To be added.</returns>
+        <param name="page">The page to push onto the navigation stack.</param>
+        <param name="animated">Whether to animate the transition.</param>
+        <summary>Asynchronously pushes a page onto the navigation stack, with optional animation.</summary>
+        <returns>A task that represents the asynchronous push operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

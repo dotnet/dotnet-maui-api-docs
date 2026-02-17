@@ -44,12 +44,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>A <see cref="T:Microsoft.Maui.Controls.View" /> control that inputs a linear value.</summary>
+    <summary>
+            Represents a horizontal bar that a user can slide to select a value from a continuous range.
+            </summary>
     <remarks>
-      <para>
-        <img href="~/xml/Microsoft.Maui.Controls/_images/Slider.TripleScreenShot.png" />
-      </para>
-    </remarks>
+            The <see cref="T:Microsoft.Maui.Controls.Slider" /> control allows users to select a numeric value by moving a thumb along a track.
+            Use the <see cref="P:Microsoft.Maui.Controls.Slider.Minimum" /> and <see cref="P:Microsoft.Maui.Controls.Slider.Maximum" /> properties to define the range,
+            and the <see cref="P:Microsoft.Maui.Controls.Slider.Value" /> property to get or set the current selection.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,7 +68,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the Slider class.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.Slider" /> class with default minimum (0) and maximum (1) values.
+            </summary>
         <remarks>
           <para>The following example shows a basic use.</para>
           <example>
@@ -148,11 +152,14 @@ namespace FormsGallery
         <Parameter Name="val" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="min">The minimum selectable value.</param>
-        <param name="max">The maximum selectable value.</param>
-        <param name="val">The actual value.</param>
-        <summary>Initializes a new instance of the Slider class.</summary>
+        <param name="min">The minimum value of the slider.</param>
+        <param name="max">The maximum value of the slider.</param>
+        <param name="val">The initial value of the slider, clamped between <paramref name="min" /> and <paramref name="max" />.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.Slider" /> class with specified minimum, maximum, and initial values.
+            </summary>
         <remarks />
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown when <paramref name="min" /> is greater than or equal to <paramref name="max" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="DragCompleted">
@@ -172,7 +179,9 @@ namespace FormsGallery
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when the user completes dragging the slider thumb.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,11 +202,12 @@ namespace FormsGallery
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the command to execute when the user completes dragging the slider thumb.
+            This is a bindable property.
+            </summary>
+        <value>The <see cref="T:System.Windows.Input.ICommand" /> to execute. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/Slider.xml" path="//Member[@MemberName='DragCompletedCommand']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="DragCompletedCommandProperty">
@@ -217,7 +227,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Slider.DragCompletedCommand" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Slider.DragCompletedCommand" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,7 +248,9 @@ namespace FormsGallery
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when the user starts dragging the slider thumb.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -259,11 +271,12 @@ namespace FormsGallery
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the command to execute when the user starts dragging the slider thumb.
+            This is a bindable property.
+            </summary>
+        <value>The <see cref="T:System.Windows.Input.ICommand" /> to execute. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/Slider.xml" path="//Member[@MemberName='DragStartedCommand']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="DragStartedCommandProperty">
@@ -283,7 +296,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Slider.DragStartedCommand" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Slider.DragStartedCommand" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -304,9 +317,12 @@ namespace FormsGallery
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum selectable value for the Slider. This is a bindable property.</summary>
-        <value>A double.</value>
-        <remarks />
+        <summary>
+            Gets or sets the maximum value of the slider.
+            This is a bindable property.
+            </summary>
+        <value>The maximum value. The default is 1.</value>
+        <remarks>Changing this value will automatically clamp the <see cref="P:Microsoft.Maui.Controls.Slider.Value" /> to be within the new range.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaximumProperty">
@@ -326,7 +342,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Slider.Maximum" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Slider.Maximum" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -347,8 +363,11 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the color of the portion of the slider track that contains the maximum value of the slider.</summary>
-        <value>Thhe color of the portion of the slider track that contains the maximum value of the slider.</value>
+        <summary>
+            Gets or sets the color of the unfilled portion of the slider track (from current value to maximum).
+            This is a bindable property.
+            </summary>
+        <value>The <see cref="T:Microsoft.Maui.Graphics.Color" /> of the maximum track. The default is <see langword="null" />, which uses the platform default.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -369,7 +388,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Slider.MaximumTrackColor" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Slider.MaximumTrackColor" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -515,9 +534,12 @@ namespace FormsGallery
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the minimum selectable value for the Slider. This is a bindable property.</summary>
-        <value>A double.</value>
-        <remarks />
+        <summary>
+            Gets or sets the minimum value of the slider.
+            This is a bindable property.
+            </summary>
+        <value>The minimum value. The default is 0.</value>
+        <remarks>Changing this value will automatically clamp the <see cref="P:Microsoft.Maui.Controls.Slider.Value" /> to be within the new range.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MinimumProperty">
@@ -537,7 +559,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Slider.Minimum" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Slider.Minimum" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -558,8 +580,11 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the color of the portion of the slider track that contains the minimum value of the slider.</summary>
-        <value>Thhe color of the portion of the slider track that contains the minimum value of the slider.</value>
+        <summary>
+            Gets or sets the color of the filled portion of the slider track (from minimum to current value).
+            This is a bindable property.
+            </summary>
+        <value>The <see cref="T:Microsoft.Maui.Graphics.Color" /> of the minimum track. The default is <see langword="null" />, which uses the platform default.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -580,7 +605,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Slider.MinimumTrackColor" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Slider.MinimumTrackColor" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -636,8 +661,11 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the color of the slider thumb button.</summary>
-        <value>The color of the slider thumb button.</value>
+        <summary>
+            Gets or sets the color of the slider thumb (the draggable element).
+            This is a bindable property.
+            </summary>
+        <value>The <see cref="T:Microsoft.Maui.Graphics.Color" /> of the thumb. The default is <see langword="null" />, which uses the platform default.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -658,7 +686,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Slider.ThumbColor" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Slider.ThumbColor" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -679,11 +707,12 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.ImageSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets an <see cref="T:Microsoft.Maui.Controls.ImageSource" /> to use as the slider thumb instead of the platform default.
+            This is a bindable property.
+            </summary>
+        <value>The <see cref="T:Microsoft.Maui.Controls.ImageSource" /> for the thumb. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/Slider.xml" path="//Member[@MemberName='ThumbImageSource']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="ThumbImageSourceProperty">
@@ -703,7 +732,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Slider.ThumbImageSource" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Slider.ThumbImageSource" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -727,8 +756,11 @@ namespace FormsGallery
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the current value. This is a bindable property.</summary>
-        <value>A double.</value>
+        <summary>
+            Gets or sets the current value of the slider.
+            This is a bindable property.
+            </summary>
+        <value>The current value, clamped between <see cref="P:Microsoft.Maui.Controls.Slider.Minimum" /> and <see cref="P:Microsoft.Maui.Controls.Slider.Maximum" />. The default is 0.</value>
         <remarks />
       </Docs>
     </Member>
@@ -749,7 +781,9 @@ namespace FormsGallery
         <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.ValueChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when the <see cref="P:Microsoft.Maui.Controls.Slider.Value" /> property changes.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -770,7 +804,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Slider.Value" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Slider.Value" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

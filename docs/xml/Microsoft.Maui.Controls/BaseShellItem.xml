@@ -26,7 +26,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>A <see cref="T:Microsoft.Maui.Controls.NavigableElement" /> that is the base class for <see cref="T:Microsoft.Maui.Controls.ShellGroupItem" /> and <see cref="T:Microsoft.Maui.Controls.ShellContent" />.</summary>
+    <summary>
+            Base class for Shell navigation items providing common properties like Title, Icon, and Route.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -107,7 +109,9 @@
         <ReturnType>Microsoft.Maui.Controls.ImageSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The icon to use for the item. If this property is unset, it will fallback to using the <see cref="P:Microsoft.Maui.Controls.BaseShellItem.Icon" /> property value.</summary>
+        <summary>
+            Gets or sets the icon displayed for this item in the flyout. This is a bindable property.
+            </summary>
         <value>A <see cref="T:Microsoft.Maui.Controls.ImageSource" /> that represents an icon.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,11 +154,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets a value indicating whether this item is visible in the flyout menu. This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/BaseShellItem.xml" path="//Member[@MemberName='FlyoutItemIsVisible']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="FlyoutItemIsVisibleProperty">
@@ -195,7 +199,9 @@
         <ReturnType>Microsoft.Maui.Controls.ImageSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Defines the icon to display in parts of the chrome that are not the flyout.</summary>
+        <summary>
+            Gets or sets the icon displayed for this item in the tab bar. This is a bindable property.
+            </summary>
         <value>A <see cref="T:Microsoft.Maui.Controls.ImageSource" /> that represents an icon.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -238,7 +244,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Defines if the item is currently highlighted in the flyout.</summary>
+        <summary>
+            Gets a value indicating whether this item is currently selected. This is a bindable property.
+            </summary>
         <value>
           <see langword="true" /> if the item is currently highlighted.</value>
         <remarks>To be added.</remarks>
@@ -282,7 +290,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Defines if the item is selectable in the chrome.</summary>
+        <summary>
+            Gets or sets a value indicating whether this item is enabled. This is a bindable property.
+            </summary>
         <value>
           <see langword="true" /> if the item is selectable in the chrome.</value>
         <remarks>To be added.</remarks>
@@ -326,11 +336,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets a value indicating whether this item is visible in the Shell UI. This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/BaseShellItem.xml" path="//Member[@MemberName='IsVisible']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="IsVisibleProperty">
@@ -446,7 +456,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The string used to address the item.</summary>
+        <summary>
+            Gets or sets the route used for URI-based Shell navigation.
+            </summary>
         <value>A unique string that identifies the item.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -468,7 +480,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Title to display in the UI.</summary>
+        <summary>
+            Gets or sets the title displayed in the UI for this item. This is a bindable property.
+            </summary>
         <value>Title to display in the UI.</value>
         <remarks>To be added.</remarks>
       </Docs>

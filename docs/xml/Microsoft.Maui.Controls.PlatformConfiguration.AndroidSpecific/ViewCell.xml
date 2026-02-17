@@ -22,10 +22,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Android-specific context actions behavior for ViewCell in ListView.</summary>
     <remarks>To be added.</remarks>
-    <!-- No matching elements were found for the following include tag -->
-    <include file="../../../../docs/Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific/ViewCell.xml" path="Type[@FullName='Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific.ViewCell']/Docs/*" />
   </Docs>
   <Members>
     <Member MemberName="GetIsContextActionsLegacyModeEnabled">
@@ -54,9 +52,10 @@
         <Parameter Name="element" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The cell element.</param>
+        <summary>Gets whether the legacy context actions mode is enabled on Android.</summary>
+        <returns>
+          <see langword="true" /> if legacy mode is enabled; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,9 +85,10 @@
         <Parameter Name="config" Type="Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.Android,Microsoft.Maui.Controls.Cell&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration.</param>
+        <summary>Gets whether the legacy context actions mode is enabled on Android.</summary>
+        <returns>
+          <see langword="true" /> if legacy mode is enabled; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,9 +146,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The cell element.</param>
+        <param name="value">
+          <see langword="true" /> to enable legacy mode; otherwise, <see langword="false" />.</param>
+        <summary>Sets whether the legacy context actions mode is enabled on Android.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,10 +180,11 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration.</param>
+        <param name="value">
+          <see langword="true" /> to enable legacy mode; otherwise, <see langword="false" />.</param>
+        <summary>Sets whether the legacy context actions mode is enabled on Android.</summary>
+        <returns>The platform configuration for fluent API chaining.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

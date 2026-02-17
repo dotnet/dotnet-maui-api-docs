@@ -16,10 +16,13 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
-    <!-- No matching elements were found for the following include tag -->
-    <include file="../../../docs/Microsoft.Maui.Controls/SelectionChangedEventArgs.xml" path="Type[@FullName='Microsoft.Maui.Controls.SelectionChangedEventArgs']/Docs/*" />
+    <summary>
+            Provides data for the SelectionChanged event in selectable items views.
+            </summary>
+    <remarks>
+            This event args class is used when the selection changes in a <see cref="T:Microsoft.Maui.Controls.CollectionView" />, <see cref="T:Microsoft.Maui.Controls.CarouselView" />, or other selectable views.
+            It provides both the previous and current selections as read-only lists to support both single and multiple selection modes.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName="CurrentSelection">
@@ -39,11 +42,11 @@
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the list of items that are now selected after the change.
+            </summary>
+        <value>A read-only list of the currently selected items. Empty if no items are currently selected.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/SelectionChangedEventArgs.xml" path="//Member[@MemberName='CurrentSelection']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="PreviousSelection">
@@ -63,11 +66,11 @@
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the list of items that were previously selected before the change.
+            </summary>
+        <value>A read-only list of the previously selected items. Empty if no items were previously selected.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/SelectionChangedEventArgs.xml" path="//Member[@MemberName='PreviousSelection']/Docs/*" />
       </Docs>
     </Member>
   </Members>

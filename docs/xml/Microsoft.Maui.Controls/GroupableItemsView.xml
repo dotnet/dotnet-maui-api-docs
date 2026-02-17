@@ -16,10 +16,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
-    <!-- No matching elements were found for the following include tag -->
-    <include file="../../../docs/Microsoft.Maui.Controls/GroupableItemsView.xml" path="Type[@FullName='Microsoft.Maui.Controls.GroupableItemsView']/Docs/*" />
+    <summary>
+            A selectable items view that supports grouping of items.
+            </summary>
+    <remarks>
+      <see cref="T:Microsoft.Maui.Controls.GroupableItemsView" /> extends <see cref="T:Microsoft.Maui.Controls.SelectableItemsView" /> to add support for displaying items in groups.
+            When <see cref="P:Microsoft.Maui.Controls.GroupableItemsView.IsGrouped" /> is <see langword="true" />, items are organized into sections with optional headers and footers.
+            Use <see cref="P:Microsoft.Maui.Controls.GroupableItemsView.GroupHeaderTemplate" /> and <see cref="P:Microsoft.Maui.Controls.GroupableItemsView.GroupFooterTemplate" /> to customize the appearance of group sections.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,11 +61,13 @@
         <ReturnType>Microsoft.Maui.Controls.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/GroupableItemsView.xml" path="//Member[@MemberName='GroupFooterTemplate']/Docs/*" />
+        <summary>
+            Gets or sets the <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> used to display the footer for each group.
+            </summary>
+        <value>A <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> that defines the appearance of group footers, or <see langword="null" /> for no footers.</value>
+        <remarks>
+            The template's binding context is set to the group object from the <see cref="P:Microsoft.Maui.Controls.ItemsView.ItemsSource" />.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="GroupFooterTemplateProperty">
@@ -102,11 +108,13 @@
         <ReturnType>Microsoft.Maui.Controls.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/GroupableItemsView.xml" path="//Member[@MemberName='GroupHeaderTemplate']/Docs/*" />
+        <summary>
+            Gets or sets the <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> used to display the header for each group.
+            </summary>
+        <value>A <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> that defines the appearance of group headers, or <see langword="null" /> for no headers.</value>
+        <remarks>
+            The template's binding context is set to the group object from the <see cref="P:Microsoft.Maui.Controls.ItemsView.ItemsSource" />.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="GroupHeaderTemplateProperty">
@@ -147,11 +155,15 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/GroupableItemsView.xml" path="//Member[@MemberName='IsGrouped']/Docs/*" />
+        <summary>
+            Gets or sets a value indicating whether items should be displayed in groups.
+            </summary>
+        <value>
+          <see langword="true" /> if items are grouped; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+            When enabled, the <see cref="P:Microsoft.Maui.Controls.ItemsView.ItemsSource" /> is expected to be a collection of groups,
+            where each group is itself a collection of items.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsGroupedProperty">

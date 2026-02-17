@@ -15,10 +15,10 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Specifies the scroll behavior when items are added, removed, or updated in an items view.
+            </summary>
     <remarks>To be added.</remarks>
-    <!-- No matching elements were found for the following include tag -->
-    <include file="../../../docs/Microsoft.Maui.Controls/ItemsUpdatingScrollMode.xml" path="Type[@FullName='Microsoft.Maui.Controls.ItemsUpdatingScrollMode']/Docs/*" />
   </Docs>
   <Members>
     <Member MemberName="KeepItemsInView">
@@ -39,9 +39,10 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ItemsUpdatingScrollMode.xml" path="//Member[@MemberName='KeepItemsInView']/Docs/*" />
+        <summary>
+            The view scrolls to keep currently visible items in view as items are updated.
+            This is the default behavior, maintaining the current scroll position relative to visible items.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="KeepLastItemInView">
@@ -62,9 +63,10 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ItemsUpdatingScrollMode.xml" path="//Member[@MemberName='KeepLastItemInView']/Docs/*" />
+        <summary>
+            The view scrolls to keep the last item visible as items are updated.
+            This is useful for chat-like interfaces where new items are added at the end.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="KeepScrollOffset">
@@ -85,9 +87,10 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ItemsUpdatingScrollMode.xml" path="//Member[@MemberName='KeepScrollOffset']/Docs/*" />
+        <summary>
+            The view maintains the current scroll offset as items are updated.
+            The absolute scroll position remains fixed, which may cause different items to become visible.
+            </summary>
       </Docs>
     </Member>
   </Members>

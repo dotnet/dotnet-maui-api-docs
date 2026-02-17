@@ -71,7 +71,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>An element capable of scrolling if its Content requires.</summary>
+    <summary>
+            Represents a view that is capable of scrolling if its content requires it.
+            </summary>
     <remarks>
       <para>  The following example shows the creation of a ScrollView with a large <see cref="T:Microsoft.Maui.Controls.StackLayout" /> in it.</para>
       <example>
@@ -106,7 +108,9 @@ MainPage = new ContentPage
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the ScrollView class.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.ScrollView" /> class.
+            </summary>
         <remarks />
       </Docs>
     </Member>
@@ -257,7 +261,9 @@ MainPage = new ContentPage
         <ReturnType>Microsoft.Maui.Controls.View</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a <see cref="T:Microsoft.Maui.Controls.View" /> to display in the <see cref="T:Microsoft.Maui.Controls.ScrollView" />.</summary>
+        <summary>
+            Gets or sets the content of the scroll view.
+            </summary>
         <value>The <see cref="T:Microsoft.Maui.Controls.View" /> that is displayed.</value>
         <remarks />
       </Docs>
@@ -279,7 +285,9 @@ MainPage = new ContentPage
         <ReturnType>Microsoft.Maui.Graphics.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the size of the Content. This is a bindable property.</summary>
+        <summary>
+            Gets the size of the scrollable content.
+            </summary>
         <value>A <see cref="T:Microsoft.Maui.Graphics.Size" /> that represents the size of the content.</value>
         <remarks />
       </Docs>
@@ -363,7 +371,9 @@ MainPage = new ContentPage
       <Docs>
         <param name="item">For internal use by the Microsoft.Maui.Controls platform.</param>
         <param name="pos">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>
+            Gets the scroll position for the specified element.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -385,7 +395,9 @@ MainPage = new ContentPage
         <ReturnType>Microsoft.Maui.ScrollBarVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that controls when the horizontal scroll bar is visible.</summary>
+        <summary>
+            Gets or sets the horizontal scroll bar visibility.
+            </summary>
         <value>A value that controls when the horizontal scroll bar is visible.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -474,11 +486,11 @@ MainPage = new ContentPage
         <ReturnType>Microsoft.Maui.Graphics.Rect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the layout area override for the scroll view.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/ScrollView.xml" path="//Member[@MemberName='LayoutAreaOverride']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="LayoutChildren">
@@ -1110,7 +1122,9 @@ MainPage = new ContentPage
         <ReturnType>Microsoft.Maui.ScrollOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the scrolling direction of the ScrollView. This is a bindable property.</summary>
+        <summary>
+            Gets or sets the scroll orientation.
+            </summary>
         <value />
         <remarks />
       </Docs>
@@ -1234,8 +1248,8 @@ MainPage = new ContentPage
         <value>To be added.</value>
         <remarks>
             This property controls which edges of the scroll view should obey safe area insets.
-            Use SafeAreaRegions.None for edge-to-edge content, SafeAreaRegions.All to obey all safe area insets, 
-            SafeAreaRegions.Container for content that flows under keyboard but stays out of bars/notch, or SafeAreaRegions.SoftInput for keyboard-aware behavior.
+            Use SafeAreaEdges.None for edge-to-edge content, SafeAreaEdges.All to obey all safe area insets, 
+            SafeAreaEdges.Container for content that flows under keyboard but stays out of bars/notch, or SafeAreaEdges.SoftInput for keyboard-aware behavior.
             </remarks>
       </Docs>
     </Member>
@@ -1305,7 +1319,9 @@ MainPage = new ContentPage
         <param name="element">The element to scroll.</param>
         <param name="position">The scroll position.</param>
         <param name="animated">Whether or not to animate the scroll.</param>
-        <summary>Returns a task that scrolls the scroll view to an element asynchronously.</summary>
+        <summary>
+            Scrolls to the specified element asynchronously.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1335,7 +1351,9 @@ MainPage = new ContentPage
         <param name="x">The X position of the finished scroll.</param>
         <param name="y">The Y position of the finished scroll.</param>
         <param name="animated">Whether or not to animate the scroll.</param>
-        <summary>Returns a task that scrolls the scroll view to a position asynchronously.</summary>
+        <summary>
+            Scrolls to the specified position asynchronously.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1387,7 +1405,9 @@ MainPage = new ContentPage
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current X scroll position.</summary>
+        <summary>
+            Gets the current horizontal scroll position.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1430,7 +1450,9 @@ MainPage = new ContentPage
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current Y scroll position.</summary>
+        <summary>
+            Gets the current vertical scroll position.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1483,7 +1505,9 @@ MainPage = new ContentPage
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>
+            Sends the scroll finished notification.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1519,7 +1543,9 @@ MainPage = new ContentPage
       <Docs>
         <param name="x">For internal use by the Microsoft.Maui.Controls platform.</param>
         <param name="y">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>
+            Sets the scrolled position.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1637,7 +1663,9 @@ MainPage = new ContentPage
         <ReturnType>Microsoft.Maui.ScrollBarVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that controls when the vertical scroll bar is visible.</summary>
+        <summary>
+            Gets or sets the vertical scroll bar visibility.
+            </summary>
         <value>A value that controls when the vertical scroll bar is visible.</value>
         <remarks>To be added.</remarks>
       </Docs>

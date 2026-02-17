@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Static class specifying the attached properties that allow a <see cref="T:Microsoft.Maui.Controls.ILayout" /> work with a data-bound <see cref="T:System.Collections.IEnumerable" />.</summary>
+    <summary>Provides attached properties for enabling data binding on layout elements.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -82,9 +82,9 @@
         <Parameter Name="b" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="b">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="b">The bindable object to get the empty view from.</param>
+        <summary>Gets the view displayed when the items source is empty.</summary>
+        <returns>The view or content displayed when items source is empty.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,9 +108,9 @@
         <Parameter Name="b" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="b">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="b">The bindable object to get the empty view template from.</param>
+        <summary>Gets the template used to create the empty view.</summary>
+        <returns>The data template used for the empty view.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,9 +134,9 @@
         <Parameter Name="b" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="b">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="b">The bindable object to get the items source from.</param>
+        <summary>Gets the items source for the bindable layout.</summary>
+        <returns>The enumerable collection used as items source.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,9 +160,9 @@
         <Parameter Name="b" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="b">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="b">The bindable object to get the template from.</param>
+        <summary>Gets the data template for items in the bindable layout.</summary>
+        <returns>The data template used for items.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,9 +186,9 @@
         <Parameter Name="b" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="b">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="b">The bindable object to get the template selector from.</param>
+        <summary>Gets the template selector for items in the bindable layout.</summary>
+        <returns>The data template selector used for items.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -276,9 +276,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="b">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="b">The bindable object to set the empty view on.</param>
+        <param name="value">The view or content to display when items source is empty.</param>
+        <summary>Sets the view displayed when the items source is empty.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -303,9 +303,9 @@
         <Parameter Name="value" Type="Microsoft.Maui.Controls.DataTemplate" />
       </Parameters>
       <Docs>
-        <param name="b">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="b">The bindable object to set the empty view template on.</param>
+        <param name="value">The data template to use for the empty view.</param>
+        <summary>Sets the template used to create the empty view.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -330,9 +330,9 @@
         <Parameter Name="value" Type="System.Collections.IEnumerable" />
       </Parameters>
       <Docs>
-        <param name="b">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="b">The bindable object to set the items source on.</param>
+        <param name="value">The enumerable collection to use as items source.</param>
+        <summary>Sets the items source for the bindable layout.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -357,9 +357,9 @@
         <Parameter Name="value" Type="Microsoft.Maui.Controls.DataTemplate" />
       </Parameters>
       <Docs>
-        <param name="b">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="b">The bindable object to set the template on.</param>
+        <param name="value">The data template to use for items.</param>
+        <summary>Sets the data template for items in the bindable layout.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -384,9 +384,9 @@
         <Parameter Name="value" Type="Microsoft.Maui.Controls.DataTemplateSelector" />
       </Parameters>
       <Docs>
-        <param name="b">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="b">The bindable object to set the template selector on.</param>
+        <param name="value">The data template selector to use.</param>
+        <summary>Sets the template selector for items in the bindable layout.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
