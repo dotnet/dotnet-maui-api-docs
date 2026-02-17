@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Event that is raised when a pan gesture updates.</summary>
+    <summary>Event arguments for the <see cref="E:Microsoft.Maui.Controls.PanGestureRecognizer.PanUpdated" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,9 +38,9 @@
         <Parameter Name="gestureId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="type">Whether the gesture just began, is continuing, was completed, or is canceled.</param>
-        <param name="gestureId">An identifier for the gesture.</param>
-        <summary>Creates a new <see cref="T:Microsoft.Maui.Controls.PanUpdatedEventArgs" /> with the specified values.</summary>
+        <param name="type">The gesture status.</param>
+        <param name="gestureId">The unique identifier for this gesture.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.PanUpdatedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,11 +64,11 @@
         <Parameter Name="totaly" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="type">Whether the gesture just began, is continuing, was completed, or is canceled.</param>
-        <param name="gestureId">An identifier for the gesture.</param>
-        <param name="totalx">The total change in the X direction since the beginning of the gesture.</param>
-        <param name="totaly">The total change in the Y direction since the beginning of the gesture.</param>
-        <summary>Creates a new <see cref="T:Microsoft.Maui.Controls.PanUpdatedEventArgs" /> with the specified values.</summary>
+        <param name="type">The gesture status.</param>
+        <param name="gestureId">The unique identifier for this gesture.</param>
+        <param name="totalx">The total X translation since the gesture started.</param>
+        <param name="totaly">The total Y translation since the gesture started.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.PanUpdatedEventArgs" /> class with translation data.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

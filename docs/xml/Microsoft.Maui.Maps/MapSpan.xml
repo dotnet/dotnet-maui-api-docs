@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents a rectangular region on the map, defined by a center point and span.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,10 +47,12 @@
         <Parameter Name="longitudeDegrees" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="center">To be added.</param>
-        <param name="latitudeDegrees">To be added.</param>
-        <param name="longitudeDegrees">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="center">The center location of the span.</param>
+        <param name="latitudeDegrees">The latitude span in degrees.</param>
+        <param name="longitudeDegrees">The longitude span in degrees.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Maps.MapSpan" /> class with the specified center and span in degrees.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,7 +73,9 @@
         <ReturnType>Microsoft.Maui.Devices.Sensors.Location</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the center location of this span.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -95,10 +101,12 @@
         <Parameter Name="south" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="north">To be added.</param>
-        <param name="south">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="north">The northern boundary (will be clamped to 0 to 90).</param>
+        <param name="south">The southern boundary (will be clamped to -90 to 0).</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Maui.Maps.MapSpan" /> with latitude clamped to the specified bounds.
+            </summary>
+        <returns>A new <see cref="T:Microsoft.Maui.Maps.MapSpan" /> with the clamped latitude.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,6 +134,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="FromCenterAndRadius">
@@ -149,10 +158,12 @@
         <Parameter Name="radius" Type="Microsoft.Maui.Maps.Distance" />
       </Parameters>
       <Docs>
-        <param name="center">To be added.</param>
-        <param name="radius">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="center">The center location of the span.</param>
+        <param name="radius">The radius of the span.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Maui.Maps.MapSpan" /> from a center location and radius.
+            </summary>
+        <returns>A new <see cref="T:Microsoft.Maui.Maps.MapSpan" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,6 +188,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="LatitudeDegrees">
@@ -196,7 +208,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the latitude span in degrees.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -218,7 +232,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the longitude span in degrees.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -244,10 +260,13 @@
         <Parameter Name="right" Type="Microsoft.Maui.Maps.MapSpan" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first span.</param>
+        <param name="right">The second span.</param>
+        <summary>
+            Determines whether two <see cref="T:Microsoft.Maui.Maps.MapSpan" /> instances are equal.
+            </summary>
+        <returns>
+          <see langword="true" /> if the spans are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -272,10 +291,13 @@
         <Parameter Name="right" Type="Microsoft.Maui.Maps.MapSpan" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first span.</param>
+        <param name="right">The second span.</param>
+        <summary>
+            Determines whether two <see cref="T:Microsoft.Maui.Maps.MapSpan" /> instances are not equal.
+            </summary>
+        <returns>
+          <see langword="true" /> if the spans are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -296,7 +318,9 @@
         <ReturnType>Microsoft.Maui.Maps.Distance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the approximate radius of the span.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -322,6 +346,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="WithZoom">
@@ -344,9 +369,11 @@
         <Parameter Name="zoomFactor" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="zoomFactor">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="zoomFactor">The zoom factor. Values greater than 1 zoom in, values less than 1 zoom out.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Maui.Maps.MapSpan" /> with the specified zoom factor applied.
+            </summary>
+        <returns>A new <see cref="T:Microsoft.Maui.Maps.MapSpan" /> with the zoom applied.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

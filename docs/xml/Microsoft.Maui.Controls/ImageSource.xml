@@ -26,7 +26,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Abstract class whose implementors load images from files or the Web.</summary>
+    <summary>Abstract class whose implementors load images from files, URIs, or streams.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -66,8 +66,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Request a cancel of the ImageSource loading.</summary>
-        <returns>An awaitable Task. The result of the Task indicates if the Task was successfully cancelled.</returns>
+        <summary>Cancels the pending image load operation, if any.</summary>
+        <returns>A task that returns <see langword="true" /> if the cancel succeeded.</returns>
         <remarks>Calling Cancel() multiple times will throw an exception.</remarks>
       </Docs>
     </Member>
@@ -91,9 +91,9 @@
         <Parameter Name="file" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="file">The name of a file that contains a valid image.</param>
-        <summary>Returns a new <see cref="T:Microsoft.Maui.Controls.FileImageSource" /> that reads from <paramref name="file" />.</summary>
-        <returns>To be added.</returns>
+        <param name="file">The path to the image file.</param>
+        <summary>Creates an <see cref="T:Microsoft.Maui.Controls.ImageSource" /> from the specified file path.</summary>
+        <returns>A <see cref="T:Microsoft.Maui.Controls.FileImageSource" /> for the specified file.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,10 +117,10 @@
         <Parameter Name="sourceAssembly" Type="System.Reflection.Assembly" />
       </Parameters>
       <Docs>
-        <param name="resource">The name of a valid image resource in <paramref name="sourceAssembly" />.</param>
-        <param name="sourceAssembly">The source assembly in which to search for the image.</param>
-        <summary>Creates a <see cref="T:Microsoft.Maui.Controls.ImageSource" /> from the specified resource in the specified source assembly.</summary>
-        <returns>To be added.</returns>
+        <param name="resource">The name of the embedded resource.</param>
+        <param name="sourceAssembly">The assembly containing the resource, or <see langword="null" /> to use the calling assembly.</param>
+        <summary>Creates an <see cref="T:Microsoft.Maui.Controls.ImageSource" /> from an embedded resource in the specified assembly.</summary>
+        <returns>A <see cref="T:Microsoft.Maui.Controls.StreamImageSource" /> for the embedded resource.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,10 +145,10 @@
         <Parameter Name="resolvingType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="resource">The name of a valid image resource in the assembly to which <paramref name="resolvingType" /> belongs.</param>
-        <param name="resolvingType">A type from the assembly in which to look up the image resource with <paramref name="resource" />.</param>
-        <summary>Creates a <see cref="T:Microsoft.Maui.Controls.ImageSource" /> from the specified resource in the specified source assembly.</summary>
-        <returns>To be added.</returns>
+        <param name="resource">The name of the embedded resource.</param>
+        <param name="resolvingType">A type whose assembly contains the resource.</param>
+        <summary>Creates an <see cref="T:Microsoft.Maui.Controls.ImageSource" /> from an embedded resource in the assembly containing the specified type.</summary>
+        <returns>A <see cref="T:Microsoft.Maui.Controls.StreamImageSource" /> for the embedded resource.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,9 +172,9 @@
         <Parameter Name="stream" Type="System.Func&lt;System.IO.Stream&gt;" />
       </Parameters>
       <Docs>
-        <param name="stream">A factory method that returns a new stream that supplies image data.</param>
-        <summary>Returns a new <see cref="T:Microsoft.Maui.Controls.StreamImageSource" /> that calls <paramref name="stream" /> and reads from the <see cref="T:System.IO.Stream" /> it returns.</summary>
-        <returns>A new <see cref="T:Microsoft.Maui.Controls.StreamImageSource" /> with the data returned by <paramref name="stream" />.</returns>
+        <param name="stream">A factory function that returns a stream containing the image data.</param>
+        <summary>Creates an <see cref="T:Microsoft.Maui.Controls.ImageSource" /> from a stream factory function.</summary>
+        <returns>A <see cref="T:Microsoft.Maui.Controls.StreamImageSource" /> for the stream.</returns>
         <remarks>The delegate provided to `stream` must return a new stream on every invocation.</remarks>
       </Docs>
     </Member>
@@ -198,9 +198,9 @@
         <Parameter Name="stream" Type="System.Func&lt;System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;System.IO.Stream&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="stream">A factory method that returns a <see cref="T:System.Threading.Tasks.Task`1" /> that returns a new stream that supplies image data and supports cancellation.</param>
-        <summary>Returns a new <see cref="T:Microsoft.Maui.Controls.StreamImageSource" /> that calls <paramref name="stream" /> and reads from the <see cref="T:System.IO.Stream" /> it returns.</summary>
-        <returns>A new <see cref="T:Microsoft.Maui.Controls.StreamImageSource" /> with the data returned by <paramref name="stream" />.</returns>
+        <param name="stream">A cancellable async factory function that returns a stream containing the image data.</param>
+        <summary>Creates an <see cref="T:Microsoft.Maui.Controls.ImageSource" /> from an async stream factory function.</summary>
+        <returns>A <see cref="T:Microsoft.Maui.Controls.StreamImageSource" /> for the stream.</returns>
         <remarks>The delegate provided to `stream` must return a new stream on every invocation.</remarks>
       </Docs>
     </Member>
@@ -224,9 +224,9 @@
         <Parameter Name="uri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="uri">A URI that identifies a valid image.</param>
-        <summary>Returns a new <see cref="T:Microsoft.Maui.Controls.UriImageSource" /> that reads from <paramref name="uri" />.</summary>
-        <returns>To be added.</returns>
+        <param name="uri">The absolute URI of the image.</param>
+        <summary>Creates an <see cref="T:Microsoft.Maui.Controls.ImageSource" /> from an absolute URI.</summary>
+        <returns>A <see cref="T:Microsoft.Maui.Controls.UriImageSource" /> for the URI.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -250,11 +250,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a value indicating whether this image source is empty.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/ImageSource.xml" path="//Member[@MemberName='IsEmpty']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="IsNullOrEmpty">

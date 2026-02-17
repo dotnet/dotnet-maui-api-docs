@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents a distance in meters, miles, or kilometers.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,8 +39,10 @@
         <Parameter Name="meters" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="meters">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="meters">The distance in meters.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Maps.Distance" /> struct with a value in meters.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,10 +67,12 @@
         <Parameter Name="position2" Type="Microsoft.Maui.Devices.Sensors.Location" />
       </Parameters>
       <Docs>
-        <param name="position1">To be added.</param>
-        <param name="position2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="position1">The first position.</param>
+        <param name="position2">The second position.</param>
+        <summary>
+            Calculates the distance between two geographical positions using the Haversine formula.
+            </summary>
+        <returns>The distance between the two positions.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,9 +96,12 @@
         <Parameter Name="other" Type="Microsoft.Maui.Maps.Distance" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The other distance to compare.</param>
+        <summary>
+            Determines whether this instance is equal to another <see cref="T:Microsoft.Maui.Maps.Distance" />.
+            </summary>
+        <returns>
+          <see langword="true" /> if the distances are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,6 +129,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="FromKilometers">
@@ -142,9 +152,11 @@
         <Parameter Name="kilometers" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="kilometers">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="kilometers">The distance in kilometers.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Maui.Maps.Distance" /> from a value in kilometers.
+            </summary>
+        <returns>A new <see cref="T:Microsoft.Maui.Maps.Distance" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,9 +180,11 @@
         <Parameter Name="meters" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="meters">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="meters">The distance in meters.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Maui.Maps.Distance" /> from a value in meters.
+            </summary>
+        <returns>A new <see cref="T:Microsoft.Maui.Maps.Distance" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,9 +208,11 @@
         <Parameter Name="miles" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="miles">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="miles">The distance in miles.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Maui.Maps.Distance" /> from a value in miles.
+            </summary>
+        <returns>A new <see cref="T:Microsoft.Maui.Maps.Distance" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,6 +237,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Kilometers">
@@ -240,7 +257,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the distance in kilometers.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -268,7 +287,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the distance in meters.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -290,7 +311,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the distance in miles.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -316,10 +339,13 @@
         <Parameter Name="right" Type="Microsoft.Maui.Maps.Distance" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first distance.</param>
+        <param name="right">The second distance.</param>
+        <summary>
+            Determines whether two <see cref="T:Microsoft.Maui.Maps.Distance" /> instances are equal.
+            </summary>
+        <returns>
+          <see langword="true" /> if the distances are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -344,10 +370,13 @@
         <Parameter Name="right" Type="Microsoft.Maui.Maps.Distance" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first distance.</param>
+        <param name="right">The second distance.</param>
+        <summary>
+            Determines whether two <see cref="T:Microsoft.Maui.Maps.Distance" /> instances are not equal.
+            </summary>
+        <returns>
+          <see langword="true" /> if the distances are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

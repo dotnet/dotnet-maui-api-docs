@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>A <see cref="T:Microsoft.Maui.Controls.ShellItem" /> that has a collection of <see cref="T:Microsoft.Maui.Controls.Tab" /> objects.</summary>
+    <summary>
+            Represents a flyout menu item in a <see cref="T:Microsoft.Maui.Controls.Shell" /> application.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,10 +42,8 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.FlyoutItem" /> class.</summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/FlyoutItem.xml" path="//Member[@MemberName='.ctor']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="GetIsVisible">
@@ -66,9 +66,10 @@
         <Parameter Name="obj" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object from which to read the property value.</param>
+        <summary>Gets the value of the attached <c>IsVisible</c> property for the specified <paramref name="obj" />.</summary>
+        <returns>
+          <see langword="true" /> if the object is visible; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,7 +90,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>StyleClass set on the Image of each Flyout Item. This const is set to "FlyoutItemImageStyle".</summary>
+        <summary>The style class for flyout item images.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,10 +111,8 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property for attached property <c>IsVisible</c>. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/FlyoutItem.xml" path="//Member[@MemberName='IsVisibleProperty']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="LabelStyle">
@@ -133,7 +132,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>StyleClass set on the Label of each Flyout Item. This const is set to "FlyoutItemLabelStyle".</summary>
+        <summary>The style class for flyout item labels.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,7 +153,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>StyleClass set on the Label of every Flyout Item. This const is set to "FlyoutItemLayoutStyle".</summary>
+        <summary>The style class for flyout item layouts.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,9 +178,9 @@
         <Parameter Name="isVisible" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <param name="isVisible">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="obj">The object on which to set the property value.</param>
+        <param name="isVisible">The visibility value to set.</param>
+        <summary>Sets the value of the attached <c>IsVisible</c> property on the specified <paramref name="obj" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

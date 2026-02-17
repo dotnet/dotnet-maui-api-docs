@@ -52,21 +52,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>A <see cref="T:Microsoft.Maui.Controls.View" /> control that provides time picking.</summary>
+    <summary>
+            A view control that provides time selection.
+            </summary>
     <remarks>
-      <para>The visual representation of a TimePicker is very similar to the one of <see cref="T:Microsoft.Maui.Controls.Entry" />, except that a special control for picking a time appears in place of a keyboard.</para>
-      <para>
-    The following example shows declaration of a TimePicker with a default time set.
-    </para>
-      <example>
-        <code lang="csharp lang-csharp"><![CDATA[
-var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
-    ]]></code>
-      </example>
-      <para>
-        <img href="~/xml/Microsoft.Maui.Controls/_images/TimePicker.TripleScreenShot.png" />
-      </para>
-    </remarks>
+            The TimePicker displays a time selection interface. Users can select a time of day, 
+            which is stored in the <see cref="P:Microsoft.Maui.Controls.TimePicker.Time" /> property as a <see cref="T:System.TimeSpan" /> value.
+            The visual representation is similar to an <see cref="T:Microsoft.Maui.Controls.Entry" />, but displays a time picker interface instead of a keyboard.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -83,7 +76,7 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new TimePicker instance.</summary>
+        <summary>Initializes a new instance of the TimePicker class.</summary>
         <remarks />
       </Docs>
     </Member>
@@ -104,11 +97,9 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the character spacing for the time picker text. This is a bindable property.</summary>
+        <value>A <see cref="T:System.Double" /> representing the spacing between characters.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/TimePicker.xml" path="//Member[@MemberName='CharacterSpacing']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="CharacterSpacingProperty">
@@ -195,8 +186,8 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
         <ReturnType>Microsoft.Maui.Controls.FontAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>TGets a value that indicates whether the font for the searchbar text is bold, italic, or neither.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the font for the time picker text is bold, italic, or neither. This is a bindable property.</summary>
+        <value>A <see cref="T:Microsoft.Maui.Controls.FontAttributes" /> value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,8 +229,9 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether font auto-scaling is enabled. This is a bindable property.</summary>
+        <value>
+          <see langword="true" /> if font auto-scaling is enabled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -281,8 +273,8 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the font family for the picker text.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the font family for the time picker text. This is a bindable property.</summary>
+        <value>The name of the font family.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -330,8 +322,8 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the size of the font for the text in the picker.</summary>
-        <value>A <see langword="double" /> that indicates the size of the font.</value>
+        <summary>Gets or sets the size of the font for the text in the time picker. This is a bindable property.</summary>
+        <value>A <see cref="T:System.Double" /> representing the font size.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -373,8 +365,8 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The format of the time to display to the user. This is a bindable property.</summary>
-        <value>A valid time format string.</value>
+        <summary>Gets or sets the format string for displaying the time. This is a bindable property.</summary>
+        <value>A format string compatible with <see cref="M:System.TimeSpan.ToString(System.String)" />. The default is "t" (short time pattern).</value>
         <remarks>Format string is the same is passed to DateTime.ToString (string format).</remarks>
       </Docs>
     </Member>
@@ -418,8 +410,9 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether the time picker is open. This is a bindable property.</summary>
+        <value>
+          <see langword="true" /> if the time picker is open; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -849,8 +842,8 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text color.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the text color for the time picker. This is a bindable property.</summary>
+        <value>The <see cref="T:Microsoft.Maui.Graphics.Color" /> of the text.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -898,8 +891,8 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
         <ReturnType FrameworkAlternate="net-maui-8.0;net-maui-9.0">System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the displayed time. This is a bindable property.</summary>
-        <value>The <see cref="T:System.TimeSpan" /> displayed in the TimePicker.</value>
+        <summary>Gets or sets the selected time. This is a bindable property.</summary>
+        <value>A <see cref="T:System.Nullable`1" /> representing the selected time. Valid values are between 0 and 24 hours.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -969,10 +962,10 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
         <Parameter Name="textTransform" Type="Microsoft.Maui.TextTransform" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="textTransform">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="source">The source text.</param>
+        <param name="textTransform">The text transformation to apply.</param>
+        <summary>Applies the specified text transformation to the input string.</summary>
+        <returns>The transformed text.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

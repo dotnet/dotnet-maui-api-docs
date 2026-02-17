@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Class that contains arguments for the event that is raised after web navigation begins.</summary>
+    <summary>
+            Event arguments for the <see cref="E:Microsoft.Maui.Controls.WebView.Navigating" /> event, raised before navigation begins.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,10 +41,12 @@
         <Parameter Name="url" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="navigationEvent">The navigation event that was raised.</param>
-        <param name="source">The web view source that originated the event.</param>
-        <param name="url">The URL of the navigation event.</param>
-        <summary>Initializes a new <see cref="T:Microsoft.Maui.Controls.WebNavigatingEventArgs" /> instance.</summary>
+        <param name="navigationEvent">The type of navigation event.</param>
+        <param name="source">The source of the web view content.</param>
+        <param name="url">The URL being navigated to.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.WebNavigatingEventArgs" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,7 +67,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether or not to cancel the navigation.</summary>
+        <summary>
+            Gets or sets a value indicating whether to cancel the navigation.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

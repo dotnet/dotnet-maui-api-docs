@@ -61,11 +61,14 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ItemsView.xml" path="//Member[@MemberName='EmptyView']/Docs/*" />
+        <summary>
+            Gets or sets the view or object to display when the <see cref="P:Microsoft.Maui.Controls.ItemsView.ItemsSource" /> is empty or <see langword="null" />.
+            </summary>
+        <value>The empty view content, which can be a string, view, or any object. Use <see cref="P:Microsoft.Maui.Controls.ItemsView.EmptyViewTemplate" /> to customize rendering.</value>
+        <remarks>
+            The empty view provides user feedback when there are no items to display.
+            If <see cref="P:Microsoft.Maui.Controls.ItemsView.EmptyViewTemplate" /> is set, it is used to render the empty view; otherwise, the object's string representation or the view itself is displayed.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="EmptyViewProperty">
@@ -106,11 +109,14 @@
         <ReturnType>Microsoft.Maui.Controls.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ItemsView.xml" path="//Member[@MemberName='EmptyViewTemplate']/Docs/*" />
+        <summary>
+            Gets or sets the <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> used to render the <see cref="P:Microsoft.Maui.Controls.ItemsView.EmptyView" />.
+            </summary>
+        <value>A <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> that defines how the empty view is displayed, or <see langword="null" /> to use default rendering.</value>
+        <remarks>
+            The template's binding context is set to the <see cref="P:Microsoft.Maui.Controls.ItemsView.EmptyView" /> object.
+            This allows for rich, custom layouts to be displayed when the collection is empty.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="EmptyViewTemplateProperty">
@@ -151,11 +157,11 @@
         <ReturnType>Microsoft.Maui.ScrollBarVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the visibility of the horizontal scroll bar.
+            </summary>
+        <value>A <see cref="T:Microsoft.Maui.ScrollBarVisibility" /> value. The default is <see cref="F:Microsoft.Maui.ScrollBarVisibility.Default" />.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ItemsView.xml" path="//Member[@MemberName='HorizontalScrollBarVisibility']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalScrollBarVisibilityProperty">
@@ -218,11 +224,14 @@
         <ReturnType>System.Collections.IEnumerable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ItemsView.xml" path="//Member[@MemberName='ItemsSource']/Docs/*" />
+        <summary>
+            Gets or sets the collection of items to be displayed.
+            </summary>
+        <value>An <see cref="T:System.Collections.IEnumerable" /> collection of items to display, or <see langword="null" /> to display the <see cref="P:Microsoft.Maui.Controls.ItemsView.EmptyView" />.</value>
+        <remarks>
+            The items source can be any collection that implements <see cref="T:System.Collections.IEnumerable" />.
+            For automatic UI updates when the collection changes, use an <see cref="T:System.Collections.ObjectModel.ObservableCollection`1" /> or implement <see cref="T:System.Collections.Specialized.INotifyCollectionChanged" />.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemsSourceProperty">
@@ -263,11 +272,14 @@
         <ReturnType>Microsoft.Maui.Controls.ItemsUpdatingScrollMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ItemsView.xml" path="//Member[@MemberName='ItemsUpdatingScrollMode']/Docs/*" />
+        <summary>
+            Gets or sets the scroll behavior when items are added, removed, or updated in the collection.
+            </summary>
+        <value>An <see cref="P:Microsoft.Maui.Controls.ItemsView.ItemsUpdatingScrollMode" /> value. The default is <see cref="F:Microsoft.Maui.Controls.ItemsUpdatingScrollMode.KeepItemsInView" />.</value>
+        <remarks>
+            This property controls how the view maintains its scroll position when the <see cref="P:Microsoft.Maui.Controls.ItemsView.ItemsSource" /> changes.
+            Use <see cref="F:Microsoft.Maui.Controls.ItemsUpdatingScrollMode.KeepLastItemInView" /> for chat-like interfaces where new items are added at the end.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemsUpdatingScrollModeProperty">
@@ -308,11 +320,14 @@
         <ReturnType>Microsoft.Maui.Controls.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ItemsView.xml" path="//Member[@MemberName='ItemTemplate']/Docs/*" />
+        <summary>
+            Gets or sets the <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> used to render each item in the collection.
+            </summary>
+        <value>A <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> that defines how items are displayed, or <see langword="null" /> to use default rendering.</value>
+        <remarks>
+            The template's binding context is set to each item in the <see cref="P:Microsoft.Maui.Controls.ItemsView.ItemsSource" />.
+            For dynamic template selection based on item data, use a <see cref="T:Microsoft.Maui.Controls.DataTemplateSelector" /> instead.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemTemplateProperty">
@@ -481,11 +496,14 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ItemsView.xml" path="//Member[@MemberName='RemainingItemsThreshold']/Docs/*" />
+        <summary>
+            Gets or sets the number of remaining items in the view that trigger the <see cref="E:Microsoft.Maui.Controls.ItemsView.RemainingItemsThresholdReached" /> event.
+            </summary>
+        <value>The threshold count. Must be -1 or greater. The default is -1 (disabled).</value>
+        <remarks>
+            When scrolling reaches a point where only this many items remain to be displayed, the <see cref="E:Microsoft.Maui.Controls.ItemsView.RemainingItemsThresholdReached" /> event fires.
+            Set to -1 to disable the threshold behavior. This is commonly used for implementing infinite scroll or incremental loading.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemainingItemsThresholdProperty">
@@ -547,11 +565,15 @@
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ItemsView.xml" path="//Member[@MemberName='RemainingItemsThresholdReachedCommand']/Docs/*" />
+        <summary>
+            Gets or sets the command to execute when the remaining items threshold is reached during scrolling.
+            </summary>
+        <value>An <see cref="T:System.Windows.Input.ICommand" /> to execute, or <see langword="null" /> for no command.</value>
+        <remarks>
+            This command is commonly used to implement incremental loading (infinite scroll).
+            When scrolling reaches the threshold specified by <see cref="P:Microsoft.Maui.Controls.ItemsView.RemainingItemsThreshold" />, this command is executed,
+            allowing you to load more items asynchronously.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemainingItemsThresholdReachedCommandParameter">
@@ -571,11 +593,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the parameter to pass to the <see cref="P:Microsoft.Maui.Controls.ItemsView.RemainingItemsThresholdReachedCommand" />.
+            </summary>
+        <value>The command parameter, or <see langword="null" /> if no parameter is needed.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ItemsView.xml" path="//Member[@MemberName='RemainingItemsThresholdReachedCommandParameter']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="RemainingItemsThresholdReachedCommandParameterProperty">
@@ -663,11 +685,14 @@
         <Parameter Name="animate" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="groupIndex">To be added.</param>
-        <param name="position">To be added.</param>
-        <param name="animate">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index of the item to scroll to.</param>
+        <param name="groupIndex">The zero-based index of the group containing the item, or -1 if not grouped.</param>
+        <param name="position">The position where the item should appear in the visible area after scrolling.</param>
+        <param name="animate">
+          <see langword="true" /> to animate the scroll; <see langword="false" /> to jump immediately.</param>
+        <summary>
+            Scrolls the items view to the item at the specified index.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -693,11 +718,14 @@
         <Parameter Name="animate" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <param name="group">To be added.</param>
-        <param name="position">To be added.</param>
-        <param name="animate">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="item">The data item to scroll to.</param>
+        <param name="group">The group object containing the item, or <see langword="null" /> if not grouped.</param>
+        <param name="position">The position where the item should appear in the visible area after scrolling.</param>
+        <param name="animate">
+          <see langword="true" /> to animate the scroll; <see langword="false" /> to jump immediately.</param>
+        <summary>
+            Scrolls the items view to the specified data item.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -740,10 +768,13 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ItemsView.xml" path="//Member[@MemberName='SendRemainingItemsThresholdReached']/Docs/*" />
+        <summary>
+            Manually triggers the remaining items threshold behavior.
+            </summary>
+        <remarks>
+            This method raises the <see cref="E:Microsoft.Maui.Controls.ItemsView.RemainingItemsThresholdReached" /> event and executes the <see cref="P:Microsoft.Maui.Controls.ItemsView.RemainingItemsThresholdReachedCommand" />.
+            It's typically called by platform-specific renderers when scrolling reaches the threshold, but can be called manually if needed.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="SendScrolled">
@@ -788,11 +819,11 @@
         <ReturnType>Microsoft.Maui.ScrollBarVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the visibility of the vertical scroll bar.
+            </summary>
+        <value>A <see cref="T:Microsoft.Maui.ScrollBarVisibility" /> value. The default is <see cref="F:Microsoft.Maui.ScrollBarVisibility.Default" />.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ItemsView.xml" path="//Member[@MemberName='VerticalScrollBarVisibility']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="VerticalScrollBarVisibilityProperty">

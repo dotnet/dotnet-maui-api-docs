@@ -144,9 +144,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">The platform specific element on which to perform the operation.</param>
-        <param name="value">The new property value to assign.</param>
-        <summary>Sets the attached property that controls whether fast scrolling is enabled.</summary>
+        <param name="element">The ListView element.</param>
+        <param name="value">
+          <see langword="true" /> to enable fast scroll; otherwise, <see langword="false" />.</param>
+        <summary>Sets whether fast scrolling is enabled in the Android ListView.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,10 +178,11 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
-        <param name="value">The new property value to assign.</param>
-        <summary>Sets the attached property that controls whether fast scrolling is enabled.</summary>
-        <returns>The updated configuration object, on which more methods may be called.</returns>
+        <param name="config">The platform configuration.</param>
+        <param name="value">
+          <see langword="true" /> to enable fast scroll; otherwise, <see langword="false" />.</param>
+        <summary>Sets whether fast scrolling is enabled in the Android ListView.</summary>
+        <returns>The platform configuration for fluent API chaining.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

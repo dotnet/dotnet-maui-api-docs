@@ -57,8 +57,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+            A container control that draws a border, background, or both around its child content.
+            </summary>
+    <remarks>
+            Border provides a way to add visual decoration around any content. You can customize the stroke (border), 
+            background, shape, padding, and more to create visually rich containers.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -96,8 +101,10 @@
         <ReturnType>Microsoft.Maui.Controls.View</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the child content that is placed inside the border. This is a bindable property.
+            </summary>
+        <value>A <see cref="T:Microsoft.Maui.Controls.View" /> that contains the child content, or <see langword="null" /> if no content is set.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,10 +130,12 @@
         <Parameter Name="newValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="bindable">To be added.</param>
-        <param name="oldValue">To be added.</param>
-        <param name="newValue">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="bindable">The border instance.</param>
+        <param name="oldValue">The old content value.</param>
+        <param name="newValue">The new content value.</param>
+        <summary>
+            Called when the <see cref="P:Microsoft.Maui.Controls.Border.Content" /> property changes.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,9 +190,11 @@
         <Parameter Name="bounds" Type="Microsoft.Maui.Graphics.Rect" />
       </Parameters>
       <Docs>
-        <param name="bounds">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bounds">The available bounds for the border.</param>
+        <summary>
+            Arranges the child content within the specified bounds, accounting for stroke thickness.
+            </summary>
+        <returns>The actual size used by the border.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,10 +223,12 @@
         <Parameter Name="heightConstraint" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="widthConstraint">To be added.</param>
-        <param name="heightConstraint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="widthConstraint">The available width.</param>
+        <param name="heightConstraint">The available height.</param>
+        <summary>
+            Measures the border and its content with the given constraints.
+            </summary>
+        <returns>The desired size of the border.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -465,9 +478,11 @@
         <Parameter Name="newValue" Type="Microsoft.Maui.Thickness" />
       </Parameters>
       <Docs>
-        <param name="oldValue">To be added.</param>
-        <param name="newValue">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="oldValue">The old padding value.</param>
+        <param name="newValue">The new padding value.</param>
+        <summary>
+            Called when the <see cref="P:Microsoft.Maui.Controls.Border.Padding" /> property changes.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -500,6 +515,7 @@
         <param name="propertyName">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Padding">
@@ -519,7 +535,9 @@
         <ReturnType>Microsoft.Maui.Thickness</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the padding inside the border. This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -545,8 +563,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Provides the default value for the <see cref="P:Microsoft.Maui.Controls.Border.Padding" /> property.
+            </summary>
+        <returns>The default padding of <see cref="F:Microsoft.Maui.Thickness.Zero" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -648,8 +668,10 @@
         <ReturnType>Microsoft.Maui.Controls.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the brush used to paint the border stroke. This is a bindable property.
+            </summary>
+        <value>A <see cref="T:Microsoft.Maui.Controls.Brush" /> used for the border stroke, or <see langword="null" /> if no stroke is set.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -670,8 +692,10 @@
         <ReturnType>Microsoft.Maui.Controls.DoubleCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the pattern of dashes and gaps used to outline the border. This is a bindable property.
+            </summary>
+        <value>A <see cref="T:Microsoft.Maui.Controls.DoubleCollection" /> containing the dash pattern, or <see langword="null" /> for a solid line.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -719,8 +743,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the distance within the dash pattern where a dash begins. This is a bindable property.
+            </summary>
+        <value>A <see cref="T:System.Double" /> representing the offset in device-independent units. The default is 0.0.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -771,8 +797,10 @@
         <ReturnType>System.Single[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the stroke dash pattern as a float array for platform rendering.
+            </summary>
+        <value>A float array containing the dash pattern values, or <see langword="null" /> for a solid line.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -793,8 +821,10 @@
         <ReturnType>Microsoft.Maui.Controls.Shapes.PenLineCap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the shape at the start and end of the border stroke. This is a bindable property.
+            </summary>
+        <value>A <see cref="T:Microsoft.Maui.Controls.Shapes.PenLineCap" /> value. The default is <see cref="F:Microsoft.Maui.Controls.Shapes.PenLineCap.Flat" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -842,8 +872,10 @@
         <ReturnType>Microsoft.Maui.Controls.Shapes.PenLineJoin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the type of join that is used at the vertices of the border stroke. This is a bindable property.
+            </summary>
+        <value>A <see cref="T:Microsoft.Maui.Controls.Shapes.PenLineJoin" /> value. The default is <see cref="F:Microsoft.Maui.Controls.Shapes.PenLineJoin.Miter" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -891,8 +923,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the limit on the ratio of the miter length to half the stroke thickness. This is a bindable property.
+            </summary>
+        <value>The default is 10.0.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -973,9 +1007,14 @@
         <ReturnType>Microsoft.Maui.Graphics.IShape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+            Gets or sets the shape of the border. This is a bindable property.
+            </summary>
+        <value>An <see cref="T:Microsoft.Maui.Graphics.IShape" /> that defines the border shape, or <see langword="null" /> for the default <see cref="T:Microsoft.Maui.Controls.Shapes.Rectangle" /> shape.</value>
+        <remarks>
+            The default value is a <see cref="T:Microsoft.Maui.Controls.Shapes.Rectangle" />. You can set this to other shapes like <see cref="T:Microsoft.Maui.Controls.Shapes.RoundRectangle" />, 
+            <see cref="T:Microsoft.Maui.Controls.Shapes.Ellipse" />, or any custom <see cref="T:Microsoft.Maui.Graphics.IShape" /> implementation to change the border's appearance.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="StrokeShapeProperty">
@@ -1022,8 +1061,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the thickness of the border stroke. This is a bindable property.
+            </summary>
+        <value>The stroke thickness in device-independent units. The default is 1.0.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1049,10 +1090,12 @@
         <Parameter Name="newValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="bindable">To be added.</param>
-        <param name="oldValue">To be added.</param>
-        <param name="newValue">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="bindable">The border instance.</param>
+        <param name="oldValue">The old stroke thickness value.</param>
+        <param name="newValue">The new stroke thickness value.</param>
+        <summary>
+            Called when the <see cref="P:Microsoft.Maui.Controls.Border.StrokeThickness" /> property changes.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

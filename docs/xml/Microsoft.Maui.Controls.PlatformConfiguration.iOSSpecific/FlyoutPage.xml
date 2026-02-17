@@ -16,10 +16,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides iOS-specific configuration for FlyoutPage shadow effects.</summary>
     <remarks>To be added.</remarks>
-    <!-- No matching elements were found for the following include tag -->
-    <include file="../../../../docs/Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific/FlyoutPage.xml" path="Type[@FullName='Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific.FlyoutPage']/Docs/*" />
   </Docs>
   <Members>
     <Member MemberName="ApplyShadowProperty">
@@ -63,9 +61,10 @@
         <Parameter Name="element" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The element to get the value from.</param>
+        <summary>Gets whether a drop shadow is applied to the detail page when the flyout is revealed on iOS.</summary>
+        <returns>
+          <see langword="true" /> if shadow is applied; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,9 +88,10 @@
         <Parameter Name="config" Type="Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.iOS,Microsoft.Maui.Controls.FlyoutPage&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration.</param>
+        <summary>Gets whether a drop shadow is applied to the detail page when the flyout is revealed on iOS.</summary>
+        <returns>
+          <see langword="true" /> if shadow is applied; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,9 +116,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The element to set the value on.</param>
+        <param name="value">
+          <see langword="true" /> to apply shadow; otherwise, <see langword="false" />.</param>
+        <summary>Sets whether a drop shadow is applied to the detail page when the flyout is revealed on iOS.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,10 +144,11 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration.</param>
+        <param name="value">
+          <see langword="true" /> to apply shadow; otherwise, <see langword="false" />.</param>
+        <summary>Sets whether a drop shadow is applied to the detail page when the flyout is revealed on iOS.</summary>
+        <returns>The updated platform configuration.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

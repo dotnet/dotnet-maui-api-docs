@@ -26,7 +26,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+    <summary>A disposable struct for profiling code execution.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -47,7 +47,7 @@
         <ReturnType>System.Collections.Generic.List&lt;Microsoft.Maui.Controls.Internals.Profile+Datum&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>Gets the collected profiling data.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,7 +72,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>Disposes the profile and records the elapsed time.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,10 +100,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Enables profiling and initializes data structures.</summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls.Internals/Profile.xml" path="//Member[@MemberName='Enable']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="FrameBegin">
@@ -142,7 +140,7 @@
       <Docs>
         <param name="name">To be added.</param>
         <param name="line">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Begins a new profiling frame.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,7 +171,7 @@
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Ends the current profiling frame.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,7 +204,7 @@
       <Docs>
         <param name="id">For internal use by the Microsoft.Maui.Controls platform.</param>
         <param name="line">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>Creates a partition within the current frame.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -233,11 +231,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets whether profiling is enabled.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls.Internals/Profile.xml" path="//Member[@MemberName='IsEnabled']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -258,7 +254,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>Starts profiling.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -280,7 +276,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>Stops profiling and unwinds the stack.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

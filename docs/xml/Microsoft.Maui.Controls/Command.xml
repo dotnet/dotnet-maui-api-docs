@@ -67,8 +67,8 @@ var button = new Button {
         <Parameter Name="execute" Type="System.Action" />
       </Parameters>
       <Docs>
-        <param name="execute">An Action to execute when the Command is executed.</param>
-        <summary>Initializes a new instance of the Command class.</summary>
+        <param name="execute">The action to execute when the command is invoked.</param>
+        <summary>Creates a new command with the specified parameterless execute action.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,8 +89,8 @@ var button = new Button {
         <Parameter Name="execute" Type="System.Action&lt;System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="execute">An Action&lt;object&gt; to execute when the Command is executed.</param>
-        <summary>Initializes a new instance of the Command class.</summary>
+        <param name="execute">The action to execute when the command is invoked.</param>
+        <summary>Creates a new command with the specified execute action.</summary>
         <remarks>The Action will be executed with a parameter.</remarks>
       </Docs>
     </Member>
@@ -112,9 +112,9 @@ var button = new Button {
         <Parameter Name="canExecute" Type="System.Func&lt;System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <param name="execute">An Action to execute when the Command is executed.</param>
-        <param name="canExecute">A <see cref="T:System.Func`1" /> indicating if the Command can be executed.</param>
-        <summary>Initializes a new instance of the Command class.</summary>
+        <param name="execute">The action to execute when the command is invoked.</param>
+        <param name="canExecute">A function that determines if the command can execute.</param>
+        <summary>Creates a new command with the specified parameterless execute and canExecute delegates.</summary>
         <remarks>Whenever the value returned by canExecute has changed, a call to <see cref="M:Microsoft.Maui.Controls.Command.ChangeCanExecute" /> is required to trigger <see cref="E:System.Windows.Input.ICommand.CanExecuteChanged" />.</remarks>
       </Docs>
     </Member>
@@ -136,9 +136,9 @@ var button = new Button {
         <Parameter Name="canExecute" Type="System.Func&lt;System.Object,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <param name="execute">An Action&lt;object&gt; to execute when the Command is executed.</param>
-        <param name="canExecute">A <see cref="T:System.Func`2" /> indicating if the Command can be executed.</param>
-        <summary>Initializes a new instance of the Command class.</summary>
+        <param name="execute">The action to execute when the command is invoked.</param>
+        <param name="canExecute">A function that determines if the command can execute.</param>
+        <summary>Creates a new command with the specified execute and canExecute delegates.</summary>
         <remarks>Whenever the value returned by canExecute has changed, a call to <see cref="M:Microsoft.Maui.Controls.Command.ChangeCanExecute" /> is required to trigger <see cref="E:System.Windows.Input.ICommand.CanExecuteChanged" />.</remarks>
       </Docs>
     </Member>

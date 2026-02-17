@@ -22,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+    <summary>Extension methods for <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> that support template selection.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,11 +48,11 @@
         <Parameter Name="container" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="self">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <param name="item">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <param name="container">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
-        <returns>For internal use by the Microsoft.Maui.Controls platform.</returns>
+        <param name="self">The template or selector.</param>
+        <param name="item">The data item.</param>
+        <param name="container">The container that will display the item.</param>
+        <summary>Selects the appropriate template and creates its content for the specified item.</summary>
+        <returns>The created content object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,11 +78,11 @@
         <Parameter Name="container" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="self">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <param name="item">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <param name="container">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
-        <returns>For internal use by the Microsoft.Maui.Controls platform.</returns>
+        <param name="self">The template or selector.</param>
+        <param name="item">The data item.</param>
+        <param name="container">The container that will display the item.</param>
+        <summary>Returns the appropriate template, invoking selector logic if the template is a <see cref="T:Microsoft.Maui.Controls.DataTemplateSelector" />.</summary>
+        <returns>The selected <see cref="T:Microsoft.Maui.Controls.DataTemplate" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

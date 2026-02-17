@@ -47,7 +47,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Grouped content in a Shell application, navigable by bottom tabs. </summary>
+    <summary>
+            Represents a group of tabs within a <see cref="P:Microsoft.Maui.Controls.ShellSection.ShellItem" />. Contains <see cref="T:Microsoft.Maui.Controls.ShellContent" /> items.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -65,10 +67,10 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Maui.Controls.ShellSection" /> instance.
+            </summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ShellSection.xml" path="//Member[@MemberName='.ctor']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="CurrentItem">
@@ -88,7 +90,9 @@
         <ReturnType>Microsoft.Maui.Controls.ShellContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The currently selected <see cref="T:Microsoft.Maui.Controls.ShellContent" />.</summary>
+        <summary>
+            Gets or sets the currently selected <see cref="T:Microsoft.Maui.Controls.ShellContent" />. This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,7 +158,9 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Controls.ShellContent&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The collection of <see cref="T:Microsoft.Maui.Controls.ShellContent" /> objects managed by <c>this</c><see cref="T:Microsoft.Maui.Controls.ShellSection" />.</summary>
+        <summary>
+            Gets the collection of <see cref="T:Microsoft.Maui.Controls.ShellContent" /> items in this section. This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -943,11 +949,11 @@
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.Controls.Page&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the current navigation stack of pages in this section.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ShellSection.xml" path="//Member[@MemberName='Stack']/Docs/*" />
       </Docs>
     </Member>
   </Members>

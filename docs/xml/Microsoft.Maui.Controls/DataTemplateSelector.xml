@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Selects <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> objects by data type and container.</summary>
+    <summary>
+            Selects a <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> based on the data object and container. Override <see cref="M:Microsoft.Maui.Controls.DataTemplateSelector.OnSelectTemplate(System.Object,Microsoft.Maui.Controls.BindableObject)" /> to implement selection logic.
+            </summary>
     <remarks>
       <para>Application developers override the <see cref="M:Microsoft.Maui.Controls.DataTemplateSelector.OnSelectTemplate(System.Object,Microsoft.Maui.Controls.BindableObject)" /> method to return a unique <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> for a data type and parent container combination. Additionally, because the same exact template instance must be returned for a given piece of data across successive calls to <see cref="M:Microsoft.Maui.Controls.DataTemplateSelector.SelectTemplate(System.Object,Microsoft.Maui.Controls.BindableObject)" />, developers should create and store these <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> in their constructor overrides.</para>
       Developers should note the following items:        <list type="bullet"><item><term>OnSelectTemplate must not return another DataTemplateSelector, and
@@ -109,12 +111,10 @@
         <Parameter Name="container" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="item">The data for which to return a template.</param>
-        <param name="container">An optional container object in which the developer may have opted to store <see cref="T:Microsoft.Maui.Controls.DataTemplateSelector" /> objects.</param>
-        <summary>Returns a <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> for <paramref name="item" /> by calling <see cref="M:Microsoft.Maui.Controls.DataTemplateSelector.OnSelectTemplate(System.Object,Microsoft.Maui.Controls.BindableObject)" /> and verifying its result.</summary>
-        <returns>
-          <para>A developer-defined <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> that can be used to display <paramref name="item" />.</para>
-        </returns>
+        <param name="item">The data object for which to select a template.</param>
+        <param name="container">The bindable object that will display the templated item.</param>
+        <summary>Returns a <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> for the specified item and container.</summary>
+        <returns>The selected <see cref="T:Microsoft.Maui.Controls.DataTemplate" />.</returns>
         <remarks>
           <para>Developers should note that the Android platform is limited to 20 templates per list view.</para>
         </remarks>

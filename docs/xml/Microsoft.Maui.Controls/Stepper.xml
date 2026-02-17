@@ -41,74 +41,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>A <see cref="T:Microsoft.Maui.Controls.View" /> control that inputs a discrete value, constrained to a range.</summary>
+    <summary>
+            Represents a control that allows a user to incrementally adjust a numeric value by tapping plus or minus buttons.
+            </summary>
     <remarks>
-      <para>The following example shows a basic use.</para>
-      <example>
-        <code lang="csharp lang-csharp"><![CDATA[using System;
-            using System;
-            using Microsoft.Maui.Controls;
-    
-            namespace FormsGallery
-            {
-                class StepperDemoPage : ContentPage
-                {
-                    Label label;
-    
-                    public StepperDemoPage()
-                    {
-                        Label header = new Label
-                        {
-                            Text = "Stepper",
-                            FontSize = Device.GetNamedSize (NamedSize.Large, typeof(Label)),
-                            HorizontalOptions = LayoutOptions.Center
-                        };
-    
-                        Stepper stepper = new Stepper
-                        {
-                            Value = 5,
-                            Minimum = 0,
-                            Maximum = 10,
-                            Increment = 0.1,
-                            HorizontalOptions = LayoutOptions.Center,
-                            VerticalOptions = LayoutOptions.CenterAndExpand
-                        };
-                        stepper.ValueChanged += OnStepperValueChanged;
-    
-                        label = new Label
-                        {
-                            Text = String.Format("Stepper value is {0:F1}", stepper.Value),
-                            FontSize = Device.GetNamedSize (NamedSize.Large, typeof(Label)),
-                            HorizontalOptions = LayoutOptions.Center,
-                            VerticalOptions = LayoutOptions.CenterAndExpand
-                        };
-    
-                        // Accomodate iPhone status bar.
-                        this.Padding = new Thickness(10, Device.OnPlatform(20, 0, 0), 10, 5);
-    
-                        // Build the page.
-                        this.Content = new StackLayout
-                        {
-                            Children =
-                            {
-                                header,
-                                stepper,
-                                label
-                            }
-                            };
-                    }
-    
-                    void OnStepperValueChanged(object sender, ValueChangedEventArgs e)
-                    {
-                        label.Text = String.Format("Stepper value is {0:F1}", e.NewValue);
-                    }
-                }
-            }]]></code>
-      </example>
-      <para>
-        <img href="~/xml/Microsoft.Maui.Controls/_images/Stepper.TripleScreenShot.png" />
-      </para>
-    </remarks>
+            The <see cref="T:Microsoft.Maui.Controls.Stepper" /> provides buttons to increase or decrease a numeric value by a fixed <see cref="P:Microsoft.Maui.Controls.Stepper.Increment" />.
+            The value is constrained between <see cref="P:Microsoft.Maui.Controls.Stepper.Minimum" /> and <see cref="P:Microsoft.Maui.Controls.Stepper.Maximum" />.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -125,7 +64,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the Stepper class.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.Stepper" /> class with default minimum (0), maximum (100), and increment (1) values.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,12 +90,15 @@
         <Parameter Name="increment" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="min">The minimum selectable value.</param>
-        <param name="max">The maximum selectable value.</param>
-        <param name="val">The current selected value.</param>
-        <param name="increment">The increment by which Value is increased or decreased.</param>
-        <summary>Initializes a new instance of the Stepper class.</summary>
+        <param name="min">The minimum value.</param>
+        <param name="max">The maximum value.</param>
+        <param name="val">The initial value, clamped between <paramref name="min" /> and <paramref name="max" />.</param>
+        <param name="increment">The amount to increment or decrement the value by with each button press.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.Stepper" /> class with specified minimum, maximum, value, and increment.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown when <paramref name="min" /> is greater than or equal to <paramref name="max" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Increment">
@@ -174,8 +118,11 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the increment by which Value is increased or decreased. This is a bindable property.</summary>
-        <value>A double.</value>
+        <summary>
+            Gets or sets the amount by which the stepper value changes with each button press.
+            This is a bindable property.
+            </summary>
+        <value>The increment value. The default is 1.</value>
         <remarks />
       </Docs>
     </Member>
@@ -196,7 +143,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Stepper.Increment" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Stepper.Increment" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,9 +164,12 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum selectable value. This is a bindable property.</summary>
-        <value>A double.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+            Gets or sets the maximum value of the stepper.
+            This is a bindable property.
+            </summary>
+        <value>The maximum value. The default is 100.</value>
+        <remarks>Changing this value will automatically clamp the <see cref="P:Microsoft.Maui.Controls.Stepper.Value" /> to be within the new range.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaximumProperty">
@@ -239,7 +189,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Stepper.Maximum" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Stepper.Maximum" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -285,9 +235,12 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the minimum selectabel value. This is a bindable property.</summary>
-        <value>A double.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+            Gets or sets the minimum value of the stepper.
+            This is a bindable property.
+            </summary>
+        <value>The minimum value. The default is 0.</value>
+        <remarks>Changing this value will automatically clamp the <see cref="P:Microsoft.Maui.Controls.Stepper.Value" /> to be within the new range.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MinimumProperty">
@@ -307,7 +260,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Stepper.Minimum" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Stepper.Minimum" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -366,8 +319,11 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the current value. This is a bindable property.</summary>
-        <value>A double.</value>
+        <summary>
+            Gets or sets the current value of the stepper.
+            This is a bindable property.
+            </summary>
+        <value>The current value, clamped between <see cref="P:Microsoft.Maui.Controls.Stepper.Minimum" /> and <see cref="P:Microsoft.Maui.Controls.Stepper.Maximum" />. The default is 0.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -388,7 +344,9 @@
         <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.ValueChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when the <see cref="P:Microsoft.Maui.Controls.Stepper.Value" /> property changes.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -409,7 +367,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Stepper.Value" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Stepper.Value" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

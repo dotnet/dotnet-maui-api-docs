@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The tabbed page instance that Microsoft.Maui.Controls created on the macOS platform.</summary>
+    <summary>Provides macOS-specific platform configuration for <see cref="T:Microsoft.Maui.Controls.TabbedPage" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,9 +40,9 @@
         <Parameter Name="element" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">The platform specific element on which to perform the operation.</param>
-        <summary>Returns a value that describes the way that tabs are displayed.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The element whose tabs style to get.</param>
+        <summary>Gets the tabs display style for the tabbed page.</summary>
+        <returns>The tabs style for the element.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,9 +66,9 @@
         <Parameter Name="config" Type="Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.macOS,Microsoft.Maui.Controls.TabbedPage&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
-        <summary>Returns a value that describes the way that tabs are displayed.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration.</param>
+        <summary>Gets the tabs display style for the tabbed page.</summary>
+        <returns>The tabs style for the element.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,9 +92,9 @@
         <Parameter Name="config" Type="Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.macOS,Microsoft.Maui.Controls.TabbedPage&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
+        <param name="config">The platform configuration.</param>
         <summary>Hides the tabs on the tabbed page.</summary>
-        <returns>To be added.</returns>
+        <returns>The platform configuration for fluent chaining.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,10 +119,10 @@
         <Parameter Name="value" Type="Microsoft.Maui.Controls.TabsStyle" />
       </Parameters>
       <Docs>
-        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
-        <param name="value">The new property value to assign.</param>
-        <summary>Sets a value that controls the way that tabs are displayed.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration.</param>
+        <param name="value">The tabs style to apply.</param>
+        <summary>Sets the tabs display style for the tabbed page.</summary>
+        <returns>The platform configuration for fluent chaining.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,9 +147,9 @@
         <Parameter Name="value" Type="Microsoft.Maui.Controls.TabsStyle" />
       </Parameters>
       <Docs>
-        <param name="element">The platform specific element on which to perform the operation.</param>
-        <param name="value">The new property value to assign.</param>
-        <summary>Sets a value that controls the way that tabs are displayed.</summary>
+        <param name="element">The element whose tabs style to set.</param>
+        <param name="value">The tabs style to apply.</param>
+        <summary>Sets the tabs display style for the tabbed page.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,9 +173,9 @@
         <Parameter Name="config" Type="Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.macOS,Microsoft.Maui.Controls.TabbedPage&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
-        <summary>Sets tab display to the default style.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration.</param>
+        <summary>Sets the tabs to be displayed with the default style.</summary>
+        <returns>The platform configuration for fluent chaining.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,9 +199,9 @@
         <Parameter Name="config" Type="Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.macOS,Microsoft.Maui.Controls.TabbedPage&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
-        <summary>Sets tab display to the respond to user swipes.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration.</param>
+        <summary>Sets the tabs to be displayed only during navigation.</summary>
+        <returns>The platform configuration for fluent chaining.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

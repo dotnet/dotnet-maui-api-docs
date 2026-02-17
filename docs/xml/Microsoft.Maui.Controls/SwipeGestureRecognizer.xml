@@ -20,7 +20,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Recognizer for swipe gestures.</summary>
+    <summary>Recognizes swipe gestures on the attached element.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the command to run when a swipe gesture is recognized.</summary>
+        <summary>Gets or sets the command to invoke when the gesture is recognized. This is a bindable property.</summary>
         <value>The command to run when a swipe gesture is recognized.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -81,7 +81,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the parameter to pass to commands that take one.</summary>
+        <summary>Gets or sets the parameter to pass to the <see cref="P:Microsoft.Maui.Controls.SwipeGestureRecognizer.Command" />. This is a bindable property.</summary>
         <value>The parameter to pass to commands that take one.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -103,7 +103,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.SwipeGestureRecognizer.CommandParameter" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.SwipeGestureRecognizer.CommandParameter" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,7 +124,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.SwipeGestureRecognizer.Command" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.SwipeGestureRecognizer.Command" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,7 +145,7 @@
         <ReturnType>Microsoft.Maui.SwipeDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the direction of swipes to recognize.</summary>
+        <summary>Gets or sets the direction(s) of swipes to recognize. This is a bindable property.</summary>
         <value>The direction of swipes to recognize.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -167,7 +167,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.SwipeGestureRecognizer.Direction" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.SwipeGestureRecognizer.Direction" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,9 +255,9 @@
         <Parameter Name="direction" Type="Microsoft.Maui.SwipeDirection" />
       </Parameters>
       <Docs>
-        <param name="sender">The view that was swiped.</param>
-        <param name="direction">The swipe direction.</param>
-        <summary>Method that is called by the platform renderer when a swipe occurs.</summary>
+        <param name="sender">The view that detected the swipe.</param>
+        <param name="direction">The direction of the swipe.</param>
+        <summary>Invokes the <see cref="E:Microsoft.Maui.Controls.SwipeGestureRecognizer.Swiped" /> event and executes the <see cref="P:Microsoft.Maui.Controls.SwipeGestureRecognizer.Command" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,7 +278,7 @@
         <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.SwipedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when a swipe gesture is recognized on the element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -299,7 +299,7 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the minimum swipe distance that will cause the gesture to be recognized.</summary>
+        <summary>Gets or sets the minimum distance in pixels the swipe must travel to be recognized. Default is 100. This is a bindable property.</summary>
         <value>The minimum swipe distance that will cause the gesture to be recognized.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -321,7 +321,7 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.SwipeGestureRecognizer.Threshold" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.SwipeGestureRecognizer.Threshold" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Class that contains arguments for the event that is raised after web navigation completes.</summary>
+    <summary>
+            Event arguments for the <see cref="E:Microsoft.Maui.Controls.WebView.Navigated" /> event, raised after navigation completes.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,11 +42,13 @@
         <Parameter Name="result" Type="Microsoft.Maui.WebNavigationResult" />
       </Parameters>
       <Docs>
-        <param name="navigationEvent">The navigation event that was raised.</param>
-        <param name="source">The web view source that originated the event.</param>
-        <param name="url">The URL of the navigation event.</param>
-        <param name="result">The result of the navigation that originated the event.</param>
-        <summary>Initializes a new <see cref="T:Microsoft.Maui.Controls.WebNavigatedEventArgs" /> instance.</summary>
+        <param name="navigationEvent">The type of navigation event.</param>
+        <param name="source">The source of the web view content.</param>
+        <param name="url">The URL that was navigated to.</param>
+        <param name="result">The result of the navigation.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.WebNavigatedEventArgs" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,7 +69,9 @@
         <ReturnType>Microsoft.Maui.WebNavigationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that describes the result of the navigation.</summary>
+        <summary>
+            Gets the result of the navigation operation.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

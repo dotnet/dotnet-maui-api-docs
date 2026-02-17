@@ -45,26 +45,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>An element that contains a single child element.</summary>
+    <summary>
+            An element that contains a single child element.
+            </summary>
     <remarks>
-      <para>
-          The following example shows how to construct a new ContentView with a Label inside.
-          </para>
-      <example>
-        <code lang="csharp lang-csharp"><![CDATA[
-MainPage = new ContentPage () {
-    // Accomodate iPhone status bar.
-    Padding = new Thickness(10, Device.OnPlatform(20, 0, 0), 10, 5),
-        Content = new ContentView {
-            Content = new Label { Text = "I'm Content!" },
-    }
-};
-          ]]></code>
-      </example>
-      <para>
-        <img href="~/xml/Microsoft.Maui.Controls/_images/ContentView.TripleScreenShot.png" />
-      </para>
-    </remarks>
+            ContentView is a simple container that hosts a single <see cref="T:Microsoft.Maui.Controls.View" /> element through its <see cref="P:Microsoft.Maui.Controls.ContentView.Content" /> property.
+            It is commonly used as a base class for custom views or to apply templates to content.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -102,7 +89,9 @@ MainPage = new ContentPage () {
         <ReturnType>Microsoft.Maui.Controls.View</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the content of the ContentView.</summary>
+        <summary>
+            Gets or sets the content of the ContentView. This is a bindable property.
+            </summary>
         <value>A <see cref="T:Microsoft.Maui.Controls.View" /> that contains the content.</value>
         <remarks />
       </Docs>

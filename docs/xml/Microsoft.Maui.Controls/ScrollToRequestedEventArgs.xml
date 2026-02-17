@@ -20,7 +20,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Arguments for the event that is raised when a scroll is requested.</summary>
+    <summary>Event arguments for scroll-to requests on scrollable views.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,7 +41,7 @@
         <ReturnType>Microsoft.Maui.Controls.Element</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An element to scroll to.</summary>
+        <summary>Gets the element to scroll to when <see cref="P:Microsoft.Maui.Controls.ScrollToRequestedEventArgs.Mode" /> is <see cref="F:Microsoft.Maui.Controls.ScrollToMode.Element" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -113,7 +113,7 @@
         <ReturnType>Microsoft.Maui.Controls.ScrollToMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Whether to scroll by element or by position.</summary>
+        <summary>Gets how the scroll request should be interpreted.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -135,7 +135,7 @@
         <ReturnType>Microsoft.Maui.Controls.ScrollToPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An enumeration value that describes which part of an element to scroll to.</summary>
+        <summary>Gets the desired final position of the target within the viewport.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -157,7 +157,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The X position to scroll to.</summary>
+        <summary>Gets the target horizontal scroll position when <see cref="P:Microsoft.Maui.Controls.ScrollToRequestedEventArgs.Mode" /> is <see cref="F:Microsoft.Maui.Controls.ScrollToMode.Position" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -179,7 +179,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Y position to scroll to.</summary>
+        <summary>Gets the target vertical scroll position when <see cref="P:Microsoft.Maui.Controls.ScrollToRequestedEventArgs.Mode" /> is <see cref="F:Microsoft.Maui.Controls.ScrollToMode.Position" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -201,7 +201,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that tells whether the scroll operation should be animated.</summary>
+        <summary>Gets whether the scroll should be animated.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

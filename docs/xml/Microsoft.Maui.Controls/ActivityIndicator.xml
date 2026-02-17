@@ -38,17 +38,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>A visual control used to indicate that something is ongoing.</summary>
+    <summary>
+            A visual control used to indicate that something is ongoing.
+            </summary>
     <remarks>
-      <para>This control gives a visual clue to the user that something is happening, without information about its progress.</para>
-      <para>
-        <img href="~/xml/Microsoft.Maui.Controls/_images/ActivityIndicator.TripleScreenShot.png" />
-      </para>
-      <example>
-        <para>The example below creates a red activity indicator that is animated to imply that an activity is ongoing:</para>
-        <code lang="XAML"><![CDATA[<ActivityIndicator Color="Red" IsRunning="true" />]]></code>
-      </example>
-    </remarks>
+            This control gives a visual clue to the user that something is happening, without information about its progress.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,7 +60,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the ActivityIndicator class.</summary>
+        <summary>
+            Initializes a new instance of the ActivityIndicator class.
+            </summary>
         <remarks>
           <para> The following example shows the initialization of a running ActivityIndicator.
             </para>
@@ -96,7 +93,9 @@ var indicator = new ActivityIndicator {
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:Microsoft.Maui.Graphics.Color" /> of the ActivityIndicator. This is a bindable property.</summary>
+        <summary>
+            Gets or sets the color of the ActivityIndicator. This is a bindable property.
+            </summary>
         <value>A <see cref="T:Microsoft.Maui.Graphics.Color" /> used to display the ActivityIndicator.</value>
         <remarks />
       </Docs>
@@ -139,8 +138,11 @@ var indicator = new ActivityIndicator {
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value indicating if the ActivityIndicator is running. This is a bindable property.</summary>
-        <value>A <see cref="T:System.Boolean" /> indicating if the ActivityIndicator is running.</value>
+        <summary>
+            Gets or sets a value indicating whether the ActivityIndicator is running (animating). This is a bindable property.
+            </summary>
+        <value>
+          <see langword="true" /> if the indicator is running; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks />
       </Docs>
     </Member>

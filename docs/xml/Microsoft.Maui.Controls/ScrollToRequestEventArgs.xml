@@ -16,10 +16,13 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
-    <!-- No matching elements were found for the following include tag -->
-    <include file="../../../docs/Microsoft.Maui.Controls/ScrollToRequestEventArgs.xml" path="Type[@FullName='Microsoft.Maui.Controls.ScrollToRequestEventArgs']/Docs/*" />
+    <summary>
+            Provides data for scroll-to-item requests in items views.
+            </summary>
+    <remarks>
+            This event args class contains information needed to scroll to a specific item or position in <see cref="T:Microsoft.Maui.Controls.CollectionView" /> and related controls.
+            It supports two modes: scrolling by index position or by item reference, as indicated by the <see cref="P:Microsoft.Maui.Controls.ScrollToRequestEventArgs.Mode" /> property.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,11 +45,14 @@
         <Parameter Name="isAnimated" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="groupIndex">To be added.</param>
-        <param name="scrollToPosition">To be added.</param>
-        <param name="isAnimated">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index of the item to scroll to.</param>
+        <param name="groupIndex">The zero-based index of the group containing the item, or -1 if not grouped.</param>
+        <param name="scrollToPosition">The position where the item should appear in the visible area.</param>
+        <param name="isAnimated">
+          <see langword="true" /> to animate the scroll; <see langword="false" /> to jump immediately.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.ScrollToRequestEventArgs" /> class for scrolling by position index.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,11 +76,14 @@
         <Parameter Name="isAnimated" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <param name="group">To be added.</param>
-        <param name="scrollToPosition">To be added.</param>
-        <param name="isAnimated">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="item">The data item to scroll to.</param>
+        <param name="group">The group object containing the item, or <see langword="null" /> if not grouped.</param>
+        <param name="scrollToPosition">The position where the item should appear in the visible area.</param>
+        <param name="isAnimated">
+          <see langword="true" /> to animate the scroll; <see langword="false" /> to jump immediately.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.ScrollToRequestEventArgs" /> class for scrolling by item reference.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,11 +104,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the group object containing the item to scroll to.
+            </summary>
+        <value>The group object when items are grouped and <see cref="P:Microsoft.Maui.Controls.ScrollToRequestEventArgs.Mode" /> is <see cref="F:Microsoft.Maui.Controls.ScrollToMode.Element" />; otherwise, <see langword="null" />.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ScrollToRequestEventArgs.xml" path="//Member[@MemberName='Group']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="GroupIndex">
@@ -119,11 +128,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the zero-based index of the group containing the item to scroll to.
+            </summary>
+        <value>The group index when items are grouped and <see cref="P:Microsoft.Maui.Controls.ScrollToRequestEventArgs.Mode" /> is <see cref="F:Microsoft.Maui.Controls.ScrollToMode.Position" />; otherwise, not used.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ScrollToRequestEventArgs.xml" path="//Member[@MemberName='GroupIndex']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -143,11 +152,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the zero-based index of the item to scroll to.
+            </summary>
+        <value>The item index when <see cref="P:Microsoft.Maui.Controls.ScrollToRequestEventArgs.Mode" /> is <see cref="F:Microsoft.Maui.Controls.ScrollToMode.Position" />; otherwise, not used.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ScrollToRequestEventArgs.xml" path="//Member[@MemberName='Index']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="IsAnimated">
@@ -167,11 +176,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets a value indicating whether the scrolling should be animated.
+            </summary>
+        <value>
+          <see langword="true" /> if the scroll should be animated; otherwise, <see langword="false" /> for an immediate jump.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ScrollToRequestEventArgs.xml" path="//Member[@MemberName='IsAnimated']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -191,11 +201,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the data item to scroll to.
+            </summary>
+        <value>The item object when <see cref="P:Microsoft.Maui.Controls.ScrollToRequestEventArgs.Mode" /> is <see cref="F:Microsoft.Maui.Controls.ScrollToMode.Element" />; otherwise, <see langword="null" />.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ScrollToRequestEventArgs.xml" path="//Member[@MemberName='Item']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -215,11 +225,11 @@
         <ReturnType>Microsoft.Maui.Controls.ScrollToMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the scroll mode indicating whether to scroll by position or by element reference.
+            </summary>
+        <value>A <see cref="T:Microsoft.Maui.Controls.ScrollToMode" /> value indicating how the scroll target is specified.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ScrollToRequestEventArgs.xml" path="//Member[@MemberName='Mode']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="ScrollToPosition">
@@ -239,11 +249,11 @@
         <ReturnType>Microsoft.Maui.Controls.ScrollToPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the position where the target item should be positioned within the visible area.
+            </summary>
+        <value>A <see cref="P:Microsoft.Maui.Controls.ScrollToRequestEventArgs.ScrollToPosition" /> value specifying the alignment of the item after scrolling.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ScrollToRequestEventArgs.xml" path="//Member[@MemberName='ScrollToPosition']/Docs/*" />
       </Docs>
     </Member>
   </Members>

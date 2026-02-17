@@ -40,9 +40,10 @@
         <Parameter Name="element" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">The box view element on the GTK platform whose corner radius to get.</param>
-        <summary>Returns a Boolean value that tells whether the box view has a corner radius set.</summary>
-        <returns>A Boolean value that tells whether the box view has a corner radius set.</returns>
+        <param name="element">The platform-specific element.</param>
+        <summary>Gets the value that controls whether the box view has a corner radius.</summary>
+        <returns>
+          <see langword="true" /> if the box view has a corner radius; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,9 +67,10 @@
         <Parameter Name="config" Type="Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.GTK,Microsoft.Maui.Controls.BoxView&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">The platform configuration for the box view element on the GTK platform whose corner radius to get.</param>
-        <summary>Returns a Boolean value that tells whether the box view has a corner radius set.</summary>
-        <returns>A Boolean value that tells whether the box view has a corner radius set.</returns>
+        <param name="config">The platform-specific configuration.</param>
+        <summary>Gets the value that controls whether the box view has a corner radius.</summary>
+        <returns>
+          <see langword="true" /> if the box view has a corner radius; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,9 +116,9 @@
         <Parameter Name="tabPosition" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">The box view element on the GTK platform whose corner radius presence to set.</param>
-        <param name="tabPosition">The new corner radius presence value.</param>
-        <summary>Sets the corner radius presence.</summary>
+        <param name="element">The platform-specific element.</param>
+        <param name="tabPosition">The new property value to assign.</param>
+        <summary>Sets a value that controls whether the box view has a corner radius.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,10 +143,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">The platform configuration for the  element on the GTK platform whose  to set.</param>
-        <param name="value">The new corner radius presence value</param>
-        <summary>Sets the corner radius presence.</summary>
-        <returns>A fluent object on which the developer may make further method calls.</returns>
+        <param name="config">The platform-specific configuration.</param>
+        <param name="value">The new property value to assign.</param>
+        <summary>Sets a value that controls whether the box view has a corner radius.</summary>
+        <returns>The updated configuration object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -22,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Arguments for the <see cref="T:Microsoft.Maui.Controls.ListView.ItemTapped" /> event.</summary>
+    <summary>Event arguments for the <see cref="E:Microsoft.Maui.Controls.TapGestureRecognizer.Tapped" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -43,8 +43,8 @@
         <Parameter Name="parameter" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="parameter">A parameter object for the tapped event.</param>
-        <summary>Creates a new <see cref="T:Microsoft.Maui.Controls.TappedEventArgs" /> object with the supplied parameter.</summary>
+        <param name="parameter">The command parameter associated with the tap gesture.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.TappedEventArgs" /> class with the specified parameter.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,7 +65,7 @@
         <ReturnType>Microsoft.Maui.Controls.ButtonsMask</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the button mask indicating which buttons triggered the tap.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,9 +90,9 @@
         <Parameter Name="relativeTo" Type="Microsoft.Maui.Controls.Element" />
       </Parameters>
       <Docs>
-        <param name="relativeTo">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="relativeTo">The element to use as the coordinate reference, or <see langword="null" /> for screen coordinates.</param>
+        <summary>Gets the position of the tap relative to the specified element.</summary>
+        <returns>The tap position, or <see langword="null" /> if not available.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,7 +113,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the parameter object for this <see cref="T:Microsoft.Maui.Controls.TappedEventArgs" /> object.</summary>
+        <summary>Gets the command parameter passed to the <see cref="T:Microsoft.Maui.Controls.TapGestureRecognizer" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

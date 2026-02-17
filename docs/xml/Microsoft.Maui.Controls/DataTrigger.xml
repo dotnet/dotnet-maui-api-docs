@@ -35,7 +35,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Class that represents a condition on an arbitrary binding, along with a list of <see cref="T:Microsoft.Maui.Controls.Setter" /> objects that will be applied when the condition is met.</summary>
+    <summary>
+            A trigger that activates setters when a bound value matches a specified value.
+            </summary>
     <remarks>
       <para>The <see cref="T:Microsoft.Maui.Controls.DataTrigger" /> class is suitable for checking values on other controls, as well as any property on the control to which it has been added. That is, its default binding context is the control to which it has been added.</para>
       <example>
@@ -97,8 +99,10 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="targetType">The type of the object on which the data trigger will be added.</param>
-        <summary>Initializes a new <see cref="T:Microsoft.Maui.Controls.DataTrigger" /> instance.</summary>
+        <param name="targetType">The type of object to which this trigger can be attached.</param>
+        <summary>
+            Initializes a new <see cref="T:Microsoft.Maui.Controls.DataTrigger" /> instance.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,7 +123,9 @@
         <ReturnType>Microsoft.Maui.Controls.BindingBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the binding whose value will be compared to <see cref="P:Microsoft.Maui.Controls.DataTrigger.Value" /> to determine when to invoke the setters.</summary>
+        <summary>
+            Gets or sets the binding whose value will be compared to <see cref="P:Microsoft.Maui.Controls.DataTrigger.Value" /> to determine when to activate the trigger.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -169,7 +175,9 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Controls.Setter&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the list of <see cref="T:Microsoft.Maui.Controls.Setter" /> objects that will be applied when the binding that is named by the  <see cref="P:Microsoft.Maui.Controls.DataTrigger.Binding" /> property becomes equal to <see cref="P:Microsoft.Maui.Controls.DataTrigger.Value" />.</summary>
+        <summary>
+            Gets the collection of <see cref="T:Microsoft.Maui.Controls.Setter" /> objects to apply when the trigger condition is met.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -191,7 +199,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the binding, named by the <see cref="P:Microsoft.Maui.Controls.DataTrigger.Binding" /> property, that will cause the setters to be applied.</summary>
+        <summary>
+            Gets or sets the value to compare against <see cref="P:Microsoft.Maui.Controls.DataTrigger.Binding" /> to determine when to activate the trigger.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

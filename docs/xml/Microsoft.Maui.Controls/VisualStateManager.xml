@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Manages visual state groups and transitions controls between states.</summary>
+    <summary>
+            Manages visual states for controls (Normal, Focused, Disabled, etc.) and transitions between them.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,9 +42,11 @@
         <Parameter Name="visualElement" Type="Microsoft.Maui.Controls.VisualElement" />
       </Parameters>
       <Docs>
-        <param name="visualElement">The visual element whose visual state groups to get.</param>
-        <summary>Returns the visual state groups that can be applied to the specified visual element.</summary>
-        <returns>The visual state groups that can be applied to the specified visual element.</returns>
+        <param name="visualElement">The visual element to get visual state groups from.</param>
+        <summary>
+            Gets the collection of <see cref="T:Microsoft.Maui.Controls.VisualStateGroup" /> objects associated with the specified <paramref name="visualElement" />.
+            </summary>
+        <returns>The collection of visual state groups.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,11 +71,13 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="visualElement">To be added.</param>
-        <param name="name">To be added.</param>
-        <summary>Transitions the specified <paramref name="visualElement" /> to the state with the specified <paramref name="name" />.</summary>
+        <param name="visualElement">The visual element to transition.</param>
+        <param name="name">The name of the visual state to transition to.</param>
+        <summary>
+            Transitions the <paramref name="visualElement" /> to the specified visual state.
+            </summary>
         <returns>
-          <see langword="true" /> if the transition was successful. Otherwise, <see langword="false" /></returns>
+          <see langword="true" /> if the transition was successful; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,10 +101,12 @@
         <Parameter Name="element" Type="Microsoft.Maui.Controls.VisualElement" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="element">The element to check.</param>
-        <summary>Returns <see langword="true" /> if <paramref name="element" /> has one or more visual state groups associated with it. Otherwise, returns <see langword="false" />.</summary>
+        <param name="element">The visual element to check.</param>
+        <summary>
+            Determines whether the specified <paramref name="element" /> has any visual state groups defined.
+            </summary>
         <returns>
-          <see langword="true" /> if <paramref name="element" /> has one or more visual state groups associated with it. Otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the element has visual state groups; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,9 +131,11 @@
         <Parameter Name="value" Type="Microsoft.Maui.Controls.VisualStateGroupList" />
       </Parameters>
       <Docs>
-        <param name="visualElement">To be added.</param>
-        <param name="value">The list of visual state groups to associate with <paramref name="visualElement" />.</param>
-        <summary>Associates a list of visual state groups with a visual element.</summary>
+        <param name="visualElement">The visual element to set visual state groups on.</param>
+        <param name="value">The collection of visual state groups to set.</param>
+        <summary>
+            Sets the collection of <see cref="T:Microsoft.Maui.Controls.VisualStateGroup" /> objects for the specified <paramref name="visualElement" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

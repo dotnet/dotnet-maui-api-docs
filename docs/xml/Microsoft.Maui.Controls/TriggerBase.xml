@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Base class for classes that contain a condition and a list of actions to perform when the condition is met.</summary>
+    <summary>
+            Base class for trigger classes that define conditional behavior in response to property or data changes.
+            </summary>
     <remarks />
   </Docs>
   <Members>
@@ -37,7 +39,9 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Controls.TriggerAction&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the list of <see cref="T:Microsoft.Maui.Controls.TriggerAction" /> objects that will be invoked when the trigger condition is met. Ignored for the <see cref="T:Microsoft.Maui.Controls.EventTrigger" /> class.</summary>
+        <summary>
+            Gets the collection of <see cref="T:Microsoft.Maui.Controls.TriggerAction" /> objects to invoke when the trigger condition becomes true.
+            </summary>
         <value />
         <remarks>To be added.</remarks>
       </Docs>
@@ -59,7 +63,9 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Controls.TriggerAction&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the list of <see cref="T:Microsoft.Maui.Controls.TriggerAction" /> objects that will be invoked after the trigger condition is no longer met. Ignored for the <see cref="T:Microsoft.Maui.Controls.EventTrigger" /> class.</summary>
+        <summary>
+            Gets the collection of <see cref="T:Microsoft.Maui.Controls.TriggerAction" /> objects to invoke when the trigger condition becomes false.
+            </summary>
         <value />
         <remarks>To be added.</remarks>
       </Docs>
@@ -81,7 +87,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether or not the trigger is sealed.</summary>
+        <summary>
+            Gets a value indicating whether this trigger has been attached to an element and can no longer be modified.
+            </summary>
         <value>To be added.</value>
         <remarks>A trigger becomes sealed when its `IAttachedObject.AttachTo(Microsoft.Maui.Controls.BindableObject)` method is called. Once it is sealed, its <see cref="P:Microsoft.Maui.Controls.TriggerBase.EnterActions" /> and <see cref="P:Microsoft.Maui.Controls.TriggerBase.ExitActions" /> lists become readonly.</remarks>
       </Docs>
@@ -103,7 +111,9 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The type of object to which this <see cref="T:Microsoft.Maui.Controls.TriggerBase" /> object can be attached.</summary>
+        <summary>
+            Gets the type of object to which this trigger can be attached.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

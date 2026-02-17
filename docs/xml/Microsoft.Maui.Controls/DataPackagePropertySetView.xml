@@ -38,10 +38,10 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            A read-only view of a <see cref="T:Microsoft.Maui.Controls.DataPackagePropertySet" />.
+            </summary>
     <remarks>To be added.</remarks>
-    <!-- No matching elements were found for the following include tag -->
-    <include file="../../../docs/Microsoft.Maui.Controls/DataPackagePropertySetView.xml" path="Type[@FullName='Microsoft.Maui.Controls.DataPackagePropertySetView']/Docs/*" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,8 +61,10 @@
         <Parameter Name="dataPackagePropertySet" Type="Microsoft.Maui.Controls.DataPackagePropertySet" />
       </Parameters>
       <Docs>
-        <param name="dataPackagePropertySet">The dataPackagePropertySet parameter.</param>
-        <summary>To be added.</summary>
+        <param name="dataPackagePropertySet">The property set to wrap.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.DataPackagePropertySetView" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,10 +85,10 @@
         <ReturnType>Microsoft.Maui.Controls.DataPackagePropertySet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The underlying property set.
+            </summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/DataPackagePropertySetView.xml" path="//Member[@MemberName='_dataPackagePropertySet']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -112,8 +114,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The key parameter.</param>
-        <summary>To be added.</summary>
+        <param name="key">The key to locate.</param>
+        <summary>
+            Determines whether the view contains a property with the specified key.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -138,11 +142,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the number of properties in the view.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/DataPackagePropertySetView.xml" path="//Member[@MemberName='Count']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -166,11 +170,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Returns an enumerator that iterates through the properties.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/DataPackagePropertySetView.xml" path="//Member[@MemberName='GetEnumerator']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -196,8 +200,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The key of the property.</param>
+        <summary>
+            Gets the property value associated with the specified key.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -222,11 +228,11 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the collection of property keys.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/DataPackagePropertySetView.xml" path="//Member[@MemberName='Keys']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -276,9 +282,11 @@
         <Parameter Name="value" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="key">The key parameter.</param>
-        <param name="value">The value to set.</param>
-        <summary>To be added.</summary>
+        <param name="key">The key of the value to get.</param>
+        <param name="value">When this method returns, contains the value if the key was found; otherwise, the default value.</param>
+        <summary>
+            Gets the value associated with the specified key.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -303,11 +311,11 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the collection of property values.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/DataPackagePropertySetView.xml" path="//Member[@MemberName='Values']/Docs/*" />
       </Docs>
     </Member>
   </Members>

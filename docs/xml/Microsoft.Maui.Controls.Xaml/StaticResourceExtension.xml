@@ -24,13 +24,19 @@
       <AttributeName Language="C#">[Microsoft.Maui.Controls.ContentProperty("Key")]</AttributeName>
       <AttributeName Language="F#">[&lt;Microsoft.Maui.Controls.ContentProperty("Key")&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="net-maui-10.0;net-maui-9.0">
+    <Attribute FrameworkAlternate="net-maui-10.0">
+      <AttributeName Language="C#">[Microsoft.Maui.Controls.Xaml.RequireService(new System.Type[] { typeof(Microsoft.Maui.Controls.Xaml.IXmlLineInfoProvider), typeof(Microsoft.Maui.Controls.Xaml.IProvideParentValues), typeof(Microsoft.Maui.Controls.Xaml.IRootObjectProvider) })]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Maui.Controls.Xaml.RequireService(new System.Type[] { typeof(Microsoft.Maui.Controls.Xaml.IXmlLineInfoProvider), typeof(Microsoft.Maui.Controls.Xaml.IProvideParentValues), typeof(Microsoft.Maui.Controls.Xaml.IRootObjectProvider) })&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-maui-9.0">
       <AttributeName Language="C#">[Microsoft.Maui.Controls.Xaml.RequireService(new System.Type[] { typeof(Microsoft.Maui.Controls.Xaml.IXmlLineInfoProvider), typeof(Microsoft.Maui.Controls.Xaml.IProvideParentValues) })]</AttributeName>
       <AttributeName Language="F#">[&lt;Microsoft.Maui.Controls.Xaml.RequireService(new System.Type[] { typeof(Microsoft.Maui.Controls.Xaml.IXmlLineInfoProvider), typeof(Microsoft.Maui.Controls.Xaml.IProvideParentValues) })&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Provides a XAML markup extension that resolves a resource from a <see cref="T:Microsoft.Maui.Controls.ResourceDictionary" />.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -69,7 +75,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the key of the resource to retrieve.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

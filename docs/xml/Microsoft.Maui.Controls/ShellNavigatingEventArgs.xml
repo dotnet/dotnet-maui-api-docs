@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Arguments for the <see cref="M:Microsoft.Maui.Controls.Shell.OnNavigating(Microsoft.Maui.Controls.ShellNavigatingEventArgs)" /> event.</summary>
+    <summary>
+            Provides data for the <see cref="E:Microsoft.Maui.Controls.Shell.Navigating" /> event.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,11 +42,13 @@
         <Parameter Name="canCancel" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="current">To be added.</param>
-        <param name="target">To be added.</param>
-        <param name="source">To be added.</param>
-        <param name="canCancel">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="current">The current navigation state.</param>
+        <param name="target">The target navigation state.</param>
+        <param name="source">The source of the navigation.</param>
+        <param name="canCancel">Whether the navigation can be cancelled.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.ShellNavigatingEventArgs" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,11 +69,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a value indicating whether the navigation can be cancelled.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ShellNavigatingEventArgs.xml" path="//Member[@MemberName='CanCancel']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -90,11 +94,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Cancels the navigation if <see cref="P:Microsoft.Maui.Controls.ShellNavigatingEventArgs.CanCancel" /> is <see langword="true" />.
+            </summary>
+        <returns>
+          <see langword="true" /> if the navigation was cancelled; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ShellNavigatingEventArgs.xml" path="//Member[@MemberName='Cancel']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="Cancelled">
@@ -114,11 +119,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a value indicating whether the navigation has been cancelled.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ShellNavigatingEventArgs.xml" path="//Member[@MemberName='Cancelled']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -138,11 +143,11 @@
         <ReturnType>Microsoft.Maui.Controls.ShellNavigationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the current navigation state.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ShellNavigatingEventArgs.xml" path="//Member[@MemberName='Current']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="GetDeferral">
@@ -163,11 +168,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Gets a deferral to delay navigation until the deferral is completed.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Maui.Controls.ShellNavigatingDeferral" /> object, or <see langword="null" /> if <see cref="P:Microsoft.Maui.Controls.ShellNavigatingEventArgs.CanCancel" /> is <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ShellNavigatingEventArgs.xml" path="//Member[@MemberName='GetDeferral']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="Source">
@@ -187,11 +192,11 @@
         <ReturnType>Microsoft.Maui.Controls.ShellNavigationSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the source of the navigation.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ShellNavigatingEventArgs.xml" path="//Member[@MemberName='Source']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -211,11 +216,11 @@
         <ReturnType>Microsoft.Maui.Controls.ShellNavigationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the target navigation state.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ShellNavigatingEventArgs.xml" path="//Member[@MemberName='Target']/Docs/*" />
       </Docs>
     </Member>
   </Members>

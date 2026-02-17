@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Class that contains triggers, setters, and behaviors that completely or partially define the appearance and behavior of a class of visual elements.</summary>
+    <summary>
+            Groups property setters that can be shared between multiple visual elements.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -50,8 +52,10 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="targetType">The type of view to which the style will be applied.</param>
-        <summary>Intitializes a new <see cref="T:Microsoft.Maui.Controls.Style" /> instance.</summary>
+        <param name="targetType">The type to which the style applies.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.Style" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,7 +76,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Boolean value that controls whether the style should be applied to controls that are derived from the base type.</summary>
+        <summary>
+            Gets or sets whether the style can be applied to types derived from <see cref="P:Microsoft.Maui.Controls.Style.TargetType" />.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -94,7 +100,9 @@
         <ReturnType>Microsoft.Maui.Controls.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:Microsoft.Maui.Controls.Style" /> on which this <see cref="T:Microsoft.Maui.Controls.Style" /> is based.</summary>
+        <summary>
+            Gets or sets the style from which this style inherits.
+            </summary>
         <value>To be added.</value>
         <remarks>The <see cref="T:Microsoft.Maui.Controls.Style" /> supports a mechanism in XAML that is similar to inheritance in C#.</remarks>
       </Docs>
@@ -116,7 +124,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the key that identifies the <see cref="T:Microsoft.Maui.Controls.Style" /> on which this <see cref="T:Microsoft.Maui.Controls.Style" /> is based.</summary>
+        <summary>
+            Gets or sets the resource key for the base style.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -138,7 +148,9 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Controls.Behavior&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the list of <see cref="T:Microsoft.Maui.Controls.Behavior" /> objects that belong to this <see cref="T:Microsoft.Maui.Controls.Style" />.</summary>
+        <summary>
+            Gets the collection of <see cref="T:Microsoft.Maui.Controls.Behavior" /> objects attached to this style.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -160,7 +172,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Boolean value that controls whether, when applying an explicit style to a control, an implicit style that targets the same control should also be applied.</summary>
+        <summary>
+            Gets or sets whether this style can cascade to nested elements.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -182,7 +196,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the class for the style.</summary>
+        <summary>
+            Gets or sets the class name for the style.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -204,7 +220,9 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Controls.Setter&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the list of <see cref="T:Microsoft.Maui.Controls.Setter" /> objects that belong to this <see cref="T:Microsoft.Maui.Controls.Style" />.</summary>
+        <summary>
+            Gets the collection of <see cref="T:Microsoft.Maui.Controls.Setter" /> objects that define the property values for this style.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -226,7 +244,9 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of object that this style can describe. See Remarks.</summary>
+        <summary>
+            Gets the type to which this style applies.
+            </summary>
         <value>To be added.</value>
         <remarks>
           <p>Developers should be aware that implicit styles are only applied to the specific type that is described by <see cref="P:Microsoft.Maui.Controls.Style.TargetType" />, and not to types that inherit from it.</p>
@@ -250,7 +270,9 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Controls.TriggerBase&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the list of <see cref="T:Microsoft.Maui.Controls.Trigger" /> objects that belong to this <see cref="T:Microsoft.Maui.Controls.Style" />.</summary>
+        <summary>
+            Gets the collection of <see cref="T:Microsoft.Maui.Controls.TriggerBase" /> objects attached to this style.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

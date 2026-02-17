@@ -22,10 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents a complex geometry composed of <see cref="T:Microsoft.Maui.Controls.Shapes.PathFigure" /> objects.
+            </summary>
     <remarks>To be added.</remarks>
-    <!-- No matching elements were found for the following include tag -->
-    <include file="../../../docs/Microsoft.Maui.Controls.Shapes/PathGeometry.xml" path="Type[@FullName='Microsoft.Maui.Controls.Shapes.PathGeometry']/Docs/*" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,10 +42,10 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.Shapes.PathGeometry" /> class.
+            </summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls.Shapes/PathGeometry.xml" path="//Member[@MemberName='.ctor'][1]/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -65,8 +65,10 @@
         <Parameter Name="figures" Type="Microsoft.Maui.Controls.Shapes.PathFigureCollection" />
       </Parameters>
       <Docs>
-        <param name="figures">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="figures">The collection of path figures that define this geometry.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.Shapes.PathGeometry" /> class with the specified figures.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,9 +90,11 @@
         <Parameter Name="fillRule" Type="Microsoft.Maui.Controls.Shapes.FillRule" />
       </Parameters>
       <Docs>
-        <param name="figures">To be added.</param>
-        <param name="fillRule">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="figures">The collection of path figures that define this geometry.</param>
+        <param name="fillRule">The rule that determines how the interior of this geometry is filled.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.Shapes.PathGeometry" /> class with the specified figures and fill rule.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,11 +146,12 @@
         <ReturnType>Microsoft.Maui.Controls.Shapes.PathFigureCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the collection of <see cref="T:Microsoft.Maui.Controls.Shapes.PathFigure" /> objects that describe the contents of this path.
+            This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls.Shapes/PathGeometry.xml" path="//Member[@MemberName='Figures']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="FiguresProperty">
@@ -187,11 +192,12 @@
         <ReturnType>Microsoft.Maui.Controls.Shapes.FillRule</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets a value that determines how the intersecting areas contained in this geometry are combined.
+            This is a bindable property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls.Shapes/PathGeometry.xml" path="//Member[@MemberName='FillRule']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="FillRuleProperty">

@@ -47,7 +47,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>One or more items in the flyout. Contained within a <see cref="T:Microsoft.Maui.Controls.Shell" />.</summary>
+    <summary>
+            Represents a top-level navigation item in a <see cref="T:Microsoft.Maui.Controls.Shell" />. Contains one or more <see cref="T:Microsoft.Maui.Controls.ShellSection" /> items.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -65,10 +67,8 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.ShellItem" /> class.</summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/ShellItem.xml" path="//Member[@MemberName='.ctor']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="CurrentItem">
@@ -88,7 +88,7 @@
         <ReturnType>Microsoft.Maui.Controls.ShellSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The currently selected <see cref="T:Microsoft.Maui.Controls.Tab" /> or <see cref="T:Microsoft.Maui.Controls.ShellSection" />.</summary>
+        <summary>Gets or sets the currently selected <see cref="T:Microsoft.Maui.Controls.ShellSection" />. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -131,7 +131,7 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Controls.ShellSection&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The collection of <see cref="T:Microsoft.Maui.Controls.ShellSection" /> objects managed by <c>this</c><see cref="T:Microsoft.Maui.Controls.ShellItem" />.</summary>
+        <summary>Gets the collection of <see cref="T:Microsoft.Maui.Controls.ShellSection" /> items. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
