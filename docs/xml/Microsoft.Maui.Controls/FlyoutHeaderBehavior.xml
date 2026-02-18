@@ -15,7 +15,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Enumeration of modes followed by the <see cref="P:Microsoft.Maui.Controls.Shell.FlyoutHeader" />.</summary>
+    <summary>Specifies how the flyout header behaves when scrolling.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,7 +37,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>Collapses the flyout header when scrolling occurs.</summary>
+        <summary>Header collapses as the user scrolls down.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -58,7 +58,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The default behavior is to remain fixed in the flyout while the content below may scroll.</summary>
+        <summary>Header uses platform-specific default scroll behavior.</summary>
       </Docs>
     </Member>
     <Member MemberName="Fixed">
@@ -79,9 +79,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/FlyoutHeaderBehavior.xml" path="//Member[@MemberName='Fixed']/Docs/*" />
+        <summary>Header remains fixed and does not scroll.</summary>
       </Docs>
     </Member>
     <Member MemberName="Scroll">
@@ -102,9 +100,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/FlyoutHeaderBehavior.xml" path="//Member[@MemberName='Scroll']/Docs/*" />
+        <summary>Header scrolls with the flyout content.</summary>
       </Docs>
     </Member>
   </Members>

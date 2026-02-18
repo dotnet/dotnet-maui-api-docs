@@ -38,9 +38,9 @@
         <Parameter Name="selectedItemIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="selectedItem">To be added.</param>
-        <param name="selectedItemIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="selectedItem">The newly selected item.</param>
+        <param name="selectedItemIndex">The index of the selected item in the items source.</param>
+        <summary>Creates a new <see cref="T:Microsoft.Maui.Controls.SelectedItemChangedEventArgs" /> with the specified item and index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,7 +61,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the new selected item.</summary>
+        <summary>Gets the newly selected item, or <see langword="null" /> if an item was deselected.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -83,11 +83,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the index of the selected item, or -1 if an item was deselected.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/SelectedItemChangedEventArgs.xml" path="//Member[@MemberName='SelectedItemIndex']/Docs/*" />
       </Docs>
     </Member>
   </Members>

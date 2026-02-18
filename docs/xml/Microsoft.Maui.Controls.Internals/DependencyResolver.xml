@@ -40,8 +40,8 @@
         <Parameter Name="resolver" Type="System.Func&lt;System.Type,System.Object[],System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="resolver">A function that returns an instance of a type from an array that provides matching types, or <see langword="null" /> if the type is not supported.</param>
-        <summary>Specifies a resolution function that attempts to return an instance of a specified type.</summary>
+        <param name="resolver">The resolver function.</param>
+        <summary>Sets a resolver function that takes a type and constructor arguments.</summary>
         <remarks>
           <paramref name="resolver" /> must return <see langword="null" /> for types that it does not support, because a return value of <see langword="null" /> passes the type through to Microsoft.Maui.Controls so that it may attempt to resolve the type itself.</remarks>
       </Docs>
@@ -66,8 +66,8 @@
         <Parameter Name="resolver" Type="System.Func&lt;System.Type,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="resolver">A function that returns an instance of a type, or <see langword="null" /> if the type is not supported.</param>
-        <summary>Specifies a resolution function that attempts to return an instance of the specified type.</summary>
+        <param name="resolver">The resolver function.</param>
+        <summary>Sets a resolver function that takes only a type.</summary>
         <remarks>
           <para>
             <paramref name="resolver" /> must return <see langword="null" /> for types that it does not support, because a return value of <see langword="null" /> passes the type through to Microsoft.Maui.Controls so that it may attempt to resolve the type itself.</para>

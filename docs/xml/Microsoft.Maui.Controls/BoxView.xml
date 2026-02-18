@@ -239,9 +239,11 @@ namespace FormsGallery
         <Parameter Name="bounds" Type="Microsoft.Maui.Graphics.Rect" />
       </Parameters>
       <Docs>
-        <param name="bounds">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bounds">The bounds of the BoxView.</param>
+        <summary>
+            Creates the path for the BoxView based on its bounds and corner radius.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Maui.Graphics.PathF" /> representing the shape of the BoxView.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -581,10 +583,12 @@ namespace FormsGallery
         <Parameter Name="heightConstraint" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="widthConstraint">To be added.</param>
-        <param name="heightConstraint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="widthConstraint">The available width.</param>
+        <param name="heightConstraint">The available height.</param>
+        <summary>
+            Measures the desired size of the BoxView.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Maui.SizeRequest" /> with a default size of 40x40.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -617,6 +621,7 @@ namespace FormsGallery
         <param name="propertyName">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
   </Members>

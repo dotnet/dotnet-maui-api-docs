@@ -37,8 +37,8 @@
         <Parameter Name="status" Type="Microsoft.Maui.GestureStatus" />
       </Parameters>
       <Docs>
-        <param name="status">The new gesture status.</param>
-        <summary>Constructs a new <see cref="T:Microsoft.Maui.Controls.PinchGestureUpdatedEventArgs" /> object with default values.</summary>
+        <param name="status">The gesture status.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.PinchGestureUpdatedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,10 +61,10 @@
         <Parameter Name="origin" Type="Microsoft.Maui.Graphics.Point" />
       </Parameters>
       <Docs>
-        <param name="status">Whether the gesture is starting, running, or has ended.</param>
-        <param name="scale">The current scale of the pinch gesture.</param>
-        <param name="origin">The updated origin of the pinch gesture.</param>
-        <summary>Constructs a new <see cref="T:Microsoft.Maui.Controls.PinchGestureUpdatedEventArgs" /> object with the specified values.</summary>
+        <param name="status">The gesture status.</param>
+        <param name="scale">The relative scale of the pinch.</param>
+        <param name="origin">The origin point of the pinch gesture.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.PinchGestureUpdatedEventArgs" /> class with scale and origin data.</summary>
         <remarks>
           <para>The origin of the pinch is the center of the pinch gesture, and changes if the user translates their pinch while they scale. Application developers may want to store the pinch origin when the gesture begins and use it for all scaling operations for that gesture.</para>
         </remarks>
@@ -87,7 +87,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The relative size of the user's pinch gesture since the last update was received.</summary>
+        <summary>Gets the relative scale of the pinch gesture since the last update. Default is 1.</summary>
         <value>The distance between the user's digits, divided by the last reported distance between the user's digits in the pinch gesture.</value>
         <remarks>The initial value of the</remarks>
       </Docs>
@@ -109,7 +109,7 @@
         <ReturnType>Microsoft.Maui.Graphics.Point</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The updated origin of the pinch gesture.</summary>
+        <summary>Gets the origin point of the pinch gesture, which is the center between the two touch points.</summary>
         <value>The midpoint of the pinch gesture.</value>
         <remarks>The origin of the pinch is the center of the pinch gesture, and changes if the user translates their pinch while they scale. Application developers may want to store the pinch origin when the gesture begins and use it for all scaling operations for that gesture.</remarks>
       </Docs>
@@ -131,7 +131,7 @@
         <ReturnType>Microsoft.Maui.GestureStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Whether the gesture started, is running, or has finished.</summary>
+        <summary>Gets a value indicating whether the gesture started, is running, or has finished.</summary>
         <value>Whether the gesture started, is running, or has finished.</value>
         <remarks>The origin of the pinch,
             The initial value of the</remarks>

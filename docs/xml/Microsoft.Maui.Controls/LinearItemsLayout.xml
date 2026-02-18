@@ -16,10 +16,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
-    <!-- No matching elements were found for the following include tag -->
-    <include file="../../../docs/Microsoft.Maui.Controls/LinearItemsLayout.xml" path="Type[@FullName='Microsoft.Maui.Controls.LinearItemsLayout']/Docs/*" />
+    <summary>
+            An items layout that arranges items in a single row or column.
+            </summary>
+    <remarks>
+      <see cref="T:Microsoft.Maui.Controls.LinearItemsLayout" /> is the default layout for <see cref="T:Microsoft.Maui.Controls.CollectionView" /> and displays items in a single continuous line.
+            The <see cref="P:Microsoft.Maui.Controls.LinearItemsLayout.ItemSpacing" /> property controls the spacing between consecutive items.
+            This class provides predefined static instances for common configurations like <see cref="F:Microsoft.Maui.Controls.LinearItemsLayout.Vertical" /> and <see cref="F:Microsoft.Maui.Controls.LinearItemsLayout.Horizontal" />.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,8 +43,10 @@
         <Parameter Name="orientation" Type="Microsoft.Maui.Controls.ItemsLayoutOrientation" />
       </Parameters>
       <Docs>
-        <param name="orientation">The orientation parameter.</param>
-        <summary>To be added.</summary>
+        <param name="orientation">The scroll orientation of the layout.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.LinearItemsLayout" /> class with the specified orientation.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,10 +67,11 @@
         <ReturnType>Microsoft.Maui.Controls.IItemsLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a default vertical linear items layout configured for carousel behavior with snap points.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Maui.Controls.LinearItemsLayout" /> configured for vertical carousel scrolling with mandatory single snap points centered.</returns>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/LinearItemsLayout.xml" path="//Member[@MemberName='CarouselVertical']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="Horizontal">
@@ -84,10 +91,11 @@
         <ReturnType>Microsoft.Maui.Controls.IItemsLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a default horizontal linear items layout.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Maui.Controls.LinearItemsLayout" /> configured for horizontal scrolling.</returns>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/LinearItemsLayout.xml" path="//Member[@MemberName='Horizontal']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="ItemSpacing">
@@ -107,11 +115,11 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the spacing between consecutive items in the layout.
+            </summary>
+        <value>The spacing between items in platform-specific units. Must be 0 or greater. The default is 0.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/LinearItemsLayout.xml" path="//Member[@MemberName='ItemSpacing']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="ItemSpacingProperty">
@@ -152,10 +160,11 @@
         <ReturnType>Microsoft.Maui.Controls.IItemsLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a default vertical linear items layout.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Maui.Controls.LinearItemsLayout" /> configured for vertical scrolling.</returns>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/LinearItemsLayout.xml" path="//Member[@MemberName='Vertical']/Docs/*" />
       </Docs>
     </Member>
   </Members>

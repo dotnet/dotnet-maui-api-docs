@@ -16,10 +16,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides Tizen-specific platform configuration for application-level features.</summary>
     <remarks>To be added.</remarks>
-    <!-- No matching elements were found for the following include tag -->
-    <include file="../../../../docs/Microsoft.Maui.Controls.PlatformConfiguration.TizenSpecific/Application.xml" path="Type[@FullName='Microsoft.Maui.Controls.PlatformConfiguration.TizenSpecific.Application']/Docs/*" />
   </Docs>
   <Members>
     <Member MemberName="ActiveBezelInteractionElementPropertyKey">
@@ -39,10 +37,8 @@
         <ReturnType>Microsoft.Maui.Controls.BindablePropertyKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bindable property key for the read-only attached property <c>ActiveBezelInteractionElement</c>.</summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../../docs/Microsoft.Maui.Controls.PlatformConfiguration.TizenSpecific/Application.xml" path="//Member[@MemberName='ActiveBezelInteractionElementPropertyKey']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="GetActiveBezelInteractionElement">
@@ -65,9 +61,9 @@
         <Parameter Name="application" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="application">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="application">The application whose active bezel interaction element to get.</param>
+        <summary>Gets the element that currently handles bezel interaction.</summary>
+        <returns>The element that handles bezel interaction.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,9 +87,9 @@
         <Parameter Name="config" Type="Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.Tizen,Microsoft.Maui.Controls.Application&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration.</param>
+        <summary>Gets the element that currently handles bezel interaction.</summary>
+        <returns>The element that handles bezel interaction.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,9 +113,9 @@
         <Parameter Name="application" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="application">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="application">The application whose overlay content to get.</param>
+        <summary>Gets the overlay content view for the application.</summary>
+        <returns>The overlay content view.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,9 +139,9 @@
         <Parameter Name="config" Type="Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.Tizen,Microsoft.Maui.Controls.Application&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration.</param>
+        <summary>Gets the overlay content view for the application.</summary>
+        <returns>The overlay content view.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,9 +165,10 @@
         <Parameter Name="element" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The element whose bezel interaction setting to get.</param>
+        <summary>Gets the value that indicates whether bezel interaction is enabled.</summary>
+        <returns>
+          <see langword="true" /> if bezel interaction is enabled; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,9 +192,10 @@
         <Parameter Name="config" Type="Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.Tizen,Microsoft.Maui.Controls.Application&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration.</param>
+        <summary>Gets the value that indicates whether bezel interaction is enabled.</summary>
+        <returns>
+          <see langword="true" /> if bezel interaction is enabled; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -249,9 +247,9 @@
         <Parameter Name="value" Type="Microsoft.Maui.Controls.Element" />
       </Parameters>
       <Docs>
-        <param name="application">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="application">The application whose active bezel interaction element to set.</param>
+        <param name="value">The element to handle bezel interaction.</param>
+        <summary>Sets the element that handles bezel interaction.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -282,10 +280,10 @@
         <Parameter Name="value" Type="Microsoft.Maui.Controls.Element" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration.</param>
+        <param name="value">The element to handle bezel interaction.</param>
+        <summary>Sets the element that handles bezel interaction.</summary>
+        <returns>The updated platform configuration.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -310,9 +308,9 @@
         <Parameter Name="value" Type="Microsoft.Maui.Controls.View" />
       </Parameters>
       <Docs>
-        <param name="application">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="application">The application whose overlay content to set.</param>
+        <param name="value">The overlay content view.</param>
+        <summary>Sets the overlay content view for the application.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -337,10 +335,10 @@
         <Parameter Name="value" Type="Microsoft.Maui.Controls.View" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration.</param>
+        <param name="value">The overlay content view.</param>
+        <summary>Sets the overlay content view for the application.</summary>
+        <returns>The updated platform configuration.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -365,9 +363,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The element whose bezel interaction setting to set.</param>
+        <param name="value">
+          <see langword="true" /> to enable bezel interaction; otherwise, <see langword="false" />.</param>
+        <summary>Sets a value that indicates whether bezel interaction is enabled.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -392,10 +391,11 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration.</param>
+        <param name="value">
+          <see langword="true" /> to enable bezel interaction; otherwise, <see langword="false" />.</param>
+        <summary>Sets a value that indicates whether bezel interaction is enabled.</summary>
+        <returns>The updated platform configuration.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

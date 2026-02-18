@@ -61,9 +61,10 @@
         <Parameter Name="element" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">The input view element whose reading order detection behavior to get.</param>
-        <summary>Returns a Boolean value that tells whether the reading order is detected from the input view's content.</summary>
-        <returns>A Boolean value that tells whether the reading order is detected from the input view's content.</returns>
+        <param name="element">The element to query.</param>
+        <summary>Gets whether reading order (LTR/RTL) is detected from content on Windows.</summary>
+        <returns>
+          <see langword="true" /> if reading order detection is enabled.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,9 +88,10 @@
         <Parameter Name="config" Type="Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.Windows,Microsoft.Maui.Controls.InputView&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">The platform configuration for the input view element whose reading order detection behavior to get.</param>
-        <summary>Returns a Boolean value that tells whether the reading order is detected from the input view's content.</summary>
-        <returns>A Boolean value that tells whether the reading order is detected from the input view's content.</returns>
+        <param name="config">The platform configuration.</param>
+        <summary>Gets whether reading order (LTR/RTL) is detected from content on Windows.</summary>
+        <returns>
+          <see langword="true" /> if reading order detection is enabled.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,10 +116,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">The input view element whose reading order detection behavior to set.</param>
+        <param name="element">The element to configure.</param>
         <param name="value">
-          <see langword="true" /> to detect the reading order from the content. Otherwise, <see langword="false" />.</param>
-        <summary>Sets a Boolean value that controls whether the reading order is detected from the input view's content.</summary>
+          <see langword="true" /> to detect reading order from content.</param>
+        <summary>Sets whether reading order (LTR/RTL) is detected from content on Windows.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,11 +144,11 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">The input view element whose reading order detection behavior to set.</param>
+        <param name="config">The platform configuration.</param>
         <param name="value">
-          <see langword="true" /> to detect the reading order from the content. Otherwise, <see langword="false" />.</param>
-        <summary>Sets a Boolean value that controls whether the reading order is detected from the input view's content.</summary>
-        <returns>A fluent object on which the developer may make further method calls.</returns>
+          <see langword="true" /> to detect reading order from content.</param>
+        <summary>Sets whether reading order (LTR/RTL) is detected from content on Windows.</summary>
+        <returns>The updated platform configuration.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

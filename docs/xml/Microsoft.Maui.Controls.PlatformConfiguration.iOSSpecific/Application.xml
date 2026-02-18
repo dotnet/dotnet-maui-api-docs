@@ -61,10 +61,10 @@
         <Parameter Name="element" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">The element on which to perform the operation.</param>
-        <summary>Returns a Boolean value that tells whether named font sizes should participate in the device's accessibility scaling.</summary>
+        <param name="element">The element to get the value from.</param>
+        <summary>Gets whether named font sizes respond to iOS Dynamic Type accessibility settings.</summary>
         <returns>
-          <see langword="true" /> for device's accessibility scaling. Otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if accessibility scaling is enabled; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,10 +88,10 @@
         <Parameter Name="config" Type="Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.iOS,Microsoft.Maui.Controls.Application&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">The platform configuration for the element on which to perform the operation.</param>
-        <summary>Returns a Boolean value that tells whether named font sizes should participate in the device's accessibility scaling.</summary>
+        <param name="config">The platform configuration.</param>
+        <summary>Gets whether named font sizes respond to iOS Dynamic Type accessibility settings.</summary>
         <returns>
-          <see langword="true" /> for device's accessibility scaling. Otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if accessibility scaling is enabled; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,9 +115,10 @@
         <Parameter Name="element" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">The element on which to perform the operation.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The element to get the value from.</param>
+        <summary>Gets whether control property updates are processed on the main thread on iOS.</summary>
+        <returns>
+          <see langword="true" /> if updates are handled on the main thread; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,9 +142,10 @@
         <Parameter Name="config" Type="Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.iOS,Microsoft.Maui.Controls.Application&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">The platform configuration for the element on which to perform the operation.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration.</param>
+        <summary>Gets whether control property updates are processed on the main thread on iOS.</summary>
+        <returns>
+          <see langword="true" /> if updates are handled on the main thread; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,10 +169,10 @@
         <Parameter Name="element" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">The element on which to perform the operation.</param>
-        <summary>Returns a Boolean value that tells whether the pan gesture recognizer should participate in simultaneous recognition of gestures.</summary>
+        <param name="element">The element to get the value from.</param>
+        <summary>Gets whether pan gesture recognizers can recognize gestures simultaneously with other gesture recognizers.</summary>
         <returns>
-          <see langword="true" /> for simultaneous recognition. Otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if simultaneous recognition is enabled; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,10 +196,10 @@
         <Parameter Name="config" Type="Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.iOS,Microsoft.Maui.Controls.Application&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">The platform configuration for the element on which to perform the operation.</param>
-        <summary>Returns a Boolean value that tells whether the pan gesture recognizer should participate in simultaneous recognition of gestures.</summary>
+        <param name="config">The platform configuration.</param>
+        <summary>Gets whether pan gesture recognizers can recognize gestures simultaneously with other gesture recognizers.</summary>
         <returns>
-          <see langword="true" /> for simultaneous recognition. Otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if simultaneous recognition is enabled; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,10 +266,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">The element on which to perform the operation.</param>
+        <param name="element">The element to set the value on.</param>
         <param name="value">
-          <see langword="true" /> for device's accessibility scaling. Otherwise, <see langword="false" />.</param>
-        <summary>Sets a Boolean value that controls whether named font sizes should participate in the device's accessibility scaling.</summary>
+          <see langword="true" /> to enable accessibility scaling; otherwise, <see langword="false" />.</param>
+        <summary>Sets whether named font sizes respond to iOS Dynamic Type accessibility settings.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,11 +294,11 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">The platform configuration for the element on which to perform the operation.</param>
+        <param name="config">The platform configuration.</param>
         <param name="value">
-          <see langword="true" /> for device's accessibility scaling. Otherwise, <see langword="false" />.</param>
-        <summary>Sets a Boolean value that controls whether named font sizes should participate in the device's accessibility scaling.</summary>
-        <returns>A fluent object on which the developer may make further method calls.</returns>
+          <see langword="true" /> to enable accessibility scaling; otherwise, <see langword="false" />.</param>
+        <summary>Sets whether named font sizes respond to iOS Dynamic Type accessibility settings.</summary>
+        <returns>The updated platform configuration.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -321,9 +323,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">The element on which to perform the operation.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The element to set the value on.</param>
+        <param name="value">
+          <see langword="true" /> to handle updates on the main thread; otherwise, <see langword="false" />.</param>
+        <summary>Sets whether control property updates are processed on the main thread on iOS.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -348,10 +351,11 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">The platform configuration for the element on which to perform the operation.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>A fluent object on which the developer may make further method calls.</returns>
+        <param name="config">The platform configuration.</param>
+        <param name="value">
+          <see langword="true" /> to handle updates on the main thread; otherwise, <see langword="false" />.</param>
+        <summary>Sets whether control property updates are processed on the main thread on iOS.</summary>
+        <returns>The updated platform configuration.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -376,10 +380,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">The element on which to perform the operation.</param>
+        <param name="element">The element to set the value on.</param>
         <param name="value">
-          <see langword="true" /> for simultaneous recognition. Otherwise, <see langword="false" />.</param>
-        <summary>Sets a Boolean value that controls whether the pan gesture recognizer should participate in simultaneous recognition of gestures.</summary>
+          <see langword="true" /> to enable simultaneous recognition; otherwise, <see langword="false" />.</param>
+        <summary>Sets whether pan gesture recognizers can recognize gestures simultaneously with other gesture recognizers.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -404,11 +408,11 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">The platform configuration for the element on which to perform the operation.</param>
+        <param name="config">The platform configuration.</param>
         <param name="value">
-          <see langword="true" /> for simultaneous recognition. Otherwise, <see langword="false" />.</param>
-        <summary>Sets a Boolean value that controls whether the pan gesture recognizer should participate in simultaneous recognition of gestures.</summary>
-        <returns>A fluent object on which the developer may make further method calls.</returns>
+          <see langword="true" /> to enable simultaneous recognition; otherwise, <see langword="false" />.</param>
+        <summary>Sets whether pan gesture recognizers can recognize gestures simultaneously with other gesture recognizers.</summary>
+        <returns>The updated platform configuration.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

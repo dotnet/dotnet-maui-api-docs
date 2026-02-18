@@ -65,7 +65,7 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a <see cref="T:System.TimeSpan" /> structure that indicates the length of time after which the image cache becomes invalid.</summary>
+        <summary>Gets or sets how long the cached image remains valid. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -108,7 +108,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Boolean value that indicates whether caching is enabled on this <see cref="T:Microsoft.Maui.Controls.UriImageSource" /> object.</summary>
+        <summary>Gets or sets whether caching is enabled. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,11 +154,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a value indicating whether this image source is empty.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/UriImageSource.xml" path="//Member[@MemberName='IsEmpty']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Maui.IStreamImageSource.GetStreamAsync">
@@ -208,7 +206,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the path to the file for the image, prefixed with the string, "Uri: ".</summary>
+        <summary>Returns a string representation of this <see cref="T:Microsoft.Maui.Controls.UriImageSource" />.</summary>
         <returns>The path to the file for the image, prefixed with the string, "Uri: ".</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -236,7 +234,7 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the URI for the image to get.</summary>
+        <summary>Gets or sets the URI of the image to load. This is a bindable property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

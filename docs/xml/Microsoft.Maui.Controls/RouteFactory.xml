@@ -16,10 +16,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Base class for factories that create elements for registered routes.</summary>
     <remarks>To be added.</remarks>
-    <!-- No matching elements were found for the following include tag -->
-    <include file="../../docs/Microsoft.Maui.Controls/RouteFactory.xml" path="Type[@FullName='Microsoft.Maui.Controls.RouteFactory']/Docs/*" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,11 +56,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets or creates the element for this route.</summary>
+        <returns>The element associated with the route.</returns>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/RouteFactory.xml" path="//Member[@MemberName='GetOrCreate'][1]/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="GetOrCreate">
@@ -85,9 +81,9 @@
         <Parameter Name="services" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="services">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="services">The service provider for dependency injection.</param>
+        <summary>Gets or creates the element for this route using dependency injection.</summary>
+        <returns>The element associated with the route.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -188,9 +188,9 @@
         <Parameter Name="element" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">The platform specific element on which to perform the operation.</param>
-        <summary>Returns a value that controls whether the status bar text color is adjusted to match the luminosity of the navigation bar for the platform-specific navigation page.</summary>
-        <returns>A value that controls whether the status bar text color is adjusted to match the luminosity of the navigation bar for the platform-specific navigation page.</returns>
+        <param name="element">The element to get the value from.</param>
+        <summary>Gets the status bar text color mode on iOS.</summary>
+        <returns>The status bar text color mode.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,9 +214,9 @@
         <Parameter Name="config" Type="Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.iOS,Microsoft.Maui.Controls.NavigationPage&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
-        <summary>Returns a value that controls whether the status bar text color is adjusted to match the luminosity of the navigation bar for the platform-specific navigation page.</summary>
-        <returns>A value that controls whether the status bar text color is adjusted to match the luminosity of the navigation bar for the platform-specific navigation page.</returns>
+        <param name="config">The platform configuration.</param>
+        <summary>Gets the status bar text color mode on iOS.</summary>
+        <returns>The status bar text color mode.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -395,10 +395,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">The element for which to set whether the navigation bar separator is hidden.</param>
+        <param name="element">The element to set the value on.</param>
         <param name="value">
-          <see langword="true" /> to hide the separator. Otherwise, <see langword="false" />.</param>
-        <summary>Developers set this to <see langword="true" /> to hide the separator. Otherwise, <see langword="false" />.</summary>
+          <see langword="true" /> to hide the separator; otherwise, <see langword="false" />.</param>
+        <summary>Sets whether to hide the navigation bar separator line on iOS.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -423,11 +423,11 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">The platform configuration for the element for which to set whether the navigation bar separator is hidden.</param>
+        <param name="config">The platform configuration.</param>
         <param name="value">
-          <see langword="true" /> to hide the separator. Otherwise, <see langword="false" />.</param>
-        <summary>Developers set this to <see langword="true" /> to hide the separator. Otherwise, <see langword="false" />.</summary>
-        <returns>A fluent object on which the developer can make further method calls.</returns>
+          <see langword="true" /> to hide the separator; otherwise, <see langword="false" />.</param>
+        <summary>Sets whether to hide the navigation bar separator line on iOS.</summary>
+        <returns>The updated platform configuration.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -458,9 +458,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">The platform specific element on which to perform the operation.</param>
-        <param name="value">The new property value to assign.</param>
-        <summary>Sets a Boolean value that controls whether the navigation bar on the platform-specific navigation page is translucent.</summary>
+        <param name="element">The element to set the value on.</param>
+        <param name="value">
+          <see langword="true" /> for translucent; otherwise, <see langword="false" />.</param>
+        <summary>Sets whether the navigation bar is translucent on iOS.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -491,10 +492,11 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
-        <param name="value">The new property value to assign.</param>
-        <summary>Sets a Boolean value that controls whether the navigation bar on the platform-specific navigation page is translucent.</summary>
-        <returns>The updated configuration object on which developers can make successive method calls.</returns>
+        <param name="config">The platform configuration.</param>
+        <param name="value">
+          <see langword="true" /> for translucent; otherwise, <see langword="false" />.</param>
+        <summary>Sets whether the navigation bar is translucent on iOS.</summary>
+        <returns>The updated platform configuration.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -519,9 +521,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">The element whose preference to set.</param>
-        <param name="value">The new large title preference behavior.</param>
-        <summary>Sets the large title preference behavior of <paramref name="element" /> to <paramref name="value" />.</summary>
+        <param name="element">The element to set the value on.</param>
+        <param name="value">
+          <see langword="true" /> to prefer large titles; otherwise, <see langword="false" />.</param>
+        <summary>Sets whether iOS 11+ large titles are displayed in the navigation bar.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -546,10 +549,11 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">The element whose preference to set.</param>
-        <param name="value">The new large title preference behavior.</param>
-        <summary>Sets the large title preference behavior of <paramref name="config" /> to <paramref name="value" />.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The platform configuration.</param>
+        <param name="value">
+          <see langword="true" /> to prefer large titles; otherwise, <see langword="false" />.</param>
+        <summary>Sets whether iOS 11+ large titles are displayed in the navigation bar.</summary>
+        <returns>The updated platform configuration.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -574,9 +578,9 @@
         <Parameter Name="value" Type="Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific.StatusBarTextColorMode" />
       </Parameters>
       <Docs>
-        <param name="element">The platform specific element on which to perform the operation.</param>
-        <param name="value">The new property value to assign.</param>
-        <summary>Sets a value that controls whether the status bar text color is adjusted to match the luminosity of the navigation bar for the platform-specific navigation page.</summary>
+        <param name="element">The element to set the value on.</param>
+        <param name="value">The status bar text color mode to apply.</param>
+        <summary>Sets the status bar text color mode on iOS.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -601,10 +605,10 @@
         <Parameter Name="value" Type="Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific.StatusBarTextColorMode" />
       </Parameters>
       <Docs>
-        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
-        <param name="value">The new property value to assign.</param>
-        <summary>Sets a value that controls whether the status bar text color is adjusted to match the luminosity of the navigation bar for the platform-specific navigation page.</summary>
-        <returns>The updated configuration object on which developers can make successive method calls.</returns>
+        <param name="config">The platform configuration.</param>
+        <param name="value">The status bar text color mode to apply.</param>
+        <summary>Sets the status bar text color mode on iOS.</summary>
+        <returns>The updated platform configuration.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

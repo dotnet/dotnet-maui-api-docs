@@ -38,69 +38,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>A <see cref="T:Microsoft.Maui.Controls.View" /> control that provides a toggled value.</summary>
+    <summary>
+            Represents a control that the user can toggle between two states: on or off.
+            </summary>
     <remarks>
-      <para>The following example describes a basic use.</para>
-      <example>
-        <code lang="csharp lang-csharp"><![CDATA[using System;
-using Microsoft.Maui.Controls;
-    
-namespace FormsGallery
-{
-    class SwitchDemoPage : ContentPage
-    {
-        Label label;
-    
-        public SwitchDemoPage()
-        {
-            Label header = new Label
-            {
-                Text = "Switch",
-                FontSize = Device.GetNamedSize (NamedSize.Large, typeof(Label)),
-                HorizontalOptions = LayoutOptions.Center
-            };
-    
-            Switch switcher = new Switch
-            {
-                HorizontalOptions = LayoutOptions.Center,
-                VerticalOptions = LayoutOptions.CenterAndExpand
-            };
-            switcher.Toggled += switcher_Toggled;
-    
-            label = new Label
-            {
-                Text = "Switch is now False",
-                FontSize = Device.GetNamedSize (NamedSize.Large, typeof(Label)),
-                HorizontalOptions = LayoutOptions.Center,
-                VerticalOptions = LayoutOptions.CenterAndExpand
-            };
-    
-            // Accomodate iPhone status bar.
-            this.Padding = new Thickness(10, Device.OnPlatform(20, 0, 0), 10, 5);
-    
-            // Build the page.
-            this.Content = new StackLayout
-            {
-                Children =
-                {
-                    header,
-                    switcher,
-                    label
-                }
-            };
-        }
-    
-        void switcher_Toggled(object sender, ToggledEventArgs e)
-        {
-            label.Text = String.Format("Switch is now {0}", e.Value);
-        }
-    }
-}]]></code>
-      </example>
-      <para>
-        <img href="~/xml/Microsoft.Maui.Controls/_images/Switch.TripleScreenShot.png" />
-      </para>
-    </remarks>
+            A <see cref="T:Microsoft.Maui.Controls.Switch" /> is a UI element that can be toggled between on and off states.
+            Use the <see cref="P:Microsoft.Maui.Controls.Switch.IsToggled" /> property to determine or set the current state.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -117,7 +61,9 @@ namespace FormsGallery
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new <see cref="T:Microsoft.Maui.Controls.Switch" /> element with default values.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.Switch" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,8 +106,12 @@ namespace FormsGallery
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Boolean value that indicates whether this <see cref="T:Microsoft.Maui.Controls.Switch" /> element is toggled.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets a value indicating whether the switch is in the on position.
+            This is a bindable property.
+            </summary>
+        <value>
+          <see langword="true" /> if the switch is on; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,7 +132,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Switch.IsToggled" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Switch.IsToggled" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,10 +203,10 @@ namespace FormsGallery
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the color of the toggle switch's track when it is in the off state.
-            If not set, the default color will be used for the off-track appearance.
+            Gets or sets the color of the switch track when it is in the off position.
+            This is a bindable property.
             </summary>
-        <value>To be added.</value>
+        <value>The <see cref="T:Microsoft.Maui.Graphics.Color" /> of the track when off. The default is <see langword="null" />, which uses the platform default.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -276,7 +226,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Switch.OffColor" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Switch.OffColor" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -332,8 +282,11 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the color of the switch when it is in the "On" position.</summary>
-        <value>The color of the switch when it is in the "On" position.</value>
+        <summary>
+            Gets or sets the color of the switch track when it is in the on position.
+            This is a bindable property.
+            </summary>
+        <value>The <see cref="T:Microsoft.Maui.Graphics.Color" /> of the track when on. The default is <see langword="null" />, which uses the platform default.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -354,7 +307,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Switch.OnColor" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Switch.OnColor" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -406,10 +359,11 @@ namespace FormsGallery
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The visual state name for when the switch is in the off position.
+            </summary>
+        <returns>The string "Off".</returns>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/Switch.xml" path="//Member[@MemberName='SwitchOffVisualState']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="SwitchOnVisualState">
@@ -429,10 +383,11 @@ namespace FormsGallery
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The visual state name for when the switch is in the on position.
+            </summary>
+        <returns>The string "On".</returns>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/Switch.xml" path="//Member[@MemberName='SwitchOnVisualState']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="ThumbColor">
@@ -452,11 +407,12 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the color of the switch thumb (the movable circular part).
+            This is a bindable property.
+            </summary>
+        <value>The <see cref="T:Microsoft.Maui.Graphics.Color" /> of the thumb. The default is <see langword="null" />, which uses the platform default.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/Switch.xml" path="//Member[@MemberName='ThumbColor']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="ThumbColorProperty">
@@ -476,7 +432,7 @@ namespace FormsGallery
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Switch.ThumbColor" />.</summary>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Switch.ThumbColor" />. This is a bindable property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -497,7 +453,9 @@ namespace FormsGallery
         <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.ToggledEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when the <see cref="P:Microsoft.Maui.Controls.Switch.IsToggled" /> property changes.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

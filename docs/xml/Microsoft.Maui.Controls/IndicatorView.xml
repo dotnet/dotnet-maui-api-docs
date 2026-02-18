@@ -42,10 +42,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
-    <!-- No matching elements were found for the following include tag -->
-    <include file="../../docs/Microsoft.Maui.Controls/IndicatorView.xml" path="Type[@FullName='Microsoft.Maui.Controls.IndicatorView']/Docs/*" />
+    <summary>
+            A view that displays a visual indicator representing the position within a collection of items.
+            </summary>
+    <remarks>
+      <see cref="T:Microsoft.Maui.Controls.IndicatorView" /> is commonly used with <see cref="T:Microsoft.Maui.Controls.CarouselView" /> to display dots or other shapes
+            indicating the current position and total number of items. The indicators automatically update when
+            the position changes.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,10 +66,10 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.IndicatorView" /> class.
+            </summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/IndicatorView.xml" path="//Member[@MemberName='.ctor']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -85,11 +89,14 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/IndicatorView.xml" path="//Member[@MemberName='Count']/Docs/*" />
+        <summary>
+            Gets or sets the total number of indicators to display.
+            </summary>
+        <value>The total number of indicators. The default is 0.</value>
+        <remarks>
+            This is automatically set when <see cref="P:Microsoft.Maui.Controls.IndicatorView.ItemsSource" /> is provided.
+            You can also set this manually when not using an items source.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="CountProperty">
@@ -130,11 +137,14 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/IndicatorView.xml" path="//Member[@MemberName='HideSingle']/Docs/*" />
+        <summary>
+            Gets or sets a value indicating whether the indicator view is hidden when only one item exists.
+            </summary>
+        <value>
+          <see langword="true" /> to hide the indicator view when there is only one item; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+            When enabled and <see cref="P:Microsoft.Maui.Controls.IndicatorView.Count" /> is 1 or less, the indicator view will not be displayed.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="HideSingleProperty">
@@ -175,11 +185,11 @@
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the color of unselected indicators.
+            </summary>
+        <value>A <see cref="T:Microsoft.Maui.Graphics.Color" /> for unselected indicators. The default is <see cref="F:Microsoft.Maui.Graphics.Colors.LightGrey" />.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/IndicatorView.xml" path="//Member[@MemberName='IndicatorColor']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="IndicatorColorProperty">
@@ -220,11 +230,14 @@
         <ReturnType>Microsoft.Maui.Controls.IBindableLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/IndicatorView.xml" path="//Member[@MemberName='IndicatorLayout']/Docs/*" />
+        <summary>
+            Gets or sets the layout that arranges the indicator views.
+            </summary>
+        <value>An <see cref="T:Microsoft.Maui.Controls.IBindableLayout" /> that contains the indicator views.</value>
+        <remarks>
+            This property is set automatically when <see cref="P:Microsoft.Maui.Controls.IndicatorView.IndicatorTemplate" /> is specified.
+            Use this as the content property when defining custom indicator layouts in XAML.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="IndicatorSize">
@@ -244,11 +257,13 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/IndicatorView.xml" path="//Member[@MemberName='IndicatorSize']/Docs/*" />
+        <summary>
+            Gets or sets the size of each indicator.
+            </summary>
+        <value>The size of each indicator in device-independent units. The default is 6.0.</value>
+        <remarks>
+            This value determines both the width and height of each indicator when using the default rendering.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="IndicatorSizeProperty">
@@ -289,11 +304,11 @@
         <ReturnType>Microsoft.Maui.Controls.IndicatorShape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the shape of the indicators.
+            </summary>
+        <value>An <see cref="T:Microsoft.Maui.Controls.IndicatorShape" /> value. The default is <see cref="F:Microsoft.Maui.Controls.IndicatorShape.Circle" />.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/IndicatorView.xml" path="//Member[@MemberName='IndicatorsShape']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="IndicatorsShapeProperty">
@@ -334,11 +349,14 @@
         <ReturnType>Microsoft.Maui.Controls.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/IndicatorView.xml" path="//Member[@MemberName='IndicatorTemplate']/Docs/*" />
+        <summary>
+            Gets or sets the data template used to display each indicator.
+            </summary>
+        <value>A <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> that defines the appearance of each indicator, or <see langword="null" /> to use the default indicator style.</value>
+        <remarks>
+            When set, this allows full customization of indicator appearance. When <see langword="null" />,
+            indicators are rendered using <see cref="P:Microsoft.Maui.Controls.IndicatorView.IndicatorsShape" />, <see cref="P:Microsoft.Maui.Controls.IndicatorView.IndicatorSize" />, and color properties.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="IndicatorTemplateProperty">
@@ -379,11 +397,14 @@
         <ReturnType>System.Collections.IEnumerable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/IndicatorView.xml" path="//Member[@MemberName='ItemsSource']/Docs/*" />
+        <summary>
+            Gets or sets the collection of items for which indicators will be displayed.
+            </summary>
+        <value>An <see cref="T:System.Collections.IEnumerable" /> collection of items, or <see langword="null" />.</value>
+        <remarks>
+            When set, the <see cref="P:Microsoft.Maui.Controls.IndicatorView.Count" /> property is automatically updated based on the number of items.
+            Typically bound to the same collection as a <see cref="T:Microsoft.Maui.Controls.CarouselView" />'s ItemsSource property.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemsSourceProperty">
@@ -424,11 +445,14 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/IndicatorView.xml" path="//Member[@MemberName='MaximumVisible']/Docs/*" />
+        <summary>
+            Gets or sets the maximum number of indicators to display at once.
+            </summary>
+        <value>The maximum number of visible indicators. The default is <see cref="F:System.Int32.MaxValue" />.</value>
+        <remarks>
+            When the total count exceeds this value, only the most relevant indicators around
+            the current position are shown. Useful for large collections to avoid cluttering the UI.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaximumVisibleProperty">
@@ -604,10 +628,12 @@
         <Parameter Name="heightConstraint" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="widthConstraint">To be added.</param>
-        <param name="heightConstraint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="widthConstraint">The available width.</param>
+        <param name="heightConstraint">The available height.</param>
+        <summary>
+            Measures the indicator view to determine its desired size.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Maui.SizeRequest" /> indicating the desired size of the indicator view.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -628,11 +654,14 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/IndicatorView.xml" path="//Member[@MemberName='Position']/Docs/*" />
+        <summary>
+            Gets or sets the index of the currently selected indicator.
+            </summary>
+        <value>The zero-based index of the current position. The default is 0.</value>
+        <remarks>
+            This property is typically bound to a <see cref="P:Microsoft.Maui.Controls.CarouselView.Position" /> property to
+            keep the indicator view synchronized with the carousel position.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="PositionProperty">
@@ -673,11 +702,11 @@
         <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the color of the selected indicator.
+            </summary>
+        <value>A <see cref="T:Microsoft.Maui.Graphics.Color" /> for the selected indicator. The default is <see cref="F:Microsoft.Maui.Graphics.Colors.Black" />.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/IndicatorView.xml" path="//Member[@MemberName='SelectedIndicatorColor']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="SelectedIndicatorColorProperty">

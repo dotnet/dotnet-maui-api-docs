@@ -16,10 +16,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides methods and properties to manage URI-based navigation routes in Shell applications.</summary>
     <remarks>To be added.</remarks>
-    <!-- No matching elements were found for the following include tag -->
-    <include file="../../docs/Microsoft.Maui.Controls/Routing.xml" path="Type[@FullName='Microsoft.Maui.Controls.Routing']/Docs/*" />
   </Docs>
   <Members>
     <Member MemberName="FormatRoute">
@@ -42,9 +40,9 @@
         <Parameter Name="segments" Type="System.Collections.Generic.List&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="segments">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="segments">The route segments to format.</param>
+        <summary>Formats a list of route segments into a single route string.</summary>
+        <returns>The formatted route string.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,9 +66,9 @@
         <Parameter Name="route" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="route">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="route">The route string to format.</param>
+        <summary>Formats a route string.</summary>
+        <returns>The formatted route string.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,9 +119,9 @@
         <Parameter Name="obj" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to get the route from.</param>
+        <summary>Gets the route string for the specified <see cref="T:Microsoft.Maui.Controls.BindableObject" />.</summary>
+        <returns>The route string associated with the object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,9 +146,9 @@
         <Parameter Name="factory" Type="Microsoft.Maui.Controls.RouteFactory" />
       </Parameters>
       <Docs>
-        <param name="route">To be added.</param>
-        <param name="factory">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="route">The route string to register.</param>
+        <param name="factory">The factory that creates elements for this route.</param>
+        <summary>Registers a route with a custom factory for creating navigation content.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,9 +184,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="route">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="route">The route string to register.</param>
+        <param name="type">The type to instantiate when navigating to this route.</param>
+        <summary>Registers a route with a type that will be instantiated for navigation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -234,9 +232,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="obj">The element to set the route on.</param>
+        <param name="value">The route string to set.</param>
+        <summary>Sets the route string for the specified <see cref="T:Microsoft.Maui.Controls.Element" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -260,8 +258,8 @@
         <Parameter Name="route" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="route">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="route">The route string to unregister.</param>
+        <summary>Removes a previously registered route.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

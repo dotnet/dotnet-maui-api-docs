@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>A single 1:1 immutable data binding.</summary>
+    <summary>
+            A binding that connects a property on a source object to a property on a target object.
+            </summary>
     <remarks>This class is immutable.</remarks>
   </Docs>
   <Members>
@@ -40,7 +42,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Constructs and initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.Binding" /> class.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.Binding" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,13 +69,15 @@
         <Parameter Name="source" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="path">The property path.</param>
-        <param name="mode">The binding mode. This property is optional. Default is <see cref="F:Microsoft.Maui.Controls.BindingMode.Default" />.</param>
-        <param name="converter">The converter. This parameter is optional. Default is <see langword="null" />.</param>
-        <param name="converterParameter">An user-defined parameter to pass to the converter. This parameter is optional. Default is <see langword="null" />.</param>
-        <param name="stringFormat">A String format. This parameter is optional. Default is <see langword="null" />.</param>
-        <param name="source">An object used as the source for this binding. This parameter is optional. Default is <see langword="null" />.</param>
-        <summary>Constructs and initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.Binding" /> class.</summary>
+        <param name="path">The property path to bind to.</param>
+        <param name="mode">The binding mode.</param>
+        <param name="converter">The value converter to use.</param>
+        <param name="converterParameter">The parameter to pass to the converter.</param>
+        <param name="stringFormat">The string format to apply to the bound value.</param>
+        <param name="source">The source object for the binding.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.Binding" /> class with the specified path, mode, converter, and source.
+            </summary>
         <remarks>
           <para>The following example shows how to set a binding to a property with a BindingMode and Converter:</para>
           <example>
@@ -131,7 +137,9 @@ Debug.WriteLine (person.Name); //prints "Foo". ReverseConverter.ConvertBack () i
         <ReturnType>Microsoft.Maui.Controls.IValueConverter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the converter to be used for this binding ?</summary>
+        <summary>
+            Gets or sets the converter used to convert values between the source and target.
+            </summary>
         <value>An IValueConverter, or <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -153,7 +161,9 @@ Debug.WriteLine (person.Name); //prints "Foo". ReverseConverter.ConvertBack () i
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the parameter passed as argument to the converter.</summary>
+        <summary>
+            Gets or sets the parameter passed to the converter.
+            </summary>
         <value>An object, or <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -175,10 +185,10 @@ Debug.WriteLine (person.Name); //prints "Foo". ReverseConverter.ConvertBack () i
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            A value returned from a converter to indicate that the binding should not update the target property.
+            </summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/Binding.xml" path="//Member[@MemberName='DoNothing']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -198,7 +208,9 @@ Debug.WriteLine (person.Name); //prints "Foo". ReverseConverter.ConvertBack () i
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the path of the property</summary>
+        <summary>
+            Gets or sets the property path to bind to on the source object.
+            </summary>
         <value>A string indicating the path to the property.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -241,7 +253,9 @@ Debug.WriteLine (person.Name); //prints "Foo". ReverseConverter.ConvertBack () i
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the source of the binding.</summary>
+        <summary>
+            Gets or sets the source object for this binding.
+            </summary>
         <value>An object used as the binding source.</value>
         <remarks>If the Source is not null, the BindingContext is ignored, and the Source is used instead. This allows to set a source for a single Binding, and not for all the Bindings applied to the BindableObject.</remarks>
       </Docs>
@@ -269,7 +283,9 @@ Debug.WriteLine (person.Name); //prints "Foo". ReverseConverter.ConvertBack () i
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>
+            Gets or sets the name of the event that triggers the source update in <see cref="F:Microsoft.Maui.Controls.BindingMode.OneWayToSource" /> bindings.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

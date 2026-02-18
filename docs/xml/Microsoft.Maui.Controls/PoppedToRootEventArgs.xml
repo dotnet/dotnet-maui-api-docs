@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>EventArgs for the NavigationPage's PoppedToRoot navigation event.</summary>
+    <summary>Event arguments for a pop-to-root navigation operation.</summary>
     <remarks>
         The <see cref="E:Microsoft.Maui.Controls.NavigationPage.PoppedToRoot" /> passes <see cref="T:Microsoft.Maui.Controls.NavigationEventArgs" /> as the
         event argument. This class can be cast to <see cref="T:Microsoft.Maui.Controls.PoppedToRootEventArgs" /> to allow for access to the
@@ -43,9 +43,9 @@
         <Parameter Name="poppedPages" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.Controls.Page&gt;" />
       </Parameters>
       <Docs>
-        <param name="page">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <param name="poppedPages">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <summary>For internal use by platform renderers.</summary>
+        <param name="page">The root page navigated to.</param>
+        <param name="poppedPages">The pages that were popped.</param>
+        <summary>Creates a new <see cref="T:Microsoft.Maui.Controls.PoppedToRootEventArgs" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,7 +66,7 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Maui.Controls.Page&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of pages that was removed from the navigation stack.</summary>
+        <summary>Gets the pages that were popped from the navigation stack.</summary>
         <value />
         <remarks>
           <para>For <see cref="E:Microsoft.Maui.Controls.NavigationPage.PoppedToRoot" /> this represents the pages

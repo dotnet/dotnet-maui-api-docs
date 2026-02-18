@@ -35,7 +35,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Class that represents a property condition and an action that is performed when the condition is met.</summary>
+    <summary>
+            A trigger that activates setters when a property on the control matches a specified value.
+            </summary>
     <remarks>
       <para>The <see cref="T:Microsoft.Maui.Controls.Trigger" /> class is suitable for checking the values of any property on the control to which it has been added. That is, its default binding context is the control to which it has been added. To bind on controls other than the parent, developers should use the <see cref="T:Microsoft.Maui.Controls.DataTrigger" /> class, instead.</para>
       <example>
@@ -136,8 +138,10 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="targetType">The view type to which the trigger will be added.</param>
-        <summary>Initializes a new <see cref="T:Microsoft.Maui.Controls.Trigger" /> instance.</summary>
+        <param name="targetType">The type of object to which this trigger can be attached.</param>
+        <summary>
+            Initializes a new <see cref="T:Microsoft.Maui.Controls.Trigger" /> instance.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,7 +190,9 @@
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the property whose value will be compared to <see cref="P:Microsoft.Maui.Controls.Trigger.Value" /> to determine when to invoke the setters.</summary>
+        <summary>
+            Gets or sets the property whose value will be compared to <see cref="P:Microsoft.Maui.Controls.Trigger.Value" /> to determine when to activate the trigger.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -208,7 +214,9 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Controls.Setter&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the list of <see cref="T:Microsoft.Maui.Controls.Setter" /> objects that will be applied when the property that is named by <see cref="P:Microsoft.Maui.Controls.Trigger.Property" /> becomes equal to <see cref="P:Microsoft.Maui.Controls.Trigger.Value" />.</summary>
+        <summary>
+            Gets the collection of <see cref="T:Microsoft.Maui.Controls.Setter" /> objects to apply when the trigger condition is met.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -230,7 +238,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the property, named by the <see cref="P:Microsoft.Maui.Controls.Trigger.Property" /> property, that will cause the setters to be applied.</summary>
+        <summary>
+            Gets or sets the value to compare against <see cref="P:Microsoft.Maui.Controls.Trigger.Property" /> to determine when to activate the trigger.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

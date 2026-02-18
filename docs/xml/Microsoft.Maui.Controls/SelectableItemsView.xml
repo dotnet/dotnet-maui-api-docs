@@ -16,10 +16,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
-    <!-- No matching elements were found for the following include tag -->
-    <include file="../../../docs/Microsoft.Maui.Controls/SelectableItemsView.xml" path="Type[@FullName='Microsoft.Maui.Controls.SelectableItemsView']/Docs/*" />
+    <summary>
+            A structured items view that supports item selection.
+            </summary>
+    <remarks>
+      <see cref="T:Microsoft.Maui.Controls.SelectableItemsView" /> extends <see cref="T:Microsoft.Maui.Controls.StructuredItemsView" /> to add selection capabilities.
+            Use <see cref="P:Microsoft.Maui.Controls.SelectableItemsView.SelectionMode" /> to control whether single or multiple items can be selected.
+            The <see cref="P:Microsoft.Maui.Controls.SelectableItemsView.SelectedItem" /> and <see cref="P:Microsoft.Maui.Controls.SelectableItemsView.SelectedItems" /> properties track the current selection,
+            and the <see cref="E:Microsoft.Maui.Controls.SelectableItemsView.SelectionChanged" /> event notifies when selection changes.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,10 +41,10 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.SelectableItemsView" /> class.
+            </summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/SelectableItemsView.xml" path="//Member[@MemberName='.ctor']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="OnSelectionChanged">
@@ -84,11 +89,15 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/SelectableItemsView.xml" path="//Member[@MemberName='SelectedItem']/Docs/*" />
+        <summary>
+            Gets or sets the currently selected item when <see cref="P:Microsoft.Maui.Controls.SelectableItemsView.SelectionMode" /> is <see cref="F:Microsoft.Maui.Controls.SelectionMode.Single" />.
+            </summary>
+        <value>The selected data item, or <see langword="null" /> if no item is selected.</value>
+        <remarks>
+            This property is only meaningful when <see cref="P:Microsoft.Maui.Controls.SelectableItemsView.SelectionMode" /> is <see cref="F:Microsoft.Maui.Controls.SelectionMode.Single" />.
+            For multiple selection, use the <see cref="P:Microsoft.Maui.Controls.SelectableItemsView.SelectedItems" /> property instead.
+            The binding mode defaults to <see cref="F:Microsoft.Maui.Controls.BindingMode.TwoWay" />.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedItemProperty">
@@ -129,11 +138,14 @@
         <ReturnType>System.Collections.Generic.IList&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/SelectableItemsView.xml" path="//Member[@MemberName='SelectedItems']/Docs/*" />
+        <summary>
+            Gets or sets the collection of currently selected items when <see cref="P:Microsoft.Maui.Controls.SelectableItemsView.SelectionMode" /> is <see cref="F:Microsoft.Maui.Controls.SelectionMode.Multiple" />.
+            </summary>
+        <value>A list of selected data items. Never <see langword="null" />; returns an empty list when no items are selected.</value>
+        <remarks>
+            This property tracks all selected items when <see cref="P:Microsoft.Maui.Controls.SelectableItemsView.SelectionMode" /> is <see cref="F:Microsoft.Maui.Controls.SelectionMode.Multiple" />.
+            For single selection, use the <see cref="P:Microsoft.Maui.Controls.SelectableItemsView.SelectedItem" /> property instead for simpler binding.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedItemsProperty">
@@ -195,11 +207,14 @@
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/SelectableItemsView.xml" path="//Member[@MemberName='SelectionChangedCommand']/Docs/*" />
+        <summary>
+            Gets or sets the command to execute when the selection changes.
+            </summary>
+        <value>An <see cref="T:System.Windows.Input.ICommand" /> to execute when selection changes, or <see langword="null" /> for no command.</value>
+        <remarks>
+            The command's parameter is set to the <see cref="P:Microsoft.Maui.Controls.SelectableItemsView.SelectionChangedCommandParameter" /> value.
+            The command executes in addition to the <see cref="E:Microsoft.Maui.Controls.SelectableItemsView.SelectionChanged" /> event firing.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionChangedCommandParameter">
@@ -219,11 +234,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the parameter to pass to the <see cref="P:Microsoft.Maui.Controls.SelectableItemsView.SelectionChangedCommand" />.
+            </summary>
+        <value>The command parameter, or <see langword="null" /> if no parameter is needed.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/SelectableItemsView.xml" path="//Member[@MemberName='SelectionChangedCommandParameter']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="SelectionChangedCommandParameterProperty">
@@ -285,11 +300,15 @@
         <ReturnType>Microsoft.Maui.Controls.SelectionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/SelectableItemsView.xml" path="//Member[@MemberName='SelectionMode']/Docs/*" />
+        <summary>
+            Gets or sets the selection mode, which determines whether users can select no items, one item, or multiple items.
+            </summary>
+        <value>A <see cref="P:Microsoft.Maui.Controls.SelectableItemsView.SelectionMode" /> value. The default is <see cref="F:Microsoft.Maui.Controls.SelectionMode.None" />.</value>
+        <remarks>
+            Set to <see cref="F:Microsoft.Maui.Controls.SelectionMode.Single" /> to allow selecting one item at a time,
+            <see cref="F:Microsoft.Maui.Controls.SelectionMode.Multiple" /> to allow selecting multiple items,
+            or <see cref="F:Microsoft.Maui.Controls.SelectionMode.None" /> to disable selection entirely.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionModeProperty">

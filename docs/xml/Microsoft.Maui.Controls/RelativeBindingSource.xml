@@ -16,10 +16,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Specifies a relative source for a binding, such as Self, TemplatedParent, or FindAncestor.
+            </summary>
     <remarks>To be added.</remarks>
-    <!-- No matching elements were found for the following include tag -->
-    <include file="../../docs/Microsoft.Maui.Controls/RelativeBindingSource.xml" path="Type[@FullName='Microsoft.Maui.Controls.RelativeBindingSource']/Docs/*" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,10 +40,12 @@
         <Parameter Name="ancestorLevel" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="mode">To be added.</param>
-        <param name="ancestorType">To be added.</param>
-        <param name="ancestorLevel">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="mode">The relative binding source mode.</param>
+        <param name="ancestorType">The type of ancestor to find. Required for FindAncestor modes.</param>
+        <param name="ancestorLevel">The level of ancestor to find (1-based). Default is 1.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Maui.Controls.RelativeBindingSource" /> with the specified mode, ancestor type, and level.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,11 +66,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the 1-based level of ancestor to find.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/RelativeBindingSource.xml" path="//Member[@MemberName='AncestorLevel']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="AncestorType">
@@ -88,11 +90,11 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the ancestor type to find when using FindAncestor or FindAncestorBindingContext modes.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/RelativeBindingSource.xml" path="//Member[@MemberName='AncestorType']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -112,11 +114,11 @@
         <ReturnType>Microsoft.Maui.Controls.RelativeBindingSourceMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the relative binding source mode.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/RelativeBindingSource.xml" path="//Member[@MemberName='Mode']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="Self">
@@ -136,11 +138,11 @@
         <ReturnType>Microsoft.Maui.Controls.RelativeBindingSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a <see cref="T:Microsoft.Maui.Controls.RelativeBindingSource" /> that binds to the element itself.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/RelativeBindingSource.xml" path="//Member[@MemberName='Self']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="TemplatedParent">
@@ -160,11 +162,11 @@
         <ReturnType>Microsoft.Maui.Controls.RelativeBindingSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a <see cref="T:Microsoft.Maui.Controls.RelativeBindingSource" /> that binds to the templated parent.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../docs/Microsoft.Maui.Controls/RelativeBindingSource.xml" path="//Member[@MemberName='TemplatedParent']/Docs/*" />
       </Docs>
     </Member>
   </Members>

@@ -22,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+    <summary>Manages registration of renderers, effects, and other components.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -43,7 +43,7 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Reflection.Assembly&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>Gets or sets additional assemblies to scan for registrations.</summary>
         <value>For internal use by the Microsoft.Maui.Controls platform.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -131,7 +131,7 @@
         <ReturnType>Microsoft.Maui.Controls.Internals.Registrar&lt;Microsoft.Maui.Controls.IRegisterable&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <summary>Gets the registrar for registerable components.</summary>
         <value>For internal use by the Microsoft.Maui.Controls platform.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -193,9 +193,9 @@
         <Parameter Name="effectAttributes" Type="Microsoft.Maui.Controls.ExportEffectAttribute[]" />
       </Parameters>
       <Docs>
-        <param name="resolutionName">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <param name="effectAttributes">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <param name="resolutionName">The resolution group name.</param>
+        <param name="effectAttributes">The effect attributes to register.</param>
+        <summary>Registers effects from the specified attributes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,8 +219,8 @@
         <Parameter Name="attributes" Type="Microsoft.Maui.Controls.HandlerAttribute[]" />
       </Parameters>
       <Docs>
-        <param name="attributes">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <param name="attributes">The handler attributes to register.</param>
+        <summary>Registers renderers from the specified handler attributes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -269,8 +269,8 @@
         <Parameter Name="flags" Type="Microsoft.Maui.Controls.InitializationFlags" />
       </Parameters>
       <Docs>
-        <param name="flags">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="flags">The initialization flags.</param>
+        <summary>Registers stylesheet support based on initialization flags.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -16,10 +16,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
-    <!-- No matching elements were found for the following include tag -->
-    <include file="../../../docs/Microsoft.Maui.Controls/StructuredItemsView.xml" path="Type[@FullName='Microsoft.Maui.Controls.StructuredItemsView']/Docs/*" />
+    <summary>
+            An items view that supports headers, footers, and configurable item layouts.
+            </summary>
+    <remarks>
+      <see cref="T:Microsoft.Maui.Controls.StructuredItemsView" /> extends <see cref="T:Microsoft.Maui.Controls.ItemsView" /> to add structural elements like headers and footers,
+            as well as control over how items are laid out through the <see cref="P:Microsoft.Maui.Controls.StructuredItemsView.ItemsLayout" /> property.
+            This class serves as the base for views like <see cref="T:Microsoft.Maui.Controls.SelectableItemsView" /> and ultimately <see cref="T:Microsoft.Maui.Controls.CollectionView" />.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,11 +61,14 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/StructuredItemsView.xml" path="//Member[@MemberName='Footer']/Docs/*" />
+        <summary>
+            Gets or sets the object to display as the footer of the items view.
+            </summary>
+        <value>The footer content, which can be a string, view, or any object that will be rendered using <see cref="P:Microsoft.Maui.Controls.StructuredItemsView.FooterTemplate" /> if provided.</value>
+        <remarks>
+            The footer appears after all items in the collection.
+            If <see cref="P:Microsoft.Maui.Controls.StructuredItemsView.FooterTemplate" /> is set, it is used to render the footer; otherwise, the object's string representation is displayed.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="FooterProperty">
@@ -102,11 +109,13 @@
         <ReturnType>Microsoft.Maui.Controls.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/StructuredItemsView.xml" path="//Member[@MemberName='FooterTemplate']/Docs/*" />
+        <summary>
+            Gets or sets the <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> used to render the footer.
+            </summary>
+        <value>A <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> that defines how the footer is displayed, or <see langword="null" /> to use the default rendering.</value>
+        <remarks>
+            The template's binding context is set to the <see cref="P:Microsoft.Maui.Controls.StructuredItemsView.Footer" /> object.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="FooterTemplateProperty">
@@ -147,11 +156,14 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/StructuredItemsView.xml" path="//Member[@MemberName='Header']/Docs/*" />
+        <summary>
+            Gets or sets the object to display as the header of the items view.
+            </summary>
+        <value>The header content, which can be a string, view, or any object that will be rendered using <see cref="P:Microsoft.Maui.Controls.StructuredItemsView.HeaderTemplate" /> if provided.</value>
+        <remarks>
+            The header appears before all items in the collection.
+            If <see cref="P:Microsoft.Maui.Controls.StructuredItemsView.HeaderTemplate" /> is set, it is used to render the header; otherwise, the object's string representation is displayed.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderProperty">
@@ -192,11 +204,13 @@
         <ReturnType>Microsoft.Maui.Controls.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/StructuredItemsView.xml" path="//Member[@MemberName='HeaderTemplate']/Docs/*" />
+        <summary>
+            Gets or sets the <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> used to render the header.
+            </summary>
+        <value>A <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> that defines how the header is displayed, or <see langword="null" /> to use the default rendering.</value>
+        <remarks>
+            The template's binding context is set to the <see cref="P:Microsoft.Maui.Controls.StructuredItemsView.Header" /> object.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderTemplateProperty">
@@ -237,11 +251,15 @@
         <ReturnType>Microsoft.Maui.Controls.ItemSizingStrategy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/StructuredItemsView.xml" path="//Member[@MemberName='ItemSizingStrategy']/Docs/*" />
+        <summary>
+            Gets or sets the strategy used to measure and size items in the view.
+            </summary>
+        <value>An <see cref="P:Microsoft.Maui.Controls.StructuredItemsView.ItemSizingStrategy" /> value that determines how items are measured.</value>
+        <remarks>
+            The sizing strategy affects performance and layout behavior.
+            Use <see cref="F:Microsoft.Maui.Controls.ItemSizingStrategy.MeasureAllItems" /> to measure each item individually for accurate sizing,
+            or <see cref="F:Microsoft.Maui.Controls.ItemSizingStrategy.MeasureFirstItem" /> to use the first item's size as a template for better performance with uniform items.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemSizingStrategyProperty">
@@ -282,11 +300,14 @@
         <ReturnType>Microsoft.Maui.Controls.IItemsLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls/StructuredItemsView.xml" path="//Member[@MemberName='ItemsLayout']/Docs/*" />
+        <summary>
+            Gets or sets the layout strategy used to arrange items in the view.
+            </summary>
+        <value>An <see cref="T:Microsoft.Maui.Controls.IItemsLayout" /> that defines how items are arranged. The default is a vertical <see cref="T:Microsoft.Maui.Controls.LinearItemsLayout" />.</value>
+        <remarks>
+            Use <see cref="T:Microsoft.Maui.Controls.LinearItemsLayout" /> for single-row or single-column layouts, or <see cref="T:Microsoft.Maui.Controls.GridItemsLayout" /> for multi-column grids.
+            The layout determines the scrolling direction and how items are positioned relative to each other.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemsLayoutProperty">

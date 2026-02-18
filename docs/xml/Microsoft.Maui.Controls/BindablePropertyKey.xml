@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The secret key to a BindableProperty, used to implement a BindableProperty with restricted write access.</summary>
+    <summary>The secret key to a BindableProperty, used to implement read-only bindable properties.</summary>
     <remarks>
       <para>The following example shows the creation of a BindablePropertyKey. Write access is <see langword="internal" /> while read access is <see langword="public" />.</para>
       <example>
@@ -55,7 +55,7 @@ class Bindable : BindableObject
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the BindableProperty.</summary>
+        <summary>Gets the BindableProperty associated with this key.</summary>
         <value>A BindableProperty used for read access.</value>
         <remarks>To be added.</remarks>
       </Docs>

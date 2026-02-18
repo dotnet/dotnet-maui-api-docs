@@ -26,7 +26,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Provides extension methods for loading XAML into objects.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -54,11 +56,13 @@
         <Parameter Name="xaml" Type="System.String" />
       </Parameters>
       <Docs>
-        <typeparam name="TXaml">To be added.</typeparam>
-        <param name="view">To be added.</param>
-        <param name="xaml">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TXaml">The type of the view.</typeparam>
+        <param name="view">The view to load XAML into.</param>
+        <param name="xaml">The XAML string to load.</param>
+        <summary>
+            Loads the specified XAML string into the view.
+            </summary>
+        <returns>The view with XAML loaded.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,11 +90,13 @@
         <Parameter Name="callingType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <typeparam name="TXaml">To be added.</typeparam>
-        <param name="view">To be added.</param>
-        <param name="callingType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TXaml">The type of the view.</typeparam>
+        <param name="view">The view to load XAML into.</param>
+        <param name="callingType">The type used to locate the XAML resource.</param>
+        <summary>
+            Loads the XAML associated with the specified type into the view.
+            </summary>
+        <returns>The view with XAML loaded.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

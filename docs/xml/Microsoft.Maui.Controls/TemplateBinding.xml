@@ -26,7 +26,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Binds a template property to the parent of the view that owns a <see cref="T:Microsoft.Maui.Controls.ControlTemplate" />.</summary>
+    <summary>Binds a property in a control template to a templated parent property.</summary>
     <remarks>
       <para>Control templates provide reusable styling and functionality for common UI elements in an application. They do this by providing a common set of properties that bind to the parents of the View that owns the View to which the control template is bound.</para>
       <example>
@@ -58,7 +58,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates an empty template binding.</summary>
+        <summary>Creates a new <see cref="T:Microsoft.Maui.Controls.TemplateBinding" /> with default values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,7 +87,7 @@
         <param name="converter">A type converter to use to convert strings into instances of the bound property type.</param>
         <param name="converterParameter">A parameter to pass to the converter.</param>
         <param name="stringFormat">A format string to use for displaying property values.</param>
-        <summary>Creates an empty template binding.</summary>
+        <summary>Creates a new <see cref="T:Microsoft.Maui.Controls.TemplateBinding" /> with the specified path and optional parameters.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,7 +108,7 @@
         <ReturnType>Microsoft.Maui.Controls.IValueConverter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the type converter to use to convert strings into instances of the bound property type.</summary>
+        <summary>Gets or sets the converter used to convert values between source and target.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -130,7 +130,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a format string to use for displaying property values.</summary>
+        <summary>Gets or sets the parameter passed to the converter.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,7 +152,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a string that identifies the property to which to bind.</summary>
+        <summary>Gets or sets the path to the property on the templated parent.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

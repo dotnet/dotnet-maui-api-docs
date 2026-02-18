@@ -26,10 +26,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents a 3x3 affine transformation matrix used for 2D transformations such as rotation, scaling, skewing, and translation.
+            </summary>
     <remarks>To be added.</remarks>
-    <!-- No matching elements were found for the following include tag -->
-    <include file="../../../docs/Microsoft.Maui.Controls.Shapes/Matrix.xml" path="Type[@FullName='Microsoft.Maui.Controls.Shapes.Matrix']/Docs/*" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,13 +54,15 @@
         <Parameter Name="offsetY" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="m11">To be added.</param>
-        <param name="m12">To be added.</param>
-        <param name="m21">To be added.</param>
-        <param name="m22">To be added.</param>
-        <param name="offsetX">To be added.</param>
-        <param name="offsetY">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="m11">The value at row 1, column 1 (scale X component).</param>
+        <param name="m12">The value at row 1, column 2.</param>
+        <param name="m21">The value at row 2, column 1.</param>
+        <param name="m22">The value at row 2, column 2 (scale Y component).</param>
+        <param name="offsetX">The X translation offset.</param>
+        <param name="offsetY">The Y translation offset.</param>
+        <summary>
+            Initializes a new <see cref="T:Microsoft.Maui.Controls.Shapes.Matrix" /> with the specified values.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,8 +86,10 @@
         <Parameter Name="matrix" Type="Microsoft.Maui.Controls.Shapes.Matrix" />
       </Parameters>
       <Docs>
-        <param name="matrix">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="matrix">The matrix to append.</param>
+        <summary>
+            Appends the specified matrix to this matrix.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,11 +110,11 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the determinant of this matrix.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls.Shapes/Matrix.xml" path="//Member[@MemberName='Determinant']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -208,11 +212,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a value indicating whether this matrix has an inverse (determinant is non-zero).
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls.Shapes/Matrix.xml" path="//Member[@MemberName='HasInverse']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="Identity">
@@ -232,11 +236,11 @@
         <ReturnType>Microsoft.Maui.Controls.Shapes.Matrix</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the identity matrix.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls.Shapes/Matrix.xml" path="//Member[@MemberName='Identity']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="Invert">
@@ -257,10 +261,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Inverts this matrix if it is invertible.
+            </summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls.Shapes/Matrix.xml" path="//Member[@MemberName='Invert']/Docs/*" />
+        <exception cref="T:System.InvalidOperationException">The matrix is not invertible.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsIdentity">
@@ -280,11 +285,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a value indicating whether this matrix is the identity matrix.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls.Shapes/Matrix.xml" path="//Member[@MemberName='IsIdentity']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="M11">
@@ -304,11 +309,11 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the value at row 1, column 1 of the matrix (horizontal scale component).
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls.Shapes/Matrix.xml" path="//Member[@MemberName='M11']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="M12">
@@ -328,11 +333,11 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the value at row 1, column 2 of the matrix.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls.Shapes/Matrix.xml" path="//Member[@MemberName='M12']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="M21">
@@ -352,11 +357,11 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the value at row 2, column 1 of the matrix.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls.Shapes/Matrix.xml" path="//Member[@MemberName='M21']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="M22">
@@ -376,11 +381,11 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the value at row 2, column 2 of the matrix (vertical scale component).
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls.Shapes/Matrix.xml" path="//Member[@MemberName='M22']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="Multiply">
@@ -404,10 +409,12 @@
         <Parameter Name="trans2" Type="Microsoft.Maui.Controls.Shapes.Matrix" />
       </Parameters>
       <Docs>
-        <param name="trans1">To be added.</param>
-        <param name="trans2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="trans1">The first matrix.</param>
+        <param name="trans2">The second matrix.</param>
+        <summary>
+            Multiplies two matrices and returns the result.
+            </summary>
+        <returns>The result of multiplying <paramref name="trans1" /> by <paramref name="trans2" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -428,11 +435,11 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the X translation offset of the matrix.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls.Shapes/Matrix.xml" path="//Member[@MemberName='OffsetX']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="OffsetY">
@@ -452,11 +459,11 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the Y translation offset of the matrix.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls.Shapes/Matrix.xml" path="//Member[@MemberName='OffsetY']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -563,8 +570,10 @@
         <Parameter Name="matrix" Type="Microsoft.Maui.Controls.Shapes.Matrix" />
       </Parameters>
       <Docs>
-        <param name="matrix">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="matrix">The matrix to prepend.</param>
+        <summary>
+            Prepends the specified matrix to this matrix.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -588,8 +597,10 @@
         <Parameter Name="angle" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="angle">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="angle">The angle of rotation, in degrees.</param>
+        <summary>
+            Appends a rotation transformation to this matrix.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -615,10 +626,12 @@
         <Parameter Name="centerY" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="angle">To be added.</param>
-        <param name="centerX">To be added.</param>
-        <param name="centerY">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="angle">The angle of rotation, in degrees.</param>
+        <param name="centerX">The X coordinate of the rotation center.</param>
+        <param name="centerY">The Y coordinate of the rotation center.</param>
+        <summary>
+            Appends a rotation transformation around the specified point to this matrix.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -644,10 +657,12 @@
         <Parameter Name="centerY" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="angle">To be added.</param>
-        <param name="centerX">To be added.</param>
-        <param name="centerY">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="angle">The angle of rotation, in degrees.</param>
+        <param name="centerX">The X coordinate of the rotation center.</param>
+        <param name="centerY">The Y coordinate of the rotation center.</param>
+        <summary>
+            Prepends a rotation transformation around the specified point to this matrix.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -671,8 +686,10 @@
         <Parameter Name="angle" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="angle">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="angle">The angle of rotation, in degrees.</param>
+        <summary>
+            Prepends a rotation transformation to this matrix.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -697,9 +714,11 @@
         <Parameter Name="scaleY" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="scaleX">To be added.</param>
-        <param name="scaleY">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="scaleX">The scale factor along the X axis.</param>
+        <param name="scaleY">The scale factor along the Y axis.</param>
+        <summary>
+            Appends a scale transformation to this matrix.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -726,11 +745,13 @@
         <Parameter Name="centerY" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="scaleX">To be added.</param>
-        <param name="scaleY">To be added.</param>
-        <param name="centerX">To be added.</param>
-        <param name="centerY">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="scaleX">The scale factor along the X axis.</param>
+        <param name="scaleY">The scale factor along the Y axis.</param>
+        <param name="centerX">The X coordinate of the scale center.</param>
+        <param name="centerY">The Y coordinate of the scale center.</param>
+        <summary>
+            Appends a scale transformation around the specified point to this matrix.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -757,11 +778,13 @@
         <Parameter Name="centerY" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="scaleX">To be added.</param>
-        <param name="scaleY">To be added.</param>
-        <param name="centerX">To be added.</param>
-        <param name="centerY">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="scaleX">The scale factor along the X axis.</param>
+        <param name="scaleY">The scale factor along the Y axis.</param>
+        <param name="centerX">The X coordinate of the scale center.</param>
+        <param name="centerY">The Y coordinate of the scale center.</param>
+        <summary>
+            Prepends a scale transformation around the specified point to this matrix.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -786,9 +809,11 @@
         <Parameter Name="scaleY" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="scaleX">To be added.</param>
-        <param name="scaleY">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="scaleX">The scale factor along the X axis.</param>
+        <param name="scaleY">The scale factor along the Y axis.</param>
+        <summary>
+            Prepends a scale transformation to this matrix.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -810,10 +835,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Sets this matrix to the identity matrix.
+            </summary>
         <remarks>To be added.</remarks>
-        <!-- No matching elements were found for the following include tag -->
-        <include file="../../../docs/Microsoft.Maui.Controls.Shapes/Matrix.xml" path="//Member[@MemberName='SetIdentity']/Docs/*" />
       </Docs>
     </Member>
     <Member MemberName="Skew">
@@ -837,9 +862,11 @@
         <Parameter Name="skewY" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="skewX">To be added.</param>
-        <param name="skewY">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="skewX">The horizontal skew angle, in degrees.</param>
+        <param name="skewY">The vertical skew angle, in degrees.</param>
+        <summary>
+            Appends a skew transformation to this matrix.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -864,9 +891,11 @@
         <Parameter Name="skewY" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="skewX">To be added.</param>
-        <param name="skewY">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="skewX">The horizontal skew angle, in degrees.</param>
+        <param name="skewY">The vertical skew angle, in degrees.</param>
+        <summary>
+            Prepends a skew transformation to this matrix.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -890,9 +919,11 @@
         <Parameter Name="point" Type="Microsoft.Maui.Graphics.Point" />
       </Parameters>
       <Docs>
-        <param name="point">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="point">The point to transform.</param>
+        <summary>
+            Transforms the specified point by this matrix and returns the result.
+            </summary>
+        <returns>The transformed point.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -916,8 +947,10 @@
         <Parameter Name="points" Type="Microsoft.Maui.Graphics.Point[]" />
       </Parameters>
       <Docs>
-        <param name="points">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="points">The array of points to transform.</param>
+        <summary>
+            Transforms the specified array of points by this matrix.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -942,9 +975,11 @@
         <Parameter Name="offsetY" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="offsetX">To be added.</param>
-        <param name="offsetY">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="offsetX">The translation offset along the X axis.</param>
+        <param name="offsetY">The translation offset along the Y axis.</param>
+        <summary>
+            Appends a translation transformation to this matrix.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -969,9 +1004,11 @@
         <Parameter Name="offsetY" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="offsetX">To be added.</param>
-        <param name="offsetY">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="offsetX">The translation offset along the X axis.</param>
+        <param name="offsetY">The translation offset along the Y axis.</param>
+        <summary>
+            Prepends a translation transformation to this matrix.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

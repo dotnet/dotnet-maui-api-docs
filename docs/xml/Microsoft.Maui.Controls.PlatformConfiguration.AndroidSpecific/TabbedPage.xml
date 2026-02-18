@@ -196,9 +196,9 @@
         <Parameter Name="element" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">The platform specific element on which to perform the operation.</param>
-        <summary>Returns the maximum allowed number of items.</summary>
-        <returns>The maximum allowed number of items.</returns>
+        <param name="element">The TabbedPage element.</param>
+        <summary>Gets the maximum number of tab items allowed. Returns 5 for bottom placement, unlimited for top.</summary>
+        <returns>Maximum number of tab items.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -222,9 +222,9 @@
         <Parameter Name="config" Type="Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.Android,Microsoft.Maui.Controls.TabbedPage&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">The platform specific configuration for the element on which to perform the operation.</param>
-        <summary>Returns the maximum allowed number of items.</summary>
-        <returns>The maximum allowed number of items.</returns>
+        <param name="config">The platform configuration.</param>
+        <summary>Gets the maximum number of tab items allowed. Returns 5 for bottom placement, unlimited for top.</summary>
+        <returns>Maximum number of tab items.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -280,9 +280,9 @@
         <Parameter Name="element" Type="Microsoft.Maui.Controls.BindableObject" />
       </Parameters>
       <Docs>
-        <param name="element">The platform specific element on which to perform the operation.</param>
-        <summary>Returns the toolbar placement.</summary>
-        <returns>The toolbar placement.</returns>
+        <param name="element">The TabbedPage element.</param>
+        <summary>Gets the toolbar placement (Top or Bottom) on Android.</summary>
+        <returns>The toolbar placement position.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -306,9 +306,9 @@
         <Parameter Name="config" Type="Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;Microsoft.Maui.Controls.PlatformConfiguration.Android,Microsoft.Maui.Controls.TabbedPage&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="config">The platform specific configuration for the element on which to perform the operation.</param>
-        <summary>Returns the toolbar placement.</summary>
-        <returns>The toolbar placement.</returns>
+        <param name="config">The platform configuration.</param>
+        <summary>Gets the toolbar placement (Top or Bottom) on Android.</summary>
+        <returns>The toolbar placement position.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -487,10 +487,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">The <see cref="T:Microsoft.Maui.Controls.BindableObject" /> to adjust.</param>
+        <param name="element">The TabbedPage element.</param>
         <param name="value">
-          <see langword="true" /> if <paramref name="element" /> should enable smooth scrolling.</param>
-        <summary>Enables or disables smooth scrolling on <paramref name="element" />.</summary>
+          <see langword="true" /> to enable smooth scroll; otherwise, <see langword="false" />.</param>
+        <summary>Sets whether tab transitions use smooth scrolling animation on Android.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -515,13 +515,11 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">
-          <c>this</c>
-        </param>
+        <param name="config">The platform configuration.</param>
         <param name="value">
-          <see langword="true" /> if smooth scrolling should be enabled.</param>
-        <summary>Enables or disables smooth scrolling on <c>this</c><see cref="T:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific.TabbedPage" />.</summary>
-        <returns>To be added.</returns>
+          <see langword="true" /> to enable smooth scroll; otherwise, <see langword="false" />.</param>
+        <summary>Sets whether tab transitions use smooth scrolling animation on Android.</summary>
+        <returns>The platform configuration for fluent API chaining.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -546,9 +544,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">The platform specific element on which to perform the operation.</param>
-        <param name="value">The new property value to assign.</param>
-        <summary>Sets a value that controls whether page swiping is enabled to the provided <paramref name="value" />.</summary>
+        <param name="element">The TabbedPage element.</param>
+        <param name="value">
+          <see langword="true" /> to enable swipe paging; otherwise, <see langword="false" />.</param>
+        <summary>Sets whether swipe navigation between tabs is enabled on Android.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -573,10 +572,11 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
-        <param name="value">The new property value to assign.</param>
-        <summary>Sets a value that controls whether page swiping is enabled to the provided <paramref name="value" />.</summary>
-        <returns>The configuration that was updated.</returns>
+        <param name="config">The platform configuration.</param>
+        <param name="value">
+          <see langword="true" /> to enable swipe paging; otherwise, <see langword="false" />.</param>
+        <summary>Sets whether swipe navigation between tabs is enabled on Android.</summary>
+        <returns>The platform configuration for fluent API chaining.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -607,9 +607,9 @@
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="element">The platform specific element on which to perform the operation.</param>
-        <param name="value">The new property value to assign.</param>
-        <summary>Sets the number of off-screen pages that are stored in memory to the provided <paramref name="value" />.</summary>
+        <param name="element">The TabbedPage element.</param>
+        <param name="value">The number of offscreen pages to cache.</param>
+        <summary>Sets the number of pages cached in memory on either side of the current page.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -640,10 +640,10 @@
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="config">The platform specific configuration that contains the element on which to perform the operation.</param>
-        <param name="value">The new property value to assign.</param>
-        <summary>Sets the number of off-screen pages that are stored in memory to the provided <paramref name="value" />.</summary>
-        <returns>The configuration that was updated.</returns>
+        <param name="config">The platform configuration.</param>
+        <param name="value">The number of offscreen pages to cache.</param>
+        <summary>Sets the number of pages cached in memory on either side of the current page.</summary>
+        <returns>The platform configuration for fluent API chaining.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -668,9 +668,9 @@
         <Parameter Name="value" Type="Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific.ToolbarPlacement" />
       </Parameters>
       <Docs>
-        <param name="element">The platform specific element whose value to set.</param>
-        <param name="value">The new toolbar placement value.</param>
-        <summary>Sets the toolbar placement.</summary>
+        <param name="element">The TabbedPage element.</param>
+        <param name="value">The toolbar placement position.</param>
+        <summary>Sets the toolbar placement (Top or Bottom) on Android. Cannot be changed after initial set.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -695,10 +695,10 @@
         <Parameter Name="value" Type="Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific.ToolbarPlacement" />
       </Parameters>
       <Docs>
-        <param name="config">The platform configuration for the platform specific element whose value to set.</param>
-        <param name="value">The new toolbar placement value.</param>
-        <summary>Sets the toolbar placement.</summary>
-        <returns>A fluent object on which the developer can make further method calls.</returns>
+        <param name="config">The platform configuration.</param>
+        <param name="value">The toolbar placement position.</param>
+        <summary>Sets the toolbar placement (Top or Bottom) on Android. Cannot be changed after initial set.</summary>
+        <returns>The platform configuration for fluent API chaining.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

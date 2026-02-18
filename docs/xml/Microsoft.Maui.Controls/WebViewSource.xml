@@ -26,7 +26,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Abstract class whose subclasses provide the data for a <see cref="T:Microsoft.Maui.Controls.WebView" />.</summary>
+    <summary>
+            Abstract class representing the source content for a <see cref="T:Microsoft.Maui.Controls.WebView" />.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -77,8 +79,10 @@
         <Parameter Name="renderer" Type="Microsoft.Maui.IWebViewDelegate" />
       </Parameters>
       <Docs>
-        <param name="renderer">For internal use by the Microsoft.Maui.Controls platform.</param>
-        <summary>For internal use by the Microsoft.Maui.Controls platform.</summary>
+        <param name="renderer">The web view delegate that handles loading.</param>
+        <summary>
+            Loads the source content into the specified <paramref name="renderer" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
