@@ -8,13 +8,16 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Graphics.Text.Markdig</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Provides functionality to convert markdown text into attributed text.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,6 +31,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics.Text.Markdig</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -46,6 +50,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Graphics.Text.Markdig</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Graphics.Text.IAttributedText</ReturnType>
@@ -54,10 +59,13 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="text">The markdown text to convert.</param>
+        <summary>
+            Converts the specified markdown text to attributed text.
+            </summary>
+        <returns>An <see cref="T:Microsoft.Maui.Graphics.Text.IAttributedText" /> representation of the markdown.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="text" /> is null.</exception>
       </Docs>
     </Member>
   </Members>

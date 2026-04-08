@@ -9,6 +9,7 @@
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Maui.Controls.Element</BaseTypeName>
@@ -36,6 +37,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -55,6 +57,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -74,8 +77,38 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="InvalidateStyle">
+      <MemberSignature Language="C#" Value="public void InvalidateStyle ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InvalidateStyle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.StyleableElement.InvalidateStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InvalidateStyle ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InvalidateStyle();" />
+      <MemberSignature Language="F#" Value="member this.InvalidateStyle : unit -&gt; unit" Usage="styleableElement.InvalidateStyle " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Forces unapply and reapply of the current merged style.
+            This method is intended for infrastructure use (e.g., Hot Reload) and should not be used in application code.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Style">
-      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.Style? Style { get; set; }" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.Style? Style { get; set; }" FrameworkAlternate="net-maui-10.0;net-maui-11.0" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.Style Style" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.StyleableElement.Style" />
       <MemberSignature Language="VB.NET" Value="Public Property Style As Style" />
@@ -87,9 +120,10 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-maui-10.0">
+        <Attribute FrameworkAlternate="net-maui-10.0;net-maui-11.0">
           <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
         </Attribute>
@@ -115,6 +149,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -146,6 +181,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>

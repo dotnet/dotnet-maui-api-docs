@@ -10,6 +10,7 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>9.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -41,6 +42,7 @@
         <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -56,6 +58,36 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ClusterClicked">
+      <MemberSignature Language="C#" Value="public bool ClusterClicked (System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.Maps.IMapPin&gt; pins, Microsoft.Maui.Devices.Sensors.Location location);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ClusterClicked(class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Maui.Maps.IMapPin&gt; pins, class Microsoft.Maui.Devices.Sensors.Location location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Maps.IMap.ClusterClicked(System.Collections.Generic.IReadOnlyList{Microsoft.Maui.Maps.IMapPin},Microsoft.Maui.Devices.Sensors.Location)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ClusterClicked (pins As IReadOnlyList(Of IMapPin), location As Location) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ClusterClicked(System::Collections::Generic::IReadOnlyList&lt;Microsoft::Maui::Maps::IMapPin ^&gt; ^ pins, Microsoft::Maui::Devices::Sensors::Location ^ location);" />
+      <MemberSignature Language="F#" Value="abstract member ClusterClicked : System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.Maps.IMapPin&gt; * Microsoft.Maui.Devices.Sensors.Location -&gt; bool" Usage="iMap.ClusterClicked (pins, location)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pins" Type="System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.Maps.IMapPin&gt;" Index="0" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="location" Type="Microsoft.Maui.Devices.Sensors.Location" Index="1" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="pins">The pins in the cluster.</param>
+        <param name="location">The location of the cluster.</param>
+        <summary>
+            Method called by the handler when a cluster is clicked.
+            </summary>
+        <returns>
+          <see langword="true" /> if the click was handled and default behavior should be suppressed; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Elements">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Maui.Maps.IMapElement&gt; Elements { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Maui.Maps.IMapElement&gt; Elements" />
@@ -68,6 +100,7 @@
         <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Maps.IMapElement&gt;</ReturnType>
@@ -75,6 +108,55 @@
       <Docs>
         <summary>
             The pins that are to be shown on this Map.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HideInfoWindow">
+      <MemberSignature Language="C#" Value="public void HideInfoWindow (Microsoft.Maui.Maps.IMapPin pin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void HideInfoWindow(class Microsoft.Maui.Maps.IMapPin pin) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Maps.IMap.HideInfoWindow(Microsoft.Maui.Maps.IMapPin)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub HideInfoWindow (pin As IMapPin)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void HideInfoWindow(Microsoft::Maui::Maps::IMapPin ^ pin);" />
+      <MemberSignature Language="F#" Value="abstract member HideInfoWindow : Microsoft.Maui.Maps.IMapPin -&gt; unit" Usage="iMap.HideInfoWindow pin" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pin" Type="Microsoft.Maui.Maps.IMapPin" Index="0" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="pin">The pin whose info window should be hidden.</param>
+        <summary>
+            Hides the info window for the specified pin.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsClusteringEnabled">
+      <MemberSignature Language="C#" Value="public bool IsClusteringEnabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsClusteringEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Maps.IMap.IsClusteringEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsClusteringEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsClusteringEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsClusteringEnabled : bool" Usage="Microsoft.Maui.Maps.IMap.IsClusteringEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets whether pin clustering is enabled for this map.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -92,6 +174,7 @@
         <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -116,6 +199,7 @@
         <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -140,6 +224,7 @@
         <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -164,6 +249,7 @@
         <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -174,6 +260,110 @@
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastUserLocation">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Devices.Sensors.Location? LastUserLocation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Devices.Sensors.Location LastUserLocation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Maps.IMap.LastUserLocation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastUserLocation As Location" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Devices::Sensors::Location ^ LastUserLocation { Microsoft::Maui::Devices::Sensors::Location ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastUserLocation : Microsoft.Maui.Devices.Sensors.Location" Usage="Microsoft.Maui.Maps.IMap.LastUserLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Devices.Sensors.Location</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the last known user location from the map, or null if not available.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            This property requires <see cref="P:Microsoft.Maui.Maps.IMap.IsShowingUser" /> to be set to true.
+            The location is updated as the user moves and the map receives location updates.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LongClicked">
+      <MemberSignature Language="C#" Value="public void LongClicked (Microsoft.Maui.Devices.Sensors.Location position);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LongClicked(class Microsoft.Maui.Devices.Sensors.Location position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Maps.IMap.LongClicked(Microsoft.Maui.Devices.Sensors.Location)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LongClicked (position As Location)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LongClicked(Microsoft::Maui::Devices::Sensors::Location ^ position);" />
+      <MemberSignature Language="F#" Value="abstract member LongClicked : Microsoft.Maui.Devices.Sensors.Location -&gt; unit" Usage="iMap.LongClicked position" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="Microsoft.Maui.Devices.Sensors.Location" Index="0" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="position">To be added.</param>
+        <summary>
+            Method called by the handler when user long-presses on the Map.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapStyle">
+      <MemberSignature Language="C#" Value="public string? MapStyle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MapStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Maps.IMap.MapStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MapStyle As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MapStyle { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MapStyle : string" Usage="Microsoft.Maui.Maps.IMap.MapStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.UnsupportedOSPlatform("ios")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.UnsupportedOSPlatform("ios")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.UnsupportedOSPlatform("maccatalyst")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.UnsupportedOSPlatform("maccatalyst")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.UnsupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.UnsupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the custom map style as a JSON string.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            This property is only supported on Android where it accepts a Google Maps style JSON string.
+            Use the Google Maps Styling Wizard (https://mapstyle.withgoogle.com/) to generate a style JSON.
+            On iOS, MacCatalyst, and Windows this property has no effect as the native map controls
+            do not support custom JSON styling.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="MapType">
@@ -188,6 +378,7 @@
         <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Maps.MapType</ReturnType>
@@ -212,6 +403,7 @@
         <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -223,6 +415,35 @@
         <param name="region">To be added.</param>
         <summary>
             Moves the map so that it displays the specified <see cref="T:Microsoft.Maui.Maps.MapSpan" /> region.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveToRegion">
+      <MemberSignature Language="C#" Value="public void MoveToRegion (Microsoft.Maui.Maps.MapSpan region, bool animated);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MoveToRegion(class Microsoft.Maui.Maps.MapSpan region, bool animated) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Maps.IMap.MoveToRegion(Microsoft.Maui.Maps.MapSpan,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MoveToRegion (region As MapSpan, animated As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveToRegion(Microsoft::Maui::Maps::MapSpan ^ region, bool animated);" />
+      <MemberSignature Language="F#" Value="abstract member MoveToRegion : Microsoft.Maui.Maps.MapSpan * bool -&gt; unit" Usage="iMap.MoveToRegion (region, animated)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="region" Type="Microsoft.Maui.Maps.MapSpan" Index="0" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="animated" Type="System.Boolean" Index="1" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="region">The region to display.</param>
+        <param name="animated">Whether the transition should be animated.</param>
+        <summary>
+            Moves the map so that it displays the specified <see cref="T:Microsoft.Maui.Maps.MapSpan" /> region,
+            with control over whether the transition is animated.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -239,6 +460,7 @@
         <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Maps.IMapPin&gt;</ReturnType>
@@ -248,6 +470,58 @@
             The pins that are to be shown on this Map.
             </summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowInfoWindow">
+      <MemberSignature Language="C#" Value="public void ShowInfoWindow (Microsoft.Maui.Maps.IMapPin pin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ShowInfoWindow(class Microsoft.Maui.Maps.IMapPin pin) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Maps.IMap.ShowInfoWindow(Microsoft.Maui.Maps.IMapPin)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ShowInfoWindow (pin As IMapPin)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowInfoWindow(Microsoft::Maui::Maps::IMapPin ^ pin);" />
+      <MemberSignature Language="F#" Value="abstract member ShowInfoWindow : Microsoft.Maui.Maps.IMapPin -&gt; unit" Usage="iMap.ShowInfoWindow pin" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pin" Type="Microsoft.Maui.Maps.IMapPin" Index="0" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="pin">The pin whose info window should be shown.</param>
+        <summary>
+            Shows the info window for the specified pin.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserLocationUpdated">
+      <MemberSignature Language="C#" Value="public void UserLocationUpdated (Microsoft.Maui.Devices.Sensors.Location location);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UserLocationUpdated(class Microsoft.Maui.Devices.Sensors.Location location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Maps.IMap.UserLocationUpdated(Microsoft.Maui.Devices.Sensors.Location)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UserLocationUpdated (location As Location)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UserLocationUpdated(Microsoft::Maui::Devices::Sensors::Location ^ location);" />
+      <MemberSignature Language="F#" Value="abstract member UserLocationUpdated : Microsoft.Maui.Devices.Sensors.Location -&gt; unit" Usage="iMap.UserLocationUpdated location" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="Microsoft.Maui.Devices.Sensors.Location" Index="0" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="location">The new user location.</param>
+        <summary>
+            Method called by the handler when the user's location is updated.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -263,6 +537,7 @@
         <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

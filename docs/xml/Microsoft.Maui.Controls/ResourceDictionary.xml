@@ -10,6 +10,7 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>9.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -56,6 +57,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -75,6 +77,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -100,6 +103,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -128,6 +132,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -156,6 +161,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -168,6 +174,76 @@
         <param name="key">The identifier for the resource.</param>
         <param name="value">The resource object to store.</param>
         <summary>Adds a key-value pair to the dictionary.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddFactory">
+      <MemberSignature Language="C#" Value="public void AddFactory (string key, Func&lt;object&gt; factory, bool shared = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddFactory(string key, class System.Func`1&lt;object&gt; factory, bool shared) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ResourceDictionary.AddFactory(System.String,System.Func{System.Object},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddFactory (key As String, factory As Func(Of Object), Optional shared As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.AddFactory : string * Func&lt;obj&gt; * bool -&gt; unit" Usage="resourceDictionary.AddFactory (key, factory, shared)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="factory" Type="System.Func&lt;System.Object&gt;" Index="1" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="shared" Type="System.Boolean" Index="2" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="key">The resource key.</param>
+        <param name="factory">A factory function that creates the resource.</param>
+        <param name="shared">If true (default), the factory result is cached. If false, the factory is invoked on each access.</param>
+        <summary>
+            Adds a resource factory to the dictionary. The factory is invoked lazily when the resource is first accessed.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddFactory">
+      <MemberSignature Language="C#" Value="public void AddFactory (Type targetType, Func&lt;Microsoft.Maui.Controls.Style&gt; factory, bool shared = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddFactory(class System.Type targetType, class System.Func`1&lt;class Microsoft.Maui.Controls.Style&gt; factory, bool shared) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ResourceDictionary.AddFactory(System.Type,System.Func{Microsoft.Maui.Controls.Style},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddFactory (targetType As Type, factory As Func(Of Style), Optional shared As Boolean = true)" />
+      <MemberSignature Language="F#" Value="member this.AddFactory : Type * Func&lt;Microsoft.Maui.Controls.Style&gt; * bool -&gt; unit" Usage="resourceDictionary.AddFactory (targetType, factory, shared)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetType" Type="System.Type" Index="0" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="factory" Type="System.Func&lt;Microsoft.Maui.Controls.Style&gt;" Index="1" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="shared" Type="System.Boolean" Index="2" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="targetType">The target type for the implicit style. The type's full name is used as the key.</param>
+        <param name="factory">A factory function that creates the style.</param>
+        <param name="shared">If true (default), the factory result is cached. If false, the factory is invoked on each access.</param>
+        <summary>
+            Adds an implicit style factory to the dictionary. The factory is invoked lazily when the style is first accessed.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,6 +262,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -211,6 +288,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -241,6 +319,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -255,9 +334,10 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt; GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt; GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ResourceDictionary.GetEnumerator" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of KeyValuePair(Of String, Object))" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of KeyValuePair(Of String, Object))" FrameworkAlternate="net-maui-10.0;net-maui-8.0;net-maui-9.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt; ^ GetEnumerator();" />
       <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;string, obj&gt;&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;string, obj&gt;&gt;" Usage="resourceDictionary.GetEnumerator " />
+      <MemberSignature Language="VB.NET" Value="Public Iterator Overridable NotOverridable Function GetEnumerator () As IEnumerator(Of KeyValuePair(Of String, Object))" FrameworkAlternate="net-maui-11.0" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -266,7 +346,14 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Maui.Controls.ResourceDictionary+&lt;GetEnumerator&gt;d__44))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Maui.Controls.ResourceDictionary+&lt;GetEnumerator&gt;d__44))&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -292,6 +379,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -321,6 +409,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.ICollection&lt;System.String&gt;</ReturnType>
@@ -343,6 +432,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.ICollection&lt;Microsoft.Maui.Controls.ResourceDictionary&gt;</ReturnType>
@@ -367,6 +457,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.Internals.ResourcesChangedEventArgs&gt;</ReturnType>
@@ -391,6 +482,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -418,9 +510,10 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-maui-10.0;net-maui-9.0">
+        <Attribute FrameworkAlternate="net-maui-10.0;net-maui-11.0;net-maui-9.0">
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
@@ -437,7 +530,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="value" Type="System.Uri" Index="0" FrameworkAlternate="net-maui-10.0;net-maui-9.0" />
+        <Parameter Name="value" Type="System.Uri" Index="0" FrameworkAlternate="net-maui-10.0;net-maui-11.0;net-maui-9.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of resource dictionary to create.</typeparam>
@@ -447,36 +540,37 @@
       </Docs>
     </Member>
     <Member MemberName="SetAndLoadSource">
-      <MemberSignature Language="C#" Value="public void SetAndLoadSource (Uri value, string resourcePath, System.Reflection.Assembly assembly, System.Xml.IXmlLineInfo lineInfo);" FrameworkAlternate="net-maui-10.0;net-maui-8.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAndLoadSource(class System.Uri value, string resourcePath, class System.Reflection.Assembly assembly, class System.Xml.IXmlLineInfo lineInfo) cil managed" FrameworkAlternate="net-maui-10.0;net-maui-8.0" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ResourceDictionary.SetAndLoadSource(System.Uri,System.String,System.Reflection.Assembly,System.Xml.IXmlLineInfo)" FrameworkAlternate="net-maui-10.0;net-maui-8.0" />
-      <MemberSignature Language="VB.NET" Value="Public Sub SetAndLoadSource (value As Uri, resourcePath As String, assembly As Assembly, lineInfo As IXmlLineInfo)" FrameworkAlternate="net-maui-10.0;net-maui-8.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAndLoadSource(Uri ^ value, System::String ^ resourcePath, System::Reflection::Assembly ^ assembly, System::Xml::IXmlLineInfo ^ lineInfo);" FrameworkAlternate="net-maui-10.0;net-maui-8.0" />
-      <MemberSignature Language="F#" Value="member this.SetAndLoadSource : Uri * string * System.Reflection.Assembly * System.Xml.IXmlLineInfo -&gt; unit" Usage="resourceDictionary.SetAndLoadSource (value, resourcePath, assembly, lineInfo)" FrameworkAlternate="net-maui-10.0;net-maui-8.0" />
+      <MemberSignature Language="C#" Value="public void SetAndLoadSource (Uri value, string resourcePath, System.Reflection.Assembly assembly, System.Xml.IXmlLineInfo lineInfo);" FrameworkAlternate="net-maui-10.0;net-maui-11.0;net-maui-8.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAndLoadSource(class System.Uri value, string resourcePath, class System.Reflection.Assembly assembly, class System.Xml.IXmlLineInfo lineInfo) cil managed" FrameworkAlternate="net-maui-10.0;net-maui-11.0;net-maui-8.0" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ResourceDictionary.SetAndLoadSource(System.Uri,System.String,System.Reflection.Assembly,System.Xml.IXmlLineInfo)" FrameworkAlternate="net-maui-10.0;net-maui-11.0;net-maui-8.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetAndLoadSource (value As Uri, resourcePath As String, assembly As Assembly, lineInfo As IXmlLineInfo)" FrameworkAlternate="net-maui-10.0;net-maui-11.0;net-maui-8.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAndLoadSource(Uri ^ value, System::String ^ resourcePath, System::Reflection::Assembly ^ assembly, System::Xml::IXmlLineInfo ^ lineInfo);" FrameworkAlternate="net-maui-10.0;net-maui-11.0;net-maui-8.0" />
+      <MemberSignature Language="F#" Value="member this.SetAndLoadSource : Uri * string * System.Reflection.Assembly * System.Xml.IXmlLineInfo -&gt; unit" Usage="resourceDictionary.SetAndLoadSource (value, resourcePath, assembly, lineInfo)" FrameworkAlternate="net-maui-10.0;net-maui-11.0;net-maui-8.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-maui-10.0;net-maui-8.0">
+        <Attribute FrameworkAlternate="net-maui-10.0;net-maui-11.0;net-maui-8.0">
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="net-maui-10.0">
+        <Attribute FrameworkAlternate="net-maui-10.0;net-maui-11.0">
           <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("Loading XAML at runtime might require types and members that cannot be statically analyzed. Make sure all of the required types and members are preserved.")]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("Loading XAML at runtime might require types and members that cannot be statically analyzed. Make sure all of the required types and members are preserved.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="net-maui-10.0;net-maui-8.0">System.Void</ReturnType>
+        <ReturnType FrameworkAlternate="net-maui-10.0;net-maui-11.0;net-maui-8.0">System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Uri" Index="0" FrameworkAlternate="net-maui-10.0;net-maui-8.0" />
-        <Parameter Name="resourcePath" Type="System.String" Index="1" FrameworkAlternate="net-maui-10.0;net-maui-8.0" />
-        <Parameter Name="assembly" Type="System.Reflection.Assembly" Index="2" FrameworkAlternate="net-maui-10.0;net-maui-8.0" />
-        <Parameter Name="lineInfo" Type="System.Xml.IXmlLineInfo" Index="3" FrameworkAlternate="net-maui-10.0;net-maui-8.0" />
+        <Parameter Name="value" Type="System.Uri" Index="0" FrameworkAlternate="net-maui-10.0;net-maui-11.0;net-maui-8.0" />
+        <Parameter Name="resourcePath" Type="System.String" Index="1" FrameworkAlternate="net-maui-10.0;net-maui-11.0;net-maui-8.0" />
+        <Parameter Name="assembly" Type="System.Reflection.Assembly" Index="2" FrameworkAlternate="net-maui-10.0;net-maui-11.0;net-maui-8.0" />
+        <Parameter Name="lineInfo" Type="System.Xml.IXmlLineInfo" Index="3" FrameworkAlternate="net-maui-10.0;net-maui-11.0;net-maui-8.0" />
       </Parameters>
       <Docs>
         <param name="value">The source URI.</param>
@@ -499,6 +593,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -530,6 +625,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -558,6 +654,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -587,6 +684,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -617,6 +715,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -642,6 +741,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -671,6 +771,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
@@ -697,6 +798,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -729,6 +831,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.ICollection&lt;System.Object&gt;</ReturnType>

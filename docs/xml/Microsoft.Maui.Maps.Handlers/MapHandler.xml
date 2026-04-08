@@ -10,6 +10,7 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>9.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Maui.Handlers.ViewHandler&lt;Microsoft.Maui.Maps.IMap,System.Object&gt;</BaseTypeName>
@@ -53,6 +54,7 @@
         <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -73,6 +75,7 @@
         <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="mapper" Type="Microsoft.Maui.IPropertyMapper" />
@@ -99,6 +102,7 @@
         <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.CommandMapper&lt;Microsoft.Maui.Maps.IMap,Microsoft.Maui.Maps.Handlers.IMapHandler&gt;</ReturnType>
@@ -122,6 +126,7 @@
         <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -145,6 +150,7 @@
         <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -152,6 +158,69 @@
       <Parameters>
         <Parameter Name="handler" Type="Microsoft.Maui.Maps.Handlers.IMapHandler" />
         <Parameter Name="map" Type="Microsoft.Maui.Maps.IMap" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <param name="map">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapHideInfoWindow">
+      <MemberSignature Language="C#" Value="public static void MapHideInfoWindow (Microsoft.Maui.Maps.Handlers.IMapHandler handler, Microsoft.Maui.Maps.IMap map, object? arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MapHideInfoWindow(class Microsoft.Maui.Maps.Handlers.IMapHandler handler, class Microsoft.Maui.Maps.IMap map, object arg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Maps.Handlers.MapHandler.MapHideInfoWindow(Microsoft.Maui.Maps.Handlers.IMapHandler,Microsoft.Maui.Maps.IMap,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub MapHideInfoWindow (handler As IMapHandler, map As IMap, arg As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MapHideInfoWindow(Microsoft::Maui::Maps::Handlers::IMapHandler ^ handler, Microsoft::Maui::Maps::IMap ^ map, System::Object ^ arg);" />
+      <MemberSignature Language="F#" Value="static member MapHideInfoWindow : Microsoft.Maui.Maps.Handlers.IMapHandler * Microsoft.Maui.Maps.IMap * obj -&gt; unit" Usage="Microsoft.Maui.Maps.Handlers.MapHandler.MapHideInfoWindow (handler, map, arg)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="Microsoft.Maui.Maps.Handlers.IMapHandler" Index="0" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="map" Type="Microsoft.Maui.Maps.IMap" Index="1" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="arg" Type="System.Object" Index="2" FrameworkAlternate="net-maui-11.0">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <param name="map">To be added.</param>
+        <param name="arg">To be added.</param>
+        <summary>
+            Maps the <see cref="M:Microsoft.Maui.Maps.IMap.HideInfoWindow(Microsoft.Maui.Maps.IMapPin)" /> command to the platform-specific implementation.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapIsClusteringEnabled">
+      <MemberSignature Language="C#" Value="public static void MapIsClusteringEnabled (Microsoft.Maui.Maps.Handlers.IMapHandler handler, Microsoft.Maui.Maps.IMap map);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MapIsClusteringEnabled(class Microsoft.Maui.Maps.Handlers.IMapHandler handler, class Microsoft.Maui.Maps.IMap map) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Maps.Handlers.MapHandler.MapIsClusteringEnabled(Microsoft.Maui.Maps.Handlers.IMapHandler,Microsoft.Maui.Maps.IMap)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub MapIsClusteringEnabled (handler As IMapHandler, map As IMap)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MapIsClusteringEnabled(Microsoft::Maui::Maps::Handlers::IMapHandler ^ handler, Microsoft::Maui::Maps::IMap ^ map);" />
+      <MemberSignature Language="F#" Value="static member MapIsClusteringEnabled : Microsoft.Maui.Maps.Handlers.IMapHandler * Microsoft.Maui.Maps.IMap -&gt; unit" Usage="Microsoft.Maui.Maps.Handlers.MapHandler.MapIsClusteringEnabled (handler, map)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="Microsoft.Maui.Maps.Handlers.IMapHandler" Index="0" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="map" Type="Microsoft.Maui.Maps.IMap" Index="1" FrameworkAlternate="net-maui-11.0" />
       </Parameters>
       <Docs>
         <param name="handler">To be added.</param>
@@ -172,6 +241,7 @@
         <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -199,6 +269,7 @@
         <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -226,6 +297,7 @@
         <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -253,6 +325,7 @@
         <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -260,6 +333,32 @@
       <Parameters>
         <Parameter Name="handler" Type="Microsoft.Maui.Maps.Handlers.IMapHandler" />
         <Parameter Name="map" Type="Microsoft.Maui.Maps.IMap" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <param name="map">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapMapStyle">
+      <MemberSignature Language="C#" Value="public static void MapMapStyle (Microsoft.Maui.Maps.Handlers.IMapHandler handler, Microsoft.Maui.Maps.IMap map);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MapMapStyle(class Microsoft.Maui.Maps.Handlers.IMapHandler handler, class Microsoft.Maui.Maps.IMap map) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Maps.Handlers.MapHandler.MapMapStyle(Microsoft.Maui.Maps.Handlers.IMapHandler,Microsoft.Maui.Maps.IMap)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub MapMapStyle (handler As IMapHandler, map As IMap)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MapMapStyle(Microsoft::Maui::Maps::Handlers::IMapHandler ^ handler, Microsoft::Maui::Maps::IMap ^ map);" />
+      <MemberSignature Language="F#" Value="static member MapMapStyle : Microsoft.Maui.Maps.Handlers.IMapHandler * Microsoft.Maui.Maps.IMap -&gt; unit" Usage="Microsoft.Maui.Maps.Handlers.MapHandler.MapMapStyle (handler, map)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="Microsoft.Maui.Maps.Handlers.IMapHandler" Index="0" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="map" Type="Microsoft.Maui.Maps.IMap" Index="1" FrameworkAlternate="net-maui-11.0" />
       </Parameters>
       <Docs>
         <param name="handler">To be added.</param>
@@ -280,6 +379,7 @@
         <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -307,6 +407,7 @@
         <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -343,6 +444,7 @@
         <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.IPropertyMapper&lt;Microsoft.Maui.Maps.IMap,Microsoft.Maui.Maps.Handlers.IMapHandler&gt;</ReturnType>
@@ -366,6 +468,7 @@
         <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -381,6 +484,43 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="MapShowInfoWindow">
+      <MemberSignature Language="C#" Value="public static void MapShowInfoWindow (Microsoft.Maui.Maps.Handlers.IMapHandler handler, Microsoft.Maui.Maps.IMap map, object? arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MapShowInfoWindow(class Microsoft.Maui.Maps.Handlers.IMapHandler handler, class Microsoft.Maui.Maps.IMap map, object arg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Maps.Handlers.MapHandler.MapShowInfoWindow(Microsoft.Maui.Maps.Handlers.IMapHandler,Microsoft.Maui.Maps.IMap,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub MapShowInfoWindow (handler As IMapHandler, map As IMap, arg As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MapShowInfoWindow(Microsoft::Maui::Maps::Handlers::IMapHandler ^ handler, Microsoft::Maui::Maps::IMap ^ map, System::Object ^ arg);" />
+      <MemberSignature Language="F#" Value="static member MapShowInfoWindow : Microsoft.Maui.Maps.Handlers.IMapHandler * Microsoft.Maui.Maps.IMap * obj -&gt; unit" Usage="Microsoft.Maui.Maps.Handlers.MapHandler.MapShowInfoWindow (handler, map, arg)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="Microsoft.Maui.Maps.Handlers.IMapHandler" Index="0" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="map" Type="Microsoft.Maui.Maps.IMap" Index="1" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="arg" Type="System.Object" Index="2" FrameworkAlternate="net-maui-11.0">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <param name="map">To be added.</param>
+        <param name="arg">To be added.</param>
+        <summary>
+            Maps the <see cref="M:Microsoft.Maui.Maps.IMap.ShowInfoWindow(Microsoft.Maui.Maps.IMapPin)" /> command to the platform-specific implementation.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="MapUpdateMapElement">
       <MemberSignature Language="C#" Value="public static void MapUpdateMapElement (Microsoft.Maui.Maps.Handlers.IMapHandler handler, Microsoft.Maui.Maps.IMap map, object? arg);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MapUpdateMapElement(class Microsoft.Maui.Maps.Handlers.IMapHandler handler, class Microsoft.Maui.Maps.IMap map, object arg) cil managed" />
@@ -393,6 +533,7 @@
         <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -434,6 +575,7 @@
         <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -459,6 +601,7 @@
         <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Maps.IMap</ReturnType>
@@ -484,6 +627,7 @@
         <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

@@ -1,10 +1,10 @@
 <Type Name="MauiAppBuilder" FullName="Microsoft.Maui.Hosting.MauiAppBuilder">
-  <TypeSignature Language="C#" Value="public sealed class MauiAppBuilder : Microsoft.Extensions.Hosting.IHostApplicationBuilder" FrameworkAlternate="net-maui-10.0" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MauiAppBuilder extends System.Object implements class Microsoft.Extensions.Hosting.IHostApplicationBuilder" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="C#" Value="public sealed class MauiAppBuilder : Microsoft.Extensions.Hosting.IHostApplicationBuilder" FrameworkAlternate="net-maui-10.0;net-maui-11.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MauiAppBuilder extends System.Object implements class Microsoft.Extensions.Hosting.IHostApplicationBuilder" FrameworkAlternate="net-maui-10.0;net-maui-11.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Hosting.MauiAppBuilder" />
-  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MauiAppBuilder&#xA;Implements IHostApplicationBuilder" FrameworkAlternate="net-maui-10.0" />
-  <TypeSignature Language="C++ CLI" Value="public ref class MauiAppBuilder sealed : Microsoft::Extensions::Hosting::IHostApplicationBuilder" FrameworkAlternate="net-maui-10.0" />
-  <TypeSignature Language="F#" Value="type MauiAppBuilder = class&#xA;    interface IHostApplicationBuilder" FrameworkAlternate="net-maui-10.0" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MauiAppBuilder&#xA;Implements IHostApplicationBuilder" FrameworkAlternate="net-maui-10.0;net-maui-11.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MauiAppBuilder sealed : Microsoft::Extensions::Hosting::IHostApplicationBuilder" FrameworkAlternate="net-maui-10.0;net-maui-11.0" />
+  <TypeSignature Language="F#" Value="type MauiAppBuilder = class&#xA;    interface IHostApplicationBuilder" FrameworkAlternate="net-maui-10.0;net-maui-11.0" />
   <TypeSignature Language="C#" Value="public sealed class MauiAppBuilder" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MauiAppBuilder extends System.Object" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MauiAppBuilder" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
@@ -15,12 +15,13 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>9.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
-    <Interface FrameworkAlternate="net-maui-10.0">
+    <Interface FrameworkAlternate="net-maui-10.0;net-maui-11.0">
       <InterfaceName>Microsoft.Extensions.Hosting.IHostApplicationBuilder</InterfaceName>
     </Interface>
   </Interfaces>
@@ -49,6 +50,7 @@
         <AssemblyName>Microsoft.Maui</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Hosting.MauiApp</ReturnType>
@@ -74,6 +76,7 @@
         <AssemblyName>Microsoft.Maui</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Extensions.Configuration.ConfigurationManager</ReturnType>
@@ -88,20 +91,21 @@
     </Member>
     <Member MemberName="ConfigureContainer&lt;TBuilder&gt;">
       <MemberSignature Language="C#" Value="public void ConfigureContainer&lt;TBuilder&gt; (Microsoft.Extensions.DependencyInjection.IServiceProviderFactory&lt;TBuilder&gt; factory, Action&lt;TBuilder&gt;? configure = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ConfigureContainer&lt;TBuilder&gt;(class Microsoft.Extensions.DependencyInjection.IServiceProviderFactory`1&lt;!!TBuilder&gt; factory, class System.Action`1&lt;!!TBuilder&gt; configure) cil managed" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ConfigureContainer&lt;TBuilder&gt;(class Microsoft.Extensions.DependencyInjection.IServiceProviderFactory`1&lt;!!TBuilder&gt; factory, class System.Action`1&lt;!!TBuilder&gt; configure) cil managed" FrameworkAlternate="net-maui-10.0;net-maui-11.0" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Hosting.MauiAppBuilder.ConfigureContainer``1(Microsoft.Extensions.DependencyInjection.IServiceProviderFactory{``0},System.Action{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub ConfigureContainer(Of TBuilder) (factory As IServiceProviderFactory(Of TBuilder), Optional configure As Action(Of TBuilder) = Nothing)" />
-      <MemberSignature Language="F#" Value="abstract member ConfigureContainer : Microsoft.Extensions.DependencyInjection.IServiceProviderFactory&lt;'Builder&gt; * Action&lt;'Builder&gt; -&gt; unit&#xA;override this.ConfigureContainer : Microsoft.Extensions.DependencyInjection.IServiceProviderFactory&lt;'Builder&gt; * Action&lt;'Builder&gt; -&gt; unit" Usage="mauiAppBuilder.ConfigureContainer (factory, configure)" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="F#" Value="abstract member ConfigureContainer : Microsoft.Extensions.DependencyInjection.IServiceProviderFactory&lt;'Builder&gt; * Action&lt;'Builder&gt; -&gt; unit&#xA;override this.ConfigureContainer : Microsoft.Extensions.DependencyInjection.IServiceProviderFactory&lt;'Builder&gt; * Action&lt;'Builder&gt; -&gt; unit" Usage="mauiAppBuilder.ConfigureContainer (factory, configure)" FrameworkAlternate="net-maui-10.0;net-maui-11.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ConfigureContainer&lt;TBuilder&gt;(class Microsoft.Extensions.DependencyInjection.IServiceProviderFactory`1&lt;!!TBuilder&gt; factory, class System.Action`1&lt;!!TBuilder&gt; configure) cil managed" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       <MemberSignature Language="F#" Value="member this.ConfigureContainer : Microsoft.Extensions.DependencyInjection.IServiceProviderFactory&lt;'Builder&gt; * Action&lt;'Builder&gt; -&gt; unit" Usage="mauiAppBuilder.ConfigureContainer (factory, configure)" FrameworkAlternate="net-maui-8.0;net-maui-9.0" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember FrameworkAlternate="net-maui-10.0">M:Microsoft.Extensions.Hosting.IHostApplicationBuilder.ConfigureContainer``1(Microsoft.Extensions.DependencyInjection.IServiceProviderFactory{``0},System.Action{``0})</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-maui-10.0;net-maui-11.0">M:Microsoft.Extensions.Hosting.IHostApplicationBuilder.ConfigureContainer``1(Microsoft.Extensions.DependencyInjection.IServiceProviderFactory{``0},System.Action{``0})</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -153,6 +157,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Hosting.MauiHostEnvironment</ReturnType>
@@ -174,12 +179,13 @@
       <MemberSignature Language="F#" Value="member this.Logging : Microsoft.Extensions.Logging.ILoggingBuilder" Usage="Microsoft.Maui.Hosting.MauiAppBuilder.Logging" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember FrameworkAlternate="net-maui-10.0">P:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Logging</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-maui-10.0;net-maui-11.0">P:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Logging</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Extensions.Logging.ILoggingBuilder</ReturnType>
@@ -206,6 +212,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Extensions.Configuration.IConfigurationManager</ReturnType>
@@ -230,6 +237,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Extensions.Hosting.IHostEnvironment</ReturnType>
@@ -254,6 +262,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder</ReturnType>
@@ -278,6 +287,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.Object,System.Object&gt;</ReturnType>
@@ -299,6 +309,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.Object,System.Object&gt;</ReturnType>
@@ -320,12 +331,13 @@
       <MemberSignature Language="F#" Value="member this.Services : Microsoft.Extensions.DependencyInjection.IServiceCollection" Usage="Microsoft.Maui.Hosting.MauiAppBuilder.Services" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember FrameworkAlternate="net-maui-10.0">P:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Services</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-maui-10.0;net-maui-11.0">P:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Services</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Extensions.DependencyInjection.IServiceCollection</ReturnType>
