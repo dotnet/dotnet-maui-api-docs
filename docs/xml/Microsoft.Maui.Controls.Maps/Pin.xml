@@ -10,6 +10,7 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>9.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Maui.Controls.Element</BaseTypeName>
@@ -46,6 +47,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -65,6 +67,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -88,12 +91,85 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Maps.Pin.Address" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClusteringIdentifier">
+      <MemberSignature Language="C#" Value="public string ClusteringIdentifier { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ClusteringIdentifier" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Maps.Pin.ClusteringIdentifier" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClusteringIdentifier As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClusteringIdentifier { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ClusteringIdentifier : string with get, set" Usage="Microsoft.Maui.Controls.Maps.Pin.ClusteringIdentifier" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the clustering identifier for this pin.
+            Pins with the same identifier will be grouped together when clustering is enabled.
+            Default value is <see cref="F:Microsoft.Maui.Controls.Maps.Pin.DefaultClusteringIdentifier" />.
+            This is a bindable property.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            Use different clustering identifiers to create separate groups of pins that 
+            cluster independently. For example, you might have one identifier for restaurants
+            and another for hotels, so they cluster within their own categories.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClusteringIdentifierProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty ClusteringIdentifierProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty ClusteringIdentifierProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Maps.Pin.ClusteringIdentifierProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ClusteringIdentifierProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ ClusteringIdentifierProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ClusteringIdentifierProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Maps.Pin.ClusteringIdentifierProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Maps.Pin.ClusteringIdentifier" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultClusteringIdentifier">
+      <MemberSignature Language="C#" Value="public const string DefaultClusteringIdentifier;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DefaultClusteringIdentifier" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Maps.Pin.DefaultClusteringIdentifier" />
+      <MemberSignature Language="VB.NET" Value="Public Const DefaultClusteringIdentifier As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DefaultClusteringIdentifier;" />
+      <MemberSignature Language="F#" Value="val mutable DefaultClusteringIdentifier : string" Usage="Microsoft.Maui.Controls.Maps.Pin.DefaultClusteringIdentifier" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The default clustering identifier used when <see cref="P:Microsoft.Maui.Controls.Maps.Pin.ClusteringIdentifier" /> is not set.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,6 +185,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -136,6 +213,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -146,6 +224,84 @@
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <inheritdoc cref="M:System.Object.GetHashCode" />
+      </Docs>
+    </Member>
+    <Member MemberName="HideInfoWindow">
+      <MemberSignature Language="C#" Value="public void HideInfoWindow ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void HideInfoWindow() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Maps.Pin.HideInfoWindow" />
+      <MemberSignature Language="VB.NET" Value="Public Sub HideInfoWindow ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void HideInfoWindow();" />
+      <MemberSignature Language="F#" Value="member this.HideInfoWindow : unit -&gt; unit" Usage="pin.HideInfoWindow " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Hides the info window (callout) for this pin on the map.
+            </summary>
+        <remarks>The pin must be added to a <see cref="T:Microsoft.Maui.Controls.Maps.Map" /> for this method to have an effect.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageSource">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.ImageSource? ImageSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.ImageSource ImageSource" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Maps.Pin.ImageSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImageSource As ImageSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::ImageSource ^ ImageSource { Microsoft::Maui::Controls::ImageSource ^ get(); void set(Microsoft::Maui::Controls::ImageSource ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ImageSource : Microsoft.Maui.Controls.ImageSource with get, set" Usage="Microsoft.Maui.Controls.Maps.Pin.ImageSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.ImageSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the custom image source for this pin's icon.
+            When set, this image will be used instead of the default platform pin icon.
+            This is a bindable property.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            Supported image sources include file-based images, embedded resources, URIs, and streams.
+            The image will be scaled by the underlying platform to a platform-defined size (32x32 points on iOS, 64x64 pixels on Android).
+            Provide images that look clear when scaled to these sizes.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageSourceProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty ImageSourceProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty ImageSourceProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Maps.Pin.ImageSourceProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ImageSourceProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ ImageSourceProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ImageSourceProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Maps.Pin.ImageSourceProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Maps.Pin.ImageSource" />.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InfoWindowClicked">
@@ -160,6 +316,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -189,6 +346,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -212,6 +370,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
@@ -233,6 +392,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Devices.Sensors.Location</ReturnType>
@@ -256,6 +416,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
@@ -277,6 +438,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -309,6 +471,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -327,6 +490,38 @@
         <remarks>This should typically not be set by the developer. Doing so might result in unpredictable behavior.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Microsoft.Maui.Maps.IMapPin.ImageSource">
+      <MemberSignature Language="C#" Value="Microsoft.Maui.IImageSource? Microsoft.Maui.Maps.IMapPin.ImageSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.IImageSource Microsoft.Maui.Maps.IMapPin.ImageSource" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Maps.Pin.Microsoft#Maui#Maps#IMapPin#ImageSource" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property ImageSource As IImageSource Implements IMapPin.ImageSource" />
+      <MemberSignature Language="C++ CLI" Value="property Microsoft::Maui::IImageSource ^ Microsoft::Maui::Maps::IMapPin::ImageSource { Microsoft::Maui::IImageSource ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.Maps.IMapPin.ImageSource : Microsoft.Maui.IImageSource" Usage="Microsoft.Maui.Maps.IMapPin.ImageSource" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.Maps.IMapPin.ImageSource</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.IImageSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Explicit implementation of IMapPin.ImageSource to convert from ImageSource to IImageSource.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="op_Equality">
       <MemberSignature Language="C#" Value="public static bool operator == (Microsoft.Maui.Controls.Maps.Pin? left, Microsoft.Maui.Controls.Maps.Pin? right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class Microsoft.Maui.Controls.Maps.Pin left, class Microsoft.Maui.Controls.Maps.Pin right) cil managed" />
@@ -339,6 +534,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -370,6 +566,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -404,6 +601,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -439,6 +637,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -459,6 +658,29 @@
         <remarks>For internal use only. This API can be changed or removed without notice at any time.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ShowInfoWindow">
+      <MemberSignature Language="C#" Value="public void ShowInfoWindow ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ShowInfoWindow() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Maps.Pin.ShowInfoWindow" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ShowInfoWindow ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowInfoWindow();" />
+      <MemberSignature Language="F#" Value="member this.ShowInfoWindow : unit -&gt; unit" Usage="pin.ShowInfoWindow " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Shows the info window (callout) for this pin on the map.
+            </summary>
+        <remarks>The pin must be added to a <see cref="T:Microsoft.Maui.Controls.Maps.Map" /> for this method to have an effect.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Type">
       <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.Maps.PinType Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.Controls.Maps.PinType Type" />
@@ -471,6 +693,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.Maps.PinType</ReturnType>
@@ -496,6 +719,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>

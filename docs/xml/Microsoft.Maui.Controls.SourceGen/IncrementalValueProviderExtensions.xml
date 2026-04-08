@@ -1,0 +1,304 @@
+<Type Name="IncrementalValueProviderExtensions" FullName="Microsoft.Maui.Controls.SourceGen.IncrementalValueProviderExtensions">
+  <TypeSignature Language="C#" Value="public static class IncrementalValueProviderExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit IncrementalValueProviderExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.SourceGen.IncrementalValueProviderExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module IncrementalValueProviderExtensions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IncrementalValueProviderExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type IncrementalValueProviderExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls.SourceGen</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Combine&lt;TProvider1,TProvider2,TProvider3&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.CodeAnalysis.IncrementalValueProvider&lt;(TProvider1 provider1, TProvider2 provider2, TProvider3 provider3)&gt; Combine&lt;TProvider1,TProvider2,TProvider3&gt; (this Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider1&gt; provider1, Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider2&gt; provider2, Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider3&gt; provider3);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.CodeAnalysis.IncrementalValueProvider`1&lt;valuetype System.ValueTuple`3&lt;!!TProvider1, !!TProvider2, !!TProvider3&gt;&gt; Combine&lt;TProvider1, TProvider2, TProvider3&gt;(valuetype Microsoft.CodeAnalysis.IncrementalValueProvider`1&lt;!!TProvider1&gt; provider1, valuetype Microsoft.CodeAnalysis.IncrementalValueProvider`1&lt;!!TProvider2&gt; provider2, valuetype Microsoft.CodeAnalysis.IncrementalValueProvider`1&lt;!!TProvider3&gt; provider3) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.SourceGen.IncrementalValueProviderExtensions.Combine``3(Microsoft.CodeAnalysis.IncrementalValueProvider{``0},Microsoft.CodeAnalysis.IncrementalValueProvider{``1},Microsoft.CodeAnalysis.IncrementalValueProvider{``2})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Combine(Of TProvider1, TProvider2, TProvider3) (provider1 As IncrementalValueProvider(Of TProvider1), provider2 As IncrementalValueProvider(Of TProvider2), provider3 As IncrementalValueProvider(Of TProvider3)) As IncrementalValueProvider(Of ValueTuple(Of TProvider1, TProvider2, TProvider3))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TProvider1, typename TProvider2, typename TProvider3&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::CodeAnalysis::IncrementalValueProvider&lt;ValueTuple&lt;TProvider1, TProvider2, TProvider3&gt;&gt; Combine(Microsoft::CodeAnalysis::IncrementalValueProvider&lt;TProvider1&gt; provider1, Microsoft::CodeAnalysis::IncrementalValueProvider&lt;TProvider2&gt; provider2, Microsoft::CodeAnalysis::IncrementalValueProvider&lt;TProvider3&gt; provider3);" />
+      <MemberSignature Language="F#" Value="static member Combine : Microsoft.CodeAnalysis.IncrementalValueProvider&lt;'TProvider1&gt; * Microsoft.CodeAnalysis.IncrementalValueProvider&lt;'TProvider2&gt; * Microsoft.CodeAnalysis.IncrementalValueProvider&lt;'TProvider3&gt; -&gt; Microsoft.CodeAnalysis.IncrementalValueProvider&lt;ValueTuple&lt;'TProvider1, 'TProvider2, 'TProvider3&gt;&gt;" Usage="Microsoft.Maui.Controls.SourceGen.IncrementalValueProviderExtensions.Combine (provider1, provider2, provider3)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.SourceGen</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.CodeAnalysis.IncrementalValueProvider&lt;System.ValueTuple&lt;TProvider1,TProvider2,TProvider3&gt;&gt;</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "provider1", "provider2", "provider3" })]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "provider1", "provider2", "provider3" })&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TProvider1" />
+        <TypeParameter Name="TProvider2" />
+        <TypeParameter Name="TProvider3" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="provider1" Type="Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider1&gt;" RefType="this" />
+        <Parameter Name="provider2" Type="Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider2&gt;" />
+        <Parameter Name="provider3" Type="Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider3&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TProvider1">To be added.</typeparam>
+        <typeparam name="TProvider2">To be added.</typeparam>
+        <typeparam name="TProvider3">To be added.</typeparam>
+        <param name="provider1">To be added.</param>
+        <param name="provider2">To be added.</param>
+        <param name="provider3">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Combine&lt;TProvider1,TProvider2,TProvider3&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.CodeAnalysis.IncrementalValuesProvider&lt;(TProvider1 provider1, TProvider2 provider2, TProvider3 provider3)&gt; Combine&lt;TProvider1,TProvider2,TProvider3&gt; (this Microsoft.CodeAnalysis.IncrementalValuesProvider&lt;TProvider1&gt; provider1, Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider2&gt; provider2, Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider3&gt; provider3);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.CodeAnalysis.IncrementalValuesProvider`1&lt;valuetype System.ValueTuple`3&lt;!!TProvider1, !!TProvider2, !!TProvider3&gt;&gt; Combine&lt;TProvider1, TProvider2, TProvider3&gt;(valuetype Microsoft.CodeAnalysis.IncrementalValuesProvider`1&lt;!!TProvider1&gt; provider1, valuetype Microsoft.CodeAnalysis.IncrementalValueProvider`1&lt;!!TProvider2&gt; provider2, valuetype Microsoft.CodeAnalysis.IncrementalValueProvider`1&lt;!!TProvider3&gt; provider3) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.SourceGen.IncrementalValueProviderExtensions.Combine``3(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},Microsoft.CodeAnalysis.IncrementalValueProvider{``1},Microsoft.CodeAnalysis.IncrementalValueProvider{``2})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Combine(Of TProvider1, TProvider2, TProvider3) (provider1 As IncrementalValuesProvider(Of TProvider1), provider2 As IncrementalValueProvider(Of TProvider2), provider3 As IncrementalValueProvider(Of TProvider3)) As IncrementalValuesProvider(Of ValueTuple(Of TProvider1, TProvider2, TProvider3))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TProvider1, typename TProvider2, typename TProvider3&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::CodeAnalysis::IncrementalValuesProvider&lt;ValueTuple&lt;TProvider1, TProvider2, TProvider3&gt;&gt; Combine(Microsoft::CodeAnalysis::IncrementalValuesProvider&lt;TProvider1&gt; provider1, Microsoft::CodeAnalysis::IncrementalValueProvider&lt;TProvider2&gt; provider2, Microsoft::CodeAnalysis::IncrementalValueProvider&lt;TProvider3&gt; provider3);" />
+      <MemberSignature Language="F#" Value="static member Combine : Microsoft.CodeAnalysis.IncrementalValuesProvider&lt;'TProvider1&gt; * Microsoft.CodeAnalysis.IncrementalValueProvider&lt;'TProvider2&gt; * Microsoft.CodeAnalysis.IncrementalValueProvider&lt;'TProvider3&gt; -&gt; Microsoft.CodeAnalysis.IncrementalValuesProvider&lt;ValueTuple&lt;'TProvider1, 'TProvider2, 'TProvider3&gt;&gt;" Usage="Microsoft.Maui.Controls.SourceGen.IncrementalValueProviderExtensions.Combine (provider1, provider2, provider3)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.SourceGen</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.CodeAnalysis.IncrementalValuesProvider&lt;System.ValueTuple&lt;TProvider1,TProvider2,TProvider3&gt;&gt;</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "provider1", "provider2", "provider3" })]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "provider1", "provider2", "provider3" })&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TProvider1" />
+        <TypeParameter Name="TProvider2" />
+        <TypeParameter Name="TProvider3" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="provider1" Type="Microsoft.CodeAnalysis.IncrementalValuesProvider&lt;TProvider1&gt;" RefType="this" />
+        <Parameter Name="provider2" Type="Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider2&gt;" />
+        <Parameter Name="provider3" Type="Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider3&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TProvider1">To be added.</typeparam>
+        <typeparam name="TProvider2">To be added.</typeparam>
+        <typeparam name="TProvider3">To be added.</typeparam>
+        <param name="provider1">To be added.</param>
+        <param name="provider2">To be added.</param>
+        <param name="provider3">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Combine&lt;TProvider1,TProvider2,TProvider3,TProvider4&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.CodeAnalysis.IncrementalValueProvider&lt;(TProvider1 provider1, TProvider2 provider2, TProvider3 provider3, TProvider4 provider4)&gt; Combine&lt;TProvider1,TProvider2,TProvider3,TProvider4&gt; (this Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider1&gt; provider1, Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider2&gt; provider2, Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider3&gt; provider3, Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider4&gt; provider4);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.CodeAnalysis.IncrementalValueProvider`1&lt;valuetype System.ValueTuple`4&lt;!!TProvider1, !!TProvider2, !!TProvider3, !!TProvider4&gt;&gt; Combine&lt;TProvider1, TProvider2, TProvider3, TProvider4&gt;(valuetype Microsoft.CodeAnalysis.IncrementalValueProvider`1&lt;!!TProvider1&gt; provider1, valuetype Microsoft.CodeAnalysis.IncrementalValueProvider`1&lt;!!TProvider2&gt; provider2, valuetype Microsoft.CodeAnalysis.IncrementalValueProvider`1&lt;!!TProvider3&gt; provider3, valuetype Microsoft.CodeAnalysis.IncrementalValueProvider`1&lt;!!TProvider4&gt; provider4) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.SourceGen.IncrementalValueProviderExtensions.Combine``4(Microsoft.CodeAnalysis.IncrementalValueProvider{``0},Microsoft.CodeAnalysis.IncrementalValueProvider{``1},Microsoft.CodeAnalysis.IncrementalValueProvider{``2},Microsoft.CodeAnalysis.IncrementalValueProvider{``3})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Combine(Of TProvider1, TProvider2, TProvider3, TProvider4) (provider1 As IncrementalValueProvider(Of TProvider1), provider2 As IncrementalValueProvider(Of TProvider2), provider3 As IncrementalValueProvider(Of TProvider3), provider4 As IncrementalValueProvider(Of TProvider4)) As IncrementalValueProvider(Of ValueTuple(Of TProvider1, TProvider2, TProvider3, TProvider4))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TProvider1, typename TProvider2, typename TProvider3, typename TProvider4&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::CodeAnalysis::IncrementalValueProvider&lt;ValueTuple&lt;TProvider1, TProvider2, TProvider3, TProvider4&gt;&gt; Combine(Microsoft::CodeAnalysis::IncrementalValueProvider&lt;TProvider1&gt; provider1, Microsoft::CodeAnalysis::IncrementalValueProvider&lt;TProvider2&gt; provider2, Microsoft::CodeAnalysis::IncrementalValueProvider&lt;TProvider3&gt; provider3, Microsoft::CodeAnalysis::IncrementalValueProvider&lt;TProvider4&gt; provider4);" />
+      <MemberSignature Language="F#" Value="static member Combine : Microsoft.CodeAnalysis.IncrementalValueProvider&lt;'TProvider1&gt; * Microsoft.CodeAnalysis.IncrementalValueProvider&lt;'TProvider2&gt; * Microsoft.CodeAnalysis.IncrementalValueProvider&lt;'TProvider3&gt; * Microsoft.CodeAnalysis.IncrementalValueProvider&lt;'TProvider4&gt; -&gt; Microsoft.CodeAnalysis.IncrementalValueProvider&lt;ValueTuple&lt;'TProvider1, 'TProvider2, 'TProvider3, 'TProvider4&gt;&gt;" Usage="Microsoft.Maui.Controls.SourceGen.IncrementalValueProviderExtensions.Combine (provider1, provider2, provider3, provider4)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.SourceGen</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.CodeAnalysis.IncrementalValueProvider&lt;System.ValueTuple&lt;TProvider1,TProvider2,TProvider3,TProvider4&gt;&gt;</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "provider1", "provider2", "provider3", "provider4" })]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "provider1", "provider2", "provider3", "provider4" })&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TProvider1" />
+        <TypeParameter Name="TProvider2" />
+        <TypeParameter Name="TProvider3" />
+        <TypeParameter Name="TProvider4" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="provider1" Type="Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider1&gt;" RefType="this" />
+        <Parameter Name="provider2" Type="Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider2&gt;" />
+        <Parameter Name="provider3" Type="Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider3&gt;" />
+        <Parameter Name="provider4" Type="Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider4&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TProvider1">To be added.</typeparam>
+        <typeparam name="TProvider2">To be added.</typeparam>
+        <typeparam name="TProvider3">To be added.</typeparam>
+        <typeparam name="TProvider4">To be added.</typeparam>
+        <param name="provider1">To be added.</param>
+        <param name="provider2">To be added.</param>
+        <param name="provider3">To be added.</param>
+        <param name="provider4">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Combine&lt;TProvider1,TProvider2,TProvider3,TProvider4&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.CodeAnalysis.IncrementalValuesProvider&lt;(TProvider1 provider1, TProvider2 provider2, TProvider3 provider3, TProvider4 provider4)&gt; Combine&lt;TProvider1,TProvider2,TProvider3,TProvider4&gt; (this Microsoft.CodeAnalysis.IncrementalValuesProvider&lt;TProvider1&gt; provider1, Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider2&gt; provider2, Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider3&gt; provider3, Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider4&gt; provider4);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.CodeAnalysis.IncrementalValuesProvider`1&lt;valuetype System.ValueTuple`4&lt;!!TProvider1, !!TProvider2, !!TProvider3, !!TProvider4&gt;&gt; Combine&lt;TProvider1, TProvider2, TProvider3, TProvider4&gt;(valuetype Microsoft.CodeAnalysis.IncrementalValuesProvider`1&lt;!!TProvider1&gt; provider1, valuetype Microsoft.CodeAnalysis.IncrementalValueProvider`1&lt;!!TProvider2&gt; provider2, valuetype Microsoft.CodeAnalysis.IncrementalValueProvider`1&lt;!!TProvider3&gt; provider3, valuetype Microsoft.CodeAnalysis.IncrementalValueProvider`1&lt;!!TProvider4&gt; provider4) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.SourceGen.IncrementalValueProviderExtensions.Combine``4(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},Microsoft.CodeAnalysis.IncrementalValueProvider{``1},Microsoft.CodeAnalysis.IncrementalValueProvider{``2},Microsoft.CodeAnalysis.IncrementalValueProvider{``3})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Combine(Of TProvider1, TProvider2, TProvider3, TProvider4) (provider1 As IncrementalValuesProvider(Of TProvider1), provider2 As IncrementalValueProvider(Of TProvider2), provider3 As IncrementalValueProvider(Of TProvider3), provider4 As IncrementalValueProvider(Of TProvider4)) As IncrementalValuesProvider(Of ValueTuple(Of TProvider1, TProvider2, TProvider3, TProvider4))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TProvider1, typename TProvider2, typename TProvider3, typename TProvider4&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::CodeAnalysis::IncrementalValuesProvider&lt;ValueTuple&lt;TProvider1, TProvider2, TProvider3, TProvider4&gt;&gt; Combine(Microsoft::CodeAnalysis::IncrementalValuesProvider&lt;TProvider1&gt; provider1, Microsoft::CodeAnalysis::IncrementalValueProvider&lt;TProvider2&gt; provider2, Microsoft::CodeAnalysis::IncrementalValueProvider&lt;TProvider3&gt; provider3, Microsoft::CodeAnalysis::IncrementalValueProvider&lt;TProvider4&gt; provider4);" />
+      <MemberSignature Language="F#" Value="static member Combine : Microsoft.CodeAnalysis.IncrementalValuesProvider&lt;'TProvider1&gt; * Microsoft.CodeAnalysis.IncrementalValueProvider&lt;'TProvider2&gt; * Microsoft.CodeAnalysis.IncrementalValueProvider&lt;'TProvider3&gt; * Microsoft.CodeAnalysis.IncrementalValueProvider&lt;'TProvider4&gt; -&gt; Microsoft.CodeAnalysis.IncrementalValuesProvider&lt;ValueTuple&lt;'TProvider1, 'TProvider2, 'TProvider3, 'TProvider4&gt;&gt;" Usage="Microsoft.Maui.Controls.SourceGen.IncrementalValueProviderExtensions.Combine (provider1, provider2, provider3, provider4)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.SourceGen</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.CodeAnalysis.IncrementalValuesProvider&lt;System.ValueTuple&lt;TProvider1,TProvider2,TProvider3,TProvider4&gt;&gt;</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "provider1", "provider2", "provider3", "provider4" })]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "provider1", "provider2", "provider3", "provider4" })&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TProvider1" />
+        <TypeParameter Name="TProvider2" />
+        <TypeParameter Name="TProvider3" />
+        <TypeParameter Name="TProvider4" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="provider1" Type="Microsoft.CodeAnalysis.IncrementalValuesProvider&lt;TProvider1&gt;" RefType="this" />
+        <Parameter Name="provider2" Type="Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider2&gt;" />
+        <Parameter Name="provider3" Type="Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider3&gt;" />
+        <Parameter Name="provider4" Type="Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider4&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TProvider1">To be added.</typeparam>
+        <typeparam name="TProvider2">To be added.</typeparam>
+        <typeparam name="TProvider3">To be added.</typeparam>
+        <typeparam name="TProvider4">To be added.</typeparam>
+        <param name="provider1">To be added.</param>
+        <param name="provider2">To be added.</param>
+        <param name="provider3">To be added.</param>
+        <param name="provider4">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Combine&lt;TProvider1,TProvider2,TProvider3,TProvider4,TProvider5&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.CodeAnalysis.IncrementalValueProvider&lt;(TProvider1 provider1, TProvider2 provider2, TProvider3 provider3, TProvider4 provider4, TProvider5 provider5)&gt; Combine&lt;TProvider1,TProvider2,TProvider3,TProvider4,TProvider5&gt; (this Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider1&gt; provider1, Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider2&gt; provider2, Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider3&gt; provider3, Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider4&gt; provider4, Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider5&gt; provider5);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.CodeAnalysis.IncrementalValueProvider`1&lt;valuetype System.ValueTuple`5&lt;!!TProvider1, !!TProvider2, !!TProvider3, !!TProvider4, !!TProvider5&gt;&gt; Combine&lt;TProvider1, TProvider2, TProvider3, TProvider4, TProvider5&gt;(valuetype Microsoft.CodeAnalysis.IncrementalValueProvider`1&lt;!!TProvider1&gt; provider1, valuetype Microsoft.CodeAnalysis.IncrementalValueProvider`1&lt;!!TProvider2&gt; provider2, valuetype Microsoft.CodeAnalysis.IncrementalValueProvider`1&lt;!!TProvider3&gt; provider3, valuetype Microsoft.CodeAnalysis.IncrementalValueProvider`1&lt;!!TProvider4&gt; provider4, valuetype Microsoft.CodeAnalysis.IncrementalValueProvider`1&lt;!!TProvider5&gt; provider5) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.SourceGen.IncrementalValueProviderExtensions.Combine``5(Microsoft.CodeAnalysis.IncrementalValueProvider{``0},Microsoft.CodeAnalysis.IncrementalValueProvider{``1},Microsoft.CodeAnalysis.IncrementalValueProvider{``2},Microsoft.CodeAnalysis.IncrementalValueProvider{``3},Microsoft.CodeAnalysis.IncrementalValueProvider{``4})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Combine(Of TProvider1, TProvider2, TProvider3, TProvider4, TProvider5) (provider1 As IncrementalValueProvider(Of TProvider1), provider2 As IncrementalValueProvider(Of TProvider2), provider3 As IncrementalValueProvider(Of TProvider3), provider4 As IncrementalValueProvider(Of TProvider4), provider5 As IncrementalValueProvider(Of TProvider5)) As IncrementalValueProvider(Of ValueTuple(Of TProvider1, TProvider2, TProvider3, TProvider4, TProvider5))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TProvider1, typename TProvider2, typename TProvider3, typename TProvider4, typename TProvider5&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::CodeAnalysis::IncrementalValueProvider&lt;ValueTuple&lt;TProvider1, TProvider2, TProvider3, TProvider4, TProvider5&gt;&gt; Combine(Microsoft::CodeAnalysis::IncrementalValueProvider&lt;TProvider1&gt; provider1, Microsoft::CodeAnalysis::IncrementalValueProvider&lt;TProvider2&gt; provider2, Microsoft::CodeAnalysis::IncrementalValueProvider&lt;TProvider3&gt; provider3, Microsoft::CodeAnalysis::IncrementalValueProvider&lt;TProvider4&gt; provider4, Microsoft::CodeAnalysis::IncrementalValueProvider&lt;TProvider5&gt; provider5);" />
+      <MemberSignature Language="F#" Value="static member Combine : Microsoft.CodeAnalysis.IncrementalValueProvider&lt;'TProvider1&gt; * Microsoft.CodeAnalysis.IncrementalValueProvider&lt;'TProvider2&gt; * Microsoft.CodeAnalysis.IncrementalValueProvider&lt;'TProvider3&gt; * Microsoft.CodeAnalysis.IncrementalValueProvider&lt;'TProvider4&gt; * Microsoft.CodeAnalysis.IncrementalValueProvider&lt;'TProvider5&gt; -&gt; Microsoft.CodeAnalysis.IncrementalValueProvider&lt;ValueTuple&lt;'TProvider1, 'TProvider2, 'TProvider3, 'TProvider4, 'TProvider5&gt;&gt;" Usage="Microsoft.Maui.Controls.SourceGen.IncrementalValueProviderExtensions.Combine (provider1, provider2, provider3, provider4, provider5)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.SourceGen</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.CodeAnalysis.IncrementalValueProvider&lt;System.ValueTuple&lt;TProvider1,TProvider2,TProvider3,TProvider4,TProvider5&gt;&gt;</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "provider1", "provider2", "provider3", "provider4", "provider5" })]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "provider1", "provider2", "provider3", "provider4", "provider5" })&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TProvider1" />
+        <TypeParameter Name="TProvider2" />
+        <TypeParameter Name="TProvider3" />
+        <TypeParameter Name="TProvider4" />
+        <TypeParameter Name="TProvider5" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="provider1" Type="Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider1&gt;" RefType="this" />
+        <Parameter Name="provider2" Type="Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider2&gt;" />
+        <Parameter Name="provider3" Type="Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider3&gt;" />
+        <Parameter Name="provider4" Type="Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider4&gt;" />
+        <Parameter Name="provider5" Type="Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider5&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TProvider1">To be added.</typeparam>
+        <typeparam name="TProvider2">To be added.</typeparam>
+        <typeparam name="TProvider3">To be added.</typeparam>
+        <typeparam name="TProvider4">To be added.</typeparam>
+        <typeparam name="TProvider5">To be added.</typeparam>
+        <param name="provider1">To be added.</param>
+        <param name="provider2">To be added.</param>
+        <param name="provider3">To be added.</param>
+        <param name="provider4">To be added.</param>
+        <param name="provider5">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Combine&lt;TProvider1,TProvider2,TProvider3,TProvider4,TProvider5&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.CodeAnalysis.IncrementalValuesProvider&lt;(TProvider1 provider1, TProvider2 provider2, TProvider3 provider3, TProvider4 provider4, TProvider5 provider5)&gt; Combine&lt;TProvider1,TProvider2,TProvider3,TProvider4,TProvider5&gt; (this Microsoft.CodeAnalysis.IncrementalValuesProvider&lt;TProvider1&gt; provider1, Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider2&gt; provider2, Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider3&gt; provider3, Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider4&gt; provider4, Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider5&gt; provider5);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.CodeAnalysis.IncrementalValuesProvider`1&lt;valuetype System.ValueTuple`5&lt;!!TProvider1, !!TProvider2, !!TProvider3, !!TProvider4, !!TProvider5&gt;&gt; Combine&lt;TProvider1, TProvider2, TProvider3, TProvider4, TProvider5&gt;(valuetype Microsoft.CodeAnalysis.IncrementalValuesProvider`1&lt;!!TProvider1&gt; provider1, valuetype Microsoft.CodeAnalysis.IncrementalValueProvider`1&lt;!!TProvider2&gt; provider2, valuetype Microsoft.CodeAnalysis.IncrementalValueProvider`1&lt;!!TProvider3&gt; provider3, valuetype Microsoft.CodeAnalysis.IncrementalValueProvider`1&lt;!!TProvider4&gt; provider4, valuetype Microsoft.CodeAnalysis.IncrementalValueProvider`1&lt;!!TProvider5&gt; provider5) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.SourceGen.IncrementalValueProviderExtensions.Combine``5(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},Microsoft.CodeAnalysis.IncrementalValueProvider{``1},Microsoft.CodeAnalysis.IncrementalValueProvider{``2},Microsoft.CodeAnalysis.IncrementalValueProvider{``3},Microsoft.CodeAnalysis.IncrementalValueProvider{``4})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Combine(Of TProvider1, TProvider2, TProvider3, TProvider4, TProvider5) (provider1 As IncrementalValuesProvider(Of TProvider1), provider2 As IncrementalValueProvider(Of TProvider2), provider3 As IncrementalValueProvider(Of TProvider3), provider4 As IncrementalValueProvider(Of TProvider4), provider5 As IncrementalValueProvider(Of TProvider5)) As IncrementalValuesProvider(Of ValueTuple(Of TProvider1, TProvider2, TProvider3, TProvider4, TProvider5))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TProvider1, typename TProvider2, typename TProvider3, typename TProvider4, typename TProvider5&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::CodeAnalysis::IncrementalValuesProvider&lt;ValueTuple&lt;TProvider1, TProvider2, TProvider3, TProvider4, TProvider5&gt;&gt; Combine(Microsoft::CodeAnalysis::IncrementalValuesProvider&lt;TProvider1&gt; provider1, Microsoft::CodeAnalysis::IncrementalValueProvider&lt;TProvider2&gt; provider2, Microsoft::CodeAnalysis::IncrementalValueProvider&lt;TProvider3&gt; provider3, Microsoft::CodeAnalysis::IncrementalValueProvider&lt;TProvider4&gt; provider4, Microsoft::CodeAnalysis::IncrementalValueProvider&lt;TProvider5&gt; provider5);" />
+      <MemberSignature Language="F#" Value="static member Combine : Microsoft.CodeAnalysis.IncrementalValuesProvider&lt;'TProvider1&gt; * Microsoft.CodeAnalysis.IncrementalValueProvider&lt;'TProvider2&gt; * Microsoft.CodeAnalysis.IncrementalValueProvider&lt;'TProvider3&gt; * Microsoft.CodeAnalysis.IncrementalValueProvider&lt;'TProvider4&gt; * Microsoft.CodeAnalysis.IncrementalValueProvider&lt;'TProvider5&gt; -&gt; Microsoft.CodeAnalysis.IncrementalValuesProvider&lt;ValueTuple&lt;'TProvider1, 'TProvider2, 'TProvider3, 'TProvider4, 'TProvider5&gt;&gt;" Usage="Microsoft.Maui.Controls.SourceGen.IncrementalValueProviderExtensions.Combine (provider1, provider2, provider3, provider4, provider5)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.SourceGen</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.CodeAnalysis.IncrementalValuesProvider&lt;System.ValueTuple&lt;TProvider1,TProvider2,TProvider3,TProvider4,TProvider5&gt;&gt;</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "provider1", "provider2", "provider3", "provider4", "provider5" })]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "provider1", "provider2", "provider3", "provider4", "provider5" })&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TProvider1" />
+        <TypeParameter Name="TProvider2" />
+        <TypeParameter Name="TProvider3" />
+        <TypeParameter Name="TProvider4" />
+        <TypeParameter Name="TProvider5" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="provider1" Type="Microsoft.CodeAnalysis.IncrementalValuesProvider&lt;TProvider1&gt;" RefType="this" />
+        <Parameter Name="provider2" Type="Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider2&gt;" />
+        <Parameter Name="provider3" Type="Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider3&gt;" />
+        <Parameter Name="provider4" Type="Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider4&gt;" />
+        <Parameter Name="provider5" Type="Microsoft.CodeAnalysis.IncrementalValueProvider&lt;TProvider5&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TProvider1">To be added.</typeparam>
+        <typeparam name="TProvider2">To be added.</typeparam>
+        <typeparam name="TProvider3">To be added.</typeparam>
+        <typeparam name="TProvider4">To be added.</typeparam>
+        <typeparam name="TProvider5">To be added.</typeparam>
+        <param name="provider1">To be added.</param>
+        <param name="provider2">To be added.</param>
+        <param name="provider3">To be added.</param>
+        <param name="provider4">To be added.</param>
+        <param name="provider5">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

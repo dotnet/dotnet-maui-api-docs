@@ -10,6 +10,7 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>9.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -26,6 +27,52 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="Clicked">
+      <MemberSignature Language="C#" Value="public void Clicked ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clicked() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Maps.IMapElement.Clicked" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clicked ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clicked();" />
+      <MemberSignature Language="F#" Value="abstract member Clicked : unit -&gt; unit" Usage="iMapElement.Clicked " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Method called by the handler when user clicks on the element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsVisible">
+      <MemberSignature Language="C#" Value="public bool IsVisible { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsVisible" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Maps.IMapElement.IsVisible" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsVisible As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsVisible { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsVisible : bool" Usage="Microsoft.Maui.Maps.IMapElement.IsVisible" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether the map element is visible on the map.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="MapElementId">
       <MemberSignature Language="C#" Value="public object? MapElementId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object MapElementId" />
@@ -38,6 +85,7 @@
         <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -45,6 +93,30 @@
       <Docs>
         <summary>
             Gets or sets the platform counterpart of this map element.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ZIndex">
+      <MemberSignature Language="C#" Value="public int ZIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ZIndex" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Maps.IMapElement.ZIndex" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ZIndex As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ZIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ZIndex : int" Usage="Microsoft.Maui.Maps.IMapElement.ZIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the z-index of the map element, which controls its draw order relative to other elements.
+            Higher values are drawn on top of lower values.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

@@ -10,6 +10,7 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>9.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Maui.Controls.Compatibility.Layout&lt;Microsoft.Maui.Controls.View&gt;</BaseTypeName>
@@ -27,7 +28,7 @@
       <AttributeName Language="C#">[Microsoft.Maui.Controls.ContentProperty("Children")]</AttributeName>
       <AttributeName Language="F#">[&lt;Microsoft.Maui.Controls.ContentProperty("Children")&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="net-maui-10.0;net-maui-9.0">
+    <Attribute FrameworkAlternate="net-maui-10.0;net-maui-11.0;net-maui-9.0">
       <AttributeName Language="C#">[System.Obsolete("Use Microsoft.Maui.Controls.AbsoluteLayout instead. For more information, see https://learn.microsoft.com/dotnet/maui/migration/layouts")]</AttributeName>
       <AttributeName Language="F#">[&lt;System.Obsolete("Use Microsoft.Maui.Controls.AbsoluteLayout instead. For more information, see https://learn.microsoft.com/dotnet/maui/migration/layouts")&gt;]</AttributeName>
     </Attribute>
@@ -48,6 +49,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -67,6 +69,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -89,6 +92,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.Compatibility.AbsoluteLayout+IAbsoluteList&lt;Microsoft.Maui.Controls.View&gt;</ReturnType>
@@ -100,22 +104,23 @@
       </Docs>
     </Member>
     <Member MemberName="ComputeConstraintForView">
-      <MemberSignature Language="C#" Value="protected override Microsoft.Maui.Controls.LayoutConstraint ComputeConstraintForView (Microsoft.Maui.Controls.View view);" FrameworkAlternate="net-maui-10.0" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype Microsoft.Maui.Controls.LayoutConstraint ComputeConstraintForView(class Microsoft.Maui.Controls.View view) cil managed" FrameworkAlternate="net-maui-10.0" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Compatibility.AbsoluteLayout.ComputeConstraintForView(Microsoft.Maui.Controls.View)" FrameworkAlternate="net-maui-10.0" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ComputeConstraintForView (view As View) As LayoutConstraint" FrameworkAlternate="net-maui-10.0" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Microsoft::Maui::Controls::LayoutConstraint ComputeConstraintForView(Microsoft::Maui::Controls::View ^ view);" FrameworkAlternate="net-maui-10.0" />
-      <MemberSignature Language="F#" Value="override this.ComputeConstraintForView : Microsoft.Maui.Controls.View -&gt; Microsoft.Maui.Controls.LayoutConstraint" Usage="absoluteLayout.ComputeConstraintForView view" FrameworkAlternate="net-maui-10.0" />
+      <MemberSignature Language="C#" Value="protected override Microsoft.Maui.Controls.LayoutConstraint ComputeConstraintForView (Microsoft.Maui.Controls.View view);" FrameworkAlternate="net-maui-10.0;net-maui-11.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype Microsoft.Maui.Controls.LayoutConstraint ComputeConstraintForView(class Microsoft.Maui.Controls.View view) cil managed" FrameworkAlternate="net-maui-10.0;net-maui-11.0" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Compatibility.AbsoluteLayout.ComputeConstraintForView(Microsoft.Maui.Controls.View)" FrameworkAlternate="net-maui-10.0;net-maui-11.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ComputeConstraintForView (view As View) As LayoutConstraint" FrameworkAlternate="net-maui-10.0;net-maui-11.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Microsoft::Maui::Controls::LayoutConstraint ComputeConstraintForView(Microsoft::Maui::Controls::View ^ view);" FrameworkAlternate="net-maui-10.0;net-maui-11.0" />
+      <MemberSignature Language="F#" Value="override this.ComputeConstraintForView : Microsoft.Maui.Controls.View -&gt; Microsoft.Maui.Controls.LayoutConstraint" Usage="absoluteLayout.ComputeConstraintForView view" FrameworkAlternate="net-maui-10.0;net-maui-11.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="net-maui-10.0">Microsoft.Maui.Controls.LayoutConstraint</ReturnType>
+        <ReturnType FrameworkAlternate="net-maui-10.0;net-maui-11.0">Microsoft.Maui.Controls.LayoutConstraint</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="view" Type="Microsoft.Maui.Controls.View" Index="0" FrameworkAlternate="net-maui-10.0" />
+        <Parameter Name="view" Type="Microsoft.Maui.Controls.View" Index="0" FrameworkAlternate="net-maui-10.0;net-maui-11.0" />
       </Parameters>
       <Docs>
         <param name="view">To be added.</param>
@@ -136,6 +141,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -168,6 +174,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Layouts.AbsoluteLayoutFlags</ReturnType>
@@ -194,6 +201,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
@@ -215,6 +223,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -246,6 +255,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
@@ -270,6 +280,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.IPlatformElementConfiguration&lt;T,Microsoft.Maui.Controls.Compatibility.AbsoluteLayout&gt;</ReturnType>
@@ -302,6 +313,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -327,6 +339,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -354,9 +367,10 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-maui-10.0;net-maui-9.0">
+        <Attribute FrameworkAlternate="net-maui-10.0;net-maui-11.0;net-maui-9.0">
           <AttributeName Language="C#">[System.Obsolete("Use MeasureOverride instead")]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Obsolete("Use MeasureOverride instead")&gt;]</AttributeName>
         </Attribute>
@@ -388,6 +402,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -415,6 +430,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

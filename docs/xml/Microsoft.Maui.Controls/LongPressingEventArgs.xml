@@ -1,0 +1,104 @@
+<Type Name="LongPressingEventArgs" FullName="Microsoft.Maui.Controls.LongPressingEventArgs">
+  <TypeSignature Language="C#" Value="public class LongPressingEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LongPressingEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.LongPressingEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class LongPressingEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LongPressingEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type LongPressingEventArgs = class&#xA;    inherit EventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Event arguments for the <see cref="E:Microsoft.Maui.Controls.LongPressGestureRecognizer.LongPressing" /> event.
+            Provides real-time state updates during the gesture (primarily on iOS and Mac Catalyst).
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LongPressingEventArgs (Microsoft.Maui.GestureStatus status);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Maui.GestureStatus status) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.LongPressingEventArgs.#ctor(Microsoft.Maui.GestureStatus)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (status As GestureStatus)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LongPressingEventArgs(Microsoft::Maui::GestureStatus status);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.Controls.LongPressingEventArgs : Microsoft.Maui.GestureStatus -&gt; Microsoft.Maui.Controls.LongPressingEventArgs" Usage="new Microsoft.Maui.Controls.LongPressingEventArgs status" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="status" Type="Microsoft.Maui.GestureStatus" />
+      </Parameters>
+      <Docs>
+        <param name="status">The current status of the gesture.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.LongPressingEventArgs" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPosition">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.Maui.Graphics.Point? GetPosition (Microsoft.Maui.Controls.Element? relativeTo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Nullable`1&lt;valuetype Microsoft.Maui.Graphics.Point&gt; GetPosition(class Microsoft.Maui.Controls.Element relativeTo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.LongPressingEventArgs.GetPosition(Microsoft.Maui.Controls.Element)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPosition (relativeTo As Element) As Nullable(Of Point)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Nullable&lt;Microsoft::Maui::Graphics::Point&gt; GetPosition(Microsoft::Maui::Controls::Element ^ relativeTo);" />
+      <MemberSignature Language="F#" Value="abstract member GetPosition : Microsoft.Maui.Controls.Element -&gt; Nullable&lt;Microsoft.Maui.Graphics.Point&gt;&#xA;override this.GetPosition : Microsoft.Maui.Controls.Element -&gt; Nullable&lt;Microsoft.Maui.Graphics.Point&gt;" Usage="longPressingEventArgs.GetPosition relativeTo" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Microsoft.Maui.Graphics.Point&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="relativeTo" Type="Microsoft.Maui.Controls.Element" />
+      </Parameters>
+      <Docs>
+        <param name="relativeTo">The element to get the position relative to. Pass null to get the position relative to the containing window.</param>
+        <summary>
+            Gets the current position of the touch, relative to the specified element.
+            </summary>
+        <returns>The position of the touch relative to the specified element, or null if the position cannot be determined.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.GestureStatus Status { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.GestureStatus Status" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.LongPressingEventArgs.Status" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As GestureStatus" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::GestureStatus Status { Microsoft::Maui::GestureStatus get(); };" />
+      <MemberSignature Language="F#" Value="member this.Status : Microsoft.Maui.GestureStatus" Usage="Microsoft.Maui.Controls.LongPressingEventArgs.Status" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.GestureStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the current status of the gesture (Started, Running, Completed, or Canceled).
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
