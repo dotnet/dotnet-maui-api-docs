@@ -10,6 +10,7 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>9.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.EventArgs</BaseTypeName>
@@ -38,13 +39,89 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Obsolete("Use the constructor with keys and resolver to avoid resolving lazy resources.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use the constructor with keys and resolver to avoid resolving lazy resources.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="values" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;" />
       </Parameters>
       <Docs>
         <param name="values">The changed resource values.</param>
         <summary>Creates a new <see cref="T:Microsoft.Maui.Controls.Internals.ResourcesChangedEventArgs" /> with the specified values.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ResourcesChangedEventArgs (System.Collections.Generic.IEnumerable&lt;string&gt; keys, Func&lt;string,object&gt; resolver);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;string&gt; keys, class System.Func`2&lt;string, object&gt; resolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Internals.ResourcesChangedEventArgs.#ctor(System.Collections.Generic.IEnumerable{System.String},System.Func{System.String,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (keys As IEnumerable(Of String), resolver As Func(Of String, Object))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourcesChangedEventArgs(System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ keys, Func&lt;System::String ^, System::Object ^&gt; ^ resolver);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.Controls.Internals.ResourcesChangedEventArgs : seq&lt;string&gt; * Func&lt;string, obj&gt; -&gt; Microsoft.Maui.Controls.Internals.ResourcesChangedEventArgs" Usage="new Microsoft.Maui.Controls.Internals.ResourcesChangedEventArgs (keys, resolver)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="keys" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="0" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="resolver" Type="System.Func&lt;System.String,System.Object&gt;" Index="1" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="keys">The changed resource keys.</param>
+        <param name="resolver">Function to resolve a value by key (called on-demand).</param>
+        <summary>Creates a new <see cref="T:Microsoft.Maui.Controls.Internals.ResourcesChangedEventArgs" /> with the specified keys and resolver.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Keys">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;string&gt; Keys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; Keys" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Internals.ResourcesChangedEventArgs.Keys" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As IEnumerable(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ Keys { System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keys : seq&lt;string&gt;" Usage="Microsoft.Maui.Controls.Internals.ResourcesChangedEventArgs.Keys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the changed resource keys.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveValue">
+      <MemberSignature Language="C#" Value="public object ResolveValue (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object ResolveValue(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Internals.ResourcesChangedEventArgs.ResolveValue(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResolveValue (key As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ResolveValue(System::String ^ key);" />
+      <MemberSignature Language="F#" Value="member this.ResolveValue : string -&gt; obj" Usage="resourcesChangedEventArgs.ResolveValue key" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="key">The resource key.</param>
+        <summary>Resolves a single resource value by key.</summary>
+        <returns>The resolved value, or null if not found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,6 +137,7 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.Internals.ResourcesChangedEventArgs</ReturnType>
@@ -81,12 +159,13 @@
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the changed resource values.</summary>
+        <summary>Gets the changed resource values. Enumerating this will resolve lazy resources.</summary>
         <value>For internal use by the Microsoft.Maui.Controls platform.</value>
         <remarks>To be added.</remarks>
       </Docs>

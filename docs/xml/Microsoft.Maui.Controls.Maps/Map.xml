@@ -10,6 +10,7 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>9.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Maui.Controls.View</BaseTypeName>
@@ -58,6 +59,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -79,6 +81,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="region" Type="Microsoft.Maui.Maps.MapSpan" />
@@ -89,6 +92,37 @@
             Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.Maps.Map" /> class with a region.
             </summary>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClusterClicked">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Controls.Maps.ClusterClickedEventArgs&gt;? ClusterClicked;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.Maps.ClusterClickedEventArgs&gt; ClusterClicked" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.Maps.Map.ClusterClicked" />
+      <MemberSignature Language="VB.NET" Value="Public Event ClusterClicked As EventHandler(Of ClusterClickedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Controls::Maps::ClusterClickedEventArgs ^&gt; ^ ClusterClicked;" />
+      <MemberSignature Language="F#" Value="member this.ClusterClicked : EventHandler&lt;Microsoft.Maui.Controls.Maps.ClusterClickedEventArgs&gt; " Usage="member this.ClusterClicked : System.EventHandler&lt;Microsoft.Maui.Controls.Maps.ClusterClickedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.Maps.ClusterClickedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Occurs when a pin cluster is clicked/tapped.
+            </summary>
+        <remarks>
+            This event only fires when <see cref="P:Microsoft.Maui.Controls.Maps.Map.IsClusteringEnabled" /> is set to true.
+            The event provides information about the cluster including the pins it contains.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -106,6 +140,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerator&lt;Microsoft.Maui.Maps.IMapPin&gt;</ReturnType>
@@ -116,6 +151,54 @@
             Returns an enumarator of all the pins that are currently added to the map.
             </summary>
         <returns>An instance of <see cref="T:System.Collections.Generic.IEnumerator`1" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsClusteringEnabled">
+      <MemberSignature Language="C#" Value="public bool IsClusteringEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsClusteringEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Maps.Map.IsClusteringEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsClusteringEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsClusteringEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsClusteringEnabled : bool with get, set" Usage="Microsoft.Maui.Controls.Maps.Map.IsClusteringEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value that indicates if pin clustering is enabled. Default value is <see langword="false" />.
+            This is a bindable property.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            When enabled, pins that are close together will be grouped into clusters.
+            As the user zooms in, clusters will expand to show individual pins.
+            Use <see cref="P:Microsoft.Maui.Controls.Maps.Pin.ClusteringIdentifier" /> to control which pins cluster together.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsClusteringEnabledProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty IsClusteringEnabledProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty IsClusteringEnabledProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Maps.Map.IsClusteringEnabledProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsClusteringEnabledProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ IsClusteringEnabledProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsClusteringEnabledProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Maps.Map.IsClusteringEnabledProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Maps.Map.IsClusteringEnabled" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,6 +214,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -156,6 +240,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
@@ -177,6 +262,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -202,6 +288,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
@@ -223,6 +310,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -248,6 +336,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
@@ -269,6 +358,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -294,6 +384,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
@@ -315,6 +406,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerable</ReturnType>
@@ -340,6 +432,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
@@ -361,6 +454,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.DataTemplate</ReturnType>
@@ -386,6 +480,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
@@ -407,6 +502,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.DataTemplateSelector</ReturnType>
@@ -432,6 +528,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
@@ -439,6 +536,39 @@
       <Docs>
         <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Maps.Map.ItemTemplateSelector" />.</summary>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastUserLocation">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Devices.Sensors.Location? LastUserLocation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Devices.Sensors.Location LastUserLocation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Maps.Map.LastUserLocation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastUserLocation As Location" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Devices::Sensors::Location ^ LastUserLocation { Microsoft::Maui::Devices::Sensors::Location ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastUserLocation : Microsoft.Maui.Devices.Sensors.Location" Usage="Microsoft.Maui.Controls.Maps.Map.LastUserLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Devices.Sensors.Location</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the last known user location from the map, or null if not available.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            This property requires <see cref="P:Microsoft.Maui.Controls.Maps.Map.IsShowingUser" /> to be set to true
+            and location permissions to be granted. The location is updated as the
+            user moves and the map receives location updates.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="MapClicked">
@@ -453,6 +583,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -482,6 +613,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Controls.Maps.MapElement&gt;</ReturnType>
@@ -491,6 +623,102 @@
             Gets the elements (pins, polygons, polylines, etc.) currently added to this map.
             </summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapLongClicked">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Controls.Maps.MapClickedEventArgs&gt;? MapLongClicked;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.Maps.MapClickedEventArgs&gt; MapLongClicked" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.Maps.Map.MapLongClicked" />
+      <MemberSignature Language="VB.NET" Value="Public Event MapLongClicked As EventHandler(Of MapClickedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Controls::Maps::MapClickedEventArgs ^&gt; ^ MapLongClicked;" />
+      <MemberSignature Language="F#" Value="member this.MapLongClicked : EventHandler&lt;Microsoft.Maui.Controls.Maps.MapClickedEventArgs&gt; " Usage="member this.MapLongClicked : System.EventHandler&lt;Microsoft.Maui.Controls.Maps.MapClickedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.Maps.MapClickedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Occurs when the user long-presses/holds on the map control.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapStyle">
+      <MemberSignature Language="C#" Value="public string? MapStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MapStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Maps.Map.MapStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property MapStyle As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MapStyle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MapStyle : string with get, set" Usage="Microsoft.Maui.Controls.Maps.Map.MapStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.UnsupportedOSPlatform("ios")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.UnsupportedOSPlatform("ios")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.UnsupportedOSPlatform("maccatalyst")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.UnsupportedOSPlatform("maccatalyst")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.UnsupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.UnsupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the custom map style as a JSON string.
+            This is a bindable property.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            This property is only supported on Android where it accepts a Google Maps style JSON string
+            generated from the Google Maps Styling Wizard (https://mapstyle.withgoogle.com/).
+            On iOS, MacCatalyst, and Windows this property has no effect as the native map controls
+            do not support custom JSON styling.
+            Set to <see langword="null" /> to revert to the default map style.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapStyleProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty MapStyleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty MapStyleProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Maps.Map.MapStyleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MapStyleProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ MapStyleProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MapStyleProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Maps.Map.MapStyleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Maps.Map.MapStyle" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -506,6 +734,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Maps.MapType</ReturnType>
@@ -531,6 +760,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
@@ -555,6 +785,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -565,6 +796,36 @@
       <Docs>
         <param name="location">To be added.</param>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Maps.IMap.ClusterClicked">
+      <MemberSignature Language="C#" Value="bool IMap.ClusterClicked (System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.Maps.IMapPin&gt; pins, Microsoft.Maui.Devices.Sensors.Location location);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Maui.Maps.IMap.ClusterClicked(class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Maui.Maps.IMapPin&gt; pins, class Microsoft.Maui.Devices.Sensors.Location location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Maps.Map.Microsoft#Maui#Maps#IMap#ClusterClicked(System.Collections.Generic.IReadOnlyList{Microsoft.Maui.Maps.IMapPin},Microsoft.Maui.Devices.Sensors.Location)" />
+      <MemberSignature Language="VB.NET" Value="Function ClusterClicked (pins As IReadOnlyList(Of IMapPin), location As Location) As Boolean Implements IMap.ClusterClicked" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool Microsoft.Maui.Maps.IMap.ClusterClicked(System::Collections::Generic::IReadOnlyList&lt;Microsoft::Maui::Maps::IMapPin ^&gt; ^ pins, Microsoft::Maui::Devices::Sensors::Location ^ location) = Microsoft::Maui::Maps::IMap::ClusterClicked;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Maps.IMap.ClusterClicked : System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.Maps.IMapPin&gt; * Microsoft.Maui.Devices.Sensors.Location -&gt; bool&#xA;override this.Microsoft.Maui.Maps.IMap.ClusterClicked : System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.Maps.IMapPin&gt; * Microsoft.Maui.Devices.Sensors.Location -&gt; bool" Usage="map.Microsoft.Maui.Maps.IMap.ClusterClicked (pins, location)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Maps.IMap.ClusterClicked(System.Collections.Generic.IReadOnlyList{Microsoft.Maui.Maps.IMapPin},Microsoft.Maui.Devices.Sensors.Location)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pins" Type="System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.Maps.IMapPin&gt;" Index="0" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="location" Type="Microsoft.Maui.Devices.Sensors.Location" Index="1" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="pins">To be added.</param>
+        <param name="location">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -583,6 +844,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Maps.IMapElement&gt;</ReturnType>
@@ -590,6 +852,146 @@
       <Docs>
         <summary>To be added.</summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Maps.IMap.HideInfoWindow">
+      <MemberSignature Language="C#" Value="void IMap.HideInfoWindow (Microsoft.Maui.Maps.IMapPin pin);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.Maps.IMap.HideInfoWindow(class Microsoft.Maui.Maps.IMapPin pin) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Maps.Map.Microsoft#Maui#Maps#IMap#HideInfoWindow(Microsoft.Maui.Maps.IMapPin)" />
+      <MemberSignature Language="VB.NET" Value="Sub HideInfoWindow (pin As IMapPin) Implements IMap.HideInfoWindow" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.Maps.IMap.HideInfoWindow(Microsoft::Maui::Maps::IMapPin ^ pin) = Microsoft::Maui::Maps::IMap::HideInfoWindow;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Maps.IMap.HideInfoWindow : Microsoft.Maui.Maps.IMapPin -&gt; unit&#xA;override this.Microsoft.Maui.Maps.IMap.HideInfoWindow : Microsoft.Maui.Maps.IMapPin -&gt; unit" Usage="map.Microsoft.Maui.Maps.IMap.HideInfoWindow pin" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Maps.IMap.HideInfoWindow(Microsoft.Maui.Maps.IMapPin)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pin" Type="Microsoft.Maui.Maps.IMapPin" Index="0" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="pin">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Maps.IMap.LastUserLocation">
+      <MemberSignature Language="C#" Value="Microsoft.Maui.Devices.Sensors.Location? Microsoft.Maui.Maps.IMap.LastUserLocation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Devices.Sensors.Location Microsoft.Maui.Maps.IMap.LastUserLocation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Maps.Map.Microsoft#Maui#Maps#IMap#LastUserLocation" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property LastUserLocation As Location Implements IMap.LastUserLocation" />
+      <MemberSignature Language="C++ CLI" Value="property Microsoft::Maui::Devices::Sensors::Location ^ Microsoft::Maui::Maps::IMap::LastUserLocation { Microsoft::Maui::Devices::Sensors::Location ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.Maps.IMap.LastUserLocation : Microsoft.Maui.Devices.Sensors.Location" Usage="Microsoft.Maui.Maps.IMap.LastUserLocation" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.Maps.IMap.LastUserLocation</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Devices.Sensors.Location</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Maps.IMap.LongClicked">
+      <MemberSignature Language="C#" Value="void IMap.LongClicked (Microsoft.Maui.Devices.Sensors.Location location);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.Maps.IMap.LongClicked(class Microsoft.Maui.Devices.Sensors.Location location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Maps.Map.Microsoft#Maui#Maps#IMap#LongClicked(Microsoft.Maui.Devices.Sensors.Location)" />
+      <MemberSignature Language="VB.NET" Value="Sub LongClicked (location As Location) Implements IMap.LongClicked" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.Maps.IMap.LongClicked(Microsoft::Maui::Devices::Sensors::Location ^ location) = Microsoft::Maui::Maps::IMap::LongClicked;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Maps.IMap.LongClicked : Microsoft.Maui.Devices.Sensors.Location -&gt; unit&#xA;override this.Microsoft.Maui.Maps.IMap.LongClicked : Microsoft.Maui.Devices.Sensors.Location -&gt; unit" Usage="map.Microsoft.Maui.Maps.IMap.LongClicked location" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Maps.IMap.LongClicked(Microsoft.Maui.Devices.Sensors.Location)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="Microsoft.Maui.Devices.Sensors.Location" Index="0" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="location">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Maps.IMap.MoveToRegion">
+      <MemberSignature Language="C#" Value="void IMap.MoveToRegion (Microsoft.Maui.Maps.MapSpan region);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.Maps.IMap.MoveToRegion(class Microsoft.Maui.Maps.MapSpan region) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Maps.Map.Microsoft#Maui#Maps#IMap#MoveToRegion(Microsoft.Maui.Maps.MapSpan)" />
+      <MemberSignature Language="VB.NET" Value="Sub MoveToRegion (region As MapSpan) Implements IMap.MoveToRegion" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.Maps.IMap.MoveToRegion(Microsoft::Maui::Maps::MapSpan ^ region) = Microsoft::Maui::Maps::IMap::MoveToRegion;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Maps.IMap.MoveToRegion : Microsoft.Maui.Maps.MapSpan -&gt; unit&#xA;override this.Microsoft.Maui.Maps.IMap.MoveToRegion : Microsoft.Maui.Maps.MapSpan -&gt; unit" Usage="map.Microsoft.Maui.Maps.IMap.MoveToRegion region" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Maps.IMap.MoveToRegion(Microsoft.Maui.Maps.MapSpan)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="region" Type="Microsoft.Maui.Maps.MapSpan" Index="0" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="region">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Maps.IMap.MoveToRegion">
+      <MemberSignature Language="C#" Value="void IMap.MoveToRegion (Microsoft.Maui.Maps.MapSpan region, bool animated);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.Maps.IMap.MoveToRegion(class Microsoft.Maui.Maps.MapSpan region, bool animated) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Maps.Map.Microsoft#Maui#Maps#IMap#MoveToRegion(Microsoft.Maui.Maps.MapSpan,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Sub MoveToRegion (region As MapSpan, animated As Boolean) Implements IMap.MoveToRegion" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.Maps.IMap.MoveToRegion(Microsoft::Maui::Maps::MapSpan ^ region, bool animated) = Microsoft::Maui::Maps::IMap::MoveToRegion;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Maps.IMap.MoveToRegion : Microsoft.Maui.Maps.MapSpan * bool -&gt; unit&#xA;override this.Microsoft.Maui.Maps.IMap.MoveToRegion : Microsoft.Maui.Maps.MapSpan * bool -&gt; unit" Usage="map.Microsoft.Maui.Maps.IMap.MoveToRegion (region, animated)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Maps.IMap.MoveToRegion(Microsoft.Maui.Maps.MapSpan,System.Boolean)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="region" Type="Microsoft.Maui.Maps.MapSpan" Index="0" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="animated" Type="System.Boolean" Index="1" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="region">To be added.</param>
+        <param name="animated">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -608,6 +1010,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Maps.IMapPin&gt;</ReturnType>
@@ -615,6 +1018,60 @@
       <Docs>
         <summary>To be added.</summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Maps.IMap.ShowInfoWindow">
+      <MemberSignature Language="C#" Value="void IMap.ShowInfoWindow (Microsoft.Maui.Maps.IMapPin pin);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.Maps.IMap.ShowInfoWindow(class Microsoft.Maui.Maps.IMapPin pin) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Maps.Map.Microsoft#Maui#Maps#IMap#ShowInfoWindow(Microsoft.Maui.Maps.IMapPin)" />
+      <MemberSignature Language="VB.NET" Value="Sub ShowInfoWindow (pin As IMapPin) Implements IMap.ShowInfoWindow" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.Maps.IMap.ShowInfoWindow(Microsoft::Maui::Maps::IMapPin ^ pin) = Microsoft::Maui::Maps::IMap::ShowInfoWindow;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Maps.IMap.ShowInfoWindow : Microsoft.Maui.Maps.IMapPin -&gt; unit&#xA;override this.Microsoft.Maui.Maps.IMap.ShowInfoWindow : Microsoft.Maui.Maps.IMapPin -&gt; unit" Usage="map.Microsoft.Maui.Maps.IMap.ShowInfoWindow pin" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Maps.IMap.ShowInfoWindow(Microsoft.Maui.Maps.IMapPin)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pin" Type="Microsoft.Maui.Maps.IMapPin" Index="0" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="pin">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.Maps.IMap.UserLocationUpdated">
+      <MemberSignature Language="C#" Value="void IMap.UserLocationUpdated (Microsoft.Maui.Devices.Sensors.Location location);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Maui.Maps.IMap.UserLocationUpdated(class Microsoft.Maui.Devices.Sensors.Location location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Maps.Map.Microsoft#Maui#Maps#IMap#UserLocationUpdated(Microsoft.Maui.Devices.Sensors.Location)" />
+      <MemberSignature Language="VB.NET" Value="Sub UserLocationUpdated (location As Location) Implements IMap.UserLocationUpdated" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.Maui.Maps.IMap.UserLocationUpdated(Microsoft::Maui::Devices::Sensors::Location ^ location) = Microsoft::Maui::Maps::IMap::UserLocationUpdated;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Maui.Maps.IMap.UserLocationUpdated : Microsoft.Maui.Devices.Sensors.Location -&gt; unit&#xA;override this.Microsoft.Maui.Maps.IMap.UserLocationUpdated : Microsoft.Maui.Devices.Sensors.Location -&gt; unit" Usage="map.Microsoft.Maui.Maps.IMap.UserLocationUpdated location" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.Maps.IMap.UserLocationUpdated(Microsoft.Maui.Devices.Sensors.Location)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="Microsoft.Maui.Devices.Sensors.Location" Index="0" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="location">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -633,6 +1090,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -651,19 +1109,23 @@
     </Member>
     <Member MemberName="MoveToRegion">
       <MemberSignature Language="C#" Value="public void MoveToRegion (Microsoft.Maui.Maps.MapSpan mapSpan);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MoveToRegion(class Microsoft.Maui.Maps.MapSpan mapSpan) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MoveToRegion(class Microsoft.Maui.Maps.MapSpan mapSpan) cil managed" FrameworkAlternate="net-maui-10.0;net-maui-8.0;net-maui-9.0" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Maps.Map.MoveToRegion(Microsoft.Maui.Maps.MapSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub MoveToRegion (mapSpan As MapSpan)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MoveToRegion(Microsoft::Maui::Maps::MapSpan ^ mapSpan);" />
-      <MemberSignature Language="F#" Value="abstract member MoveToRegion : Microsoft.Maui.Maps.MapSpan -&gt; unit&#xA;override this.MoveToRegion : Microsoft.Maui.Maps.MapSpan -&gt; unit" Usage="map.MoveToRegion mapSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MoveToRegion(Microsoft::Maui::Maps::MapSpan ^ mapSpan);" FrameworkAlternate="net-maui-10.0;net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="F#" Value="abstract member MoveToRegion : Microsoft.Maui.Maps.MapSpan -&gt; unit&#xA;override this.MoveToRegion : Microsoft.Maui.Maps.MapSpan -&gt; unit" Usage="map.MoveToRegion mapSpan" FrameworkAlternate="net-maui-10.0;net-maui-8.0;net-maui-9.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MoveToRegion(class Microsoft.Maui.Maps.MapSpan mapSpan) cil managed" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveToRegion(Microsoft::Maui::Maps::MapSpan ^ mapSpan);" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="F#" Value="member this.MoveToRegion : Microsoft.Maui.Maps.MapSpan -&gt; unit" Usage="map.MoveToRegion mapSpan" FrameworkAlternate="net-maui-11.0" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Maui.Maps.IMap.MoveToRegion(Microsoft.Maui.Maps.MapSpan)</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-maui-10.0;net-maui-8.0;net-maui-9.0">M:Microsoft.Maui.Maps.IMap.MoveToRegion(Microsoft.Maui.Maps.MapSpan)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -675,6 +1137,35 @@
         <param name="mapSpan">A <see cref="T:Microsoft.Maui.Maps.MapSpan" /> object containing details on what region should be shown.</param>
         <summary>
             Adjusts the viewport of the map control to view the specified region.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="mapSpan" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveToRegion">
+      <MemberSignature Language="C#" Value="public void MoveToRegion (Microsoft.Maui.Maps.MapSpan mapSpan, bool animated);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MoveToRegion(class Microsoft.Maui.Maps.MapSpan mapSpan, bool animated) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Maps.Map.MoveToRegion(Microsoft.Maui.Maps.MapSpan,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MoveToRegion (mapSpan As MapSpan, animated As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveToRegion(Microsoft::Maui::Maps::MapSpan ^ mapSpan, bool animated);" />
+      <MemberSignature Language="F#" Value="member this.MoveToRegion : Microsoft.Maui.Maps.MapSpan * bool -&gt; unit" Usage="map.MoveToRegion (mapSpan, animated)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mapSpan" Type="Microsoft.Maui.Maps.MapSpan" Index="0" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="animated" Type="System.Boolean" Index="1" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="mapSpan">A <see cref="T:Microsoft.Maui.Maps.MapSpan" /> object containing details on what region should be shown.</param>
+        <param name="animated">Whether the transition should be animated.</param>
+        <summary>
+            Adjusts the viewport of the map control to view the specified region, with control over animation.
             </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="mapSpan" /> is <see langword="null" />.</exception>
@@ -692,6 +1183,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -716,6 +1208,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Controls.Maps.Pin&gt;</ReturnType>
@@ -725,6 +1218,56 @@
             Gets the pins currently added to this map.
             </summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Region">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Maps.MapSpan? Region { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Maps.MapSpan Region" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Maps.Map.Region" />
+      <MemberSignature Language="VB.NET" Value="Public Property Region As MapSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Maps::MapSpan ^ Region { Microsoft::Maui::Maps::MapSpan ^ get(); void set(Microsoft::Maui::Maps::MapSpan ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Region : Microsoft.Maui.Maps.MapSpan with get, set" Usage="Microsoft.Maui.Controls.Maps.Map.Region" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Maps.MapSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the region displayed by the map. Setting this property moves the map to the specified region.
+            This is a bindable property.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegionProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty RegionProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty RegionProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Maps.Map.RegionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RegionProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ RegionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable RegionProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Maps.Map.RegionProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.Maps.Map.Region" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -743,6 +1286,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
@@ -752,6 +1296,38 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserLocationChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Maui.Controls.Maps.UserLocationChangedEventArgs&gt;? UserLocationChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.Maps.UserLocationChangedEventArgs&gt; UserLocationChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.Maps.Map.UserLocationChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event UserLocationChanged As EventHandler(Of UserLocationChangedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Maui::Controls::Maps::UserLocationChangedEventArgs ^&gt; ^ UserLocationChanged;" />
+      <MemberSignature Language="F#" Value="member this.UserLocationChanged : EventHandler&lt;Microsoft.Maui.Controls.Maps.UserLocationChangedEventArgs&gt; " Usage="member this.UserLocationChanged : System.EventHandler&lt;Microsoft.Maui.Controls.Maps.UserLocationChangedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.Maps.UserLocationChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Occurs when the user's location is updated on the map.
+            </summary>
+        <remarks>
+            This event fires when the platform map handler reports a location update.
+            The handler only sends updates when <see cref="P:Microsoft.Maui.Controls.Maps.Map.IsShowingUser" /> is set to true
+            and location permissions have been granted.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="VisibleRegion">
@@ -766,6 +1342,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Maps</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

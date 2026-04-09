@@ -10,6 +10,7 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>9.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -18,6 +19,10 @@
     <Attribute>
       <AttributeName Language="C#">[System.Flags]</AttributeName>
       <AttributeName Language="F#">[&lt;System.Flags&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-maui-11.0">
+      <AttributeName Language="C#">[System.Obsolete("XamlCompilationOptions is deprecated. Specify xaml inflator using msbuild metadata on MauiXaml items in your .csproj: &lt;MauiXaml Update="YourFile.xaml" Inflator="XamlC" /&gt;")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("XamlCompilationOptions is deprecated. Specify xaml inflator using msbuild metadata on MauiXaml items in your .csproj: &lt;MauiXaml Update="YourFile.xaml" Inflator="XamlC" /&gt;")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -37,6 +42,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.Xaml.XamlCompilationOptions</ReturnType>
@@ -58,6 +64,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.Xaml.XamlCompilationOptions</ReturnType>

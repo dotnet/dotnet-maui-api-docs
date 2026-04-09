@@ -8,6 +8,11 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls.SourceGen</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -18,9 +23,13 @@
       <AttributeName Language="C#">[System.AttributeUsage(System.AttributeTargets.Assembly, AllowMultiple=false)]</AttributeName>
       <AttributeName Language="F#">[&lt;System.AttributeUsage(System.AttributeTargets.Assembly, AllowMultiple=false)&gt;]</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="net-maui-10.0">
       <AttributeName Language="C#">[System.Runtime.Versioning.RequiresPreviewFeatures]</AttributeName>
       <AttributeName Language="F#">[&lt;System.Runtime.Versioning.RequiresPreviewFeatures&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-maui-11.0">
+      <AttributeName Language="C#">[System.Obsolete("Implicit xmlns declarations are now always enabled. The 'allow: false' opt-out is no longer honored. Remove this attribute; it will be removed in .NET 12.")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("Implicit xmlns declarations are now always enabled. The 'allow: false' opt-out is no longer honored. Remove this attribute; it will be removed in .NET 12.")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -38,9 +47,14 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.SourceGen</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="allow" Type="System.Boolean" />
+        <Parameter Name="allow" Type="System.Boolean" Index="0" FrameworkAlternate="net-maui-11.0" />
       </Parameters>
       <Docs>
         <param name="allow">To be added.</param>
@@ -59,6 +73,11 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.SourceGen</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

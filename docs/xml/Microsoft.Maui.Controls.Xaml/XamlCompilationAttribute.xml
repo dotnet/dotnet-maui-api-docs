@@ -10,6 +10,7 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>9.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -19,6 +20,10 @@
     <Attribute>
       <AttributeName Language="C#">[System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Module, Inherited=false)]</AttributeName>
       <AttributeName Language="F#">[&lt;System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Module, Inherited=false)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-maui-11.0">
+      <AttributeName Language="C#">[System.Obsolete("XamlCompilationAttribute is deprecated. Specify xaml inflator using msbuild metadata on MauiXaml items in your .csproj: &lt;MauiXaml Update="YourFile.xaml" Inflator="XamlC" /&gt;")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("XamlCompilationAttribute is deprecated. Specify xaml inflator using msbuild metadata on MauiXaml items in your .csproj: &lt;MauiXaml Update="YourFile.xaml" Inflator="XamlC" /&gt;")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -38,6 +43,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="xamlCompilationOptions" Type="Microsoft.Maui.Controls.Xaml.XamlCompilationOptions" />
@@ -60,6 +66,7 @@
         <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Maui.Controls.Xaml.XamlCompilationOptions</ReturnType>
