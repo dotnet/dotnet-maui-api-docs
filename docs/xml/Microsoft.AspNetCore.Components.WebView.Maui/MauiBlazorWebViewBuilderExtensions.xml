@@ -1,0 +1,133 @@
+<Type Name="MauiBlazorWebViewBuilderExtensions" FullName="Microsoft.AspNetCore.Components.WebView.Maui.MauiBlazorWebViewBuilderExtensions">
+  <TypeSignature Language="C#" Value="public static class MauiBlazorWebViewBuilderExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MauiBlazorWebViewBuilderExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.AspNetCore.Components.WebView.Maui.MauiBlazorWebViewBuilderExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module MauiBlazorWebViewBuilderExtensions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MauiBlazorWebViewBuilderExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type MauiBlazorWebViewBuilderExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.AspNetCore.Components.WebView.Maui</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Extension methods for <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="UsePlatformHandler">
+      <MemberSignature Language="C#" Value="public static Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder UsePlatformHandler (this Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder builder, Func&lt;IServiceProvider,Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler&gt; factory);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder UsePlatformHandler(class Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder builder, class System.Func`2&lt;class System.IServiceProvider, class Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler&gt; factory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.AspNetCore.Components.WebView.Maui.MauiBlazorWebViewBuilderExtensions.UsePlatformHandler(Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder,System.Func{System.IServiceProvider,Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function UsePlatformHandler (builder As IMauiBlazorWebViewBuilder, factory As Func(Of IServiceProvider, IBlazorWebViewHandler)) As IMauiBlazorWebViewBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::AspNetCore::Components::WebView::Maui::IMauiBlazorWebViewBuilder ^ UsePlatformHandler(Microsoft::AspNetCore::Components::WebView::Maui::IMauiBlazorWebViewBuilder ^ builder, Func&lt;IServiceProvider ^, Microsoft::AspNetCore::Components::WebView::Maui::IBlazorWebViewHandler ^&gt; ^ factory);" />
+      <MemberSignature Language="F#" Value="static member UsePlatformHandler : Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder * Func&lt;IServiceProvider, Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler&gt; -&gt; Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder" Usage="Microsoft.AspNetCore.Components.WebView.Maui.MauiBlazorWebViewBuilderExtensions.UsePlatformHandler (builder, factory)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.AspNetCore.Components.WebView.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder" RefType="this" />
+        <Parameter Name="factory" Type="System.Func&lt;System.IServiceProvider,Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="builder">The <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder" />.</param>
+        <param name="factory">A factory function that creates the handler instance.
+            The <see cref="T:System.IServiceProvider" /> argument is the MAUI handler factory's service provider
+            (see remarks).</param>
+        <summary>
+            Registers a custom handler for <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView" /> using a factory method,
+            replacing the default <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler" /> registered by
+            <see cref="M:Microsoft.Extensions.DependencyInjection.BlazorWebViewServiceCollectionExtensions.AddMauiBlazorWebView(Microsoft.Extensions.DependencyInjection.IServiceCollection)" />.
+            Use this overload for handlers that lack a public parameterless constructor or that
+            need to pull dependencies from the MAUI handler service container at construction time.
+            </summary>
+        <returns>The <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder" /> for chaining.</returns>
+        <remarks>
+            The <see cref="T:System.IServiceProvider" /> passed to <paramref name="factory" /> is the MAUI
+            handler factory's service provider, not the application's root <see cref="T:System.IServiceProvider" />.
+            It can resolve services that were registered on the handler collection (via
+            <c>ConfigureMauiHandlers</c>); it cannot resolve arbitrary services from the app's
+            <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" />. The same call-ordering rule as
+            <see cref="M:Microsoft.AspNetCore.Components.WebView.Maui.MauiBlazorWebViewBuilderExtensions.UsePlatformHandler``1(Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder)" /> applies — call this
+            method after <c>AddMauiBlazorWebView()</c> (and after any later re-invocations from
+            downstream libraries) so the custom handler is the last registration to win.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UsePlatformHandler&lt;THandler&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder UsePlatformHandler&lt;THandler&gt; (this Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder builder) where THandler : Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler, new();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder UsePlatformHandler&lt;.ctor (class Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler) THandler&gt;(class Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder builder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.AspNetCore.Components.WebView.Maui.MauiBlazorWebViewBuilderExtensions.UsePlatformHandler``1(Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function UsePlatformHandler(Of THandler As {IBlazorWebViewHandlerNew}) (builder As IMauiBlazorWebViewBuilder) As IMauiBlazorWebViewBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename THandler&gt;&#xA; where THandler : Microsoft::AspNetCore::Components::WebView::Maui::IBlazorWebViewHandlergcnew()[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::AspNetCore::Components::WebView::Maui::IMauiBlazorWebViewBuilder ^ UsePlatformHandler(Microsoft::AspNetCore::Components::WebView::Maui::IMauiBlazorWebViewBuilder ^ builder);" />
+      <MemberSignature Language="F#" Value="static member UsePlatformHandler : Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder -&gt; Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder (requires 'Handler :&gt; Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler and 'Handler : (new : unit -&gt; 'Handler))" Usage="Microsoft.AspNetCore.Components.WebView.Maui.MauiBlazorWebViewBuilderExtensions.UsePlatformHandler builder" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.AspNetCore.Components.WebView.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="THandler">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembers(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.PublicConstructors)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembers(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.PublicConstructors)&gt;]</AttributeName>
+            </Attribute>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <InterfaceName>Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="builder" Type="Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="THandler">The custom handler type to use for <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView" />.
+            The handler must implement <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler" /> and have a public
+            parameterless constructor.</typeparam>
+        <param name="builder">The <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder" />.</param>
+        <summary>
+            Registers a custom handler for <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView" />, replacing the default
+            <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler" /> registered by
+            <see cref="M:Microsoft.Extensions.DependencyInjection.BlazorWebViewServiceCollectionExtensions.AddMauiBlazorWebView(Microsoft.Extensions.DependencyInjection.IServiceCollection)" />.
+            This allows custom platform backends to provide their own BlazorWebView handler
+            while reusing all shared service registrations.
+            </summary>
+        <returns>The <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder" /> for chaining.</returns>
+        <remarks>
+            Replacement is "last-registration-wins" through the underlying MAUI handler collection.
+            Call this method <em>after</em><c>AddMauiBlazorWebView()</c> so the custom handler
+            overrides the default registration. If a downstream library calls
+            <c>AddMauiBlazorWebView()</c> again later in the pipeline, that subsequent default
+            registration will silently re-override this custom handler — call this method last,
+            after every other library's MAUI Blazor configuration, when composing multiple sources.
+            </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

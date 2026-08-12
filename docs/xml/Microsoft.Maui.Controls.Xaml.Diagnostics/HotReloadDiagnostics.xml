@@ -1,0 +1,165 @@
+<Type Name="HotReloadDiagnostics" FullName="Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadDiagnostics">
+  <TypeSignature Language="C#" Value="public static class HotReloadDiagnostics" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit HotReloadDiagnostics extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadDiagnostics" />
+  <TypeSignature Language="VB.NET" Value="Public Class HotReloadDiagnostics" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HotReloadDiagnostics abstract sealed" />
+  <TypeSignature Language="F#" Value="type HotReloadDiagnostics = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Provides diagnostic events for XAML Incremental Hot Reload operations.
+            Subscribe to these events to observe hot reload lifecycle in tooling or diagnostics overlays.
+            </summary>
+    <remarks>
+            Events are only raised when <see cref="P:Microsoft.Maui.RuntimeFeature.IsIncrementalHotReloadEnabled" />
+            is <see langword="true" />. All events are raised on the thread where the work occurs:
+            <see cref="E:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadDiagnostics.UpdateRequested" /> and <see cref="E:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadDiagnostics.UpdateSkipped" /> on the calling thread,
+            <see cref="E:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadDiagnostics.UpdateApplied" /> and <see cref="E:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadDiagnostics.UpdateFailed" /> on the main/UI thread.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CurrentVersion">
+      <MemberSignature Language="C#" Value="public static int CurrentVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property int32 CurrentVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadDiagnostics.CurrentVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CurrentVersion As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int CurrentVersion { int get(); };" />
+      <MemberSignature Language="F#" Value="static member CurrentVersion : int" Usage="Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadDiagnostics.CurrentVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current global version counter (monotonically increasing).</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateApplied">
+      <MemberSignature Language="C#" Value="public static event EventHandler&lt;Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadAppliedEventArgs&gt;? UpdateApplied;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadAppliedEventArgs&gt; UpdateApplied" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadDiagnostics.UpdateApplied" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Event UpdateApplied As EventHandler(Of HotReloadAppliedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler&lt;Microsoft::Maui::Controls::Xaml::Diagnostics::HotReloadAppliedEventArgs ^&gt; ^ UpdateApplied;" />
+      <MemberSignature Language="F#" Value="member this.UpdateApplied : EventHandler&lt;Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadAppliedEventArgs&gt; " Usage="member this.UpdateApplied : System.EventHandler&lt;Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadAppliedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadAppliedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Raised after UpdateComponent() has been applied to all live instances.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateFailed">
+      <MemberSignature Language="C#" Value="public static event EventHandler&lt;Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadErrorEventArgs&gt;? UpdateFailed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadErrorEventArgs&gt; UpdateFailed" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadDiagnostics.UpdateFailed" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Event UpdateFailed As EventHandler(Of HotReloadErrorEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler&lt;Microsoft::Maui::Controls::Xaml::Diagnostics::HotReloadErrorEventArgs ^&gt; ^ UpdateFailed;" />
+      <MemberSignature Language="F#" Value="member this.UpdateFailed : EventHandler&lt;Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadErrorEventArgs&gt; " Usage="member this.UpdateFailed : System.EventHandler&lt;Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadErrorEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadErrorEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Raised when UpdateComponent() fails on a specific instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateRequested">
+      <MemberSignature Language="C#" Value="public static event EventHandler&lt;Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadRequestedEventArgs&gt;? UpdateRequested;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadRequestedEventArgs&gt; UpdateRequested" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadDiagnostics.UpdateRequested" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Event UpdateRequested As EventHandler(Of HotReloadRequestedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler&lt;Microsoft::Maui::Controls::Xaml::Diagnostics::HotReloadRequestedEventArgs ^&gt; ^ UpdateRequested;" />
+      <MemberSignature Language="F#" Value="member this.UpdateRequested : EventHandler&lt;Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadRequestedEventArgs&gt; " Usage="member this.UpdateRequested : System.EventHandler&lt;Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadRequestedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadRequestedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Raised when the MUH receives an update request from the runtime.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateSkipped">
+      <MemberSignature Language="C#" Value="public static event EventHandler&lt;Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadSkippedEventArgs&gt;? UpdateSkipped;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadSkippedEventArgs&gt; UpdateSkipped" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadDiagnostics.UpdateSkipped" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Event UpdateSkipped As EventHandler(Of HotReloadSkippedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler&lt;Microsoft::Maui::Controls::Xaml::Diagnostics::HotReloadSkippedEventArgs ^&gt; ^ UpdateSkipped;" />
+      <MemberSignature Language="F#" Value="member this.UpdateSkipped : EventHandler&lt;Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadSkippedEventArgs&gt; " Usage="member this.UpdateSkipped : System.EventHandler&lt;Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadSkippedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadSkippedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Raised when an update was recognized but nothing was dispatched (no live instances to
+            patch), guaranteeing a terminal event for the request even when <see cref="E:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadDiagnostics.UpdateApplied" />
+            never fires. Raised synchronously on the calling thread.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

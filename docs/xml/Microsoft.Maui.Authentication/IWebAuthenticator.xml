@@ -49,11 +49,12 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.Net.Http.HttpRequestException">Windows: Thrown when a HTTP Request error occured.</exception>
         <exception cref="T:System.Exception">Windows: Thrown when a unexpected HTTP response was received.</exception>
-        <exception cref="T:System.Threading.Tasks.TaskCanceledException">Thrown when the user canceled the authentication flow.</exception>
         <exception cref="T:System.PlatformNotSupportedException">Windows: Thrown when called on Windows.</exception>
+        <exception cref="T:System.Threading.Tasks.TaskCanceledException">Thrown when the user canceled the authentication flow.</exception>
         <exception cref="T:Microsoft.Maui.ApplicationModel.FeatureNotSupportedException">iOS/macOS: Thrown when iOS version is less than 13 is used or macOS less than 13.1 is used.</exception>
         <exception cref="T:System.InvalidOperationException">
           <para>Android: Thrown when the no IntentFilter has been created for the callback URL.</para>
+          <para>Windows: Thrown when the callback URL is invalid, its protocol is not registered, the browser cannot be launched, or another app instance is already waiting for the callback scheme.</para>
         </exception>
       </Docs>
     </Member>
@@ -85,11 +86,12 @@
             </summary>
         <returns>A <see cref="T:Microsoft.Maui.Authentication.WebAuthenticatorResult" /> object with the results of this operation.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Threading.Tasks.TaskCanceledException">Thrown when the user canceled the authentication flow.</exception>
         <exception cref="T:System.PlatformNotSupportedException">Windows: Thrown when called on Windows.</exception>
+        <exception cref="T:System.Threading.Tasks.TaskCanceledException">Thrown when the user canceled the authentication flow.</exception>
         <exception cref="T:Microsoft.Maui.ApplicationModel.FeatureNotSupportedException">iOS/macOS: Thrown when iOS version is less than 13 is used or macOS less than 13.1 is used.</exception>
         <exception cref="T:System.InvalidOperationException">
           <para>Android: Thrown when the no IntentFilter has been created for the callback URL.</para>
+          <para>Windows: Thrown when the callback URL is invalid, its protocol is not registered, the browser cannot be launched, or another app instance is already waiting for the callback scheme.</para>
         </exception>
       </Docs>
     </Member>

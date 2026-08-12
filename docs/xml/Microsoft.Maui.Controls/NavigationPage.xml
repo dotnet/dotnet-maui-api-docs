@@ -94,6 +94,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="BackButtonAccessibilityLabelProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty BackButtonAccessibilityLabelProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty BackButtonAccessibilityLabelProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.NavigationPage.BackButtonAccessibilityLabelProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BackButtonAccessibilityLabelProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ BackButtonAccessibilityLabelProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BackButtonAccessibilityLabelProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.NavigationPage.BackButtonAccessibilityLabelProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for attached property <c>BackButtonAccessibilityLabel</c>.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="BackButtonTitleProperty">
       <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty BackButtonTitleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty BackButtonTitleProperty" />
@@ -319,6 +339,31 @@
       </ReturnValue>
       <Docs>
         <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.NavigationPage.CurrentPage" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBackButtonAccessibilityLabel">
+      <MemberSignature Language="C#" Value="public static string GetBackButtonAccessibilityLabel (Microsoft.Maui.Controls.BindableObject page);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetBackButtonAccessibilityLabel(class Microsoft.Maui.Controls.BindableObject page) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.NavigationPage.GetBackButtonAccessibilityLabel(Microsoft.Maui.Controls.BindableObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetBackButtonAccessibilityLabel (page As BindableObject) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetBackButtonAccessibilityLabel(Microsoft::Maui::Controls::BindableObject ^ page);" />
+      <MemberSignature Language="F#" Value="static member GetBackButtonAccessibilityLabel : Microsoft.Maui.Controls.BindableObject -&gt; string" Usage="Microsoft.Maui.Controls.NavigationPage.GetBackButtonAccessibilityLabel page" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="page" Type="Microsoft.Maui.Controls.BindableObject" Index="0" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="page">The <see cref="T:Microsoft.Maui.Controls.Page" /> whose back-button's accessibility label is being requested.</param>
+        <summary>Gets the accessibility label for the back button of the specified <paramref name="page" />.</summary>
+        <returns>The accessibility label read by screen readers for the back button, or <see langword="null" /> if not set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1273,6 +1318,32 @@
       </ReturnValue>
       <Docs>
         <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.NavigationPage.RootPage" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBackButtonAccessibilityLabel">
+      <MemberSignature Language="C#" Value="public static void SetBackButtonAccessibilityLabel (Microsoft.Maui.Controls.BindableObject page, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetBackButtonAccessibilityLabel(class Microsoft.Maui.Controls.BindableObject page, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.NavigationPage.SetBackButtonAccessibilityLabel(Microsoft.Maui.Controls.BindableObject,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetBackButtonAccessibilityLabel (page As BindableObject, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetBackButtonAccessibilityLabel(Microsoft::Maui::Controls::BindableObject ^ page, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetBackButtonAccessibilityLabel : Microsoft.Maui.Controls.BindableObject * string -&gt; unit" Usage="Microsoft.Maui.Controls.NavigationPage.SetBackButtonAccessibilityLabel (page, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="page" Type="Microsoft.Maui.Controls.BindableObject" Index="0" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="value" Type="System.String" Index="1" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="page">The page parameter.</param>
+        <param name="value">The accessibility label value to set.</param>
+        <summary>Sets the accessibility label for the back button of <paramref name="page" />, allowing the text read by screen readers to differ from the visible back button title.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

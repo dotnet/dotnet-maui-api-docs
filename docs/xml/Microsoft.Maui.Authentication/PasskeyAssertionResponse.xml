@@ -1,0 +1,108 @@
+<Type Name="PasskeyAssertionResponse" FullName="Microsoft.Maui.Authentication.PasskeyAssertionResponse">
+  <TypeSignature Language="C#" Value="public sealed class PasskeyAssertionResponse" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PasskeyAssertionResponse extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Authentication.PasskeyAssertionResponse" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PasskeyAssertionResponse" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PasskeyAssertionResponse sealed" />
+  <TypeSignature Language="F#" Value="type PasskeyAssertionResponse = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Represents the result of a passkey authentication. Call <see cref="M:Microsoft.Maui.Authentication.PasskeyAssertionResponse.ToString" /> to get the full WebAuthn
+            authentication response JSON to POST back to the relying-party server.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Authentication.PasskeyAssertionResponse.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Id : string" Usage="Microsoft.Maui.Authentication.PasskeyAssertionResponse.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the credential id (base64url) of the passkey used, i.e. the WebAuthn
+            <c>PublicKeyCredential.id</c>.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Authentication.PasskeyAssertionResponse.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="passkeyAssertionResponse.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the full WebAuthn authentication response JSON.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserHandle">
+      <MemberSignature Language="C#" Value="public string? UserHandle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UserHandle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Authentication.PasskeyAssertionResponse.UserHandle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserHandle As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserHandle { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserHandle : string" Usage="Microsoft.Maui.Authentication.PasskeyAssertionResponse.UserHandle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the user handle (base64url) the relying party set as <c>user.id</c> at registration, i.e. the
+            WebAuthn <c>response.userHandle</c>. Present for discoverable-credential ("username-less") sign-in;
+            may be <see langword="null" /> when the authenticator does not return one.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

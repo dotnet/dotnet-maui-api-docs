@@ -1,0 +1,57 @@
+<Type Name="IViewScreenshot" FullName="Microsoft.Maui.Media.IViewScreenshot">
+  <TypeSignature Language="C#" Value="public interface IViewScreenshot" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IViewScreenshot" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Media.IViewScreenshot" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IViewScreenshot" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IViewScreenshot" />
+  <TypeSignature Language="F#" Value="type IViewScreenshot = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Provides platform-agnostic view-level screenshot capture.
+            Third-party platform backends should implement this interface on their <see cref="T:Microsoft.Maui.Media.IScreenshot" /> implementation
+            to enable element-level screenshot capture.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CaptureViewAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Maui.Media.IScreenshotResult?&gt; CaptureViewAsync (object platformView);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Maui.Media.IScreenshotResult&gt; CaptureViewAsync(object platformView) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Media.IViewScreenshot.CaptureViewAsync(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CaptureViewAsync (platformView As Object) As Task(Of IScreenshotResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;Microsoft::Maui::Media::IScreenshotResult ^&gt; ^ CaptureViewAsync(System::Object ^ platformView);" />
+      <MemberSignature Language="F#" Value="abstract member CaptureViewAsync : obj -&gt; System.Threading.Tasks.Task&lt;Microsoft.Maui.Media.IScreenshotResult&gt;" Usage="iViewScreenshot.CaptureViewAsync platformView" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Maui.Media.IScreenshotResult&gt;</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 2 })]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 2 })&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformView" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="platformView">The platform-specific view object to capture.</param>
+        <summary>
+            Captures a screenshot of a platform view.
+            The implementation should cast <paramref name="platformView" /> to the appropriate platform type.
+            </summary>
+        <returns>An <see cref="T:Microsoft.Maui.Media.IScreenshotResult" /> with the captured screenshot, or <see langword="null" /> if capture is not supported for the given view type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

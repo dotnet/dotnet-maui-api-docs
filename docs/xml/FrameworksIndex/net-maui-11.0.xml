@@ -60,6 +60,8 @@
       <Member Id="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler.CreatePlatformView" />
       <Member Id="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler.MapHostPage(Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler,Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView)" />
       <Member Id="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler.MapRootComponents(Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler,Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView)" />
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler.Microsoft#AspNetCore#Components#WebView#Maui#IBlazorWebViewHandler#CreateFileProvider(System.String)" />
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler.Microsoft#AspNetCore#Components#WebView#Maui#IBlazorWebViewHandler#TryDispatchAsync(System.Action{System.IServiceProvider})" />
       <Member Id="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler.TryDispatchAsync(System.Action{System.IServiceProvider})" />
     </Type>
     <Type Name="Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView" Id="T:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView">
@@ -72,8 +74,16 @@
       <Member Id="P:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView.RootComponents" />
       <Member Id="P:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView.StartPath" />
     </Type>
+    <Type Name="Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler" Id="T:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler">
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler.CreateFileProvider(System.String)" />
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler.TryDispatchAsync(System.Action{System.IServiceProvider})" />
+    </Type>
     <Type Name="Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder" Id="T:Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder">
       <Member Id="P:Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder.Services" />
+    </Type>
+    <Type Name="Microsoft.AspNetCore.Components.WebView.Maui.MauiBlazorWebViewBuilderExtensions" Id="T:Microsoft.AspNetCore.Components.WebView.Maui.MauiBlazorWebViewBuilderExtensions">
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Maui.MauiBlazorWebViewBuilderExtensions.UsePlatformHandler(Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder,System.Func{System.IServiceProvider,Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler})" />
+      <Member Id="M:Microsoft.AspNetCore.Components.WebView.Maui.MauiBlazorWebViewBuilderExtensions.UsePlatformHandler``1(Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder)" />
     </Type>
     <Type Name="Microsoft.AspNetCore.Components.WebView.Maui.RootComponent" Id="T:Microsoft.AspNetCore.Components.WebView.Maui.RootComponent">
       <Member Id="M:Microsoft.AspNetCore.Components.WebView.Maui.RootComponent.#ctor" />
@@ -345,6 +355,10 @@
       <Member Id="P:Microsoft.Maui.HybridWebViewInvokeJavaScriptRequest.ParamValues" />
       <Member Id="P:Microsoft.Maui.HybridWebViewInvokeJavaScriptRequest.ReturnTypeJsonTypeInfo" />
     </Type>
+    <Type Name="Microsoft.Maui.HybridWebViewInvoker" Id="T:Microsoft.Maui.HybridWebViewInvoker">
+      <Member Id="M:Microsoft.Maui.HybridWebViewInvoker.#ctor(System.Object,System.Type)" />
+      <Member Id="M:Microsoft.Maui.HybridWebViewInvoker.InvokeMethodAsync(System.String,System.String[])" />
+    </Type>
     <Type Name="Microsoft.Maui.HybridWebViewRawMessage" Id="T:Microsoft.Maui.HybridWebViewRawMessage">
       <Member Id="M:Microsoft.Maui.HybridWebViewRawMessage.#ctor" />
       <Member Id="P:Microsoft.Maui.HybridWebViewRawMessage.Message" />
@@ -528,10 +542,12 @@
       <Member Id="M:Microsoft.Maui.IHybridWebView.RawMessageReceived(System.String)" />
       <Member Id="M:Microsoft.Maui.IHybridWebView.SendRawMessage(System.String)" />
       <Member Id="M:Microsoft.Maui.IHybridWebView.SetInvokeJavaScriptTarget``1(``0)" />
+      <Member Id="M:Microsoft.Maui.IHybridWebView.SetInvokeJavaScriptTarget``1(``0,System.Text.Json.Serialization.JsonSerializerContext)" />
       <Member Id="P:Microsoft.Maui.IHybridWebView.DefaultFile" />
       <Member Id="P:Microsoft.Maui.IHybridWebView.HybridRoot" />
       <Member Id="P:Microsoft.Maui.IHybridWebView.InvokeJavaScriptTarget" />
       <Member Id="P:Microsoft.Maui.IHybridWebView.InvokeJavaScriptType" />
+      <Member Id="P:Microsoft.Maui.IHybridWebView.Invoker" />
     </Type>
     <Type Name="Microsoft.Maui.IImage" Id="T:Microsoft.Maui.IImage">
       <Member Id="P:Microsoft.Maui.IImage.Aspect" />
@@ -822,6 +838,11 @@
       <Member Id="P:Microsoft.Maui.ISwitch.ThumbColor" />
       <Member Id="P:Microsoft.Maui.ISwitch.TrackColor" />
     </Type>
+    <Type Name="Microsoft.Maui.ITab" Id="T:Microsoft.Maui.ITab">
+      <Member Id="P:Microsoft.Maui.ITab.Icon" />
+      <Member Id="P:Microsoft.Maui.ITab.IsEnabled" />
+      <Member Id="P:Microsoft.Maui.ITab.Title" />
+    </Type>
     <Type Name="Microsoft.Maui.ITabbedView" Id="T:Microsoft.Maui.ITabbedView" />
     <Type Name="Microsoft.Maui.ItemDelegateList`1" Id="T:Microsoft.Maui.ItemDelegateList`1">
       <Member Id="M:Microsoft.Maui.ItemDelegateList`1.#ctor(Microsoft.Maui.IItemDelegate{`0})" />
@@ -1006,6 +1027,7 @@
       <Member Id="P:Microsoft.Maui.IWindow.MinimumHeight" />
       <Member Id="P:Microsoft.Maui.IWindow.MinimumWidth" />
       <Member Id="P:Microsoft.Maui.IWindow.Overlays" />
+      <Member Id="P:Microsoft.Maui.IWindow.StatusBarTheme" />
       <Member Id="P:Microsoft.Maui.IWindow.VisualDiagnosticsOverlay" />
       <Member Id="P:Microsoft.Maui.IWindow.Width" />
       <Member Id="P:Microsoft.Maui.IWindow.X" />
@@ -1203,6 +1225,7 @@
       <Member Id="M:Microsoft.Maui.SafeAreaEdges.ToString" />
       <Member Id="P:Microsoft.Maui.SafeAreaEdges.All" />
       <Member Id="P:Microsoft.Maui.SafeAreaEdges.Bottom" />
+      <Member Id="P:Microsoft.Maui.SafeAreaEdges.Container" />
       <Member Id="P:Microsoft.Maui.SafeAreaEdges.Default" />
       <Member Id="P:Microsoft.Maui.SafeAreaEdges.Left" />
       <Member Id="P:Microsoft.Maui.SafeAreaEdges.None" />
@@ -1292,6 +1315,11 @@
       <Member Id="P:Microsoft.Maui.SourceInfo.LineNumber" />
       <Member Id="P:Microsoft.Maui.SourceInfo.LinePosition" />
       <Member Id="P:Microsoft.Maui.SourceInfo.SourceUri" />
+    </Type>
+    <Type Name="Microsoft.Maui.StatusBarTheme" Id="T:Microsoft.Maui.StatusBarTheme">
+      <Member Id="F:Microsoft.Maui.StatusBarTheme.Dark" />
+      <Member Id="F:Microsoft.Maui.StatusBarTheme.Default" />
+      <Member Id="F:Microsoft.Maui.StatusBarTheme.Light" />
     </Type>
     <Type Name="Microsoft.Maui.StreamImageSourceService" Id="T:Microsoft.Maui.StreamImageSourceService">
       <Member Id="M:Microsoft.Maui.StreamImageSourceService.#ctor" />
@@ -1393,6 +1421,10 @@
       <Member Id="M:Microsoft.Maui.SwipeViewSwipeStarted.ToString" />
       <Member Id="P:Microsoft.Maui.SwipeViewSwipeStarted.EqualityContract" />
       <Member Id="P:Microsoft.Maui.SwipeViewSwipeStarted.SwipeDirection" />
+    </Type>
+    <Type Name="Microsoft.Maui.TabBarPlacement" Id="T:Microsoft.Maui.TabBarPlacement">
+      <Member Id="F:Microsoft.Maui.TabBarPlacement.Bottom" />
+      <Member Id="F:Microsoft.Maui.TabBarPlacement.Top" />
     </Type>
     <Type Name="Microsoft.Maui.TextAlignment" Id="T:Microsoft.Maui.TextAlignment">
       <Member Id="F:Microsoft.Maui.TextAlignment.Center" />
@@ -1796,6 +1828,11 @@
       <Member Id="M:Microsoft.Maui.ApplicationModel.IMap.TryOpenAsync(Microsoft.Maui.Devices.Sensors.Placemark,Microsoft.Maui.ApplicationModel.MapLaunchOptions)" />
       <Member Id="M:Microsoft.Maui.ApplicationModel.IMap.TryOpenAsync(System.Double,System.Double,Microsoft.Maui.ApplicationModel.MapLaunchOptions)" />
     </Type>
+    <Type Name="Microsoft.Maui.ApplicationModel.IPermissions" Id="T:Microsoft.Maui.ApplicationModel.IPermissions">
+      <Member Id="M:Microsoft.Maui.ApplicationModel.IPermissions.CheckStatusAsync``1" />
+      <Member Id="M:Microsoft.Maui.ApplicationModel.IPermissions.RequestAsync``1" />
+      <Member Id="M:Microsoft.Maui.ApplicationModel.IPermissions.ShouldShowRationale``1" />
+    </Type>
     <Type Name="Microsoft.Maui.ApplicationModel.IPlatformAppActions" Id="T:Microsoft.Maui.ApplicationModel.IPlatformAppActions" />
     <Type Name="Microsoft.Maui.ApplicationModel.IVersionTracking" Id="T:Microsoft.Maui.ApplicationModel.IVersionTracking">
       <Member Id="M:Microsoft.Maui.ApplicationModel.IVersionTracking.IsFirstLaunchForBuild(System.String)" />
@@ -1895,6 +1932,7 @@
       <Member Id="M:Microsoft.Maui.ApplicationModel.Permissions.CheckStatusAsync``1" />
       <Member Id="M:Microsoft.Maui.ApplicationModel.Permissions.RequestAsync``1" />
       <Member Id="M:Microsoft.Maui.ApplicationModel.Permissions.ShouldShowRationale``1" />
+      <Member Id="P:Microsoft.Maui.ApplicationModel.Permissions.Current" />
     </Type>
     <Type Name="Microsoft.Maui.ApplicationModel.Permissions/BasePermission" Id="T:Microsoft.Maui.ApplicationModel.Permissions.BasePermission">
       <Member Id="M:Microsoft.Maui.ApplicationModel.Permissions.BasePermission.#ctor" />
@@ -2194,6 +2232,11 @@
     <Type Name="Microsoft.Maui.Authentication.IAppleSignInAuthenticator" Id="T:Microsoft.Maui.Authentication.IAppleSignInAuthenticator">
       <Member Id="M:Microsoft.Maui.Authentication.IAppleSignInAuthenticator.AuthenticateAsync(Microsoft.Maui.Authentication.AppleSignInAuthenticator.Options)" />
     </Type>
+    <Type Name="Microsoft.Maui.Authentication.IPasskeys" Id="T:Microsoft.Maui.Authentication.IPasskeys">
+      <Member Id="M:Microsoft.Maui.Authentication.IPasskeys.AssertAsync(Microsoft.Maui.Authentication.PasskeyRequestOptions,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Maui.Authentication.IPasskeys.CreateAsync(Microsoft.Maui.Authentication.PasskeyCreationOptions,System.Threading.CancellationToken)" />
+      <Member Id="P:Microsoft.Maui.Authentication.IPasskeys.IsSupported" />
+    </Type>
     <Type Name="Microsoft.Maui.Authentication.IPlatformWebAuthenticatorCallback" Id="T:Microsoft.Maui.Authentication.IPlatformWebAuthenticatorCallback" />
     <Type Name="Microsoft.Maui.Authentication.IWebAuthenticator" Id="T:Microsoft.Maui.Authentication.IWebAuthenticator">
       <Member Id="M:Microsoft.Maui.Authentication.IWebAuthenticator.AuthenticateAsync(Microsoft.Maui.Authentication.WebAuthenticatorOptions)" />
@@ -2201,6 +2244,33 @@
     </Type>
     <Type Name="Microsoft.Maui.Authentication.IWebAuthenticatorResponseDecoder" Id="T:Microsoft.Maui.Authentication.IWebAuthenticatorResponseDecoder">
       <Member Id="M:Microsoft.Maui.Authentication.IWebAuthenticatorResponseDecoder.DecodeResponse(System.Uri)" />
+    </Type>
+    <Type Name="Microsoft.Maui.Authentication.PasskeyAssertionResponse" Id="T:Microsoft.Maui.Authentication.PasskeyAssertionResponse">
+      <Member Id="M:Microsoft.Maui.Authentication.PasskeyAssertionResponse.ToString" />
+      <Member Id="P:Microsoft.Maui.Authentication.PasskeyAssertionResponse.Id" />
+      <Member Id="P:Microsoft.Maui.Authentication.PasskeyAssertionResponse.UserHandle" />
+    </Type>
+    <Type Name="Microsoft.Maui.Authentication.PasskeyCreationOptions" Id="T:Microsoft.Maui.Authentication.PasskeyCreationOptions">
+      <Member Id="M:Microsoft.Maui.Authentication.PasskeyCreationOptions.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Maui.Authentication.PasskeyCreationOptions.ToString" />
+      <Member Id="P:Microsoft.Maui.Authentication.PasskeyCreationOptions.PreferImmediatelyAvailable" />
+    </Type>
+    <Type Name="Microsoft.Maui.Authentication.PasskeyCreationResponse" Id="T:Microsoft.Maui.Authentication.PasskeyCreationResponse">
+      <Member Id="M:Microsoft.Maui.Authentication.PasskeyCreationResponse.ToString" />
+      <Member Id="P:Microsoft.Maui.Authentication.PasskeyCreationResponse.Id" />
+    </Type>
+    <Type Name="Microsoft.Maui.Authentication.PasskeyRequestOptions" Id="T:Microsoft.Maui.Authentication.PasskeyRequestOptions">
+      <Member Id="M:Microsoft.Maui.Authentication.PasskeyRequestOptions.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Maui.Authentication.PasskeyRequestOptions.ToString" />
+      <Member Id="P:Microsoft.Maui.Authentication.PasskeyRequestOptions.PreferImmediatelyAvailable" />
+    </Type>
+    <Type Name="Microsoft.Maui.Authentication.Passkeys" Id="T:Microsoft.Maui.Authentication.Passkeys">
+      <Member Id="M:Microsoft.Maui.Authentication.Passkeys.AssertAsync(Microsoft.Maui.Authentication.PasskeyRequestOptions,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Maui.Authentication.Passkeys.AssertAsync(System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Maui.Authentication.Passkeys.CreateAsync(Microsoft.Maui.Authentication.PasskeyCreationOptions,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Maui.Authentication.Passkeys.CreateAsync(System.String,System.Threading.CancellationToken)" />
+      <Member Id="P:Microsoft.Maui.Authentication.Passkeys.Default" />
+      <Member Id="P:Microsoft.Maui.Authentication.Passkeys.IsSupported" />
     </Type>
     <Type Name="Microsoft.Maui.Authentication.WebAuthenticator" Id="T:Microsoft.Maui.Authentication.WebAuthenticator">
       <Member Id="M:Microsoft.Maui.Authentication.WebAuthenticator.AuthenticateAsync(Microsoft.Maui.Authentication.WebAuthenticatorOptions)" />
@@ -2402,6 +2472,7 @@
       <Member Id="M:Microsoft.Maui.Controls.AutomationProperties.SetName(Microsoft.Maui.Controls.BindableObject,System.String)" />
     </Type>
     <Type Name="Microsoft.Maui.Controls.BackButtonBehavior" Id="T:Microsoft.Maui.Controls.BackButtonBehavior">
+      <Member Id="F:Microsoft.Maui.Controls.BackButtonBehavior.AccessibilityLabelProperty" />
       <Member Id="F:Microsoft.Maui.Controls.BackButtonBehavior.CommandParameterProperty" />
       <Member Id="F:Microsoft.Maui.Controls.BackButtonBehavior.CommandProperty" />
       <Member Id="F:Microsoft.Maui.Controls.BackButtonBehavior.IconOverrideProperty" />
@@ -2409,6 +2480,7 @@
       <Member Id="F:Microsoft.Maui.Controls.BackButtonBehavior.IsVisibleProperty" />
       <Member Id="F:Microsoft.Maui.Controls.BackButtonBehavior.TextOverrideProperty" />
       <Member Id="M:Microsoft.Maui.Controls.BackButtonBehavior.#ctor" />
+      <Member Id="P:Microsoft.Maui.Controls.BackButtonBehavior.AccessibilityLabel" />
       <Member Id="P:Microsoft.Maui.Controls.BackButtonBehavior.Command" />
       <Member Id="P:Microsoft.Maui.Controls.BackButtonBehavior.CommandParameter" />
       <Member Id="P:Microsoft.Maui.Controls.BackButtonBehavior.IconOverride" />
@@ -2430,6 +2502,9 @@
     <Type Name="Microsoft.Maui.Controls.BaseShellItem" Id="T:Microsoft.Maui.Controls.BaseShellItem">
       <Member Id="E:Microsoft.Maui.Controls.BaseShellItem.Appearing" />
       <Member Id="E:Microsoft.Maui.Controls.BaseShellItem.Disappearing" />
+      <Member Id="F:Microsoft.Maui.Controls.BaseShellItem.BadgeColorProperty" />
+      <Member Id="F:Microsoft.Maui.Controls.BaseShellItem.BadgeTextColorProperty" />
+      <Member Id="F:Microsoft.Maui.Controls.BaseShellItem.BadgeTextProperty" />
       <Member Id="F:Microsoft.Maui.Controls.BaseShellItem.FlyoutIconProperty" />
       <Member Id="F:Microsoft.Maui.Controls.BaseShellItem.FlyoutItemIsVisibleProperty" />
       <Member Id="F:Microsoft.Maui.Controls.BaseShellItem.IconProperty" />
@@ -2442,6 +2517,9 @@
       <Member Id="M:Microsoft.Maui.Controls.BaseShellItem.OnAppearing" />
       <Member Id="M:Microsoft.Maui.Controls.BaseShellItem.OnDisappearing" />
       <Member Id="M:Microsoft.Maui.Controls.BaseShellItem.OnPropertyChanged(System.String)" />
+      <Member Id="P:Microsoft.Maui.Controls.BaseShellItem.BadgeColor" />
+      <Member Id="P:Microsoft.Maui.Controls.BaseShellItem.BadgeText" />
+      <Member Id="P:Microsoft.Maui.Controls.BaseShellItem.BadgeTextColor" />
       <Member Id="P:Microsoft.Maui.Controls.BaseShellItem.FlyoutIcon" />
       <Member Id="P:Microsoft.Maui.Controls.BaseShellItem.FlyoutItemIsVisible" />
       <Member Id="P:Microsoft.Maui.Controls.BaseShellItem.Icon" />
@@ -2559,6 +2637,7 @@
       <Member Id="M:Microsoft.Maui.Controls.Binding.#ctor" />
       <Member Id="M:Microsoft.Maui.Controls.Binding.#ctor(System.String,Microsoft.Maui.Controls.BindingMode,Microsoft.Maui.Controls.IValueConverter,System.Object,System.String,System.Object)" />
       <Member Id="P:Microsoft.Maui.Controls.Binding.Converter" />
+      <Member Id="P:Microsoft.Maui.Controls.Binding.ConverterCulture" />
       <Member Id="P:Microsoft.Maui.Controls.Binding.ConverterParameter" />
       <Member Id="P:Microsoft.Maui.Controls.Binding.Path" />
       <Member Id="P:Microsoft.Maui.Controls.Binding.Source" />
@@ -2641,13 +2720,16 @@
     <Type Name="Microsoft.Maui.Controls.BoxView" Id="T:Microsoft.Maui.Controls.BoxView">
       <Member Id="F:Microsoft.Maui.Controls.BoxView.ColorProperty" />
       <Member Id="F:Microsoft.Maui.Controls.BoxView.CornerRadiusProperty" />
+      <Member Id="F:Microsoft.Maui.Controls.BoxView.FillProperty" />
       <Member Id="M:Microsoft.Maui.Controls.BoxView.#ctor" />
+      <Member Id="M:Microsoft.Maui.Controls.BoxView.Finalize" />
       <Member Id="M:Microsoft.Maui.Controls.BoxView.Microsoft#Maui#Graphics#IShape#PathForBounds(Microsoft.Maui.Graphics.Rect)" />
       <Member Id="M:Microsoft.Maui.Controls.BoxView.On``1" />
       <Member Id="M:Microsoft.Maui.Controls.BoxView.OnMeasure(System.Double,System.Double)" />
       <Member Id="M:Microsoft.Maui.Controls.BoxView.OnPropertyChanged(System.String)" />
       <Member Id="P:Microsoft.Maui.Controls.BoxView.Color" />
       <Member Id="P:Microsoft.Maui.Controls.BoxView.CornerRadius" />
+      <Member Id="P:Microsoft.Maui.Controls.BoxView.Fill" />
       <Member Id="P:Microsoft.Maui.Controls.BoxView.Microsoft#Maui#IShapeView#Aspect" />
       <Member Id="P:Microsoft.Maui.Controls.BoxView.Microsoft#Maui#IShapeView#Fill" />
       <Member Id="P:Microsoft.Maui.Controls.BoxView.Microsoft#Maui#IShapeView#Shape" />
@@ -2661,6 +2743,7 @@
     </Type>
     <Type Name="Microsoft.Maui.Controls.Brush" Id="T:Microsoft.Maui.Controls.Brush">
       <Member Id="M:Microsoft.Maui.Controls.Brush.#ctor" />
+      <Member Id="M:Microsoft.Maui.Controls.Brush.HasTransparency(Microsoft.Maui.Controls.Brush)" />
       <Member Id="M:Microsoft.Maui.Controls.Brush.IsNullOrEmpty(Microsoft.Maui.Controls.Brush)" />
       <Member Id="M:Microsoft.Maui.Controls.Brush.op_Implicit(Microsoft.Maui.Controls.Brush)~Microsoft.Maui.Graphics.Paint" />
       <Member Id="M:Microsoft.Maui.Controls.Brush.op_Implicit(Microsoft.Maui.Graphics.Color)~Microsoft.Maui.Controls.Brush" />
@@ -3513,6 +3596,8 @@
       <Member Id="F:Microsoft.Maui.Controls.Editor.IsTextPredictionEnabledProperty" />
       <Member Id="F:Microsoft.Maui.Controls.Editor.PlaceholderColorProperty" />
       <Member Id="F:Microsoft.Maui.Controls.Editor.PlaceholderProperty" />
+      <Member Id="F:Microsoft.Maui.Controls.Editor.ReturnCommandParameterProperty" />
+      <Member Id="F:Microsoft.Maui.Controls.Editor.ReturnCommandProperty" />
       <Member Id="F:Microsoft.Maui.Controls.Editor.SelectionLengthProperty" />
       <Member Id="F:Microsoft.Maui.Controls.Editor.TextColorProperty" />
       <Member Id="F:Microsoft.Maui.Controls.Editor.TextProperty" />
@@ -3529,6 +3614,8 @@
       <Member Id="M:Microsoft.Maui.Controls.Editor.SendCompleted" />
       <Member Id="P:Microsoft.Maui.Controls.Editor.AutoSize" />
       <Member Id="P:Microsoft.Maui.Controls.Editor.HorizontalTextAlignment" />
+      <Member Id="P:Microsoft.Maui.Controls.Editor.ReturnCommand" />
+      <Member Id="P:Microsoft.Maui.Controls.Editor.ReturnCommandParameter" />
       <Member Id="P:Microsoft.Maui.Controls.Editor.VerticalTextAlignment" />
     </Type>
     <Type Name="Microsoft.Maui.Controls.EditorAutoSizeOption" Id="T:Microsoft.Maui.Controls.EditorAutoSizeOption">
@@ -3955,6 +4042,7 @@
       <Member Id="M:Microsoft.Maui.Controls.GraphicsView.Microsoft#Maui#IGraphicsView#MoveHoverInteraction(Microsoft.Maui.Graphics.PointF[])" />
       <Member Id="M:Microsoft.Maui.Controls.GraphicsView.Microsoft#Maui#IGraphicsView#StartHoverInteraction(Microsoft.Maui.Graphics.PointF[])" />
       <Member Id="M:Microsoft.Maui.Controls.GraphicsView.Microsoft#Maui#IGraphicsView#StartInteraction(Microsoft.Maui.Graphics.PointF[])" />
+      <Member Id="M:Microsoft.Maui.Controls.GraphicsView.OnBindingContextChanged" />
       <Member Id="P:Microsoft.Maui.Controls.GraphicsView.Drawable" />
     </Type>
     <Type Name="Microsoft.Maui.Controls.Grid" Id="T:Microsoft.Maui.Controls.Grid">
@@ -4078,8 +4166,10 @@
       <Member Id="M:Microsoft.Maui.Controls.HybridWebView.Microsoft#Maui#IWebRequestInterceptingWebView#WebResourceRequested(Microsoft.Maui.WebResourceRequestedEventArgs)" />
       <Member Id="M:Microsoft.Maui.Controls.HybridWebView.SendRawMessage(System.String)" />
       <Member Id="M:Microsoft.Maui.Controls.HybridWebView.SetInvokeJavaScriptTarget``1(``0)" />
+      <Member Id="M:Microsoft.Maui.Controls.HybridWebView.SetInvokeJavaScriptTarget``1(``0,System.Text.Json.Serialization.JsonSerializerContext)" />
       <Member Id="P:Microsoft.Maui.Controls.HybridWebView.DefaultFile" />
       <Member Id="P:Microsoft.Maui.Controls.HybridWebView.HybridRoot" />
+      <Member Id="P:Microsoft.Maui.Controls.HybridWebView.Invoker" />
       <Member Id="P:Microsoft.Maui.Controls.HybridWebView.Microsoft#Maui#IHybridWebView#InvokeJavaScriptTarget" />
       <Member Id="P:Microsoft.Maui.Controls.HybridWebView.Microsoft#Maui#IHybridWebView#InvokeJavaScriptType" />
     </Type>
@@ -4872,6 +4962,7 @@
       <Member Id="F:Microsoft.Maui.Controls.Label.TextTypeProperty" />
       <Member Id="F:Microsoft.Maui.Controls.Label.VerticalTextAlignmentProperty" />
       <Member Id="M:Microsoft.Maui.Controls.Label.#ctor" />
+      <Member Id="M:Microsoft.Maui.Controls.Label.Finalize" />
       <Member Id="M:Microsoft.Maui.Controls.Label.GetChildElements(Microsoft.Maui.Graphics.Point)" />
       <Member Id="M:Microsoft.Maui.Controls.Label.MapLineBreakMode(Microsoft.Maui.Handlers.ILabelHandler,Microsoft.Maui.Controls.Label)" />
       <Member Id="M:Microsoft.Maui.Controls.Label.MapLineBreakMode(Microsoft.Maui.Handlers.LabelHandler,Microsoft.Maui.Controls.Label)" />
@@ -5291,6 +5382,7 @@
       <Member Id="M:Microsoft.Maui.Controls.MultiBinding.#ctor" />
       <Member Id="P:Microsoft.Maui.Controls.MultiBinding.Bindings" />
       <Member Id="P:Microsoft.Maui.Controls.MultiBinding.Converter" />
+      <Member Id="P:Microsoft.Maui.Controls.MultiBinding.ConverterCulture" />
       <Member Id="P:Microsoft.Maui.Controls.MultiBinding.ConverterParameter" />
     </Type>
     <Type Name="Microsoft.Maui.Controls.MultiPage`1" Id="T:Microsoft.Maui.Controls.MultiPage`1">
@@ -5372,6 +5464,7 @@
       <Member Id="E:Microsoft.Maui.Controls.NavigationPage.Popped" />
       <Member Id="E:Microsoft.Maui.Controls.NavigationPage.PoppedToRoot" />
       <Member Id="E:Microsoft.Maui.Controls.NavigationPage.Pushed" />
+      <Member Id="F:Microsoft.Maui.Controls.NavigationPage.BackButtonAccessibilityLabelProperty" />
       <Member Id="F:Microsoft.Maui.Controls.NavigationPage.BackButtonTitleProperty" />
       <Member Id="F:Microsoft.Maui.Controls.NavigationPage.BarBackgroundColorProperty" />
       <Member Id="F:Microsoft.Maui.Controls.NavigationPage.BarBackgroundProperty" />
@@ -5385,6 +5478,7 @@
       <Member Id="F:Microsoft.Maui.Controls.NavigationPage.TitleViewProperty" />
       <Member Id="M:Microsoft.Maui.Controls.NavigationPage.#ctor" />
       <Member Id="M:Microsoft.Maui.Controls.NavigationPage.#ctor(Microsoft.Maui.Controls.Page)" />
+      <Member Id="M:Microsoft.Maui.Controls.NavigationPage.GetBackButtonAccessibilityLabel(Microsoft.Maui.Controls.BindableObject)" />
       <Member Id="M:Microsoft.Maui.Controls.NavigationPage.GetBackButtonTitle(Microsoft.Maui.Controls.BindableObject)" />
       <Member Id="M:Microsoft.Maui.Controls.NavigationPage.GetHasBackButton(Microsoft.Maui.Controls.Page)" />
       <Member Id="M:Microsoft.Maui.Controls.NavigationPage.GetHasNavigationBar(Microsoft.Maui.Controls.BindableObject)" />
@@ -5405,6 +5499,7 @@
       <Member Id="M:Microsoft.Maui.Controls.NavigationPage.PopToRootAsync(System.Boolean)" />
       <Member Id="M:Microsoft.Maui.Controls.NavigationPage.PushAsync(Microsoft.Maui.Controls.Page)" />
       <Member Id="M:Microsoft.Maui.Controls.NavigationPage.PushAsync(Microsoft.Maui.Controls.Page,System.Boolean)" />
+      <Member Id="M:Microsoft.Maui.Controls.NavigationPage.SetBackButtonAccessibilityLabel(Microsoft.Maui.Controls.BindableObject,System.String)" />
       <Member Id="M:Microsoft.Maui.Controls.NavigationPage.SetBackButtonTitle(Microsoft.Maui.Controls.BindableObject,System.String)" />
       <Member Id="M:Microsoft.Maui.Controls.NavigationPage.SetHasBackButton(Microsoft.Maui.Controls.Page,System.Boolean)" />
       <Member Id="M:Microsoft.Maui.Controls.NavigationPage.SetHasNavigationBar(Microsoft.Maui.Controls.BindableObject,System.Boolean)" />
@@ -5797,6 +5892,7 @@
       <Member Id="M:Microsoft.Maui.Controls.RadioButton.On``1" />
       <Member Id="M:Microsoft.Maui.Controls.RadioButton.OnApplyTemplate" />
       <Member Id="M:Microsoft.Maui.Controls.RadioButton.OnMeasure(System.Double,System.Double)" />
+      <Member Id="M:Microsoft.Maui.Controls.RadioButton.OnPropertyChanged(System.String)" />
       <Member Id="M:Microsoft.Maui.Controls.RadioButton.UpdateFormsText(System.String,Microsoft.Maui.TextTransform)" />
       <Member Id="P:Microsoft.Maui.Controls.RadioButton.BorderColor" />
       <Member Id="P:Microsoft.Maui.Controls.RadioButton.BorderWidth" />
@@ -6889,6 +6985,7 @@
       <Member Id="M:Microsoft.Maui.Controls.SwipeItems.GetEnumerator" />
       <Member Id="M:Microsoft.Maui.Controls.SwipeItems.IndexOf(Microsoft.Maui.Controls.ISwipeItem)" />
       <Member Id="M:Microsoft.Maui.Controls.SwipeItems.Insert(System.Int32,Microsoft.Maui.Controls.ISwipeItem)" />
+      <Member Id="M:Microsoft.Maui.Controls.SwipeItems.OnPropertyChanged(System.String)" />
       <Member Id="M:Microsoft.Maui.Controls.SwipeItems.Remove(Microsoft.Maui.Controls.ISwipeItem)" />
       <Member Id="M:Microsoft.Maui.Controls.SwipeItems.RemoveAt(System.Int32)" />
       <Member Id="M:Microsoft.Maui.Controls.SwipeItems.System#Collections#IEnumerable#GetEnumerator" />
@@ -6906,6 +7003,7 @@
       <Member Id="M:Microsoft.Maui.Controls.SwipeItemView.OnInvoked" />
       <Member Id="P:Microsoft.Maui.Controls.SwipeItemView.Command" />
       <Member Id="P:Microsoft.Maui.Controls.SwipeItemView.CommandParameter" />
+      <Member Id="P:Microsoft.Maui.Controls.SwipeItemView.IsEnabledCore" />
     </Type>
     <Type Name="Microsoft.Maui.Controls.SwipeStartedEventArgs" Id="T:Microsoft.Maui.Controls.SwipeStartedEventArgs">
       <Member Id="M:Microsoft.Maui.Controls.SwipeStartedEventArgs.#ctor(Microsoft.Maui.SwipeDirection)" />
@@ -7260,6 +7358,7 @@
       <Member Id="F:Microsoft.Maui.Controls.TitleBar.TitleBarSubtitle" />
       <Member Id="F:Microsoft.Maui.Controls.TitleBar.TitleBarTitle" />
       <Member Id="F:Microsoft.Maui.Controls.TitleBar.TitleBarTrailing" />
+      <Member Id="F:Microsoft.Maui.Controls.TitleBar.TitleFontAttributesProperty" />
       <Member Id="F:Microsoft.Maui.Controls.TitleBar.TitleHiddenState" />
       <Member Id="F:Microsoft.Maui.Controls.TitleBar.TitleProperty" />
       <Member Id="F:Microsoft.Maui.Controls.TitleBar.TitleVisibleState" />
@@ -7268,6 +7367,7 @@
       <Member Id="F:Microsoft.Maui.Controls.TitleBar.TrailingVisibleState" />
       <Member Id="M:Microsoft.Maui.Controls.TitleBar.#ctor" />
       <Member Id="M:Microsoft.Maui.Controls.TitleBar.OnApplyTemplate" />
+      <Member Id="M:Microsoft.Maui.Controls.TitleBar.OnBindingContextChanged" />
       <Member Id="P:Microsoft.Maui.Controls.TitleBar.Content" />
       <Member Id="P:Microsoft.Maui.Controls.TitleBar.DefaultTemplate" />
       <Member Id="P:Microsoft.Maui.Controls.TitleBar.ForegroundColor" />
@@ -7278,6 +7378,7 @@
       <Member Id="P:Microsoft.Maui.Controls.TitleBar.PassthroughElements" />
       <Member Id="P:Microsoft.Maui.Controls.TitleBar.Subtitle" />
       <Member Id="P:Microsoft.Maui.Controls.TitleBar.Title" />
+      <Member Id="P:Microsoft.Maui.Controls.TitleBar.TitleFontAttributes" />
       <Member Id="P:Microsoft.Maui.Controls.TitleBar.TrailingContent" />
     </Type>
     <Type Name="Microsoft.Maui.Controls.ToggledEventArgs" Id="T:Microsoft.Maui.Controls.ToggledEventArgs">
@@ -7287,6 +7388,7 @@
     <Type Name="Microsoft.Maui.Controls.Toolbar" Id="T:Microsoft.Maui.Controls.Toolbar">
       <Member Id="E:Microsoft.Maui.Controls.Toolbar.PropertyChanged" />
       <Member Id="M:Microsoft.Maui.Controls.Toolbar.#ctor(Microsoft.Maui.IElement)" />
+      <Member Id="P:Microsoft.Maui.Controls.Toolbar.BackButtonAccessibilityLabel" />
       <Member Id="P:Microsoft.Maui.Controls.Toolbar.BackButtonEnabled" />
       <Member Id="P:Microsoft.Maui.Controls.Toolbar.BackButtonTitle" />
       <Member Id="P:Microsoft.Maui.Controls.Toolbar.BackButtonVisible" />
@@ -7305,8 +7407,14 @@
       <Member Id="P:Microsoft.Maui.Controls.Toolbar.ToolbarItems" />
     </Type>
     <Type Name="Microsoft.Maui.Controls.ToolbarItem" Id="T:Microsoft.Maui.Controls.ToolbarItem">
+      <Member Id="F:Microsoft.Maui.Controls.ToolbarItem.BadgeColorProperty" />
+      <Member Id="F:Microsoft.Maui.Controls.ToolbarItem.BadgeTextColorProperty" />
+      <Member Id="F:Microsoft.Maui.Controls.ToolbarItem.BadgeTextProperty" />
       <Member Id="M:Microsoft.Maui.Controls.ToolbarItem.#ctor" />
       <Member Id="M:Microsoft.Maui.Controls.ToolbarItem.#ctor(System.String,System.String,System.Action,Microsoft.Maui.Controls.ToolbarItemOrder,System.Int32)" />
+      <Member Id="P:Microsoft.Maui.Controls.ToolbarItem.BadgeColor" />
+      <Member Id="P:Microsoft.Maui.Controls.ToolbarItem.BadgeText" />
+      <Member Id="P:Microsoft.Maui.Controls.ToolbarItem.BadgeTextColor" />
       <Member Id="P:Microsoft.Maui.Controls.ToolbarItem.Order" />
       <Member Id="P:Microsoft.Maui.Controls.ToolbarItem.Priority" />
     </Type>
@@ -7430,27 +7538,38 @@
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.CancelAnimations(Microsoft.Maui.Controls.VisualElement)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.FadeTo(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.FadeToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.FadeToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.InvalidateMeasure(Microsoft.Maui.Controls.VisualElement)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.LayoutTo(Microsoft.Maui.Controls.VisualElement,Microsoft.Maui.Graphics.Rect,System.UInt32,Microsoft.Maui.Easing)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.LayoutToAsync(Microsoft.Maui.Controls.VisualElement,Microsoft.Maui.Graphics.Rect,System.UInt32,Microsoft.Maui.Easing)" />
+      <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.LayoutToAsync(Microsoft.Maui.Controls.VisualElement,Microsoft.Maui.Graphics.Rect,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.RelRotateTo(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.RelRotateToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.RelRotateToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.RelScaleTo(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.RelScaleToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.RelScaleToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.RotateTo(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.RotateToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.RotateToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.RotateXTo(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.RotateXToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.RotateXToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.RotateYTo(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.RotateYToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.RotateYToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.ScaleTo(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.ScaleToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.ScaleToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.ScaleXTo(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.ScaleXToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.ScaleXToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.ScaleYTo(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.ScaleYToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.ScaleYToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.TranslateTo(Microsoft.Maui.Controls.VisualElement,System.Double,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
       <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.TranslateToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.Double,System.UInt32,Microsoft.Maui.Easing)" />
+      <Member Id="M:Microsoft.Maui.Controls.ViewExtensions.TranslateToAsync(Microsoft.Maui.Controls.VisualElement,System.Double,System.Double,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)" />
     </Type>
     <Type Name="Microsoft.Maui.Controls.ViewState" Id="T:Microsoft.Maui.Controls.ViewState">
       <Member Id="F:Microsoft.Maui.Controls.ViewState.Default" />
@@ -7812,6 +7931,7 @@
       <Member Id="F:Microsoft.Maui.Controls.Window.MinimumHeightProperty" />
       <Member Id="F:Microsoft.Maui.Controls.Window.MinimumWidthProperty" />
       <Member Id="F:Microsoft.Maui.Controls.Window.PageProperty" />
+      <Member Id="F:Microsoft.Maui.Controls.Window.StatusBarThemeProperty" />
       <Member Id="F:Microsoft.Maui.Controls.Window.TitleBarProperty" />
       <Member Id="F:Microsoft.Maui.Controls.Window.TitleProperty" />
       <Member Id="F:Microsoft.Maui.Controls.Window.WidthProperty" />
@@ -7866,6 +7986,7 @@
       <Member Id="P:Microsoft.Maui.Controls.Window.MinimumWidth" />
       <Member Id="P:Microsoft.Maui.Controls.Window.Overlays" />
       <Member Id="P:Microsoft.Maui.Controls.Window.Page" />
+      <Member Id="P:Microsoft.Maui.Controls.Window.StatusBarTheme" />
       <Member Id="P:Microsoft.Maui.Controls.Window.Title" />
       <Member Id="P:Microsoft.Maui.Controls.Window.TitleBar" />
       <Member Id="P:Microsoft.Maui.Controls.Window.VisualDiagnosticsOverlay" />
@@ -8841,6 +8962,7 @@
     </Type>
     <Type Name="Microsoft.Maui.Controls.Internals.TypedBindingBase" Id="T:Microsoft.Maui.Controls.Internals.TypedBindingBase">
       <Member Id="P:Microsoft.Maui.Controls.Internals.TypedBindingBase.Converter" />
+      <Member Id="P:Microsoft.Maui.Controls.Internals.TypedBindingBase.ConverterCulture" />
       <Member Id="P:Microsoft.Maui.Controls.Internals.TypedBindingBase.ConverterParameter" />
       <Member Id="P:Microsoft.Maui.Controls.Internals.TypedBindingBase.Source" />
       <Member Id="P:Microsoft.Maui.Controls.Internals.TypedBindingBase.UpdateSourceEventName" />
@@ -8865,11 +8987,19 @@
       <Member Id="P:Microsoft.Maui.Controls.Maps.ClusterClickedEventArgs.Location" />
       <Member Id="P:Microsoft.Maui.Controls.Maps.ClusterClickedEventArgs.Pins" />
     </Type>
+    <Type Name="Microsoft.Maui.Controls.Maps.ClusterInfo" Id="T:Microsoft.Maui.Controls.Maps.ClusterInfo">
+      <Member Id="M:Microsoft.Maui.Controls.Maps.ClusterInfo.#ctor(System.Int32,System.String,System.Collections.Generic.IReadOnlyList{Microsoft.Maui.Controls.Maps.Pin},Microsoft.Maui.Devices.Sensors.Location)" />
+      <Member Id="P:Microsoft.Maui.Controls.Maps.ClusterInfo.ClusteringIdentifier" />
+      <Member Id="P:Microsoft.Maui.Controls.Maps.ClusterInfo.Count" />
+      <Member Id="P:Microsoft.Maui.Controls.Maps.ClusterInfo.Location" />
+      <Member Id="P:Microsoft.Maui.Controls.Maps.ClusterInfo.Pins" />
+    </Type>
     <Type Name="Microsoft.Maui.Controls.Maps.Map" Id="T:Microsoft.Maui.Controls.Maps.Map">
       <Member Id="E:Microsoft.Maui.Controls.Maps.Map.ClusterClicked" />
       <Member Id="E:Microsoft.Maui.Controls.Maps.Map.MapClicked" />
       <Member Id="E:Microsoft.Maui.Controls.Maps.Map.MapLongClicked" />
       <Member Id="E:Microsoft.Maui.Controls.Maps.Map.UserLocationChanged" />
+      <Member Id="F:Microsoft.Maui.Controls.Maps.Map.ClusterImageSourceProperty" />
       <Member Id="F:Microsoft.Maui.Controls.Maps.Map.IsClusteringEnabledProperty" />
       <Member Id="F:Microsoft.Maui.Controls.Maps.Map.IsScrollEnabledProperty" />
       <Member Id="F:Microsoft.Maui.Controls.Maps.Map.IsShowingUserProperty" />
@@ -8892,10 +9022,14 @@
       <Member Id="M:Microsoft.Maui.Controls.Maps.Map.Microsoft#Maui#Maps#IMap#MoveToRegion(Microsoft.Maui.Maps.MapSpan,System.Boolean)" />
       <Member Id="M:Microsoft.Maui.Controls.Maps.Map.Microsoft#Maui#Maps#IMap#ShowInfoWindow(Microsoft.Maui.Maps.IMapPin)" />
       <Member Id="M:Microsoft.Maui.Controls.Maps.Map.Microsoft#Maui#Maps#IMap#UserLocationUpdated(Microsoft.Maui.Devices.Sensors.Location)" />
+      <Member Id="M:Microsoft.Maui.Controls.Maps.Map.Microsoft#Maui#Maps#IMapClusterImageProvider#GetClusterImage(System.Collections.Generic.IReadOnlyList{Microsoft.Maui.Maps.IMapPin},System.Int32,Microsoft.Maui.Devices.Sensors.Location)" />
       <Member Id="M:Microsoft.Maui.Controls.Maps.Map.MoveToRegion(Microsoft.Maui.Maps.MapSpan)" />
       <Member Id="M:Microsoft.Maui.Controls.Maps.Map.MoveToRegion(Microsoft.Maui.Maps.MapSpan,System.Boolean)" />
+      <Member Id="M:Microsoft.Maui.Controls.Maps.Map.OnBindingContextChanged" />
       <Member Id="M:Microsoft.Maui.Controls.Maps.Map.OnHandlerChanged" />
       <Member Id="M:Microsoft.Maui.Controls.Maps.Map.System#Collections#IEnumerable#GetEnumerator" />
+      <Member Id="P:Microsoft.Maui.Controls.Maps.Map.ClusterImageProvider" />
+      <Member Id="P:Microsoft.Maui.Controls.Maps.Map.ClusterImageSource" />
       <Member Id="P:Microsoft.Maui.Controls.Maps.Map.IsClusteringEnabled" />
       <Member Id="P:Microsoft.Maui.Controls.Maps.Map.IsScrollEnabled" />
       <Member Id="P:Microsoft.Maui.Controls.Maps.Map.IsShowingUser" />
@@ -8912,6 +9046,7 @@
       <Member Id="P:Microsoft.Maui.Controls.Maps.Map.Microsoft#Maui#Maps#IMap#LastUserLocation" />
       <Member Id="P:Microsoft.Maui.Controls.Maps.Map.Microsoft#Maui#Maps#IMap#Pins" />
       <Member Id="P:Microsoft.Maui.Controls.Maps.Map.Microsoft#Maui#Maps#IMap#VisibleRegion" />
+      <Member Id="P:Microsoft.Maui.Controls.Maps.Map.Microsoft#Maui#Maps#IMapClusterImageProvider#ClusterImageVersion" />
       <Member Id="P:Microsoft.Maui.Controls.Maps.Map.Pins" />
       <Member Id="P:Microsoft.Maui.Controls.Maps.Map.Region" />
       <Member Id="P:Microsoft.Maui.Controls.Maps.Map.VisibleRegion" />
@@ -9032,6 +9167,24 @@
       <Member Id="M:Microsoft.Maui.Controls.Platform.ElementChangedEventArgs`1.#ctor(`0,`0)" />
       <Member Id="P:Microsoft.Maui.Controls.Platform.ElementChangedEventArgs`1.NewElement" />
       <Member Id="P:Microsoft.Maui.Controls.Platform.ElementChangedEventArgs`1.OldElement" />
+    </Type>
+    <Type Name="Microsoft.Maui.Controls.Platform.IAlertManager" Id="T:Microsoft.Maui.Controls.Platform.IAlertManager">
+      <Member Id="M:Microsoft.Maui.Controls.Platform.IAlertManager.RequestActionSheet(Microsoft.Maui.Controls.Page,Microsoft.Maui.Controls.Internals.ActionSheetArguments)" />
+      <Member Id="M:Microsoft.Maui.Controls.Platform.IAlertManager.RequestAlert(Microsoft.Maui.Controls.Page,Microsoft.Maui.Controls.Internals.AlertArguments)" />
+      <Member Id="M:Microsoft.Maui.Controls.Platform.IAlertManager.RequestPageBusy(Microsoft.Maui.Controls.Page,System.Boolean)" />
+      <Member Id="M:Microsoft.Maui.Controls.Platform.IAlertManager.RequestPrompt(Microsoft.Maui.Controls.Page,Microsoft.Maui.Controls.Internals.PromptArguments)" />
+      <Member Id="M:Microsoft.Maui.Controls.Platform.IAlertManager.Subscribe" />
+      <Member Id="M:Microsoft.Maui.Controls.Platform.IAlertManager.Unsubscribe" />
+    </Type>
+    <Type Name="Microsoft.Maui.Controls.Platform.IAlertManagerSubscription" Id="T:Microsoft.Maui.Controls.Platform.IAlertManagerSubscription">
+      <Member Id="M:Microsoft.Maui.Controls.Platform.IAlertManagerSubscription.OnActionSheetRequested(Microsoft.Maui.Controls.Page,Microsoft.Maui.Controls.Internals.ActionSheetArguments)" />
+      <Member Id="M:Microsoft.Maui.Controls.Platform.IAlertManagerSubscription.OnAlertRequested(Microsoft.Maui.Controls.Page,Microsoft.Maui.Controls.Internals.AlertArguments)" />
+      <Member Id="M:Microsoft.Maui.Controls.Platform.IAlertManagerSubscription.OnPageBusy(Microsoft.Maui.Controls.Page,System.Boolean)" />
+      <Member Id="M:Microsoft.Maui.Controls.Platform.IAlertManagerSubscription.OnPromptRequested(Microsoft.Maui.Controls.Page,Microsoft.Maui.Controls.Internals.PromptArguments)" />
+    </Type>
+    <Type Name="Microsoft.Maui.Controls.Platform.IGesturePlatformManager" Id="T:Microsoft.Maui.Controls.Platform.IGesturePlatformManager" />
+    <Type Name="Microsoft.Maui.Controls.Platform.IGesturePlatformManagerFactory" Id="T:Microsoft.Maui.Controls.Platform.IGesturePlatformManagerFactory">
+      <Member Id="M:Microsoft.Maui.Controls.Platform.IGesturePlatformManagerFactory.CreateGesturePlatformManager(Microsoft.Maui.IViewHandler)" />
     </Type>
     <Type Name="Microsoft.Maui.Controls.Platform.PageExtensions" Id="T:Microsoft.Maui.Controls.Platform.PageExtensions" />
     <Type Name="Microsoft.Maui.Controls.Platform.PlatformEffect" Id="T:Microsoft.Maui.Controls.Platform.PlatformEffect">
@@ -10525,6 +10678,7 @@
       <Member Id="M:Microsoft.Maui.Controls.Xaml.BindingExtension.Microsoft#Maui#Controls#Xaml#IMarkupExtension#ProvideValue(System.IServiceProvider)" />
       <Member Id="M:Microsoft.Maui.Controls.Xaml.BindingExtension.Microsoft#Maui#Controls#Xaml#IMarkupExtension&lt;Microsoft#Maui#Controls#BindingBase&gt;#ProvideValue(System.IServiceProvider)" />
       <Member Id="P:Microsoft.Maui.Controls.Xaml.BindingExtension.Converter" />
+      <Member Id="P:Microsoft.Maui.Controls.Xaml.BindingExtension.ConverterCulture" />
       <Member Id="P:Microsoft.Maui.Controls.Xaml.BindingExtension.ConverterParameter" />
       <Member Id="P:Microsoft.Maui.Controls.Xaml.BindingExtension.FallbackValue" />
       <Member Id="P:Microsoft.Maui.Controls.Xaml.BindingExtension.Mode" />
@@ -10607,11 +10761,14 @@
       <Member Id="P:Microsoft.Maui.Controls.Xaml.OnPlatformExtension.Converter" />
       <Member Id="P:Microsoft.Maui.Controls.Xaml.OnPlatformExtension.ConverterParameter" />
       <Member Id="P:Microsoft.Maui.Controls.Xaml.OnPlatformExtension.Default" />
+      <Member Id="P:Microsoft.Maui.Controls.Xaml.OnPlatformExtension.GTK" />
       <Member Id="P:Microsoft.Maui.Controls.Xaml.OnPlatformExtension.iOS" />
       <Member Id="P:Microsoft.Maui.Controls.Xaml.OnPlatformExtension.MacCatalyst" />
+      <Member Id="P:Microsoft.Maui.Controls.Xaml.OnPlatformExtension.macOS" />
       <Member Id="P:Microsoft.Maui.Controls.Xaml.OnPlatformExtension.Tizen" />
       <Member Id="P:Microsoft.Maui.Controls.Xaml.OnPlatformExtension.UWP" />
       <Member Id="P:Microsoft.Maui.Controls.Xaml.OnPlatformExtension.WinUI" />
+      <Member Id="P:Microsoft.Maui.Controls.Xaml.OnPlatformExtension.WPF" />
     </Type>
     <Type Name="Microsoft.Maui.Controls.Xaml.ReferenceExtension" Id="T:Microsoft.Maui.Controls.Xaml.ReferenceExtension">
       <Member Id="M:Microsoft.Maui.Controls.Xaml.ReferenceExtension.#ctor" />
@@ -10674,9 +10831,27 @@
       <Member Id="F:Microsoft.Maui.Controls.Xaml.XamlCompilationOptions.Compile" />
       <Member Id="F:Microsoft.Maui.Controls.Xaml.XamlCompilationOptions.Skip" />
     </Type>
+    <Type Name="Microsoft.Maui.Controls.Xaml.XamlComponentRegistry" Id="T:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry">
+      <Member Id="M:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.FindStaticResource(System.Object,System.String)" />
+      <Member Id="M:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.GetComponent(System.Object,System.String)" />
+      <Member Id="M:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.GetInstances(System.Type)" />
+      <Member Id="M:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.GetResourceKeys(System.Object)" />
+      <Member Id="M:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.Register(System.Object,System.String,System.Object)" />
+      <Member Id="M:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.RegisterComponent(System.Object,System.String)" />
+      <Member Id="M:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.RegisterResourceKeys(System.Object,System.String[])" />
+      <Member Id="M:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.TryGet(System.Object,System.String,System.Object@)" />
+      <Member Id="M:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.Unregister(System.Object)" />
+      <Member Id="M:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.Unregister(System.Object,System.String)" />
+      <Member Id="M:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.UnregisterSubtree(System.Object,System.String)" />
+    </Type>
     <Type Name="Microsoft.Maui.Controls.Xaml.XamlFilePathAttribute" Id="T:Microsoft.Maui.Controls.Xaml.XamlFilePathAttribute">
       <Member Id="M:Microsoft.Maui.Controls.Xaml.XamlFilePathAttribute.#ctor(System.String)" />
       <Member Id="P:Microsoft.Maui.Controls.Xaml.XamlFilePathAttribute.FilePath" />
+    </Type>
+    <Type Name="Microsoft.Maui.Controls.Xaml.XamlIncrementalHotReloadHandler" Id="T:Microsoft.Maui.Controls.Xaml.XamlIncrementalHotReloadHandler">
+      <Member Id="M:Microsoft.Maui.Controls.Xaml.XamlIncrementalHotReloadHandler.ClearCache(System.Type[])" />
+      <Member Id="M:Microsoft.Maui.Controls.Xaml.XamlIncrementalHotReloadHandler.Track(System.Object)" />
+      <Member Id="M:Microsoft.Maui.Controls.Xaml.XamlIncrementalHotReloadHandler.UpdateApplication(System.Type[])" />
     </Type>
     <Type Name="Microsoft.Maui.Controls.Xaml.XamlParseException" Id="T:Microsoft.Maui.Controls.Xaml.XamlParseException">
       <Member Id="M:Microsoft.Maui.Controls.Xaml.XamlParseException.#ctor" />
@@ -10716,6 +10891,38 @@
       <Member Id="P:Microsoft.Maui.Controls.Xaml.Diagnostics.BindingErrorEventArgs.Source" />
       <Member Id="P:Microsoft.Maui.Controls.Xaml.Diagnostics.BindingErrorEventArgs.Target" />
       <Member Id="P:Microsoft.Maui.Controls.Xaml.Diagnostics.BindingErrorEventArgs.TargetProperty" />
+    </Type>
+    <Type Name="Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadAppliedEventArgs" Id="T:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadAppliedEventArgs">
+      <Member Id="P:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadAppliedEventArgs.Duration" />
+      <Member Id="P:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadAppliedEventArgs.FromVersion" />
+      <Member Id="P:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadAppliedEventArgs.InstanceCount" />
+      <Member Id="P:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadAppliedEventArgs.Timestamp" />
+      <Member Id="P:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadAppliedEventArgs.ToVersion" />
+      <Member Id="P:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadAppliedEventArgs.UpdatedTypes" />
+    </Type>
+    <Type Name="Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadDiagnostics" Id="T:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadDiagnostics">
+      <Member Id="E:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadDiagnostics.UpdateApplied" />
+      <Member Id="E:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadDiagnostics.UpdateFailed" />
+      <Member Id="E:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadDiagnostics.UpdateRequested" />
+      <Member Id="E:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadDiagnostics.UpdateSkipped" />
+      <Member Id="P:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadDiagnostics.CurrentVersion" />
+    </Type>
+    <Type Name="Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadErrorEventArgs" Id="T:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadErrorEventArgs">
+      <Member Id="P:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadErrorEventArgs.Exception" />
+      <Member Id="P:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadErrorEventArgs.Instance" />
+      <Member Id="P:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadErrorEventArgs.Timestamp" />
+      <Member Id="P:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadErrorEventArgs.UpdatedType" />
+      <Member Id="P:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadErrorEventArgs.Version" />
+    </Type>
+    <Type Name="Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadRequestedEventArgs" Id="T:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadRequestedEventArgs">
+      <Member Id="P:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadRequestedEventArgs.HandledTypes" />
+      <Member Id="P:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadRequestedEventArgs.Timestamp" />
+      <Member Id="P:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadRequestedEventArgs.UpdatedTypes" />
+    </Type>
+    <Type Name="Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadSkippedEventArgs" Id="T:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadSkippedEventArgs">
+      <Member Id="P:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadSkippedEventArgs.HandledTypes" />
+      <Member Id="P:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadSkippedEventArgs.Timestamp" />
+      <Member Id="P:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadSkippedEventArgs.UpdatedTypes" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Maui.Controls.Xaml.Internals">
@@ -11192,6 +11399,7 @@
       <Member Id="M:Microsoft.Maui.Devices.Sensors.GeolocationListeningRequest.#ctor(Microsoft.Maui.Devices.Sensors.GeolocationAccuracy)" />
       <Member Id="M:Microsoft.Maui.Devices.Sensors.GeolocationListeningRequest.#ctor(Microsoft.Maui.Devices.Sensors.GeolocationAccuracy,System.TimeSpan)" />
       <Member Id="P:Microsoft.Maui.Devices.Sensors.GeolocationListeningRequest.DesiredAccuracy" />
+      <Member Id="P:Microsoft.Maui.Devices.Sensors.GeolocationListeningRequest.MinimumDistance" />
       <Member Id="P:Microsoft.Maui.Devices.Sensors.GeolocationListeningRequest.MinimumTime" />
     </Type>
     <Type Name="Microsoft.Maui.Devices.Sensors.GeolocationLocationChangedEventArgs" Id="T:Microsoft.Maui.Devices.Sensors.GeolocationLocationChangedEventArgs">
@@ -14004,6 +14212,7 @@
       <Member Id="M:Microsoft.Maui.Handlers.SearchBarHandler.MapBackground(Microsoft.Maui.Handlers.ISearchBarHandler,Microsoft.Maui.ISearchBar)" />
       <Member Id="M:Microsoft.Maui.Handlers.SearchBarHandler.MapCancelButtonColor(Microsoft.Maui.IViewHandler,Microsoft.Maui.ISearchBar)" />
       <Member Id="M:Microsoft.Maui.Handlers.SearchBarHandler.MapCharacterSpacing(Microsoft.Maui.IViewHandler,Microsoft.Maui.ISearchBar)" />
+      <Member Id="M:Microsoft.Maui.Handlers.SearchBarHandler.MapCursorPosition(Microsoft.Maui.Handlers.ISearchBarHandler,Microsoft.Maui.ISearchBar)" />
       <Member Id="M:Microsoft.Maui.Handlers.SearchBarHandler.MapFont(Microsoft.Maui.IViewHandler,Microsoft.Maui.ISearchBar)" />
       <Member Id="M:Microsoft.Maui.Handlers.SearchBarHandler.MapHorizontalTextAlignment(Microsoft.Maui.IViewHandler,Microsoft.Maui.ISearchBar)" />
       <Member Id="M:Microsoft.Maui.Handlers.SearchBarHandler.MapIsEnabled(Microsoft.Maui.Handlers.ISearchBarHandler,Microsoft.Maui.ISearchBar)" />
@@ -14015,6 +14224,7 @@
       <Member Id="M:Microsoft.Maui.Handlers.SearchBarHandler.MapPlaceholder(Microsoft.Maui.IViewHandler,Microsoft.Maui.ISearchBar)" />
       <Member Id="M:Microsoft.Maui.Handlers.SearchBarHandler.MapPlaceholderColor(Microsoft.Maui.IViewHandler,Microsoft.Maui.ISearchBar)" />
       <Member Id="M:Microsoft.Maui.Handlers.SearchBarHandler.MapReturnType(Microsoft.Maui.IViewHandler,Microsoft.Maui.ISearchBar)" />
+      <Member Id="M:Microsoft.Maui.Handlers.SearchBarHandler.MapSelectionLength(Microsoft.Maui.Handlers.ISearchBarHandler,Microsoft.Maui.ISearchBar)" />
       <Member Id="M:Microsoft.Maui.Handlers.SearchBarHandler.MapText(Microsoft.Maui.IViewHandler,Microsoft.Maui.ISearchBar)" />
       <Member Id="M:Microsoft.Maui.Handlers.SearchBarHandler.MapTextColor(Microsoft.Maui.IViewHandler,Microsoft.Maui.ISearchBar)" />
       <Member Id="M:Microsoft.Maui.Handlers.SearchBarHandler.MapVerticalTextAlignment(Microsoft.Maui.IViewHandler,Microsoft.Maui.ISearchBar)" />
@@ -14032,6 +14242,7 @@
       <Member Id="M:Microsoft.Maui.Handlers.ShapeViewHandler.MapAspect(Microsoft.Maui.Handlers.IShapeViewHandler,Microsoft.Maui.IShapeView)" />
       <Member Id="M:Microsoft.Maui.Handlers.ShapeViewHandler.MapBackground(Microsoft.Maui.Handlers.IShapeViewHandler,Microsoft.Maui.IShapeView)" />
       <Member Id="M:Microsoft.Maui.Handlers.ShapeViewHandler.MapFill(Microsoft.Maui.Handlers.IShapeViewHandler,Microsoft.Maui.IShapeView)" />
+      <Member Id="M:Microsoft.Maui.Handlers.ShapeViewHandler.MapFlowDirection(Microsoft.Maui.Handlers.IShapeViewHandler,Microsoft.Maui.IShapeView)" />
       <Member Id="M:Microsoft.Maui.Handlers.ShapeViewHandler.MapShape(Microsoft.Maui.Handlers.IShapeViewHandler,Microsoft.Maui.IShapeView)" />
       <Member Id="M:Microsoft.Maui.Handlers.ShapeViewHandler.MapStroke(Microsoft.Maui.Handlers.IShapeViewHandler,Microsoft.Maui.IShapeView)" />
       <Member Id="M:Microsoft.Maui.Handlers.ShapeViewHandler.MapStrokeDashOffset(Microsoft.Maui.Handlers.IShapeViewHandler,Microsoft.Maui.IShapeView)" />
@@ -14594,6 +14805,10 @@
       <Member Id="P:Microsoft.Maui.Maps.IMap.Pins" />
       <Member Id="P:Microsoft.Maui.Maps.IMap.VisibleRegion" />
     </Type>
+    <Type Name="Microsoft.Maui.Maps.IMapClusterImageProvider" Id="T:Microsoft.Maui.Maps.IMapClusterImageProvider">
+      <Member Id="M:Microsoft.Maui.Maps.IMapClusterImageProvider.GetClusterImage(System.Collections.Generic.IReadOnlyList{Microsoft.Maui.Maps.IMapPin},System.Int32,Microsoft.Maui.Devices.Sensors.Location)" />
+      <Member Id="P:Microsoft.Maui.Maps.IMapClusterImageProvider.ClusterImageVersion" />
+    </Type>
     <Type Name="Microsoft.Maui.Maps.IMapElement" Id="T:Microsoft.Maui.Maps.IMapElement">
       <Member Id="M:Microsoft.Maui.Maps.IMapElement.Clicked" />
       <Member Id="P:Microsoft.Maui.Maps.IMapElement.IsVisible" />
@@ -14748,6 +14963,9 @@
       <Member Id="M:Microsoft.Maui.Media.ITextToSpeech.GetLocalesAsync" />
       <Member Id="M:Microsoft.Maui.Media.ITextToSpeech.SpeakAsync(System.String,Microsoft.Maui.Media.SpeechOptions,System.Threading.CancellationToken)" />
     </Type>
+    <Type Name="Microsoft.Maui.Media.IViewScreenshot" Id="T:Microsoft.Maui.Media.IViewScreenshot">
+      <Member Id="M:Microsoft.Maui.Media.IViewScreenshot.CaptureViewAsync(System.Object)" />
+    </Type>
     <Type Name="Microsoft.Maui.Media.Locale" Id="T:Microsoft.Maui.Media.Locale">
       <Member Id="P:Microsoft.Maui.Media.Locale.Country" />
       <Member Id="P:Microsoft.Maui.Media.Locale.Id" />
@@ -14771,6 +14989,7 @@
       <Member Id="P:Microsoft.Maui.Media.MediaPickerOptions.MaximumWidth" />
       <Member Id="P:Microsoft.Maui.Media.MediaPickerOptions.PreserveMetaData" />
       <Member Id="P:Microsoft.Maui.Media.MediaPickerOptions.RotateImage" />
+      <Member Id="P:Microsoft.Maui.Media.MediaPickerOptions.SaveToGallery" />
       <Member Id="P:Microsoft.Maui.Media.MediaPickerOptions.SelectionLimit" />
       <Member Id="P:Microsoft.Maui.Media.MediaPickerOptions.Title" />
     </Type>
