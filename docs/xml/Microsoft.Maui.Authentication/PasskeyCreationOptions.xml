@@ -1,0 +1,104 @@
+<Type Name="PasskeyCreationOptions" FullName="Microsoft.Maui.Authentication.PasskeyCreationOptions">
+  <TypeSignature Language="C#" Value="public sealed class PasskeyCreationOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PasskeyCreationOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Authentication.PasskeyCreationOptions" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PasskeyCreationOptions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PasskeyCreationOptions sealed" />
+  <TypeSignature Language="F#" Value="type PasskeyCreationOptions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Represents the relying party's <c>PublicKeyCredentialCreationOptions</c> for <see cref="M:Microsoft.Maui.Authentication.IPasskeys.CreateAsync(Microsoft.Maui.Authentication.PasskeyCreationOptions,System.Threading.CancellationToken)" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PasskeyCreationOptions (string creationOptionsJson);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string creationOptionsJson) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Authentication.PasskeyCreationOptions.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (creationOptionsJson As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PasskeyCreationOptions(System::String ^ creationOptionsJson);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.Authentication.PasskeyCreationOptions : string -&gt; Microsoft.Maui.Authentication.PasskeyCreationOptions" Usage="new Microsoft.Maui.Authentication.PasskeyCreationOptions creationOptionsJson" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="creationOptionsJson" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="creationOptionsJson">The server's <c>PublicKeyCredentialCreationOptions</c> JSON.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Authentication.PasskeyCreationOptions" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreferImmediatelyAvailable">
+      <MemberSignature Language="C#" Value="public bool PreferImmediatelyAvailable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PreferImmediatelyAvailable" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Authentication.PasskeyCreationOptions.PreferImmediatelyAvailable" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreferImmediatelyAvailable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PreferImmediatelyAvailable { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PreferImmediatelyAvailable : bool with get, set" Usage="Microsoft.Maui.Authentication.PasskeyCreationOptions.PreferImmediatelyAvailable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether the ceremony should stay on this device and skip any
+            cross-device / hybrid step (QR code, "use another device", phone-as-authenticator).
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            For registration this means only create a passkey if the local authenticator can do so directly;
+            for authentication it means only offer a passkey already present on this device. Maps to the
+            Android and Apple immediately-available options; ignored on Windows. This is an app-side behavior
+            knob and is not part of the server JSON.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Authentication.PasskeyCreationOptions.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="passkeyCreationOptions.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the underlying <c>PublicKeyCredentialCreationOptions</c> JSON.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

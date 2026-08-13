@@ -1,0 +1,203 @@
+<Type Name="IAlertManager" FullName="Microsoft.Maui.Controls.Platform.IAlertManager">
+  <TypeSignature Language="C#" Value="public interface IAlertManager" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IAlertManager" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Platform.IAlertManager" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IAlertManager" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IAlertManager" />
+  <TypeSignature Language="F#" Value="type IAlertManager = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Provides an interface for managing alert, action sheet, and prompt dialogs.
+            Custom platform backends can implement this interface and register it via dependency injection
+            to replace the default alert management behavior.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="RequestActionSheet">
+      <MemberSignature Language="C#" Value="public void RequestActionSheet (Microsoft.Maui.Controls.Page page, Microsoft.Maui.Controls.Internals.ActionSheetArguments arguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RequestActionSheet(class Microsoft.Maui.Controls.Page page, class Microsoft.Maui.Controls.Internals.ActionSheetArguments arguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Platform.IAlertManager.RequestActionSheet(Microsoft.Maui.Controls.Page,Microsoft.Maui.Controls.Internals.ActionSheetArguments)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RequestActionSheet (page As Page, arguments As ActionSheetArguments)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RequestActionSheet(Microsoft::Maui::Controls::Page ^ page, Microsoft::Maui::Controls::Internals::ActionSheetArguments ^ arguments);" />
+      <MemberSignature Language="F#" Value="abstract member RequestActionSheet : Microsoft.Maui.Controls.Page * Microsoft.Maui.Controls.Internals.ActionSheetArguments -&gt; unit" Usage="iAlertManager.RequestActionSheet (page, arguments)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="page" Type="Microsoft.Maui.Controls.Page" />
+        <Parameter Name="arguments" Type="Microsoft.Maui.Controls.Internals.ActionSheetArguments" />
+      </Parameters>
+      <Docs>
+        <param name="page">To be added.</param>
+        <param name="arguments">To be added.</param>
+        <summary>
+            Requests that an action sheet be displayed.
+            <para>
+            Note: <see cref="T:Microsoft.Maui.Controls.Internals.ActionSheetArguments" /> is part of the stable public API contract for this interface,
+            despite residing in the <c>Microsoft.Maui.Controls.Internals</c> namespace.
+            </para></summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestAlert">
+      <MemberSignature Language="C#" Value="public void RequestAlert (Microsoft.Maui.Controls.Page page, Microsoft.Maui.Controls.Internals.AlertArguments arguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RequestAlert(class Microsoft.Maui.Controls.Page page, class Microsoft.Maui.Controls.Internals.AlertArguments arguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Platform.IAlertManager.RequestAlert(Microsoft.Maui.Controls.Page,Microsoft.Maui.Controls.Internals.AlertArguments)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RequestAlert (page As Page, arguments As AlertArguments)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RequestAlert(Microsoft::Maui::Controls::Page ^ page, Microsoft::Maui::Controls::Internals::AlertArguments ^ arguments);" />
+      <MemberSignature Language="F#" Value="abstract member RequestAlert : Microsoft.Maui.Controls.Page * Microsoft.Maui.Controls.Internals.AlertArguments -&gt; unit" Usage="iAlertManager.RequestAlert (page, arguments)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="page" Type="Microsoft.Maui.Controls.Page" />
+        <Parameter Name="arguments" Type="Microsoft.Maui.Controls.Internals.AlertArguments" />
+      </Parameters>
+      <Docs>
+        <param name="page">To be added.</param>
+        <param name="arguments">To be added.</param>
+        <summary>
+            Requests that an alert dialog be displayed.
+            <para>
+            Note: <see cref="T:Microsoft.Maui.Controls.Internals.AlertArguments" /> is part of the stable public API contract for this interface,
+            despite residing in the <c>Microsoft.Maui.Controls.Internals</c> namespace.
+            </para></summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestPageBusy">
+      <MemberSignature Language="C#" Value="public virtual void RequestPageBusy (Microsoft.Maui.Controls.Page page, bool isBusy);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RequestPageBusy(class Microsoft.Maui.Controls.Page page, bool isBusy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Platform.IAlertManager.RequestPageBusy(Microsoft.Maui.Controls.Page,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RequestPageBusy (page As Page, isBusy As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RequestPageBusy(Microsoft::Maui::Controls::Page ^ page, bool isBusy);" />
+      <MemberSignature Language="F#" Value="abstract member RequestPageBusy : Microsoft.Maui.Controls.Page * bool -&gt; unit&#xA;override this.RequestPageBusy : Microsoft.Maui.Controls.Page * bool -&gt; unit" Usage="iAlertManager.RequestPageBusy (page, isBusy)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("Page busy notifications are obsolete and have no replacement. Remove usage. Implementers may omit this member on target frameworks that support default interface methods or provide an empty implementation otherwise. This method will be removed in a future release.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Page busy notifications are obsolete and have no replacement. Remove usage. Implementers may omit this member on target frameworks that support default interface methods or provide an empty implementation otherwise. This method will be removed in a future release.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="page" Type="Microsoft.Maui.Controls.Page" />
+        <Parameter Name="isBusy" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="page">To be added.</param>
+        <param name="isBusy">To be added.</param>
+        <summary>
+            Requests that the page busy indicator be shown or hidden.
+            Page busy notifications have no replacement. Callers should remove usage,
+            and interface implementers may omit this member on target frameworks that support default
+            interface methods or provide an empty implementation otherwise.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestPrompt">
+      <MemberSignature Language="C#" Value="public void RequestPrompt (Microsoft.Maui.Controls.Page page, Microsoft.Maui.Controls.Internals.PromptArguments arguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RequestPrompt(class Microsoft.Maui.Controls.Page page, class Microsoft.Maui.Controls.Internals.PromptArguments arguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Platform.IAlertManager.RequestPrompt(Microsoft.Maui.Controls.Page,Microsoft.Maui.Controls.Internals.PromptArguments)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RequestPrompt (page As Page, arguments As PromptArguments)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RequestPrompt(Microsoft::Maui::Controls::Page ^ page, Microsoft::Maui::Controls::Internals::PromptArguments ^ arguments);" />
+      <MemberSignature Language="F#" Value="abstract member RequestPrompt : Microsoft.Maui.Controls.Page * Microsoft.Maui.Controls.Internals.PromptArguments -&gt; unit" Usage="iAlertManager.RequestPrompt (page, arguments)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="page" Type="Microsoft.Maui.Controls.Page" />
+        <Parameter Name="arguments" Type="Microsoft.Maui.Controls.Internals.PromptArguments" />
+      </Parameters>
+      <Docs>
+        <param name="page">To be added.</param>
+        <param name="arguments">To be added.</param>
+        <summary>
+            Requests that a prompt dialog be displayed.
+            <para>
+            Note: <see cref="T:Microsoft.Maui.Controls.Internals.PromptArguments" /> is part of the stable public API contract for this interface,
+            despite residing in the <c>Microsoft.Maui.Controls.Internals</c> namespace.
+            </para></summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subscribe">
+      <MemberSignature Language="C#" Value="public void Subscribe ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Subscribe() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Platform.IAlertManager.Subscribe" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Subscribe ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Subscribe();" />
+      <MemberSignature Language="F#" Value="abstract member Subscribe : unit -&gt; unit" Usage="iAlertManager.Subscribe " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Subscribes to alert requests from the associated window's pages.
+            Implementations must be idempotent: calling <see cref="M:Microsoft.Maui.Controls.Platform.IAlertManager.Subscribe" /> when already
+            subscribed must be a safe no-op, as the framework may call it without a preceding
+            <see cref="M:Microsoft.Maui.Controls.Platform.IAlertManager.Unsubscribe" /> when a page with an already-attached handler is assigned
+            to the window.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unsubscribe">
+      <MemberSignature Language="C#" Value="public void Unsubscribe ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Unsubscribe() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Platform.IAlertManager.Unsubscribe" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Unsubscribe ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unsubscribe();" />
+      <MemberSignature Language="F#" Value="abstract member Unsubscribe : unit -&gt; unit" Usage="iAlertManager.Unsubscribe " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Unsubscribes from alert requests.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

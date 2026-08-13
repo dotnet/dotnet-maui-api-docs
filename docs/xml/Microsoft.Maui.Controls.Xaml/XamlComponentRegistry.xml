@@ -1,0 +1,407 @@
+<Type Name="XamlComponentRegistry" FullName="Microsoft.Maui.Controls.Xaml.XamlComponentRegistry">
+  <TypeSignature Language="C#" Value="public static class XamlComponentRegistry" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit XamlComponentRegistry extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry" />
+  <TypeSignature Language="VB.NET" Value="Public Class XamlComponentRegistry" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XamlComponentRegistry abstract sealed" />
+  <TypeSignature Language="F#" Value="type XamlComponentRegistry = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Runtime registry that maps live page/view instances to their child components by stable node ID.
+            Used by XSG-generated <c>InitializeComponent()</c> and <c>UpdateComponent()</c> methods
+            to find live objects during incremental XAML Hot Reload without re-inflation.
+            </summary>
+    <remarks>
+      <para>
+            Registration is keyed on the <em>page instance</em> (not type), so multiple concurrent instances
+            of the same page type each have their own component map. Components are held via
+            <see cref="T:System.WeakReference`1" /> so they do not prevent GC of abandoned instances.
+            </para>
+      <para>
+            This class is trim-safe: it stores <see cref="T:System.Object" /> references with no reflection on user types.
+            </para>
+    </remarks>
+    <remarks>This type is public for source-generator access only. It is not intended to be used directly.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FindStaticResource">
+      <MemberSignature Language="C#" Value="public static object? FindStaticResource (object element, string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object FindStaticResource(object element, string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.FindStaticResource(System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FindStaticResource (element As Object, key As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ FindStaticResource(System::Object ^ element, System::String ^ key);" />
+      <MemberSignature Language="F#" Value="static member FindStaticResource : obj * string -&gt; obj" Usage="Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.FindStaticResource (element, key)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Object" />
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="key">To be added.</param>
+        <summary>
+            Resolves <paramref name="key" /> using full StaticResource lookup semantics: walks the
+            element parent chain and checks each resource provider's <c>Resources</c>,
+            then falls back to <c>Application.Current.Resources</c> and system resources.
+            Returns <see langword="null" /> if not found.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>
+            Generator-only helper used by <c>UpdateComponent()</c> to re-resolve resources for
+            converter and binding-source swaps during incremental hot reload. Matches the
+            behavior of <see cref="M:Microsoft.Maui.Controls.Xaml.StaticResourceExtension.ProvideValue(System.IServiceProvider)" />
+            without requiring an <c>IServiceProvider</c>.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetComponent">
+      <MemberSignature Language="C#" Value="public static object? GetComponent (object page, string nodeId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetComponent(object page, string nodeId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.GetComponent(System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetComponent (page As Object, nodeId As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetComponent(System::Object ^ page, System::String ^ nodeId);" />
+      <MemberSignature Language="F#" Value="static member GetComponent : obj * string -&gt; obj" Usage="Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.GetComponent (page, nodeId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="page" Type="System.Object" />
+        <Parameter Name="nodeId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="page">To be added.</param>
+        <param name="nodeId">To be added.</param>
+        <summary>
+            Convenience alias matching the spec's <c>GetComponent(nodeId)</c> signature.
+            Retrieves the component registered under <paramref name="nodeId" /> for <paramref name="page" />.
+            Returns <see langword="null" /> if not found.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInstances">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IReadOnlyList&lt;object&gt; GetInstances (Type pageType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IReadOnlyList`1&lt;object&gt; GetInstances(class System.Type pageType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.GetInstances(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetInstances (pageType As Type) As IReadOnlyList(Of Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IReadOnlyList&lt;System::Object ^&gt; ^ GetInstances(Type ^ pageType);" />
+      <MemberSignature Language="F#" Value="static member GetInstances : Type -&gt; System.Collections.Generic.IReadOnlyList&lt;obj&gt;" Usage="Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.GetInstances pageType" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pageType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="pageType">To be added.</param>
+        <summary>
+            Returns all live page instances of the given <paramref name="pageType" /> that have registered components.
+            Used by <c>UpdateApplication</c> in the generated <c>[MetadataUpdateHandler]</c> to enumerate
+            live page instances that need updating.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>
+            This iterates a snapshot; entries for GC'd pages are automatically excluded.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResourceKeys">
+      <MemberSignature Language="C#" Value="public static string[] GetResourceKeys (object page);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] GetResourceKeys(object page) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.GetResourceKeys(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetResourceKeys (page As Object) As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^&gt; ^ GetResourceKeys(System::Object ^ page);" />
+      <MemberSignature Language="F#" Value="static member GetResourceKeys : obj -&gt; string[]" Usage="Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.GetResourceKeys page" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="page" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="page">To be added.</param>
+        <summary>
+            Returns the previously registered resource keys for the given page, or an empty array.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Register">
+      <MemberSignature Language="C#" Value="public static void Register (object page, string nodeId, object component);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Register(object page, string nodeId, object component) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.Register(System.Object,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Register (page As Object, nodeId As String, component As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Register(System::Object ^ page, System::String ^ nodeId, System::Object ^ component);" />
+      <MemberSignature Language="F#" Value="static member Register : obj * string * obj -&gt; unit" Usage="Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.Register (page, nodeId, component)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="page" Type="System.Object" />
+        <Parameter Name="nodeId" Type="System.String" />
+        <Parameter Name="component" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="page">The root page/view instance that owns this component.</param>
+        <param name="nodeId">Stable node ID assigned by the source generator (e.g. <c>"Label_1_0"</c>).</param>
+        <param name="component">The live component object to register.</param>
+        <summary>
+            Registers (or replaces) a component under <paramref name="nodeId" /> for the given <paramref name="page" /> instance.
+            Called from generated <c>InitializeComponent()</c>.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterComponent">
+      <MemberSignature Language="C#" Value="public static void RegisterComponent (object element, string nodeId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterComponent(object element, string nodeId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.RegisterComponent(System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterComponent (element As Object, nodeId As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterComponent(System::Object ^ element, System::String ^ nodeId);" />
+      <MemberSignature Language="F#" Value="static member RegisterComponent : obj * string -&gt; unit" Usage="Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.RegisterComponent (element, nodeId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Object" />
+        <Parameter Name="nodeId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="nodeId">To be added.</param>
+        <summary>
+            Convenience alias matching the spec's <c>RegisterComponent(element, nodeId)</c> signature.
+            Registers the <paramref name="element" /> both as page owner and component under <paramref name="nodeId" />.
+            Intended for root-level self-registration (e.g. <c>RegisterComponent(this, "")</c>).
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterResourceKeys">
+      <MemberSignature Language="C#" Value="public static void RegisterResourceKeys (object page, string[] keys);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterResourceKeys(object page, string[] keys) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.RegisterResourceKeys(System.Object,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterResourceKeys (page As Object, keys As String())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterResourceKeys(System::Object ^ page, cli::array &lt;System::String ^&gt; ^ keys);" />
+      <MemberSignature Language="F#" Value="static member RegisterResourceKeys : obj * string[] -&gt; unit" Usage="Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.RegisterResourceKeys (page, keys)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="page" Type="System.Object" />
+        <Parameter Name="keys" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="page">To be added.</param>
+        <param name="keys">To be added.</param>
+        <summary>
+            Stores the set of resource dictionary keys registered by the page's <c>InitializeComponent</c>
+            or <c>UpdateComponent</c>. Used during incremental hot reload to determine which keys
+            were removed and need to be deleted from <c>Resources</c>.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGet">
+      <MemberSignature Language="C#" Value="public static bool TryGet (object page, string nodeId, out object? component);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(object page, string nodeId, [out] object&amp; component) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.TryGet(System.Object,System.String,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryGet (page As Object, nodeId As String, ByRef component As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryGet(System::Object ^ page, System::String ^ nodeId, [Runtime::InteropServices::Out] System::Object ^ % component);" />
+      <MemberSignature Language="F#" Value="static member TryGet : obj * string * obj -&gt; bool" Usage="Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.TryGet (page, nodeId, component)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="page" Type="System.Object" />
+        <Parameter Name="nodeId" Type="System.String" />
+        <Parameter Name="component" Type="System.Object" RefType="out">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="page">To be added.</param>
+        <param name="nodeId">To be added.</param>
+        <param name="component">To be added.</param>
+        <summary>
+            Tries to retrieve the live component registered under <paramref name="nodeId" /> for <paramref name="page" />.
+            Called from generated <c>UpdateComponent()</c>.
+            </summary>
+        <returns>
+          <see langword="true" /> if found and the weak reference is still alive.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unregister">
+      <MemberSignature Language="C#" Value="public static void Unregister (object page);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Unregister(object page) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.Unregister(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Unregister (page As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Unregister(System::Object ^ page);" />
+      <MemberSignature Language="F#" Value="static member Unregister : obj -&gt; unit" Usage="Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.Unregister page" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="page" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="page">To be added.</param>
+        <summary>
+            Removes all registrations for <paramref name="page" />.
+            Call this when a page instance is being destroyed to free weak references eagerly.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unregister">
+      <MemberSignature Language="C#" Value="public static void Unregister (object page, string nodeId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Unregister(object page, string nodeId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.Unregister(System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Unregister (page As Object, nodeId As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Unregister(System::Object ^ page, System::String ^ nodeId);" />
+      <MemberSignature Language="F#" Value="static member Unregister : obj * string -&gt; unit" Usage="Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.Unregister (page, nodeId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="page" Type="System.Object" />
+        <Parameter Name="nodeId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="page">To be added.</param>
+        <param name="nodeId">To be added.</param>
+        <summary>
+            Removes a single component registration for the given <paramref name="nodeId" /> under <paramref name="page" />.
+            Called from generated <c>UpdateComponent()</c> when a child element is removed during incremental hot reload.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnregisterSubtree">
+      <MemberSignature Language="C#" Value="public static void UnregisterSubtree (object page, string nodeIdPrefix);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UnregisterSubtree(object page, string nodeIdPrefix) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.UnregisterSubtree(System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub UnregisterSubtree (page As Object, nodeIdPrefix As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void UnregisterSubtree(System::Object ^ page, System::String ^ nodeIdPrefix);" />
+      <MemberSignature Language="F#" Value="static member UnregisterSubtree : obj * string -&gt; unit" Usage="Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.UnregisterSubtree (page, nodeIdPrefix)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="page" Type="System.Object" />
+        <Parameter Name="nodeIdPrefix" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="page">To be added.</param>
+        <param name="nodeIdPrefix">To be added.</param>
+        <summary>
+            Removes all component registrations whose node ID starts with the given prefix
+            (the node itself and all descendants whose ID matches the pattern
+            <c>prefix/...</c>). Provided as a utility for callers that use hierarchical
+            slash-separated node IDs.
+            </summary>
+        <remarks>
+            The current XAML source generator assigns flat integer IDs (e.g. "0", "1") and
+            emits one Unregister call per removed descendant (descendants are pre-collected by the
+            diff). This method is therefore not used by the generator today; it remains for callers
+            that adopt a hierarchical ID scheme.
+            </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

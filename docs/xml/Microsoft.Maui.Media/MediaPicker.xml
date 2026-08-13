@@ -60,7 +60,7 @@
             Opens the camera to take a photo.
             </summary>
         <returns>A <see cref="T:Microsoft.Maui.Storage.FileResult" /> object containing details of the captured photo. When the operation was cancelled by the user, this will return <see langword="null" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>On Android, the operating system may destroy the app process while the system camera is foregrounded. Apps that need to recover MediaPicker results after process recreation should persist their own workflow state before starting capture and use the Android MediaPicker recovery APIs after startup or resume.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CaptureVideoAsync">
@@ -94,7 +94,7 @@
             Opens the camera to take a video.
             </summary>
         <returns>A <see cref="T:Microsoft.Maui.Storage.FileResult" /> object containing details of the captured video. When the operation was cancelled by the user, this will return <see langword="null" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>On Android, the operating system may destroy the app process while the system camera is foregrounded. Apps that need to recover MediaPicker results after process recreation should persist their own workflow state before starting capture and use the Android MediaPicker recovery APIs after startup or resume.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Default">

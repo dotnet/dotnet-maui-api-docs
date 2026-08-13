@@ -74,6 +74,160 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="BadgeColor">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.Color BadgeColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Graphics.Color BadgeColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.BaseShellItem.BadgeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BadgeColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Graphics::Color ^ BadgeColor { Microsoft::Maui::Graphics::Color ^ get(); void set(Microsoft::Maui::Graphics::Color ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BadgeColor : Microsoft.Maui.Graphics.Color with get, set" Usage="Microsoft.Maui.Controls.BaseShellItem.BadgeColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the background color of the badge displayed on this Shell navigation item. This is a bindable property.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BadgeColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty BadgeColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty BadgeColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.BaseShellItem.BadgeColorProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BadgeColorProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ BadgeColorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BadgeColorProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.BaseShellItem.BadgeColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.BaseShellItem.BadgeColor" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BadgeText">
+      <MemberSignature Language="C#" Value="public string BadgeText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BadgeText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.BaseShellItem.BadgeText" />
+      <MemberSignature Language="VB.NET" Value="Public Property BadgeText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BadgeText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BadgeText : string with get, set" Usage="Microsoft.Maui.Controls.BaseShellItem.BadgeText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the badge text displayed on this Shell navigation item. This is a bindable property.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            Setting this property to a non-null, non-empty value will display a badge on the tab item.
+            Set to an empty string to show a dot indicator (small badge with no text).
+            Set to <see langword="null" /> to hide the badge.
+            On Windows, only numeric values are displayed as numbers; non-numeric text (e.g., "New") shows as a dot indicator.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BadgeTextColor">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.Color BadgeTextColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Graphics.Color BadgeTextColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.BaseShellItem.BadgeTextColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BadgeTextColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Graphics::Color ^ BadgeTextColor { Microsoft::Maui::Graphics::Color ^ get(); void set(Microsoft::Maui::Graphics::Color ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BadgeTextColor : Microsoft.Maui.Graphics.Color with get, set" Usage="Microsoft.Maui.Controls.BaseShellItem.BadgeTextColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the foreground (text) color of the badge displayed on this Shell navigation item.
+            When set to <see langword="null" />, the platform default text color is used (typically white).
+            This is a bindable property.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            Platform support:
+            </para>
+          <list type="bullet">
+            <item>
+              <description>
+                <b>Android</b>: Maps to <c>BadgeDrawable.BadgeTextColor</c>.</description>
+            </item>
+            <item>
+              <description>
+                <b>iOS/MacCatalyst</b>: Maps to <c>UITabBarItem.SetBadgeTextAttributes</c>.</description>
+            </item>
+            <item>
+              <description>
+                <b>Windows</b>: Maps to <c>InfoBadge.Foreground</c>.</description>
+            </item>
+          </list>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BadgeTextColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty BadgeTextColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty BadgeTextColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.BaseShellItem.BadgeTextColorProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BadgeTextColorProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ BadgeTextColorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BadgeTextColorProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.BaseShellItem.BadgeTextColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.BaseShellItem.BadgeTextColor" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BadgeTextProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty BadgeTextProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty BadgeTextProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.BaseShellItem.BadgeTextProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BadgeTextProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ BadgeTextProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BadgeTextProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.BaseShellItem.BadgeTextProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.BaseShellItem.BadgeText" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Disappearing">
       <MemberSignature Language="C#" Value="public event EventHandler Disappearing;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Disappearing" />

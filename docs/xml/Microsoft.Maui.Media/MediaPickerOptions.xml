@@ -204,6 +204,60 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="SaveToGallery">
+      <MemberSignature Language="C#" Value="public bool SaveToGallery { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SaveToGallery" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Media.MediaPickerOptions.SaveToGallery" />
+      <MemberSignature Language="VB.NET" Value="Public Property SaveToGallery As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SaveToGallery { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SaveToGallery : bool with get, set" Usage="Microsoft.Maui.Media.MediaPickerOptions.SaveToGallery" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets whether the captured image or video should be saved to the device's photo gallery/library.
+            Default value is <see langword="false" />.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>This property only applies to capture operations (<see cref="M:Microsoft.Maui.Media.IMediaPicker.CapturePhotoAsync(Microsoft.Maui.Media.MediaPickerOptions)" /> and
+            <see cref="M:Microsoft.Maui.Media.IMediaPicker.CaptureVideoAsync(Microsoft.Maui.Media.MediaPickerOptions)" />). It has no effect on pick operations.</para>
+          <para>When set to <see langword="true" />, the necessary platform permissions will be requested automatically:</para>
+          <list type="bullet">
+            <item>
+              <description>
+                <b>iOS</b>: The <c>NSPhotoLibraryAddUsageDescription</c> key must be present in <c>Info.plist</c>.
+              The <c>PhotosAddOnly</c> permission will be requested.</description>
+            </item>
+            <item>
+              <description>
+                <b>Android</b>: On API &lt; 29, <c>WRITE_EXTERNAL_STORAGE</c> permission is required.
+              On API 29+, <c>MediaStore</c> is used and no additional permission is needed.</description>
+            </item>
+            <item>
+              <description>
+                <b>Mac Catalyst</b>: The <c>NSPhotoLibraryAddUsageDescription</c> key must be present in <c>Info.plist</c>.
+              The <c>PhotosAddOnly</c> permission will be requested.</description>
+            </item>
+            <item>
+              <description>
+                <b>Windows</b>: Not supported. This property is ignored on Windows. The captured media is saved to a
+              temporary cache folder and the user can save it manually.</description>
+            </item>
+            <item>
+              <description>
+                <b>Tizen</b>: Not supported. This property is ignored on Tizen.</description>
+            </item>
+          </list>
+        </remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SelectionLimit">
       <MemberSignature Language="C#" Value="public int SelectionLimit { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SelectionLimit" />

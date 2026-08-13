@@ -1,0 +1,134 @@
+<Type Name="XamlIncrementalHotReloadHandler" FullName="Microsoft.Maui.Controls.Xaml.XamlIncrementalHotReloadHandler">
+  <TypeSignature Language="C#" Value="public static class XamlIncrementalHotReloadHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit XamlIncrementalHotReloadHandler extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Xaml.XamlIncrementalHotReloadHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Class XamlIncrementalHotReloadHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XamlIncrementalHotReloadHandler abstract sealed" />
+  <TypeSignature Language="F#" Value="type XamlIncrementalHotReloadHandler = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            SDK-level <c>[MetadataUpdateHandler]</c> for XAML Incremental Hot Reload.
+            Looks up live page instances via <see cref="M:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.GetInstances(System.Type)" /> and
+            invokes the generated <c>UpdateComponent()</c> method on the main thread when metadata
+            is updated.
+            </summary>
+    <remarks>This type is public for source-generator access only. It is not intended to be used directly.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ClearCache">
+      <MemberSignature Language="C#" Value="public static void ClearCache (Type[]? updatedTypes);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ClearCache(class System.Type[] updatedTypes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Xaml.XamlIncrementalHotReloadHandler.ClearCache(System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ClearCache (updatedTypes As Type())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ClearCache(cli::array &lt;Type ^&gt; ^ updatedTypes);" />
+      <MemberSignature Language="F#" Value="static member ClearCache : Type[] -&gt; unit" Usage="Microsoft.Maui.Controls.Xaml.XamlIncrementalHotReloadHandler.ClearCache updatedTypes" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="updatedTypes" Type="System.Type[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="updatedTypes">To be added.</param>
+        <summary>
+            Called by the .NET hot-reload infrastructure <em>before</em> metadata is applied.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Track">
+      <MemberSignature Language="C#" Value="public static void Track (object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Track(object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Xaml.XamlIncrementalHotReloadHandler.Track(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Track (instance As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Track(System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="static member Track : obj -&gt; unit" Usage="Microsoft.Maui.Controls.Xaml.XamlIncrementalHotReloadHandler.Track instance" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">To be added.</param>
+        <summary>
+            Generator-only entry point retained for backward compatibility with previously
+            compiled <c>InitializeComponent()</c> bodies. <see cref="M:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.Register(System.Object,System.String,System.Object)" />
+            already records every page instance, so live-instance enumeration is sourced from
+            <see cref="M:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.GetInstances(System.Type)" />. This method only validates its
+            argument and respects the <c>IsIncrementalHotReloadEnabled</c> feature switch.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateApplication">
+      <MemberSignature Language="C#" Value="public static void UpdateApplication (Type[]? updatedTypes);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateApplication(class System.Type[] updatedTypes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Xaml.XamlIncrementalHotReloadHandler.UpdateApplication(System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub UpdateApplication (updatedTypes As Type())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void UpdateApplication(cli::array &lt;Type ^&gt; ^ updatedTypes);" />
+      <MemberSignature Language="F#" Value="static member UpdateApplication : Type[] -&gt; unit" Usage="Microsoft.Maui.Controls.Xaml.XamlIncrementalHotReloadHandler.UpdateApplication updatedTypes" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="updatedTypes" Type="System.Type[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="updatedTypes">To be added.</param>
+        <summary>
+            Called by the .NET hot-reload infrastructure after every
+            <c>MetadataUpdater.ApplyUpdate</c> to push property changes to live page instances.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
