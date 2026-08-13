@@ -1,0 +1,90 @@
+<Type Name="IBlazorWebViewHandler" FullName="Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler">
+  <TypeSignature Language="C#" Value="public interface IBlazorWebViewHandler : Microsoft.Maui.IViewHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IBlazorWebViewHandler implements class Microsoft.Maui.IElementHandler, class Microsoft.Maui.IViewHandler" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IBlazorWebViewHandler&#xA;Implements IViewHandler" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IBlazorWebViewHandler : Microsoft::Maui::IViewHandler" />
+  <TypeSignature Language="F#" Value="type IBlazorWebViewHandler = interface&#xA;    interface IViewHandler&#xA;    interface IElementHandler" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.AspNetCore.Components.WebView.Maui</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IElementHandler</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IViewHandler</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Defines the operations required by a handler for <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView" />.
+            </summary>
+    <remarks>
+            On Windows, an implementation that owns a <c>WebView2</c> must either expose it directly as
+            its <c>PlatformView</c> so the framework can close it when the window is destroyed,
+            or close the wrapped control from its own disconnect logic. This preserves the built-in workaround
+            for microsoft-ui-xaml issue 6872.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateFileProvider">
+      <MemberSignature Language="C#" Value="public Microsoft.Extensions.FileProviders.IFileProvider CreateFileProvider (string contentRootDir);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Extensions.FileProviders.IFileProvider CreateFileProvider(string contentRootDir) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler.CreateFileProvider(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateFileProvider (contentRootDir As String) As IFileProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Extensions::FileProviders::IFileProvider ^ CreateFileProvider(System::String ^ contentRootDir);" />
+      <MemberSignature Language="F#" Value="abstract member CreateFileProvider : string -&gt; Microsoft.Extensions.FileProviders.IFileProvider" Usage="iBlazorWebViewHandler.CreateFileProvider contentRootDir" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.AspNetCore.Components.WebView.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Extensions.FileProviders.IFileProvider</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contentRootDir" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="contentRootDir">The base directory for static web assets.</param>
+        <summary>
+            Creates the file provider used to serve static web assets.
+            </summary>
+        <returns>The file provider for the handler's platform.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryDispatchAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; TryDispatchAsync (Action&lt;IServiceProvider&gt; workItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; TryDispatchAsync(class System.Action`1&lt;class System.IServiceProvider&gt; workItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler.TryDispatchAsync(System.Action{System.IServiceProvider})" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryDispatchAsync (workItem As Action(Of IServiceProvider)) As Task(Of Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;bool&gt; ^ TryDispatchAsync(Action&lt;IServiceProvider ^&gt; ^ workItem);" />
+      <MemberSignature Language="F#" Value="abstract member TryDispatchAsync : Action&lt;IServiceProvider&gt; -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="iBlazorWebViewHandler.TryDispatchAsync workItem" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.AspNetCore.Components.WebView.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="workItem" Type="System.Action&lt;System.IServiceProvider&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="workItem">The work to dispatch.</param>
+        <summary>
+            Dispatches work to the scoped services available to Razor components.
+            </summary>
+        <returns>
+            A task representing <see langword="true" /> when the work was dispatched,
+            or <see langword="false" /> when Blazor is not currently running.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

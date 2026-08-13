@@ -1,0 +1,95 @@
+<Type Name="StatusBarTheme" FullName="Microsoft.Maui.StatusBarTheme">
+  <TypeSignature Language="C#" Value="public enum StatusBarTheme" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StatusBarTheme extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.StatusBarTheme" />
+  <TypeSignature Language="VB.NET" Value="Public Enum StatusBarTheme" />
+  <TypeSignature Language="C++ CLI" Value="public enum class StatusBarTheme" />
+  <TypeSignature Language="F#" Value="type StatusBarTheme = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Controls the theme of OS-drawn status bar content (icons, text) on mobile platforms (Android, iOS).
+            Analogous to <see cref="T:Microsoft.Maui.ApplicationModel.AppTheme" /> — <see cref="F:Microsoft.Maui.StatusBarTheme.Light" /> means light background
+            with dark icons, <see cref="F:Microsoft.Maui.StatusBarTheme.Dark" /> means dark background with light icons.
+            On desktop platforms (Windows, macCatalyst) this is a no-op since there are no OS-drawn status bar icons.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Dark">
+      <MemberSignature Language="C#" Value="Dark" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Maui.StatusBarTheme Dark = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.StatusBarTheme.Dark" />
+      <MemberSignature Language="VB.NET" Value="Dark" />
+      <MemberSignature Language="C++ CLI" Value="Dark" />
+      <MemberSignature Language="F#" Value="Dark = 2" Usage="Microsoft.Maui.StatusBarTheme.Dark" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.StatusBarTheme</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            The status bar area has a dark background — use light/white icons/text for contrast.
+            Maps to: Android <c>AppearanceLightStatusBars=false</c>, iOS <c>UIStatusBarStyle.LightContent</c>.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Maui.StatusBarTheme Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.StatusBarTheme.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="Microsoft.Maui.StatusBarTheme.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.StatusBarTheme</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            Automatically follow the current app theme. This is the default
+            and preserves existing behavior.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Light">
+      <MemberSignature Language="C#" Value="Light" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Maui.StatusBarTheme Light = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.StatusBarTheme.Light" />
+      <MemberSignature Language="VB.NET" Value="Light" />
+      <MemberSignature Language="C++ CLI" Value="Light" />
+      <MemberSignature Language="F#" Value="Light = 1" Usage="Microsoft.Maui.StatusBarTheme.Light" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.StatusBarTheme</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            The status bar area has a light background — use dark icons/text for contrast.
+            Maps to: Android <c>AppearanceLightStatusBars=true</c>, iOS <c>UIStatusBarStyle.DarkContent</c>.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -232,6 +232,40 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="StaticContentCacheControlProvider">
+      <MemberSignature Language="C#" Value="public virtual Func&lt;Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewStaticContentRequest,string?&gt;? StaticContentCacheControlProvider { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Func`2&lt;class Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewStaticContentRequest, string&gt; StaticContentCacheControlProvider" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView.StaticContentCacheControlProvider" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property StaticContentCacheControlProvider As Func(Of BlazorWebViewStaticContentRequest, String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Func&lt;Microsoft::AspNetCore::Components::WebView::Maui::BlazorWebViewStaticContentRequest ^, System::String ^&gt; ^ StaticContentCacheControlProvider { Func&lt;Microsoft::AspNetCore::Components::WebView::Maui::BlazorWebViewStaticContentRequest ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StaticContentCacheControlProvider : Func&lt;Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewStaticContentRequest, string&gt;" Usage="Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView.StaticContentCacheControlProvider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.AspNetCore.Components.WebView.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1, 2 })]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1, 2 })&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Func&lt;Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewStaticContentRequest,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a callback that returns the <c>Cache-Control</c> header value to use for a static content request
+            served by the <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView" />, or <see langword="null" /> to use the default (which disables
+            caching). Returning <see langword="null" /> or an empty string from the callback for a given request also
+            falls back to the default for that request. The callback may be invoked on a background thread, so it
+            must not access UI state directly. If the callback throws, the exception is logged and the request falls
+            back to the default header. Cache entries remain subject to platform limits, expiration, and eviction.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="UrlLoading">
       <MemberSignature Language="C#" Value="public void UrlLoading (Microsoft.AspNetCore.Components.WebView.UrlLoadingEventArgs args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UrlLoading(class Microsoft.AspNetCore.Components.WebView.UrlLoadingEventArgs args) cil managed" />

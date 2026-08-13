@@ -17,14 +17,29 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="net-maui-10.0;net-maui-8.0;net-maui-9.0">
       <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
     <summary>Contains configuration arguments for displaying platform-specific alert dialogs.</summary>
-    <remarks>For internal use only. This API can be changed or removed without notice at any time.</remarks>
+    <remarks>
+            This type is part of the stable public API contract for <see cref="T:Microsoft.Maui.Controls.Platform.IAlertManager" />
+            and <see cref="T:Microsoft.Maui.Controls.Platform.IAlertManagerSubscription" />, despite residing in the
+            <c>Microsoft.Maui.Controls.Internals</c> namespace.
+            <para>
+            Third-party platform backends may supply a custom alert implementation by registering a
+            keyed <see cref="T:System.Func`3" /> of
+            <c>Func&lt;Microsoft.Maui.Controls.Page, AlertArguments, System.Threading.Tasks.Task&lt;bool&gt;&gt;</c>
+            in the application's <see cref="T:System.IServiceProvider" /> with the service key
+            <c>Microsoft.Maui.Controls.DisplayAlert</c>. The delegate should return <see langword="true" />
+            when the user accepts the alert, or <see langword="false" /> when the user cancels or dismisses
+            it. Unkeyed delegates are not considered by this convention.
+            </para><para>
+            Note: the keyed registration is reserved for MAUI alert handling. Do not reuse this service
+            key for unrelated services in the same service collection.
+            </para></remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

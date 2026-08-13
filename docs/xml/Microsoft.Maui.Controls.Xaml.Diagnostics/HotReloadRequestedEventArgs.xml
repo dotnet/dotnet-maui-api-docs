@@ -1,0 +1,98 @@
+<Type Name="HotReloadRequestedEventArgs" FullName="Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadRequestedEventArgs">
+  <TypeSignature Language="C#" Value="public class HotReloadRequestedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HotReloadRequestedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadRequestedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class HotReloadRequestedEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HotReloadRequestedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type HotReloadRequestedEventArgs = class&#xA;    inherit EventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Fired when the MetadataUpdateHandler receives the list of updated types from the runtime.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="HandledTypes">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Type&gt; HandledTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class System.Type&gt; HandledTypes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadRequestedEventArgs.HandledTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HandledTypes As IReadOnlyList(Of Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IReadOnlyList&lt;Type ^&gt; ^ HandledTypes { System::Collections::Generic::IReadOnlyList&lt;Type ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HandledTypes : System.Collections.Generic.IReadOnlyList&lt;Type&gt;" Usage="Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadRequestedEventArgs.HandledTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.Type&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the subset of <see cref="P:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadRequestedEventArgs.UpdatedTypes" /> that XAML Incremental Hot Reload recognizes —
+            the types carrying a source-generated <c>UpdateComponent()</c>. Empty when the update is not
+            an incremental XAML update (for example, a pure C# metadata delta). Computed synchronously,
+            before any UI-thread dispatch, so tooling can classify the update without awaiting the apply.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Timestamp">
+      <MemberSignature Language="C#" Value="public DateTimeOffset Timestamp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset Timestamp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadRequestedEventArgs.Timestamp" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Timestamp As DateTimeOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTimeOffset Timestamp { DateTimeOffset get(); };" />
+      <MemberSignature Language="F#" Value="member this.Timestamp : DateTimeOffset" Usage="Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadRequestedEventArgs.Timestamp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTimeOffset</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the timestamp when the update request was received.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdatedTypes">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Type&gt; UpdatedTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class System.Type&gt; UpdatedTypes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadRequestedEventArgs.UpdatedTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UpdatedTypes As IReadOnlyList(Of Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IReadOnlyList&lt;Type ^&gt; ^ UpdatedTypes { System::Collections::Generic::IReadOnlyList&lt;Type ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UpdatedTypes : System.Collections.Generic.IReadOnlyList&lt;Type&gt;" Usage="Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadRequestedEventArgs.UpdatedTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.Type&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the types the runtime requested to update.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
