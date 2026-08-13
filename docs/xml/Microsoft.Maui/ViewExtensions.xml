@@ -55,9 +55,27 @@
       </Parameters>
       <Docs>
         <param name="view">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            Captures a screenshot of the specified <paramref name="view" />.
+            </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            On non-built-in platform TFMs (e.g. <c>net10.0-macos</c> AppKit backends,
+            <c>net10.0</c> Linux/GTK backends) where MAUI does not ship a screenshot
+            implementation, capture is routed through the registered screenshot service.
+            Third-party platform backends opt in by registering an <see cref="T:Microsoft.Maui.Media.IScreenshot" />
+            implementation that also implements <see cref="T:Microsoft.Maui.Media.IViewScreenshot" /> in the app's
+            <see cref="T:System.IServiceProvider" />:
+            <code>
+            builder.Services.AddSingleton&lt;IScreenshot, AppKitScreenshotImplementation&gt;();
+            </code>
+            The dispatch resolves that service from the handler's
+            <see cref="P:Microsoft.Maui.IElementHandler.MauiContext" /> and forwards the view's container view
+            (or, failing that, its platform view) to
+            <see cref="M:Microsoft.Maui.Media.IViewScreenshot.CaptureViewAsync(System.Object)" />. When no capable service is
+            registered (or the <see cref="P:Microsoft.Maui.IElementHandler.PlatformView" /> is
+            <see langword="null" />), the returned task resolves to <see langword="null" />.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisconnectHandlers">

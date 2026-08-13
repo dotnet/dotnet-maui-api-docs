@@ -72,12 +72,13 @@
         <Parameter Name="sourceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="sourceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">The format context.</param>
+        <param name="sourceType">The source type to check.</param>
+        <summary>Determines whether conversion is possible from the specified type to <see cref="T:Microsoft.Maui.Devices.Sensors.Location" />.</summary>
+        <returns>
+          <see langword="true" /> if the source type is <see cref="T:System.String" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <inheritdoc />
+        <inheritdoc cref="M:System.ComponentModel.TypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="CanConvertTo">
@@ -100,12 +101,13 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">The format context.</param>
+        <param name="destinationType">The destination type to check.</param>
+        <summary>Determines whether conversion is possible from <see cref="T:Microsoft.Maui.Devices.Sensors.Location" /> to the specified type.</summary>
+        <returns>
+          <see langword="true" /> if the destination type is <see cref="T:System.String" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <inheritdoc />
+        <inheritdoc cref="M:System.ComponentModel.TypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -136,13 +138,13 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="culture">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">The format context.</param>
+        <param name="culture">The culture info.</param>
+        <param name="value">The value to convert, expected in the format <c>"latitude,longitude"</c>.</param>
+        <summary>Converts a string representation of latitude and longitude to a <see cref="T:Microsoft.Maui.Devices.Sensors.Location" /> object.</summary>
+        <returns>A <see cref="T:Microsoft.Maui.Devices.Sensors.Location" /> object parsed from the string value.</returns>
         <remarks>To be added.</remarks>
-        <inheritdoc />
+        <inheritdoc cref="M:System.ComponentModel.TypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -174,14 +176,14 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="culture">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">The format context.</param>
+        <param name="culture">The culture info.</param>
+        <param name="value">The <see cref="T:Microsoft.Maui.Devices.Sensors.Location" /> value to convert.</param>
+        <param name="destinationType">The destination type (must be <see cref="T:System.String" />).</param>
+        <summary>Converts a <see cref="T:Microsoft.Maui.Devices.Sensors.Location" /> object to a string representation.</summary>
+        <returns>A string in the format <c>"latitude,longitude"</c>.</returns>
         <remarks>To be added.</remarks>
-        <inheritdoc />
+        <inheritdoc cref="M:System.ComponentModel.TypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
       </Docs>
     </Member>
   </Members>

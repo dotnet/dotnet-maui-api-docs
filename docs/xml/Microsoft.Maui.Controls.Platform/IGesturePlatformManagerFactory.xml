@@ -1,0 +1,71 @@
+<Type Name="IGesturePlatformManagerFactory" FullName="Microsoft.Maui.Controls.Platform.IGesturePlatformManagerFactory">
+  <TypeSignature Language="C#" Value="public interface IGesturePlatformManagerFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IGesturePlatformManagerFactory" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Platform.IGesturePlatformManagerFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IGesturePlatformManagerFactory" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IGesturePlatformManagerFactory" />
+  <TypeSignature Language="F#" Value="type IGesturePlatformManagerFactory = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Application-wide factory for creating <see cref="T:Microsoft.Maui.Controls.Platform.IGesturePlatformManager" /> instances.
+            Register an implementation in the application's <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" />
+            to replace the built-in platform gesture handling for every handler connection.
+            </summary>
+    <remarks>
+      <para>
+            When an <see cref="T:Microsoft.Maui.Controls.Platform.IGesturePlatformManagerFactory" /> is present in
+            <see cref="P:Microsoft.Maui.IMauiContext.Services" />, the framework calls
+            <see cref="M:Microsoft.Maui.Controls.Platform.IGesturePlatformManagerFactory.CreateGesturePlatformManager(Microsoft.Maui.IViewHandler)" /> instead of constructing the default
+            <c>GesturePlatformManager</c>. This lets alternative platform backends (for example,
+            community-maintained backends that do not use <c>IPlatformViewHandler</c>)
+            supply their own gesture infrastructure without subclassing or forking the built-in types.
+            </para>
+      <para>
+            The factory takes precedence over the framework's internal handler-scoped customization path.
+            </para>
+      <example>
+            Registering a custom factory:
+            <code lang="csharp">
+            builder.Services.AddSingleton&lt;IGesturePlatformManagerFactory, MyGestureFactory&gt;();
+            </code></example>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateGesturePlatformManager">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.Platform.IGesturePlatformManager CreateGesturePlatformManager (Microsoft.Maui.IViewHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Maui.Controls.Platform.IGesturePlatformManager CreateGesturePlatformManager(class Microsoft.Maui.IViewHandler handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Platform.IGesturePlatformManagerFactory.CreateGesturePlatformManager(Microsoft.Maui.IViewHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateGesturePlatformManager (handler As IViewHandler) As IGesturePlatformManager" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Maui::Controls::Platform::IGesturePlatformManager ^ CreateGesturePlatformManager(Microsoft::Maui::IViewHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="abstract member CreateGesturePlatformManager : Microsoft.Maui.IViewHandler -&gt; Microsoft.Maui.Controls.Platform.IGesturePlatformManager" Usage="iGesturePlatformManagerFactory.CreateGesturePlatformManager handler" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.Platform.IGesturePlatformManager</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="Microsoft.Maui.IViewHandler" />
+      </Parameters>
+      <Docs>
+        <param name="handler">The handler connection for which the gesture manager is created.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Maui.Controls.Platform.IGesturePlatformManager" /> for the supplied handler connection.
+            </summary>
+        <returns>
+            A new <see cref="T:Microsoft.Maui.Controls.Platform.IGesturePlatformManager" /> instance. The framework owns and disposes this
+            instance. Return a new instance for each call because the manager is disposed and recreated
+            on every connect or handler change.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

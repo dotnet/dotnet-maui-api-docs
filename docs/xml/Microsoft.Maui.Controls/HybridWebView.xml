@@ -1,10 +1,11 @@
 <Type Name="HybridWebView" FullName="Microsoft.Maui.Controls.HybridWebView">
   <TypeSignature Language="C#" Value="public class HybridWebView : Microsoft.Maui.Controls.View, Microsoft.Maui.IHybridWebView" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HybridWebView extends Microsoft.Maui.Controls.View implements class Microsoft.Maui.IElement, class Microsoft.Maui.IHybridWebView, class Microsoft.Maui.IInitializationAwareWebView, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView, class Microsoft.Maui.IWebRequestInterceptingWebView" FrameworkAlternate="net-maui-10.0;net-maui-11.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HybridWebView extends Microsoft.Maui.Controls.View implements class Microsoft.Maui.IElement, class Microsoft.Maui.IHybridWebView, class Microsoft.Maui.IInitializationAwareWebView, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView, class Microsoft.Maui.IWebRequestInterceptingWebView" FrameworkAlternate="net-maui-10.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.HybridWebView" />
   <TypeSignature Language="VB.NET" Value="Public Class HybridWebView&#xA;Inherits View&#xA;Implements IHybridWebView" />
   <TypeSignature Language="C++ CLI" Value="public ref class HybridWebView : Microsoft::Maui::Controls::View, Microsoft::Maui::IHybridWebView" />
   <TypeSignature Language="F#" Value="type HybridWebView = class&#xA;    inherit View&#xA;    interface IHybridWebView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform&#xA;    interface IWebRequestInterceptingWebView&#xA;    interface IInitializationAwareWebView" FrameworkAlternate="net-maui-10.0;net-maui-11.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi HybridWebView extends Microsoft.Maui.Controls.View implements class Microsoft.Maui.IElement, class Microsoft.Maui.IHybridWebView, class Microsoft.Maui.IInitializationAwareWebView, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView, class Microsoft.Maui.IWebRequestInterceptingWebView" FrameworkAlternate="net-maui-11.0" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HybridWebView extends Microsoft.Maui.Controls.View implements class Microsoft.Maui.IElement, class Microsoft.Maui.IHybridWebView, class Microsoft.Maui.ITransform, class Microsoft.Maui.IView" FrameworkAlternate="net-maui-9.0" />
   <TypeSignature Language="F#" Value="type HybridWebView = class&#xA;    inherit View&#xA;    interface IHybridWebView&#xA;    interface IView&#xA;    interface IElement&#xA;    interface ITransform" FrameworkAlternate="net-maui-9.0" />
   <AssemblyInfo>
@@ -83,6 +84,12 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
         <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -111,7 +118,7 @@
         <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="net-maui-10.0;net-maui-9.0">
           <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
         </Attribute>
@@ -175,6 +182,12 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
         <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -204,7 +217,7 @@
         <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="net-maui-10.0;net-maui-9.0">
           <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
         </Attribute>
@@ -255,13 +268,10 @@
         <param name="methodName">The name of the JavaScript method to invoke.</param>
         <param name="paramValues">Optional array of objects to be passed to the JavaScript method by JSON-encoding each one.</param>
         <param name="paramJsonTypeInfos">Optional array of metadata about serializing the types of the parameters specified by <paramref name="paramValues" />.</param>
-        <summary>
-            Invokes a JavaScript method named <paramref name="methodName" /> and optionally passes in the parameter values specified
-            by <paramref name="paramValues" /> by JSON-encoding each one.
-            </summary>
+        <summary />
         <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
-        <inheritdoc />
+        <inheritdoc cref="M:Microsoft.Maui.Controls.HybridWebView.InvokeJavaScriptAsync``1(System.String,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Object[],System.Text.Json.Serialization.Metadata.JsonTypeInfo[])" />
       </Docs>
     </Member>
     <Member MemberName="InvokeJavaScriptAsync&lt;TReturnType&gt;">
@@ -327,6 +337,36 @@
         <inheritdoc />
       </Docs>
     </Member>
+    <Member MemberName="Invoker">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.HybridWebViewInvoker Invoker { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.HybridWebViewInvoker Invoker" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.HybridWebView.Invoker" />
+      <MemberSignature Language="VB.NET" Value="Public Property Invoker As HybridWebViewInvoker" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::HybridWebViewInvoker ^ Invoker { Microsoft::Maui::HybridWebViewInvoker ^ get(); void set(Microsoft::Maui::HybridWebViewInvoker ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Invoker : Microsoft.Maui.HybridWebViewInvoker with get, set" Usage="Microsoft.Maui.Controls.HybridWebView.Invoker" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.IHybridWebView.Invoker</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.HybridWebViewInvoker</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Microsoft.Maui.IHybridWebView.InvokeJavaScriptTarget">
       <MemberSignature Language="C#" Value="object? Microsoft.Maui.IHybridWebView.InvokeJavaScriptTarget { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Microsoft.Maui.IHybridWebView.InvokeJavaScriptTarget" />
@@ -344,6 +384,12 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
         <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -372,9 +418,13 @@
         <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="net-maui-10.0;net-maui-9.0">
           <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembers(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.All)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembers(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.All)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -582,13 +632,23 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
         <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.RequiresDynamicCode("Use SetInvokeJavaScriptTarget&lt;T&gt;(T target, JsonSerializerContext jsonSerializerContext) for trimming and NativeAOT compatibility.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.RequiresDynamicCode("Use SetInvokeJavaScriptTarget&lt;T&gt;(T target, JsonSerializerContext jsonSerializerContext) for trimming and NativeAOT compatibility.")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("Use SetInvokeJavaScriptTarget&lt;T&gt;(T target, JsonSerializerContext jsonSerializerContext) for trimming and NativeAOT compatibility.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("Use SetInvokeJavaScriptTarget&lt;T&gt;(T target, JsonSerializerContext jsonSerializerContext) for trimming and NativeAOT compatibility.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <TypeParameters>
         <TypeParameter Name="T">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="net-maui-10.0;net-maui-9.0">
               <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembers(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.All)]</AttributeName>
               <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembers(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.All)&gt;]</AttributeName>
             </Attribute>
@@ -604,6 +664,44 @@
       <Docs>
         <typeparam name="T">To be added.</typeparam>
         <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="SetInvokeJavaScriptTarget&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public void SetInvokeJavaScriptTarget&lt;T&gt; (T target, System.Text.Json.Serialization.JsonSerializerContext jsonSerializerContext) where T : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetInvokeJavaScriptTarget&lt;class T&gt;(!!T target, class System.Text.Json.Serialization.JsonSerializerContext jsonSerializerContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.HybridWebView.SetInvokeJavaScriptTarget``1(``0,System.Text.Json.Serialization.JsonSerializerContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetInvokeJavaScriptTarget(Of T As Class) (target As T, jsonSerializerContext As JsonSerializerContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class virtual void SetInvokeJavaScriptTarget(T target, System::Text::Json::Serialization::JsonSerializerContext ^ jsonSerializerContext);" />
+      <MemberSignature Language="F#" Value="abstract member SetInvokeJavaScriptTarget : 'T * System.Text.Json.Serialization.JsonSerializerContext -&gt; unit (requires 'T : null)&#xA;override this.SetInvokeJavaScriptTarget : 'T * System.Text.Json.Serialization.JsonSerializerContext -&gt; unit (requires 'T : null)" Usage="hybridWebView.SetInvokeJavaScriptTarget (target, jsonSerializerContext)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Maui.IHybridWebView.SetInvokeJavaScriptTarget``1(``0,System.Text.Json.Serialization.JsonSerializerContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="target" Type="T" Index="0" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="jsonSerializerContext" Type="System.Text.Json.Serialization.JsonSerializerContext" Index="1" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="target">To be added.</param>
+        <param name="jsonSerializerContext">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
         <inheritdoc />

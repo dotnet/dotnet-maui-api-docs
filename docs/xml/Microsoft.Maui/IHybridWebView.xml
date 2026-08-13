@@ -225,13 +225,46 @@
         <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="net-maui-10.0;net-maui-9.0">
           <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembers(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.All)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembers(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.All)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            For internal use only.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invoker">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.HybridWebViewInvoker Invoker { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.HybridWebViewInvoker Invoker" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.IHybridWebView.Invoker" />
+      <MemberSignature Language="VB.NET" Value="Public Property Invoker As HybridWebViewInvoker" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::HybridWebViewInvoker ^ Invoker { Microsoft::Maui::HybridWebViewInvoker ^ get(); void set(Microsoft::Maui::HybridWebViewInvoker ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Invoker : Microsoft.Maui.HybridWebViewInvoker with get, set" Usage="Microsoft.Maui.IHybridWebView.Invoker" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.HybridWebViewInvoker</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -307,13 +340,23 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
         <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.RequiresDynamicCode("Use SetInvokeJavaScriptTarget&lt;T&gt;(T target, JsonSerializerContext jsonSerializerContext) for trimming and NativeAOT compatibility.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.RequiresDynamicCode("Use SetInvokeJavaScriptTarget&lt;T&gt;(T target, JsonSerializerContext jsonSerializerContext) for trimming and NativeAOT compatibility.")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("Use SetInvokeJavaScriptTarget&lt;T&gt;(T target, JsonSerializerContext jsonSerializerContext) for trimming and NativeAOT compatibility.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("Use SetInvokeJavaScriptTarget&lt;T&gt;(T target, JsonSerializerContext jsonSerializerContext) for trimming and NativeAOT compatibility.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <TypeParameters>
         <TypeParameter Name="T">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="net-maui-10.0;net-maui-9.0">
               <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembers(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.All)]</AttributeName>
               <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembers(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.All)&gt;]</AttributeName>
             </Attribute>
@@ -329,6 +372,43 @@
       <Docs>
         <typeparam name="T">The type that contains methods callable from JavaScript.</typeparam>
         <param name="target">An instance of type <typeparamref name="T" /> that will be used to call methods on.</param>
+        <summary>
+             Sets the object that will be the target of JavaScript calls from the web view. The public methods on this object
+             are callable from JavaScript using the <c>window.HybridWebView.InvokeDotNet</c> method.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetInvokeJavaScriptTarget&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public void SetInvokeJavaScriptTarget&lt;T&gt; (T target, System.Text.Json.Serialization.JsonSerializerContext jsonSerializerContext) where T : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetInvokeJavaScriptTarget&lt;class T&gt;(!!T target, class System.Text.Json.Serialization.JsonSerializerContext jsonSerializerContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.IHybridWebView.SetInvokeJavaScriptTarget``1(``0,System.Text.Json.Serialization.JsonSerializerContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetInvokeJavaScriptTarget(Of T As Class) (target As T, jsonSerializerContext As JsonSerializerContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class void SetInvokeJavaScriptTarget(T target, System::Text::Json::Serialization::JsonSerializerContext ^ jsonSerializerContext);" />
+      <MemberSignature Language="F#" Value="abstract member SetInvokeJavaScriptTarget : 'T * System.Text.Json.Serialization.JsonSerializerContext -&gt; unit (requires 'T : null)" Usage="iHybridWebView.SetInvokeJavaScriptTarget (target, jsonSerializerContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="target" Type="T" Index="0" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="jsonSerializerContext" Type="System.Text.Json.Serialization.JsonSerializerContext" Index="1" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type that contains methods callable from JavaScript.</typeparam>
+        <param name="target">An instance of type <typeparamref name="T" /> that will be used to call methods on.</param>
+        <param name="jsonSerializerContext">The source-generated JSON serializer context for parameter and return types used by the target methods.</param>
         <summary>
              Sets the object that will be the target of JavaScript calls from the web view. The public methods on this object
              are callable from JavaScript using the <c>window.HybridWebView.InvokeDotNet</c> method.

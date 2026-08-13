@@ -77,6 +77,183 @@
         <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="activated" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <Member MemberName="BadgeColor">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.Color BadgeColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Graphics.Color BadgeColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.ToolbarItem.BadgeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BadgeColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Graphics::Color ^ BadgeColor { Microsoft::Maui::Graphics::Color ^ get(); void set(Microsoft::Maui::Graphics::Color ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BadgeColor : Microsoft.Maui.Graphics.Color with get, set" Usage="Microsoft.Maui.Controls.ToolbarItem.BadgeColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the background color of the badge displayed on this toolbar item.
+            When set to <see langword="null" />, the platform default badge color is used.
+            This is a bindable property.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            This property is only effective when <see cref="P:Microsoft.Maui.Controls.ToolbarItem.BadgeText" /> is not <see langword="null" />.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BadgeColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty BadgeColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty BadgeColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.ToolbarItem.BadgeColorProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BadgeColorProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ BadgeColorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BadgeColorProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.ToolbarItem.BadgeColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ToolbarItem.BadgeColor" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BadgeText">
+      <MemberSignature Language="C#" Value="public string BadgeText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BadgeText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.ToolbarItem.BadgeText" />
+      <MemberSignature Language="VB.NET" Value="Public Property BadgeText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BadgeText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BadgeText : string with get, set" Usage="Microsoft.Maui.Controls.ToolbarItem.BadgeText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the badge text displayed on this toolbar item.
+            Set to a non-empty string to show a text/count badge, an empty string to show a dot indicator, or <see langword="null" /> to hide the badge.
+            This is a bindable property.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            Badge rendering varies by platform:
+            </para>
+          <list type="bullet">
+            <item>
+              <description>
+                <b>Android</b>: Uses Material Design <c>BadgeDrawable</c> via <c>BadgeUtils</c>. Supports numeric and text badges on primary toolbar items. Empty string shows a small dot indicator.</description>
+            </item>
+            <item>
+              <description>
+                <b>iOS/MacCatalyst</b>: Uses the native <c>UIBarButtonItem.badge</c> API introduced in iOS 26. On earlier iOS versions, the badge is silently ignored. Empty string shows a dot indicator.</description>
+            </item>
+            <item>
+              <description>
+                <b>Windows</b>: Uses WinUI <c>InfoBadge</c> overlaid on the toolbar button. Numeric values display as counts; non-numeric text and empty string display as a dot indicator.</description>
+            </item>
+          </list>
+          <para>
+            Badges are only displayed on primary toolbar items (items with <see cref="P:Microsoft.Maui.Controls.ToolbarItem.Order" /> set to <see cref="F:Microsoft.Maui.Controls.ToolbarItemOrder.Primary" /> or <see cref="F:Microsoft.Maui.Controls.ToolbarItemOrder.Default" />).
+            Secondary (overflow) items do not display badges.
+            </para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BadgeTextColor">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.Color BadgeTextColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Graphics.Color BadgeTextColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.ToolbarItem.BadgeTextColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BadgeTextColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Graphics::Color ^ BadgeTextColor { Microsoft::Maui::Graphics::Color ^ get(); void set(Microsoft::Maui::Graphics::Color ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BadgeTextColor : Microsoft.Maui.Graphics.Color with get, set" Usage="Microsoft.Maui.Controls.ToolbarItem.BadgeTextColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the foreground (text) color of the badge displayed on this toolbar item.
+            When set to <see langword="null" />, the platform default text color is used (typically white).
+            This is a bindable property.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            Platform support:
+            </para>
+          <list type="bullet">
+            <item>
+              <description>
+                <b>Android</b>: Maps to <c>BadgeDrawable.BadgeTextColor</c>.</description>
+            </item>
+            <item>
+              <description>
+                <b>iOS/MacCatalyst 26+</b>: Maps to <c>UIBarButtonItemBadge.ForegroundColor</c>.</description>
+            </item>
+            <item>
+              <description>
+                <b>Windows</b>: Maps to <c>InfoBadge.Foreground</c>.</description>
+            </item>
+          </list>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BadgeTextColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty BadgeTextColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty BadgeTextColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.ToolbarItem.BadgeTextColorProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BadgeTextColorProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ BadgeTextColorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BadgeTextColorProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.ToolbarItem.BadgeTextColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ToolbarItem.BadgeTextColor" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BadgeTextProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty BadgeTextProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty BadgeTextProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.ToolbarItem.BadgeTextProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BadgeTextProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ BadgeTextProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BadgeTextProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.ToolbarItem.BadgeTextProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ToolbarItem.BadgeText" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Order">
       <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.ToolbarItemOrder Order { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.Controls.ToolbarItemOrder Order" />

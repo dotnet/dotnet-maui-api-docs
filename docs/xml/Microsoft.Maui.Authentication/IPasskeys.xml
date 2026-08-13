@@ -1,0 +1,114 @@
+<Type Name="IPasskeys" FullName="Microsoft.Maui.Authentication.IPasskeys">
+  <TypeSignature Language="C#" Value="public interface IPasskeys" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IPasskeys" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Authentication.IPasskeys" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IPasskeys" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IPasskeys" />
+  <TypeSignature Language="F#" Value="type IPasskeys = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Create and use passkeys (WebAuthn / FIDO2 public-key credentials) with the native platform
+            authenticator (Face ID / Touch ID / Windows Hello / Android biometric).
+            </summary>
+    <remarks>
+            This API brokers the standard WebAuthn JSON between a relying-party (RP) server and the OS
+            authenticator. The server produces the options JSON and verifies the response JSON; this API only
+            drives the native UI. It does not perform any server-side verification, attestation validation, or
+            challenge generation.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AssertAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Maui.Authentication.PasskeyAssertionResponse&gt; AssertAsync (Microsoft.Maui.Authentication.PasskeyRequestOptions options, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Maui.Authentication.PasskeyAssertionResponse&gt; AssertAsync(class Microsoft.Maui.Authentication.PasskeyRequestOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Authentication.IPasskeys.AssertAsync(Microsoft.Maui.Authentication.PasskeyRequestOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AssertAsync (options As PasskeyRequestOptions, Optional cancellationToken As CancellationToken = Nothing) As Task(Of PasskeyAssertionResponse)" />
+      <MemberSignature Language="F#" Value="abstract member AssertAsync : Microsoft.Maui.Authentication.PasskeyRequestOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Maui.Authentication.PasskeyAssertionResponse&gt;" Usage="iPasskeys.AssertAsync (options, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Maui.Authentication.PasskeyAssertionResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="Microsoft.Maui.Authentication.PasskeyRequestOptions" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="options">The relying party's <c>PublicKeyCredentialRequestOptions</c> (server-provided).</param>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> to cancel the operation.</param>
+        <summary>
+            Authenticates with an existing passkey by driving the native "get credential" UI.
+            </summary>
+        <returns>The WebAuthn assertion response to send back to the RP server.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Maui.ApplicationModel.FeatureNotSupportedException">Thrown when passkeys are not supported on this platform or OS version.</exception>
+        <exception cref="T:System.ArgumentException">Thrown when the request options JSON is malformed or missing required fields.</exception>
+        <exception cref="T:System.Threading.Tasks.TaskCanceledException">Thrown when the user cancels the flow or the operation is canceled.</exception>
+        <exception cref="T:System.InvalidOperationException">Thrown when the ceremony fails (e.g. no matching credential or a platform error).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Maui.Authentication.PasskeyCreationResponse&gt; CreateAsync (Microsoft.Maui.Authentication.PasskeyCreationOptions options, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Maui.Authentication.PasskeyCreationResponse&gt; CreateAsync(class Microsoft.Maui.Authentication.PasskeyCreationOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Authentication.IPasskeys.CreateAsync(Microsoft.Maui.Authentication.PasskeyCreationOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateAsync (options As PasskeyCreationOptions, Optional cancellationToken As CancellationToken = Nothing) As Task(Of PasskeyCreationResponse)" />
+      <MemberSignature Language="F#" Value="abstract member CreateAsync : Microsoft.Maui.Authentication.PasskeyCreationOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Maui.Authentication.PasskeyCreationResponse&gt;" Usage="iPasskeys.CreateAsync (options, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Maui.Authentication.PasskeyCreationResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="Microsoft.Maui.Authentication.PasskeyCreationOptions" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="options">The relying party's <c>PublicKeyCredentialCreationOptions</c> (server-provided).</param>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> to cancel the operation.</param>
+        <summary>
+            Registers a new passkey by driving the native "create credential" UI.
+            </summary>
+        <returns>The WebAuthn registration response to send back to the RP server.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Maui.ApplicationModel.FeatureNotSupportedException">Thrown when passkeys are not supported on this platform or OS version.</exception>
+        <exception cref="T:System.ArgumentException">Thrown when the creation options JSON is malformed or missing required fields.</exception>
+        <exception cref="T:System.Threading.Tasks.TaskCanceledException">Thrown when the user cancels the flow or the operation is canceled.</exception>
+        <exception cref="T:System.InvalidOperationException">Thrown when the ceremony fails (e.g. misconfigured domain association or a platform error).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSupported">
+      <MemberSignature Language="C#" Value="public bool IsSupported { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSupported" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Authentication.IPasskeys.IsSupported" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSupported As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSupported { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSupported : bool" Usage="Microsoft.Maui.Authentication.IPasskeys.IsSupported" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether this platform (and OS version) can create and use passkeys.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

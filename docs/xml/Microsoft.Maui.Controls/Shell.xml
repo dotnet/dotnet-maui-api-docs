@@ -74,6 +74,24 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
         <AssemblyVersion>11.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.DynamicDependency(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.All, typeof(Microsoft.Maui.Controls.MenuShellItem))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.DynamicDependency(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.All, typeof(Microsoft.Maui.Controls.MenuShellItem))&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessage("Trimming", "IL2026:RequiresUnreferencedCode", Justification="ShellItemConverter only overrides CanConvertFrom/To and ConvertFrom/To; the annotated TypeConverter base members are never called.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessage("Trimming", "IL2026:RequiresUnreferencedCode", Justification="ShellItemConverter only overrides CanConvertFrom/To and ConvertFrom/To; the annotated TypeConverter base members are never called.")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessage("Trimming", "IL2111:ReflectionToDynamicallyAccessedMembers", Justification="ShellItemConverter only overrides CanConvertFrom/To and ConvertFrom/To; the annotated TypeConverter base members are never called.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessage("Trimming", "IL2111:ReflectionToDynamicallyAccessedMembers", Justification="ShellItemConverter only overrides CanConvertFrom/To and ConvertFrom/To; the annotated TypeConverter base members are never called.")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessage("AOT", "IL3050:RequiresDynamicCode", Justification="ShellItemConverter only overrides CanConvertFrom/To and ConvertFrom/To; the annotated TypeConverter base members are never called.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessage("AOT", "IL3050:RequiresDynamicCode", Justification="ShellItemConverter only overrides CanConvertFrom/To and ConvertFrom/To; the annotated TypeConverter base members are never called.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Maui.Controls.Shell" /> class.</summary>
@@ -125,6 +143,28 @@
         <summary>
             Defines the background color in the Shell chrome. 
             The color won't fill in behind the Shell content.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty BackgroundProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty BackgroundProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.Shell.BackgroundProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BackgroundProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ BackgroundProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BackgroundProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.Shell.BackgroundProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Defines the background brush for the Shell toolbar. Supports gradient brushes.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1296,6 +1336,33 @@
             Gets the <see cref="T:Microsoft.Maui.Controls.BackButtonBehavior" /> for the specified <paramref name="obj" />.
             </summary>
         <returns>The back button behavior for the object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBackground">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Controls.Brush GetBackground (Microsoft.Maui.Controls.BindableObject obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Maui.Controls.Brush GetBackground(class Microsoft.Maui.Controls.BindableObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Shell.GetBackground(Microsoft.Maui.Controls.BindableObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetBackground (obj As BindableObject) As Brush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Maui::Controls::Brush ^ GetBackground(Microsoft::Maui::Controls::BindableObject ^ obj);" />
+      <MemberSignature Language="F#" Value="static member GetBackground : Microsoft.Maui.Controls.BindableObject -&gt; Microsoft.Maui.Controls.Brush" Usage="Microsoft.Maui.Controls.Shell.GetBackground obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.Brush</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Microsoft.Maui.Controls.BindableObject" Index="0" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object from which to get the background brush.</param>
+        <summary>
+            Gets the background brush for the Shell toolbar.
+            </summary>
+        <returns>The background brush for the Shell toolbar.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3376,6 +3443,34 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <remarks>
             If the <paramref name="obj" /> is not a page, this property won't do anything.
             </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBackground">
+      <MemberSignature Language="C#" Value="public static void SetBackground (Microsoft.Maui.Controls.BindableObject obj, Microsoft.Maui.Controls.Brush value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetBackground(class Microsoft.Maui.Controls.BindableObject obj, class Microsoft.Maui.Controls.Brush value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Shell.SetBackground(Microsoft.Maui.Controls.BindableObject,Microsoft.Maui.Controls.Brush)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetBackground (obj As BindableObject, value As Brush)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetBackground(Microsoft::Maui::Controls::BindableObject ^ obj, Microsoft::Maui::Controls::Brush ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetBackground : Microsoft.Maui.Controls.BindableObject * Microsoft.Maui.Controls.Brush -&gt; unit" Usage="Microsoft.Maui.Controls.Shell.SetBackground (obj, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Microsoft.Maui.Controls.BindableObject" Index="0" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="value" Type="Microsoft.Maui.Controls.Brush" Index="1" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object on which to set the background brush.</param>
+        <param name="value">The brush to use as the Shell toolbar background.</param>
+        <summary>
+            Sets the background brush for the Shell toolbar.
+            </summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetBackgroundColor">

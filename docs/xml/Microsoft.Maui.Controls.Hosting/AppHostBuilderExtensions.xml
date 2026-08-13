@@ -225,7 +225,43 @@
             Configures <see cref="T:Microsoft.Maui.Hosting.MauiAppBuilder" /> to add support for the <see cref="T:Microsoft.Maui.Controls.Maps.Map" /> control.
             </summary>
         <returns>The configured <see cref="T:Microsoft.Maui.Hosting.MauiAppBuilder" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>
+            <b>Windows (Azure Maps):</b> Set your Azure Maps subscription key using <c>ConfigureEssentials</c>:
+            <code>
+            builder.ConfigureEssentials(essentials =&gt; essentials.UseMapServiceToken("YOUR_AZURE_MAPS_KEY"));
+            </code>
+            Get a key from the Azure Portal: https://portal.azure.com → Azure Maps account → Authentication
+            </para>
+          <para>
+            <b>Windows Features (via Azure Maps JS API):</b>
+            The Windows implementation uses the WinUI 3 MapControl backed by Azure Maps. The following features are
+            implemented by accessing the Azure Maps JavaScript API through the control's internal WebView2:
+            <list type="bullet"><item><description><b>MoveToRegion:</b> Navigates via <c>map.setCamera()</c>.</description></item><item><description><b>MapType:</b> Street/Satellite/Hybrid via <c>map.setStyle()</c>.</description></item><item><description><b>IsTrafficEnabled:</b> Traffic flow and incidents via <c>map.setTraffic()</c>.</description></item><item><description><b>IsScrollEnabled/IsZoomEnabled:</b> Independent control via <c>map.setUserInteraction()</c>.</description></item><item><description><b>Pins:</b> Via <c>MapIcon</c> on a <c>MapElementsLayer</c>.</description></item></list></para>
+          <para>
+            <b>Windows Platform Limitations:</b>
+            <list type="bullet">
+              <item>
+                <description>
+                  <b>User Location:</b> Not built-in; requires manual Geolocation API integration.</description>
+              </item>
+              <item>
+                <description>
+                  <b>Shapes:</b> Polylines, polygons, and circles are not supported (<c>MapElementsLayer</c> only supports <c>MapIcon</c>).</description>
+              </item>
+              <item>
+                <description>
+                  <b>Pin Labels:</b>
+                  <c>MapIcon</c> does not support labels or info windows.</description>
+              </item>
+              <item>
+                <description>
+                  <b>Map.Clicked (background):</b> Only <c>MapElement</c> clicks fire events, not empty map area clicks.</description>
+              </item>
+            </list>
+            See <see cref="T:Microsoft.Maui.Maps.Handlers.MapHandler" /> documentation for detailed platform information.
+            </para>
+        </remarks>
         <exception cref="T:System.NotImplementedException">Thrown on Windows because the maps control currently is not implemented for Windows.</exception>
       </Docs>
     </Member>
