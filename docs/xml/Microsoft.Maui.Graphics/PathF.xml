@@ -810,11 +810,12 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to compare with the current object.</param>
+        <summary>Determines whether the specified object is equal to the current <see cref="T:Microsoft.Maui.Graphics.PathF" /> using tolerance-based comparison for geometric values.</summary>
+        <returns>
+          <see langword="true" /> if the specified object represents the same path as the current object, with point and arc values compared within <see cref="F:Microsoft.Maui.Graphics.GeometryUtil.Epsilon" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <inheritdoc />
+        <inheritdoc cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -1010,10 +1011,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Serves as the default hash function.</summary>
+        <returns>A hash code for the current object.</returns>
         <remarks>To be added.</remarks>
-        <inheritdoc />
+        <inheritdoc cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="GetPointsForSegment">

@@ -324,6 +324,7 @@
           <see langword="true" /> when listening was started, or <see langword="false" /> when listening couldn't be started.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="request" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown when <paramref name="request" /> contains a negative minimum time or distance.</exception>
         <exception cref="T:Microsoft.Maui.ApplicationModel.FeatureNotSupportedException">Thrown if listening is not supported on this platform.</exception>
         <exception cref="T:System.InvalidOperationException">Thrown if already listening and <see cref="P:Microsoft.Maui.Devices.Sensors.Geolocation.IsListeningForeground" /> returns <see langword="true" />.</exception>
       </Docs>

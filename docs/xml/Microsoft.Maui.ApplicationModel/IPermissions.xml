@@ -1,0 +1,141 @@
+<Type Name="IPermissions" FullName="Microsoft.Maui.ApplicationModel.IPermissions">
+  <TypeSignature Language="C#" Value="public interface IPermissions" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IPermissions" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.ApplicationModel.IPermissions" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IPermissions" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IPermissions" />
+  <TypeSignature Language="F#" Value="type IPermissions = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Provides an abstraction for checking and requesting runtime permissions.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CheckStatusAsync&lt;TPermission&gt;">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Maui.ApplicationModel.PermissionStatus&gt; CheckStatusAsync&lt;TPermission&gt; () where TPermission : Microsoft.Maui.ApplicationModel.Permissions.BasePermission, new();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;valuetype Microsoft.Maui.ApplicationModel.PermissionStatus&gt; CheckStatusAsync&lt;.ctor (class Microsoft.Maui.ApplicationModel.Permissions/BasePermission) TPermission&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ApplicationModel.IPermissions.CheckStatusAsync``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function CheckStatusAsync(Of TPermission As {Permissions.BasePermissionNew}) () As Task(Of PermissionStatus)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TPermission&gt;&#xA; where TPermission : Microsoft::Maui::ApplicationModel::Permissions::BasePermissiongcnew() System::Threading::Tasks::Task&lt;Microsoft::Maui::ApplicationModel::PermissionStatus&gt; ^ CheckStatusAsync();" />
+      <MemberSignature Language="F#" Value="abstract member CheckStatusAsync : unit -&gt; System.Threading.Tasks.Task&lt;Microsoft.Maui.ApplicationModel.PermissionStatus&gt; (requires 'Permission :&gt; Microsoft.Maui.ApplicationModel.Permissions.BasePermission and 'Permission : (new : unit -&gt; 'Permission))" Usage="iPermissions.CheckStatusAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Maui.ApplicationModel.PermissionStatus&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TPermission">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <BaseTypeName>Microsoft.Maui.ApplicationModel.Permissions+BasePermission</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="TPermission">The permission type to check.</typeparam>
+        <summary>
+            Retrieves the current status of the permission.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Maui.ApplicationModel.PermissionStatus" /> value indicating the current status of the permission.</returns>
+        <remarks>
+            Will throw <see cref="T:Microsoft.Maui.ApplicationModel.PermissionException" /> if a required entry was not found in the application manifest.
+            Not all permissions require a manifest entry.
+            </remarks>
+        <exception cref="T:Microsoft.Maui.ApplicationModel.PermissionException">Thrown if a required entry was not found in the application manifest.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestAsync&lt;TPermission&gt;">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Maui.ApplicationModel.PermissionStatus&gt; RequestAsync&lt;TPermission&gt; () where TPermission : Microsoft.Maui.ApplicationModel.Permissions.BasePermission, new();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;valuetype Microsoft.Maui.ApplicationModel.PermissionStatus&gt; RequestAsync&lt;.ctor (class Microsoft.Maui.ApplicationModel.Permissions/BasePermission) TPermission&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ApplicationModel.IPermissions.RequestAsync``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function RequestAsync(Of TPermission As {Permissions.BasePermissionNew}) () As Task(Of PermissionStatus)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TPermission&gt;&#xA; where TPermission : Microsoft::Maui::ApplicationModel::Permissions::BasePermissiongcnew() System::Threading::Tasks::Task&lt;Microsoft::Maui::ApplicationModel::PermissionStatus&gt; ^ RequestAsync();" />
+      <MemberSignature Language="F#" Value="abstract member RequestAsync : unit -&gt; System.Threading.Tasks.Task&lt;Microsoft.Maui.ApplicationModel.PermissionStatus&gt; (requires 'Permission :&gt; Microsoft.Maui.ApplicationModel.Permissions.BasePermission and 'Permission : (new : unit -&gt; 'Permission))" Usage="iPermissions.RequestAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Maui.ApplicationModel.PermissionStatus&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TPermission">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <BaseTypeName>Microsoft.Maui.ApplicationModel.Permissions+BasePermission</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="TPermission">The permission type to request.</typeparam>
+        <summary>
+            Requests the permission from the user for this application.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Maui.ApplicationModel.PermissionStatus" /> value indicating the result of this permission request.</returns>
+        <remarks>
+            Will throw <see cref="T:Microsoft.Maui.ApplicationModel.PermissionException" /> if a required entry was not found in the application manifest.
+            Not all permissions require a manifest entry.
+            </remarks>
+        <exception cref="T:Microsoft.Maui.ApplicationModel.PermissionException">Thrown if a required entry was not found in the application manifest.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldShowRationale&lt;TPermission&gt;">
+      <MemberSignature Language="C#" Value="public bool ShouldShowRationale&lt;TPermission&gt; () where TPermission : Microsoft.Maui.ApplicationModel.Permissions.BasePermission, new();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ShouldShowRationale&lt;.ctor (class Microsoft.Maui.ApplicationModel.Permissions/BasePermission) TPermission&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ApplicationModel.IPermissions.ShouldShowRationale``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldShowRationale(Of TPermission As {Permissions.BasePermissionNew}) () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TPermission&gt;&#xA; where TPermission : Microsoft::Maui::ApplicationModel::Permissions::BasePermissiongcnew() bool ShouldShowRationale();" />
+      <MemberSignature Language="F#" Value="abstract member ShouldShowRationale : unit -&gt; bool (requires 'Permission :&gt; Microsoft.Maui.ApplicationModel.Permissions.BasePermission and 'Permission : (new : unit -&gt; 'Permission))" Usage="iPermissions.ShouldShowRationale " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TPermission">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <BaseTypeName>Microsoft.Maui.ApplicationModel.Permissions+BasePermission</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="TPermission">The permission type to check.</typeparam>
+        <summary>
+            Determines if an educational UI should be displayed explaining to the user how the permission will be used in the application.
+            </summary>
+        <returns>
+          <see langword="true" /> if the user has denied or disabled the permission in the past, else <see langword="false" />.</returns>
+        <remarks>Only used on Android, other platforms will always return <see langword="false" />.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

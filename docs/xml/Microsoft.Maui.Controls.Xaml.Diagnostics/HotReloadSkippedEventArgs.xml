@@ -1,0 +1,96 @@
+<Type Name="HotReloadSkippedEventArgs" FullName="Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadSkippedEventArgs">
+  <TypeSignature Language="C#" Value="public class HotReloadSkippedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HotReloadSkippedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadSkippedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class HotReloadSkippedEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HotReloadSkippedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type HotReloadSkippedEventArgs = class&#xA;    inherit EventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Fired when an update was recognized but nothing was dispatched (no live instances to patch).
+            Guarantees a terminal event for the request even when <see cref="T:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadAppliedEventArgs" />
+            is never raised.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="HandledTypes">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Type&gt; HandledTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class System.Type&gt; HandledTypes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadSkippedEventArgs.HandledTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HandledTypes As IReadOnlyList(Of Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IReadOnlyList&lt;Type ^&gt; ^ HandledTypes { System::Collections::Generic::IReadOnlyList&lt;Type ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HandledTypes : System.Collections.Generic.IReadOnlyList&lt;Type&gt;" Usage="Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadSkippedEventArgs.HandledTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.Type&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the recognized incremental-XAML types that had no live instances to patch.
+            A subset of <see cref="P:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadSkippedEventArgs.UpdatedTypes" />.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Timestamp">
+      <MemberSignature Language="C#" Value="public DateTimeOffset Timestamp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset Timestamp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadSkippedEventArgs.Timestamp" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Timestamp As DateTimeOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTimeOffset Timestamp { DateTimeOffset get(); };" />
+      <MemberSignature Language="F#" Value="member this.Timestamp : DateTimeOffset" Usage="Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadSkippedEventArgs.Timestamp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTimeOffset</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the timestamp when the update was skipped.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdatedTypes">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Type&gt; UpdatedTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class System.Type&gt; UpdatedTypes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadSkippedEventArgs.UpdatedTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UpdatedTypes As IReadOnlyList(Of Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IReadOnlyList&lt;Type ^&gt; ^ UpdatedTypes { System::Collections::Generic::IReadOnlyList&lt;Type ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UpdatedTypes : System.Collections.Generic.IReadOnlyList&lt;Type&gt;" Usage="Microsoft.Maui.Controls.Xaml.Diagnostics.HotReloadSkippedEventArgs.UpdatedTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.Type&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the types the runtime requested to update.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

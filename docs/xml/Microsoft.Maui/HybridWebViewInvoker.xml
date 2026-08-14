@@ -1,0 +1,102 @@
+<Type Name="HybridWebViewInvoker" FullName="Microsoft.Maui.HybridWebViewInvoker">
+  <TypeSignature Language="C#" Value="public abstract class HybridWebViewInvoker" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit HybridWebViewInvoker extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.HybridWebViewInvoker" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class HybridWebViewInvoker" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HybridWebViewInvoker abstract" />
+  <TypeSignature Language="F#" Value="type HybridWebViewInvoker = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Abstraction for JS-to-.NET method invocation in HybridWebView.
+            Implemented by the reflection-based fallback and by the source generator.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected HybridWebViewInvoker (object? invokeJavaScriptTarget, Type? invokeJavaScriptType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(object invokeJavaScriptTarget, class System.Type invokeJavaScriptType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.HybridWebViewInvoker.#ctor(System.Object,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (invokeJavaScriptTarget As Object, invokeJavaScriptType As Type)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; HybridWebViewInvoker(System::Object ^ invokeJavaScriptTarget, Type ^ invokeJavaScriptType);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.HybridWebViewInvoker : obj * Type -&gt; Microsoft.Maui.HybridWebViewInvoker" Usage="new Microsoft.Maui.HybridWebViewInvoker (invokeJavaScriptTarget, invokeJavaScriptType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="invokeJavaScriptTarget" Type="System.Object" />
+        <Parameter Name="invokeJavaScriptType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="invokeJavaScriptTarget">The object containing methods callable from JavaScript.</param>
+        <param name="invokeJavaScriptType">The type containing methods callable from JavaScript.</param>
+        <summary>
+            Creates a new invoker for the specified JavaScript invocation target.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeMethodAsync">
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;string?&gt; InvokeMethodAsync (string methodName, string[]? paramJsonValues);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; InvokeMethodAsync(string methodName, string[] paramJsonValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.HybridWebViewInvoker.InvokeMethodAsync(System.String,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function InvokeMethodAsync (methodName As String, paramJsonValues As String()) As Task(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Threading::Tasks::Task&lt;System::String ^&gt; ^ InvokeMethodAsync(System::String ^ methodName, cli::array &lt;System::String ^&gt; ^ paramJsonValues);" />
+      <MemberSignature Language="F#" Value="abstract member InvokeMethodAsync : string * string[] -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="hybridWebViewInvoker.InvokeMethodAsync (methodName, paramJsonValues)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 2 })]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 2 })&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="methodName" Type="System.String" />
+        <Parameter Name="paramJsonValues" Type="System.String[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="methodName">The name of the method to invoke.</param>
+        <param name="paramJsonValues">JSON-serialized parameter values, or null for parameterless methods.</param>
+        <summary>
+            Invokes the named .NET method with JSON-serialized parameters and returns a JSON-serialized result.
+            </summary>
+        <returns>JSON-serialized result, or null for void methods or null returns.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

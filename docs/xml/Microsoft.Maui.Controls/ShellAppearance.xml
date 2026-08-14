@@ -31,6 +31,27 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="Background">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.Brush Background { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.Brush Background" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.ShellAppearance.Background" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Background As Brush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::Brush ^ Background { Microsoft::Maui::Controls::Brush ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Background : Microsoft.Maui.Controls.Brush" Usage="Microsoft.Maui.Controls.ShellAppearance.Background" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the background brush of the Shell.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="BackgroundColor">
       <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.Color BackgroundColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Graphics.Color BackgroundColor" />
@@ -98,11 +119,12 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to compare with the current object.</param>
+        <summary>Determines whether the specified object is equal to the current <see cref="T:Microsoft.Maui.Controls.ShellAppearance" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified object is equal to the current object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <inheritdoc />
+        <inheritdoc cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="FlyoutBackdrop">
@@ -216,10 +238,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Serves as the default hash function.</summary>
+        <returns>A hash code for the current object.</returns>
         <remarks>To be added.</remarks>
-        <inheritdoc />
+        <inheritdoc cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="Ingest">

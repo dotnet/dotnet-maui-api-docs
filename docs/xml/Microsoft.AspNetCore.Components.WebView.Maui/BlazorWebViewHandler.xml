@@ -1,10 +1,15 @@
 <Type Name="BlazorWebViewHandler" FullName="Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler">
-  <TypeSignature Language="C#" Value="public class BlazorWebViewHandler : Microsoft.Maui.Handlers.ViewHandler&lt;Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView,object&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BlazorWebViewHandler extends Microsoft.Maui.Handlers.ViewHandler`2&lt;class Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView, object&gt;" />
+  <TypeSignature Language="C#" Value="public class BlazorWebViewHandler : Microsoft.Maui.Handlers.ViewHandler&lt;Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView,object&gt;" FrameworkAlternate="net-maui-10.0;net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BlazorWebViewHandler extends Microsoft.Maui.Handlers.ViewHandler`2&lt;class Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView, object&gt;" FrameworkAlternate="net-maui-10.0;net-maui-8.0;net-maui-9.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler" />
-  <TypeSignature Language="VB.NET" Value="Public Class BlazorWebViewHandler&#xA;Inherits ViewHandler(Of IBlazorWebView, Object)" />
-  <TypeSignature Language="C++ CLI" Value="public ref class BlazorWebViewHandler : Microsoft::Maui::Handlers::ViewHandler&lt;Microsoft::AspNetCore::Components::WebView::Maui::IBlazorWebView ^, System::Object ^&gt;" />
-  <TypeSignature Language="F#" Value="type BlazorWebViewHandler = class&#xA;    inherit ViewHandler&lt;IBlazorWebView, obj&gt;" />
+  <TypeSignature Language="VB.NET" Value="Public Class BlazorWebViewHandler&#xA;Inherits ViewHandler(Of IBlazorWebView, Object)" FrameworkAlternate="net-maui-10.0;net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BlazorWebViewHandler : Microsoft::Maui::Handlers::ViewHandler&lt;Microsoft::AspNetCore::Components::WebView::Maui::IBlazorWebView ^, System::Object ^&gt;" FrameworkAlternate="net-maui-10.0;net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="F#" Value="type BlazorWebViewHandler = class&#xA;    inherit ViewHandler&lt;IBlazorWebView, obj&gt;" FrameworkAlternate="net-maui-10.0;net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="C#" Value="public class BlazorWebViewHandler : Microsoft.Maui.Handlers.ViewHandler&lt;Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView,object&gt;, Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler" FrameworkAlternate="net-maui-11.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BlazorWebViewHandler extends Microsoft.Maui.Handlers.ViewHandler`2&lt;class Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView, object&gt; implements class Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler, class Microsoft.Maui.IElementHandler, class Microsoft.Maui.IViewHandler" FrameworkAlternate="net-maui-11.0" />
+  <TypeSignature Language="VB.NET" Value="Public Class BlazorWebViewHandler&#xA;Inherits ViewHandler(Of IBlazorWebView, Object)&#xA;Implements IBlazorWebViewHandler" FrameworkAlternate="net-maui-11.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BlazorWebViewHandler : Microsoft::Maui::Handlers::ViewHandler&lt;Microsoft::AspNetCore::Components::WebView::Maui::IBlazorWebView ^, System::Object ^&gt;, Microsoft::AspNetCore::Components::WebView::Maui::IBlazorWebViewHandler" FrameworkAlternate="net-maui-11.0" />
+  <TypeSignature Language="F#" Value="type BlazorWebViewHandler = class&#xA;    inherit ViewHandler&lt;IBlazorWebView, obj&gt;&#xA;    interface IBlazorWebViewHandler&#xA;    interface IViewHandler&#xA;    interface IElementHandler" FrameworkAlternate="net-maui-11.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.AspNetCore.Components.WebView.Maui</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -19,7 +24,17 @@
       <BaseTypeArgument TypeParamName="!1">System.Object</BaseTypeArgument>
     </BaseTypeArguments>
   </Base>
-  <Interfaces />
+  <Interfaces>
+    <Interface FrameworkAlternate="net-maui-11.0">
+      <InterfaceName>Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler</InterfaceName>
+    </Interface>
+    <Interface FrameworkAlternate="net-maui-11.0">
+      <InterfaceName>Microsoft.Maui.IElementHandler</InterfaceName>
+    </Interface>
+    <Interface FrameworkAlternate="net-maui-11.0">
+      <InterfaceName>Microsoft.Maui.IViewHandler</InterfaceName>
+    </Interface>
+  </Interfaces>
   <Attributes>
     <Attribute>
       <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 0, 1, 1 })]</AttributeName>
@@ -213,6 +228,62 @@
         <summary>
             Maps the <see cref="P:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView.RootComponents" /> property to the specified handler.
             </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler.CreateFileProvider">
+      <MemberSignature Language="C#" Value="Microsoft.Extensions.FileProviders.IFileProvider IBlazorWebViewHandler.CreateFileProvider (string contentRootDir);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.Extensions.FileProviders.IFileProvider Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler.CreateFileProvider(string contentRootDir) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler.Microsoft#AspNetCore#Components#WebView#Maui#IBlazorWebViewHandler#CreateFileProvider(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Function CreateFileProvider (contentRootDir As String) As IFileProvider Implements IBlazorWebViewHandler.CreateFileProvider" />
+      <MemberSignature Language="C++ CLI" Value=" virtual Microsoft::Extensions::FileProviders::IFileProvider ^ Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler.CreateFileProvider(System::String ^ contentRootDir) = Microsoft::AspNetCore::Components::WebView::Maui::IBlazorWebViewHandler::CreateFileProvider;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler.CreateFileProvider : string -&gt; Microsoft.Extensions.FileProviders.IFileProvider&#xA;override this.Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler.CreateFileProvider : string -&gt; Microsoft.Extensions.FileProviders.IFileProvider" Usage="blazorWebViewHandler.Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler.CreateFileProvider contentRootDir" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler.CreateFileProvider(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.AspNetCore.Components.WebView.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Extensions.FileProviders.IFileProvider</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contentRootDir" Type="System.String" Index="0" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="contentRootDir">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler.TryDispatchAsync">
+      <MemberSignature Language="C#" Value="System.Threading.Tasks.Task&lt;bool&gt; IBlazorWebViewHandler.TryDispatchAsync (Action&lt;IServiceProvider&gt; workItem);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler.TryDispatchAsync(class System.Action`1&lt;class System.IServiceProvider&gt; workItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler.Microsoft#AspNetCore#Components#WebView#Maui#IBlazorWebViewHandler#TryDispatchAsync(System.Action{System.IServiceProvider})" />
+      <MemberSignature Language="VB.NET" Value="Function TryDispatchAsync (workItem As Action(Of IServiceProvider)) As Task(Of Boolean) Implements IBlazorWebViewHandler.TryDispatchAsync" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Threading::Tasks::Task&lt;bool&gt; ^ Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler.TryDispatchAsync(Action&lt;IServiceProvider ^&gt; ^ workItem) = Microsoft::AspNetCore::Components::WebView::Maui::IBlazorWebViewHandler::TryDispatchAsync;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler.TryDispatchAsync : Action&lt;IServiceProvider&gt; -&gt; System.Threading.Tasks.Task&lt;bool&gt;&#xA;override this.Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler.TryDispatchAsync : Action&lt;IServiceProvider&gt; -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="blazorWebViewHandler.Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler.TryDispatchAsync workItem" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler.TryDispatchAsync(System.Action{System.IServiceProvider})</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.AspNetCore.Components.WebView.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="workItem" Type="System.Action&lt;System.IServiceProvider&gt;" Index="0" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="workItem">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

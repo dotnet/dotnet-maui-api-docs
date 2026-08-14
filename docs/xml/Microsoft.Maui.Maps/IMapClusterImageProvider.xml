@@ -1,0 +1,83 @@
+<Type Name="IMapClusterImageProvider" FullName="Microsoft.Maui.Maps.IMapClusterImageProvider">
+  <TypeSignature Language="C#" Value="public interface IMapClusterImageProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IMapClusterImageProvider" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Maps.IMapClusterImageProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IMapClusterImageProvider" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IMapClusterImageProvider" />
+  <TypeSignature Language="F#" Value="type IMapClusterImageProvider = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Optional contract for map implementations that provide custom cluster marker images.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ClusterImageVersion">
+      <MemberSignature Language="C#" Value="public int ClusterImageVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ClusterImageVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Maps.IMapClusterImageProvider.ClusterImageVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClusterImageVersion As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ClusterImageVersion { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClusterImageVersion : int" Usage="Microsoft.Maui.Maps.IMapClusterImageProvider.ClusterImageVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a change token that increments whenever previously resolved cluster images should be invalidated.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClusterImage">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.IImageSource? GetClusterImage (System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.Maps.IMapPin&gt; pins, int count, Microsoft.Maui.Devices.Sensors.Location location);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Maui.IImageSource GetClusterImage(class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Maui.Maps.IMapPin&gt; pins, int32 count, class Microsoft.Maui.Devices.Sensors.Location location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Maps.IMapClusterImageProvider.GetClusterImage(System.Collections.Generic.IReadOnlyList{Microsoft.Maui.Maps.IMapPin},System.Int32,Microsoft.Maui.Devices.Sensors.Location)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetClusterImage (pins As IReadOnlyList(Of IMapPin), count As Integer, location As Location) As IImageSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Maui::IImageSource ^ GetClusterImage(System::Collections::Generic::IReadOnlyList&lt;Microsoft::Maui::Maps::IMapPin ^&gt; ^ pins, int count, Microsoft::Maui::Devices::Sensors::Location ^ location);" />
+      <MemberSignature Language="F#" Value="abstract member GetClusterImage : System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.Maps.IMapPin&gt; * int * Microsoft.Maui.Devices.Sensors.Location -&gt; Microsoft.Maui.IImageSource" Usage="iMapClusterImageProvider.GetClusterImage (pins, count, location)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Maps</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.IImageSource</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pins" Type="System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.Maps.IMapPin&gt;" />
+        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="location" Type="Microsoft.Maui.Devices.Sensors.Location" />
+      </Parameters>
+      <Docs>
+        <param name="pins">The pins contained in the cluster. May be smaller than <paramref name="count" /> on
+            platforms where not every cluster member's pin can be resolved.</param>
+        <param name="count">The authoritative number of pins in the cluster, independent of how many
+            could be resolved into <paramref name="pins" />.</param>
+        <param name="location">The location (centroid) of the cluster.</param>
+        <summary>
+            Called by the handler when building a cluster marker to obtain a custom image for it.
+            </summary>
+        <returns>The image to use for the cluster marker, or <see langword="null" /> to use the default marker.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
