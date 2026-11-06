@@ -1,10 +1,15 @@
 <Type Name="SwipeItem" FullName="Microsoft.Maui.Controls.SwipeItem">
-  <TypeSignature Language="C#" Value="public class SwipeItem : Microsoft.Maui.Controls.MenuItem, Microsoft.Maui.Controls.ISwipeItem, Microsoft.Maui.ISwipeItemMenuItem" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SwipeItem extends Microsoft.Maui.Controls.MenuItem implements class Microsoft.Maui.Controls.ISwipeItem, class Microsoft.Maui.IElement, class Microsoft.Maui.IImageSourcePart, class Microsoft.Maui.IMenuElement, class Microsoft.Maui.ISwipeItem, class Microsoft.Maui.ISwipeItemMenuItem, class Microsoft.Maui.IText, class Microsoft.Maui.ITextStyle" />
+  <TypeSignature Language="C#" Value="public class SwipeItem : Microsoft.Maui.Controls.MenuItem, Microsoft.Maui.Controls.ISwipeItem, Microsoft.Maui.ISwipeItemMenuItem" FrameworkAlternate="net-maui-10.0;net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SwipeItem extends Microsoft.Maui.Controls.MenuItem implements class Microsoft.Maui.Controls.ISwipeItem, class Microsoft.Maui.IElement, class Microsoft.Maui.IImageSourcePart, class Microsoft.Maui.IMenuElement, class Microsoft.Maui.ISwipeItem, class Microsoft.Maui.ISwipeItemMenuItem, class Microsoft.Maui.IText, class Microsoft.Maui.ITextStyle" FrameworkAlternate="net-maui-10.0;net-maui-8.0;net-maui-9.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.SwipeItem" />
-  <TypeSignature Language="VB.NET" Value="Public Class SwipeItem&#xA;Inherits MenuItem&#xA;Implements ISwipeItem, ISwipeItemMenuItem" />
-  <TypeSignature Language="C++ CLI" Value="public ref class SwipeItem : Microsoft::Maui::Controls::MenuItem, Microsoft::Maui::Controls::ISwipeItem, Microsoft::Maui::ISwipeItemMenuItem" />
-  <TypeSignature Language="F#" Value="type SwipeItem = class&#xA;    inherit MenuItem&#xA;    interface ISwipeItem&#xA;    interface ISwipeItem&#xA;    interface IElement&#xA;    interface ISwipeItemMenuItem&#xA;    interface IMenuElement&#xA;    interface IImageSourcePart&#xA;    interface IText&#xA;    interface ITextStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Class SwipeItem&#xA;Inherits MenuItem&#xA;Implements ISwipeItem, ISwipeItemMenuItem" FrameworkAlternate="net-maui-10.0;net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SwipeItem : Microsoft::Maui::Controls::MenuItem, Microsoft::Maui::Controls::ISwipeItem, Microsoft::Maui::ISwipeItemMenuItem" FrameworkAlternate="net-maui-10.0;net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="F#" Value="type SwipeItem = class&#xA;    inherit MenuItem&#xA;    interface ISwipeItem&#xA;    interface ISwipeItem&#xA;    interface IElement&#xA;    interface ISwipeItemMenuItem&#xA;    interface IMenuElement&#xA;    interface IImageSourcePart&#xA;    interface IText&#xA;    interface ITextStyle" FrameworkAlternate="net-maui-10.0;net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="C#" Value="public class SwipeItem : Microsoft.Maui.Controls.MenuItem, Microsoft.Maui.Controls.ISwipeItem, Microsoft.Maui.ISwipeItemMenuItem, Microsoft.Maui.ISwipeItemMenuItemIconColor" FrameworkAlternate="net-maui-11.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SwipeItem extends Microsoft.Maui.Controls.MenuItem implements class Microsoft.Maui.Controls.ISwipeItem, class Microsoft.Maui.IElement, class Microsoft.Maui.IImageSourcePart, class Microsoft.Maui.IMenuElement, class Microsoft.Maui.ISwipeItem, class Microsoft.Maui.ISwipeItemMenuItem, class Microsoft.Maui.ISwipeItemMenuItemIconColor, class Microsoft.Maui.IText, class Microsoft.Maui.ITextStyle" FrameworkAlternate="net-maui-11.0" />
+  <TypeSignature Language="VB.NET" Value="Public Class SwipeItem&#xA;Inherits MenuItem&#xA;Implements ISwipeItem, ISwipeItemMenuItem, ISwipeItemMenuItemIconColor" FrameworkAlternate="net-maui-11.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SwipeItem : Microsoft::Maui::Controls::MenuItem, Microsoft::Maui::Controls::ISwipeItem, Microsoft::Maui::ISwipeItemMenuItem, Microsoft::Maui::ISwipeItemMenuItemIconColor" FrameworkAlternate="net-maui-11.0" />
+  <TypeSignature Language="F#" Value="type SwipeItem = class&#xA;    inherit MenuItem&#xA;    interface ISwipeItem&#xA;    interface ISwipeItem&#xA;    interface IElement&#xA;    interface ISwipeItemMenuItem&#xA;    interface IMenuElement&#xA;    interface IImageSourcePart&#xA;    interface IText&#xA;    interface ITextStyle&#xA;    interface ISwipeItemMenuItemIconColor" FrameworkAlternate="net-maui-11.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -39,6 +44,9 @@
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Maui.ITextStyle</InterfaceName>
+    </Interface>
+    <Interface FrameworkAlternate="net-maui-11.0">
+      <InterfaceName>Microsoft.Maui.ISwipeItemMenuItemIconColor</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>
@@ -111,6 +119,58 @@
       </ReturnValue>
       <Docs>
         <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.SwipeItem.BackgroundColor" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IconColor">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.Color IconColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Graphics.Color IconColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.SwipeItem.IconColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property IconColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Graphics::Color ^ IconColor { Microsoft::Maui::Graphics::Color ^ get(); void set(Microsoft::Maui::Graphics::Color ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.IconColor : Microsoft.Maui.Graphics.Color with get, set" Usage="Microsoft.Maui.Controls.SwipeItem.IconColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the color used to tint <see cref="P:Microsoft.Maui.Controls.MenuItem.IconImageSource" />. This is a bindable property.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            When unset, a font icon is tinted by its own <see cref="P:Microsoft.Maui.Controls.FontImageSource.Color" />, then by
+            <see cref="P:Microsoft.Maui.Controls.SwipeItem.TextColor" />, then by a color contrasting <see cref="P:Microsoft.Maui.Controls.SwipeItem.BackgroundColor" />; image icons such as
+            PNG and SVG render with their original colors. When set, this property tints font icons and image icons on
+            Android, iOS, and MacCatalyst (including stream-based sources, since the resolved platform image is
+            tinted), and font and packaged file icons on Windows, and can be bound with
+            <see cref="T:Microsoft.Maui.Controls.AppThemeBinding" /> to follow the current theme. On Windows, packaged file icons use
+            the color as a monochrome mask; URI, rooted, and stream-based image icons render with their original colors.
+            All icons on Tizen currently render with their original colors regardless of this property.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IconColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty IconColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty IconColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.SwipeItem.IconColorProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IconColorProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ IconColorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IconColorProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.SwipeItem.IconColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.SwipeItem.IconColor" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -293,6 +353,103 @@
       <Docs>
         <summary>To be added.</summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.ISwipeItemMenuItemIconColor.IconColor">
+      <MemberSignature Language="C#" Value="Microsoft.Maui.Graphics.Color Microsoft.Maui.ISwipeItemMenuItemIconColor.IconColor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Graphics.Color Microsoft.Maui.ISwipeItemMenuItemIconColor.IconColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.SwipeItem.Microsoft#Maui#ISwipeItemMenuItemIconColor#IconColor" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IconColor As Color Implements ISwipeItemMenuItemIconColor.IconColor" />
+      <MemberSignature Language="C++ CLI" Value="property Microsoft::Maui::Graphics::Color ^ Microsoft::Maui::ISwipeItemMenuItemIconColor::IconColor { Microsoft::Maui::Graphics::Color ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.ISwipeItemMenuItemIconColor.IconColor : Microsoft.Maui.Graphics.Color" Usage="Microsoft.Maui.ISwipeItemMenuItemIconColor.IconColor" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.ISwipeItemMenuItemIconColor.IconColor</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Maui.ITextStyle.TextColor">
+      <MemberSignature Language="C#" Value="Microsoft.Maui.Graphics.Color Microsoft.Maui.ITextStyle.TextColor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Graphics.Color Microsoft.Maui.ITextStyle.TextColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.SwipeItem.Microsoft#Maui#ITextStyle#TextColor" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property TextColor As Color Implements ITextStyle.TextColor" />
+      <MemberSignature Language="C++ CLI" Value="property Microsoft::Maui::Graphics::Color ^ Microsoft::Maui::ITextStyle::TextColor { Microsoft::Maui::Graphics::Color ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Maui.ITextStyle.TextColor : Microsoft.Maui.Graphics.Color" Usage="Microsoft.Maui.ITextStyle.TextColor" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Maui.ITextStyle.TextColor</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextColor">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Graphics.Color TextColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Graphics.Color TextColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.SwipeItem.TextColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Graphics::Color ^ TextColor { Microsoft::Maui::Graphics::Color ^ get(); void set(Microsoft::Maui::Graphics::Color ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TextColor : Microsoft.Maui.Graphics.Color with get, set" Usage="Microsoft.Maui.Controls.SwipeItem.TextColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Graphics.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the color used for the swipe item's label text. This is a bindable property.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            When unset, the label falls back to a color contrasting <see cref="P:Microsoft.Maui.Controls.SwipeItem.BackgroundColor" />, except when the
+            item's icon is a <see cref="T:Microsoft.Maui.Controls.FontImageSource" /> that already specifies its own
+            <see cref="P:Microsoft.Maui.Controls.FontImageSource.Color" />, or when no <see cref="P:Microsoft.Maui.Controls.SwipeItem.BackgroundColor" /> is set; in those cases the
+            label keeps the platform default. When set, that color is used as the label color, and it can be bound
+            with <see cref="T:Microsoft.Maui.Controls.AppThemeBinding" /> to follow the current theme.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextColorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty TextColorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty TextColorProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.SwipeItem.TextColorProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextColorProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ TextColorProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TextColorProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.SwipeItem.TextColorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.SwipeItem.TextColor" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

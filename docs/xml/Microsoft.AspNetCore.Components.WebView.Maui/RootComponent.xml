@@ -48,6 +48,39 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="AddToWebViewManagerAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task AddToWebViewManagerAsync (Microsoft.AspNetCore.Components.WebView.WebViewManager webViewManager);" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task AddToWebViewManagerAsync(class Microsoft.AspNetCore.Components.WebView.WebViewManager webViewManager) cil managed" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.AspNetCore.Components.WebView.Maui.RootComponent.AddToWebViewManagerAsync(Microsoft.AspNetCore.Components.WebView.WebViewManager)" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddToWebViewManagerAsync (webViewManager As WebViewManager) As Task" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ AddToWebViewManagerAsync(Microsoft::AspNetCore::Components::WebView::WebViewManager ^ webViewManager);" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="F#" Value="member this.AddToWebViewManagerAsync : Microsoft.AspNetCore.Components.WebView.WebViewManager -&gt; System.Threading.Tasks.Task" Usage="rootComponent.AddToWebViewManagerAsync webViewManager" FrameworkAlternate="net-maui-11.0" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.AspNetCore.Components.WebView.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType FrameworkAlternate="net-maui-11.0">System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webViewManager" Type="Microsoft.AspNetCore.Components.WebView.WebViewManager" Index="0" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="webViewManager">The <see cref="T:Microsoft.AspNetCore.Components.WebView.WebViewManager" /> to add this root component to.</param>
+        <summary>
+            Validates this root component and adds it to the specified <see cref="T:Microsoft.AspNetCore.Components.WebView.WebViewManager" />.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> that completes when the root component has been added.</returns>
+        <remarks>
+            This is intended for handlers implementing <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler" /> so that they can
+            apply the same validation and registration behavior as the built-in handlers. Call this on the
+            <see cref="P:Microsoft.AspNetCore.Components.WebView.WebViewManager.Dispatcher" /> thread.
+            </remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="webViewManager" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">Thrown if <see cref="P:Microsoft.AspNetCore.Components.WebView.Maui.RootComponent.Selector" /> or <see cref="P:Microsoft.AspNetCore.Components.WebView.Maui.RootComponent.ComponentType" /> has not been set.</exception>
+      </Docs>
+    </Member>
     <Member MemberName="ComponentType">
       <MemberSignature Language="C#" Value="public Type? ComponentType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ComponentType" />
@@ -102,6 +135,39 @@
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveFromWebViewManagerAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RemoveFromWebViewManagerAsync (Microsoft.AspNetCore.Components.WebView.WebViewManager webViewManager);" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task RemoveFromWebViewManagerAsync(class Microsoft.AspNetCore.Components.WebView.WebViewManager webViewManager) cil managed" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.AspNetCore.Components.WebView.Maui.RootComponent.RemoveFromWebViewManagerAsync(Microsoft.AspNetCore.Components.WebView.WebViewManager)" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveFromWebViewManagerAsync (webViewManager As WebViewManager) As Task" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ RemoveFromWebViewManagerAsync(Microsoft::AspNetCore::Components::WebView::WebViewManager ^ webViewManager);" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="F#" Value="member this.RemoveFromWebViewManagerAsync : Microsoft.AspNetCore.Components.WebView.WebViewManager -&gt; System.Threading.Tasks.Task" Usage="rootComponent.RemoveFromWebViewManagerAsync webViewManager" FrameworkAlternate="net-maui-11.0" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.AspNetCore.Components.WebView.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType FrameworkAlternate="net-maui-11.0">System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webViewManager" Type="Microsoft.AspNetCore.Components.WebView.WebViewManager" Index="0" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="webViewManager">The <see cref="T:Microsoft.AspNetCore.Components.WebView.WebViewManager" /> to remove this root component from.</param>
+        <summary>
+            Validates this root component and removes it from the specified <see cref="T:Microsoft.AspNetCore.Components.WebView.WebViewManager" />.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> that completes when the root component has been removed.</returns>
+        <remarks>
+            This is intended for handlers implementing <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler" /> so that they can
+            apply the same validation and removal behavior as the built-in handlers. Call this on the
+            <see cref="P:Microsoft.AspNetCore.Components.WebView.WebViewManager.Dispatcher" /> thread.
+            </remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="webViewManager" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">Thrown if <see cref="P:Microsoft.AspNetCore.Components.WebView.Maui.RootComponent.Selector" /> has not been set.</exception>
       </Docs>
     </Member>
     <Member MemberName="Selector">

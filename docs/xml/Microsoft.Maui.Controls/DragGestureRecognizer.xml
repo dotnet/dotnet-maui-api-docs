@@ -345,5 +345,98 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SendDragStarting">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.DragStartingEventArgs SendDragStarting (Microsoft.Maui.Controls.View element, Func&lt;Microsoft.Maui.IElement?,Microsoft.Maui.Graphics.Point?&gt;? getPosition = default, Microsoft.Maui.Controls.PlatformDragStartingEventArgs? platformArgs = default);" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Maui.Controls.DragStartingEventArgs SendDragStarting(class Microsoft.Maui.Controls.View element, class System.Func`2&lt;class Microsoft.Maui.IElement, valuetype System.Nullable`1&lt;valuetype Microsoft.Maui.Graphics.Point&gt;&gt; getPosition, class Microsoft.Maui.Controls.PlatformDragStartingEventArgs platformArgs) cil managed" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.DragGestureRecognizer.SendDragStarting(Microsoft.Maui.Controls.View,System.Func{Microsoft.Maui.IElement,System.Nullable{Microsoft.Maui.Graphics.Point}},Microsoft.Maui.Controls.PlatformDragStartingEventArgs)" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendDragStarting (element As View, Optional getPosition As Func(Of IElement, Nullable(Of Point)) = Nothing, Optional platformArgs As PlatformDragStartingEventArgs = Nothing) As DragStartingEventArgs" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="F#" Value="member this.SendDragStarting : Microsoft.Maui.Controls.View * Func&lt;Microsoft.Maui.IElement, Nullable&lt;Microsoft.Maui.Graphics.Point&gt;&gt; * Microsoft.Maui.Controls.PlatformDragStartingEventArgs -&gt; Microsoft.Maui.Controls.DragStartingEventArgs" Usage="dragGestureRecognizer.SendDragStarting (element, getPosition, platformArgs)" FrameworkAlternate="net-maui-11.0" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType FrameworkAlternate="net-maui-11.0">Microsoft.Maui.Controls.DragStartingEventArgs</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.Maui.Controls.View" Index="0" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="getPosition" Type="System.Func&lt;Microsoft.Maui.IElement,System.Nullable&lt;Microsoft.Maui.Graphics.Point&gt;&gt;" Index="1" FrameworkAlternate="net-maui-11.0">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-maui-11.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="platformArgs" Type="Microsoft.Maui.Controls.PlatformDragStartingEventArgs" Index="2" FrameworkAlternate="net-maui-11.0">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-maui-11.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="element">The view on which the drag gesture was recognized.</param>
+        <param name="getPosition">A function that returns the drag position relative to a specified element.</param>
+        <param name="platformArgs">The platform-specific data associated with the drag operation.</param>
+        <summary>
+            Executes the associated command and raises the <see cref="E:Microsoft.Maui.Controls.DragGestureRecognizer.DragStarting" /> event.
+            </summary>
+        <returns>The event arguments populated by the command and event handlers.</returns>
+        <remarks>
+            This infrastructure method is intended for gesture platform managers. If the returned event arguments indicate that the
+            operation was canceled or handled, the drag is not marked active and <see cref="M:Microsoft.Maui.Controls.DragGestureRecognizer.SendDropCompleted(Microsoft.Maui.Controls.DropCompletedEventArgs)" /> will not dispatch a completion.
+            Starting a new operation replaces any previously active operation.
+            </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SendDropCompleted">
+      <MemberSignature Language="C#" Value="public void SendDropCompleted (Microsoft.Maui.Controls.DropCompletedEventArgs args);" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendDropCompleted(class Microsoft.Maui.Controls.DropCompletedEventArgs args) cil managed" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.DragGestureRecognizer.SendDropCompleted(Microsoft.Maui.Controls.DropCompletedEventArgs)" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SendDropCompleted (args As DropCompletedEventArgs)" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendDropCompleted(Microsoft::Maui::Controls::DropCompletedEventArgs ^ args);" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="F#" Value="member this.SendDropCompleted : Microsoft.Maui.Controls.DropCompletedEventArgs -&gt; unit" Usage="dragGestureRecognizer.SendDropCompleted args" FrameworkAlternate="net-maui-11.0" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType FrameworkAlternate="net-maui-11.0">System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="Microsoft.Maui.Controls.DropCompletedEventArgs" Index="0" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="args">The event arguments that describe the completed drop operation.</param>
+        <summary>
+            Executes the associated command and raises the <see cref="E:Microsoft.Maui.Controls.DragGestureRecognizer.DropCompleted" /> event for an active drag operation.
+            </summary>
+        <remarks>
+            This infrastructure method is intended for gesture platform managers. A completion is dispatched only once for an active
+            drag operation started by <see cref="M:Microsoft.Maui.Controls.DragGestureRecognizer.SendDragStarting(Microsoft.Maui.Controls.View,System.Func{Microsoft.Maui.IElement,System.Nullable{Microsoft.Maui.Graphics.Point}},Microsoft.Maui.Controls.PlatformDragStartingEventArgs)" />.
+            </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="args" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
   </Members>
 </Type>

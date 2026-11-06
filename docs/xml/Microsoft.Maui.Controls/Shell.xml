@@ -3389,6 +3389,78 @@ await Shell.Current.GoToAsync("app://xamarin.com/xaminals/animals/monkeys");
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ResolveFlyoutItemTemplate">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.Controls.DataTemplate? ResolveFlyoutItemTemplate (Microsoft.Maui.Controls.Shell? shell, Microsoft.Maui.Controls.BindableObject flyoutItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Maui.Controls.DataTemplate ResolveFlyoutItemTemplate(class Microsoft.Maui.Controls.Shell shell, class Microsoft.Maui.Controls.BindableObject flyoutItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Shell.ResolveFlyoutItemTemplate(Microsoft.Maui.Controls.Shell,Microsoft.Maui.Controls.BindableObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ResolveFlyoutItemTemplate (shell As Shell, flyoutItem As BindableObject) As DataTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Maui::Controls::DataTemplate ^ ResolveFlyoutItemTemplate(Microsoft::Maui::Controls::Shell ^ shell, Microsoft::Maui::Controls::BindableObject ^ flyoutItem);" />
+      <MemberSignature Language="F#" Value="static member ResolveFlyoutItemTemplate : Microsoft.Maui.Controls.Shell * Microsoft.Maui.Controls.BindableObject -&gt; Microsoft.Maui.Controls.DataTemplate" Usage="Microsoft.Maui.Controls.Shell.ResolveFlyoutItemTemplate (shell, flyoutItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shell" Type="Microsoft.Maui.Controls.Shell" Index="0" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="flyoutItem" Type="Microsoft.Maui.Controls.BindableObject" Index="1" FrameworkAlternate="net-maui-11.0">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="shell">
+             The <see cref="T:Microsoft.Maui.Controls.Shell" /> that owns <paramref name="flyoutItem" />. When <see langword="null" />, the owning Shell is
+             resolved from <paramref name="flyoutItem" />; if it cannot be resolved, only templates set on the item itself are considered.
+             </param>
+        <param name="flyoutItem">A flyout item produced by <see cref="M:Microsoft.Maui.Controls.IShellController.GenerateFlyoutGrouping" />.</param>
+        <summary>
+             Resolves the application-defined flyout <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> for a flyout item.
+             </summary>
+        <returns>
+             The application-defined <see cref="T:Microsoft.Maui.Controls.DataTemplate" /> for <paramref name="flyoutItem" />, or <see langword="null" /> when the
+             application has not supplied one and the caller should use its own platform-native default flyout item presentation.
+             </returns>
+        <remarks>
+          <para>
+             This is the supported entry point for custom Shell backends. It applies the same precedence the built-in backends use:
+             a template set on the item wins over a template set on the Shell, <see cref="F:Microsoft.Maui.Controls.Shell.MenuItemTemplateProperty" /> is used for menu
+             items and <see cref="F:Microsoft.Maui.Controls.Shell.ItemTemplateProperty" /> for everything else, and the pair of objects that backs a menu item is
+             resolved internally so a template set on either one is found.
+             </para>
+          <para>
+             The returned value may be a <see cref="T:Microsoft.Maui.Controls.DataTemplateSelector" />. Call
+             <see cref="M:Microsoft.Maui.Controls.Internals.DataTemplateExtensions.SelectDataTemplate(Microsoft.Maui.Controls.DataTemplate,System.Object,Microsoft.Maui.Controls.BindableObject)" /> before creating
+             content. Bind the created content to <paramref name="flyoutItem" />, which is what the built-in Android, iOS, and Windows
+             backends do.
+             </para>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="flyoutItem" /> is <see langword="null" />.</exception>
+        <example>
+          <code><![CDATA[
+             View CreateFlyoutItemView(Shell shell, BindableObject flyoutItem)
+             {
+                 var template = Shell.ResolveFlyoutItemTemplate(shell, flyoutItem);
+            
+                 if (template is null)
+                     return CreatePlatformDefaultFlyoutItemView(flyoutItem);
+            
+                 var view = (View)template.SelectDataTemplate(flyoutItem, shell).CreateContent();
+                 view.BindingContext = flyoutItem;
+                 return view;
+             }
+             ]]></code>
+        </example>
+      </Docs>
+    </Member>
     <Member MemberName="SearchHandlerProperty">
       <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty SearchHandlerProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty SearchHandlerProperty" />

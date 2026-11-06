@@ -1,0 +1,331 @@
+<Type Name="IModalNavigationHost" FullName="Microsoft.Maui.Controls.Platform.IModalNavigationHost">
+  <TypeSignature Language="C#" Value="public interface IModalNavigationHost" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IModalNavigationHost" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Platform.IModalNavigationHost" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IModalNavigationHost" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IModalNavigationHost" />
+  <TypeSignature Language="F#" Value="type IModalNavigationHost = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Exposes the cross-platform modal navigation state that a <see cref="T:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform" />
+            needs in order to present and dismiss modal pages.
+            </summary>
+    <remarks>
+      <para>
+            The framework implements this interface and supplies an instance to
+            <see cref="M:Microsoft.Maui.Controls.Platform.IModalNavigationPlatformFactory.CreateModalNavigationPlatform(Microsoft.Maui.Controls.Platform.IModalNavigationHost)" />.
+            One host exists per <see cref="P:Microsoft.Maui.Controls.Platform.IModalNavigationHost.Window" />, so an implementation must never be shared
+            between windows.
+            </para>
+      <para>
+            The framework owns the cross-platform modal stack, the page lifecycle events
+            (<c>Appearing</c>/<c>Disappearing</c>, <c>NavigatedTo</c>/<c>NavigatedFrom</c>), the
+            <see cref="E:Microsoft.Maui.Controls.Window.ModalPushing" />/<see cref="E:Microsoft.Maui.Controls.Window.ModalPopped" /> events and the
+            reconciliation loop that keeps the platform stack in sync with the requested stack. A platform
+            implementation is only responsible for the visual presentation of a single push or pop.
+            </para>
+      <para>
+            Every member except <see cref="M:Microsoft.Maui.Controls.Platform.IModalNavigationHost.RequestSync" /> must be read on the UI thread.
+            </para>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CurrentPage">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.Page? CurrentPage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.Page CurrentPage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Platform.IModalNavigationHost.CurrentPage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentPage As Page" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::Page ^ CurrentPage { Microsoft::Maui::Controls::Page ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentPage : Microsoft.Maui.Controls.Page" Usage="Microsoft.Maui.Controls.Platform.IModalNavigationHost.CurrentPage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.Page</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the page the user is expected to be looking at once the cross-platform modal stack is
+            fully applied. This is the topmost requested modal, or the window's page when no modal is
+            requested, with <see cref="T:Microsoft.Maui.Controls.Shell" /> unwrapped to its current page.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentPlatformPage">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.Page CurrentPlatformPage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.Page CurrentPlatformPage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Platform.IModalNavigationHost.CurrentPlatformPage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentPlatformPage As Page" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::Page ^ CurrentPlatformPage { Microsoft::Maui::Controls::Page ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentPlatformPage : Microsoft.Maui.Controls.Page" Usage="Microsoft.Maui.Controls.Platform.IModalNavigationHost.CurrentPlatformPage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.Page</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the page that is currently hosting content on the platform: the topmost entry of
+            <see cref="P:Microsoft.Maui.Controls.Platform.IModalNavigationHost.PlatformModalStack" />, or the window's page when no modal has been presented.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">
+            Thrown when there is no presented modal and the window has no page.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBatchPopping">
+      <MemberSignature Language="C#" Value="public bool IsBatchPopping { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsBatchPopping" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Platform.IModalNavigationHost.IsBatchPopping" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsBatchPopping As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBatchPopping { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsBatchPopping : bool" Usage="Microsoft.Maui.Controls.Platform.IModalNavigationHost.IsBatchPopping" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a hint indicating that several modals are being dismissed as a single batch, for example
+            during a <see cref="T:Microsoft.Maui.Controls.Shell" /> pop-to-root.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            This is an optional optimization hint, not a contract. Implementations can use it to dismiss
+            without animation so the modals in between do not flash on screen. It is only ever
+            <see langword="true" /> while <see cref="P:Microsoft.Maui.Controls.Window.Page" /> is a <see cref="T:Microsoft.Maui.Controls.Shell" /> that
+            is popping its modal stack; other batch dismissals report <see langword="false" />. An
+            implementation that ignores it stays correct.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBatchPushing">
+      <MemberSignature Language="C#" Value="public bool IsBatchPushing { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsBatchPushing" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Platform.IModalNavigationHost.IsBatchPushing" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsBatchPushing As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBatchPushing { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsBatchPushing : bool" Usage="Microsoft.Maui.Controls.Platform.IModalNavigationHost.IsBatchPushing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a hint indicating that several modals are being presented as a single batch, for example
+            while a <see cref="T:Microsoft.Maui.Controls.Shell" /> applies a navigation state that contains multiple modals.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            The counterpart to <see cref="P:Microsoft.Maui.Controls.Platform.IModalNavigationHost.IsBatchPopping" />, with the same caveats: it is an optional
+            optimization hint that is only ever <see langword="true" /> for <see cref="T:Microsoft.Maui.Controls.Shell" />, and an
+            implementation that ignores it stays correct.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsWindowReady">
+      <MemberSignature Language="C#" Value="public bool IsWindowReady { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsWindowReady" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Platform.IModalNavigationHost.IsWindowReady" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsWindowReady As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsWindowReady { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsWindowReady : bool" Usage="Microsoft.Maui.Controls.Platform.IModalNavigationHost.IsWindowReady" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether the framework side of the window is ready for modal
+            presentation: the window and its page both have handlers.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            This intentionally does <b>not</b> include
+            <see cref="P:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform.IsReady" />. Implementations are expected to combine it
+            with their own conditions, for example
+            <c>public bool IsReady =&gt; _host.IsWindowReady &amp;&amp; _nativeWindowIsRealized;</c>.
+            Because the framework folds <see cref="P:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform.IsReady" /> into its own
+            overall readiness separately, a host property that already included it would recurse into an
+            uncatchable <see cref="T:System.StackOverflowException" />.
+            </para>
+          <para>
+            Consulting this from <see cref="P:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform.IsReady" /> is optional. The framework
+            never calls <see cref="M:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform.PushModalAsync(Microsoft.Maui.Controls.Page,System.Boolean)" /> or
+            <see cref="M:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform.PopModalAsync(Microsoft.Maui.Controls.Page,System.Boolean)" /> unless this is already
+            <see langword="true" />.
+            </para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MauiContext">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.IMauiContext MauiContext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.IMauiContext MauiContext" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Platform.IModalNavigationHost.MauiContext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MauiContext As IMauiContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::IMauiContext ^ MauiContext { Microsoft::Maui::IMauiContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MauiContext : Microsoft.Maui.IMauiContext" Usage="Microsoft.Maui.Controls.Platform.IModalNavigationHost.MauiContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.IMauiContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the <see cref="T:Microsoft.Maui.IMauiContext" /> scoped to <see cref="P:Microsoft.Maui.Controls.Platform.IModalNavigationHost.Window" />.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            This context is tied to the window's current handler. It is not guaranteed to be usable once
+            the window has been torn down, so do not read it from
+            <see cref="M:System.IDisposable.Dispose" />. Capture whatever cleanup needs while the platform
+            instance is still live.
+            </remarks>
+        <exception cref="T:System.InvalidOperationException">
+            Thrown when the window does not currently have a handler and therefore has no context.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformModalStack">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.Controls.Page&gt; PlatformModalStack { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Maui.Controls.Page&gt; PlatformModalStack" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Platform.IModalNavigationHost.PlatformModalStack" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PlatformModalStack As IReadOnlyList(Of Page)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IReadOnlyList&lt;Microsoft::Maui::Controls::Page ^&gt; ^ PlatformModalStack { System::Collections::Generic::IReadOnlyList&lt;Microsoft::Maui::Controls::Page ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PlatformModalStack : System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.Controls.Page&gt;" Usage="Microsoft.Maui.Controls.Platform.IModalNavigationHost.PlatformModalStack" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Maui.Controls.Page&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the modal pages that the platform has actually presented, in push order.
+            The last entry is the modal currently on screen.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            This is maintained by the framework. It is updated before
+            <see cref="M:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform.PushModalAsync(Microsoft.Maui.Controls.Page,System.Boolean)" /> is awaited and before
+            <see cref="M:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform.PopModalAsync(Microsoft.Maui.Controls.Page,System.Boolean)" /> is awaited, so during those
+            calls it already reflects the requested end state.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestSync">
+      <MemberSignature Language="C#" Value="public void RequestSync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RequestSync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Platform.IModalNavigationHost.RequestSync" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RequestSync ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RequestSync();" />
+      <MemberSignature Language="F#" Value="abstract member RequestSync : unit -&gt; unit" Usage="iModalNavigationHost.RequestSync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Asks the framework to re-run the reconciliation loop that compares the requested modal stack
+            with <see cref="P:Microsoft.Maui.Controls.Platform.IModalNavigationHost.PlatformModalStack" /> and issues any push or pop that is still outstanding.
+            </summary>
+        <remarks>
+          <para>
+            Call this when <see cref="P:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform.IsReady" /> transitions from
+            <see langword="false" /> to <see langword="true" />. The framework does not poll
+            <see cref="P:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform.IsReady" />, so a platform that defers readiness must
+            notify the framework through this method or queued modals will never be presented.
+            </para>
+          <para>
+            This is safe to call from any thread. When the caller is not already on the window's UI
+            thread and the window has a dispatcher, the work is marshalled there and this method returns
+            immediately. When called <b>on</b> the UI thread the reconciliation starts synchronously,
+            which means
+            <see cref="P:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform.IsReady" /> and possibly
+            <see cref="M:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform.PushModalAsync(Microsoft.Maui.Controls.Page,System.Boolean)" /> or
+            <see cref="M:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform.PopModalAsync(Microsoft.Maui.Controls.Page,System.Boolean)" /> can be re-entered before
+            this method returns. Do not call it while holding a lock, and finish mutating your own state
+            before calling it.
+            </para>
+          <para>
+            A window created on a thread without a dispatcher has no UI-thread target to marshal to. In
+            that unusual case the framework runs the request inline as a best effort, so a backend that
+            supports such windows should call this method from its UI thread.
+            </para>
+          <para>
+            A marshalled request is bound to the window's current handler scope. If the window is
+            destroyed, or its handler is replaced, before the request runs, the request is dropped rather
+            than executed against a torn-down window or a service scope that no longer exists. Calling
+            this after disposal is therefore harmless but has no effect.
+            </para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Window">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.Window Window { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.Window Window" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Platform.IModalNavigationHost.Window" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Window As Window" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Maui::Controls::Window ^ Window { Microsoft::Maui::Controls::Window ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Window : Microsoft.Maui.Controls.Window" Usage="Microsoft.Maui.Controls.Platform.IModalNavigationHost.Window" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.Window</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the window that owns this modal navigation host.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
