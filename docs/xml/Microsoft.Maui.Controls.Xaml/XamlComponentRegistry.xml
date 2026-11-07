@@ -180,6 +180,36 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetTemplateComponents">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IReadOnlyList&lt;object&gt; GetTemplateComponents (object page, string nodeId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IReadOnlyList`1&lt;object&gt; GetTemplateComponents(object page, string nodeId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.GetTemplateComponents(System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTemplateComponents (page As Object, nodeId As String) As IReadOnlyList(Of Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IReadOnlyList&lt;System::Object ^&gt; ^ GetTemplateComponents(System::Object ^ page, System::String ^ nodeId);" />
+      <MemberSignature Language="F#" Value="static member GetTemplateComponents : obj * string -&gt; System.Collections.Generic.IReadOnlyList&lt;obj&gt;" Usage="Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.GetTemplateComponents (page, nodeId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="page" Type="System.Object" />
+        <Parameter Name="nodeId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="page">To be added.</param>
+        <param name="nodeId">To be added.</param>
+        <summary>
+            Returns a snapshot of the live components realized from the template node identified by
+            <paramref name="nodeId" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Register">
       <MemberSignature Language="C#" Value="public static void Register (object page, string nodeId, object component);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Register(object page, string nodeId, object component) cil managed" />
@@ -267,6 +297,37 @@
             Stores the set of resource dictionary keys registered by the page's <c>InitializeComponent</c>
             or <c>UpdateComponent</c>. Used during incremental hot reload to determine which keys
             were removed and need to be deleted from <c>Resources</c>.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterTemplateComponent">
+      <MemberSignature Language="C#" Value="public static void RegisterTemplateComponent (object page, string nodeId, object component);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterTemplateComponent(object page, string nodeId, object component) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.RegisterTemplateComponent(System.Object,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterTemplateComponent (page As Object, nodeId As String, component As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterTemplateComponent(System::Object ^ page, System::String ^ nodeId, System::Object ^ component);" />
+      <MemberSignature Language="F#" Value="static member RegisterTemplateComponent : obj * string * obj -&gt; unit" Usage="Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.RegisterTemplateComponent (page, nodeId, component)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls.Xaml</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="page" Type="System.Object" />
+        <Parameter Name="nodeId" Type="System.String" />
+        <Parameter Name="component" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="page">To be added.</param>
+        <param name="nodeId">To be added.</param>
+        <param name="component">To be added.</param>
+        <summary>
+            Registers a realized component created by a data or control template.
+            Multiple live components may share the same XAML node ID.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>

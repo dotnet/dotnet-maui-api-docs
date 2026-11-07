@@ -1,0 +1,261 @@
+<Type Name="IModalNavigationPlatform" FullName="Microsoft.Maui.Controls.Platform.IModalNavigationPlatform">
+  <TypeSignature Language="C#" Value="public interface IModalNavigationPlatform : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IModalNavigationPlatform implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IModalNavigationPlatform&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IModalNavigationPlatform : IDisposable" />
+  <TypeSignature Language="F#" Value="type IModalNavigationPlatform = interface&#xA;    interface IDisposable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Presents and dismisses modal pages for a single <see cref="T:Microsoft.Maui.Controls.Window" />.
+            </summary>
+    <remarks>
+      <para>
+            Register an <see cref="T:Microsoft.Maui.Controls.Platform.IModalNavigationPlatformFactory" /> in the application's service collection
+            to supply an implementation. This is the extensibility point that lets an alternative platform
+            backend render modal navigation without forking the framework: the framework keeps ownership of
+            the cross-platform modal stack, page lifecycle events and the push/pop reconciliation loop, and
+            only the visual presentation is delegated here.
+            </para>
+      <para>
+            The framework creates one instance per window and disposes it when the window is destroyed or
+            when the window's handler changes. Implementations must therefore tolerate multiple
+            create/dispose cycles and must not be shared between windows.
+            </para>
+      <para>
+            All members are invoked on the UI thread.
+            </para>
+      <para>
+        <b>Dismissals that start on the platform.</b> When the user dismisses a modal natively — an
+            interactive swipe-to-dismiss, a hardware back press, a native close button — the framework does
+            not observe it. The implementation must route it back through
+            <c>host.Window.Navigation.PopModalAsync()</c> so the cross-platform modal stack and the page
+            lifecycle events stay in sync. The framework then calls
+            <see cref="M:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform.PopModalAsync(Microsoft.Maui.Controls.Page,System.Boolean)" /> for that page as part of applying the pop, so
+            <see cref="M:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform.PopModalAsync(Microsoft.Maui.Controls.Page,System.Boolean)" /> must be idempotent and complete successfully when the
+            native modal is already gone.
+            </para>
+      <para>
+        <b>Disposal.</b>
+        <see cref="M:System.IDisposable.Dispose" /> is called when the window is destroyed and
+            when the window's handler changes. The framework does <b>not</b> call
+            <see cref="M:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform.PopModalAsync(Microsoft.Maui.Controls.Page,System.Boolean)" /> for modals that are still presented at that point, so
+            <see cref="M:System.IDisposable.Dispose" /> is solely responsible for dismissing and releasing every
+            native modal the backend still owns. Do not assume
+            <see cref="P:Microsoft.Maui.Controls.Platform.IModalNavigationHost.MauiContext" />, the window handler, or any platform view
+            obtained through them is still usable there — teardown may already have disposed the window's
+            service scope. Capture whatever cleanup needs while the instance is live and treat disposal as
+            best effort. A disposed instance is never reused; a new one is created from the factory if the
+            window gets a new handler. Exceptions thrown from <see cref="M:System.IDisposable.Dispose" /> are logged
+            and do not interrupt window teardown or handler replacement.
+            </para>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsReady">
+      <MemberSignature Language="C#" Value="public bool IsReady { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReady" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform.IsReady" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReady As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReady { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReady : bool" Usage="Microsoft.Maui.Controls.Platform.IModalNavigationPlatform.IsReady" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether the backend can present or dismiss a modal right now.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            While this returns <see langword="false" /> the framework still records pushes and pops on the
+            cross-platform modal stack and still raises the corresponding page lifecycle events, but it
+            does not call <see cref="M:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform.PushModalAsync(Microsoft.Maui.Controls.Page,System.Boolean)" /> or <see cref="M:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform.PopModalAsync(Microsoft.Maui.Controls.Page,System.Boolean)" />.
+            When the backend becomes ready it must call
+            <see cref="M:Microsoft.Maui.Controls.Platform.IModalNavigationHost.RequestSync" /> so the queued operations are applied.
+            Return <see langword="true" /> unconditionally if the backend has no readiness requirement.
+            </para>
+          <para>
+            Deferring has an observable consequence for callers: <c>Navigation.PushModalAsync</c> and
+            <c>Navigation.PopModalAsync</c> complete as soon as the framework has updated its own state,
+            so they do not wait for the deferred presentation and cannot report a failure in it. See the
+            remarks on <see cref="M:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform.PushModalAsync(Microsoft.Maui.Controls.Page,System.Boolean)" /> for how deferred faults are reported.
+            </para>
+          <para>
+            Implementations may consult <see cref="P:Microsoft.Maui.Controls.Platform.IModalNavigationHost.IsWindowReady" /> here. Do not try
+            to derive this from the framework's overall modal readiness, which already folds this
+            property in.
+            </para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageAttached">
+      <MemberSignature Language="C#" Value="public void PageAttached ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PageAttached() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform.PageAttached" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PageAttached ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PageAttached();" />
+      <MemberSignature Language="F#" Value="abstract member PageAttached : unit -&gt; unit" Usage="iModalNavigationPlatform.PageAttached " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Called when the window's page gets a handler, including when the page is replaced.
+            </summary>
+        <remarks>
+          <para>
+            Use this to attach platform hooks that depend on the window's content being realized, such as
+            a hardware back button handler. This may be called multiple times for the same window. It is
+            also called once immediately after the instance is created when the window's page already has
+            a handler, so a backend that resolves late does not miss the notification.
+            </para>
+          <para>
+            The framework guarantees it is never delivered twice for the same page-handler attachment,
+            and that the built-in platform is never notified for an attachment that this instance
+            handles. Notification is withheld until the window has a service scope — until then the
+            framework cannot tell whether a factory is registered, and notifying the built-in platform
+            early would leave its hooks installed alongside this instance's.
+            </para>
+          <para>
+            If this method throws, the framework logs the exception and continues attaching the page. The
+            notification is considered delivered and is not retried for the same page-handler attachment.
+            </para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopModalAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task PopModalAsync (Microsoft.Maui.Controls.Page modal, bool animated);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task PopModalAsync(class Microsoft.Maui.Controls.Page modal, bool animated) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform.PopModalAsync(Microsoft.Maui.Controls.Page,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PopModalAsync (modal As Page, animated As Boolean) As Task" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ PopModalAsync(Microsoft::Maui::Controls::Page ^ modal, bool animated);" />
+      <MemberSignature Language="F#" Value="abstract member PopModalAsync : Microsoft.Maui.Controls.Page * bool -&gt; System.Threading.Tasks.Task" Usage="iModalNavigationPlatform.PopModalAsync (modal, animated)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modal" Type="Microsoft.Maui.Controls.Page" />
+        <Parameter Name="animated" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="modal">The page to dismiss. It has already been removed from
+            <see cref="P:Microsoft.Maui.Controls.Platform.IModalNavigationHost.PlatformModalStack" /> when this method is called, so
+            <see cref="P:Microsoft.Maui.Controls.Platform.IModalNavigationHost.CurrentPlatformPage" /> already refers to the page that is
+            about to be revealed.</param>
+        <param name="animated">
+          <see langword="true" /> to animate the transition. The framework preserves
+            the value supplied to <c>Navigation.PopModalAsync</c>, including when the dismissal has to be
+            deferred until <see cref="P:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform.IsReady" /> becomes <see langword="true" />. For a pop that comes from
+            reconciling a stack the app changed wholesale (for example a <see cref="T:Microsoft.Maui.Controls.Shell" /> pop-to-root),
+            the value recorded for the matching push is used.</param>
+        <summary>
+            Dismisses <paramref name="modal" />, revealing
+            <see cref="P:Microsoft.Maui.Controls.Platform.IModalNavigationHost.CurrentPlatformPage" />.
+            </summary>
+        <returns>A task that completes once the modal is off screen.</returns>
+        <remarks>
+          <para>
+            Implementations are responsible for releasing the platform views created for
+            <paramref name="modal" />. The framework detaches the page from its parent after this task
+            completes.
+            </para>
+          <para>
+            This must be idempotent. It is called for a page the backend already dismissed natively when
+            that dismissal is routed back through <c>Navigation.PopModalAsync</c>, and it must complete
+            successfully rather than throw in that case.
+            </para>
+          <para>
+            If this task faults the framework puts <paramref name="modal" /> back on
+            <see cref="P:Microsoft.Maui.Controls.Platform.IModalNavigationHost.PlatformModalStack" />, because a failed dismissal means the
+            modal is presumed to still be on screen and dropping it would leave a visible modal that no
+            stack knows about. The cross-platform modal stack is left without the page, so the next
+            reconciliation pass retries the dismissal — and <paramref name="animated" /> is preserved
+            across that retry. As with <see cref="M:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform.PushModalAsync(Microsoft.Maui.Controls.Page,System.Boolean)" />, the fault is rethrown to
+            the caller of <c>Navigation.PopModalAsync</c> only when the pop was applied inline; a
+            deferred pop that faults is logged instead.
+            </para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PushModalAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task PushModalAsync (Microsoft.Maui.Controls.Page modal, bool animated);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task PushModalAsync(class Microsoft.Maui.Controls.Page modal, bool animated) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform.PushModalAsync(Microsoft.Maui.Controls.Page,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PushModalAsync (modal As Page, animated As Boolean) As Task" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ PushModalAsync(Microsoft::Maui::Controls::Page ^ modal, bool animated);" />
+      <MemberSignature Language="F#" Value="abstract member PushModalAsync : Microsoft.Maui.Controls.Page * bool -&gt; System.Threading.Tasks.Task" Usage="iModalNavigationPlatform.PushModalAsync (modal, animated)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modal" Type="Microsoft.Maui.Controls.Page" />
+        <Parameter Name="animated" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="modal">The page to present. It has already been added to
+            <see cref="P:Microsoft.Maui.Controls.Platform.IModalNavigationHost.PlatformModalStack" /> when this method is called.</param>
+        <param name="animated">
+          <see langword="true" /> to animate the transition.</param>
+        <summary>
+            Presents <paramref name="modal" /> on top of
+            <see cref="P:Microsoft.Maui.Controls.Platform.IModalNavigationHost.CurrentPlatformPage" />.
+            </summary>
+        <returns>
+            A task that completes once the modal is on screen and safe to dismiss. The framework awaits
+            this task before applying any further modal operation, so completing early can allow a
+            subsequent pop to race the presentation.
+            </returns>
+        <remarks>
+          <para>
+            If this task faults the framework removes <paramref name="modal" /> from
+            <see cref="P:Microsoft.Maui.Controls.Platform.IModalNavigationHost.PlatformModalStack" /> again, because the modal is not on
+            screen. The cross-platform modal stack is left untouched, so
+            <c>Navigation.ModalStack</c> still contains the page and the next reconciliation pass retries
+            the presentation.
+            </para>
+          <para>
+            Where the fault surfaces depends on when the operation is applied. When
+            <see cref="P:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform.IsReady" /> was <see langword="true" /> at request time the push is applied inline
+            and the fault is rethrown to the caller of <c>Navigation.PushModalAsync</c>. When the push was
+            deferred because <see cref="P:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform.IsReady" /> was <see langword="false" />, that caller has already
+            completed, so the fault is instead logged through the window's
+            <see cref="T:Microsoft.Extensions.Logging.ILogger" /> and cannot be observed by navigation code.
+            Backends that need deferred failures to be actionable should surface them themselves.
+            </para>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

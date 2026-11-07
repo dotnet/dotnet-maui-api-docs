@@ -1,0 +1,145 @@
+<Type Name="IModalNavigationPlatformFactory" FullName="Microsoft.Maui.Controls.Platform.IModalNavigationPlatformFactory">
+  <TypeSignature Language="C#" Value="public interface IModalNavigationPlatformFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IModalNavigationPlatformFactory" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Controls.Platform.IModalNavigationPlatformFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IModalNavigationPlatformFactory" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IModalNavigationPlatformFactory" />
+  <TypeSignature Language="F#" Value="type IModalNavigationPlatformFactory = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+             Application-wide factory for creating <see cref="T:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform" /> instances.
+             Register an implementation in the application's
+             <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" /> to replace the built-in
+             modal presentation for each window the factory chooses to handle.
+             </summary>
+    <remarks>
+      <para>
+             When an <see cref="T:Microsoft.Maui.Controls.Platform.IModalNavigationPlatformFactory" /> is present in
+             <see cref="P:Microsoft.Maui.IMauiContext.Services" /> for a window, the framework calls
+             <see cref="M:Microsoft.Maui.Controls.Platform.IModalNavigationPlatformFactory.CreateModalNavigationPlatform(Microsoft.Maui.Controls.Platform.IModalNavigationHost)" /> once for that window and routes
+             every modal push and pop to the returned instance instead of the built-in platform code. This
+             lets alternative platform backends render modal navigation without reflection, partial classes or
+             forking, while the framework keeps ownership of the cross-platform modal stack, the page
+             lifecycle events and the push/pop reconciliation loop.
+             </para>
+      <para>
+             The factory is resolved from the window's service scope, so it may be registered with any
+             lifetime. The framework calls it once per window and disposes the returned instance, so return a
+             new <see cref="T:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform" /> for each call. It is called again for the same window
+             only if the window gets a new handler, which brings a new service scope (for example an Android
+             activity recreation).
+             </para>
+      <para>
+             If this method throws, the framework logs the exception and permanently falls back to the
+             built-in platform for that window rather than rethrowing from whatever call site happened to
+             trigger resolution. Creation is not retried, so a failed registration fails deterministically and
+             visibly in the log instead of throwing repeatedly from arbitrary navigation code. Prefer
+             returning <see langword="null" /> over throwing when a backend deliberately does not want to
+             handle a window.
+             </para>
+      <example>
+             Registering a backend that presents modals with its own native window stack:
+             <code lang="csharp">
+             public sealed class MyModalNavigationPlatformFactory : IModalNavigationPlatformFactory
+             {
+                 public IModalNavigationPlatform? CreateModalNavigationPlatform(IModalNavigationHost host)
+                     =&gt; new MyModalNavigationPlatform(host);
+             }
+            
+             public sealed class MyModalNavigationPlatform : IModalNavigationPlatform
+             {
+                 readonly IModalNavigationHost _host;
+                 readonly MyNativeModalStack _stack;
+            
+                 public MyModalNavigationPlatform(IModalNavigationHost host)
+                 {
+                     _host = host;
+                     // Captured while the instance is live: Dispose must not depend on the MauiContext.
+                     _stack = MyNativeModalStack.For(host.MauiContext);
+                 }
+            
+                 public bool IsReady =&gt; _host.IsWindowReady &amp;&amp; _stack.IsRealized;
+            
+                 public async Task PushModalAsync(Page modal, bool animated)
+                 {
+                     var nativeView = modal.ToPlatform(_host.MauiContext);
+                     await _stack.PushAsync(nativeView, animated &amp;&amp; !_host.IsBatchPushing);
+                 }
+            
+                 public async Task PopModalAsync(Page modal, bool animated)
+                 {
+                     // Idempotent: the modal may already be gone when the user dismissed it natively.
+                     if (_stack.Contains(modal))
+                         await _stack.PopAsync(animated &amp;&amp; !_host.IsBatchPopping);
+            
+                     modal.DisconnectHandlers();
+                 }
+            
+                 public void PageAttached() =&gt;
+                     _stack.BackButtonPressed = () =&gt; _host.CurrentPage?.SendBackButtonPressed() ?? false;
+            
+                 // A native dismissal the framework can't see has to be routed back through Navigation so the
+                 // cross-platform stack and the page lifecycle events stay in sync.
+                 void OnDismissedNatively() =&gt; _host.Window.Navigation.PopModalAsync(animated: false);
+            
+                 public void Dispose()
+                 {
+                     // Still-presented modals are NOT popped by the framework during teardown.
+                     _stack.DismissAll();
+                 }
+             }
+            
+             // In MauiProgram:
+             builder.Services.AddSingleton&lt;IModalNavigationPlatformFactory, MyModalNavigationPlatformFactory&gt;();
+             </code></example>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateModalNavigationPlatform">
+      <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.Platform.IModalNavigationPlatform? CreateModalNavigationPlatform (Microsoft.Maui.Controls.Platform.IModalNavigationHost host);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Maui.Controls.Platform.IModalNavigationPlatform CreateModalNavigationPlatform(class Microsoft.Maui.Controls.Platform.IModalNavigationHost host) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.Platform.IModalNavigationPlatformFactory.CreateModalNavigationPlatform(Microsoft.Maui.Controls.Platform.IModalNavigationHost)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateModalNavigationPlatform (host As IModalNavigationHost) As IModalNavigationPlatform" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Maui::Controls::Platform::IModalNavigationPlatform ^ CreateModalNavigationPlatform(Microsoft::Maui::Controls::Platform::IModalNavigationHost ^ host);" />
+      <MemberSignature Language="F#" Value="abstract member CreateModalNavigationPlatform : Microsoft.Maui.Controls.Platform.IModalNavigationHost -&gt; Microsoft.Maui.Controls.Platform.IModalNavigationPlatform" Usage="iModalNavigationPlatformFactory.CreateModalNavigationPlatform host" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.Platform.IModalNavigationPlatform</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="host" Type="Microsoft.Maui.Controls.Platform.IModalNavigationHost" />
+      </Parameters>
+      <Docs>
+        <param name="host">
+            The per-window host that exposes the framework's modal navigation state. Keep a reference to
+            it; it stays valid for the lifetime of the returned instance.
+            </param>
+        <summary>
+            Creates the <see cref="T:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform" /> for a window.
+            </summary>
+        <returns>
+            A new <see cref="T:Microsoft.Maui.Controls.Platform.IModalNavigationPlatform" /> owned and disposed by the framework, or
+            <see langword="null" /> to let the window keep the built-in platform implementation. Returning
+            <see langword="null" /> is useful when a backend only wants to override modal navigation for
+            certain windows.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

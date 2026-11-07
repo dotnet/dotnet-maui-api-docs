@@ -27,8 +27,14 @@
             A web navigation API intended to be used for Authentication with external web services such as OAuth.
             </summary>
     <remarks>
-            This API helps with navigating to a start URL and waiting for a callback URL to the app.  Your app must 
+            This API helps with navigating to a start URL and waiting for a callback URL to the app. Your app must
             be registered to handle the callback scheme you provide in the call to authenticate.
+            Only one authentication operation can be active in the process. Starting another valid operation throws
+            <see cref="T:System.InvalidOperationException" />. Lifecycle callbacks are offered to the active built-in request first,
+            but only a matching callback route is consumed; non-matching callbacks remain available to custom implementations
+            and other lifecycle handlers. Scheme and host comparisons ignore case, while the effective port and any non-root path
+            must match exactly. Query and fragment do not participate in route matching, and an expected root path does not
+            constrain the callback path. The app remains responsible for OAuth state, PKCE, nonce validation, and token exchange.
             </remarks>
   </Docs>
   <Members>

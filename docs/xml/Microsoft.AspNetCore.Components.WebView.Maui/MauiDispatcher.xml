@@ -1,0 +1,211 @@
+<Type Name="MauiDispatcher" FullName="Microsoft.AspNetCore.Components.WebView.Maui.MauiDispatcher">
+  <TypeSignature Language="C#" Value="public sealed class MauiDispatcher : Microsoft.AspNetCore.Components.Dispatcher" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MauiDispatcher extends Microsoft.AspNetCore.Components.Dispatcher" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.AspNetCore.Components.WebView.Maui.MauiDispatcher" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MauiDispatcher&#xA;Inherits Dispatcher" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MauiDispatcher sealed : Microsoft::AspNetCore::Components::Dispatcher" />
+  <TypeSignature Language="F#" Value="type MauiDispatcher = class&#xA;    inherit Dispatcher" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.AspNetCore.Components.WebView.Maui</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.AspNetCore.Components.Dispatcher</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Adapts a MAUI <see cref="T:Microsoft.Maui.Dispatching.IDispatcher" /> to the Blazor <see cref="T:Microsoft.AspNetCore.Components.Dispatcher" /> that a
+            <see cref="T:Microsoft.AspNetCore.Components.WebView.WebViewManager" /> requires.
+            </summary>
+    <remarks>
+            This is the dispatcher the built-in BlazorWebView handlers use. Handlers implementing
+            <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler" /> for other platforms should reuse it rather than writing their own
+            adapter, so that Blazor's thread affinity matches the rest of MAUI on that platform. Resolve the
+            <see cref="T:Microsoft.Maui.Dispatching.IDispatcher" /> from the handler's services:
+            <code>
+            new MauiDispatcher(Services!.GetRequiredService&lt;IDispatcher&gt;())
+            </code></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MauiDispatcher (Microsoft.Maui.Dispatching.IDispatcher dispatcher);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Maui.Dispatching.IDispatcher dispatcher) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.AspNetCore.Components.WebView.Maui.MauiDispatcher.#ctor(Microsoft.Maui.Dispatching.IDispatcher)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dispatcher As IDispatcher)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MauiDispatcher(Microsoft::Maui::Dispatching::IDispatcher ^ dispatcher);" />
+      <MemberSignature Language="F#" Value="new Microsoft.AspNetCore.Components.WebView.Maui.MauiDispatcher : Microsoft.Maui.Dispatching.IDispatcher -&gt; Microsoft.AspNetCore.Components.WebView.Maui.MauiDispatcher" Usage="new Microsoft.AspNetCore.Components.WebView.Maui.MauiDispatcher dispatcher" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.AspNetCore.Components.WebView.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dispatcher" Type="Microsoft.Maui.Dispatching.IDispatcher" />
+      </Parameters>
+      <Docs>
+        <param name="dispatcher">The MAUI <see cref="T:Microsoft.Maui.Dispatching.IDispatcher" /> to dispatch work through.</param>
+        <summary>
+            Initializes a new instance of <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.MauiDispatcher" /> over the specified MAUI dispatcher.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="dispatcher" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckAccess">
+      <MemberSignature Language="C#" Value="public override bool CheckAccess ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CheckAccess() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.AspNetCore.Components.WebView.Maui.MauiDispatcher.CheckAccess" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CheckAccess () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CheckAccess();" />
+      <MemberSignature Language="F#" Value="override this.CheckAccess : unit -&gt; bool" Usage="mauiDispatcher.CheckAccess " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.AspNetCore.Components.WebView.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task InvokeAsync (Action workItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task InvokeAsync(class System.Action workItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.AspNetCore.Components.WebView.Maui.MauiDispatcher.InvokeAsync(System.Action)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function InvokeAsync (workItem As Action) As Task" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ InvokeAsync(Action ^ workItem);" />
+      <MemberSignature Language="F#" Value="override this.InvokeAsync : Action -&gt; System.Threading.Tasks.Task" Usage="mauiDispatcher.InvokeAsync workItem" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.AspNetCore.Components.WebView.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="workItem" Type="System.Action" />
+      </Parameters>
+      <Docs>
+        <param name="workItem">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task InvokeAsync (Func&lt;System.Threading.Tasks.Task&gt; workItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task InvokeAsync(class System.Func`1&lt;class System.Threading.Tasks.Task&gt; workItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.AspNetCore.Components.WebView.Maui.MauiDispatcher.InvokeAsync(System.Func{System.Threading.Tasks.Task})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function InvokeAsync (workItem As Func(Of Task)) As Task" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ InvokeAsync(Func&lt;System::Threading::Tasks::Task ^&gt; ^ workItem);" />
+      <MemberSignature Language="F#" Value="override this.InvokeAsync : Func&lt;System.Threading.Tasks.Task&gt; -&gt; System.Threading.Tasks.Task" Usage="mauiDispatcher.InvokeAsync workItem" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.AspNetCore.Components.WebView.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="workItem" Type="System.Func&lt;System.Threading.Tasks.Task&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="workItem">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeAsync&lt;TResult&gt;">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;TResult&gt; InvokeAsync&lt;TResult&gt; (Func&lt;System.Threading.Tasks.Task&lt;TResult&gt;&gt; workItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;!!TResult&gt; InvokeAsync&lt;TResult&gt;(class System.Func`1&lt;class System.Threading.Tasks.Task`1&lt;!!TResult&gt;&gt; workItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.AspNetCore.Components.WebView.Maui.MauiDispatcher.InvokeAsync``1(System.Func{System.Threading.Tasks.Task{``0}})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function InvokeAsync(Of TResult) (workItem As Func(Of Task(Of TResult))) As Task(Of TResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResult&gt;&#xA; override System::Threading::Tasks::Task&lt;TResult&gt; ^ InvokeAsync(Func&lt;System::Threading::Tasks::Task&lt;TResult&gt; ^&gt; ^ workItem);" />
+      <MemberSignature Language="F#" Value="override this.InvokeAsync : Func&lt;System.Threading.Tasks.Task&lt;'Result&gt;&gt; -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="mauiDispatcher.InvokeAsync workItem" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.AspNetCore.Components.WebView.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TResult">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="workItem" Type="System.Func&lt;System.Threading.Tasks.Task&lt;TResult&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="workItem">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeAsync&lt;TResult&gt;">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;TResult&gt; InvokeAsync&lt;TResult&gt; (Func&lt;TResult&gt; workItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;!!TResult&gt; InvokeAsync&lt;TResult&gt;(class System.Func`1&lt;!!TResult&gt; workItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.AspNetCore.Components.WebView.Maui.MauiDispatcher.InvokeAsync``1(System.Func{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function InvokeAsync(Of TResult) (workItem As Func(Of TResult)) As Task(Of TResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResult&gt;&#xA; override System::Threading::Tasks::Task&lt;TResult&gt; ^ InvokeAsync(Func&lt;TResult&gt; ^ workItem);" />
+      <MemberSignature Language="F#" Value="override this.InvokeAsync : Func&lt;'Result&gt; -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="mauiDispatcher.InvokeAsync workItem" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.AspNetCore.Components.WebView.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TResult">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="workItem" Type="System.Func&lt;TResult&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="workItem">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

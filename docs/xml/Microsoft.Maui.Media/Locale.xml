@@ -26,9 +26,59 @@
     <summary>
             Represents a specific geographical, political, or cultural region.
             </summary>
-    <remarks />
+    <remarks>
+      <para>
+            Instances are normally obtained from <see cref="M:Microsoft.Maui.Media.ITextToSpeech.GetLocalesAsync" />. The constructor is
+            public so that text-to-speech backends which live outside of .NET MAUI can implement
+            <see cref="T:Microsoft.Maui.Media.ITextToSpeech" /> and return values that .NET MAUI understands.
+            </para>
+      <para>
+            The exact meaning of <see cref="P:Microsoft.Maui.Media.Locale.Language" />, <see cref="P:Microsoft.Maui.Media.Locale.Country" />, <see cref="P:Microsoft.Maui.Media.Locale.Name" /> and <see cref="P:Microsoft.Maui.Media.Locale.Id" />
+            is defined by the text-to-speech engine that produced the locale, so values are stored verbatim: they are
+            not parsed, validated, trimmed, or case normalized. The only normalization performed is that
+            <see langword="null" /> is converted to <see cref="F:System.String.Empty" />, so every property is guaranteed to be
+            non-<see langword="null" />.
+            </para>
+      <para>
+            Locales are immutable. Although values are stored verbatim, the built-in platform backends treat a
+            property that is empty or entirely white-space as "not specified" and fall back accordingly — for
+            example, an empty <see cref="P:Microsoft.Maui.Media.Locale.Id" /> causes a voice to be selected from <see cref="P:Microsoft.Maui.Media.Locale.Language" /> instead.
+            </para>
+    </remarks>
   </Docs>
   <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Locale (string? language, string? country, string? name, string? id);" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string language, string country, string name, string id) cil managed" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Media.Locale.#ctor(System.String,System.String,System.String,System.String)" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (language As String, country As String, name As String, id As String)" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Locale(System::String ^ language, System::String ^ country, System::String ^ name, System::String ^ id);" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="F#" Value="new Microsoft.Maui.Media.Locale : string * string * string * string -&gt; Microsoft.Maui.Media.Locale" Usage="new Microsoft.Maui.Media.Locale (language, country, name, id)" FrameworkAlternate="net-maui-11.0" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="language" Type="System.String" Index="0" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="country" Type="System.String" Index="1" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="name" Type="System.String" Index="2" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="id" Type="System.String" Index="3" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="language">The language name or code, as described by <see cref="P:Microsoft.Maui.Media.Locale.Language" />.</param>
+        <param name="country">The country/region name or code, as described by <see cref="P:Microsoft.Maui.Media.Locale.Country" />. Pass <see langword="null" /> when the language already carries the region, or when the engine does not report one.</param>
+        <param name="name">The display name of the locale, as described by <see cref="P:Microsoft.Maui.Media.Locale.Name" />.</param>
+        <param name="id">The engine specific identifier of the locale, as described by <see cref="P:Microsoft.Maui.Media.Locale.Id" />.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Maui.Media.Locale" /> class.
+            </summary>
+        <remarks>
+            No argument is required and none are validated. A <see langword="null" /> argument is normalized to
+            <see cref="F:System.String.Empty" />; every other value is stored exactly as supplied.
+            </remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Country">
       <MemberSignature Language="C#" Value="public string Country { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Country" />
@@ -48,13 +98,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets the country name or code.
+            Gets the country/region name or code.
             </summary>
         <value />
         <remarks>
-          <para>This value may vary between platforms.</para>
-          <para>For Android this used the ISO 3166 alpha-2 country code or UN M.49 numeric-3 area code.</para>
-          <para>For iOS and Windows this field is not used and <see langword="null" /> .</para>
+          <para>This value may vary between platforms and is never <see langword="null" />; an unknown or unused country/region is represented by <see cref="F:System.String.Empty" />.</para>
+          <para>For Android this uses the ISO 3166 alpha-2 country/region code or UN M.49 numeric-3 area code.</para>
+          <para>For iOS and Windows this field is not used and is <see cref="F:System.String.Empty" />. On those platforms the region is already part of <see cref="P:Microsoft.Maui.Media.Locale.Language" /> (for example <c>en-US</c>).</para>
         </remarks>
       </Docs>
     </Member>
@@ -80,7 +130,10 @@
             Gets the unique identifier of the locale.
             </summary>
         <value />
-        <remarks />
+        <remarks>
+          <para>This identifier is only meaningful to the text-to-speech engine that produced it and is never <see langword="null" />; engines that do not expose an identifier report <see cref="F:System.String.Empty" />.</para>
+          <para>When this value is empty, platforms fall back to selecting a voice using <see cref="P:Microsoft.Maui.Media.Locale.Language" /> and <see cref="P:Microsoft.Maui.Media.Locale.Country" />.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Language">
@@ -106,7 +159,7 @@
             </summary>
         <value />
         <remarks>
-          <para>This value may vary between platforms.</para>
+          <para>This value may vary between platforms and is never <see langword="null" />; an unknown language is represented by <see cref="F:System.String.Empty" />.</para>
           <para>
             For Android this used the ISO 639 alpha-2 or alpha-3 language code, or registered language subtags up to 8 alpha letters (for future enhancements).
             When a language has both an alpha-2 code and an alpha-3 code, the alpha-2 code must be used.
@@ -137,7 +190,7 @@
             Gets the display name of the locale.
             </summary>
         <value />
-        <remarks />
+        <remarks>This value is never <see langword="null" />; engines that do not provide a display name report <see cref="F:System.String.Empty" />.</remarks>
       </Docs>
     </Member>
   </Members>
