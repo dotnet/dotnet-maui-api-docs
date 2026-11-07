@@ -1,10 +1,15 @@
 <Type Name="ViewHandler&lt;TVirtualView,TPlatformView&gt;" FullName="Microsoft.Maui.Handlers.ViewHandler&lt;TVirtualView,TPlatformView&gt;">
-  <TypeSignature Language="C#" Value="public abstract class ViewHandler&lt;TVirtualView,TPlatformView&gt; : Microsoft.Maui.Handlers.ViewHandler where TVirtualView : class, IView where TPlatformView : class" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ViewHandler`2&lt;class (class Microsoft.Maui.IView) TVirtualView, class TPlatformView&gt; extends Microsoft.Maui.Handlers.ViewHandler implements class Microsoft.Maui.IElementHandler, class Microsoft.Maui.IViewHandler" />
+  <TypeSignature Language="C#" Value="public abstract class ViewHandler&lt;TVirtualView,TPlatformView&gt; : Microsoft.Maui.Handlers.ViewHandler where TVirtualView : class, IView where TPlatformView : class" FrameworkAlternate="net-maui-10.0;net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ViewHandler`2&lt;class (class Microsoft.Maui.IView) TVirtualView, class TPlatformView&gt; extends Microsoft.Maui.Handlers.ViewHandler implements class Microsoft.Maui.IElementHandler, class Microsoft.Maui.IViewHandler" FrameworkAlternate="net-maui-10.0;net-maui-8.0;net-maui-9.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Handlers.ViewHandler`2" />
-  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ViewHandler(Of TVirtualView, TPlatformView)&#xA;Inherits ViewHandler" />
-  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TVirtualView, typename TPlatformView&gt;&#xA; where TVirtualView : class, IView where TPlatformView : classpublic ref class ViewHandler abstract : Microsoft::Maui::Handlers::ViewHandler" />
-  <TypeSignature Language="F#" Value="type ViewHandler&lt;'VirtualView, 'PlatformView (requires 'VirtualView : null and 'VirtualView :&gt; IView and 'PlatformView : null)&gt; = class&#xA;    inherit ViewHandler&#xA;    interface IViewHandler&#xA;    interface IElementHandler" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ViewHandler(Of TVirtualView, TPlatformView)&#xA;Inherits ViewHandler" FrameworkAlternate="net-maui-10.0;net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TVirtualView, typename TPlatformView&gt;&#xA; where TVirtualView : class, IView where TPlatformView : classpublic ref class ViewHandler abstract : Microsoft::Maui::Handlers::ViewHandler" FrameworkAlternate="net-maui-10.0;net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="F#" Value="type ViewHandler&lt;'VirtualView, 'PlatformView (requires 'VirtualView : null and 'VirtualView :&gt; IView and 'PlatformView : null)&gt; = class&#xA;    inherit ViewHandler&#xA;    interface IViewHandler&#xA;    interface IElementHandler" FrameworkAlternate="net-maui-10.0;net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="C#" Value="public abstract class ViewHandler&lt;TVirtualView,TPlatformView&gt; : Microsoft.Maui.Handlers.ViewHandler, Microsoft.Maui.IElementHandler&lt;TVirtualView,TPlatformView&gt;, Microsoft.Maui.IViewHandler&lt;TVirtualView,TPlatformView&gt; where TVirtualView : class, IView where TPlatformView : class" FrameworkAlternate="net-maui-11.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ViewHandler`2&lt;class (class Microsoft.Maui.IView) TVirtualView, class TPlatformView&gt; extends Microsoft.Maui.Handlers.ViewHandler implements class Microsoft.Maui.IElementHandler, class Microsoft.Maui.IElementHandler`2&lt;!TVirtualView, !TPlatformView&gt;, class Microsoft.Maui.IViewHandler, class Microsoft.Maui.IViewHandler`2&lt;!TVirtualView, !TPlatformView&gt;" FrameworkAlternate="net-maui-11.0" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ViewHandler(Of TVirtualView, TPlatformView)&#xA;Inherits ViewHandler&#xA;Implements IElementHandler(Of TVirtualView, TPlatformView), IViewHandler(Of TVirtualView, TPlatformView)" FrameworkAlternate="net-maui-11.0" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TVirtualView, typename TPlatformView&gt;&#xA; where TVirtualView : class, IView where TPlatformView : classpublic ref class ViewHandler abstract : Microsoft::Maui::Handlers::ViewHandler, Microsoft::Maui::IElementHandler&lt;TVirtualView, TPlatformView&gt;, Microsoft::Maui::IViewHandler&lt;TVirtualView, TPlatformView&gt;" FrameworkAlternate="net-maui-11.0" />
+  <TypeSignature Language="F#" Value="type ViewHandler&lt;'VirtualView, 'PlatformView (requires 'VirtualView : null and 'VirtualView :&gt; IView and 'PlatformView : null)&gt; = class&#xA;    inherit ViewHandler&#xA;    interface IViewHandler&#xA;    interface IElementHandler&#xA;    interface IViewHandler&lt;'VirtualView, 'PlatformView (requires 'VirtualView : null and 'VirtualView :&gt; IView and 'PlatformView : null)&gt;&#xA;    interface IElementHandler&lt;'VirtualView, 'PlatformView (requires 'VirtualView : null and 'VirtualView :&gt; IView and 'PlatformView : null)&gt;" FrameworkAlternate="net-maui-11.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -34,6 +39,12 @@
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Maui.IViewHandler</InterfaceName>
+    </Interface>
+    <Interface FrameworkAlternate="net-maui-11.0">
+      <InterfaceName>Microsoft.Maui.IElementHandler&lt;TVirtualView,TPlatformView&gt;</InterfaceName>
+    </Interface>
+    <Interface FrameworkAlternate="net-maui-11.0">
+      <InterfaceName>Microsoft.Maui.IViewHandler&lt;TVirtualView,TPlatformView&gt;</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>

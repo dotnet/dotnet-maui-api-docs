@@ -76,7 +76,14 @@
             Gets or sets a value that specifies which operations are allowed by the drop target.
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            The default is <see cref="F:Microsoft.Maui.Controls.DataPackageOperation.Copy" />.
+            On iOS and Mac Catalyst, copy is preferred when both copy and move are accepted.
+            A move-only drop is rejected if the native session does not allow moving.
+            On Windows, the drag source must include move in its native
+            <c>DragStartingEventArgs.AllowedOperations</c>. This can be configured through
+            <see cref="P:Microsoft.Maui.Controls.DragStartingEventArgs.PlatformArgs" /> when the drag starts.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="Data">

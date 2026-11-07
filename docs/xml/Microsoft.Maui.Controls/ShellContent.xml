@@ -158,6 +158,27 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~ShellContent ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.ShellContent.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!ShellContent ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="shellContent.Finalize " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="MenuItems">
       <MemberSignature Language="C#" Value="public Microsoft.Maui.Controls.MenuItemCollection MenuItems { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Maui.Controls.MenuItemCollection MenuItems" />
@@ -421,6 +442,93 @@
         <param name="page">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryParameters">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Maui.Controls.ShellContentQueryParameter&gt; QueryParameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Maui.Controls.ShellContentQueryParameter&gt; QueryParameters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.ShellContent.QueryParameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueryParameters As IList(Of ShellContentQueryParameter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Maui::Controls::ShellContentQueryParameter ^&gt; ^ QueryParameters { System::Collections::Generic::IList&lt;Microsoft::Maui::Controls::ShellContentQueryParameter ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.QueryParameters : System.Collections.Generic.IList&lt;Microsoft.Maui.Controls.ShellContentQueryParameter&gt;" Usage="Microsoft.Maui.Controls.ShellContent.QueryParameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Maui.Controls.ShellContentQueryParameter&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the query parameters supplied to this content's page when the content is selected.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            Changes to this collection or its parameters are applied immediately when this content is selected,
+            or the next time it is selected otherwise. Values in this collection take precedence over
+            <see cref="P:Microsoft.Maui.Controls.ShellContent.QueryString" />. Parameters supplied to Shell navigation take precedence for that
+            navigation; selecting the content again reapplies its declarative parameters. Parameters are logical
+            children of this content, so they support inherited binding contexts, dynamic resources, relative-source
+            ancestor bindings, and parent-scoped XAML references. A parameter instance can occur more than once in
+            this collection, but it cannot be shared with another <see cref="T:Microsoft.Maui.Controls.ShellContent" />.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryString">
+      <MemberSignature Language="C#" Value="public string? QueryString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string QueryString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Maui.Controls.ShellContent.QueryString" />
+      <MemberSignature Language="VB.NET" Value="Public Property QueryString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ QueryString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.QueryString : string with get, set" Usage="Microsoft.Maui.Controls.ShellContent.QueryString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets an encoded query string supplied to this content's page when the content is selected.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            The leading <c>?</c> is optional. The query string is URI-decoded once. Values from
+            <see cref="P:Microsoft.Maui.Controls.ShellContent.QueryParameters" /> take precedence over values in this query string. Parameters supplied
+            to Shell navigation take precedence for that navigation; selecting the content again reapplies its
+            declarative parameters. For compatibility, existing Shell navigation retains its historical decoding
+            and culture behavior, so moving the same encoded text from navigation to this property can produce
+            a different result.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryStringProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Maui.Controls.BindableProperty QueryStringProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Maui.Controls.BindableProperty QueryStringProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Maui.Controls.ShellContent.QueryStringProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly QueryStringProperty As BindableProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::Maui::Controls::BindableProperty ^ QueryStringProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable QueryStringProperty : Microsoft.Maui.Controls.BindableProperty" Usage="Microsoft.Maui.Controls.ShellContent.QueryStringProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.Controls.BindableProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bindable property for <see cref="P:Microsoft.Maui.Controls.ShellContent.QueryString" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,0 +1,239 @@
+<Type Name="ILayoutHandler&lt;TPlatformView&gt;" FullName="Microsoft.Maui.ILayoutHandler&lt;TPlatformView&gt;">
+  <TypeSignature Language="C#" Value="public interface ILayoutHandler&lt;out TPlatformView&gt; : Microsoft.Maui.IElementHandler&lt;Microsoft.Maui.ILayout,out TPlatformView&gt;, Microsoft.Maui.IViewHandler&lt;Microsoft.Maui.ILayout,out TPlatformView&gt; where TPlatformView : class" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit ILayoutHandler`1&lt;class + TPlatformView&gt; implements class Microsoft.Maui.IElementHandler, class Microsoft.Maui.IElementHandler`2&lt;class Microsoft.Maui.ILayout, !TPlatformView&gt;, class Microsoft.Maui.IViewHandler, class Microsoft.Maui.IViewHandler`2&lt;class Microsoft.Maui.ILayout, !TPlatformView&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.ILayoutHandler`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ILayoutHandler(Of Out TPlatformView)&#xA;Implements IElementHandler(Of ILayout, Out TPlatformView), IViewHandler(Of ILayout, Out TPlatformView)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TPlatformView&gt;&#xA; where TPlatformView : classpublic interface class ILayoutHandler : Microsoft::Maui::IElementHandler&lt;Microsoft::Maui::ILayout ^, TPlatformView&gt;, Microsoft::Maui::IViewHandler&lt;Microsoft::Maui::ILayout ^, TPlatformView&gt;" />
+  <TypeSignature Language="F#" Value="type ILayoutHandler&lt;'PlatformView (requires 'PlatformView : null)&gt; = interface&#xA;    interface IViewHandler&lt;ILayout, 'PlatformView (requires 'PlatformView : null)&gt;&#xA;    interface IElementHandler&lt;ILayout, 'PlatformView (requires 'PlatformView : null)&gt;&#xA;    interface IElementHandler&#xA;    interface IViewHandler" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TPlatformView">
+      <Constraints>
+        <ParameterAttribute>Covariant</ParameterAttribute>
+        <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IElementHandler</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IElementHandler&lt;Microsoft.Maui.ILayout,TPlatformView&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IElementHandler&lt;TVirtualView,TPlatformView&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IViewHandler</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Maui.IViewHandler&lt;Microsoft.Maui.ILayout,TPlatformView&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TPlatformView">The native type this handler creates.</typeparam>
+    <summary>
+            Defines the platform-neutral behavior contract for a handler that manages an <see cref="T:Microsoft.Maui.ILayout" />.
+            </summary>
+    <remarks>
+      <para>
+        <see cref="T:Microsoft.Maui.ILayoutHandler" /> declares the same child-management members, but it also declares
+            <c>PlatformView</c> using a per-target-framework type alias, which prevents an external platform
+            backend from implementing it. This interface carries the behavior without the alias.
+            </para>
+      <para>
+            The two interfaces are intentionally unrelated: <see cref="T:Microsoft.Maui.ILayoutHandler" /> is untouched, so
+            existing implementations and callers keep working. A handler that implements the members as
+            ordinary public methods — as the in-box <see cref="T:Microsoft.Maui.Handlers.LayoutHandler" /> does — satisfies
+            both interfaces at once.
+            </para>
+      <para>
+            Because <typeparamref name="TPlatformView" /> is covariant, <c>ILayoutHandler&lt;object&gt;</c>
+            matches any layout handler regardless of backend.
+            </para>
+      <para>
+        <b>How .NET MAUI Controls reaches a layout handler.</b>
+        <c>Microsoft.Maui.Controls.Layout</c> does
+            not cast to either layout interface. It raises the child-management operations as <b>command
+            mapper keys</b> — <c>Handler.Invoke(nameof(ILayoutHandler.Add), new LayoutHandlerUpdate(index,
+            view))</c> and so on — which is type-agnostic and therefore reaches an external backend's handler
+            exactly as it reaches the in-box one. Referencing <see cref="T:Microsoft.Maui.ILayoutHandler" /> for its member
+            <em>names</em> is always allowed; only implementing it is blocked. An external backend should use
+            those same key strings so Controls interop keeps working.
+            </para>
+      <para>
+        <b>Known gap.</b> The obsolete
+            <c>Microsoft.Maui.Controls.Compatibility.Layout&lt;T&gt;.LayoutHandler</c> property is declared as
+            <see cref="T:Microsoft.Maui.ILayoutHandler" /> and evaluates <c>Handler as ILayoutHandler</c>, so it returns
+            <see langword="null" /> for a handler that implements only this generic interface. It is the sole
+            runtime cast to <see cref="T:Microsoft.Maui.ILayoutHandler" /> left in .NET MAUI, it is a public convenience
+            property that no in-box code path reads, and its declaring type is <c>[Obsolete]</c> — so it does
+            not affect layout behavior. It is called out here because this interface is, for that legacy
+            property specifically, a compile-time contract only.
+            </para>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ILayoutHandler`1.Add(Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="abstract member Add : Microsoft.Maui.IView -&gt; unit" Usage="iLayoutHandler.Add view" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="view">The child view to add.</param>
+        <summary>
+            Adds the specified child view to the end of the layout.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ILayoutHandler`1.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit" Usage="iLayoutHandler.Clear " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Removes all child views from the layout.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert(int32 index, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ILayoutHandler`1.Insert(System.Int32,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="abstract member Insert : int * Microsoft.Maui.IView -&gt; unit" Usage="iLayoutHandler.Insert (index, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index at which to insert the child view.</param>
+        <param name="view">The child view to insert.</param>
+        <summary>
+            Inserts the specified child view into the layout at the given index.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ILayoutHandler`1.Remove(Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : Microsoft.Maui.IView -&gt; unit" Usage="iLayoutHandler.Remove view" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="view">The child view to remove.</param>
+        <summary>
+            Removes the specified child view from the layout.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="public void Update (int index, Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Update(int32 index, class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ILayoutHandler`1.Update(System.Int32,Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Update (index As Integer, view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Update(int index, Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="abstract member Update : int * Microsoft.Maui.IView -&gt; unit" Usage="iLayoutHandler.Update (index, view)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the child view to replace.</param>
+        <param name="view">The replacement child view.</param>
+        <summary>
+            Replaces the child view at the given index with the specified child view.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateZIndex">
+      <MemberSignature Language="C#" Value="public void UpdateZIndex (Microsoft.Maui.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateZIndex(class Microsoft.Maui.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.ILayoutHandler`1.UpdateZIndex(Microsoft.Maui.IView)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UpdateZIndex (view As IView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateZIndex(Microsoft::Maui::IView ^ view);" />
+      <MemberSignature Language="F#" Value="abstract member UpdateZIndex : Microsoft.Maui.IView -&gt; unit" Usage="iLayoutHandler.UpdateZIndex view" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.Maui.IView" />
+      </Parameters>
+      <Docs>
+        <param name="view">The child view whose z-index changed.</param>
+        <summary>
+            Updates the z-index ordering of the specified child view.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

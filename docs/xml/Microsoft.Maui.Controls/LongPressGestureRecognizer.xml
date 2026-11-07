@@ -345,6 +345,103 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SendLongPressed">
+      <MemberSignature Language="C#" Value="public void SendLongPressed (Microsoft.Maui.Controls.View sender, Func&lt;Microsoft.Maui.IElement?,Microsoft.Maui.Graphics.Point?&gt;? getPosition = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendLongPressed(class Microsoft.Maui.Controls.View sender, class System.Func`2&lt;class Microsoft.Maui.IElement, valuetype System.Nullable`1&lt;valuetype Microsoft.Maui.Graphics.Point&gt;&gt; getPosition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.LongPressGestureRecognizer.SendLongPressed(Microsoft.Maui.Controls.View,System.Func{Microsoft.Maui.IElement,System.Nullable{Microsoft.Maui.Graphics.Point}})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SendLongPressed (sender As View, Optional getPosition As Func(Of IElement, Nullable(Of Point)) = Nothing)" />
+      <MemberSignature Language="F#" Value="member this.SendLongPressed : Microsoft.Maui.Controls.View * Func&lt;Microsoft.Maui.IElement, Nullable&lt;Microsoft.Maui.Graphics.Point&gt;&gt; -&gt; unit" Usage="longPressGestureRecognizer.SendLongPressed (sender, getPosition)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="Microsoft.Maui.Controls.View" />
+        <Parameter Name="getPosition" Type="System.Func&lt;Microsoft.Maui.IElement,System.Nullable&lt;Microsoft.Maui.Graphics.Point&gt;&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="sender">The view on which the long press gesture was recognized.</param>
+        <param name="getPosition">A function that returns the long press position relative to a specified element.</param>
+        <summary>
+            Executes the associated <see cref="P:Microsoft.Maui.Controls.LongPressGestureRecognizer.Command" /> and raises the <see cref="E:Microsoft.Maui.Controls.LongPressGestureRecognizer.LongPressed" /> event.
+            </summary>
+        <remarks>
+          <para>This infrastructure method is intended for gesture platform managers.</para>
+          <para>Platform backends should raise this when the press completes successfully, immediately
+            followed by <see cref="M:Microsoft.Maui.Controls.LongPressGestureRecognizer.SendLongPressing(Microsoft.Maui.Controls.View,Microsoft.Maui.GestureStatus,System.Func{Microsoft.Maui.IElement,System.Nullable{Microsoft.Maui.Graphics.Point}})" /> with
+            <see cref="F:Microsoft.Maui.GestureStatus.Completed" />. It must be called on the UI thread.</para>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="sender" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SendLongPressing">
+      <MemberSignature Language="C#" Value="public void SendLongPressing (Microsoft.Maui.Controls.View sender, Microsoft.Maui.GestureStatus status, Func&lt;Microsoft.Maui.IElement?,Microsoft.Maui.Graphics.Point?&gt;? getPosition = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendLongPressing(class Microsoft.Maui.Controls.View sender, valuetype Microsoft.Maui.GestureStatus status, class System.Func`2&lt;class Microsoft.Maui.IElement, valuetype System.Nullable`1&lt;valuetype Microsoft.Maui.Graphics.Point&gt;&gt; getPosition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.LongPressGestureRecognizer.SendLongPressing(Microsoft.Maui.Controls.View,Microsoft.Maui.GestureStatus,System.Func{Microsoft.Maui.IElement,System.Nullable{Microsoft.Maui.Graphics.Point}})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SendLongPressing (sender As View, status As GestureStatus, Optional getPosition As Func(Of IElement, Nullable(Of Point)) = Nothing)" />
+      <MemberSignature Language="F#" Value="member this.SendLongPressing : Microsoft.Maui.Controls.View * Microsoft.Maui.GestureStatus * Func&lt;Microsoft.Maui.IElement, Nullable&lt;Microsoft.Maui.Graphics.Point&gt;&gt; -&gt; unit" Usage="longPressGestureRecognizer.SendLongPressing (sender, status, getPosition)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="Microsoft.Maui.Controls.View" />
+        <Parameter Name="status" Type="Microsoft.Maui.GestureStatus" />
+        <Parameter Name="getPosition" Type="System.Func&lt;Microsoft.Maui.IElement,System.Nullable&lt;Microsoft.Maui.Graphics.Point&gt;&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="sender">The view on which the long press gesture is being recognized.</param>
+        <param name="status">The current status of the gesture.</param>
+        <param name="getPosition">A function that returns the long press position relative to a specified element.</param>
+        <summary>
+            Updates <see cref="P:Microsoft.Maui.Controls.LongPressGestureRecognizer.State" /> and raises the <see cref="E:Microsoft.Maui.Controls.LongPressGestureRecognizer.LongPressing" /> event.
+            </summary>
+        <remarks>
+          <para>This infrastructure method is intended for gesture platform managers.</para>
+          <para>Platform backends should raise <see cref="F:Microsoft.Maui.GestureStatus.Started" /> once the press is
+            recognized, <see cref="F:Microsoft.Maui.GestureStatus.Running" /> while it is held, and finish with either
+            <see cref="F:Microsoft.Maui.GestureStatus.Completed" /> or <see cref="F:Microsoft.Maui.GestureStatus.Canceled" />. It must be
+            called on the UI thread.</para>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="sender" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
     <Member MemberName="State">
       <MemberSignature Language="C#" Value="public Microsoft.Maui.GestureStatus State { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Maui.GestureStatus State" />

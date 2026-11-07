@@ -1,10 +1,15 @@
 <Type Name="LayoutHandler" FullName="Microsoft.Maui.Handlers.LayoutHandler">
-  <TypeSignature Language="C#" Value="public class LayoutHandler : Microsoft.Maui.Handlers.ViewHandler&lt;Microsoft.Maui.ILayout,object&gt;, Microsoft.Maui.ILayoutHandler" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LayoutHandler extends Microsoft.Maui.Handlers.ViewHandler`2&lt;class Microsoft.Maui.ILayout, object&gt; implements class Microsoft.Maui.IElementHandler, class Microsoft.Maui.ILayoutHandler, class Microsoft.Maui.IViewHandler" />
+  <TypeSignature Language="C#" Value="public class LayoutHandler : Microsoft.Maui.Handlers.ViewHandler&lt;Microsoft.Maui.ILayout,object&gt;, Microsoft.Maui.ILayoutHandler" FrameworkAlternate="net-maui-10.0;net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LayoutHandler extends Microsoft.Maui.Handlers.ViewHandler`2&lt;class Microsoft.Maui.ILayout, object&gt; implements class Microsoft.Maui.IElementHandler, class Microsoft.Maui.ILayoutHandler, class Microsoft.Maui.IViewHandler" FrameworkAlternate="net-maui-10.0;net-maui-8.0;net-maui-9.0" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Maui.Handlers.LayoutHandler" />
-  <TypeSignature Language="VB.NET" Value="Public Class LayoutHandler&#xA;Inherits ViewHandler(Of ILayout, Object)&#xA;Implements ILayoutHandler" />
-  <TypeSignature Language="C++ CLI" Value="public ref class LayoutHandler : Microsoft::Maui::Handlers::ViewHandler&lt;Microsoft::Maui::ILayout ^, System::Object ^&gt;, Microsoft::Maui::ILayoutHandler" />
-  <TypeSignature Language="F#" Value="type LayoutHandler = class&#xA;    inherit ViewHandler&lt;ILayout, obj&gt;&#xA;    interface ILayoutHandler&#xA;    interface IViewHandler&#xA;    interface IElementHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Class LayoutHandler&#xA;Inherits ViewHandler(Of ILayout, Object)&#xA;Implements ILayoutHandler" FrameworkAlternate="net-maui-10.0;net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LayoutHandler : Microsoft::Maui::Handlers::ViewHandler&lt;Microsoft::Maui::ILayout ^, System::Object ^&gt;, Microsoft::Maui::ILayoutHandler" FrameworkAlternate="net-maui-10.0;net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="F#" Value="type LayoutHandler = class&#xA;    inherit ViewHandler&lt;ILayout, obj&gt;&#xA;    interface ILayoutHandler&#xA;    interface IViewHandler&#xA;    interface IElementHandler" FrameworkAlternate="net-maui-10.0;net-maui-8.0;net-maui-9.0" />
+  <TypeSignature Language="C#" Value="public class LayoutHandler : Microsoft.Maui.Handlers.ViewHandler&lt;Microsoft.Maui.ILayout,object&gt;, Microsoft.Maui.IElementHandler&lt;Microsoft.Maui.ILayout,object&gt;, Microsoft.Maui.ILayoutHandler, Microsoft.Maui.ILayoutHandler&lt;object&gt;, Microsoft.Maui.IViewHandler&lt;Microsoft.Maui.ILayout,object&gt;" FrameworkAlternate="net-maui-11.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LayoutHandler extends Microsoft.Maui.Handlers.ViewHandler`2&lt;class Microsoft.Maui.ILayout, object&gt; implements class Microsoft.Maui.IElementHandler, class Microsoft.Maui.IElementHandler`2&lt;class Microsoft.Maui.ILayout, object&gt;, class Microsoft.Maui.ILayoutHandler, class Microsoft.Maui.ILayoutHandler`1&lt;object&gt;, class Microsoft.Maui.IViewHandler, class Microsoft.Maui.IViewHandler`2&lt;class Microsoft.Maui.ILayout, object&gt;" FrameworkAlternate="net-maui-11.0" />
+  <TypeSignature Language="VB.NET" Value="Public Class LayoutHandler&#xA;Inherits ViewHandler(Of ILayout, Object)&#xA;Implements IElementHandler(Of ILayout, Object), ILayoutHandler, ILayoutHandler(Of Object), IViewHandler(Of ILayout, Object)" FrameworkAlternate="net-maui-11.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LayoutHandler : Microsoft::Maui::Handlers::ViewHandler&lt;Microsoft::Maui::ILayout ^, System::Object ^&gt;, Microsoft::Maui::IElementHandler&lt;Microsoft::Maui::ILayout ^, System::Object ^&gt;, Microsoft::Maui::ILayoutHandler, Microsoft::Maui::ILayoutHandler&lt;System::Object ^&gt;, Microsoft::Maui::IViewHandler&lt;Microsoft::Maui::ILayout ^, System::Object ^&gt;" FrameworkAlternate="net-maui-11.0" />
+  <TypeSignature Language="F#" Value="type LayoutHandler = class&#xA;    inherit ViewHandler&lt;ILayout, obj&gt;&#xA;    interface ILayoutHandler&#xA;    interface IViewHandler&#xA;    interface IElementHandler&#xA;    interface ILayoutHandler&lt;obj&gt;&#xA;    interface IViewHandler&lt;ILayout, obj&gt;&#xA;    interface IElementHandler&lt;ILayout, obj&gt;" FrameworkAlternate="net-maui-11.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Maui</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -28,6 +33,24 @@
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Maui.IViewHandler</InterfaceName>
+    </Interface>
+    <Interface FrameworkAlternate="net-maui-11.0">
+      <InterfaceName>Microsoft.Maui.IElementHandler&lt;Microsoft.Maui.ILayout,System.Object&gt;</InterfaceName>
+    </Interface>
+    <Interface FrameworkAlternate="net-maui-11.0">
+      <InterfaceName>Microsoft.Maui.IElementHandler&lt;Microsoft.Maui.ILayout,TPlatformView&gt;</InterfaceName>
+    </Interface>
+    <Interface FrameworkAlternate="net-maui-11.0">
+      <InterfaceName>Microsoft.Maui.IElementHandler&lt;TVirtualView,TPlatformView&gt;</InterfaceName>
+    </Interface>
+    <Interface FrameworkAlternate="net-maui-11.0">
+      <InterfaceName>Microsoft.Maui.ILayoutHandler&lt;System.Object&gt;</InterfaceName>
+    </Interface>
+    <Interface FrameworkAlternate="net-maui-11.0">
+      <InterfaceName>Microsoft.Maui.IViewHandler&lt;Microsoft.Maui.ILayout,System.Object&gt;</InterfaceName>
+    </Interface>
+    <Interface FrameworkAlternate="net-maui-11.0">
+      <InterfaceName>Microsoft.Maui.IViewHandler&lt;Microsoft.Maui.ILayout,TPlatformView&gt;</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
@@ -96,6 +119,7 @@
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Maui.ILayoutHandler.Add(Microsoft.Maui.IView)</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-maui-11.0">M:Microsoft.Maui.ILayoutHandler`1.Add(Microsoft.Maui.IView)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>
@@ -125,6 +149,7 @@
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Maui.ILayoutHandler.Clear</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-maui-11.0">M:Microsoft.Maui.ILayoutHandler`1.Clear</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>
@@ -197,6 +222,7 @@
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Maui.ILayoutHandler.Insert(System.Int32,Microsoft.Maui.IView)</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-maui-11.0">M:Microsoft.Maui.ILayoutHandler`1.Insert(System.Int32,Microsoft.Maui.IView)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>
@@ -510,6 +536,7 @@
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Maui.ILayoutHandler.Remove(Microsoft.Maui.IView)</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-maui-11.0">M:Microsoft.Maui.ILayoutHandler`1.Remove(Microsoft.Maui.IView)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>
@@ -539,6 +566,7 @@
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Maui.ILayoutHandler.Update(System.Int32,Microsoft.Maui.IView)</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-maui-11.0">M:Microsoft.Maui.ILayoutHandler`1.Update(System.Int32,Microsoft.Maui.IView)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>
@@ -570,6 +598,7 @@
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Maui.ILayoutHandler.UpdateZIndex(Microsoft.Maui.IView)</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-maui-11.0">M:Microsoft.Maui.ILayoutHandler`1.UpdateZIndex(Microsoft.Maui.IView)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Maui</AssemblyName>

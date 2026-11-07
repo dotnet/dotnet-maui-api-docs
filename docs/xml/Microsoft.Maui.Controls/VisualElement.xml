@@ -1530,7 +1530,10 @@
             Gets or sets a value that determines whether this element will be visible on screen and take up space in layouts. This is a bindable property.
             </summary>
         <value>To be added.</value>
-        <remarks>When an element has <see cref="P:Microsoft.Maui.Controls.VisualElement.IsVisible" /> set to <see langword="false" /> it will no longer take up space in layouts or be eligible to receive any kind of input event.</remarks>
+        <remarks>
+          <para>This property represents the visibility set directly on the element. The effective visibility, available through <see cref="P:Microsoft.Maui.IView.Visibility" />, also depends on the visibility of the element's ancestors.</para>
+          <para>When an element has <see cref="P:Microsoft.Maui.Controls.VisualElement.IsVisible" /> set to <see langword="false" /> it will no longer take up space in layouts or be eligible to receive any kind of input event.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsVisibleProperty">

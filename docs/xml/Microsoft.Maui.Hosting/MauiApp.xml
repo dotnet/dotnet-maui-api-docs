@@ -112,7 +112,20 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+            When <see cref="P:Microsoft.Maui.Hosting.MauiApp.Services" /> implements <see cref="T:System.IAsyncDisposable" />,
+            this method blocks until asynchronous provider disposal completes. If provider
+            disposal requires the calling thread to remain responsive, such as explicitly
+            dispatching work to the UI thread, use <see cref="M:Microsoft.Maui.Hosting.MauiApp.DisposeAsync" /> instead.
+            <para>
+            Disposal runs exactly once. When several callers race <see cref="M:Microsoft.Maui.Hosting.MauiApp.Dispose" /> and/or
+            <see cref="M:Microsoft.Maui.Hosting.MauiApp.DisposeAsync" /> on the same instance, the first caller performs the teardown
+            and every other caller waits for it to finish and observes the same exception. A caller
+            that re-enters disposal from the logical execution flow already performing it returns
+            immediately without waiting to avoid deadlocking on itself, and therefore does not observe
+            completion or exceptions. After teardown completes, subsequent non-reentrant calls return
+            immediately on success or rethrow the recorded teardown exception.
+            </para></remarks>
         <inheritdoc />
       </Docs>
     </Member>
@@ -140,7 +153,18 @@
       <Docs>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Disposal runs exactly once. When several callers race <see cref="M:Microsoft.Maui.Hosting.MauiApp.Dispose" /> and/or
+            <see cref="M:Microsoft.Maui.Hosting.MauiApp.DisposeAsync" /> on the same instance, the first caller performs the teardown
+            and every other caller awaits its completion and observes the same exception. A caller
+            that re-enters disposal from the logical execution flow already performing it returns
+            immediately without awaiting to avoid deadlocking on itself, and therefore does not
+            observe completion or exceptions. After teardown completes, subsequent non-reentrant calls
+            return immediately on success or rethrow the recorded teardown exception.
+            <para>
+            When app-service initialization is already in flight, this method returns an incomplete
+            operation and waits asynchronously for initialization to finish before teardown begins.
+            </para></remarks>
         <inheritdoc />
       </Docs>
     </Member>

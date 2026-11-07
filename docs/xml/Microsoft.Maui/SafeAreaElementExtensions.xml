@@ -1,0 +1,63 @@
+<Type Name="SafeAreaElementExtensions" FullName="Microsoft.Maui.SafeAreaElementExtensions">
+  <TypeSignature Language="C#" Value="public static class SafeAreaElementExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SafeAreaElementExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Maui.SafeAreaElementExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module SafeAreaElementExtensions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SafeAreaElementExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type SafeAreaElementExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Maui</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Provides methods for reading safe area configuration.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetEffectiveSafeAreaEdges">
+      <MemberSignature Language="C#" Value="public static Microsoft.Maui.SafeAreaEdges GetEffectiveSafeAreaEdges (this Microsoft.Maui.ISafeAreaElement safeAreaElement);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Maui.SafeAreaEdges GetEffectiveSafeAreaEdges(class Microsoft.Maui.ISafeAreaElement safeAreaElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.SafeAreaElementExtensions.GetEffectiveSafeAreaEdges(Microsoft.Maui.ISafeAreaElement)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetEffectiveSafeAreaEdges (safeAreaElement As ISafeAreaElement) As SafeAreaEdges" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::Maui::SafeAreaEdges GetEffectiveSafeAreaEdges(Microsoft::Maui::ISafeAreaElement ^ safeAreaElement);" />
+      <MemberSignature Language="F#" Value="static member GetEffectiveSafeAreaEdges : Microsoft.Maui.ISafeAreaElement -&gt; Microsoft.Maui.SafeAreaEdges" Usage="Microsoft.Maui.SafeAreaElementExtensions.GetEffectiveSafeAreaEdges safeAreaElement" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Maui.SafeAreaEdges</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="safeAreaElement" Type="Microsoft.Maui.ISafeAreaElement" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="safeAreaElement">The safe area element whose configuration to read.</param>
+        <summary>
+            Gets the effective safe area configuration used by .NET MAUI platform handlers.
+            </summary>
+        <returns>
+            The resolved handler input. Platform handlers may further adjust the applied insets
+            for keyboard geometry, view position, and ancestor handling.
+            </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Thrown when <paramref name="safeAreaElement" /> is <see langword="null" />.
+            </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

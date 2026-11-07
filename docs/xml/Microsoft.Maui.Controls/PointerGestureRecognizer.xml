@@ -754,5 +754,235 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SendPointerEntered">
+      <MemberSignature Language="C#" Value="public void SendPointerEntered (Microsoft.Maui.Controls.View sender, Func&lt;Microsoft.Maui.IElement?,Microsoft.Maui.Graphics.Point?&gt;? getPosition, Microsoft.Maui.Controls.PlatformPointerEventArgs? platformArgs = default, Microsoft.Maui.Controls.ButtonsMask button = Microsoft.Maui.Controls.ButtonsMask.Primary);" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendPointerEntered(class Microsoft.Maui.Controls.View sender, class System.Func`2&lt;class Microsoft.Maui.IElement, valuetype System.Nullable`1&lt;valuetype Microsoft.Maui.Graphics.Point&gt;&gt; getPosition, class Microsoft.Maui.Controls.PlatformPointerEventArgs platformArgs, valuetype Microsoft.Maui.Controls.ButtonsMask button) cil managed" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.PointerGestureRecognizer.SendPointerEntered(Microsoft.Maui.Controls.View,System.Func{Microsoft.Maui.IElement,System.Nullable{Microsoft.Maui.Graphics.Point}},Microsoft.Maui.Controls.PlatformPointerEventArgs,Microsoft.Maui.Controls.ButtonsMask)" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SendPointerEntered (sender As View, getPosition As Func(Of IElement, Nullable(Of Point)), Optional platformArgs As PlatformPointerEventArgs = Nothing, Optional button As ButtonsMask = Microsoft.Maui.Controls.ButtonsMask.Primary)" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="F#" Value="member this.SendPointerEntered : Microsoft.Maui.Controls.View * Func&lt;Microsoft.Maui.IElement, Nullable&lt;Microsoft.Maui.Graphics.Point&gt;&gt; * Microsoft.Maui.Controls.PlatformPointerEventArgs * Microsoft.Maui.Controls.ButtonsMask -&gt; unit" Usage="pointerGestureRecognizer.SendPointerEntered (sender, getPosition, platformArgs, button)" FrameworkAlternate="net-maui-11.0" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType FrameworkAlternate="net-maui-11.0">System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="Microsoft.Maui.Controls.View" Index="0" FrameworkAlternate="net-maui-11.0">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-maui-11.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="getPosition" Type="System.Func&lt;Microsoft.Maui.IElement,System.Nullable&lt;Microsoft.Maui.Graphics.Point&gt;&gt;" Index="1" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="platformArgs" Type="Microsoft.Maui.Controls.PlatformPointerEventArgs" Index="2" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="button" Type="Microsoft.Maui.Controls.ButtonsMask" Index="3" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="sender">The view that the pointer entered.</param>
+        <param name="getPosition">A function that returns the pointer position relative to a specified element.</param>
+        <param name="platformArgs">The platform-specific data associated with the pointer event.</param>
+        <param name="button">The button associated with the pointer event.</param>
+        <summary>
+            Executes the associated command and raises the <see cref="E:Microsoft.Maui.Controls.PointerGestureRecognizer.PointerEntered" /> event.
+            </summary>
+        <remarks>This infrastructure method is intended for gesture platform managers.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="sender" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SendPointerExited">
+      <MemberSignature Language="C#" Value="public void SendPointerExited (Microsoft.Maui.Controls.View sender, Func&lt;Microsoft.Maui.IElement?,Microsoft.Maui.Graphics.Point?&gt;? getPosition, Microsoft.Maui.Controls.PlatformPointerEventArgs? platformArgs = default, Microsoft.Maui.Controls.ButtonsMask button = Microsoft.Maui.Controls.ButtonsMask.Primary);" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendPointerExited(class Microsoft.Maui.Controls.View sender, class System.Func`2&lt;class Microsoft.Maui.IElement, valuetype System.Nullable`1&lt;valuetype Microsoft.Maui.Graphics.Point&gt;&gt; getPosition, class Microsoft.Maui.Controls.PlatformPointerEventArgs platformArgs, valuetype Microsoft.Maui.Controls.ButtonsMask button) cil managed" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.PointerGestureRecognizer.SendPointerExited(Microsoft.Maui.Controls.View,System.Func{Microsoft.Maui.IElement,System.Nullable{Microsoft.Maui.Graphics.Point}},Microsoft.Maui.Controls.PlatformPointerEventArgs,Microsoft.Maui.Controls.ButtonsMask)" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SendPointerExited (sender As View, getPosition As Func(Of IElement, Nullable(Of Point)), Optional platformArgs As PlatformPointerEventArgs = Nothing, Optional button As ButtonsMask = Microsoft.Maui.Controls.ButtonsMask.Primary)" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="F#" Value="member this.SendPointerExited : Microsoft.Maui.Controls.View * Func&lt;Microsoft.Maui.IElement, Nullable&lt;Microsoft.Maui.Graphics.Point&gt;&gt; * Microsoft.Maui.Controls.PlatformPointerEventArgs * Microsoft.Maui.Controls.ButtonsMask -&gt; unit" Usage="pointerGestureRecognizer.SendPointerExited (sender, getPosition, platformArgs, button)" FrameworkAlternate="net-maui-11.0" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType FrameworkAlternate="net-maui-11.0">System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="Microsoft.Maui.Controls.View" Index="0" FrameworkAlternate="net-maui-11.0">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-maui-11.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="getPosition" Type="System.Func&lt;Microsoft.Maui.IElement,System.Nullable&lt;Microsoft.Maui.Graphics.Point&gt;&gt;" Index="1" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="platformArgs" Type="Microsoft.Maui.Controls.PlatformPointerEventArgs" Index="2" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="button" Type="Microsoft.Maui.Controls.ButtonsMask" Index="3" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="sender">The view that the pointer exited.</param>
+        <param name="getPosition">A function that returns the pointer position relative to a specified element.</param>
+        <param name="platformArgs">The platform-specific data associated with the pointer event.</param>
+        <param name="button">The button associated with the pointer event.</param>
+        <summary>
+            Executes the associated command and raises the <see cref="E:Microsoft.Maui.Controls.PointerGestureRecognizer.PointerExited" /> event.
+            </summary>
+        <remarks>This infrastructure method is intended for gesture platform managers.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="sender" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SendPointerMoved">
+      <MemberSignature Language="C#" Value="public void SendPointerMoved (Microsoft.Maui.Controls.View sender, Func&lt;Microsoft.Maui.IElement?,Microsoft.Maui.Graphics.Point?&gt;? getPosition, Microsoft.Maui.Controls.PlatformPointerEventArgs? platformArgs = default, Microsoft.Maui.Controls.ButtonsMask button = Microsoft.Maui.Controls.ButtonsMask.Primary);" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendPointerMoved(class Microsoft.Maui.Controls.View sender, class System.Func`2&lt;class Microsoft.Maui.IElement, valuetype System.Nullable`1&lt;valuetype Microsoft.Maui.Graphics.Point&gt;&gt; getPosition, class Microsoft.Maui.Controls.PlatformPointerEventArgs platformArgs, valuetype Microsoft.Maui.Controls.ButtonsMask button) cil managed" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.PointerGestureRecognizer.SendPointerMoved(Microsoft.Maui.Controls.View,System.Func{Microsoft.Maui.IElement,System.Nullable{Microsoft.Maui.Graphics.Point}},Microsoft.Maui.Controls.PlatformPointerEventArgs,Microsoft.Maui.Controls.ButtonsMask)" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SendPointerMoved (sender As View, getPosition As Func(Of IElement, Nullable(Of Point)), Optional platformArgs As PlatformPointerEventArgs = Nothing, Optional button As ButtonsMask = Microsoft.Maui.Controls.ButtonsMask.Primary)" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="F#" Value="member this.SendPointerMoved : Microsoft.Maui.Controls.View * Func&lt;Microsoft.Maui.IElement, Nullable&lt;Microsoft.Maui.Graphics.Point&gt;&gt; * Microsoft.Maui.Controls.PlatformPointerEventArgs * Microsoft.Maui.Controls.ButtonsMask -&gt; unit" Usage="pointerGestureRecognizer.SendPointerMoved (sender, getPosition, platformArgs, button)" FrameworkAlternate="net-maui-11.0" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType FrameworkAlternate="net-maui-11.0">System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="Microsoft.Maui.Controls.View" Index="0" FrameworkAlternate="net-maui-11.0">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-maui-11.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="getPosition" Type="System.Func&lt;Microsoft.Maui.IElement,System.Nullable&lt;Microsoft.Maui.Graphics.Point&gt;&gt;" Index="1" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="platformArgs" Type="Microsoft.Maui.Controls.PlatformPointerEventArgs" Index="2" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="button" Type="Microsoft.Maui.Controls.ButtonsMask" Index="3" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="sender">The view within which the pointer moved.</param>
+        <param name="getPosition">A function that returns the pointer position relative to a specified element.</param>
+        <param name="platformArgs">The platform-specific data associated with the pointer event.</param>
+        <param name="button">The button associated with the pointer event.</param>
+        <summary>
+            Executes the associated command and raises the <see cref="E:Microsoft.Maui.Controls.PointerGestureRecognizer.PointerMoved" /> event.
+            </summary>
+        <remarks>This infrastructure method is intended for gesture platform managers.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="sender" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SendPointerPressed">
+      <MemberSignature Language="C#" Value="public void SendPointerPressed (Microsoft.Maui.Controls.View sender, Func&lt;Microsoft.Maui.IElement?,Microsoft.Maui.Graphics.Point?&gt;? getPosition, Microsoft.Maui.Controls.PlatformPointerEventArgs? platformArgs = default, Microsoft.Maui.Controls.ButtonsMask button = Microsoft.Maui.Controls.ButtonsMask.Primary);" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendPointerPressed(class Microsoft.Maui.Controls.View sender, class System.Func`2&lt;class Microsoft.Maui.IElement, valuetype System.Nullable`1&lt;valuetype Microsoft.Maui.Graphics.Point&gt;&gt; getPosition, class Microsoft.Maui.Controls.PlatformPointerEventArgs platformArgs, valuetype Microsoft.Maui.Controls.ButtonsMask button) cil managed" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.PointerGestureRecognizer.SendPointerPressed(Microsoft.Maui.Controls.View,System.Func{Microsoft.Maui.IElement,System.Nullable{Microsoft.Maui.Graphics.Point}},Microsoft.Maui.Controls.PlatformPointerEventArgs,Microsoft.Maui.Controls.ButtonsMask)" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SendPointerPressed (sender As View, getPosition As Func(Of IElement, Nullable(Of Point)), Optional platformArgs As PlatformPointerEventArgs = Nothing, Optional button As ButtonsMask = Microsoft.Maui.Controls.ButtonsMask.Primary)" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="F#" Value="member this.SendPointerPressed : Microsoft.Maui.Controls.View * Func&lt;Microsoft.Maui.IElement, Nullable&lt;Microsoft.Maui.Graphics.Point&gt;&gt; * Microsoft.Maui.Controls.PlatformPointerEventArgs * Microsoft.Maui.Controls.ButtonsMask -&gt; unit" Usage="pointerGestureRecognizer.SendPointerPressed (sender, getPosition, platformArgs, button)" FrameworkAlternate="net-maui-11.0" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType FrameworkAlternate="net-maui-11.0">System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="Microsoft.Maui.Controls.View" Index="0" FrameworkAlternate="net-maui-11.0">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-maui-11.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="getPosition" Type="System.Func&lt;Microsoft.Maui.IElement,System.Nullable&lt;Microsoft.Maui.Graphics.Point&gt;&gt;" Index="1" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="platformArgs" Type="Microsoft.Maui.Controls.PlatformPointerEventArgs" Index="2" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="button" Type="Microsoft.Maui.Controls.ButtonsMask" Index="3" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="sender">The view on which the pointer was pressed.</param>
+        <param name="getPosition">A function that returns the pointer position relative to a specified element.</param>
+        <param name="platformArgs">The platform-specific data associated with the pointer event.</param>
+        <param name="button">The button associated with the pointer event.</param>
+        <summary>
+            Executes the associated command and raises the <see cref="E:Microsoft.Maui.Controls.PointerGestureRecognizer.PointerPressed" /> event.
+            </summary>
+        <remarks>This infrastructure method is intended for gesture platform managers.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="sender" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SendPointerReleased">
+      <MemberSignature Language="C#" Value="public void SendPointerReleased (Microsoft.Maui.Controls.View sender, Func&lt;Microsoft.Maui.IElement?,Microsoft.Maui.Graphics.Point?&gt;? getPosition, Microsoft.Maui.Controls.PlatformPointerEventArgs? platformArgs = default, Microsoft.Maui.Controls.ButtonsMask button = Microsoft.Maui.Controls.ButtonsMask.Primary);" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendPointerReleased(class Microsoft.Maui.Controls.View sender, class System.Func`2&lt;class Microsoft.Maui.IElement, valuetype System.Nullable`1&lt;valuetype Microsoft.Maui.Graphics.Point&gt;&gt; getPosition, class Microsoft.Maui.Controls.PlatformPointerEventArgs platformArgs, valuetype Microsoft.Maui.Controls.ButtonsMask button) cil managed" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Maui.Controls.PointerGestureRecognizer.SendPointerReleased(Microsoft.Maui.Controls.View,System.Func{Microsoft.Maui.IElement,System.Nullable{Microsoft.Maui.Graphics.Point}},Microsoft.Maui.Controls.PlatformPointerEventArgs,Microsoft.Maui.Controls.ButtonsMask)" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SendPointerReleased (sender As View, getPosition As Func(Of IElement, Nullable(Of Point)), Optional platformArgs As PlatformPointerEventArgs = Nothing, Optional button As ButtonsMask = Microsoft.Maui.Controls.ButtonsMask.Primary)" FrameworkAlternate="net-maui-11.0" />
+      <MemberSignature Language="F#" Value="member this.SendPointerReleased : Microsoft.Maui.Controls.View * Func&lt;Microsoft.Maui.IElement, Nullable&lt;Microsoft.Maui.Graphics.Point&gt;&gt; * Microsoft.Maui.Controls.PlatformPointerEventArgs * Microsoft.Maui.Controls.ButtonsMask -&gt; unit" Usage="pointerGestureRecognizer.SendPointerReleased (sender, getPosition, platformArgs, button)" FrameworkAlternate="net-maui-11.0" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Maui.Controls</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-maui-11.0">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType FrameworkAlternate="net-maui-11.0">System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="Microsoft.Maui.Controls.View" Index="0" FrameworkAlternate="net-maui-11.0">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-maui-11.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="getPosition" Type="System.Func&lt;Microsoft.Maui.IElement,System.Nullable&lt;Microsoft.Maui.Graphics.Point&gt;&gt;" Index="1" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="platformArgs" Type="Microsoft.Maui.Controls.PlatformPointerEventArgs" Index="2" FrameworkAlternate="net-maui-11.0" />
+        <Parameter Name="button" Type="Microsoft.Maui.Controls.ButtonsMask" Index="3" FrameworkAlternate="net-maui-11.0" />
+      </Parameters>
+      <Docs>
+        <param name="sender">The view on which the pointer was released.</param>
+        <param name="getPosition">A function that returns the pointer position relative to a specified element.</param>
+        <param name="platformArgs">The platform-specific data associated with the pointer event.</param>
+        <param name="button">The button associated with the pointer event.</param>
+        <summary>
+            Executes the associated command and raises the <see cref="E:Microsoft.Maui.Controls.PointerGestureRecognizer.PointerReleased" /> event.
+            </summary>
+        <remarks>This infrastructure method is intended for gesture platform managers.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="sender" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
   </Members>
 </Type>

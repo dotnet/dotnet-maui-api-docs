@@ -87,11 +87,9 @@
       <Docs>
         <param name="instance">To be added.</param>
         <summary>
-            Generator-only entry point retained for backward compatibility with previously
-            compiled <c>InitializeComponent()</c> bodies. <see cref="M:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.Register(System.Object,System.String,System.Object)" />
-            already records every page instance, so live-instance enumeration is sourced from
-            <see cref="M:Microsoft.Maui.Controls.Xaml.XamlComponentRegistry.GetInstances(System.Type)" />. This method only validates its
-            argument and respects the <c>IsIncrementalHotReloadEnabled</c> feature switch.
+            Generator-only entry point that registers every XAML root for live-instance enumeration.
+            Roots such as <see cref="T:Microsoft.Maui.Controls.Application" /> and <see cref="T:Microsoft.Maui.Controls.ResourceDictionary" /> may not contain
+            child components, so they cannot rely on component registration to be tracked.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
