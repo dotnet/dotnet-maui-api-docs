@@ -1,0 +1,205 @@
+<Type Name="BlazorWebViewStaticContentHotReload" FullName="Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewStaticContentHotReload">
+  <TypeSignature Language="C#" Value="public static class BlazorWebViewStaticContentHotReload" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit BlazorWebViewStaticContentHotReload extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewStaticContentHotReload" />
+  <TypeSignature Language="VB.NET" Value="Public Class BlazorWebViewStaticContentHotReload" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BlazorWebViewStaticContentHotReload abstract sealed" />
+  <TypeSignature Language="F#" Value="type BlazorWebViewStaticContentHotReload = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.AspNetCore.Components.WebView.Maui</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Provides the seam that lets a handler implementing <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebViewHandler" /> participate in
+            MAUI Blazor static content hot reload, which serves updated <c>wwwroot</c> assets (most notably CSS)
+            without restarting the app.
+            </summary>
+    <remarks>
+            A handler participates in two places, mirroring what the built-in handlers do:
+            <list type="number"><item><description>
+            Call <see cref="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewStaticContentHotReload.TryAttachToWebViewManager(Microsoft.AspNetCore.Components.WebView.WebViewManager)" /> once, right after creating its
+            <see cref="T:Microsoft.AspNetCore.Components.WebView.WebViewManager" /> and before navigating, so the notifier root component is registered.
+            </description></item><item><description>
+            Call <see cref="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewStaticContentHotReload.TryGetUpdatedStaticContent(System.String,System.String,System.IO.Stream@,System.String@)" /> while resolving a
+            static content request, so hot-reloaded content replaces the on-disk content.
+            </description></item></list>
+            A handler that disposes its <see cref="T:Microsoft.AspNetCore.Components.WebView.WebViewManager" /> on teardown — as all the built-in handlers do
+            — does not need to detach, because disposing the manager tears the notifier down with the renderer.
+            <see cref="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewStaticContentHotReload.TryDetachFromWebViewManager(Microsoft.AspNetCore.Components.WebView.WebViewManager)" /> exists for the narrower case of a handler
+            that keeps a manager alive and wants to stop, and possibly later restart, hot reload on it.
+            <para>
+            All members are inert when hot reload is unavailable (that is, when
+            <see cref="P:System.Reflection.Metadata.MetadataUpdater.IsSupported" /> is <see langword="false" />), so
+            handlers can call them unconditionally. Static content hot reload is a development-time feature and is
+            independent of Razor component hot reload, which does not require any handler participation.
+            </para></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="TryAttachToWebViewManager">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task? TryAttachToWebViewManager (Microsoft.AspNetCore.Components.WebView.WebViewManager webViewManager);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task TryAttachToWebViewManager(class Microsoft.AspNetCore.Components.WebView.WebViewManager webViewManager) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewStaticContentHotReload.TryAttachToWebViewManager(Microsoft.AspNetCore.Components.WebView.WebViewManager)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryAttachToWebViewManager (webViewManager As WebViewManager) As Task" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task ^ TryAttachToWebViewManager(Microsoft::AspNetCore::Components::WebView::WebViewManager ^ webViewManager);" />
+      <MemberSignature Language="F#" Value="static member TryAttachToWebViewManager : Microsoft.AspNetCore.Components.WebView.WebViewManager -&gt; System.Threading.Tasks.Task" Usage="Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewStaticContentHotReload.TryAttachToWebViewManager webViewManager" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.AspNetCore.Components.WebView.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webViewManager" Type="Microsoft.AspNetCore.Components.WebView.WebViewManager" />
+      </Parameters>
+      <Docs>
+        <param name="webViewManager">The <see cref="T:Microsoft.AspNetCore.Components.WebView.WebViewManager" /> to attach to.</param>
+        <summary>
+            Registers the static content hot reload notifier with the specified <see cref="T:Microsoft.AspNetCore.Components.WebView.WebViewManager" />
+            when hot reload is supported by the current runtime.
+            </summary>
+        <returns>
+            A <see cref="T:System.Threading.Tasks.Task" /> that completes when the notifier has been registered, or <see langword="null" />
+            when hot reload is not supported by the current runtime and nothing was attached. Awaiting the task
+            is optional; handlers that attach before navigating can ignore it, because registration completes
+            synchronously until a page is attached.
+            </returns>
+        <remarks>
+            Attaching is idempotent per <see cref="T:Microsoft.AspNetCore.Components.WebView.WebViewManager" /> instance: concurrent and repeat calls for
+            the same manager return the current attach task rather than registering the notifier again. If an
+            attach fails, a later call retries the registration.
+            </remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="webViewManager" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryDetachFromWebViewManager">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task? TryDetachFromWebViewManager (Microsoft.AspNetCore.Components.WebView.WebViewManager webViewManager);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task TryDetachFromWebViewManager(class Microsoft.AspNetCore.Components.WebView.WebViewManager webViewManager) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewStaticContentHotReload.TryDetachFromWebViewManager(Microsoft.AspNetCore.Components.WebView.WebViewManager)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryDetachFromWebViewManager (webViewManager As WebViewManager) As Task" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task ^ TryDetachFromWebViewManager(Microsoft::AspNetCore::Components::WebView::WebViewManager ^ webViewManager);" />
+      <MemberSignature Language="F#" Value="static member TryDetachFromWebViewManager : Microsoft.AspNetCore.Components.WebView.WebViewManager -&gt; System.Threading.Tasks.Task" Usage="Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewStaticContentHotReload.TryDetachFromWebViewManager webViewManager" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.AspNetCore.Components.WebView.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webViewManager" Type="Microsoft.AspNetCore.Components.WebView.WebViewManager" />
+      </Parameters>
+      <Docs>
+        <param name="webViewManager">The <see cref="T:Microsoft.AspNetCore.Components.WebView.WebViewManager" /> to detach from.</param>
+        <summary>
+            Removes the static content hot reload notifier from the specified <see cref="T:Microsoft.AspNetCore.Components.WebView.WebViewManager" />,
+            when it was previously attached by <see cref="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewStaticContentHotReload.TryAttachToWebViewManager(Microsoft.AspNetCore.Components.WebView.WebViewManager)" />.
+            </summary>
+        <returns>
+            A <see cref="T:System.Threading.Tasks.Task" /> that completes when the notifier has been removed, or <see langword="null" />
+            when nothing was attached to this manager and there was nothing to remove.
+            </returns>
+        <remarks>
+            This is only needed by a handler that keeps a <see cref="T:Microsoft.AspNetCore.Components.WebView.WebViewManager" /> alive and wants to stop,
+            and possibly later restart, hot reload on it — detaching is what allows a subsequent
+            <see cref="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewStaticContentHotReload.TryAttachToWebViewManager(Microsoft.AspNetCore.Components.WebView.WebViewManager)" /> on the same manager to take effect. A handler
+            that disposes its manager on teardown does not need to call this at all, because disposing tears the
+            notifier down with the renderer.
+            <para>
+            Detaching is idempotent: calling it when nothing is attached returns <see langword="null" /> rather
+            than throwing. If the manager is disposed while a detach is still in flight, the returned task still
+            completes successfully rather than faulting, so it is safe to discard. A subsequent attach is
+            sequenced after an in-flight detach, even when the detach task was discarded. Detaching is not
+            required to prevent a leak — the attachment is tracked weakly and the notifier unsubscribes when
+            its root component is disposed.
+            </para></remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="webViewManager" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetUpdatedStaticContent">
+      <MemberSignature Language="C#" Value="public static bool TryGetUpdatedStaticContent (string contentRootRelativePath, string requestAbsoluteUri, out System.IO.Stream? content, out string? contentType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetUpdatedStaticContent(string contentRootRelativePath, string requestAbsoluteUri, [out] class System.IO.Stream&amp; content, [out] string&amp; contentType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewStaticContentHotReload.TryGetUpdatedStaticContent(System.String,System.String,System.IO.Stream@,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetUpdatedStaticContent (contentRootRelativePath As String, requestAbsoluteUri As String, ByRef content As Stream, ByRef contentType As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryGetUpdatedStaticContent(System::String ^ contentRootRelativePath, System::String ^ requestAbsoluteUri, [Runtime::InteropServices::Out] System::IO::Stream ^ % content, [Runtime::InteropServices::Out] System::String ^ % contentType);" />
+      <MemberSignature Language="F#" Value="static member TryGetUpdatedStaticContent : string * string * Stream * string -&gt; bool" Usage="Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewStaticContentHotReload.TryGetUpdatedStaticContent (contentRootRelativePath, requestAbsoluteUri, content, contentType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.AspNetCore.Components.WebView.Maui</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contentRootRelativePath" Type="System.String" />
+        <Parameter Name="requestAbsoluteUri" Type="System.String" />
+        <Parameter Name="content" Type="System.IO.Stream" RefType="out">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="contentType" Type="System.String" RefType="out">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="contentRootRelativePath">The content root of the app's static assets relative to the
+            app root, as passed to the <see cref="T:Microsoft.AspNetCore.Components.WebView.WebViewManager" />.</param>
+        <param name="requestAbsoluteUri">The absolute URI of the request being served.</param>
+        <param name="content">When this method returns <see langword="true" />, a new readable
+            <see cref="T:System.IO.Stream" /> over the hot-reloaded content; otherwise <see langword="null" />. The caller owns
+            this stream and is responsible for disposing it.</param>
+        <param name="contentType">When this method returns <see langword="true" />, the content type the
+            hot reload payload specifies, or <see langword="null" /> when it does not specify one and the caller
+            should keep the content type it already resolved; otherwise <see langword="null" />.</param>
+        <summary>
+            Gets hot-reloaded content for a static content request, when an update for that content is available.
+            </summary>
+        <returns>
+          <see langword="true" /> if hot-reloaded content is available for the request; otherwise <see langword="false" />.</returns>
+        <remarks>
+            This method only reports content. The caller decides what to do with the response it was already
+            building — typically replacing the body, setting the status code to <c>200</c>, applying
+            <paramref name="contentType" /> when it is not <see langword="null" />, and disposing whatever content
+            it had resolved beforehand.
+            </remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="contentRootRelativePath" /> or
+            <paramref name="requestAbsoluteUri" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -127,7 +127,12 @@
             Sets the app actions that will be available for this app.
             </summary>
         <returns>A <see cref="T:System.Threading.Tasks.Task" /> object with the current status of the asynchronous operation.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Implementations must complete the returned task when the platform write finishes.
+            App-action publications configured through <c>ConfigureEssentials</c> are serialized,
+            and this contract has no cancellation token, so a task that never completes prevents
+            later configured publications from starting.
+            </remarks>
       </Docs>
     </Member>
   </Members>
